@@ -1,0 +1,14 @@
+{
+  "模型路径": "locomposition/logs/clean_rl/gpt-go2-冒烟验证/2026-10-09-13-41-30/model_3.pt",
+  "参数全部有限": true,
+  "观测维度": 236,
+  "策略输出维度": 12,
+  "已记录优化轮数": 3,
+  "最新损失": {
+    "Loss/mean_pg_loss": -0.022061144933104515,
+    "Loss/mean_entropy_loss": 181.67514038085938,
+    "Loss/mean_v_loss": 2.2765345573425293,
+    "Loss/mean_surrogate_loss": 4.3493332862854,
+    "Loss/learning_rate": 9.999999747378752e-05
+  }
+}

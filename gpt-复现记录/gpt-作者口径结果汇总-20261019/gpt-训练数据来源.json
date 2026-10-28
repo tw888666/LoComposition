@@ -1,0 +1,38 @@
+{
+  "Curriculum/terrain_levels": {
+    "总记录数": 28701,
+    "末尾窗口起点": 29501,
+    "末尾窗口终点": 30000,
+    "末尾记录数": 500
+  },
+  "Episode_Reward/track_lin_vel_xy_exp": {
+    "总记录数": 28701,
+    "末尾窗口起点": 29501,
+    "末尾窗口终点": 30000,
+    "末尾记录数": 500
+  },
+  "Episode/MaxJointPos": {
+    "总记录数": 28701,
+    "末尾窗口起点": 29501,
+    "末尾窗口终点": 30000,
+    "末尾记录数": 500
+  },
+  "Episode/MaxAirTime": {
+    "总记录数": 28701,
+    "末尾窗口起点": 29501,
+    "末尾窗口终点": 30000,
+    "末尾记录数": 500
+  },
+  "Episode/EnergyConsumed": {
+    "总记录数": 28701,
+    "末尾窗口起点": 29501,
+    "末尾窗口终点": 30000,
+    "末尾记录数": 500
+  },
+  "数据来源": {
+    "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/events.out.tfevents.1791597457.gcykxjs-Server.165812.0": {
+      "字节数": 150769564,
+      "SHA256": "07e7f68f404bfd5a14060ece6b4cef25c39a771efc8d3514ef7368dd0a813f59"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "记录说明": "仓库默认主方法的本机仿真复现；尚未完成论文全量统计",
+  "项目路径": "/home/xy.chen/tw/LoComposition",
+  "仓库提交": "dd27a5a0e42ee0de9067ba09407d2a5afb08aeeb",
+  "仿真框架提交": "ddb044eb5b2300792de41e82d53b032f3632b489",
+  "解释器": "/home/xy.chen/tw/LoComposition/.venv/bin/python",
+  "版本": {
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.0",
+    "isaaclab": "0.54.3",
+    "isaaclab-assets": "0.2.4",
+    "isaaclab-tasks": "0.11.14",
+    "isaaclab-rl": "0.4.7",
+    "isaacsim": "5.1.0.0",
+    "pyzmq": "27.2.0"
+  },
+  "正式训练": {
+    "任务": "LoComposition-Go2-Rough-Terrain-Joint-State-History-v0",
+    "并行环境": 7500,
+    "迭代预算": 30000,
+    "随机种子": 46,
+    "物理GPU": 2,
+    "tmux会话": "gpt-locomposition-s46-gpu2",
+    "目录": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51",
+    "迁移记录": "gpt-GPU2迁移配置.json"
+  },
+  "修改范围": [
+    "日志避免导出所有环境变量",
+    "进度输出与最终模型保存",
+    "评估允许无视频和跳过绘图"
+  ],
+  "算法参数": "保持仓库默认值",
+  "已验证": [
+    "64环境3迭代训练退出码0",
+    "保存模型236维观测12维动作且参数有限",
+    "30步无视频评估退出码0并保存指标与数组",
+    "7500环境正式训练完成至少一次GPU优化更新，损失有限，地形哈希与作者校验值一致"
+  ],
+  "当前解释器": "/home/xy.chen/tw/LoComposition/.venv-v100/bin/python",
+  "当前PyTorch版本": "2.7.0+cu126"
+}

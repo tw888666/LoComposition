@@ -1,0 +1,59 @@
+[
+  {
+    "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-21349高台阶多种子-20261019/15厘米/种子40/录像/gpt-15厘米种子40-失败.mp4",
+    "核验": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 960,
+          "height": 540,
+          "nb_read_frames": "375"
+        }
+      ],
+      "format": {
+        "duration": "15.000000",
+        "size": "1276012"
+      }
+    },
+    "完整解码通过": true
+  },
+  {
+    "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-21349高台阶多种子-20261019/20厘米/种子40/录像/gpt-20厘米种子40-失败.mp4",
+    "核验": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 960,
+          "height": 540,
+          "nb_read_frames": "375"
+        }
+      ],
+      "format": {
+        "duration": "15.000000",
+        "size": "1449086"
+      }
+    },
+    "完整解码通过": true
+  },
+  {
+    "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-21349高台阶多种子-20261019/8.5厘米/种子40/录像/gpt-8.5厘米种子40-成功.mp4",
+    "核验": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 960,
+          "height": 540,
+          "nb_read_frames": "375"
+        }
+      ],
+      "format": {
+        "duration": "15.000000",
+        "size": "876404"
+      }
+    },
+    "完整解码通过": true
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "快照时间": "2026-10-26T13:47:56.410455+08:00",
+  "解释": "包含本次执行所依赖的已有本地修改及新增实现；不是全部由本任务新增。",
+  "仓库提交": "dd27a5a0e42ee0de9067ba09407d2a5afb08aeeb",
+  "Python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+  "PyTorch": "2.7.0+cu126",
+  "NumPy": "1.26.0",
+  "文件": [
+    {
+      "相对路径": "gpt-四组微调流水线.py",
+      "SHA256": "786fd1eb33681056196b7b3bcd28b27ddb2b2f9d78f8e27749cb04bf843be5de"
+    },
+    {
+      "相对路径": "gpt-四组微调评估.py",
+      "SHA256": "ab77858eaa85d165a65522f097d69c51e19f5d8b297fae4ef5e83cee51584af8"
+    },
+    {
+      "相对路径": "gpt-四组微调结果汇总.py",
+      "SHA256": "05ff0375f3fe4a9b12d85e645212fcef9262dee9373b97af79f5a0671802d679"
+    },
+    {
+      "相对路径": "gpt-四组微调对比视频.py",
+      "SHA256": "44f1e0598e56a4a19b5164d93bb57aa0653f85b312802d63f53beb60f6448c32"
+    },
+    {
+      "相对路径": "gpt-查看四组微调进度.py",
+      "SHA256": "4cfcb80d720fbc54b65559c568304fc4d73aff54b0e4ae8ece39c6d16674afe5"
+    },
+    {
+      "相对路径": "gpt-监控四组微调流水线.py",
+      "SHA256": "34c1aebca47890e60e38c620d1c9b7a11efce77a715d2887fbf843d78ba3d0a4"
+    },
+    {
+      "相对路径": "gpt-四组微调实验-20261026/gpt-计算微调参考尺度.py",
+      "SHA256": "f4051e4f0d5ee41b6e6df23a0d3a917a0b3b0ad8e8d9cb1b72183420cf7b7037"
+    },
+    {
+      "相对路径": "gpt-四组微调实验-20261026/gpt-固定参考尺度.json",
+      "SHA256": "1eff524dfafd80aee3866de8b1b65a41d425a6b5842a0454d1dc1d6605ef55a8"
+    },
+    {
+      "相对路径": "locomposition/scripts/clean_rl/train.py",
+      "SHA256": "57b86b1b2798617079bc5806c1e6bcbbeda6d388b8cf3299918415e634bbbc86"
+    },
+    {
+      "相对路径": "locomposition/scripts/clean_rl/cli_args.py",
+      "SHA256": "b9f04fc8ed59782659460592863feeb5b405a8944252768d3f3aa48f57808626"
+    },
+    {
+      "相对路径": "locomposition/scripts/eval.py",
+      "SHA256": "ee38ed513ef475885a7eb8195cb68f7aa23932fb9823ed781fccea750eacd71c"
+    },
+    {
+      "相对路径": "locomposition/exts/locomposition/locomposition/tasks/utils/cleanrl/ppo.py",
+      "SHA256": "22aac5a9adda92ebd12093e3dafc3bb0b90aa586fadbd17d6b367924f63119eb"
+    },
+    {
+      "相对路径": "locomposition/exts/locomposition/locomposition/tasks/utils/cleanrl/rl_cfg.py",
+      "SHA256": "bd2d149a1018c489840c4f38d5416d5676573c098ea25cc89ce1a4e6ab093bc1"
+    },
+    {
+      "相对路径": "locomposition/exts/locomposition/locomposition/tasks/utils/cleanrl/checkpoints.py",
+      "SHA256": "05144c64c5fac5abaebdd6da5dc0b09d5dd840e8e0beb9d31b883b3e6ddde063"
+    },
+    {
+      "相对路径": "locomposition/exts/locomposition/locomposition/tasks/utils/cleanrl/energy_finetune.py",
+      "SHA256": "168f7d33ec367e2ae4f81ff90e6b7f6162ba3d497305a8c35c66d93785a34caf"
+    },
+    {
+      "相对路径": "locomposition/exts/locomposition/locomposition/tasks/utils/mdp/rewards.py",
+      "SHA256": "03293c757059b2c4cc18da5a58b9a31b14549fa5427660e560fc909958fe6815"
+    },
+    {
+      "相对路径": "locomposition/exts/locomposition/locomposition/tasks/utils/cat/curriculums.py",
+      "SHA256": "496e402e19226e61457e232e64f56b10f1f16459b4dc2ebba5d7fed054979576"
+    },
+    {
+      "相对路径": "locomposition/exts/locomposition/locomposition/tasks/utils/cat/cat_env.py",
+      "SHA256": "3a51c536664c52ce82cb186613eb75cb573844261d025be334677162f7665511"
+    },
+    {
+      "相对路径": "locomposition/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/locomposition_go2_rough_terrain_env_cfg.py",
+      "SHA256": "5afa9a005c480bfa3d11ba7e2c23e1320eecc1d4cf49e0aa02a5ed838561242d"
+    },
+    {
+      "相对路径": "locomposition/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/agents/clean_rl_ppo_cfg.py",
+      "SHA256": "ae6805d51ea051ed7c7b485bf24eaaa35d273847189b5facd62b10c6dfdc0a2c"
+    }
+  ]
+}

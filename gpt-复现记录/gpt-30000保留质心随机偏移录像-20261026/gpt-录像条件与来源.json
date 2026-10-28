@@ -1,0 +1,23 @@
+{
+  "日期": "2026-10-26",
+  "模型": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_30000.pt",
+  "模型SHA256": "3cfa3b846a8bcb72ed20dbba9e06e94cbfa5800e88adccfae2534ff7e69cec94",
+  "评估种子": 46,
+  "控制周期秒": 0.02,
+  "质心设置": "保留默认机身三轴各±0.03米随机偏移，启动时采样；不逐帧重采样",
+  "评估": "四个录像场景各500步，合计2000控制步；原始相对顺序：楼梯、平地1.0、平地1.6、崎岖。跳过随机指令前缀。",
+  "录像": "平地1.0和1.6米/秒及半速回放；崎岖1米/秒及原始楼梯。",
+  "相对上一轮预期差异": "仅恢复默认质心偏移；稍后逐项核对实际环境配置",
+  "渲染": "真实物理轨迹独立回放，不进行额外物理积分",
+  "当前源码SHA256": {
+    "locomposition/scripts/eval.py": "ee38ed513ef475885a7eb8195cb68f7aa23932fb9823ed781fccea750eacd71c",
+    "locomposition/exts/locomposition/locomposition/tasks/utils/mdp/rewards.py": "03293c757059b2c4cc18da5a58b9a31b14549fa5427660e560fc909958fe6815"
+  },
+  "运行范围调整": "最初完整评估因共享显卡速度较慢而主动停止，日志和未完成目录保留；新录像只使用录像评估目录中的完整结果。",
+  "录像脚本SHA256": {
+    "gpt-30000保留质心录像后处理.py": "30524846a4b6f15c5d1902a00b95f9589a70c7dbeb1b2d7ed774c3cb45220b0f",
+    "gpt-30000保留质心评估.py": "9ac939658eb313398692fc94abdf9644cf92fa217a2a073eda9ece9a44162610",
+    "gpt-30000保留质心行走视频.py": "1af5150652d0989b3eea2452eafcfbd363627879b66cc317501adf119984edf6",
+    "gpt-30000保留质心崎岖楼梯视频.py": "530164c3755f1c684b10e7ff227283811716d9d9fb095657f7039cb9d425f59c"
+  }
+}

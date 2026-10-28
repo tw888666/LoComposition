@@ -1,0 +1,853 @@
+--- "gpt-\345\244\215\347\216\260\350\256\260\345\275\225/gpt-21349\345\216\206\345\217\262\351\205\215\347\275\256\346\240\270\346\237\245-20261019/gpt-\350\256\255\347\273\203\346\227\266\351\227\264\351\231\204\350\277\221-\347\216\257\345\242\203.txt"	2026-10-19 12:10:37.911090671 +0800
++++ locomposition/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/locomposition_go2_rough_terrain_env_cfg.py	2026-10-09 13:39:51.980778157 +0800
+@@ -22,83 +22,127 @@
+ from isaaclab.managers import ObservationTermCfg as ObsTerm
+ from isaaclab.managers import RewardTermCfg as RewTerm
+ import isaaclab.envs.mdp.curriculums as isaac_curriculums
+-from cat_envs.tasks.utils.cat.manager_constraint_cfg import (
++from locomposition.tasks.utils.cat.manager_constraint_cfg import (
+     ConstraintTermCfg as ConstraintTerm,
+ )
+ from isaaclab.managers import SceneEntityCfg
+ from isaaclab.managers import TerminationTermCfg as DoneTerm
+ from isaaclab.scene import InteractiveSceneCfg
+ from isaaclab.sensors import ContactSensorCfg
+-from isaaclab.terrains import TerrainImporterCfg
+-from isaaclab.terrains.terrain_generator_cfg import FlatPatchSamplingCfg
++from isaaclab.terrains import TerrainImporterCfg, FlatPatchSamplingCfg
+ from isaaclab.utils import configclass
+ from isaaclab.utils.assets import ISAAC_NUCLEUS_DIR, ISAACLAB_NUCLEUS_DIR
+ from isaaclab.utils.noise import AdditiveUniformNoiseCfg as Unoise
++from isaaclab.utils.noise import NoiseModelWithAdditiveBiasCfg, GaussianNoiseCfg, UniformNoiseCfg
+ from isaaclab.sensors.ray_caster import RayCasterCfg, patterns
+ from isaaclab.sensors.frame_transformer import FrameTransformerCfg
+ 
+ import isaaclab_tasks.manager_based.locomotion.velocity.mdp as mdp
+-import cat_envs.tasks.utils.cat.constraints as constraints
+-import cat_envs.tasks.utils.cat.curriculums as curriculums
+-import cat_envs.tasks.utils.mdp.observations as observations
+-
+-import cat_envs.tasks.utils.mdp.terminations as terminations
+-import cat_envs.tasks.utils.mdp.events as events
+-import cat_envs.tasks.utils.mdp.commands as commands
+-import cat_envs.tasks.utils.mdp.rewards as rewards
++import locomposition.tasks.utils.cat.constraints as constraints
++import locomposition.tasks.utils.cat.curriculums as curriculums
++import locomposition.tasks.utils.mdp.observations as observations
++
++import locomposition.tasks.utils.mdp.terminations as terminations
++import locomposition.tasks.utils.mdp.events as events
++import locomposition.tasks.utils.mdp.commands as commands
++import locomposition.tasks.utils.mdp.rewards as rewards
+ from functools import partial
+ print = partial(print, flush=True) # For cluster runs
+ 
+-from cat_envs.assets.odri import SOLO12_MINIMAL_CFG
++from locomposition.assets.odri import SOLO12_MINIMAL_CFG
+ from isaaclab.terrains.config.rough import ROUGH_TERRAINS_CFG  # isort: skip
+-from cat_envs.assets.go2_config import UNITREE_GO2_CFG_TRAIN, UNITREE_GO2_CFG_EVAL  # isort: skip
++from locomposition.assets.go2_config import UNITREE_GO2_CFG_TRAIN, UNITREE_GO2_CFG_EVAL  # isort: skip
+ import torch
+-import numpy as np
+-# Horrible practice to hard-code this in the env but I spent a week on trying to pass the values via hydra config or changing via train.py but it never worked.
+-# Right now the seed is configured here and then passed to train.py to set all the libraries
+-HARDCODED_SEED = 46
+-import random
+-random.seed(HARDCODED_SEED)
+-np.random.seed(HARDCODED_SEED)
+-torch.backends.cuda.matmul.allow_tf32 = False
+-torch.backends.cudnn.allow_tf32 = False
+-torch.backends.cudnn.deterministic = True
+-torch.use_deterministic_algorithms(True)
+-torch.backends.cudnn.benchmark = False
+-torch.manual_seed(HARDCODED_SEED)
+-torch.cuda.manual_seed_all(HARDCODED_SEED)
++
++def _get_or_create_noisy_height_markers(env):
++    """Create (once) a marker instancer used to visualize noisy ray hit heights."""
++    if hasattr(env, "_noisy_height_markers"):
++        return env._noisy_height_markers
++
++    import isaaclab.sim as sim_utils
++    from isaaclab.markers import VisualizationMarkers, VisualizationMarkersCfg
++
++    cfg = VisualizationMarkersCfg(
++        prim_path="/Visuals/NoisyRayCaster",
++        markers={
++            # green spheres
++            "noisy_hit": sim_utils.SphereCfg(
++                radius=0.02,
++                visual_material=sim_utils.PreviewSurfaceCfg(diffuse_color=(0.0, 1.0, 0.0)),
++            ),
++        },
++    )
++    env._noisy_height_markers = VisualizationMarkers(cfg)
++    env._noisy_height_markers.set_visibility(True)
++    return env._noisy_height_markers
+ 
+ def height_map_grid(env, asset_cfg: SceneEntityCfg):
+-    ray_hit_positions_world_frame = env.scene[asset_cfg.name].data.ray_hits_w # [E, R, 3]
+-    base_pose_world_frame = env.scene["robot"].data.root_pos_w # [E, 3]
++    ray_hit_positions_world_frame = env.scene[asset_cfg.name].data.ray_hits_w.clone() # [E, R, 3]
++    base_pose_world_frame = env.scene["robot"].data.root_pos_w.clone() # [E, 3]
+ 
+-    # 2) expand base_w so it lines up with hits_w
++    POSE_NOISE_MEAN = 0.0 # TODO: Resample per episode
++    POSE_NOISE_STD = 0.001 # TODO: Check if redundant since height map noise is the same or not?
++    if env.cfg.apply_elevation_map_pose_noise:
++        base_pose_world_frame += torch.randn(base_pose_world_frame.shape[0], 1, device=base_pose_world_frame.device) * POSE_NOISE_STD + POSE_NOISE_MEAN
+     base_expanded_to_match_shape_world_frame = base_pose_world_frame.view(-1, 1, 3).expand_as(ray_hit_positions_world_frame) # [E, R, 3]
+ 
+-    # 3) sanitize: any non‐finite entry → copy from base_expanded...
+-    #	this makes hit == base for that ray, so height=0
+     non_finite_mask = ~torch.isfinite(ray_hit_positions_world_frame)
+-    if non_finite_mask.any():
+-        # clone once so we don't overwrite the original tensor in the scene
+-        print("NANS OR INF DURING HEIGHT MAP CALCULATION!!!")
+-        hits_clean = ray_hit_positions_world_frame.clone()
+-        hits_clean[non_finite_mask] = base_expanded_to_match_shape_world_frame[non_finite_mask]
+-    else:
+-        hits_clean = ray_hit_positions_world_frame
++    hits_clean = torch.where(
++        non_finite_mask,
++        base_expanded_to_match_shape_world_frame,
++        ray_hit_positions_world_frame
++    )
+ 
+-    # 4) compute local coordinates, then the height = z_hit - z_base
+     local = hits_clean - base_expanded_to_match_shape_world_frame # [E, R, 3]
+     height = local[..., 2] # [E, R]
+-    #test_offset = torch.ones_like(height) * 0.03
+-    #height += test_offset
++
++    # height = torch.full_like(height, -base_pose_world_frame[0,2])
+     # height = torch.zeros_like(height)
+ 
++    # Per point outliers
++    OUTLIER_PROB = 0.01
++    OUTLIER_MEAN = 0.0
++    OUTLIER_STD = 0.05 # Large std dev for spikes
++    NOISE_MEAN = 0.0
++    NOISE_STD = 0.003
++
++    if env.cfg.apply_elevation_map_point_noise:
++        # Random single constant offset for *all* points
++        step_offset = torch.randn(height.shape[0], 1, device=height.device) * NOISE_STD + NOISE_MEAN
++        # Random noise for every point independently
++        pixel_noise = torch.randn_like(height) * NOISE_STD
++        height += pixel_noise + step_offset
++
++    # NOTE: XY noise (i.e. where each height is sampled from) is too difficult to implement in Isaac Lab efficiently because it requires re-casting rays or complex grid interpolation.
++    # Episodic Noise (Constant offset per episode)
++    if hasattr(env, "episodic_height_offset"):
++        # env.episodic_height_offset must be shape [E, 1] to broadcast over R
++        if env.cfg.apply_elevation_map_point_noise:
++            height += env.episodic_height_offset
++    else:
++        print("[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.")
++
++    # Per-point Outlier Noise (large bias, using a mask for which points become outliers)
++    outlier_mask = torch.rand_like(height) < OUTLIER_PROB
++    if outlier_mask.any():
++        outlier_values = torch.randn(outlier_mask.sum(), device=height.device) * OUTLIER_STD + OUTLIER_MEAN
++        if env.cfg.apply_elevation_map_point_noise:
++            height[outlier_mask] += outlier_values
++
++    if env.unwrapped.num_envs == 1 and False:
++        noisy_markers = _get_or_create_noisy_height_markers(env)
++        if noisy_markers is not None:
++            e = 0 # Show only env 0 to avoid rendering exploding if num_envs is large
++            noisy_hits_w = hits_clean[e].clone()  # [R, 3]
++            noisy_hits_w[:, 2] = base_pose_world_frame[e, 2] + height[e]  # z = base_z + noisy_height
++            noisy_markers.visualize(translations=noisy_hits_w)
++
+     return height
+ 
+ from copy import deepcopy
+-seeded_rough_cfg = deepcopy(ROUGH_TERRAINS_CFG)
+-seeded_rough_cfg.seed = HARDCODED_SEED
+-seeded_rough_cfg.use_cache = True
++
++rough_cfg = deepcopy(ROUGH_TERRAINS_CFG)
++rough_cfg.use_cache = True
+ patched_sub_terrains = {
+     name: sub_cfg.replace(
+         flat_patch_sampling={
+@@ -109,9 +153,9 @@
+             )
+         }
+     )
+-    for name, sub_cfg in seeded_rough_cfg.sub_terrains.items()
++    for name, sub_cfg in rough_cfg.sub_terrains.items()
+ }
+-seeded_rough_cfg.sub_terrains = patched_sub_terrains
++rough_cfg.sub_terrains = patched_sub_terrains
+ 
+ @configclass
+ class MySceneCfg(InteractiveSceneCfg):
+@@ -139,7 +183,7 @@
+     terrain = TerrainImporterCfg(
+         prim_path="/World/ground",
+         terrain_type="generator",
+-        terrain_generator=seeded_rough_cfg,
++        terrain_generator=rough_cfg,
+         max_init_terrain_level=1,
+         collision_group=-1,
+         physics_material=sim_utils.RigidBodyMaterialCfg(
+@@ -163,14 +207,15 @@
+     ray_caster = RayCasterCfg(
+         prim_path="{ENV_REGEX_NS}/Robot/base",
+         update_period=0.0,  # will override in __post_init__
+-        offset=RayCasterCfg.OffsetCfg(pos=(0.2, 0.0, 0.5)),  # 0.5 m above base
++        offset=RayCasterCfg.OffsetCfg(pos=(0.2, 0.0, 0.5)), # 0.5 m above base
+         mesh_prim_paths=["/World/ground"], # Rays will only collide with meshes specified here as they need to be copied over to the GPU for calculations
+-        attach_yaw_only=True,  # keep sensor level (no pitch/roll with body). This is a gross oversimplification but the original paper also used a grid of heights around the robot
++        ray_alignment="yaw", # keep sensor level (no pitch/roll with body). This is a gross oversimplification but the original paper also used a grid of heights around the robot
+         pattern_cfg=patterns.GridPatternCfg( # Grid pattern shoots down vertical rays to retrieve hight at each grid point. Needs adjustments to be more realistic, such as using e.g. LIDARConfig
+             size=[1, 0.8], # see Fig. 3 in paper for grid layout, I tried approximating it visually here
+             resolution=0.08,
+             ordering="xy" # default row-major
+         ),
++        ray_cast_drift_range={"x": (-0.01, 0.01), "y": (-0.01, 0.01), "z": (0.0, 0.0)},
+         debug_vis=True,
+     )
+ 
+@@ -181,7 +226,7 @@
+         update_period=0.0,  # will override in __post_init__
+         offset=RayCasterCfg.OffsetCfg(pos=(0, 0, 1)),  # 1 m above base
+         mesh_prim_paths=["/World/ground"], # Rays will only collide with meshes specified here as they need to be copied over to the GPU for calculations
+-        attach_yaw_only=True,
++        ray_alignment="yaw",
+         pattern_cfg=patterns.GridPatternCfg(resolution=1.0, size=(0.0, 0.0)),
+         debug_vis=True,
+     )
+@@ -197,7 +242,7 @@
+ 
+     def __post_init__(self):
+         super().__post_init__()
+-        
++
+ 
+ @configclass
+ class CommandsCfg:
+@@ -249,7 +294,7 @@
+     @configclass
+     class PolicyCfg(ObsGroup):
+         """Observations for policy group."""
+-        
++
+         # observation terms (order preserved)
+         base_ang_vel = ObsTerm(
+             func=mdp.base_ang_vel, noise=Unoise(n_min=-0.001, n_max=0.001), scale=0.25
+@@ -262,7 +307,7 @@
+         projected_gravity = ObsTerm(
+             func=mdp.projected_gravity, noise=Unoise(n_min=-0.05, n_max=0.05), scale=0.1
+         )
+-        joint_pos = ObsTerm(
++        joint_pos_history = ObsTerm(
+             func=observations.joint_pos,
+             params={
+                 "names": [
+@@ -283,7 +328,7 @@
+             noise=Unoise(n_min=-0.01, n_max=0.01),
+             scale=1.0,
+         )
+-        joint_vel = ObsTerm(
++        joint_vel_history = ObsTerm(
+             func=observations.joint_vel,
+             params={
+                 "names": [
+@@ -305,7 +350,7 @@
+             scale=0.05,
+         )
+         actions = ObsTerm(func=mdp.last_action, scale=1.0)
+-        
++
+         height_map = ObsTerm(
+             func=height_map_grid,
+             params={"asset_cfg": SceneEntityCfg("ray_caster")},
+@@ -325,7 +370,10 @@
+     @configclass
+     class PolicyCfg(ObsGroup):
+         base_ang_vel = ObsTerm(
+-            func=mdp.base_ang_vel, noise=Unoise(n_min=-0.001, n_max=0.001), scale=0.25
++            func=observations.base_ang_vel_history,
++            params={"history_len": 1, "latency": 0}, # LATENCY OVERWRITTEN BY eval.py ARGS
++            noise=Unoise(n_min=-0.001, n_max=0.001),
++            scale=0.25
+         )
+         velocity_commands = ObsTerm(
+             func=mdp.generated_commands,
+@@ -333,7 +381,10 @@
+             scale=(2.0, 2.0, 0.25),
+         )
+         projected_gravity = ObsTerm(
+-            func=mdp.projected_gravity, noise=Unoise(n_min=-0.05, n_max=0.05), scale=0.1
++            func=observations.projected_gravity_history,
++            params={"history_len": 1, "latency": 0}, # LATENCY OVERWRITTEN BY eval.py ARGS
++            noise=Unoise(n_min=-0.05, n_max=0.05),
++            scale=0.1
+         )
+         joint_pos_history = ObsTerm(
+             func=observations.joint_state_history,
+@@ -353,7 +404,8 @@
+                     "RR_calf_joint",
+                 ],
+                 "history_len": 3,
+-                "mode": "pos"
++                "mode": "pos",
++                "latency": 0
+             },
+             noise=Unoise(n_min=-0.01, n_max=0.01),
+             scale=1.0,
+@@ -376,16 +428,17 @@
+                     "RR_calf_joint",
+                 ],
+                 "history_len": 3,
+-                "mode": "vel"
++                "mode": "vel",
++                "latency": 0
+             },
+             noise=Unoise(n_min=-0.2, n_max=0.2),
+             scale=0.05,
+         )
+-        actions = ObsTerm(func=mdp.last_action, scale=1.0)
+-        
++        actions = ObsTerm(func=observations.actions_history, scale=1.0, params={"history_len": 1, "latency": 0}) # LATENCY OVERWRITTEN BY eval.py ARGS
++
+         height_map = ObsTerm(
+-            func=height_map_grid,
+-            params={"asset_cfg": SceneEntityCfg("ray_caster")},
++            func=observations.height_map_history,
++            params={"asset_cfg": SceneEntityCfg("ray_caster"), "history_len": 1, "latency": 0}, # LATENCY OVERWRITTEN BY eval.py ARGS
+             noise=Unoise(n_min=-0.01, n_max=0.01),
+             scale=1.0,
+         )
+@@ -397,93 +450,6 @@
+     # observation groups
+     policy: PolicyCfg = PolicyCfg()
+ 
+-@configclass
+-class ObservationsCfgFullStateHistory(ObservationsCfg): # Inherit but redefine all terms to ensure correct order
+-    @configclass
+-    class PolicyCfg(ObsGroup):
+-        """Observations for policy group."""
+-        # observation terms (order preserved)
+-        base_ang_vel_hist = ObsTerm(
+-            func=observations.base_ang_vel_history,
+-            params={"history_len": 3},
+-            noise=Unoise(n_min=-0.001, n_max=0.001),
+-            scale=0.25,
+-        )
+-        velocity_commands = ObsTerm(
+-            func=mdp.generated_commands,
+-            params={"command_name": "base_velocity"},
+-            scale=(2.0, 2.0, 0.25),
+-        )
+-        projected_gravity_hist = ObsTerm(
+-            func=observations.projected_gravity_history,
+-            params={"history_len": 3},
+-            noise=Unoise(n_min=-0.05, n_max=0.05),
+-            scale=0.1,
+-        ) 
+-        joint_pos_history = ObsTerm(
+-            func=observations.joint_state_history,
+-            params={
+-                "names": [
+-                    "FL_hip_joint",
+-                    "FR_hip_joint",
+-                    "RL_hip_joint",
+-                    "RR_hip_joint",
+-                    "FL_thigh_joint",
+-                    "FR_thigh_joint",
+-                    "RL_thigh_joint",
+-                    "RR_thigh_joint",
+-                    "FL_calf_joint",
+-                    "FR_calf_joint",
+-                    "RL_calf_joint",
+-                    "RR_calf_joint",
+-                ],
+-                "history_len": 3,
+-                "mode": "pos"
+-            },
+-            noise=Unoise(n_min=-0.01, n_max=0.01),
+-            scale=1.0,
+-        )
+-        joint_vel_history = ObsTerm(
+-            func=observations.joint_state_history,
+-            params={
+-                "names": [
+-                    "FL_hip_joint",
+-                    "FR_hip_joint",
+-                    "RL_hip_joint",
+-                    "RR_hip_joint",
+-                    "FL_thigh_joint",
+-                    "FR_thigh_joint",
+-                    "RL_thigh_joint",
+-                    "RR_thigh_joint",
+-                    "FL_calf_joint",
+-                    "FR_calf_joint",
+-                    "RL_calf_joint",
+-                    "RR_calf_joint",
+-                ],
+-                "history_len": 3,
+-                "mode": "vel"
+-            },
+-            noise=Unoise(n_min=-0.2, n_max=0.2),
+-            scale=0.05,
+-        )
+-        actions_hist = ObsTerm(
+-            func=observations.actions_history,
+-            params={"history_len": 3},
+-            scale=1.0,
+-        ) 
+-        height_map_hist = ObsTerm(
+-            func=observations.height_map_history,
+-            params={"history_len": 3, "asset_cfg": SceneEntityCfg("ray_caster")},
+-            noise=Unoise(n_min=-0.01, n_max=0.01),
+-            scale=1.0,
+-        )    
+-    
+-        def __post_init__(self):
+-            self.enable_corruption = True
+-            self.concatenate_terms = True
+-
+-    # observation groups
+-    policy: PolicyCfg = PolicyCfg()
+ 
+ def force_hard_terrain(env, env_ids: torch.Tensor | None):
+     ti = env.scene.terrain  # runtime TerrainImporter
+@@ -525,6 +491,34 @@
+         },
+     )
+ 
++    # Randomize base link CoM by independently shifting x/y/z by up to 3cm
++    randomize_com = EventTerm(
++        func=mdp.randomize_rigid_body_com,
++        mode="startup",
++        params={
++            "asset_cfg": SceneEntityCfg("robot", body_names=["base"]),
++            "com_range": {
++                "x": (-0.03, 0.03),
++                "y": (-0.03, 0.03),
++                "z": (-0.03, 0.03),
++            },
++        },
++    )
++
++    # Randomize base link mass by adding a uniform random delta
++    randomize_mass = EventTerm(
++        func=mdp.randomize_rigid_body_mass,
++        mode="startup",
++        params={
++            "asset_cfg": SceneEntityCfg("robot", body_names=["base"]),
++            "mass_distribution_params": (-1.5, 1.5),
++            "operation": "add",
++            "distribution": "uniform",
++            "recompute_inertia": True,
++        },
++    )
++
++
+     reset_base = EventTerm(
+         func=mdp.reset_root_state_from_terrain,
+         mode="reset",
+@@ -532,7 +526,7 @@
+             "pose_range": {
+                 "x": (-0.05, 0.05),
+                 "y": (-0.05, 0.05),
+-                "yaw": (-1.57, 1.57),
++                "yaw": (-3.14159, 3.14159),
+             },
+             "velocity_range": {
+                 "x": (-0.0, 0.0),
+@@ -575,16 +569,49 @@
+     )
+ 
+     # set pushing every step, as only some of the environments are chosen as in the isaacgym cat version
+-    # push_robot = EventTerm(
+-    #     # Standard push_by_setting_velocity also works, but interestingly results
+-    #     # in a different gait
+-    #     func=events.push_by_setting_velocity_with_random_envs,
++    push_robot = EventTerm(
++        func=events.push_by_setting_velocity_with_random_envs,
++        mode="interval",
++        is_global_time=True,
++        interval_range_s=(0.0, 0.005),
++        params={"velocity_range": {"x": (-0.5, 0.5), "y": (-0.5, 0.5)}},
++    )
++
++    # Slight tugging / pushing for longer durations
++    push_base_wrench = EventTerm(
++        func=mdp.apply_external_force_torque,
++        mode="interval",
++        is_global_time=False, # Don't apply in sync across all envs
++        interval_range_s=(0.05, 0.1), # frequency + implicit "hold" time
++        params={
++            "asset_cfg": SceneEntityCfg("robot", body_names=["base"]),
++            "force_range": (-10.0, 10.0),
++            "torque_range": (-0.5, 0.5),
++        },
++    )
++
++    # Strong shorter pushes
++    # strong_push_base_wrench = EventTerm(
++    #     func=mdp.apply_external_force_torque,
+     #     mode="interval",
+-    #     is_global_time=True,
+-    #     interval_range_s=(0.0, 0.005),
+-    #     params={"velocity_range": {"x": (-0.5, 0.5), "y": (-0.5, 0.5)}},
++    #     is_global_time=False, # Don't apply in sync across all envs
++    #     interval_range_s=(0.02, 0.05), # frequency + implicit "hold" time
++    #     params={
++    #         "asset_cfg": SceneEntityCfg("robot", body_names=["base"]),
++    #         "force_range": (-30.0, 30.0),
++    #         "torque_range": (-1.5, 1.5),
++    #     },
+     # )
+ 
++    episodic_height_offset = EventTerm(
++        func=events.sample_episodic_height_offset,
++        mode="reset",
++        params={
++            "mean": 0.0,
++            "std": 0.01,
++        },
++    )
++
+ 
+ @configclass
+ class RewardsCfg:
+@@ -607,7 +634,7 @@
+     minimize_power = RewTerm(
+         func=rewards.joint_power,
+         weight=0.0, # Updated by curriculum
+-        params={"scaling_factor": 0.02} # May be updated in ppo.py, check carefully!
++        params={"scaling_factor": 1.0 } # Set to 1.0 in ppo.py anyway
+     )
+ 
+ # Never forget to also add a curriculum term for each added constraint
+@@ -638,9 +665,13 @@
+         max_p=0.25, # Overwritten by curriculum!
+         params={"limit": 80.0, "names": [".*_hip_joint", ".*_thigh_joint", ".*_calf_joint"]},
+     )
++    base_orientation = ConstraintTerm(
++        func=constraints.base_orientation,
++        max_p=0.25,
++        params={"limit": 0.1}
++    )
+ 
+-    # Safety Hard constraints
+-    # Knee and base
++    # Safety Hard constraints. Note that these are equivalent to episode reset / termination, so they should ideally be formulated as reset events
+     contact = ConstraintTerm(
+         func=constraints.contact,
+         max_p=1.0,
+@@ -657,25 +688,24 @@
+         params={"limit": 1.5, "names": ["FL_thigh_joint", "FR_thigh_joint", "RL_thigh_joint", "RR_thigh_joint"]},
+     )
+     upsidedown = ConstraintTerm(
+-        func=constraints.upsidedown, max_p=1.0, params={"limit": 0.0}
++        func=constraints.upsidedown,
++        max_p=1.0,
++        params={"limit": 0.0}
+     )
+-
+-    # Style constraints
++    # NOT needed after adding energy minimization, only kept for backwards compat in code
+     hip_position = ConstraintTerm(
+         func=constraints.relative_joint_position_upper_and_lower_bound_when_moving_forward,
+         max_p=0.25, # Overwritten by curriculum!
+         params={"limit": 0.3, "names": [".*_hip_joint"], "velocity_deadzone": 0.1},
+     )
+-    base_orientation = ConstraintTerm(
+-        func=constraints.base_orientation, max_p=0.25, params={"limit": 0.1}
+-    )
++
+     # Never forget to also add a curriculum term for each added constraint
+     # min_relative_base_height = ConstraintTerm(func=constraints.min_base_height_relative_to_ground, max_p=0.25, params={"limit": 0.2})
+     '''
+     air_time_lower_bound = ConstraintTerm(
+         func=constraints.air_time_lower_bound,
+         max_p=0.25, # Overwritten by curriculum!
+-        params={"limit": 0.1, "names": [".*_foot"], "velocity_deadzone": 0.1},
++        params={"limit": 0.25, "names": [".*_foot"], "velocity_deadzone": 0.1},
+     )
+     air_time_upper_bound = ConstraintTerm(
+         func=constraints.air_time_upper_bound,
+@@ -683,6 +713,8 @@
+         params={"limit": 0.8, "names": [".*_foot"], "velocity_deadzone": 0.1},
+     )
+     '''
++
++    # Irrelevant for gait, just added for troubleshooting on real robot when standing
+     no_move = ConstraintTerm(
+         func=constraints.no_move,
+         max_p=0.1, # Overwritten by curriculum!
+@@ -692,6 +724,7 @@
+             "joint_vel_limit": 4.0,
+         },
+     )
++
+     '''
+     two_foot_contact = ConstraintTerm(
+         func=constraints.n_foot_contact,
+@@ -731,7 +764,7 @@
+     levels = mdp.terrain_levels_vel(env, env_ids)
+     env.scene["ray_caster"]._initialize_warp_meshes()
+     env.scene["ray_caster_height_constraints"]._initialize_warp_meshes()
+-    
++
+     return levels
+ 
+ MAX_CURRICULUM_ITERATIONS = 5000
+@@ -817,19 +850,52 @@
+     )
+     '''
+ 
+-    # power = CurrTerm(
+-    #     func=curriculums.update_reward_weight_linear,
+-    #     params={
+-    #         "term_name": "minimize_power",
+-    #         "num_steps_from_start_step": 3000,
+-    #         "start_at_step": 15000 * 10,
+-    #         "start_weight": 0.0,
+-    #         "end_weight": 0.4
+-    #     }
+-    # )
++    power = CurrTerm(
++        func=curriculums.update_reward_weight_linear,
++        params={
++            "term_name": "minimize_power",
++            "num_steps_from_start_step": 300000,
++            "start_at_step": 0,
++            "start_weight": 0.0,
++            "end_weight": 0.4 * 0.02 # Instead of setting scaling_factor=0.02 because ppo.py overrides it
++
++        }
++    )
++
++    terrain_levels = CurrTerm(func=mdp.terrain_levels_vel)
++
++def enable_biased_gaussian_noise(env_cfg):
++    # In Isaac Lab, NoiseModelWithAdditiveBias.reset() updates the stored bias by applying
++    # bias_noise_cfg to the current bias value rather than creating a fresh one from scratch. Because
++    # UniformNoiseCfg and GaussianNoiseCfg default to operation="add", omitting the operation makes the
++    # bias accumulate across resets (a random walk) instead of being independently resampled each episode.
++    env_cfg.observations.policy.base_ang_vel.noise = NoiseModelWithAdditiveBiasCfg(
++                noise_cfg=GaussianNoiseCfg(mean=0.0, std=0.001),
++                bias_noise_cfg=UniformNoiseCfg(n_min=-0.002, n_max=0.002),
++                operation="abs"
++            )
++    env_cfg.observations.policy.projected_gravity.noise = NoiseModelWithAdditiveBiasCfg(
++                noise_cfg=GaussianNoiseCfg(mean=0.0, std=0.03),
++                bias_noise_cfg=UniformNoiseCfg(n_min=-0.01, n_max=0.01),
++                operation="abs"
++            )
++    env_cfg.observations.policy.joint_pos_history.noise = NoiseModelWithAdditiveBiasCfg(
++                noise_cfg=GaussianNoiseCfg(mean=0.0, std=0.007),
++                bias_noise_cfg=UniformNoiseCfg(n_min=-0.003, n_max=0.003),
++                operation="abs"
++            )
++    env_cfg.observations.policy.joint_vel_history.noise = NoiseModelWithAdditiveBiasCfg(
++                noise_cfg=GaussianNoiseCfg(mean=0.0, std=0.12),
++                bias_noise_cfg=UniformNoiseCfg(n_min=-0.05, n_max=0.05),
++                operation="abs"
++            )
++    env_cfg.observations.policy.height_map.noise = NoiseModelWithAdditiveBiasCfg(
++                # Currently modeling noise in height_map_grid function to better be able to control it, that's why its so low here
++                noise_cfg=GaussianNoiseCfg(mean=0.0, std=0.00005),
++                bias_noise_cfg=UniformNoiseCfg(n_min=-0.001, n_max=0.001),
++                operation="abs"
++            )
+ 
+-    terrain_levels = CurrTerm(func=terrain_levels_with_ray_caster_refresh)
+-    # terrain_levels = CurrTerm(func=mdp.terrain_levels_vel)
+ 
+ @configclass
+ class Go2RoughTerrainEnvCfg(ManagerBasedRLEnvCfg):
+@@ -859,14 +925,11 @@
+         self.sim.solver_type = 0
+         self.sim.dt = 0.005
+         self.sim.render_interval = self.decimation
+-        self.sim.max_position_iteration_count = 4
+-        self.sim.max_velocity_iteration_count = 1
++        self.sim.max_position_iteration_count = 24
++        self.sim.max_velocity_iteration_count = 6
+         self.sim.bounce_threshold_velocity = 0.2
+         self.sim.gpu_max_rigid_contact_count = 33554432
+-        # self.sim.device = "cpu"
+-        # self.sim.physx.use_gpu = False
+-        # self.sim.solver_type = 1
+-        # self.sim.num_threads = 1
++        self.sim.physx.gpu_max_rigid_patch_count = 568462
+         self.sim.physx.enable_enhanced_determinism = True
+         self.sim.physics_material = self.scene.terrain.physics_material
+ 
+@@ -877,32 +940,52 @@
+         self.scene.ray_caster.update_period = self.sim.dt
+         self.scene.ray_caster_height_constraints.update_period = self.sim.dt
+ 
+-        # check if terrain levels curriculum is enabled - if so, enable curriculum for terrain generator
+-        # this generates terrains with increasing difficulty and is useful for training
+         if getattr(self.curriculum, "terrain_levels", None) is not None:
+-            mdp.terrain_levels_vel.seed = HARDCODED_SEED
+             if self.scene.terrain.terrain_generator is not None:
+                 self.scene.terrain.terrain_generator.curriculum = True
+         else:
+             if self.scene.terrain.terrain_generator is not None:
+                 self.scene.terrain.terrain_generator.curriculum = False
+ 
+-        print("Setting seed to", HARDCODED_SEED)
+-        self.sim.random_seed = HARDCODED_SEED
+-        self.seed = HARDCODED_SEED
+-        if self.scene.terrain.terrain_generator is not None:
+-            self.scene.terrain.terrain_generator.seed = HARDCODED_SEED
+-            print(f"Terrain generator seed in env post init={self.scene.terrain.terrain_generator.seed}")
++        self.apply_elevation_map_pose_noise = True
++        self.apply_elevation_map_point_noise = False
+ 
+-        self.sim.physx.gpu_max_rigid_patch_count = 568462
++        # Uncomment to enable biased gaussian noise instead of uniform noise on observations.
++        # If enabled in train cfg, it is automatically also enabled in eval!
++        # enable_biased_gaussian_noise(self)
+ 
+ @configclass
+ class Go2RoughTerrainEnvCfgJointStateHistory(Go2RoughTerrainEnvCfg):
+     observations: ObservationsCfgJointStateHistory = ObservationsCfgJointStateHistory()
+ 
+-@configclass
+-class Go2RoughTerrainEnvCfgFullStateHistory(Go2RoughTerrainEnvCfg):
+-    observations: ObservationsCfgFullStateHistory = ObservationsCfgFullStateHistory()
++# This is needed because simply changing default joint pos in go2_config.py will cause action space to be different
++# from training, as Isaac Lab uses those values for applying actions. So we simply override the reset event to adjust the joint positions
++def reset_joints_to_eval_pose(env, env_ids, asset_cfg=SceneEntityCfg("robot")):
++    asset: Articulation = env.scene[asset_cfg.name]
++
++    # Start from defaults, then overwrite specific joints
++    joint_pos = asset.data.default_joint_pos[env_ids].clone()
++    joint_vel = asset.data.default_joint_vel[env_ids].clone()
++
++    name_to_id = {n: i for i, n in enumerate(asset.data.joint_names)}
++
++    joint_pos[:, name_to_id["FL_thigh_joint"]] = 1.1
++    joint_pos[:, name_to_id["FR_thigh_joint"]] = 1.1
++    joint_pos[:, name_to_id["RL_thigh_joint"]] = 1.1
++    joint_pos[:, name_to_id["RR_thigh_joint"]] = 1.1
++
++    joint_pos[:, name_to_id["FL_hip_joint"]] = 0.0
++    joint_pos[:, name_to_id["FR_hip_joint"]] = 0.0
++    joint_pos[:, name_to_id["RL_hip_joint"]] = 0.0
++    joint_pos[:, name_to_id["RR_hip_joint"]] = 0.0
++
++    joint_pos[:, name_to_id["FL_calf_joint"]] = -1.8
++    joint_pos[:, name_to_id["FR_calf_joint"]] = -1.8
++    joint_pos[:, name_to_id["RL_calf_joint"]] = -1.8
++    joint_pos[:, name_to_id["RR_calf_joint"]] = -1.8
++
++    asset.write_joint_state_to_sim(joint_pos, joint_vel, env_ids=env_ids)
++    asset.reset(env_ids)
+ 
+ class Go2RoughTerrainEnvCfg_PLAY(Go2RoughTerrainEnvCfg):
+     def __post_init__(self) -> None:
+@@ -912,28 +995,50 @@
+         # make a smaller scene for play
+         self.scene.num_envs = 1
+         self.scene.env_spacing = 8
+-    
++
++        # Enable realistic gaussian noise during eval
++        self.apply_elevation_map_point_noise = False
++
+         # Original torque limit as specified in isaac lab example config
+         self.scene.robot = UNITREE_GO2_CFG_EVAL.replace(prim_path="{ENV_REGEX_NS}/Robot")
+ 
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
++        self.observations.policy.enable_corruption = True
+ 
+         # Pick the hardest terrain when testing the model.
+-        # Technically, this is incorrect as it wlil only run after 
++        # Technically, this is incorrect as it wlil only run after
+         # the first reset but it's good to see a baseline of it walking on flat terrain first
+         self.events.force_hard_terrain = EventTerm(
+             func=force_hard_terrain,
+             mode="startup",  # runs once at environment startup
+         )
+ 
++        self.events.reset_robot_joints = EventTerm(
++            func=reset_joints_to_eval_pose,
++            mode="reset",
++        )
++
++        self.events.push_robot = None
++        self.events.push_base_wrench = None
++
++        ENABLE_EXTRA_MASS = False
++        if ENABLE_EXTRA_MASS:
++            self.events.add_extra_mass = EventTerm(
++                func=mdp.randomize_rigid_body_mass,
++                mode="startup",
++                params={
++                    "asset_cfg": SceneEntityCfg("robot", body_names=["base"]),
++                    "mass_distribution_params": (2.0, 2.0),
++                    "operation": "add",
++                },
++            )
++
+         # Used to get foot height above terrain ("sole frame")
+         self.scene.ray_caster_FL_foot = RayCasterCfg(
+             prim_path="{ENV_REGEX_NS}/Robot/FL_foot",
+             update_period=self.sim.dt,
+             offset=RayCasterCfg.OffsetCfg(pos=(0, 0, 1)), # Starting point 1m above base, doesn't really matter
+             mesh_prim_paths=["/World/ground"], # Rays will only collide with meshes specified here as they need to be copied over to the GPU for calculations
+-            attach_yaw_only=True,
++            ray_alignment="yaw",
+             pattern_cfg=patterns.GridPatternCfg(resolution=1.0, size=(0.0, 0.0)),
+             debug_vis=True,
+         )
+@@ -942,7 +1047,7 @@
+             update_period=self.sim.dt,
+             offset=RayCasterCfg.OffsetCfg(pos=(0, 0, 1)), # Starting point 1m above base, doesn't really matter
+             mesh_prim_paths=["/World/ground"], # Rays will only collide with meshes specified here as they need to be copied over to the GPU for calculations
+-            attach_yaw_only=True,
++            ray_alignment="yaw",
+             pattern_cfg=patterns.GridPatternCfg(resolution=1.0, size=(0.0, 0.0)),
+             debug_vis=True,
+         )
+@@ -951,7 +1056,7 @@
+             update_period=self.sim.dt,
+             offset=RayCasterCfg.OffsetCfg(pos=(0, 0, 1)), # Starting point 1m above base, doesn't really matter
+             mesh_prim_paths=["/World/ground"], # Rays will only collide with meshes specified here as they need to be copied over to the GPU for calculations
+-            attach_yaw_only=True,
++            ray_alignment="yaw",
+             pattern_cfg=patterns.GridPatternCfg(resolution=1.0, size=(0.0, 0.0)),
+             debug_vis=True,
+         )
+@@ -960,7 +1065,7 @@
+             update_period=self.sim.dt,
+             offset=RayCasterCfg.OffsetCfg(pos=(0, 0, 1)), # Starting point 1m above base, doesn't really matter
+             mesh_prim_paths=["/World/ground"], # Rays will only collide with meshes specified here as they need to be copied over to the GPU for calculations
+-            attach_yaw_only=True,
++            ray_alignment="yaw",
+             pattern_cfg=patterns.GridPatternCfg(resolution=1.0, size=(0.0, 0.0)),
+             debug_vis=True,
+         )
+@@ -999,11 +1104,12 @@
+             if isinstance(term, CurrTerm) and term.params.get("term_name") == "minimize_power":
+                 setattr(self.curriculum, field_name, None)
+ 
++        # Uncomment to enable biased gaussian noise instead of uniform noise on observations.
++        # If enabled in train cfg, it is automatically also enabled in eval!
++        # IMPORTANT: As enable_corruption = False, NO noise will be applied during eval anyway!
++        # enable_biased_gaussian_noise(self)
++
++
+ @configclass
+ class Go2RoughTerrainEnvCfgJointStateHistory_PLAY(Go2RoughTerrainEnvCfg_PLAY):
+     observations: ObservationsCfgJointStateHistory = ObservationsCfgJointStateHistory()
+-
+-@configclass
+-class Go2RoughTerrainEnvCfgFullStateHistory_PLAY(Go2RoughTerrainEnvCfg_PLAY):
+-    observations: ObservationsCfgFullStateHistory = ObservationsCfgFullStateHistory()
+-

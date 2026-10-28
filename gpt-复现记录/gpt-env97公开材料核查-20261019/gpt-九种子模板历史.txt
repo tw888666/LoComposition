@@ -1,0 +1,2 @@
+25408359f83f4de19a5408d003b36c53fd2c47cd 2026-08-12T16:45:50+02:00 Add safe LoComposition Slurm training template
+60bbb40a4d1212ebd500556c72dea3122f791775 2026-08-20T17:18:44+02:00 Export envvars for training script

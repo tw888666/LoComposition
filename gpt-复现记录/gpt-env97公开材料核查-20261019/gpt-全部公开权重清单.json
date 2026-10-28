@@ -1,0 +1,56 @@
+[
+  {
+    "路径": "sim2real/traced_checkpoints/2025-06-22-08-06-02_6299_traced_deterministic.pt",
+    "本地存在": true,
+    "SHA256": "dd0e098e25911d8a23e7f1615fdf3e3bf683de9eb6491bddd8e8f0f08843cc3d",
+    "字节数": 1070412,
+    "首次加入记录": "2d1daaefb4775f935155f297b0d0ccfb948afabc 2025-06-28T16:54:05+02:00 Test policy inference in C++",
+    "公开文件URL": "https://github.com/LouKordos/locomposition/blob/b1149c8074f7df84450fe67649ee5e14dc971042/sim2real/traced_checkpoints/2025-06-22-08-06-02_6299_traced_deterministic.pt",
+    "env97身份": "未发现对应证据；文件名训练时间均为2025年"
+  },
+  {
+    "路径": "sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt",
+    "本地存在": true,
+    "SHA256": "ac81a9195f4c55461c8bcb4b6ccfc61f7d6cdc509176f64421110875d7efcfac",
+    "字节数": 1169136,
+    "首次加入记录": "fb5cd5282f1c024b63b154d2c8ca556b3c53a395 2025-07-08T20:53:02+02:00 Add option to choose between joint state history vs no state history",
+    "公开文件URL": "https://github.com/LouKordos/locomposition/blob/b1149c8074f7df84450fe67649ee5e14dc971042/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt",
+    "env97身份": "未发现对应证据；文件名训练时间均为2025年"
+  },
+  {
+    "路径": "sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt",
+    "本地存在": true,
+    "SHA256": "9bc43aa1f09669e5f9debe0491978ae1c465a8ad16061921df00d0849b0cc6a7",
+    "字节数": 1169036,
+    "首次加入记录": "2ce22fc5cb5a350a9295395953c44c9241f1fe22 2026-04-11T15:35:08+02:00 Add checkpoint before energy minimization",
+    "公开文件URL": "https://github.com/LouKordos/locomposition/blob/b1149c8074f7df84450fe67649ee5e14dc971042/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt",
+    "env97身份": "未发现对应证据；文件名训练时间均为2025年"
+  },
+  {
+    "路径": "sim2real/traced_checkpoints/2025-12-28-14-47-57_29499_traced_deterministic.pt",
+    "本地存在": true,
+    "SHA256": "5cccb7b8798200fe7a069db46c315b6c815d8479f35e76608d35d9a6b2f6ea74",
+    "字节数": 1169136,
+    "首次加入记录": "58ac9b17ae4d09b7bef47b548357f28bab85092b 2026-01-17T18:59:23+01:00 Add env_id_80 and env_id_79 checkpoints for delay and blind policy troubleshooting",
+    "公开文件URL": "https://github.com/LouKordos/locomposition/blob/b1149c8074f7df84450fe67649ee5e14dc971042/sim2real/traced_checkpoints/2025-12-28-14-47-57_29499_traced_deterministic.pt",
+    "env97身份": "未发现对应证据；文件名训练时间均为2025年"
+  },
+  {
+    "路径": "sim2real/traced_checkpoints/2025-12-28-14-58-57_29649_traced_deterministic.pt",
+    "本地存在": true,
+    "SHA256": "3306dcfbc34f71e15743e3aa0fe69fb48417e37d3dcf0d7e7fac0a57feaf3e4e",
+    "字节数": 1169136,
+    "首次加入记录": "58ac9b17ae4d09b7bef47b548357f28bab85092b 2026-01-17T18:59:23+01:00 Add env_id_80 and env_id_79 checkpoints for delay and blind policy troubleshooting",
+    "公开文件URL": "https://github.com/LouKordos/locomposition/blob/b1149c8074f7df84450fe67649ee5e14dc971042/sim2real/traced_checkpoints/2025-12-28-14-58-57_29649_traced_deterministic.pt",
+    "env97身份": "未发现对应证据；文件名训练时间均为2025年"
+  },
+  {
+    "路径": "sim2real/traced_checkpoints/2025-12-28-15-28-51_19499_traced_deterministic.pt",
+    "本地存在": true,
+    "SHA256": "8ca8a4f91f3ec3560468ab40575611ed02f7ab5125c7616e82e21c1398968005",
+    "字节数": 1169136,
+    "首次加入记录": "58ac9b17ae4d09b7bef47b548357f28bab85092b 2026-01-17T18:59:23+01:00 Add env_id_80 and env_id_79 checkpoints for delay and blind policy troubleshooting",
+    "公开文件URL": "https://github.com/LouKordos/locomposition/blob/b1149c8074f7df84450fe67649ee5e14dc971042/sim2real/traced_checkpoints/2025-12-28-15-28-51_19499_traced_deterministic.pt",
+    "env97身份": "未发现对应证据；文件名训练时间均为2025年"
+  }
+]

@@ -1,0 +1,110 @@
+{
+  "核验时间": "2026-10-26T13:41:45.026986+08:00",
+  "正式四组均真实启动并优化": true,
+  "配置差异仅符合预定实验变量": true,
+  "逐组": [
+    {
+      "组别": "A",
+      "模型目录": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-energy-finetune-A-seed46-20261026/2026-10-26-13-39-14",
+      "初始加载逐键相等": true,
+      "首轮模型全部有限": true,
+      "首轮更新键数": 23,
+      "实际能耗权重": 0.008,
+      "实际损耗比例": 0.0,
+      "学习率": 3e-05
+    },
+    {
+      "组别": "B",
+      "模型目录": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-energy-finetune-B-seed46-20261026/2026-10-26-13-39-14",
+      "初始加载逐键相等": true,
+      "首轮模型全部有限": true,
+      "首轮更新键数": 23,
+      "实际能耗权重": 0.012,
+      "实际损耗比例": 0.0,
+      "学习率": 3e-05
+    },
+    {
+      "组别": "C",
+      "模型目录": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-energy-finetune-C-seed46-20261026/2026-10-26-13-39-14",
+      "初始加载逐键相等": true,
+      "首轮模型全部有限": true,
+      "首轮更新键数": 23,
+      "实际能耗权重": 0.008,
+      "实际损耗比例": 0.1,
+      "学习率": 3e-05
+    },
+    {
+      "组别": "D",
+      "模型目录": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-energy-finetune-D-seed46-20261026/2026-10-26-13-39-14",
+      "初始加载逐键相等": true,
+      "首轮模型全部有限": true,
+      "首轮更新键数": 23,
+      "实际能耗权重": 0.008,
+      "实际损耗比例": 0.3,
+      "学习率": 3e-05
+    }
+  ],
+  "差异明细": [
+    {
+      "对比": "A-B",
+      "环境差异": [
+        [
+          ".rewards.minimize_power.weight",
+          "0.008",
+          "0.012"
+        ],
+        [
+          ".curriculum.power.params.start_weight",
+          "0.008",
+          "0.012"
+        ],
+        [
+          ".curriculum.power.params.end_weight",
+          "0.008",
+          "0.012"
+        ]
+      ],
+      "算法差异": [
+        [
+          ".experiment_name",
+          "gpt-energy-finetune-A-seed46-20261026",
+          "gpt-energy-finetune-B-seed46-20261026"
+        ]
+      ]
+    },
+    {
+      "对比": "A-C",
+      "环境差异": [
+        [
+          ".rewards.minimize_power.params.mix_alpha",
+          "0.0",
+          "0.1"
+        ]
+      ],
+      "算法差异": [
+        [
+          ".experiment_name",
+          "gpt-energy-finetune-A-seed46-20261026",
+          "gpt-energy-finetune-C-seed46-20261026"
+        ]
+      ]
+    },
+    {
+      "对比": "A-D",
+      "环境差异": [
+        [
+          ".rewards.minimize_power.params.mix_alpha",
+          "0.0",
+          "0.3"
+        ]
+      ],
+      "算法差异": [
+        [
+          ".experiment_name",
+          "gpt-energy-finetune-A-seed46-20261026",
+          "gpt-energy-finetune-D-seed46-20261026"
+        ]
+      ]
+    }
+  ]
+}

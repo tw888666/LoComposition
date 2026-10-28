@@ -1,0 +1,44 @@
+0f7e684b5e3a97196c7309e7a39570643d7207f0 2026-08-12T08:41:52+02:00 Refine README links and release checklist
+cf4d8196babe84ec9157a0ed7bf3052a6cd2fd3c 2026-08-07T12:41:38+02:00 Log reward constraint curriculum weights
+b03e2575fd5cde45e78e673c26617c0b268986be 2026-07-29T10:03:19+02:00 Reduce energy weight to match go2 reward magnitude
+4bcc73b17e0e8945be00fcfd88e2aa802e4b51d0 2026-05-29T23:02:17+02:00 Pass seed to train script
+13862a122af9c176ceebcc0dc1844e295a84b733 2026-05-29T22:30:34+02:00 Adjust seeding
+e2f7200a46be231108b8d3359e22386dc61174f0 2026-04-19T19:25:49+02:00 Explain concurrency model further
+48867563adbc8efc25e815b85f91b528fc492971 2026-04-19T19:24:24+02:00 Add disclaimer about concurrency model
+8a72ade79d79336f106fcfedbbcd9fece902af76 2026-04-16T18:39:51+02:00 Move checkpoint_path to params for clean initialization during construction
+f16a2bc9f0338e5c3d5c2308ccdfb22a4b35b006 2026-04-16T18:13:11+02:00 Remove checkpoint hardcoded elevation check logic
+5046b1aa9d808194cdde6f1eb8e96b4ac9ec5e7a 2026-04-16T17:24:35+02:00 [WIP] Extract inference into class for separation from node
+54fce6ff6e0eca8a31bc74dd53744ec38ce5879d 2026-04-15T14:30:04+02:00 Make list of checkpoints const
+eb4d655fa0c11cee2574452bfe3467fda818763a 2026-04-15T14:25:06+02:00 Update model_observation_dim for later use in inference callback
+f2c6d1d9342d2a3503e16649df42d2a8cb68e0c7 2026-04-15T14:22:47+02:00 Make model_observation_dim available to inference callback
+0568ecebd27b35006c56b28320ac8022339d8573 2026-04-15T12:20:10+02:00 Load pytorch model, define safety params
+7e8b40512e31271ab0b35a9bb4de0daf727c6b4e 2026-04-15T09:30:32+02:00 Add dedicated executable for disabling sport mode and entering low level mode
+a02e4a7cc4bcf8a87de16b6cebe3b1be9404e83a 2026-04-11T15:59:31+02:00 Add checkpoint from before energy minimization to whitelist
+2ce22fc5cb5a350a9295395953c44c9241f1fe22 2026-04-11T15:35:08+02:00 Add checkpoint before energy minimization
+a3a1e4909cedb8c50f96fa2c766460dfa1ff46af 2026-01-28T19:15:48+01:00 Use hardcoded elevation depending on checkpoint used
+58ac9b17ae4d09b7bef47b548357f28bab85092b 2026-01-17T18:59:23+01:00 Add env_id_80 and env_id_79 checkpoints for delay and blind policy troubleshooting
+2f65b0064d38bd86939c45bea5c6616237e99cff 2025-06-29T20:48:54+02:00 Load checkpoint model weights
+9f8632d5ab3f9f2ed46ad5584acfaa1a65b58cf2 2025-06-28T18:00:48+02:00 Enable eval mode for model
+8acf913118bbef389909304d1582b862c57eb336 2025-06-28T17:35:07+02:00 Fix end_weight, scaling_factor is set to 1 by ppo.py
+65277b6d149af068a53abf99117b9ba429e029d5 2025-06-28T14:29:38+02:00 Add util script to generate torchscript checkpoint
+faabffdec07f66bfb7a4f54f13c68d292fd1b2f7 2025-06-25T08:33:19+02:00 Add option for loading checkpoint during training
+87b64ec162df0694bc239692608bd6bae44a22a0 2025-05-31T18:59:02+02:00 Add used checkpoint path to eval metrics summary
+629fbf860c26f3009eb04047046b5fecd4ba74e4 2025-05-25T16:29:57+02:00 Manually seed in PPO
+d711ed0baf01f310f3af9cfca7a5ff80cdb176d4 2025-05-21T16:43:56+02:00 Use hardcoded env seed and improved seeding in eval
+8d5c7186fda0ae8f79b8de4b21899cc0010350fe 2025-05-20T12:02:12+02:00 Also seed torch cuda manually
+8f4675be56d24bc9c3dc370944992ab1d9fef5ec 2025-05-20T11:40:09+02:00 Ensure determinism during training on flat terrain
+3dff1ee97e85773f4e4136408083875ec40f5f8a 2025-05-14T08:50:51+02:00 Print seed before training
+4944dd0c61a7c841d64f30805573ab1f7f3b494a 2025-05-09T13:58:16+02:00 Make terrain less extreme as first focus is on flat terrain walking, adjust seed for more flat terrain
+051cc517a1acd9dc50362b59935f5b2fea2e1a8d 2025-05-08T11:34:16+02:00 Use seed with more diverse terrain
+bcb394fd819ed3eef693d6b1a4566a12daa04dbf 2025-05-08T11:34:01+02:00 Add seed to eval dir name
+ce63c43f217a15baa650b45dd05036d5c4d32e88 2025-05-07T21:14:34+02:00 Add seed arg with default value instead of hard-coding
+71bdcf28bd574450edb7786183c5cc268f67e590 2025-05-07T20:47:33+02:00 Fix seeding for train and eval scripts
+9d5a749ad4162b208d118ca8561a61a81e05b540 2025-05-05T10:15:19+02:00 Add checkpoint to video file name
+73d3279edab56497bbd6207235b9c47cfdcb3052 2025-05-05T09:25:08+02:00 Create one eval directory for each checkpoint being run to prevent overwriting other ones
+95c17d35012bcfb1e9361f7064b43d50e2fbbb64 2025-05-02T18:52:52+02:00 Fix checkpoint selection
+34eace78de8ec14d0f3cd3f7eb16a88449509c3a 2025-05-02T17:36:14+02:00 Allow specifying eval checkpoint instead of automatically choosing latest one
+71dafd9a78434398e7d92deaad4e118d11ae34b6 2025-04-25T18:47:25+02:00 Reduce default train num_envs and decrease spacing as go2 model consumes more vram
+8315fd8d60979ae844852373eab326fba1d72345 2025-04-23T15:31:24+02:00 Apply seed to numpy random
+c0d0e3f4c279b64657c41f24afd0e3026e284c45 2025-04-21T21:51:22+02:00 Apply seed to terrain, torch, numpy
+b110a5b3246f489bf8a1c23d26140dd1d437bfee 2025-04-16T21:01:25+02:00 Add option for running known ground truth trained model with CaT
+65fdb6cbd45c71cb634ada26ac33d313371c3abc 2025-03-17T14:31:40+01:00 public IsaacLab release

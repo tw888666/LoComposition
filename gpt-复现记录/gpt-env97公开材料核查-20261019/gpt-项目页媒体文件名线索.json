@@ -1,0 +1,131 @@
+[
+  {
+    "标签": "img",
+    "src": "/publications/locomposition/locomposition-overview.png",
+    "width": "2194",
+    "height": "500",
+    "alt": "LoComposition separates task specification, operational limits, gait preference, and terrain adaptation, yielding emergent natural locomotion and zero-shot deployment.",
+    "loading": "lazy",
+    "decoding": "async"
+  },
+  {
+    "标签": "img",
+    "src": "/publications/locomposition/sim2real-overview.png",
+    "width": "1574",
+    "height": "500",
+    "alt": "LoComposition sim-to-real deployment across physical terrain sequences with the perception and policy stack and a LiDAR elevation map.",
+    "loading": "lazy",
+    "decoding": "async"
+  },
+  {
+    "标签": "video",
+    "autoplay": null,
+    "muted": null,
+    "loop": null,
+    "playsinline": null,
+    "preload": "metadata",
+    "poster": "/publications/locomposition/go2-sim2real-poster.webp",
+    "aria-label": "Unitree Go2"
+  },
+  {
+    "标签": "source",
+    "src": "/publications/locomposition/go2-sim2real.webm",
+    "type": "video/webm"
+  },
+  {
+    "标签": "source",
+    "src": "/publications/locomposition/go2-sim2real.mp4",
+    "type": "video/mp4"
+  },
+  {
+    "标签": "video",
+    "autoplay": null,
+    "muted": null,
+    "loop": null,
+    "playsinline": null,
+    "preload": "metadata",
+    "poster": "/publications/locomposition/spot-poster.webp",
+    "aria-label": "Boston Dynamics Spot"
+  },
+  {
+    "标签": "source",
+    "src": "/publications/locomposition/spot.webm",
+    "type": "video/webm"
+  },
+  {
+    "标签": "source",
+    "src": "/publications/locomposition/spot.mp4",
+    "type": "video/mp4"
+  },
+  {
+    "标签": "video",
+    "autoplay": null,
+    "muted": null,
+    "loop": null,
+    "playsinline": null,
+    "preload": "metadata",
+    "poster": "/publications/locomposition/anymal-c-poster.webp",
+    "aria-label": "ANYmal C"
+  },
+  {
+    "标签": "source",
+    "src": "/publications/locomposition/anymal-c.webm",
+    "type": "video/webm"
+  },
+  {
+    "标签": "source",
+    "src": "/publications/locomposition/anymal-c.mp4",
+    "type": "video/mp4"
+  },
+  {
+    "标签": "video",
+    "autoplay": null,
+    "muted": null,
+    "loop": null,
+    "playsinline": null,
+    "preload": "metadata",
+    "poster": "/publications/locomposition/go2-lep-poster.webp",
+    "aria-label": "LEP"
+  },
+  {
+    "标签": "source",
+    "src": "/publications/locomposition/go2-lep.webm",
+    "type": "video/webm"
+  },
+  {
+    "标签": "source",
+    "src": "/publications/locomposition/go2-lep.mp4",
+    "type": "video/mp4"
+  },
+  {
+    "标签": "video",
+    "autoplay": null,
+    "muted": null,
+    "loop": null,
+    "playsinline": null,
+    "preload": "metadata",
+    "poster": "/publications/locomposition/go2-lp-poster.webp",
+    "aria-label": "LP"
+  },
+  {
+    "标签": "source",
+    "src": "/publications/locomposition/go2-lp.webm",
+    "type": "video/webm"
+  },
+  {
+    "标签": "source",
+    "src": "/publications/locomposition/go2-lp.mp4",
+    "type": "video/mp4"
+  },
+  {
+    "标签": "img",
+    "class": "mr-4 h-24 w-24 rounded-full",
+    "srcset": "/media/authors/me_hu_5d4e7431f7ad07d9.webp 96w, /media/authors/me_hu_bcabff688a7cffb6.webp 192w, /media/authors/me_hu_f7a975e56b38ad57.webp 288w",
+    "sizes": "96px",
+    "src": "/media/authors/me_hu_5d4e7431f7ad07d9.webp",
+    "width": "96",
+    "height": "96",
+    "alt": "Loukas Kordos",
+    "loading": "lazy"
+  }
+]

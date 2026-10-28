@@ -1,0 +1,33 @@
+# 本机环境、缓存和上传副本
+.venv*/
+.gpt-video-deps/
+.gpt-github-upload/
+.agents/
+.aws/
+.codex/
+__pycache__/
+*.pyc
+# 本机凭据
+.env
+.env.*
+*.pem
+*.key
+# 模型、视频和运行日志
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+*.mp4
+*.avi
+*.mov
+*.webm
+*.gif
+*.log
+*.tar
+*.tar.gz
+*.zip
+*.zst
+# 实验原始轨迹；依赖源码数据不受此规则影响
+/gpt-*/**/*.npz
+/gpt-*/**/*.npy

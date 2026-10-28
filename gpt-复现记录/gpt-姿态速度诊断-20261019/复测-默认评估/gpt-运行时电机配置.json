@@ -1,0 +1,63 @@
+{
+  "电机配置": {
+    "class_type": "isaaclab.actuators.actuator_pd:DCMotor",
+    "joint_names_expr": [
+      ".*_hip_joint",
+      ".*_thigh_joint",
+      ".*_calf_joint"
+    ],
+    "effort_limit": 23.5,
+    "velocity_limit": 20.0,
+    "effort_limit_sim": 1000000000.0,
+    "velocity_limit_sim": null,
+    "stiffness": 25.0,
+    "damping": 0.5,
+    "armature": null,
+    "friction": 0.05,
+    "dynamic_friction": null,
+    "viscous_friction": null,
+    "saturation_effort": 20.0
+  },
+  "关节顺序": [
+    "FL_hip_joint",
+    "FR_hip_joint",
+    "RL_hip_joint",
+    "RR_hip_joint",
+    "FL_thigh_joint",
+    "FR_thigh_joint",
+    "RL_thigh_joint",
+    "RR_thigh_joint",
+    "FL_calf_joint",
+    "FR_calf_joint",
+    "RL_calf_joint",
+    "RR_calf_joint"
+  ],
+  "默认关节角": [
+    0.10000000149011612,
+    -0.10000000149011612,
+    0.10000000149011612,
+    -0.10000000149011612,
+    0.800000011920929,
+    0.800000011920929,
+    1.0,
+    1.0,
+    -1.5,
+    -1.5,
+    -1.5,
+    -1.5
+  ],
+  "物理关节速度限制": [
+    30.100000381469727,
+    30.100000381469727,
+    30.100000381469727,
+    30.100000381469727,
+    30.100000381469727,
+    30.100000381469727,
+    30.100000381469727,
+    30.100000381469727,
+    15.69999885559082,
+    15.69999885559082,
+    15.69999885559082,
+    15.69999885559082
+  ]
+}

@@ -1,0 +1,33 @@
+commit 4bcc73b17e0e8945be00fcfd88e2aa802e4b51d0
+Author:     Loukas Kordos <loukas.kordos@uni-tuebingen.de>
+AuthorDate: Fri May 29 23:02:17 2026 +0200
+Commit:     Loukas Kordos <loukas.kordos@uni-tuebingen.de>
+CommitDate: Fri May 29 23:02:17 2026 +0200
+
+    Pass seed to train script
+
+diff --git a/justfile b/justfile
+index 654d98d..b8f15e4 100644
+--- a/justfile
++++ b/justfile
+@@ -4,11 +4,11 @@ export OMNI_KIT_ACCEPT_EULA := "Y"
+ export CUBLAS_WORKSPACE_CONFIG := ":4096:8"
+ export PYTHONUNBUFFERED := "1"
+ 
+-train num_envs="7500" task="CaT-Go2-Rough-Terrain-v0":
++train num_envs="7500" task="CaT-Go2-Rough-Terrain-v0" seed="46":
+     tmpdir="${SLURM_TMPDIR:-$(pwd)/logs/tmp}"; \
+     mkdir -p ./logs/clean_rl "$tmpdir" "$tmpdir/isaaclab/logs"; \
+     echo "TMPDIR=$tmpdir"; \
+-    TMPDIR="$tmpdir" python scripts/clean_rl/train.py --task={{task}} --headless --num_envs={{num_envs}} 2>&1 | tee "./logs/clean_rl/train-$(date +'%Y-%m-%d-%H:%M:%S').log"
++    TMPDIR="$tmpdir" python scripts/clean_rl/train.py --task={{task}} --seed={{seed}} --headless --num_envs={{num_envs}} 2>&1 | tee "./logs/clean_rl/train-$(date +'%Y-%m-%d-%H:%M:%S').log"
+ 
+ eval run_dir *flags:
+     systemd-run --scope --user -p MemoryMax=45G time python scripts/eval.py --headless --run_dir={{run_dir}} {{flags}}
+@@ -23,4 +23,4 @@ eval-all logs_root_dir num_parallel_jobs *flags:
+     fi
+ 
+ generate_plots data_file *flags:
+-    python scripts/generate_plots.py --data_file={{data_file}} {{flags}}
+\ No newline at end of file
++    python scripts/generate_plots.py --data_file={{data_file}} {{flags}}

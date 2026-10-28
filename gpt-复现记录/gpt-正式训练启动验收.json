@@ -1,0 +1,78 @@
+{
+  "训练目录": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-09-13-45-51",
+  "最新模型": null,
+  "最新标量": {
+    "Episode_Reward/track_lin_vel_xy_exp": {
+      "迭代": 1,
+      "数值": 0.006267411168664694
+    },
+    "Episode_Reward/track_ang_vel_z_exp": {
+      "迭代": 1,
+      "数值": 0.002741016913205385
+    },
+    "Episode_Reward/minimize_power": {
+      "迭代": 1,
+      "数值": -6.339206265693065e-06
+    },
+    "Curriculum/joint_torque": {
+      "迭代": 1,
+      "数值": 0.05002143234014511
+    },
+    "Curriculum/joint_velocity": {
+      "迭代": 1,
+      "数值": 0.05002176761627197
+    },
+    "Curriculum/joint_acceleration": {
+      "迭代": 1,
+      "数值": 0.05002209544181824
+    },
+    "Curriculum/action_rate": {
+      "迭代": 1,
+      "数值": 0.0500224344432354
+    },
+    "Curriculum/hip_position": {
+      "迭代": 1,
+      "数值": 0.05002276226878166
+    },
+    "Curriculum/base_orientation": {
+      "迭代": 1,
+      "数值": 0.05002310127019882
+    },
+    "Curriculum/power/weight": {
+      "迭代": 1,
+      "数值": 3.3000000598804036e-07
+    },
+    "Curriculum/terrain_levels": {
+      "迭代": 1,
+      "数值": 1.4230445623397827
+    },
+    "Metrics/base_velocity/error_vel_xy": {
+      "迭代": 1,
+      "数值": 0.015140632167458534
+    },
+    "Metrics/base_velocity/error_vel_yaw": {
+      "迭代": 1,
+      "数值": 0.026502329856157303
+    },
+    "Loss/mean_pg_loss": {
+      "迭代": 1,
+      "数值": -0.006282614544034004
+    },
+    "Loss/mean_entropy_loss": {
+      "迭代": 1,
+      "数值": 17.03812026977539
+    },
+    "Loss/mean_v_loss": {
+      "迭代": 1,
+      "数值": 0.5465483665466309
+    },
+    "Loss/mean_surrogate_loss": {
+      "迭代": 1,
+      "数值": 1.0697758197784424
+    },
+    "Loss/learning_rate": {
+      "迭代": 1,
+      "数值": 0.0003000000142492354
+    }
+  }
+}

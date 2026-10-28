@@ -1,0 +1,108 @@
+with a conventional reward-shaped formulation [1].
+
+4.1   Experimental protocol
+
+Training uses procedurally generated uneven terrain under a curriculum with stairs, platforms,
+slopes, and random rough height fields, following [1]. This prevents an energy-based objective from
+overfitting to flat-ground motion without sustained exposure to terrain that requires additional effort.
+Domain randomization follows prior sim-to-real practice [28]. All policies are trained in Isaac Lab
+using PPO with the same action space, policy class, terrain generator, command distribution, domain
+randomization, and training budget across 12 seeds.
+Quantitative results are first aggregated within each seed and then reported across seeds with 95%
+confidence intervals. We report planar base velocity tracking RMSE, achieved terrain curriculum
+level, Cost of Transport, operational-limit violation, and zero-shot hardware success. Achieved cur-
+riculum level summarizes rough-terrain progress and thus provides a compact scalar metric for com-
+paring rough-terrain capability across variants trained under the same curriculum. Cost of Transport
+is computed as COT = E/(M gd), where E is the accumulated absolute mechanical joint work,
+
+
+                                                   4
+
+Table 1: Policy variants for ablation of our components. Names list active components: L =
+operational-limit constraints, C/R = constraint-/reward-encoded gait-prior terms, E = energy mini-
+mization, P = elevation-map perception. Grey indicates dysfunctional, undeployable policies. All
+variants except RP and EP encode operational limits as constraints. EP removes operational-limit
+constraints. Evaluation thresholds are listed in Table 7.
+               Oper. limit Gait-prior Energy Perception
+Variant        constraints encoding    min. (elev. map) Question addressed
+RP [1]              ✗        Reward        ✗            ✓      Baseline: Gait priors, smoothness rew., etc.
+LCP                 ✓       Constraint     ✗            ✓      Are gait-prior constraints neutral op. limits?
+LCEP                ✓       Constraint     ✓            ✓      Are they still neutral with energy min.?
+LP                  ✓           –          ✗            ✓      Does locomotion remain feasible without
+                                                               energy minimization?
+LEP (ours)          ✓           –          ✓            ✓      Does energy min. select a lower-COT gait?
+LE                  ✓           –          ✓            ✗      Does perception make energy minimization
+                                                               compatible with terrain traversal?
+EP                  ✗           –          ✓            ✓      Are operational-limit constraints necessary?
+
+
+Table 2: Ablation result summary. COT is averaged over 0.6-1.6 m s−1 . COT is omitted for the
+blind variant because it achieves too little walking distance for a meaningful estimate.
+                        Planar base velocity    Achieved       Flat terrain    Operational limit
+          Variant        RMSE ↓ (m s−1 )     terrain level ↑     COT ↓        violation rate ↓ (%)
+          RP                0.22 ± 0.06         3.0 ± 0.1      0.64 ± 0.03         13.3 ± 0.8
+          LCP              0.26 ± 0.01         3.33 ± 0.06     0.94 ± 0.02        0.66 ± 0.08
+          LP               0.17 ± 0.01         3.72 ± 0.03     1.18 ± 0.06        0.86 ± 0.07
+          LCEP             0.23 ± 0.02         2.65 ± 0.07     0.43 ± 0.01         0.9 ± 0.15
+          LEP (ours)       0.19 ± 0.01         3.11 ± 0.02     0.28 ± 0.01        0.50 ± 0.08
+          LE               0.54 ± 0.01           1.4 ± 0.4        N/A               1.4 ± 0.8
+          EP               0.35 ± 0.02          2.5 ± 0.04     1.53 ± 0.14         53.4 ± 5.5
+
+       P P
+E = t j∈joints |τj q̇j | ∆t. Here, M is robot mass, g is gravitational acceleration, and d is hor-
+      Maximum gradient norm                              1.0
+      Rollout horizon length                             24
+      Minibatch size                                     16384
+      PPO mini-epochs                                    5
+      Critic loss coefficient                            2
+      Number of training seeds per controlled variant    12
+      wxy in velocity tracking reward                    1.0
+      wω in velocity tracking reward                     0.5
+                                                         √
+      σv in velocity tracking reward                     √0.25
+      σω in velocity tracking reward                       0.25
+
+
+For all reported summary statistics, aggregation is performed at the seed level. Training metrics are
+first reduced to one scalar per seed by averaging the final 500 recorded training iterations. Final
+results are reported as the mean and 95% confidence interval across seeds.
+In simulation, Cost of Transport is evaluated in dedicated flat-terrain fixed-command scenarios at
+          Noise on joint positions            U 12 (−0.01, 0.01)
+          Noise on joint velocities           U 12 (−0.2, 0.2)
+          Noise on elevation map              U 143 (−0.01, 0.01)
+          Ground-friction randomization       U (0.5, 1.25)
+          Energy curriculum schedule          λE (k) = λmax
+                                                         E    min(k/KE , 1)
+          Energy curriculum ramp length       KE = 12,000 training iterations
+
+
+
+
+Table 7: Physical and operational soft limits enforced through CaT stochastic terminations for the
+controlled CaT variants.
+                                 Constraint            Limit              pmax
+                                 Joint torque          20.0 Nm            0.25
+                                 Joint velocity        25.0 rad s−1       0.25
+                                 Joint acceleration    800.0 rad s−2      0.25
+                                 Action rate           80.0               0.25
+
+
+                       0.1
+
+
+                       0.0
+
+                                       LE            LEP (ours)                   LP
+Figure 5: Distribution of maximum swing height on flat and uneven terrain. Our formulation
+(LEP) keeps swing height low on flat terrain while increasing clearance on uneven terrain as re-
+quired. LP, which lacks energy minimization, uses unnecessarily high steps even on flat terrain.
+LE lacks terrain look-ahead and exhibits large swing-height variation without corresponding terrain
+traversability, supporting the conclusion that energy minimization alone is insufficient for anticipa-
+tory rough-terrain adaptation.
+
+D                      Terrain Curriculum and Achieved Curriculum Level
+Isaac Lab’s procedural terrain generator constructs a grid of sub-terrains with Nr rows and Nc
+columns. When curriculum mode is enabled, rows represent normalized difficulty and columns
+correspond to terrain types. A sub-terrain in row r ∈ {0, . . . , Nr − 1} is generated from a type-
+specific difficulty parameter
+                                           r+η

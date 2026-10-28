@@ -1,0 +1,70 @@
+{
+  "检查日期": "2026-10-19",
+  "训练迭代": 30000,
+  "训练模型保存北京时间": "2026-10-18T07:14:18.315369+08:00",
+  "自动评估退出码": 0,
+  "评估指标保存北京时间": "2026-10-18T07:25:40.428050+08:00",
+  "评估步数": 14500,
+  "评估模拟时长秒": 290.0,
+  "固定场景按预定步数完成": {
+    "stand_still": true,
+    "fast_walk_stairs_up": true,
+    "pure_spin": true,
+    "walk_x_flat_terrain_0.4mps": true,
+    "walk_x_flat_terrain_1.0mps": true,
+    "walk_x_flat_terrain_1.6mps": true,
+    "medium_walk_x_uneven_terrain": true,
+    "fast_walk_x_uneven_terrain": true,
+    "fast_walk_diagonal_uneven_terrain": true,
+    "medium_walk_diagonal_turning_uneven_terrain": true,
+    "medium_walk_diagonal_random_steps": true,
+    "cot_sweep_walk_x_flat_terrain_0.2": true,
+    "cot_sweep_walk_x_flat_terrain_0.4": true,
+    "cot_sweep_walk_x_flat_terrain_0.6": true,
+    "cot_sweep_walk_x_flat_terrain_0.8": true,
+    "cot_sweep_walk_x_flat_terrain_1.0": true,
+    "cot_sweep_walk_x_flat_terrain_1.2": true,
+    "cot_sweep_walk_x_flat_terrain_1.4": true,
+    "cot_sweep_walk_x_flat_terrain_1.6": true,
+    "cot_sweep_walk_x_flat_terrain_1.8": true,
+    "cot_sweep_walk_x_flat_terrain_2.0": true
+  },
+  "自动重置全部位于500步回合边界": true,
+  "全程评估指标": {
+    "base_linear_velocity_x_rms_error": 0.24386779963970184,
+    "base_linear_velocity_y_rms_error": 0.1065712571144104,
+    "base_angular_velocity_z_rms_error": 0.07449284940958023,
+    "cost_of_transport": 0.3505477643262418,
+    "total_energy_consumption": 9438.6044921875,
+    "distance_walked_horizontal": 182.7471395229894
+  },
+  "髋关节约束口径核对": {
+    "FL_hip_joint": {
+      "原始全时段超界百分比": 4.682758620689655,
+      "按训练横向指令条件启用后占总步数百分比": 0.006896551724137931,
+      "启用条件内超界百分比": 0.010542962572482868
+    },
+    "FR_hip_joint": {
+      "原始全时段超界百分比": 10.76551724137931,
+      "按训练横向指令条件启用后占总步数百分比": 0.020689655172413793,
+      "启用条件内超界百分比": 0.0316288877174486
+    },
+    "RL_hip_joint": {
+      "原始全时段超界百分比": 4.7379310344827585,
+      "按训练横向指令条件启用后占总步数百分比": 0.0,
+      "启用条件内超界百分比": 0.0
+    },
+    "RR_hip_joint": {
+      "原始全时段超界百分比": 8.848275862068967,
+      "按训练横向指令条件启用后占总步数百分比": 0.0,
+      "启用条件内超界百分比": 0.0
+    }
+  },
+  "备注": [
+    "原评估保留不变；髋关节补充统计使用已保存指令和关节角，训练仅在横向指令绝对值小于0.1时启用此约束。",
+    "固定场景跑满不等于导航或速度跟踪全部达标。",
+    "训练最高前向指令1.0米每秒；高于此速度的评估属于训练范围外测试。",
+    "单模型单种子结果不能证明论文多种子相对提升。"
+  ],
+  "轨迹非有限数值字段": []
+}

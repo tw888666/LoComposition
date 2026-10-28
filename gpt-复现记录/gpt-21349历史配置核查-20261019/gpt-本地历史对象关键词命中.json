@@ -1,0 +1,812 @@
+{
+  "搜索本地文本对象数": 757,
+  "命中对象": [
+    {
+      "对象": "0061ef88d69e00ab247af41b019b2d3c786deb1a",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        }
+      ]
+    },
+    {
+      "对象": "01d27bd2b92821fce12bb647823a78a841e9a12c",
+      "命中": [
+        {
+          "行号": 1068,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "0f3efecabfd797600882bf79431bfd7c9d809fda",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization"
+        }
+      ]
+    },
+    {
+      "对象": "11ba97f1bce4764659aa237c2a8a18f0d3a526ea",
+      "命中": [
+        {
+          "行号": 1010,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "13410814e3b20b5456d0f50fe4c5ded4e307943f",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        }
+      ]
+    },
+    {
+      "对象": "158ed9215c4aa70bc2a61f5ada6e3ed8f1552de2",
+      "命中": [
+        {
+          "行号": 1080,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1081,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 1090,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "187a5ee4e37c7ea20dcf47cd9f88ab6a3f021f82",
+      "命中": [
+        {
+          "行号": 1015,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "18c4627d4f03385f94997602b6f0b042d07e5b4b",
+      "命中": [
+        {
+          "行号": 1068,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "191d58e60239ac3dd07be7a1810f24ac8bc10341",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        }
+      ]
+    },
+    {
+      "对象": "21739691fe28f3168106271d996743a6a49104eb",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization"
+        }
+      ]
+    },
+    {
+      "对象": "267c9c44d9b0985820f64059e0ea81dd937f81c9",
+      "命中": [
+        {
+          "行号": 1068,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "267d6438f8afaf656b281e2f6617a26d1ba73b61",
+      "命中": [
+        {
+          "行号": 939,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 940,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 949,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "28efa36608c771db5f2ecbcae783df1dc7c0a1e5",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization"
+        }
+      ]
+    },
+    {
+      "对象": "2964bb0f5deed4a527e2a1ba47d047681490daae",
+      "命中": [
+        {
+          "行号": 1080,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1081,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 1090,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "2966927b99968c6288463074e268945d48b40568",
+      "命中": [
+        {
+          "行号": 1076,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1085,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "2b8baf3ea7dbd06b341549ed6920d747b3d21e7a",
+      "命中": [
+        {
+          "行号": 1075,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1084,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "2bc322c420710f965f7a04ae1a0a6b61ff1a352b",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        }
+      ]
+    },
+    {
+      "对象": "2dc245960a5ed6fda9306ae5814a4a7ab6668284",
+      "命中": [
+        {
+          "行号": 734,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "2f2d23d1d0ce56bac9d1c20cd04715e7676df54f",
+      "命中": [
+        {
+          "行号": 1068,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "32d7ae3b7b93e6ff811cdc3366f362101afd2085",
+      "命中": [
+        {
+          "行号": 1074,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1083,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "3458c23a6b190e10235422aabb5a1e9ff8f4781c",
+      "命中": [
+        {
+          "行号": 1076,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1077,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 1086,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "36f8611efc09d108d5bd96b7851efccad85e71b0",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization"
+        }
+      ]
+    },
+    {
+      "对象": "3820614574be5833668c79d2312063106af60d9c",
+      "命中": [
+        {
+          "行号": 734,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "40b1a5f960c58348fabca035661de564fd1ff8d2",
+      "命中": [
+        {
+          "行号": 1076,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1077,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 1086,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "4400b87f18e49199e1580b52ad7ff256b8632123",
+      "命中": [
+        {
+          "行号": 1081,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1082,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 1091,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "44fe5cd189b35299535b9250a3b071ce6eb91af5",
+      "命中": [
+        {
+          "行号": 1068,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "467a91570eb1a1ad9a4b13647b0b89894f3ba85e",
+      "命中": [
+        {
+          "行号": 1081,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1082,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 1091,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "46f697bea4647b60cd8b5ef0aaf910d8c533bb2d",
+      "命中": [
+        {
+          "行号": 1080,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1081,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 1090,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "51c8652720986aa68975c79582f9d81c30dafa00",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        }
+      ]
+    },
+    {
+      "对象": "59ef493d5921de2f6c21cd50f87c9a2542b896e3",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        }
+      ]
+    },
+    {
+      "对象": "5c3e6eea1641a0e0577c4d454d2a3b4c1164cbbb",
+      "命中": [
+        {
+          "行号": 943,
+          "内容": "        \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};  // env 75, standard best one so far (with elevation"
+        },
+        {
+          "行号": 945,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as"
+        },
+        {
+          "行号": 957,
+          "内容": "        \"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "6117b771ed50caa9a7fbccfabf50fba4cd493e20",
+      "命中": [
+        {
+          "行号": 1048,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "682e6e76c1bf45c08ad14596fcddf607d0cab0f6",
+      "命中": [
+        {
+          "行号": 1005,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "6a433df0c931eb1dcaae65325b2b29037d45fd20",
+      "命中": [
+        {
+          "行号": 739,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "6b8f27d8db83e54aa407825dc08232c0ce8a4a52",
+      "命中": [
+        {
+          "行号": 1068,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1077,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "6d7d1ba6b054919019a36744818c154b6c8c297f",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization"
+        }
+      ]
+    },
+    {
+      "对象": "6fbba92073f9802e87ac102904b77d5996150cd2",
+      "命中": [
+        {
+          "行号": 1080,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1081,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 1090,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "7755437b10f6429104cc5397e0dceb06be5e9874",
+      "命中": [
+        {
+          "行号": 741,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "794978478518684f75bfd968a4ce57d426173fc0",
+      "命中": [
+        {
+          "行号": 741,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "809a005e05b385ce004f297e62d4ae7d06d5b908",
+      "命中": [
+        {
+          "行号": 1068,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1077,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "852dbe33fd6874fcd99f433f5de9777d017ac938",
+      "命中": [
+        {
+          "行号": 1076,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1085,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "8e9516b3b3dc029b8e302c073a17038ec2e846c4",
+      "命中": [
+        {
+          "行号": 945,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 946,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 955,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "8eece98cf7f0ccc5967a7a97750e6dac65b01cc8",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization"
+        }
+      ]
+    },
+    {
+      "对象": "99a2e38af84d350d9668d5273e80d898ab36be08",
+      "命中": [
+        {
+          "行号": 1010,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "9a2d218e7744a95b5b94ce30fb9d481fce991a71",
+      "命中": [
+        {
+          "行号": 1077,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1086,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "9b80219fd493417c6ec5fe3ba1ab72e3f4e530e2",
+      "命中": [
+        {
+          "行号": 1074,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1083,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "aa408cad06417d1ff8ed27caed03864c37a27793",
+      "命中": [
+        {
+          "行号": 1068,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1077,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "ae86b91126c671d4573a98c474c83d5fcc21b9e9",
+      "命中": [
+        {
+          "行号": 734,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "b2c03a7f40a5b4eecf27c3d754ec3fe131b545ea",
+      "命中": [
+        {
+          "行号": 1076,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1085,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "b75ed97de27eed73205c04f16a35dc1346e3bffc",
+      "命中": [
+        {
+          "行号": 1076,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1085,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "c023cdbe44d62a3cbddc462e2acd0bfa486dee46",
+      "命中": [
+        {
+          "行号": 960,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 961,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 970,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "c035848cd018a3743067615f20e7a7e76de369e5",
+      "命中": [
+        {
+          "行号": 1068,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1077,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "c0811cfa6fd4b66c5b7058dae4595c5554a28f71",
+      "命中": [
+        {
+          "行号": 938,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 939,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 948,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "c1a729c8a2476015b3ee2c4adc2ca44b3a8228f4",
+      "命中": [
+        {
+          "行号": 939,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 940,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 949,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "c2214189281f4b71642a6ceb680c9bfc853e484e",
+      "命中": [
+        {
+          "行号": 993,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "c295744aebbc3d584fedd4d4cf3d8cc1cb1c045b",
+      "命中": [
+        {
+          "行号": 1003,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1004,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 1013,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "cc6d33ef2cd91f9e08300e28cb4625685d70ad73",
+      "命中": [
+        {
+          "行号": 1079,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1080,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 1089,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "d0464a5c44b792efadedebf0727e4963adc9d095",
+      "命中": [
+        {
+          "行号": 740,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "de6c609818ded822e40396516fb395f4df7e486a",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization"
+        }
+      ]
+    },
+    {
+      "对象": "ea4b7efa3cea1e1474f609a6c2c39963b5c1fe2d",
+      "命中": [
+        {
+          "行号": 735,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "f3a06e55267e438743089b84be3e79fc7c8eedde",
+      "命中": [
+        {
+          "行号": 1076,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"}; // env 75, standard best one so far (with elevation map)"
+        },
+        {
+          "行号": 1077,
+          "内容": "    // std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\"}; // env 75, same as above just ealier checkpoint to show before vs. after energy minimization "
+        },
+        {
+          "行号": 1086,
+          "内容": "    const std::vector<std::string> checkpoint_filenames_proper_elevation_map = {\"2025-06-28-17-13-04_21349_traced_deterministic.pt\", \"2025-06-28-17-13-04_6049_traced_deterministic.pt\"};"
+        }
+      ]
+    },
+    {
+      "对象": "f4b776f4aa928643dc401aaf9cbc009e0fb9a151",
+      "命中": [
+        {
+          "行号": 3,
+          "内容": "    checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\" # env 75, best one so far (with elevation map)"
+        },
+        {
+          "行号": 4,
+          "内容": "    # checkpoint_path: \"/app/sim2real/traced_checkpoints/2025-06-28-17-13-04_6049_traced_deterministic.pt\" # env 75, same as above just ealier checkpoint to show before vs. after energy minimization"
+        }
+      ]
+    },
+    {
+      "对象": "f500e69887d25c46b36749a06468bb0cf4a38b12",
+      "命中": [
+        {
+          "行号": 733,
+          "内容": "    std::filesystem::path checkpoint_path {\"/app/traced_checkpoints/2025-06-28-17-13-04_21349_traced_deterministic.pt\"};"
+        }
+      ]
+    }
+  ]
+}

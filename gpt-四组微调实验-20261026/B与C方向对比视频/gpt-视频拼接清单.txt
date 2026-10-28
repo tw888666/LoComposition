@@ -1,0 +1,6 @@
+file 'gpt-B与C方向对比-楼梯8.5厘米.mp4'
+file 'gpt-B与C方向对比-平地0.4.mp4'
+file 'gpt-B与C方向对比-平地0.8.mp4'
+file 'gpt-B与C方向对比-平地1.0.mp4'
+file 'gpt-B与C方向对比-崎岖1.0.mp4'
+file 'gpt-B与C方向对比-坡道0.8.mp4'

@@ -1,0 +1,1398 @@
+{
+  "首轮0": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "content": "[]",
+        "title": "releases",
+        "modified_date": null,
+        "url": "https://api.github.com/repos/LouKordos/locomposition/releases?per_page=100",
+        "display_url": "https://api.github.com/repos/LouKordos/locomposition/releases?per_page=100",
+        "display_title": "releases",
+        "structuredContent": {
+          "title": "releases",
+          "content": "[]",
+          "display_url": "https://api.github.com/repos/LouKordos/locomposition/releases?per_page=100"
+        }
+      },
+      "isError": false
+    }
+  },
+  "首轮1": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "archive_filter_applied": null,
+        "repositories": [
+          {
+            "id": "966864315",
+            "name": "locomposition",
+            "owner": {
+              "login": "LouKordos",
+              "id": 32240690,
+              "type": "User",
+              "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+              "url": "https://api.github.com/users/LouKordos"
+            },
+            "repository_full_name": "LouKordos/locomposition",
+            "permissions": {
+              "admin": false,
+              "maintain": false,
+              "pull": true,
+              "push": false,
+              "triage": false
+            },
+            "allow_auto_merge": null,
+            "allow_merge_commit": null,
+            "allow_rebase_merge": null,
+            "allow_squash_merge": null,
+            "allow_update_branch": null,
+            "clone_url": "https://github.com/LouKordos/locomposition.git",
+            "size": 57294,
+            "default_branch": "main",
+            "git_commits_url": "https://api.github.com/repos/LouKordos/locomposition/git/commits{/sha}",
+            "git_refs_url": "https://api.github.com/repos/LouKordos/locomposition/git/refs{/sha}",
+            "git_url": "git://github.com/LouKordos/locomposition.git",
+            "master_branch": null,
+            "visibility": "public",
+            "archived": false,
+            "is_code_search_indexed": null,
+            "display_title": "LouKordos/locomposition",
+            "display_url": "https://github.com/LouKordos/locomposition"
+          }
+        ]
+      },
+      "isError": false
+    }
+  },
+  "首轮2": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Action completed."
+        }
+      ],
+      "structuredContent": {
+        "issues": []
+      },
+      "isError": false
+    }
+  },
+  "扩展0": {
+    "status": "fulfilled",
+    "value": {
+      "label": "标签",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "HTTPError: 400: GitHub Fetch URL is not an allowed public GitHub repository or search endpoint. (Response: None)"
+          }
+        ],
+        "structuredContent": {
+          "error": "HTTPError: 400: GitHub Fetch URL is not an allowed public GitHub repository or search endpoint. (Response: None)",
+          "error_code": "INVALID_ARGUMENT"
+        },
+        "isError": true
+      }
+    }
+  },
+  "扩展1": {
+    "status": "fulfilled",
+    "value": {
+      "label": "分支",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Action completed."
+          }
+        ],
+        "structuredContent": {
+          "content": "[{\"name\":\"adaptive-energy-weight\",\"commit\":{\"sha\":\"7196bbc3798248125c2bb778fbc846d803add3c3\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/7196bbc3798248125c2bb778fbc846d803add3c3\"},\"protected\":false},{\"name\":\"cross-embodiment\",\"commit\":{\"sha\":\"42df1897c37a4d65230c5381dc9398ff95bcf2bb\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/42df1897c37a4d65230c5381dc9398ff95bcf2bb\"},\"protected\":false},{\"name\":\"determinism_debugging\",\"commit\":{\"sha\":\"f90ded2465172d597c089272b47227d826e97d11\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/f90ded2465172d597c089272b47227d826e97d11\"},\"protected\":false},{\"name\":\"energy_optimization\",\"commit\":{\"sha\":\"7085a729e73b532f2557976b751f1e3ee2e8fc66\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/7085a729e73b532f2557976b751f1e3ee2e8fc66\"},\"protected\":false},{\"name\":\"main\",\"commit\":{\"sha\":\"b1149c8074f7df84450fe67649ee5e14dc971042\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/b1149c8074f7df84450fe67649ee5e14dc971042\"},\"protected\":false},{\"name\":\"rename-project-and-docs\",\"commit\":{\"sha\":\"6cb1b1fc00832968a663dc7ba684af2fdb3c3f25\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/6cb1b1fc00832968a663dc7ba684af2fdb3c3f25\"},\"protected\":false},{\"name\":\"reward-constraint-approximations\",\"commit\":{\"sha\":\"1b3a63f95e98c101115bed7a8b8d4f7a1caf366e\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/1b3a63f95e98c101115bed7a8b8d4f7a1caf366e\"},\"protected\":false},{\"name\":\"ros-migration\",\"commit\":{\"sha\":\"762211a7a830c5d214198d09c893cd1b1b262f99\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/762211a7a830c5d214198d09c893cd1b1b262f99\"},\"protected\":false},{\"name\":\"sim2real\",\"commit\":{\"sha\":\"66d2ac7d34b78d080e1885b047bae0e0a24198ab\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/66d2ac7d34b78d080e1885b047bae0e0a24198ab\"},\"protected\":false}]",
+          "title": "branches",
+          "modified_date": null,
+          "url": "https://api.github.com/repos/LouKordos/locomposition/branches?per_page=100",
+          "display_url": "https://api.github.com/repos/LouKordos/locomposition/branches?per_page=100",
+          "display_title": "branches",
+          "structuredContent": {
+            "title": "branches",
+            "content": "[{\"name\":\"adaptive-energy-weight\",\"commit\":{\"sha\":\"7196bbc3798248125c2bb778fbc846d803add3c3\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/7196bbc3798248125c2bb778fbc846d803add3c3\"},\"protected\":false},{\"name\":\"cross-embodiment\",\"commit\":{\"sha\":\"42df1897c37a4d65230c5381dc9398ff95bcf2bb\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/42df1897c37a4d65230c5381dc9398ff95bcf2bb\"},\"protected\":false},{\"name\":\"determinism_debugging\",\"commit\":{\"sha\":\"f90ded2465172d597c089272b47227d826e97d11\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/f90ded2465172d597c089272b47227d826e97d11\"},\"protected\":false},{\"name\":\"energy_optimization\",\"commit\":{\"sha\":\"7085a729e73b532f2557976b751f1e3ee2e8fc66\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/7085a729e73b532f2557976b751f1e3ee2e8fc66\"},\"protected\":false},{\"name\":\"main\",\"commit\":{\"sha\":\"b1149c8074f7df84450fe67649ee5e14dc971042\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/b1149c8074f7df84450fe67649ee5e14dc971042\"},\"protected\":false},{\"name\":\"rename-project-and-docs\",\"commit\":{\"sha\":\"6cb1b1fc00832968a663dc7ba684af2fdb3c3f25\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/6cb1b1fc00832968a663dc7ba684af2fdb3c3f25\"},\"protected\":false},{\"name\":\"reward-constraint-approximations\",\"commit\":{\"sha\":\"1b3a63f95e98c101115bed7a8b8d4f7a1caf366e\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/1b3a63f95e98c101115bed7a8b8d4f7a1caf366e\"},\"protected\":false},{\"name\":\"ros-migration\",\"commit\":{\"sha\":\"762211a7a830c5d214198d09c893cd1b1b262f99\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/762211a7a830c5d214198d09c893cd1b1b262f99\"},\"protected\":false},{\"name\":\"sim2real\",\"commit\":{\"sha\":\"66d2ac7d34b78d080e1885b047bae0e0a24198ab\",\"url\":\"https://api.github.com/repos/LouKordos/locomposition/commits/66d2ac7d34b78d080e1885b047bae0e0a24198ab\"},\"protected\":false}]",
+            "display_url": "https://api.github.com/repos/LouKordos/locomposition/branches?per_page=100"
+          }
+        },
+        "isError": false
+      }
+    }
+  },
+  "扩展2": {
+    "status": "fulfilled",
+    "value": {
+      "label": "派生仓库",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "HTTPError: 400: GitHub Fetch URL is not an allowed public GitHub repository or search endpoint. (Response: None)"
+          }
+        ],
+        "structuredContent": {
+          "error": "HTTPError: 400: GitHub Fetch URL is not an allowed public GitHub repository or search endpoint. (Response: None)",
+          "error_code": "INVALID_ARGUMENT"
+        },
+        "isError": true
+      }
+    }
+  },
+  "扩展3": {
+    "status": "fulfilled",
+    "value": {
+      "label": "构建制品",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "HTTPError: 400: GitHub Fetch URL is not an allowed public GitHub repository or search endpoint. (Response: None)"
+          }
+        ],
+        "structuredContent": {
+          "error": "HTTPError: 400: GitHub Fetch URL is not an allowed public GitHub repository or search endpoint. (Response: None)",
+          "error_code": "INVALID_ARGUMENT"
+        },
+        "isError": true
+      }
+    }
+  },
+  "扩展4": {
+    "status": "fulfilled",
+    "value": {
+      "label": "作者仓库搜索",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Action completed."
+          }
+        ],
+        "structuredContent": {
+          "archive_filter_applied": null,
+          "repositories": [
+            {
+              "id": "242395128",
+              "name": "walking_controller",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/walking_controller",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/walking_controller.git",
+              "size": 14159,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/walking_controller/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/walking_controller/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/walking_controller.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/walking_controller",
+              "display_url": "https://github.com/LouKordos/walking_controller"
+            },
+            {
+              "id": "966864315",
+              "name": "locomposition",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/locomposition",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/locomposition.git",
+              "size": 57294,
+              "default_branch": "main",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/locomposition/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/locomposition/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/locomposition.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/locomposition",
+              "display_url": "https://github.com/LouKordos/locomposition"
+            },
+            {
+              "id": "1020964507",
+              "name": "LiDAR_IMU_Init",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/LiDAR_IMU_Init",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/LiDAR_IMU_Init.git",
+              "size": 48784,
+              "default_branch": "ROS2",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/LiDAR_IMU_Init/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/LiDAR_IMU_Init/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/LiDAR_IMU_Init.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/LiDAR_IMU_Init",
+              "display_url": "https://github.com/LouKordos/LiDAR_IMU_Init"
+            },
+            {
+              "id": "336001558",
+              "name": "google-tracking-viz",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/google-tracking-viz",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/google-tracking-viz.git",
+              "size": 157,
+              "default_branch": "main",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/google-tracking-viz/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/google-tracking-viz/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/google-tracking-viz.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/google-tracking-viz",
+              "display_url": "https://github.com/LouKordos/google-tracking-viz"
+            },
+            {
+              "id": "304872224",
+              "name": "photoshopCClinux",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/photoshopCClinux",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/photoshopCClinux.git",
+              "size": 878,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/photoshopCClinux/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/photoshopCClinux/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/photoshopCClinux.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/photoshopCClinux",
+              "display_url": "https://github.com/LouKordos/photoshopCClinux"
+            },
+            {
+              "id": "888566003",
+              "name": "fanuc-ethernet-cpp",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/fanuc-ethernet-cpp",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/fanuc-ethernet-cpp.git",
+              "size": 250,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/fanuc-ethernet-cpp/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/fanuc-ethernet-cpp/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/fanuc-ethernet-cpp.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/fanuc-ethernet-cpp",
+              "display_url": "https://github.com/LouKordos/fanuc-ethernet-cpp"
+            },
+            {
+              "id": "368655987",
+              "name": "casadi",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/casadi",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/casadi.git",
+              "size": 120317,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/casadi/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/casadi/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/casadi.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/casadi",
+              "display_url": "https://github.com/LouKordos/casadi"
+            },
+            {
+              "id": "345097082",
+              "name": "hello-github-actions",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/hello-github-actions",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/hello-github-actions.git",
+              "size": 5,
+              "default_branch": "main",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/hello-github-actions/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/hello-github-actions/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/hello-github-actions.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/hello-github-actions",
+              "display_url": "https://github.com/LouKordos/hello-github-actions"
+            },
+            {
+              "id": "808566156",
+              "name": "basyx-projektarbeit",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/basyx-projektarbeit",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/basyx-projektarbeit.git",
+              "size": 47889,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/basyx-projektarbeit/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/basyx-projektarbeit/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/basyx-projektarbeit.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/basyx-projektarbeit",
+              "display_url": "https://github.com/LouKordos/basyx-projektarbeit"
+            },
+            {
+              "id": "861635621",
+              "name": "ati-ft-sensor-tcp",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/ati-ft-sensor-tcp",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/ati-ft-sensor-tcp.git",
+              "size": 155,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/ati-ft-sensor-tcp/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/ati-ft-sensor-tcp/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/ati-ft-sensor-tcp.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/ati-ft-sensor-tcp",
+              "display_url": "https://github.com/LouKordos/ati-ft-sensor-tcp"
+            },
+            {
+              "id": "818673700",
+              "name": "server-memory-logging",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/server-memory-logging",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/server-memory-logging.git",
+              "size": 6,
+              "default_branch": "main",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/server-memory-logging/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/server-memory-logging/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/server-memory-logging.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/server-memory-logging",
+              "display_url": "https://github.com/LouKordos/server-memory-logging"
+            },
+            {
+              "id": "1020982438",
+              "name": "FAST_LIO_ROS2",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/FAST_LIO_ROS2",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/FAST_LIO_ROS2.git",
+              "size": 129803,
+              "default_branch": "ros2",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/FAST_LIO_ROS2/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/FAST_LIO_ROS2/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/FAST_LIO_ROS2.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/FAST_LIO_ROS2",
+              "display_url": "https://github.com/LouKordos/FAST_LIO_ROS2"
+            },
+            {
+              "id": "296873219",
+              "name": "wallpapers",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/wallpapers",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/wallpapers.git",
+              "size": 489107,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/wallpapers/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/wallpapers/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/wallpapers.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/wallpapers",
+              "display_url": "https://github.com/LouKordos/wallpapers"
+            },
+            {
+              "id": "368773006",
+              "name": "metis-mirror",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/metis-mirror",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/metis-mirror.git",
+              "size": 510,
+              "default_branch": "main",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/metis-mirror/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/metis-mirror/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/metis-mirror.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/metis-mirror",
+              "display_url": "https://github.com/LouKordos/metis-mirror"
+            },
+            {
+              "id": "368804301",
+              "name": "json",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/json",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/json.git",
+              "size": 248136,
+              "default_branch": "develop",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/json/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/json/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/json.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/json",
+              "display_url": "https://github.com/LouKordos/json"
+            },
+            {
+              "id": "1348229951",
+              "name": "clipshare",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/clipshare",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/clipshare.git",
+              "size": 14,
+              "default_branch": "main",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/clipshare/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/clipshare/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/clipshare.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/clipshare",
+              "display_url": "https://github.com/LouKordos/clipshare"
+            },
+            {
+              "id": "373093219",
+              "name": "libgts",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/libgts",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/libgts.git",
+              "size": 885,
+              "default_branch": "main",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/libgts/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/libgts/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/libgts.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/libgts",
+              "display_url": "https://github.com/LouKordos/libgts"
+            },
+            {
+              "id": "231207966",
+              "name": "jupyter_notebooks",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/jupyter_notebooks",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/jupyter_notebooks.git",
+              "size": 85360,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/jupyter_notebooks/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/jupyter_notebooks/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/jupyter_notebooks.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/jupyter_notebooks",
+              "display_url": "https://github.com/LouKordos/jupyter_notebooks"
+            },
+            {
+              "id": "1024797198",
+              "name": "elevation_mapping_cupy",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/elevation_mapping_cupy",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/elevation_mapping_cupy.git",
+              "size": 20298,
+              "default_branch": "main",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/elevation_mapping_cupy/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/elevation_mapping_cupy/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/elevation_mapping_cupy.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/elevation_mapping_cupy",
+              "display_url": "https://github.com/LouKordos/elevation_mapping_cupy"
+            },
+            {
+              "id": "224901043",
+              "name": "simplified_biped",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/simplified_biped",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/simplified_biped.git",
+              "size": 3824,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/simplified_biped/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/simplified_biped/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/simplified_biped.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/simplified_biped",
+              "display_url": "https://github.com/LouKordos/simplified_biped"
+            },
+            {
+              "id": "515353823",
+              "name": "Signal-Desktop-Fedora",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/Signal-Desktop-Fedora",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/Signal-Desktop-Fedora.git",
+              "size": 14,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/Signal-Desktop-Fedora/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/Signal-Desktop-Fedora/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/Signal-Desktop-Fedora.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/Signal-Desktop-Fedora",
+              "display_url": "https://github.com/LouKordos/Signal-Desktop-Fedora"
+            },
+            {
+              "id": "305727141",
+              "name": "thc-hydra",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/thc-hydra",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/thc-hydra.git",
+              "size": 3077,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/thc-hydra/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/thc-hydra/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/thc-hydra.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/thc-hydra",
+              "display_url": "https://github.com/LouKordos/thc-hydra"
+            },
+            {
+              "id": "304697636",
+              "name": "fucking-algorithm",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/fucking-algorithm",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/fucking-algorithm.git",
+              "size": 108199,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/fucking-algorithm/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/fucking-algorithm/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/fucking-algorithm.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/fucking-algorithm",
+              "display_url": "https://github.com/LouKordos/fucking-algorithm"
+            },
+            {
+              "id": "200712046",
+              "name": "solidworks_urdf_exporter",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/solidworks_urdf_exporter",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/solidworks_urdf_exporter.git",
+              "size": 73866,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/solidworks_urdf_exporter/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/solidworks_urdf_exporter/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/solidworks_urdf_exporter.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/solidworks_urdf_exporter",
+              "display_url": "https://github.com/LouKordos/solidworks_urdf_exporter"
+            },
+            {
+              "id": "482754083",
+              "name": "mta-sts",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/mta-sts",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/mta-sts.git",
+              "size": 8,
+              "default_branch": "main",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/mta-sts/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/mta-sts/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/mta-sts.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/mta-sts",
+              "display_url": "https://github.com/LouKordos/mta-sts"
+            },
+            {
+              "id": "859817817",
+              "name": "fanuc_ethernet_ip_drivers",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/fanuc_ethernet_ip_drivers",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/fanuc_ethernet_ip_drivers.git",
+              "size": 410,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/fanuc_ethernet_ip_drivers/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/fanuc_ethernet_ip_drivers/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/fanuc_ethernet_ip_drivers.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/fanuc_ethernet_ip_drivers",
+              "display_url": "https://github.com/LouKordos/fanuc_ethernet_ip_drivers"
+            },
+            {
+              "id": "368774495",
+              "name": "socket-cpp",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/socket-cpp",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/socket-cpp.git",
+              "size": 141,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/socket-cpp/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/socket-cpp/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/socket-cpp.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/socket-cpp",
+              "display_url": "https://github.com/LouKordos/socket-cpp"
+            },
+            {
+              "id": "368656960",
+              "name": "eigen",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/eigen",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/eigen.git",
+              "size": 97727,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/eigen/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/eigen/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/eigen.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/eigen",
+              "display_url": "https://github.com/LouKordos/eigen"
+            },
+            {
+              "id": "1119760842",
+              "name": "ww-run-raise",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/ww-run-raise",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/ww-run-raise.git",
+              "size": 52,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/ww-run-raise/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/ww-run-raise/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/ww-run-raise.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/ww-run-raise",
+              "display_url": "https://github.com/LouKordos/ww-run-raise"
+            },
+            {
+              "id": "877144639",
+              "name": "ati-netft-cpp",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/ati-netft-cpp",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/ati-netft-cpp.git",
+              "size": 53,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/ati-netft-cpp/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/ati-netft-cpp/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/ati-netft-cpp.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/ati-netft-cpp",
+              "display_url": "https://github.com/LouKordos/ati-netft-cpp"
+            },
+            {
+              "id": "1021344224",
+              "name": "go2_driver",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/go2_driver",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/go2_driver.git",
+              "size": 27,
+              "default_branch": "humble",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/go2_driver/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/go2_driver/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/go2_driver.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/go2_driver",
+              "display_url": "https://github.com/LouKordos/go2_driver"
+            },
+            {
+              "id": "1208508263",
+              "name": "go2_odometry",
+              "owner": {
+                "login": "LouKordos",
+                "id": 32240690,
+                "type": "User",
+                "avatar_url": "https://avatars.githubusercontent.com/u/32240690?v=4",
+                "url": "https://api.github.com/users/LouKordos"
+              },
+              "repository_full_name": "LouKordos/go2_odometry",
+              "permissions": {
+                "admin": false,
+                "maintain": false,
+                "pull": true,
+                "push": false,
+                "triage": false
+              },
+              "allow_auto_merge": null,
+              "allow_merge_commit": null,
+              "allow_rebase_merge": null,
+              "allow_squash_merge": null,
+              "allow_update_branch": null,
+              "clone_url": "https://github.com/LouKordos/go2_odometry.git",
+              "size": 4164,
+              "default_branch": "master",
+              "git_commits_url": "https://api.github.com/repos/LouKordos/go2_odometry/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/LouKordos/go2_odometry/git/refs{/sha}",
+              "git_url": "git://github.com/LouKordos/go2_odometry.git",
+              "master_branch": null,
+              "visibility": "public",
+              "archived": false,
+              "is_code_search_indexed": null,
+              "display_title": "LouKordos/go2_odometry",
+              "display_url": "https://github.com/LouKordos/go2_odometry"
+            }
+          ]
+        },
+        "isError": false
+      }
+    }
+  },
+  "扩展5": {
+    "status": "fulfilled",
+    "value": {
+      "label": "全局环境名搜索",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Action completed."
+          }
+        ],
+        "structuredContent": {
+          "results": []
+        },
+        "isError": false
+      }
+    }
+  },
+  "扩展6": {
+    "status": "fulfilled",
+    "value": {
+      "label": "合并请求",
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Action completed."
+          }
+        ],
+        "structuredContent": {
+          "content": "[{\"url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/2\",\"id\":2881546415,\"node_id\":\"PR_kwDOOaEtu86rwOiv\",\"html_url\":\"https://github.com/LouKordos/locomposition/pull/2\",\"diff_url\":\"https://github.com/LouKordos/locomposition/pull/2.diff\",\"patch_url\":\"https://github.com/LouKordos/locomposition/pull/2.patch\",\"issue_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/2\",\"number\":2,\"state\":\"closed\",\"locked\":false,\"title\":\"Add sim2real for Go2, tune parameters based on cluster experiments\",\"user\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"body\":null,\"created_at\":\"2025-10-02T11:59:40Z\",\"updated_at\":\"2025-10-02T12:01:11Z\",\"closed_at\":\"2025-10-02T12:01:11Z\",\"merged_at\":\"2025-10-02T12:01:11Z\",\"merge_commit_sha\":\"86dbb4e24979fffd51f6ae7db78d681168bb1e45\",\"assignees\":[],\"requested_reviewers\":[],\"requested_teams\":[],\"labels\":[],\"milestone\":null,\"draft\":false,\"commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/2/commits\",\"review_comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/2/comments\",\"review_comment_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/comments{/number}\",\"comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/2/comments\",\"statuses_url\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/66d2ac7d34b78d080e1885b047bae0e0a24198ab\",\"head\":{\"label\":\"LouKordos:sim2real\",\"ref\":\"sim2real\",\"sha\":\"66d2ac7d34b78d080e1885b047bae0e0a24198ab\",\"user\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":966864315,\"node_id\":\"R_kgDOOaEtuw\",\"name\":\"locomposition\",\"full_name\":\"LouKordos/locomposition\",\"private\":false,\"owner\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/LouKordos/locomposition\",\"description\":\"Integrating Constraints in PPO (using Isaac Gym or Isaac Lab)\",\"fork\":true,\"url\":\"https://api.github.com/repos/LouKordos/locomposition\",\"forks_url\":\"https://api.github.com/repos/LouKordos/locomposition/forks\",\"keys_url\":\"https://api.github.com/repos/LouKordos/locomposition/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/LouKordos/locomposition/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/LouKordos/locomposition/teams\",\"hooks_url\":\"https://api.github.com/repos/LouKordos/locomposition/hooks\",\"issue_events_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/LouKordos/locomposition/events\",\"assignees_url\":\"https://api.github.com/repos/LouKordos/locomposition/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/LouKordos/locomposition/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/tags\",\"blobs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/LouKordos/locomposition/languages\",\"stargazers_url\":\"https://api.github.com/repos/LouKordos/locomposition/stargazers\",\"contributors_url\":\"https://api.github.com/repos/LouKordos/locomposition/contributors\",\"subscribers_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscribers\",\"subscription_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscription\",\"commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/LouKordos/locomposition/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/LouKordos/locomposition/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/LouKordos/locomposition/merges\",\"archive_url\":\"https://api.github.com/repos/LouKordos/locomposition/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/LouKordos/locomposition/downloads\",\"issues_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/LouKordos/locomposition/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/LouKordos/locomposition/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/LouKordos/locomposition/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/LouKordos/locomposition/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/LouKordos/locomposition/deployments\",\"created_at\":\"2025-04-15T15:09:28Z\",\"updated_at\":\"2026-10-16T07:27:11Z\",\"pushed_at\":\"2026-10-09T11:30:05Z\",\"git_url\":\"git://github.com/LouKordos/locomposition.git\",\"ssh_url\":\"git@github.com:LouKordos/locomposition.git\",\"clone_url\":\"https://github.com/LouKordos/locomposition.git\",\"svn_url\":\"https://github.com/LouKordos/locomposition\",\"homepage\":\"https://constraints-as-terminations.github.io/\",\"size\":57294,\"stargazers_count\":4,\"watchers_count\":4,\"language\":\"Python\",\"has_issues\":false,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":0,\"license\":{\"key\":\"mit\",\"name\":\"MIT License\",\"spdx_id\":\"MIT\",\"url\":\"https://api.github.com/licenses/mit\",\"node_id\":\"MDc6TGljZW5zZTEz\"},\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":0,\"watchers\":4,\"default_branch\":\"main\"}},\"base\":{\"label\":\"LouKordos:main\",\"ref\":\"main\",\"sha\":\"fc7cbceb1ac6b695eebe637fd6103c70901fd6ad\",\"user\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":966864315,\"node_id\":\"R_kgDOOaEtuw\",\"name\":\"locomposition\",\"full_name\":\"LouKordos/locomposition\",\"private\":false,\"owner\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/LouKordos/locomposition\",\"description\":\"Integrating Constraints in PPO (using Isaac Gym or Isaac Lab)\",\"fork\":true,\"url\":\"https://api.github.com/repos/LouKordos/locomposition\",\"forks_url\":\"https://api.github.com/repos/LouKordos/locomposition/forks\",\"keys_url\":\"https://api.github.com/repos/LouKordos/locomposition/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/LouKordos/locomposition/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/LouKordos/locomposition/teams\",\"hooks_url\":\"https://api.github.com/repos/LouKordos/locomposition/hooks\",\"issue_events_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/LouKordos/locomposition/events\",\"assignees_url\":\"https://api.github.com/repos/LouKordos/locomposition/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/LouKordos/locomposition/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/tags\",\"blobs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/LouKordos/locomposition/languages\",\"stargazers_url\":\"https://api.github.com/repos/LouKordos/locomposition/stargazers\",\"contributors_url\":\"https://api.github.com/repos/LouKordos/locomposition/contributors\",\"subscribers_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscribers\",\"subscription_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscription\",\"commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/LouKordos/locomposition/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/LouKordos/locomposition/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/LouKordos/locomposition/merges\",\"archive_url\":\"https://api.github.com/repos/LouKordos/locomposition/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/LouKordos/locomposition/downloads\",\"issues_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/LouKordos/locomposition/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/LouKordos/locomposition/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/LouKordos/locomposition/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/LouKordos/locomposition/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/LouKordos/locomposition/deployments\",\"created_at\":\"2025-04-15T15:09:28Z\",\"updated_at\":\"2026-10-16T07:27:11Z\",\"pushed_at\":\"2026-10-09T11:30:05Z\",\"git_url\":\"git://github.com/LouKordos/locomposition.git\",\"ssh_url\":\"git@github.com:LouKordos/locomposition.git\",\"clone_url\":\"https://github.com/LouKordos/locomposition.git\",\"svn_url\":\"https://github.com/LouKordos/locomposition\",\"homepage\":\"https://constraints-as-terminations.github.io/\",\"size\":57294,\"stargazers_count\":4,\"watchers_count\":4,\"language\":\"Python\",\"has_issues\":false,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":0,\"license\":{\"key\":\"mit\",\"name\":\"MIT License\",\"spdx_id\":\"MIT\",\"url\":\"https://api.github.com/licenses/mit\",\"node_id\":\"MDc6TGljZW5zZTEz\"},\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":0,\"watchers\":4,\"default_branch\":\"main\"}},\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/2\"},\"html\":{\"href\":\"https://github.com/LouKordos/locomposition/pull/2\"},\"issue\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/issues/2\"},\"comments\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/issues/2/comments\"},\"review_comments\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/2/comments\"},\"review_comment\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/comments{/number}\"},\"commits\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/2/commits\"},\"statuses\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/66d2ac7d34b78d080e1885b047bae0e0a24198ab\"}},\"author_association\":\"OWNER\",\"auto_merge\":null,\"assignee\":null,\"active_lock_reason\":null},{\"url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/1\",\"id\":2623943142,\"node_id\":\"PR_kwDOOaEtu86cZjHm\",\"html_url\":\"https://github.com/LouKordos/locomposition/pull/1\",\"diff_url\":\"https://github.com/LouKordos/locomposition/pull/1.diff\",\"patch_url\":\"https://github.com/LouKordos/locomposition/pull/1.patch\",\"issue_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/1\",\"number\":1,\"state\":\"closed\",\"locked\":false,\"title\":\"Add energy regularization to incentivize more efficient gait than hopping and reduce required style constraints\",\"user\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"body\":\"Adaptive and linear curriculum are both implemented, but adaptive currently produces high variance across runs and does not reliably learn to trot due to being \\\"too cautious\\\", i.e. not allowing a temporary decrease in performance to get out of the hopping local minimum. Still investigating, but it's definitely better than without so it's a good point to merge into main. \\r\\n\\r\\nAlso various improvements in evaluation script and plot generation\",\"created_at\":\"2025-06-27T10:33:02Z\",\"updated_at\":\"2025-06-27T10:33:51Z\",\"closed_at\":\"2025-06-27T10:33:51Z\",\"merged_at\":\"2025-06-27T10:33:51Z\",\"merge_commit_sha\":\"fc7cbceb1ac6b695eebe637fd6103c70901fd6ad\",\"assignees\":[],\"requested_reviewers\":[],\"requested_teams\":[],\"labels\":[],\"milestone\":null,\"draft\":false,\"commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/1/commits\",\"review_comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/1/comments\",\"review_comment_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/comments{/number}\",\"comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/1/comments\",\"statuses_url\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/7085a729e73b532f2557976b751f1e3ee2e8fc66\",\"head\":{\"label\":\"LouKordos:energy_optimization\",\"ref\":\"energy_optimization\",\"sha\":\"7085a729e73b532f2557976b751f1e3ee2e8fc66\",\"user\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":966864315,\"node_id\":\"R_kgDOOaEtuw\",\"name\":\"locomposition\",\"full_name\":\"LouKordos/locomposition\",\"private\":false,\"owner\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/LouKordos/locomposition\",\"description\":\"Integrating Constraints in PPO (using Isaac Gym or Isaac Lab)\",\"fork\":true,\"url\":\"https://api.github.com/repos/LouKordos/locomposition\",\"forks_url\":\"https://api.github.com/repos/LouKordos/locomposition/forks\",\"keys_url\":\"https://api.github.com/repos/LouKordos/locomposition/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/LouKordos/locomposition/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/LouKordos/locomposition/teams\",\"hooks_url\":\"https://api.github.com/repos/LouKordos/locomposition/hooks\",\"issue_events_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/LouKordos/locomposition/events\",\"assignees_url\":\"https://api.github.com/repos/LouKordos/locomposition/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/LouKordos/locomposition/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/tags\",\"blobs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/LouKordos/locomposition/languages\",\"stargazers_url\":\"https://api.github.com/repos/LouKordos/locomposition/stargazers\",\"contributors_url\":\"https://api.github.com/repos/LouKordos/locomposition/contributors\",\"subscribers_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscribers\",\"subscription_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscription\",\"commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/LouKordos/locomposition/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/LouKordos/locomposition/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/LouKordos/locomposition/merges\",\"archive_url\":\"https://api.github.com/repos/LouKordos/locomposition/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/LouKordos/locomposition/downloads\",\"issues_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/LouKordos/locomposition/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/LouKordos/locomposition/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/LouKordos/locomposition/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/LouKordos/locomposition/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/LouKordos/locomposition/deployments\",\"created_at\":\"2025-04-15T15:09:28Z\",\"updated_at\":\"2026-10-16T07:27:11Z\",\"pushed_at\":\"2026-10-09T11:30:05Z\",\"git_url\":\"git://github.com/LouKordos/locomposition.git\",\"ssh_url\":\"git@github.com:LouKordos/locomposition.git\",\"clone_url\":\"https://github.com/LouKordos/locomposition.git\",\"svn_url\":\"https://github.com/LouKordos/locomposition\",\"homepage\":\"https://constraints-as-terminations.github.io/\",\"size\":57294,\"stargazers_count\":4,\"watchers_count\":4,\"language\":\"Python\",\"has_issues\":false,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":0,\"license\":{\"key\":\"mit\",\"name\":\"MIT License\",\"spdx_id\":\"MIT\",\"url\":\"https://api.github.com/licenses/mit\",\"node_id\":\"MDc6TGljZW5zZTEz\"},\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":0,\"watchers\":4,\"default_branch\":\"main\"}},\"base\":{\"label\":\"LouKordos:main\",\"ref\":\"main\",\"sha\":\"53eddb8fd94e9a27e62ed07cef582c427b6b224a\",\"user\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":966864315,\"node_id\":\"R_kgDOOaEtuw\",\"name\":\"locomposition\",\"full_name\":\"LouKordos/locomposition\",\"private\":false,\"owner\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/LouKordos/locomposition\",\"description\":\"Integrating Constraints in PPO (using Isaac Gym or Isaac Lab)\",\"fork\":true,\"url\":\"https://api.github.com/repos/LouKordos/locomposition\",\"forks_url\":\"https://api.github.com/repos/LouKordos/locomposition/forks\",\"keys_url\":\"https://api.github.com/repos/LouKordos/locomposition/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/LouKordos/locomposition/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/LouKordos/locomposition/teams\",\"hooks_url\":\"https://api.github.com/repos/LouKordos/locomposition/hooks\",\"issue_events_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/LouKordos/locomposition/events\",\"assignees_url\":\"https://api.github.com/repos/LouKordos/locomposition/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/LouKordos/locomposition/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/tags\",\"blobs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/LouKordos/locomposition/languages\",\"stargazers_url\":\"https://api.github.com/repos/LouKordos/locomposition/stargazers\",\"contributors_url\":\"https://api.github.com/repos/LouKordos/locomposition/contributors\",\"subscribers_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscribers\",\"subscription_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscription\",\"commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/LouKordos/locomposition/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/LouKordos/locomposition/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/LouKordos/locomposition/merges\",\"archive_url\":\"https://api.github.com/repos/LouKordos/locomposition/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/LouKordos/locomposition/downloads\",\"issues_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/LouKordos/locomposition/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/LouKordos/locomposition/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/LouKordos/locomposition/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/LouKordos/locomposition/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/LouKordos/locomposition/deployments\",\"created_at\":\"2025-04-15T15:09:28Z\",\"updated_at\":\"2026-10-16T07:27:11Z\",\"pushed_at\":\"2026-10-09T11:30:05Z\",\"git_url\":\"git://github.com/LouKordos/locomposition.git\",\"ssh_url\":\"git@github.com:LouKordos/locomposition.git\",\"clone_url\":\"https://github.com/LouKordos/locomposition.git\",\"svn_url\":\"https://github.com/LouKordos/locomposition\",\"homepage\":\"https://constraints-as-terminations.github.io/\",\"size\":57294,\"stargazers_count\":4,\"watchers_count\":4,\"language\":\"Python\",\"has_issues\":false,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":0,\"license\":{\"key\":\"mit\",\"name\":\"MIT License\",\"spdx_id\":\"MIT\",\"url\":\"https://api.github.com/licenses/mit\",\"node_id\":\"MDc6TGljZW5zZTEz\"},\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":0,\"watchers\":4,\"default_branch\":\"main\"}},\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/1\"},\"html\":{\"href\":\"https://github.com/LouKordos/locomposition/pull/1\"},\"issue\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/issues/1\"},\"comments\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/issues/1/comments\"},\"review_comments\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/1/comments\"},\"review_comment\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/comments{/number}\"},\"commits\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/1/commits\"},\"statuses\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/7085a729e73b532f2557976b751f1e3ee2e8fc66\"}},\"author_association\":\"OWNER\",\"auto_merge\":null,\"assignee\":null,\"active_lock_reason\":null}]",
+          "title": "pulls",
+          "modified_date": null,
+          "url": "https://api.github.com/repos/LouKordos/locomposition/pulls?state=all&per_page=100",
+          "display_url": "https://api.github.com/repos/LouKordos/locomposition/pulls?state=all&per_page=100",
+          "display_title": "pulls",
+          "structuredContent": {
+            "title": "pulls",
+            "content": "[{\"url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/2\",\"id\":2881546415,\"node_id\":\"PR_kwDOOaEtu86rwOiv\",\"html_url\":\"https://github.com/LouKordos/locomposition/pull/2\",\"diff_url\":\"https://github.com/LouKordos/locomposition/pull/2.diff\",\"patch_url\":\"https://github.com/LouKordos/locomposition/pull/2.patch\",\"issue_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/2\",\"number\":2,\"state\":\"closed\",\"locked\":false,\"title\":\"Add sim2real for Go2, tune parameters based on cluster experiments\",\"user\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"body\":null,\"created_at\":\"2025-10-02T11:59:40Z\",\"updated_at\":\"2025-10-02T12:01:11Z\",\"closed_at\":\"2025-10-02T12:01:11Z\",\"merged_at\":\"2025-10-02T12:01:11Z\",\"merge_commit_sha\":\"86dbb4e24979fffd51f6ae7db78d681168bb1e45\",\"assignees\":[],\"requested_reviewers\":[],\"requested_teams\":[],\"labels\":[],\"milestone\":null,\"draft\":false,\"commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/2/commits\",\"review_comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/2/comments\",\"review_comment_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/comments{/number}\",\"comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/2/comments\",\"statuses_url\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/66d2ac7d34b78d080e1885b047bae0e0a24198ab\",\"head\":{\"label\":\"LouKordos:sim2real\",\"ref\":\"sim2real\",\"sha\":\"66d2ac7d34b78d080e1885b047bae0e0a24198ab\",\"user\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":966864315,\"node_id\":\"R_kgDOOaEtuw\",\"name\":\"locomposition\",\"full_name\":\"LouKordos/locomposition\",\"private\":false,\"owner\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/LouKordos/locomposition\",\"description\":\"Integrating Constraints in PPO (using Isaac Gym or Isaac Lab)\",\"fork\":true,\"url\":\"https://api.github.com/repos/LouKordos/locomposition\",\"forks_url\":\"https://api.github.com/repos/LouKordos/locomposition/forks\",\"keys_url\":\"https://api.github.com/repos/LouKordos/locomposition/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/LouKordos/locomposition/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/LouKordos/locomposition/teams\",\"hooks_url\":\"https://api.github.com/repos/LouKordos/locomposition/hooks\",\"issue_events_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/LouKordos/locomposition/events\",\"assignees_url\":\"https://api.github.com/repos/LouKordos/locomposition/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/LouKordos/locomposition/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/tags\",\"blobs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/LouKordos/locomposition/languages\",\"stargazers_url\":\"https://api.github.com/repos/LouKordos/locomposition/stargazers\",\"contributors_url\":\"https://api.github.com/repos/LouKordos/locomposition/contributors\",\"subscribers_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscribers\",\"subscription_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscription\",\"commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/LouKordos/locomposition/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/LouKordos/locomposition/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/LouKordos/locomposition/merges\",\"archive_url\":\"https://api.github.com/repos/LouKordos/locomposition/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/LouKordos/locomposition/downloads\",\"issues_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/LouKordos/locomposition/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/LouKordos/locomposition/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/LouKordos/locomposition/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/LouKordos/locomposition/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/LouKordos/locomposition/deployments\",\"created_at\":\"2025-04-15T15:09:28Z\",\"updated_at\":\"2026-10-16T07:27:11Z\",\"pushed_at\":\"2026-10-09T11:30:05Z\",\"git_url\":\"git://github.com/LouKordos/locomposition.git\",\"ssh_url\":\"git@github.com:LouKordos/locomposition.git\",\"clone_url\":\"https://github.com/LouKordos/locomposition.git\",\"svn_url\":\"https://github.com/LouKordos/locomposition\",\"homepage\":\"https://constraints-as-terminations.github.io/\",\"size\":57294,\"stargazers_count\":4,\"watchers_count\":4,\"language\":\"Python\",\"has_issues\":false,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":0,\"license\":{\"key\":\"mit\",\"name\":\"MIT License\",\"spdx_id\":\"MIT\",\"url\":\"https://api.github.com/licenses/mit\",\"node_id\":\"MDc6TGljZW5zZTEz\"},\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":0,\"watchers\":4,\"default_branch\":\"main\"}},\"base\":{\"label\":\"LouKordos:main\",\"ref\":\"main\",\"sha\":\"fc7cbceb1ac6b695eebe637fd6103c70901fd6ad\",\"user\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":966864315,\"node_id\":\"R_kgDOOaEtuw\",\"name\":\"locomposition\",\"full_name\":\"LouKordos/locomposition\",\"private\":false,\"owner\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/LouKordos/locomposition\",\"description\":\"Integrating Constraints in PPO (using Isaac Gym or Isaac Lab)\",\"fork\":true,\"url\":\"https://api.github.com/repos/LouKordos/locomposition\",\"forks_url\":\"https://api.github.com/repos/LouKordos/locomposition/forks\",\"keys_url\":\"https://api.github.com/repos/LouKordos/locomposition/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/LouKordos/locomposition/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/LouKordos/locomposition/teams\",\"hooks_url\":\"https://api.github.com/repos/LouKordos/locomposition/hooks\",\"issue_events_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/LouKordos/locomposition/events\",\"assignees_url\":\"https://api.github.com/repos/LouKordos/locomposition/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/LouKordos/locomposition/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/tags\",\"blobs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/LouKordos/locomposition/languages\",\"stargazers_url\":\"https://api.github.com/repos/LouKordos/locomposition/stargazers\",\"contributors_url\":\"https://api.github.com/repos/LouKordos/locomposition/contributors\",\"subscribers_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscribers\",\"subscription_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscription\",\"commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/LouKordos/locomposition/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/LouKordos/locomposition/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/LouKordos/locomposition/merges\",\"archive_url\":\"https://api.github.com/repos/LouKordos/locomposition/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/LouKordos/locomposition/downloads\",\"issues_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/LouKordos/locomposition/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/LouKordos/locomposition/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/LouKordos/locomposition/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/LouKordos/locomposition/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/LouKordos/locomposition/deployments\",\"created_at\":\"2025-04-15T15:09:28Z\",\"updated_at\":\"2026-10-16T07:27:11Z\",\"pushed_at\":\"2026-10-09T11:30:05Z\",\"git_url\":\"git://github.com/LouKordos/locomposition.git\",\"ssh_url\":\"git@github.com:LouKordos/locomposition.git\",\"clone_url\":\"https://github.com/LouKordos/locomposition.git\",\"svn_url\":\"https://github.com/LouKordos/locomposition\",\"homepage\":\"https://constraints-as-terminations.github.io/\",\"size\":57294,\"stargazers_count\":4,\"watchers_count\":4,\"language\":\"Python\",\"has_issues\":false,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":0,\"license\":{\"key\":\"mit\",\"name\":\"MIT License\",\"spdx_id\":\"MIT\",\"url\":\"https://api.github.com/licenses/mit\",\"node_id\":\"MDc6TGljZW5zZTEz\"},\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":0,\"watchers\":4,\"default_branch\":\"main\"}},\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/2\"},\"html\":{\"href\":\"https://github.com/LouKordos/locomposition/pull/2\"},\"issue\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/issues/2\"},\"comments\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/issues/2/comments\"},\"review_comments\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/2/comments\"},\"review_comment\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/comments{/number}\"},\"commits\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/2/commits\"},\"statuses\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/66d2ac7d34b78d080e1885b047bae0e0a24198ab\"}},\"author_association\":\"OWNER\",\"auto_merge\":null,\"assignee\":null,\"active_lock_reason\":null},{\"url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/1\",\"id\":2623943142,\"node_id\":\"PR_kwDOOaEtu86cZjHm\",\"html_url\":\"https://github.com/LouKordos/locomposition/pull/1\",\"diff_url\":\"https://github.com/LouKordos/locomposition/pull/1.diff\",\"patch_url\":\"https://github.com/LouKordos/locomposition/pull/1.patch\",\"issue_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/1\",\"number\":1,\"state\":\"closed\",\"locked\":false,\"title\":\"Add energy regularization to incentivize more efficient gait than hopping and reduce required style constraints\",\"user\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"body\":\"Adaptive and linear curriculum are both implemented, but adaptive currently produces high variance across runs and does not reliably learn to trot due to being \\\"too cautious\\\", i.e. not allowing a temporary decrease in performance to get out of the hopping local minimum. Still investigating, but it's definitely better than without so it's a good point to merge into main. \\r\\n\\r\\nAlso various improvements in evaluation script and plot generation\",\"created_at\":\"2025-06-27T10:33:02Z\",\"updated_at\":\"2025-06-27T10:33:51Z\",\"closed_at\":\"2025-06-27T10:33:51Z\",\"merged_at\":\"2025-06-27T10:33:51Z\",\"merge_commit_sha\":\"fc7cbceb1ac6b695eebe637fd6103c70901fd6ad\",\"assignees\":[],\"requested_reviewers\":[],\"requested_teams\":[],\"labels\":[],\"milestone\":null,\"draft\":false,\"commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/1/commits\",\"review_comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/1/comments\",\"review_comment_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/comments{/number}\",\"comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/1/comments\",\"statuses_url\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/7085a729e73b532f2557976b751f1e3ee2e8fc66\",\"head\":{\"label\":\"LouKordos:energy_optimization\",\"ref\":\"energy_optimization\",\"sha\":\"7085a729e73b532f2557976b751f1e3ee2e8fc66\",\"user\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":966864315,\"node_id\":\"R_kgDOOaEtuw\",\"name\":\"locomposition\",\"full_name\":\"LouKordos/locomposition\",\"private\":false,\"owner\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/LouKordos/locomposition\",\"description\":\"Integrating Constraints in PPO (using Isaac Gym or Isaac Lab)\",\"fork\":true,\"url\":\"https://api.github.com/repos/LouKordos/locomposition\",\"forks_url\":\"https://api.github.com/repos/LouKordos/locomposition/forks\",\"keys_url\":\"https://api.github.com/repos/LouKordos/locomposition/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/LouKordos/locomposition/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/LouKordos/locomposition/teams\",\"hooks_url\":\"https://api.github.com/repos/LouKordos/locomposition/hooks\",\"issue_events_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/LouKordos/locomposition/events\",\"assignees_url\":\"https://api.github.com/repos/LouKordos/locomposition/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/LouKordos/locomposition/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/tags\",\"blobs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/LouKordos/locomposition/languages\",\"stargazers_url\":\"https://api.github.com/repos/LouKordos/locomposition/stargazers\",\"contributors_url\":\"https://api.github.com/repos/LouKordos/locomposition/contributors\",\"subscribers_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscribers\",\"subscription_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscription\",\"commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/LouKordos/locomposition/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/LouKordos/locomposition/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/LouKordos/locomposition/merges\",\"archive_url\":\"https://api.github.com/repos/LouKordos/locomposition/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/LouKordos/locomposition/downloads\",\"issues_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/LouKordos/locomposition/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/LouKordos/locomposition/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/LouKordos/locomposition/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/LouKordos/locomposition/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/LouKordos/locomposition/deployments\",\"created_at\":\"2025-04-15T15:09:28Z\",\"updated_at\":\"2026-10-16T07:27:11Z\",\"pushed_at\":\"2026-10-09T11:30:05Z\",\"git_url\":\"git://github.com/LouKordos/locomposition.git\",\"ssh_url\":\"git@github.com:LouKordos/locomposition.git\",\"clone_url\":\"https://github.com/LouKordos/locomposition.git\",\"svn_url\":\"https://github.com/LouKordos/locomposition\",\"homepage\":\"https://constraints-as-terminations.github.io/\",\"size\":57294,\"stargazers_count\":4,\"watchers_count\":4,\"language\":\"Python\",\"has_issues\":false,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":0,\"license\":{\"key\":\"mit\",\"name\":\"MIT License\",\"spdx_id\":\"MIT\",\"url\":\"https://api.github.com/licenses/mit\",\"node_id\":\"MDc6TGljZW5zZTEz\"},\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":0,\"watchers\":4,\"default_branch\":\"main\"}},\"base\":{\"label\":\"LouKordos:main\",\"ref\":\"main\",\"sha\":\"53eddb8fd94e9a27e62ed07cef582c427b6b224a\",\"user\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"repo\":{\"id\":966864315,\"node_id\":\"R_kgDOOaEtuw\",\"name\":\"locomposition\",\"full_name\":\"LouKordos/locomposition\",\"private\":false,\"owner\":{\"login\":\"LouKordos\",\"id\":32240690,\"node_id\":\"MDQ6VXNlcjMyMjQwNjkw\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/32240690?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/LouKordos\",\"html_url\":\"https://github.com/LouKordos\",\"followers_url\":\"https://api.github.com/users/LouKordos/followers\",\"following_url\":\"https://api.github.com/users/LouKordos/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/LouKordos/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/LouKordos/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/LouKordos/subscriptions\",\"organizations_url\":\"https://api.github.com/users/LouKordos/orgs\",\"repos_url\":\"https://api.github.com/users/LouKordos/repos\",\"events_url\":\"https://api.github.com/users/LouKordos/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/LouKordos/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"html_url\":\"https://github.com/LouKordos/locomposition\",\"description\":\"Integrating Constraints in PPO (using Isaac Gym or Isaac Lab)\",\"fork\":true,\"url\":\"https://api.github.com/repos/LouKordos/locomposition\",\"forks_url\":\"https://api.github.com/repos/LouKordos/locomposition/forks\",\"keys_url\":\"https://api.github.com/repos/LouKordos/locomposition/keys{/key_id}\",\"collaborators_url\":\"https://api.github.com/repos/LouKordos/locomposition/collaborators{/collaborator}\",\"teams_url\":\"https://api.github.com/repos/LouKordos/locomposition/teams\",\"hooks_url\":\"https://api.github.com/repos/LouKordos/locomposition/hooks\",\"issue_events_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/events{/number}\",\"events_url\":\"https://api.github.com/repos/LouKordos/locomposition/events\",\"assignees_url\":\"https://api.github.com/repos/LouKordos/locomposition/assignees{/user}\",\"branches_url\":\"https://api.github.com/repos/LouKordos/locomposition/branches{/branch}\",\"tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/tags\",\"blobs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/blobs{/sha}\",\"git_tags_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/tags{/sha}\",\"git_refs_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/refs{/sha}\",\"trees_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/trees{/sha}\",\"statuses_url\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/{sha}\",\"languages_url\":\"https://api.github.com/repos/LouKordos/locomposition/languages\",\"stargazers_url\":\"https://api.github.com/repos/LouKordos/locomposition/stargazers\",\"contributors_url\":\"https://api.github.com/repos/LouKordos/locomposition/contributors\",\"subscribers_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscribers\",\"subscription_url\":\"https://api.github.com/repos/LouKordos/locomposition/subscription\",\"commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/commits{/sha}\",\"git_commits_url\":\"https://api.github.com/repos/LouKordos/locomposition/git/commits{/sha}\",\"comments_url\":\"https://api.github.com/repos/LouKordos/locomposition/comments{/number}\",\"issue_comment_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues/comments{/number}\",\"contents_url\":\"https://api.github.com/repos/LouKordos/locomposition/contents/{+path}\",\"compare_url\":\"https://api.github.com/repos/LouKordos/locomposition/compare/{base}...{head}\",\"merges_url\":\"https://api.github.com/repos/LouKordos/locomposition/merges\",\"archive_url\":\"https://api.github.com/repos/LouKordos/locomposition/{archive_format}{/ref}\",\"downloads_url\":\"https://api.github.com/repos/LouKordos/locomposition/downloads\",\"issues_url\":\"https://api.github.com/repos/LouKordos/locomposition/issues{/number}\",\"pulls_url\":\"https://api.github.com/repos/LouKordos/locomposition/pulls{/number}\",\"milestones_url\":\"https://api.github.com/repos/LouKordos/locomposition/milestones{/number}\",\"notifications_url\":\"https://api.github.com/repos/LouKordos/locomposition/notifications{?since,all,participating}\",\"labels_url\":\"https://api.github.com/repos/LouKordos/locomposition/labels{/name}\",\"releases_url\":\"https://api.github.com/repos/LouKordos/locomposition/releases{/id}\",\"deployments_url\":\"https://api.github.com/repos/LouKordos/locomposition/deployments\",\"created_at\":\"2025-04-15T15:09:28Z\",\"updated_at\":\"2026-10-16T07:27:11Z\",\"pushed_at\":\"2026-10-09T11:30:05Z\",\"git_url\":\"git://github.com/LouKordos/locomposition.git\",\"ssh_url\":\"git@github.com:LouKordos/locomposition.git\",\"clone_url\":\"https://github.com/LouKordos/locomposition.git\",\"svn_url\":\"https://github.com/LouKordos/locomposition\",\"homepage\":\"https://constraints-as-terminations.github.io/\",\"size\":57294,\"stargazers_count\":4,\"watchers_count\":4,\"language\":\"Python\",\"has_issues\":false,\"has_projects\":true,\"has_downloads\":false,\"has_wiki\":true,\"has_pages\":false,\"has_discussions\":false,\"forks_count\":0,\"mirror_url\":null,\"archived\":false,\"disabled\":false,\"open_issues_count\":0,\"license\":{\"key\":\"mit\",\"name\":\"MIT License\",\"spdx_id\":\"MIT\",\"url\":\"https://api.github.com/licenses/mit\",\"node_id\":\"MDc6TGljZW5zZTEz\"},\"allow_forking\":true,\"is_template\":false,\"web_commit_signoff_required\":false,\"has_pull_requests\":true,\"pull_request_creation_policy\":\"all\",\"topics\":[],\"visibility\":\"public\",\"forks\":0,\"open_issues\":0,\"watchers\":4,\"default_branch\":\"main\"}},\"_links\":{\"self\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/1\"},\"html\":{\"href\":\"https://github.com/LouKordos/locomposition/pull/1\"},\"issue\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/issues/1\"},\"comments\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/issues/1/comments\"},\"review_comments\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/1/comments\"},\"review_comment\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/comments{/number}\"},\"commits\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/pulls/1/commits\"},\"statuses\":{\"href\":\"https://api.github.com/repos/LouKordos/locomposition/statuses/7085a729e73b532f2557976b751f1e3ee2e8fc66\"}},\"author_association\":\"OWNER\",\"auto_merge\":null,\"assignee\":null,\"active_lock_reason\":null}]",
+            "display_url": "https://api.github.com/repos/LouKordos/locomposition/pulls?state=all&per_page=100"
+          }
+        },
+        "isError": false
+      }
+    }
+  }
+}

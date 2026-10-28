@@ -1,0 +1,15 @@
+{
+  "条件": "开启高程图",
+  "场景": "崎岖地形",
+  "来源轨迹": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-2999与30000权重对照-20261022/2999次/开启高程图/崎岖地形/eval_checkpoint_2999_seed_46_action_delay_0_scenario_fast_walk_x_uneven_terrain/plots/sim_data.npz",
+  "来源SHA256": "d1db809a76d89e3570d63cc2f889b486718d4e83cfb9920e2092ac45734c3c26",
+  "地形SHA256": "dd5d4cbd14aef4ea5bc9b65a30d2a3f0120fda2776116bb8224bfefb3308769a",
+  "仅运动学回放": true,
+  "足端最大误差米": 0.0020002950394307465,
+  "实际播放至控制步": 269,
+  "实际轨迹时长秒": 5.4,
+  "定格说明": "首次提前终止后定格，禁止显示自动重置后轨迹。",
+  "输出时长秒": 10,
+  "帧数": 250,
+  "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-2999与30000权重对照-20261022/2999次/开启高程图/崎岖地形/录像/gpt-开启高程图-崎岖地形.mp4"
+}

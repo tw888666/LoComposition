@@ -1,0 +1,51 @@
+[
+  {
+    "来源提交": "e048b148bae3da946c3c164800260613d26ddcd1",
+    "原路径": "exts/cat_envs/cat_envs/tasks/locomotion/velocity/config/solo12/cat_go2_rough_terrain_env_cfg.py",
+    "保存文件": "gpt-训练日期附近环境源码.txt",
+    "SHA256": "0b12c9c4aacade38dcddf9e3a80484aa645f5447f0e66842ccb69954e381bf55",
+    "URL": "https://github.com/LouKordos/locomposition/blob/e048b148bae3da946c3c164800260613d26ddcd1/exts/cat_envs/cat_envs/tasks/locomotion/velocity/config/solo12/cat_go2_rough_terrain_env_cfg.py"
+  },
+  {
+    "来源提交": "e048b148bae3da946c3c164800260613d26ddcd1",
+    "原路径": "exts/cat_envs/cat_envs/tasks/locomotion/velocity/config/solo12/agents/clean_rl_ppo_cfg.py",
+    "保存文件": "gpt-训练日期附近优化器配置.txt",
+    "SHA256": "7e674e2b5e4220a1f3283df4ef9880d974d4e7ec267a22520d88f01a7ad5fb8e",
+    "URL": "https://github.com/LouKordos/locomposition/blob/e048b148bae3da946c3c164800260613d26ddcd1/exts/cat_envs/cat_envs/tasks/locomotion/velocity/config/solo12/agents/clean_rl_ppo_cfg.py"
+  },
+  {
+    "来源提交": "e048b148bae3da946c3c164800260613d26ddcd1",
+    "原路径": "exts/cat_envs/cat_envs/assets/go2_config.py",
+    "保存文件": "gpt-训练日期附近机器人配置.txt",
+    "SHA256": "8efd3eb8515a9862bfa086d18da33f6624169011bfb5136bb375be3f0381f1a9",
+    "URL": "https://github.com/LouKordos/locomposition/blob/e048b148bae3da946c3c164800260613d26ddcd1/exts/cat_envs/cat_envs/assets/go2_config.py"
+  },
+  {
+    "来源提交": "e048b148bae3da946c3c164800260613d26ddcd1",
+    "原路径": "scripts/clean_rl/train.py",
+    "保存文件": "gpt-训练日期附近训练入口.txt",
+    "SHA256": "eec9e008eea5a8901070e512240a97bada7ae3f2c5dc573bee62f75868c1a235",
+    "URL": "https://github.com/LouKordos/locomposition/blob/e048b148bae3da946c3c164800260613d26ddcd1/scripts/clean_rl/train.py"
+  },
+  {
+    "来源提交": "e048b148bae3da946c3c164800260613d26ddcd1",
+    "原路径": "create-isaac-lab-env-uv.sh",
+    "保存文件": "gpt-训练日期附近批训练入口.txt",
+    "SHA256": "af613bb34d31d9ae2bac803fc49b7551b5972a6d14e31b16b1d0cb5ca71fd102",
+    "URL": "https://github.com/LouKordos/locomposition/blob/e048b148bae3da946c3c164800260613d26ddcd1/create-isaac-lab-env-uv.sh"
+  },
+  {
+    "来源提交": "e048b148bae3da946c3c164800260613d26ddcd1",
+    "原路径": "justfile",
+    "保存文件": "gpt-训练日期附近命令配方.txt",
+    "SHA256": "faf6fae407585b2eca69229b5785723095e12fc20de724544b81af9766bd23b7",
+    "URL": "https://github.com/LouKordos/locomposition/blob/e048b148bae3da946c3c164800260613d26ddcd1/justfile"
+  },
+  {
+    "来源提交": "e048b148bae3da946c3c164800260613d26ddcd1",
+    "原路径": ".gitignore",
+    "保存文件": "gpt-训练日期附近忽略规则.txt",
+    "SHA256": "d0bdceddbb85f7af125d3a70e3bfa56055c21bd7b37a7732b14f485a3b338679",
+    "URL": "https://github.com/LouKordos/locomposition/blob/e048b148bae3da946c3c164800260613d26ddcd1/.gitignore"
+  }
+]

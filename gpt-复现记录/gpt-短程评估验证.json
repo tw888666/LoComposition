@@ -1,0 +1,112 @@
+{
+  "评估目录": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-冒烟验证/2026-10-09-13-41-30/eval_checkpoint_3_seed_46_action_delay_0_scenario_walk_x_flat_terrain_0.4mps",
+  "仿真步数": 30,
+  "用途": "仅验证评估管线，不作为策略性能结果",
+  "指标文件可解析": true,
+  "未生成视频": true,
+  "关键数组检查": {
+    "joint_positions_array": {
+      "形状": [
+        30,
+        12
+      ],
+      "全部有限": true
+    },
+    "joint_velocities_array": {
+      "形状": [
+        30,
+        12
+      ],
+      "全部有限": true
+    },
+    "joint_torques_array": {
+      "形状": [
+        30,
+        12
+      ],
+      "全部有限": true
+    },
+    "base_linear_velocity_body_array": {
+      "形状": [
+        30,
+        3
+      ],
+      "全部有限": true
+    }
+  },
+  "指标顶层字段": [
+    "cumulative_unscaled_raw_reward",
+    "cumulative_reward_divided_by_cost_of_transport",
+    "cumulative_reward_divided_by_cost_of_transport_and_sim_time",
+    "base_linear_velocity_x_rms_error",
+    "base_linear_velocity_x_mean_abs_error",
+    "base_linear_velocity_y_rms_error",
+    "base_linear_velocity_y_mean_abs_error",
+    "base_angular_velocity_z_rms_error",
+    "base_angular_velocity_z_mean_abs_error",
+    "per_joint_summary",
+    "swing_duration_summary",
+    "stance_duration_summary",
+    "contact_force_summary",
+    "step_length_summary",
+    "step_height_summary",
+    "foot_velocity_world_frame_summary",
+    "energy_consumption_per_joint",
+    "total_energy_consumption",
+    "distance_walked_horizontal",
+    "cost_of_transport",
+    "cumulative_power",
+    "constraint_violations_percent",
+    "constraint_violation_magnitudes",
+    "maximum_constraint_violation",
+    "gait_symmetry_tvd_by_joint",
+    "aggregate_joint_symmetry_tvd",
+    "axis_symmetry_tvd",
+    "mean_track_lin_vel_xy_exp_common_weight",
+    "cumulative_track_lin_vel_xy_exp_common_weight",
+    "mean_track_ang_vel_z_exp_common_weight",
+    "cumulative_track_ang_vel_z_exp_common_weight",
+    "mean_track_vel_exp_total_common_weight",
+    "cumulative_track_vel_exp_total_common_weight",
+    "terrain_level_summary",
+    "mean_terrain_level",
+    "final_terrain_level",
+    "random_simulation_steps_metrics",
+    "fixed_command_scenarios_metrics",
+    "fixed_command_scenarios_gait_dynamics_metrics",
+    "env_name",
+    "run_name",
+    "task_name",
+    "robot_profile",
+    "run_dir",
+    "eval_base_dir",
+    "random_sim_steps",
+    "fixed_command_sim_steps",
+    "total_sim_steps",
+    "seed",
+    "action_scale",
+    "eval_action_scale_before_override",
+    "used_checkpoint_path",
+    "policy_backend",
+    "detected_policy_backend",
+    "fixed_command_scenarios",
+    "fixed_command_scenario_completion",
+    "manual_reset_steps",
+    "automatic_reset_steps",
+    "action_delay_steps",
+    "selected_fixed_scenario",
+    "rebuttal_scenarios_only",
+    "rebuttal_dynamics_scenarios",
+    "rebuttal_dynamics_warmup_seconds",
+    "contact_force_threshold_newtons",
+    "base_acceleration_body_name",
+    "constraint_bounds",
+    "constraint_bounds_source",
+    "hardcoded_upstream_go2_constraint_bounds",
+    "hardcoded_upstream_go2_constraint_bounds_used",
+    "matched_baseline_constraint_bounds",
+    "matched_baseline_constraint_bounds_used",
+    "eval_tracking_reward_common_scale",
+    "downscale_upstream_go2_tracking_rewards"
+  ]
+}

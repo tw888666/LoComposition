@@ -1,0 +1,2 @@
+env_name,run_name,checkpoint,action_delay_steps,evaluation_scope,fixed_scenario_count,eligible,selected,selection_reason,json_path
+gpt-go2-default-seed46,2026-10-10-09-56-51,30000,0,full,21,True,True,唯一指定的正式最终评估，不包含诊断结果,/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/eval_checkpoint_30000_seed_46_action_delay_0/metrics_summary.json

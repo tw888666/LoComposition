@@ -1,0 +1,32 @@
+{
+  "实验组": "冒烟-C",
+  "阶段": "冒烟完成",
+  "开始时间": "2026-10-26T13:36:06+08:00",
+  "物理GPU": 4,
+  "追加迭代": 3,
+  "环境数量": 64,
+  "启动参数": [
+    "/home/xy.chen/tw/LoComposition/.venv-v100/bin/python",
+    "scripts/clean_rl/train.py",
+    "--task=LoComposition-Go2-Rough-Terrain-Joint-State-History-v0",
+    "--seed=46",
+    "--headless",
+    "--num_envs=64",
+    "--num_iterations=3",
+    "--logger=tensorboard",
+    "--device=cuda:0",
+    "--finetune",
+    "--checkpoint=/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_30000.pt",
+    "--energy_branch=C",
+    "--energy_reference=/home/xy.chen/tw/LoComposition/gpt-四组微调实验-20261026/gpt-固定参考尺度.json",
+    "env.scene.ray_caster.debug_vis=false",
+    "env.scene.ray_caster_height_constraints.debug_vis=false",
+    "env.commands.base_velocity.debug_vis=false"
+  ],
+  "日志": "/home/xy.chen/tw/LoComposition/gpt-四组微调实验-20261026/gpt-冒烟-C-训练.log",
+  "进程PID": 4043588,
+  "退出码": 0,
+  "训练耗时秒": 84.78717029839754,
+  "训练结束时间": "2026-10-26T13:37:31+08:00",
+  "模型目录": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-energy-finetune-冒烟-C-seed46-20261026/2026-10-26-13-36-52"
+}

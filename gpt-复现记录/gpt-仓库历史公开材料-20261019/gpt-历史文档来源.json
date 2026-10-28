@@ -1,0 +1,162 @@
+[
+  {
+    "原路径": "docs/anymal_c_tuning_assumptions.md",
+    "提交": "075a711077d7d71879a409cd8868ee5afff98145",
+    "本地文件": "gpt-历史文档-00.md"
+  },
+  {
+    "原路径": "docs/assets.md",
+    "提交": "0f7e684b5e3a97196c7309e7a39570643d7207f0",
+    "本地文件": "gpt-历史文档-01.md"
+  },
+  {
+    "原路径": "docs/migration.md",
+    "提交": "722c850aba0f6739ba1e9f18117fb8d841c06602",
+    "本地文件": "gpt-历史文档-02.md"
+  },
+  {
+    "原路径": "docs/sim2real.md",
+    "提交": "b55c9498787839c8b0eb5c2e465c85b0f1186883",
+    "本地文件": "gpt-历史文档-03.md"
+  },
+  {
+    "原路径": "docs/spot_tuning_assumptions.md",
+    "提交": "410d43f93d40b3433a51c1568bd1add8c188f50c",
+    "本地文件": "gpt-历史文档-04.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-07-13-anymal-c-embodiment-transfer.md",
+    "提交": "18694378630fdcc2ba9f7b96b6bc0d03db162009",
+    "本地文件": "gpt-历史文档-05.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-07-27-spot-embodiment-transfer.md",
+    "提交": "adbb7ec19bc5bf01f4579b905d70cc4f956fc25a",
+    "本地文件": "gpt-历史文档-06.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-08-01-baseline-training-iteration-budget.md",
+    "提交": "d6bc2a36183086c59f3cc7f91b576e4f2bc87af5",
+    "本地文件": "gpt-历史文档-07.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-08-01-baseline-wandb-defaults.md",
+    "提交": "8c55e3ef119f9bfffb774914d69b56397d2ebd4b",
+    "本地文件": "gpt-历史文档-08.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-08-01-matched-isaaclab-baselines.md",
+    "提交": "532d46c1afa3d2e438efe55d7e581870094b573a",
+    "本地文件": "gpt-历史文档-09.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-08-07-reward-constraint-approximations.md",
+    "提交": "1b3a63f95e98c101115bed7a8b8d4f7a1caf366e",
+    "本地文件": "gpt-历史文档-12.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-08-08-terrain-gait-adaptation-analysis.md",
+    "提交": "dbe1524b7bb57013723461b7b85ad9839b1825ab",
+    "本地文件": "gpt-历史文档-13.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-08-09-evaluation-selection-compatibility.md",
+    "提交": "651924cd2747e75c8a6c9150b58cea0f8af6a56d",
+    "本地文件": "gpt-历史文档-14.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-08-11-legacy-rsl-rl-baseline-eval-compatibility.md",
+    "提交": "00625f872c729efed4c975e45b8a197da08b5576",
+    "本地文件": "gpt-历史文档-15.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-08-11-locomposition-rebrand.md",
+    "提交": "722c850aba0f6739ba1e9f18117fb8d841c06602",
+    "本地文件": "gpt-历史文档-16.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-08-12-locked-uv-environment-and-slurm.md",
+    "提交": "d92fd56e5f84eaf80521b68246176bf3af9b750e",
+    "本地文件": "gpt-历史文档-17.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-07-10-anymal-c-embodiment-transfer-design.md",
+    "提交": "7784ca208f1fb1eb3f48e02add815e35ce4ce70c",
+    "本地文件": "gpt-历史文档-18.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-07-13-rsl-rl-wandb-writer-compatibility-design.md",
+    "提交": "03ba4a104603dd4f3d7f02b851c98174cf6472b8",
+    "本地文件": "gpt-历史文档-19.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-07-27-spot-embodiment-transfer-design.md",
+    "提交": "7a950d1883301c3a442570e467a137fbf8702c5b",
+    "本地文件": "gpt-历史文档-20.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-08-01-baseline-training-iteration-budget-design.md",
+    "提交": "dc6bf341322ebb32edd5657c41319e53b8a1ef9b",
+    "本地文件": "gpt-历史文档-21.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-08-01-baseline-wandb-defaults-design.md",
+    "提交": "674d5d2051e6c1cd9736961e7879028e8610340e",
+    "本地文件": "gpt-历史文档-22.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-08-01-matched-isaaclab-baselines-design.md",
+    "提交": "4337b2988682b5eb30c30236de89efeed53253e0",
+    "本地文件": "gpt-历史文档-23.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-08-07-reward-constraint-approximations-design.md",
+    "提交": "1b3a63f95e98c101115bed7a8b8d4f7a1caf366e",
+    "本地文件": "gpt-历史文档-26.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-08-08-terrain-gait-adaptation-analysis-design.md",
+    "提交": "dbe1524b7bb57013723461b7b85ad9839b1825ab",
+    "本地文件": "gpt-历史文档-27.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-08-09-evaluation-selection-compatibility-design.md",
+    "提交": "242821d887cd87e1cf75ee8bca8ffbf7a8a55f88",
+    "本地文件": "gpt-历史文档-28.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-08-11-legacy-rsl-rl-baseline-eval-compatibility-design.md",
+    "提交": "814b2b31dc53f20157fdfc568c42af71d390b8a3",
+    "本地文件": "gpt-历史文档-29.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-08-11-locomposition-rebrand-design.md",
+    "提交": "722c850aba0f6739ba1e9f18117fb8d841c06602",
+    "本地文件": "gpt-历史文档-30.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-08-12-uv-environment-and-slurm-design.md",
+    "提交": "d92fd56e5f84eaf80521b68246176bf3af9b750e",
+    "本地文件": "gpt-历史文档-31.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-08-01-tcml-baseline-slurm-launchers.md",
+    "提交": "f6467cdd94aefcdbcdb396b7c6627dc20828f406",
+    "本地文件": "gpt-历史文档-10.md"
+  },
+  {
+    "原路径": "docs/superpowers/plans/2026-08-03-go2-anymal-cross-tuning.md",
+    "提交": "37e3f85159846603e31713815b8239d6ed51a559",
+    "本地文件": "gpt-历史文档-11.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-08-01-tcml-baseline-slurm-launchers-design.md",
+    "提交": "1acf16483c918c6927a130d7c75606f09bd10cb1",
+    "本地文件": "gpt-历史文档-24.md"
+  },
+  {
+    "原路径": "docs/superpowers/specs/2026-08-03-go2-anymal-cross-tuning-design.md",
+    "提交": "d1e1fe4f5141490aedc15a0ff1e69b398a382526",
+    "本地文件": "gpt-历史文档-25.md"
+  }
+]

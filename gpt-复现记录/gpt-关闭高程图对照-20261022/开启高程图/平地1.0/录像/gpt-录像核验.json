@@ -1,0 +1,15 @@
+{
+  "条件": "开启高程图",
+  "场景": "平地1.0",
+  "来源轨迹": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/平地1.0/eval_checkpoint_30000_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/plots/sim_data.npz",
+  "来源SHA256": "c1dd09eae37ed26cbc4e629b9cfd7ab3a5288b34c0d20343905e6945ea56ca7a",
+  "地形SHA256": "dd5d4cbd14aef4ea5bc9b65a30d2a3f0120fda2776116bb8224bfefb3308769a",
+  "仅运动学回放": true,
+  "足端最大误差米": 0.0020030384679695077,
+  "实际播放至控制步": 499,
+  "实际轨迹时长秒": 10.0,
+  "定格说明": "首次提前终止后定格，禁止显示自动重置后轨迹。",
+  "输出时长秒": 10,
+  "帧数": 250,
+  "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/平地1.0/录像/gpt-开启高程图-平地1.0.mp4"
+}

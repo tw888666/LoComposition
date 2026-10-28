@@ -1,0 +1,114 @@
+:root{--color-primary-100:oklch(0.93 0.034 272.788);--color-primary-200:oklch(0.87 0.065 274.039);--color-primary-300:oklch(0.785 0.115 274.713);--color-primary-400:oklch(0.673 0.182 276.935);--color-primary-50:oklch(0.962 0.018 272.314);--color-primary-500:oklch(0.585 0.233 277.117);--color-primary-600:oklch(0.511 0.262 276.966);--color-primary-700:oklch(0.457 0.24 277.023);--color-primary-800:oklch(0.398 0.195 277.366);--color-primary-900:oklch(0.359 0.144 278.697);--color-primary-950:oklch(0.257 0.09 281.288);--hb-primary-500-rgb:128 128 128;--color-secondary-100:oklch(0.953 0.051 180.801);--color-secondary-200:oklch(0.91 0.096 180.426);--color-secondary-300:oklch(0.855 0.138 181.071);--color-secondary-400:oklch(0.777 0.152 181.912);--color-secondary-50:oklch(0.984 0.014 180.72);--color-secondary-500:oklch(0.704 0.14 182.503);--color-secondary-600:oklch(0.6 0.118 184.704);--color-secondary-700:oklch(0.511 0.096 186.391);--color-secondary-800:oklch(0.437 0.078 188.216);--color-secondary-900:oklch(0.386 0.063 188.416);--color-secondary-950:oklch(0.277 0.046 192.524);--hb-secondary-500-rgb:128 128 128;--hb-color-background:#ffffff;--hb-color-foreground:#111827;--hb-color-header-bg:#f1f5f9;--hb-color-header-fg:#0f172a;--hb-color-footer-bg:#f3f4f6;--hb-color-footer-fg:#0f172a}.dark{--color-primary-100:oklch(0.932 0.032 255.585);--color-primary-200:oklch(0.882 0.059 254.128);--color-primary-300:oklch(0.809 0.105 251.813);--color-primary-400:oklch(0.707 0.165 254.624);--color-primary-50:oklch(0.97 0.014 254.604);--color-primary-500:oklch(0.623 0.214 259.815);--color-primary-600:oklch(0.546 0.245 262.881);--color-primary-700:oklch(0.488 0.243 264.376);--color-primary-800:oklch(0.424 0.199 265.638);--color-primary-900:oklch(0.379 0.146 265.522);--color-primary-950:oklch(0.282 0.091 267.935);--hb-primary-500-rgb:128 128 128;--color-secondary-100:oklch(0.953 0.051 180.801);--color-secondary-200:oklch(0.91 0.096 180.426);--color-secondary-300:oklch(0.855 0.138 181.071);--color-secondary-400:oklch(0.777 0.152 181.912);--color-secondary-50:oklch(0.984 0.014 180.72);--color-secondary-500:oklch(0.704 0.14 182.503);--color-secondary-600:oklch(0.6 0.118 184.704);--color-secondary-700:oklch(0.511 0.096 186.391);--color-secondary-800:oklch(0.437 0.078 188.216);--color-secondary-900:oklch(0.386 0.063 188.416);--color-secondary-950:oklch(0.277 0.046 192.524);--hb-secondary-500-rgb:128 128 128;--hb-color-background:#0f172a;--hb-color-foreground:#f8fafc;--hb-color-header-bg:#0f172a;--hb-color-header-fg:#f8fafc;--hb-color-footer-bg:#111827;--hb-color-footer-fg:#e5e7eb}
+{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.loukaskordos.de/publications/locomposition/"},"headline":"LoComposition: Terrain-Adaptive Energy-Efficient Quadruped Locomotion without Gait Priors","image":["https://www.loukaskordos.de/publications/locomposition/featured.webp"],"datePublished":"2026-06-14T00:00:00Z","dateModified":"2026-06-14T00:00:00Z","author":{"@type":"Person","name":"Loukas Kordos"},"publisher":{"@type":"Organization","name":"Loukas Kordos","logo":{"@type":"ImageObject","url":null}},"description":"Terrain-adaptive, energy-efficient quadruped locomotion without gait priors."}
+{"@context":"https://schema.org","@id":"https://www.loukaskordos.de/publications/locomposition/","@type":"WebPage","dateModified":"2026-06-14T00:00:00Z","datePublished":"2026-06-14T00:00:00Z","description":"Terrain-adaptive, energy-efficient quadruped locomotion without gait priors.","inLanguage":"en-us","isPartOf":{"@id":"https://www.loukaskordos.de/","@type":"WebSite","name":"Loukas Kordos","url":"https://www.loukaskordos.de/"},"name":"LoComposition: Terrain-Adaptive Energy-Efficient Quadruped Locomotion without Gait Priors","primaryImageOfPage":{"@type":"ImageObject","height":540,"url":"https://www.loukaskordos.de/publications/locomposition/featured.webp","width":960},"url":"https://www.loukaskordos.de/publications/locomposition/"}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":{"@id":"https://www.loukaskordos.de/","name":"Loukas Kordos"},"name":"Loukas Kordos","position":1},{"@type":"ListItem","item":{"@id":"https://www.loukaskordos.de/publications/","name":"Publications"},"name":"Publications","position":2},{"@type":"ListItem","item":{"@id":"https://www.loukaskordos.de/publications/locomposition/","name":"LoComposition: Terrain-Adaptive Energy-Efficient Quadruped Locomotion without Gait Priors"},"name":"LoComposition: Terrain-Adaptive Energy-Efficient Quadruped Locomotion without Gait Priors","position":3}]}
+LoComposition: Terrain-Adaptive Energy-Efficient Quadruped Locomotion without Gait Priors | Loukas Kordos
+:root{--hb-font-heading:'Lora', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;--hb-font-body:'Source Serif 4', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;--hb-font-code:'Source Code Pro', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;--hb-font-nav:'Lora', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;--hb-font-weight-heading:500;--hb-font-weight-body:400;--hb-font-weight-body-bold:600;--hb-font-leading-heading:1.2;--hb-font-leading-body:1.7;--hb-font-leading-code:1.5;--hb-font-tracking-heading:0;--hb-font-tracking-body:0;--hb-font-tracking-caps:0.05em;--hb-font-size-base:1rem;--hb-font-size-sm:0.875rem;--hb-font-size-lg:1.125rem;--hb-font-family-sans:'Source Serif 4', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif}
+:root{--hb-radius:0.5rem;--hb-spacing-base:1rem;--hb-spacing-section:4rem}
+Loukas Kordos
+Open Menu
+Close Menu
+About
+Publications
+Projects
+Experience
+Blog
+CV
+Experience
+Publications
+LoComposition: Terrain-Adaptive Energy-Efficient Quadruped Locomotion without Gait Priors
+TL;DR
+Abstract
+Overview Video
+Zero-Shot Sim-to-Real
+Cross-Embodiment Results
+Sensor-Delay Robustness
+Projects
+REDACTED - The First Fully Open Bipedal Robot
+Blog
+On this page
+TL;DR
+Abstract
+Overview Video
+Zero-Shot Sim-to-Real
+Cross-Embodiment Results
+Sensor-Delay Robustness
+LoComposition: Terrain-Adaptive Energy-Efficient Quadruped Locomotion without Gait Priors
+Loukas Kordos
+,
+Leonard T. Franz
+,
+Simon Rappenecker
+,
+Oliver Hausdörfer
+,
+Angela P. Schoellig
+,
+Pavel Kolev
+,
+Georg Martius
+Jun 14, 2026
+Code
+arXiv
+Video
+Project page (old)
+publications
+Our proposed learning formulation separates task specification, operational limits, gait preference, and terrain adaptation. This enables emergent natural, low-COT locomotion and zero-shot transfer to a physical robot while removing all explicit gait priors.
+LoComposition decomposes quadrupedal locomotion learning into rewards for the task, constraints for operational limits, energy minimization for gait preference, and perception for terrain adaptation. No hand-crafted gait priors are required.
+TL;DR
+One mechanism per function, not one giant reward:
+Instead of entangling task tracking, safety limits, gait style, and terrain handling in a single complex reward, each gets its own dedicated mechanism in the learning formulation.
+No gait priors, yet natural gaits emerge:
+We remove air-time, contact-count, and foot-clearance targets entirely — energy minimization alone steers the policy toward efficient, structured gaits.
+Perception makes efficiency terrain-compatible:
+Exteroceptive sensing lets the policy spend energy selectively: economical on flat ground, expending more only where the terrain demands it.
+Every component matters:
+Ablations show each piece removes a distinct failure mode: dropping constraints breaks deployability, dropping energy minimization degrades gait quality, dropping perception breaks rough-terrain efficiency.
+Lower Energy, Fewer Limit Violations, Zero-Shot Transfer:
+Compared to a standard complex-reward baseline: 56% lower cost of transport, 96% fewer operational-limit violations, and direct sim-to-real transfer to a Unitree Go2 with LiDAR-based elevation mapping.
+Abstract
+Learning-based quadrupedal locomotion typically relies on complex reward formulations that entangle task specification, operational limits, gait preference, and terrain adaptation within a single optimization objective. We instead treat these functions through distinct mechanisms: rewards for task specification, constraints for operational limits, energy minimization for gait preference, and exteroceptive perception for adapting energy use to terrain difficulty. We show that these components jointly enable efficient, terrain-adaptive locomotion, and that removing each component exposes a distinct failure mode. Our formulation removes explicit gait priors (including air-time, contact-count, and foot-clearance targets) in favor of emergent behavior. Compared to a conventional complex-reward baseline, our formulation achieves comparable terrain traversal while reducing cost of transport by 56% and operational-limit violations by 96%. The resulting policies transfer zero-shot to a physical Unitree Go2 using LiDAR-based elevation mapping.
+Overview Video
+LoComposition overview video.
+Watch on YouTube
+.
+Zero-Shot Sim-to-Real
+The policy transfers zero-shot from simulation to a Unitree Go2. LiDAR-based elevation mapping supplies the terrain representation used by the locomotion policy.
+Zero-shot deployment on a Unitree Go2 using LiDAR-based elevation mapping.
+Your browser cannot play this video.
+Unitree Go2
+— The robot traverses the real obstacle sequence with LiDAR mapping.
+Cross-Embodiment Results
+Because LoComposition uses interpretable constraints rather than brittle gait-prior regularization rewards, it transfers successfully to Boston Dynamics Spot and ETH Zurich’s ANYmal C. Only the constraint bounds are adjusted to each robot’s actuator limits, while energy minimization scales with mass. This demonstrates the formulation’s robustness to embodiment changes.
+Terrain traversability is 3.71 for Spot and 3.32 for ANYmal C, compared with 3.11 for Unitree Go2. Cost of transport is 0.29 for Spot, 0.33 for ANYmal C, and 0.28 for Go2. Constraint-violation rates are 0.09% for Spot and 0.02% for ANYmal C.
+Your browser cannot play this video.
+Boston Dynamics Spot
+— The platform traverses simulated rough terrain.
+Your browser cannot play this video.
+ANYmal C
+— The platform traverses simulated rough terrain.
+Sensor-Delay Robustness
+The comparison introduces 20 ms sensor delay and is shown at 0.5× playback speed.
+Your browser cannot play this video.
+LEP
+— The LEP policy handles substantial sensor delay at test time even though that delay was absent during training.
+Your browser cannot play this video.
+LP
+— The LP policy visibly struggles with the same delay; its more dynamic gait requires more accurate, better-timed observations.
+Last updated on
+Jun 14, 2026
+Robotics
+Reinforcement Learning
+Robot Learning
+Authors
+Loukas Kordos
+M.Sc. student in Robotics, Cognition, Intelligence
+I am an M.Sc. student in Robotics, Cognition, Intelligence at the Technical University of Munich.
+My work focuses on optimal control and learning-based robotics, with the goal of deploying mobile robots in environments hazardous to humans.
+Previously, I developed LoComposition at the University of Tübingen’s Autonomous Learning Group as part of my bachelor’s thesis.
+I also worked on force-based manipulation for collaborative robots at Daimler Truck and on the design, fabrication, and control of a bipedal robot at RWTH Aachen University.
+© 2026 Loukas Kordos
+Made with
+Hugo Blox — Open Source
+.
+Build yours →

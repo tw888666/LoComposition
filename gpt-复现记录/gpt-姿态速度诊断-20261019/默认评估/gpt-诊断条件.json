@@ -1,0 +1,25 @@
+{
+  "条件": "默认评估",
+  "模型": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_30000.pt",
+  "种子": 46,
+  "每场景步数": 500,
+  "随机前缀步数": 0,
+  "场景指令": {
+    "walk_x_flat_terrain_1.0mps": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "walk_x_flat_terrain_1.6mps": [
+      1.600000023841858,
+      0.0,
+      0.0
+    ],
+    "fast_walk_diagonal_uneven_terrain": [
+      1.0,
+      1.0,
+      0.0
+    ]
+  },
+  "说明": "电机条件仅替换机器人训练配置；横向条件仅改变第三场景vy，其他场景及随机种子相同。此为因果诊断，不代替论文正式评估。"
+}

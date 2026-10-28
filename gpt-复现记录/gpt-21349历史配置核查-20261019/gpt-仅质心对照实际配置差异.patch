@@ -1,0 +1,23 @@
+--- 当前默认配置
++++ 仅取消质心偏移
+@@ -1325,14 +1325,14 @@
+         preserve_order: false
+       com_range:
+         x: !!python/tuple
+-        - -0.03
+-        - 0.03
++        - 0.0
++        - 0.0
+         y: !!python/tuple
+-        - -0.03
+-        - 0.03
++        - 0.0
++        - 0.0
+         z: !!python/tuple
+-        - -0.03
+-        - 0.03
++        - 0.0
++        - 0.0
+     mode: startup
+     interval_range_s: null
+     is_global_time: false

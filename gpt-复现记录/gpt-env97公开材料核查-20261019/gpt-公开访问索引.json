@@ -1,0 +1,144 @@
+[
+  {
+    "名称": "公开版本",
+    "URL": "https://api.github.com/repos/LouKordos/locomposition/releases?per_page=100",
+    "核查UTC": "2026-10-19T06:09:26.826657+00:00",
+    "状态码": 403,
+    "最终URL": "https://api.github.com/repos/LouKordos/locomposition/releases?per_page=100",
+    "字节数": 279,
+    "保存文件": "gpt-公开版本.json",
+    "SHA256": "26b9d6b0517b0279ba215e776b743d84589157e3b6e98d9ad0d0b76fa9a56e45"
+  },
+  {
+    "名称": "公开标签",
+    "URL": "https://api.github.com/repos/LouKordos/locomposition/tags?per_page=100",
+    "核查UTC": "2026-10-19T06:09:26.826988+00:00",
+    "状态码": 403,
+    "最终URL": "https://api.github.com/repos/LouKordos/locomposition/tags?per_page=100",
+    "字节数": 279,
+    "保存文件": "gpt-公开标签.json",
+    "SHA256": "26b9d6b0517b0279ba215e776b743d84589157e3b6e98d9ad0d0b76fa9a56e45"
+  },
+  {
+    "名称": "公开分支",
+    "URL": "https://api.github.com/repos/LouKordos/locomposition/branches?per_page=100",
+    "核查UTC": "2026-10-19T06:09:26.827996+00:00",
+    "状态码": 403,
+    "最终URL": "https://api.github.com/repos/LouKordos/locomposition/branches?per_page=100",
+    "字节数": 279,
+    "保存文件": "gpt-公开分支.json",
+    "SHA256": "26b9d6b0517b0279ba215e776b743d84589157e3b6e98d9ad0d0b76fa9a56e45"
+  },
+  {
+    "名称": "公开问题",
+    "URL": "https://api.github.com/repos/LouKordos/locomposition/issues?state=all&per_page=100",
+    "核查UTC": "2026-10-19T06:09:26.828830+00:00",
+    "状态码": 403,
+    "最终URL": "https://api.github.com/repos/LouKordos/locomposition/issues?state=all&per_page=100",
+    "字节数": 279,
+    "保存文件": "gpt-公开问题.json",
+    "SHA256": "26b9d6b0517b0279ba215e776b743d84589157e3b6e98d9ad0d0b76fa9a56e45"
+  },
+  {
+    "名称": "公开合并请求",
+    "URL": "https://api.github.com/repos/LouKordos/locomposition/pulls?state=all&per_page=100",
+    "核查UTC": "2026-10-19T06:09:26.829075+00:00",
+    "状态码": 403,
+    "最终URL": "https://api.github.com/repos/LouKordos/locomposition/pulls?state=all&per_page=100",
+    "字节数": 279,
+    "保存文件": "gpt-公开合并请求.json",
+    "SHA256": "26b9d6b0517b0279ba215e776b743d84589157e3b6e98d9ad0d0b76fa9a56e45"
+  },
+  {
+    "名称": "公开构建制品",
+    "URL": "https://api.github.com/repos/LouKordos/locomposition/actions/artifacts?per_page=100",
+    "核查UTC": "2026-10-19T06:09:26.830174+00:00",
+    "状态码": 403,
+    "最终URL": "https://api.github.com/repos/LouKordos/locomposition/actions/artifacts?per_page=100",
+    "字节数": 279,
+    "保存文件": "gpt-公开构建制品.json",
+    "SHA256": "26b9d6b0517b0279ba215e776b743d84589157e3b6e98d9ad0d0b76fa9a56e45"
+  },
+  {
+    "名称": "公开派生仓库",
+    "URL": "https://api.github.com/repos/LouKordos/locomposition/forks?per_page=100",
+    "核查UTC": "2026-10-19T06:09:28.353457+00:00",
+    "状态码": 403,
+    "最终URL": "https://api.github.com/repos/LouKordos/locomposition/forks?per_page=100",
+    "字节数": 279,
+    "保存文件": "gpt-公开派生仓库.json",
+    "SHA256": "26b9d6b0517b0279ba215e776b743d84589157e3b6e98d9ad0d0b76fa9a56e45"
+  },
+  {
+    "名称": "作者公开仓库",
+    "URL": "https://api.github.com/users/LouKordos/repos?per_page=100",
+    "核查UTC": "2026-10-19T06:09:28.362446+00:00",
+    "状态码": 403,
+    "最终URL": "https://api.github.com/users/LouKordos/repos?per_page=100",
+    "字节数": 279,
+    "保存文件": "gpt-作者公开仓库.json",
+    "SHA256": "26b9d6b0517b0279ba215e776b743d84589157e3b6e98d9ad0d0b76fa9a56e45"
+  },
+  {
+    "名称": "作者公开代码片段",
+    "URL": "https://api.github.com/users/LouKordos/gists?per_page=100",
+    "核查UTC": "2026-10-19T06:09:28.364638+00:00",
+    "状态码": 403,
+    "最终URL": "https://api.github.com/users/LouKordos/gists?per_page=100",
+    "字节数": 279,
+    "保存文件": "gpt-作者公开代码片段.json",
+    "SHA256": "26b9d6b0517b0279ba215e776b743d84589157e3b6e98d9ad0d0b76fa9a56e45"
+  },
+  {
+    "名称": "模型平台权重搜索",
+    "URL": "https://huggingface.co/api/models?search=locomposition&limit=100",
+    "核查UTC": "2026-10-19T06:09:28.577298+00:00",
+    "状态码": 200,
+    "最终URL": "https://huggingface.co/api/models?search=locomposition&limit=100",
+    "类型": "application/json; charset=utf-8",
+    "字节数": 2,
+    "后续页": null,
+    "保存文件": "gpt-模型平台权重搜索.json",
+    "SHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "名称": "模型平台数据搜索",
+    "URL": "https://huggingface.co/api/datasets?search=locomposition&limit=100",
+    "核查UTC": "2026-10-19T06:09:28.581971+00:00",
+    "状态码": 200,
+    "最终URL": "https://huggingface.co/api/datasets?search=locomposition&limit=100",
+    "类型": "application/json; charset=utf-8",
+    "字节数": 2,
+    "后续页": null,
+    "保存文件": "gpt-模型平台数据搜索.json",
+    "SHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "名称": "数据存档搜索",
+    "URL": "https://zenodo.org/api/records?q=locomposition&size=100",
+    "核查UTC": "2026-10-19T06:09:28.593224+00:00",
+    "状态码": 400,
+    "最终URL": "https://zenodo.org/api/records?q=locomposition&size=100",
+    "字节数": 207,
+    "保存文件": "gpt-数据存档搜索.json",
+    "SHA256": "8105c5098c3b8051ed4e35cc510a7c4af8dcca8edb46986c9a37ba5469c6985c"
+  },
+  {
+    "名称": "论文项目短链接",
+    "URL": "https://tinyurl.com/locomposition",
+    "核查UTC": "2026-10-19T06:09:29.870411+00:00",
+    "状态码": 200,
+    "最终URL": "https://sites.google.com/view/locomposition",
+    "类型": "text/html; charset=utf-8",
+    "字节数": 159456,
+    "后续页": null,
+    "保存文件": "gpt-论文项目短链接.html",
+    "SHA256": "a7d9f4ca5280361a3baac185ea5ba554c93525d0ea34c62198cbd6350cb94fc1"
+  },
+  {
+    "名称": "原项目页",
+    "URL": "https://sites.google.com/view/locomposition",
+    "核查UTC": "2026-10-19T06:09:29.993925+00:00",
+    "错误": "URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)'))"
+  }
+]

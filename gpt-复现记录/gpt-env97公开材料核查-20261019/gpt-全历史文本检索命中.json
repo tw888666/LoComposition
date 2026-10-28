@@ -1,0 +1,698 @@
+{
+  "env97直接线索": [
+    {
+      "对象": "985bfdc79a6768335b9c8b82a6bff09989e4131c",
+      "路径": [
+        "docs/superpowers/plans/2026-08-08-terrain-gait-adaptation-analysis.md"
+      ],
+      "命中": [
+        {
+          "行号": 330,
+          "上下文": "- [ ] **Step 2: Run one archived LEP source through the offline terrain path**\n\nUse the existing unsuffixed full evaluation under run `2026-05-30-00-15-54`, calling only terrain-analysis functions. Expected results are approximately:\n\n```text\nflat diagonal-support occupancy > uneven diagonal-support occupancy"
+        }
+      ]
+    },
+    {
+      "对象": "090f5af016e869fad30493ff3cf6ebd9892f36f5",
+      "路径": [
+        "docs/superpowers/plans/2026-08-09-evaluation-selection-compatibility.md"
+      ],
+      "命中": [
+        {
+          "行号": 419,
+          "上下文": "```bash\njust --dry-run eval-all '/local_storage1/loukas-backup/logs/clean_rl/cluster_runs/env_id_102_b2_no_energy_min_proper_seeding/constraints-as-terminations/logs/clean_rl/env_id_102_b2_no_energy_min_proper_seeding' 1\njust --dry-run eval-all '/local_storage1/loukas-backup/logs/clean_rl/cluster_runs/env_id_97_regression_perf_shorter_push_disturbance_seeding/constraints-as-terminations/logs/clean_rl/env_id_97_regression_perf_shorter_push_disturbance_seeding' 1\n```\n\nExpected: the generated `just eval` calls do not include `--fixed_scenario`, `--rebuttal_scenarios_only`, `--skip_cot_sweep`, or a nonzero `--delay_actions`. Do not execute the commands without `--dry-run` during this task."
+        },
+        {
+          "行号": 448,
+          "上下文": "/home/kordoslo/mamba_env_data/env_new_isaac_lab/.venv/bin/python scripts/analyze_run_range.py \\\n  --labels LP LEP \\\n  --env_names env_id_102_b2_no_energy_min_proper_seeding env_id_97_regression_perf_shorter_push_disturbance_seeding \\\n  --start_times ALL ALL \\\n  --end_times ALL ALL \\\n  --metrics_summary_root_dir '/local_storage1/loukas-backup/logs/clean_rl/cluster_runs/env_id_102_b2_no_energy_min_proper_seeding/constraints-as-terminations/logs/clean_rl/env_id_102_b2_no_energy_min_proper_seeding' \\"
+        },
+        {
+          "行号": 452,
+          "上下文": "  --end_times ALL ALL \\\n  --metrics_summary_root_dir '/local_storage1/loukas-backup/logs/clean_rl/cluster_runs/env_id_102_b2_no_energy_min_proper_seeding/constraints-as-terminations/logs/clean_rl/env_id_102_b2_no_energy_min_proper_seeding' \\\n  --metrics_summary_root_dir '/local_storage1/loukas-backup/logs/clean_rl/cluster_runs/env_id_97_regression_perf_shorter_push_disturbance_seeding/constraints-as-terminations/logs/clean_rl/env_id_97_regression_perf_shorter_push_disturbance_seeding' \\\n  --skip_wandb \\\n  --output_name lp_vs_lep_rebuttal_gait_dynamics \\\n  --export_formats pdf png \\"
+        }
+      ]
+    },
+    {
+      "对象": "133a0be97bd4661e5e71b5c14c42197d28dbbee4",
+      "路径": [
+        "docs/superpowers/plans/2026-08-08-terrain-gait-adaptation-analysis.md"
+      ],
+      "命中": [
+        {
+          "行号": 330,
+          "上下文": "- [ ] **Step 2: Run one archived LEP source through the offline terrain path**\n\nUse the existing unsuffixed full evaluation under run `2026-05-30-00-15-54`, calling only terrain-analysis functions. Expected results are approximately:\n\n```text\nflat diagonal-support occupancy > uneven diagonal-support occupancy"
+        }
+      ]
+    },
+    {
+      "对象": "36fbb52493e682d792d100d59521f65dda50ba2b",
+      "路径": [
+        "docs/superpowers/plans/2026-08-08-terrain-gait-adaptation-analysis.md"
+      ],
+      "命中": [
+        {
+          "行号": 330,
+          "上下文": "- [ ] **Step 2: Run one archived LEP source through the offline terrain path**\n\nUse the existing unsuffixed full evaluation under run `2026-05-30-00-15-54`, calling only terrain-analysis functions. Expected results are approximately:\n\n```text\nflat diagonal-support occupancy > uneven diagonal-support occupancy"
+        }
+      ]
+    }
+  ],
+  "公开存储和实验平台": [
+    {
+      "对象": "bc3dc9c51862783d0feeac5b799fafc92c6ff2b4",
+      "路径": [
+        "train-locomposition.sbatch"
+      ],
+      "命中": [
+        {
+          "行号": 35,
+          "上下文": "fi\n\nSEEDS=(\n    46\n    47\n    48"
+        }
+      ]
+    },
+    {
+      "对象": "0acd0e3b55bc81724a54b2070229fe2a298fc32c",
+      "路径": [
+        "train-locomposition.sbatch"
+      ],
+      "命中": [
+        {
+          "行号": 35,
+          "上下文": "fi\n\nSEEDS=(\n    46\n    47\n    48"
+        }
+      ]
+    },
+    {
+      "对象": "e38654983c7f0680982915ed7df70fec1e94870a",
+      "路径": [
+        "docs/superpowers/plans/2026-08-01-tcml-baseline-slurm-launchers.md"
+      ],
+      "命中": [
+        {
+          "行号": 143,
+          "上下文": "\n```bash\nexpected_seeds=\"46 47 48 49 50 51 52 53 54\"\n\nfor file in \"$stage_dir\"/slurm-baseline-*.sbatch; do\n    bash -n \"$file\""
+        },
+        {
+          "行号": 147,
+          "上下文": "for file in \"$stage_dir\"/slurm-baseline-*.sbatch; do\n    bash -n \"$file\"\n    actual_seeds=$(sed -n '/^SEEDS=(/,/^)/p' \"$file\" | rg -o '[0-9]+' | paste -sd ' ' -)\n    test \"$actual_seeds\" = \"$expected_seeds\"\n    test \"$(rg -c '^NUM_ENVS=7500$' \"$file\")\" -eq 1\n    test \"$(rg -c '^TRAIN_RECIPE=\"train-baseline-(go2|anymal-c|spot)\"$' \"$file\")\" -eq 1"
+        },
+        {
+          "行号": 229,
+          "上下文": "```bash\nremote_root=/home/kordos/mamba_env_data/env_id_116_reward_baselines\nexpected_seeds=\"46 47 48 49 50 51 52 53 54\"\ntest \"$(find \"$remote_root\" -maxdepth 1 -type f -name 'slurm-baseline-*.sbatch' | wc -l)\" -eq 6\n\nfor file in \"$remote_root\"/slurm-baseline-*.sbatch; do"
+        },
+        {
+          "行号": 235,
+          "上下文": "    bash -n \"$file\"\n    test \"$(stat -c '%a' \"$file\")\" = 600\n    actual_seeds=$(sed -n '/^SEEDS=(/,/^)/p' \"$file\" | grep -Eo '[0-9]+' | paste -sd ' ' -)\n    test \"$actual_seeds\" = \"$expected_seeds\"\n    test \"$(grep -Ec '^NUM_ENVS=7500$' \"$file\")\" -eq 1\n    test \"$(grep -Ec '^TRAIN_RECIPE=\"train-baseline-(go2|anymal-c|spot)\"$' \"$file\")\" -eq 1"
+        }
+      ]
+    },
+    {
+      "对象": "03346d278e8cb0972cd672a8c7592a0ce3717a3b",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 443,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 444,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "b9c44830539324cd9fdfb584262432b0428745ee",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 469,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 470,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "f7ad7d84771f9a70e1b84908f029a600645ae5b0",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 435,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 436,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "edd7b80a2aaeb0983cd081973c544d7b1c0c57b3",
+      "路径": [
+        "scripts/gait_dynamics_aggregate.py"
+      ],
+      "命中": [
+        {
+          "行号": 184,
+          "上下文": "            metadata = extract_evaluation_metadata(summary, json_path)\n            if not isinstance(env_name, str) or not env_name or not isinstance(run_name, str) or not run_name:\n                logging.warning(\"Skipping gait summary without valid env/run identity: %s\", json_path)\n                continue\n\n            entry = RebuttalGaitRunData("
+        },
+        {
+          "行号": 330,
+          "上下文": "        if not isinstance(group_key, tuple):\n            group_key = (group_key,)\n        identity = dict(zip(group_columns, group_key))\n        for metric in AGGREGATE_METRICS:\n            if metric not in group.columns:\n                continue"
+        },
+        {
+          "行号": 396,
+          "上下文": "    ]\n    for label, group in per_run_df.groupby(\"label\", sort=False):\n        eval_seeds = sorted(pd.to_numeric(group[\"eval_seed\"], errors=\"coerce\").dropna().astype(int).unique())\n        lines.append(\n            f\"- **{label}:** {group['run_name'].nunique()} trained runs; \"\n            f\"evaluation seed(s) {eval_seeds}; {len(group)} run-scenario rows.\""
+        }
+      ]
+    },
+    {
+      "对象": "3032c2034fd83d1c0b6509495b6e3d2621802c20",
+      "路径": [
+        "scripts/gait_dynamics_aggregate.py"
+      ],
+      "命中": [
+        {
+          "行号": 186,
+          "上下文": "            metadata = extract_evaluation_metadata(summary, json_path)\n            if not isinstance(env_name, str) or not env_name or not isinstance(run_name, str) or not run_name:\n                logging.warning(\"Skipping gait summary without valid env/run identity: %s\", json_path)\n                continue\n\n            entry = RebuttalGaitRunData("
+        },
+        {
+          "行号": 332,
+          "上下文": "        if not isinstance(group_key, tuple):\n            group_key = (group_key,)\n        identity = dict(zip(group_columns, group_key))\n        for metric in AGGREGATE_METRICS:\n            if metric not in group.columns:\n                continue"
+        },
+        {
+          "行号": 398,
+          "上下文": "    ]\n    for label, group in per_run_df.groupby(\"label\", sort=False):\n        eval_seeds = sorted(pd.to_numeric(group[\"eval_seed\"], errors=\"coerce\").dropna().astype(int).unique())\n        lines.append(\n            f\"- **{label}:** {group['run_name'].nunique()} trained runs; \"\n            f\"evaluation seed(s) {eval_seeds}; {len(group)} run-scenario rows.\""
+        }
+      ]
+    },
+    {
+      "对象": "47e71d3c506b81c3658f1654ebe4c2854cf5d06b",
+      "路径": [
+        "scripts/gait_dynamics_aggregate.py"
+      ],
+      "命中": [
+        {
+          "行号": 163,
+          "上下文": "            metadata = extract_evaluation_metadata(summary, json_path)\n            if not isinstance(env_name, str) or not env_name or not isinstance(run_name, str) or not run_name:\n                logging.warning(\"Skipping gait summary without valid env/run identity: %s\", json_path)\n                continue\n\n            entry = RebuttalGaitRunData("
+        },
+        {
+          "行号": 309,
+          "上下文": "        if not isinstance(group_key, tuple):\n            group_key = (group_key,)\n        identity = dict(zip(group_columns, group_key))\n        for metric in AGGREGATE_METRICS:\n            if metric not in group.columns:\n                continue"
+        },
+        {
+          "行号": 375,
+          "上下文": "    ]\n    for label, group in per_run_df.groupby(\"label\", sort=False):\n        eval_seeds = sorted(pd.to_numeric(group[\"eval_seed\"], errors=\"coerce\").dropna().astype(int).unique())\n        lines.append(\n            f\"- **{label}:** {group['run_name'].nunique()} trained runs; \"\n            f\"evaluation seed(s) {eval_seeds}; {len(group)} run-scenario rows.\""
+        }
+      ]
+    },
+    {
+      "对象": "f1ffbe8c12f2601934323e6e09d4e5bd778edb5d",
+      "路径": [
+        "scripts/terrain_adaptation_analysis.py"
+      ],
+      "命中": [
+        {
+          "行号": 466,
+          "上下文": "        if not isinstance(group_key, tuple):\n            group_key = (group_key,)\n        identity = dict(zip(identity_columns, group_key))\n        for metric in metric_columns:\n            rows.append({**identity, \"metric\": metric, **_metric_statistics(group[metric])})\n    return pd.DataFrame(rows)"
+        }
+      ]
+    },
+    {
+      "对象": "2f9173105360355e62eed88c85129ffac18eac7d",
+      "路径": [
+        "scripts/terrain_adaptation_analysis.py"
+      ],
+      "命中": [
+        {
+          "行号": 471,
+          "上下文": "        if not isinstance(group_key, tuple):\n            group_key = (group_key,)\n        identity = dict(zip(identity_columns, group_key))\n        for metric in metric_columns:\n            rows.append({**identity, \"metric\": metric, **_metric_statistics(group[metric])})\n    return pd.DataFrame(rows)"
+        }
+      ]
+    },
+    {
+      "对象": "fbb9b7873ed0326c6a0d519b11a374de42ec18c4",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 435,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 436,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "86460534fddff80464777f5805c1656e68a7cea8",
+      "路径": [
+        "scripts/gait_dynamics_aggregate.py"
+      ],
+      "命中": [
+        {
+          "行号": 162,
+          "上下文": "            metadata = extract_evaluation_metadata(summary, json_path)\n            if not isinstance(env_name, str) or not env_name or not isinstance(run_name, str) or not run_name:\n                logging.warning(\"Skipping gait summary without valid env/run identity: %s\", json_path)\n                continue\n\n            entry = RebuttalGaitRunData("
+        },
+        {
+          "行号": 308,
+          "上下文": "        if not isinstance(group_key, tuple):\n            group_key = (group_key,)\n        identity = dict(zip(group_columns, group_key))\n        for metric in AGGREGATE_METRICS:\n            if metric not in group.columns:\n                continue"
+        },
+        {
+          "行号": 372,
+          "上下文": "    ]\n    for label, group in per_run_df.groupby(\"label\", sort=False):\n        eval_seeds = sorted(pd.to_numeric(group[\"eval_seed\"], errors=\"coerce\").dropna().astype(int).unique())\n        lines.append(\n            f\"- **{label}:** {group['run_name'].nunique()} trained runs; \"\n            f\"evaluation seed(s) {eval_seeds}; {len(group)} run-scenario rows.\""
+        }
+      ]
+    },
+    {
+      "对象": "66ad024f2f204748ce1fd6cc10492ed1b2540ae2",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 429,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 430,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "16bab4b80ec88071d86ca58470bb5596fdc34050",
+      "路径": [
+        "scripts/gait_dynamics_aggregate.py"
+      ],
+      "命中": [
+        {
+          "行号": 162,
+          "上下文": "            metadata = extract_evaluation_metadata(summary, json_path)\n            if not isinstance(env_name, str) or not env_name or not isinstance(run_name, str) or not run_name:\n                logging.warning(\"Skipping gait summary without valid env/run identity: %s\", json_path)\n                continue\n\n            entry = RebuttalGaitRunData("
+        },
+        {
+          "行号": 308,
+          "上下文": "        if not isinstance(group_key, tuple):\n            group_key = (group_key,)\n        identity = dict(zip(group_columns, group_key))\n        for metric in AGGREGATE_METRICS:\n            if metric not in group.columns:\n                continue"
+        },
+        {
+          "行号": 372,
+          "上下文": "    ]\n    for label, group in per_run_df.groupby(\"label\", sort=False):\n        eval_seeds = sorted(pd.to_numeric(group[\"eval_seed\"], errors=\"coerce\").dropna().astype(int).unique())\n        lines.append(\n            f\"- **{label}:** {group['run_name'].nunique()} trained runs; \"\n            f\"evaluation seed(s) {eval_seeds}; {len(group)} run-scenario rows.\""
+        }
+      ]
+    },
+    {
+      "对象": "bb6e974da790e12c6af509ce7d700057b33d39ce",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 424,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 425,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "c306ef0f5f569a2a3bc039c260044505056e31c5",
+      "路径": [
+        "scripts/gait_dynamics_aggregate.py"
+      ],
+      "命中": [
+        {
+          "行号": 225,
+          "上下文": "            metadata = extract_evaluation_metadata(summary, json_path)\n            if not isinstance(env_name, str) or not env_name or not isinstance(run_name, str) or not run_name:\n                logging.warning(\"Skipping gait summary without valid env/run identity: %s\", json_path)\n                continue\n\n            entry = RebuttalGaitRunData("
+        },
+        {
+          "行号": 375,
+          "上下文": "        if not isinstance(group_key, tuple):\n            group_key = (group_key,)\n        identity = dict(zip(group_columns, group_key))\n        for metric in AGGREGATE_METRICS:\n            if metric not in group.columns:\n                continue"
+        },
+        {
+          "行号": 439,
+          "上下文": "    ]\n    for label, group in per_run_df.groupby(\"label\", sort=False):\n        eval_seeds = sorted(pd.to_numeric(group[\"eval_seed\"], errors=\"coerce\").dropna().astype(int).unique())\n        lines.append(\n            f\"- **{label}:** {group['run_name'].nunique()} trained runs; \"\n            f\"evaluation seed(s) {eval_seeds}; {len(group)} run-scenario rows.\""
+        }
+      ]
+    },
+    {
+      "对象": "7fe883be55f21d497b16a38822a6fdbf53350493",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 424,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 425,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "8bdccc3616c51c3ea5e8e42cb807197ce36ab97e",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 398,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 399,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "81663a41180477e2b4e3fcf94c50a7e6e87f89bb",
+      "路径": [
+        "scripts/terrain_adaptation_analysis.py"
+      ],
+      "命中": [
+        {
+          "行号": 466,
+          "上下文": "        if not isinstance(group_key, tuple):\n            group_key = (group_key,)\n        identity = dict(zip(identity_columns, group_key))\n        for metric in metric_columns:\n            rows.append({**identity, \"metric\": metric, **_metric_statistics(group[metric])})\n    return pd.DataFrame(rows)"
+        }
+      ]
+    },
+    {
+      "对象": "a6989d4d4833843b5031de9afcd2eb92cce77f9d",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 395,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 396,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "91c4daa5b645c1cf11ad3bf635c07634a547ebcc",
+      "路径": [
+        "scripts/gait_dynamics_aggregate.py"
+      ],
+      "命中": [
+        {
+          "行号": 154,
+          "上下文": "            checkpoint = _extract_checkpoint_with_suffix(json_path)\n            if not isinstance(env_name, str) or not env_name or not isinstance(run_name, str) or not run_name:\n                logging.warning(\"Skipping gait summary without valid env/run identity: %s\", json_path)\n                continue\n            if checkpoint is None:\n                logging.warning(\"Skipping gait summary without a parseable checkpoint: %s\", json_path)"
+        },
+        {
+          "行号": 290,
+          "上下文": "        if not isinstance(group_key, tuple):\n            group_key = (group_key,)\n        identity = dict(zip(group_columns, group_key))\n        for metric in AGGREGATE_METRICS:\n            if metric not in group.columns:\n                continue"
+        },
+        {
+          "行号": 354,
+          "上下文": "    ]\n    for label, group in per_run_df.groupby(\"label\", sort=False):\n        eval_seeds = sorted(pd.to_numeric(group[\"eval_seed\"], errors=\"coerce\").dropna().astype(int).unique())\n        lines.append(\n            f\"- **{label}:** {group['run_name'].nunique()} trained runs; \"\n            f\"evaluation seed(s) {eval_seeds}; {len(group)} run-scenario rows.\""
+        }
+      ]
+    },
+    {
+      "对象": "7ab766ed57029965e06c3f3c52234b5f2c6de6c9",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 389,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 390,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "0353750681f773167484a058010de153e1b3e4e7",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 388,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 389,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "2381f28b35851995ac9b071aabe605d45adf3933",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 380,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 381,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "4f126a8e2d84b4cded33dfa8cf936fcae60e7c5f",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 372,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 373,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "104f2f0420a2aeb6b75a7081d2a93b351a1fc548",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 321,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 322,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "1cfab2715294488a047be415fbee9593792a81d9",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 317,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 318,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "31d238da4d6d7116dc0b57356dba72c1160cf2e2",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 327,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 328,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "e71e23e6416aec589d3b98b192229180b5a53c37",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 221,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 222,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "a205286b972a7d9c512196d70e90e92304cfef88",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 221,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 222,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "9197a3091072fa758397dabaef341e0448a93602",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 221,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 222,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "0b02e776a8f5eec7e6a84094261624ba7d72869d",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 221,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 222,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "aa82d7158ff5bb6deb02f1cdd740483eb49b2c87",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 221,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 222,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "6e7dc3263c30ca23296f0bac7aa64e72a5347cb7",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 214,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 215,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "ea5298541f670a7e1ad8757ea7b3c76f2598be97",
+      "路径": [
+        "scripts/analyze_run_range.py"
+      ],
+      "命中": [
+        {
+          "行号": 214,
+          "上下文": "\n\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name"
+        },
+        {
+          "行号": 215,
+          "上下文": "\ndef make_wandb_path(env_name: str, wandb_entity: str | None) -> str:\n    if wandb_entity:\n        return f\"{wandb_entity}/{env_name}\"\n    return env_name\n"
+        }
+      ]
+    },
+    {
+      "对象": "2c1a25973b05fb406563442f0115d2caebba7566",
+      "路径": [
+        "scripts/analyze_terrain_reward_correlation.py"
+      ],
+      "命中": [
+        {
+          "行号": 55,
+          "上下文": "    wandb = None  # handled later\n\ndef load_wandb_runs(entity: str, project: str, keys: Tuple[str, str, str], tag_filter: List[str] | None = None, max_runs: int | None = None, warmup_iterations: int = 0) -> pd.DataFrame:\n    \"\"\"Download history for every run in a wandb project.\"\"\"\n    if wandb is None:\n        raise RuntimeError(\"wandb Python package not installed.\")"
+        },
+        {
+          "行号": 660,
+          "上下文": "        if not (args.entity and args.project):\n            sys.exit(\"⚠️  --entity and --project are required for wandb source.\")\n        df = load_wandb_runs(entity=args.entity, project=args.project, keys=tuple(args.keys), tag_filter=args.tag, max_runs=args.max_runs, warmup_iterations=args.warmup_iterations)\n    else:  # tfevents\n        if not args.event_dir:\n            sys.exit(\"⚠️  --event_dir is required for tfevents source.\")"
+        }
+      ]
+    },
+    {
+      "对象": "f33a522bdd31f78cdf55baf9f53158dcf06280f5",
+      "路径": [
+        "scripts/analyze_terrain_reward_correlation.py"
+      ],
+      "命中": [
+        {
+          "行号": 55,
+          "上下文": "    wandb = None  # handled later\n\ndef load_wandb_runs(entity: str, project: str, keys: Tuple[str, str, str], tag_filter: List[str] | None = None, max_runs: int | None = None, warmup_iterations: int = 0) -> pd.DataFrame:\n    \"\"\"Download history for every run in a wandb project.\"\"\"\n    if wandb is None:\n        raise RuntimeError(\"wandb Python package not installed.\")"
+        },
+        {
+          "行号": 617,
+          "上下文": "        if not (args.entity and args.project):\n            sys.exit(\"⚠️  --entity and --project are required for wandb source.\")\n        df = load_wandb_runs(entity=args.entity, project=args.project, keys=tuple(args.keys), tag_filter=args.tag, max_runs=args.max_runs, warmup_iterations=args.warmup_iterations)\n    else:  # tfevents\n        if not args.event_dir:\n            sys.exit(\"⚠️  --event_dir is required for tfevents source.\")"
+        }
+      ]
+    },
+    {
+      "对象": "640340d5f73c222affa1633b819582c7fa28c941",
+      "路径": [
+        "cfg/config.yaml"
+      ],
+      "命中": [
+        {
+          "行号": 47,
+          "上下文": "wandb_group: ''\nwandb_name: ${train.params.config.name}\nwandb_entity: ''\nwandb_project: 'isaacgymenvs'\nwandb_tags: []\nwandb_logcode_dir: '' "
+        }
+      ]
+    }
+  ]
+}

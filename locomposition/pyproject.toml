@@ -1,0 +1,151 @@
+[project]
+name = "locomposition-environment"
+version = "0.1.0"
+description = "Locked Python environment for LoComposition"
+readme = "README.md"
+requires-python = "==3.11.*"
+
+dependencies = [
+    "locomposition",
+    "torch==2.7.0",
+    "torchvision==0.22.0",
+    "isaacsim[all,extscache]==5.1.0",
+    "wandb",
+    "toml",
+    "rich",
+    "memory-profiler",
+    "PyQt5",
+    "tensorboard",
+    "pandas",
+    "numpy==1.26.0",
+    "zarr==3.1.5",
+    "scipy",
+    "scikit-learn",
+    "statsmodels",
+    "matplotlib",
+    "seaborn",
+    "tqdm",
+    "SciencePlots",
+    "zmq",
+    "rosbags",
+    "tensordict",
+    "rsl-rl-lib==5.4.2",
+    # The pinned Isaac Lab revision requires this security-updated version.
+    # Isaac Sim 5.1's FastAPI metadata still carries an incompatible upper bound.
+    "starlette==0.49.1",
+]
+
+[tool.uv]
+package = false
+
+# Restrict uv to only resolve dependencies for Linux, preventing the 
+# cross-platform lockfile from trying to pull in incompatible Windows packages.
+required-environments = [
+    "sys_platform == 'linux' and platform_machine == 'x86_64'"
+]
+
+# Workaround for an upstream metadata bug in isaacsim-core (v5.1.0).
+# The package incorrectly demands pywin32 globally without platform markers.
+# This override forces uv to treat pywin32 as Windows-only, allowing the 
+# Linux environment to resolve and install successfully.
+override-dependencies = [
+    "pywin32; sys_platform == 'win32'",
+    # Match pinned Isaac Lab. The installer allows only the corresponding
+    # known FastAPI metadata warning and fails on every other incompatibility.
+    "starlette==0.49.1",
+]
+
+# Allows uv to automatically find these packages without needing the long --index-url flags every time you run a command.
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[[tool.uv.index]]
+name = "nvidia"
+url = "https://pypi.nvidia.com"
+explicit = true
+
+[tool.uv.sources]
+locomposition = { path = "exts/locomposition", editable = true }
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+isaacsim = { index = "nvidia" }
+
+[tool.isort]
+atomic = true
+profile = "black"
+line_length = 120
+py_version = 311
+skip_glob = ["docs/*", "logs/*"]
+group_by_package = true
+
+sections = [
+    "FUTURE",
+    "STDLIB",
+    "THIRDPARTY",
+    "ISAACLABPARTY",
+    "FIRSTPARTY",
+    "LOCALFOLDER",
+]
+extra_standard_library = [
+    "numpy",
+    "h5py",
+    "open3d",
+    "torch",
+    "tensordict",
+    "bpy",
+    "matplotlib",
+    "gymnasium",
+    "gym",
+    "scipy",
+    "hid",
+    "yaml",
+    "prettytable",
+    "toml",
+    "trimesh",
+    "tqdm",
+    "psutil",
+]
+known_thirdparty = [
+    "omni.isaac.core",
+    "omni.replicator.isaac",
+    "omni.replicator.core",
+    "pxr",
+    "omni.kit.*",
+    "warp",
+    "carb",
+    "Semantics",
+]
+known_isaaclabparty = [
+    "isaaclab",
+    "isaaclab_tasks",
+    "isaaclab_assets"
+]
+
+known_firstparty = ["locomposition"]
+known_local_folder = "config"
+
+[tool.pyright]
+exclude = [
+    "**/__pycache__",
+    "**/docs",
+    "**/logs",
+    ".git",
+    ".vscode",
+]
+
+typeCheckingMode = "basic"
+pythonVersion = "3.11"
+pythonPlatform = "Linux"
+enableTypeIgnoreComments = true
+
+# This is required as the CI pre-commit does not download the module (i.e. numpy, torch, prettytable)
+# Therefore, we have to ignore missing imports
+reportMissingImports = "none"
+# This is required to ignore for type checks of modules with stubs missing.
+reportMissingModuleSource = "none" 
+
+reportGeneralTypeIssues = "none"       
+reportOptionalMemberAccess = "warning" 
+reportPrivateUsage = "warning"

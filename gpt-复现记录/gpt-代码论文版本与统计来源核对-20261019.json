@@ -1,0 +1,106 @@
+{
+  "日期": "2026-10-19",
+  "本地提交": "dd27a5a0e42ee0de9067ba09407d2a5afb08aeeb",
+  "远端主分支": "b1149c8074f7df84450fe67649ee5e14dc971042",
+  "远端差异": "一个直接后继提交，仅更新 README.md 和 CITATION.cff 的链接",
+  "论文版本": {
+    "第一版": "2026-06-14",
+    "第二版": "2026-10-12"
+  },
+  "论文源码成员": [
+    "00README.json",
+    "corl_2026.sty",
+    "corlabbrvnat.bst",
+    "figures",
+    "figures/xemb_frames",
+    "figures/xemb_frames/anymal_4.jpg",
+    "figures/xemb_frames/spot_1.jpg",
+    "figures/xemb_frames/anymal_2.jpg",
+    "figures/xemb_frames/anymal_6.jpg",
+    "figures/xemb_frames/anymal_3.jpg",
+    "figures/xemb_frames/anymal_5.jpg",
+    "figures/xemb_frames/spot_3.jpg",
+    "figures/xemb_frames/spot_2.jpg",
+    "figures/xemb_frames/spot_4.jpg",
+    "figures/xemb_frames/anymal_1.jpg",
+    "figures/xemb_frames/spot_5.jpg",
+    "figures/xemb_frames/spot_6.jpg",
+    "figures/delay_frames",
+    "figures/delay_frames/LP_6s.jpg",
+    "figures/delay_frames/LEP_1s.jpg",
+    "figures/delay_frames/LP_1s.jpg",
+    "figures/delay_frames/LEP_3s.jpg",
+    "figures/delay_frames/LP_5s.jpg",
+    "figures/delay_frames/LEP_2s.jpg",
+    "figures/delay_frames/LEP_4s.jpg",
+    "figures/delay_frames/LP_2s.jpg",
+    "figures/delay_frames/LEP_5s.jpg",
+    "figures/delay_frames/LP_4s.jpg",
+    "figures/delay_frames/LEP_6s.jpg",
+    "figures/delay_frames/LP_3s.jpg",
+    "figures/contact_patterns_terrain.pdf",
+    "figures/main_figure.pdf",
+    "figures/sim2real_compressed.pdf",
+    "figures/b4-blind-sim-eval.png",
+    "figures/b6-sim-eval.png",
+    "figures/cot_patterns_combined.pdf",
+    "figures/plot_step_height_box_comparison.pdf",
+    "figures/lambda_energy_sweep_terrain.pdf",
+    "figures/lambda_energy_sweep_cot.pdf",
+    "main.tex",
+    "reference_clean.bib"
+  ],
+  "作者文件核对": {
+    "scripts/analyze_run_range.py": {
+      "与作者提交一致": true,
+      "文件校验值": "c3f8d8d039ee44fd2770b2e3f836484aada13355297946a0909c77e2d07f9700"
+    },
+    "scripts/metrics_utils.py": {
+      "与作者提交一致": true,
+      "文件校验值": "ac52d588bca3f2eaabee89006ddf3e49074a0bd227907741ade3a91296938884"
+    },
+    "scripts/generate_plots.py": {
+      "与作者提交一致": true,
+      "文件校验值": "7410673ac5da3b2ca510519b68052c91af2c6b01da4bc62cd7da777b4ff342a0"
+    },
+    "exts/locomposition/locomposition/assets/go2_config.py": {
+      "与作者提交一致": true,
+      "文件校验值": "8efd3eb8515a9862bfa086d18da33f6624169011bfb5136bb375be3f0381f1a9"
+    },
+    "exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/locomposition_go2_rough_terrain_env_cfg.py": {
+      "与作者提交一致": true,
+      "文件校验值": "5afa9a005c480bfa3d11ba7e2c23e1320eecc1d4cf49e0aa02a5ed838561242d"
+    },
+    "exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/agents/clean_rl_ppo_cfg.py": {
+      "与作者提交一致": true,
+      "文件校验值": "ae6805d51ea051ed7c7b485bf24eaaa35d273847189b5facd62b10c6dfdc0a2c"
+    },
+    "train-locomposition.sbatch": {
+      "与作者提交一致": true,
+      "文件校验值": "05f69598f764ed3b4cfba9691643124d9d8c852faaf6b25168be1db8a6a7852d"
+    }
+  },
+  "本地既有差异校验值": "13469ec721bb811d41a23b8287fe0679450cc2c4d7db84bf0014e928d9b718aa",
+  "既有修改状态": " M exts/locomposition/locomposition/tasks/utils/cleanrl/ppo.py\n M exts/locomposition/locomposition/tasks/utils/cleanrl/rl_cfg.py\n M scripts/clean_rl/cli_args.py\n M scripts/eval.py\n?? exts/locomposition/locomposition/tasks/utils/cleanrl/checkpoints.py\n",
+  "原始指标文件": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/eval_checkpoint_30000_seed_46_action_delay_0/metrics_summary.json",
+  "原始指标校验值": "7ea2b4088638947b94811386a1e65c168700aad77d50b962c0b0f2f090d632b2",
+  "速度误差": {
+    "x轴": 0.24386779963970184,
+    "y轴": 0.1065712571144104,
+    "作者脚本两轴各自均方根后平均": 0.17521952837705612,
+    "两轴平方误差混合后均方根": 0.18818732229358004,
+    "二维向量均方根": 0.2661370634542576
+  },
+  "公开来源无法确认": [
+    "论文表2的确切代码提交",
+    "12个训练种子对应运行清单",
+    "实际汇总命令及选择窗口",
+    "论文姿态违规率对应的生成实现"
+  ],
+  "来源": [
+    "https://arxiv.org/abs/2606.15896",
+    "https://arxiv.org/src/2606.15896v2",
+    "https://github.com/LouKordos/locomposition/commit/b1149c8074f7df84450fe67649ee5e14dc971042",
+    "https://github.com/LouKordos/locomposition/releases"
+  ]
+}

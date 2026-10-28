@@ -1,0 +1,236 @@
+[
+  {
+    "对象": "76d50c89daf4022ca069f999a1a703150ccffd08",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "320945a908ce869327d665e6543e85c47e7488e0",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "locomposition-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "b7352bfa010b1b78baeff9c954769a4ec34b4651",
+    "路径": [
+      "archive-logs-dir.sh",
+      "scripts/archive-logs-dir.sh"
+    ],
+    "行号": 4,
+    "内容": "time tar -cf - ./logs/clean_rl/ | pv -s ${TOTAL_BYTES} | zstd --ultra -22 -T0 -o $HOME/Downloads/constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "b7352bfa010b1b78baeff9c954769a4ec34b4651",
+    "路径": [
+      "archive-logs-dir.sh",
+      "scripts/archive-logs-dir.sh"
+    ],
+    "行号": 7,
+    "内容": "swish $HOME/Downloads/constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "05b24ee4aade417b6951326d0374391e91b4ffc4",
+    "路径": [
+      "scripts/archive-logs-dir.sh"
+    ],
+    "行号": 4,
+    "内容": "time tar -cf - ./logs/clean_rl/ | pv -s ${TOTAL_BYTES} | zstd --ultra -22 -T0 -o $HOME/Downloads/locomposition-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "05b24ee4aade417b6951326d0374391e91b4ffc4",
+    "路径": [
+      "scripts/archive-logs-dir.sh"
+    ],
+    "行号": 7,
+    "内容": "swish $HOME/Downloads/locomposition-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "b725b95cdb8e5d8da753aecb6cba6cdd4af9cc15",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "7d38ccceff1f80d7e96d905cc6acaf5be264d87e",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 35,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "ede1a3faddd989f2ec05661f3d2e4facb57b064c",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "3d835a2fe63219c925697c2d12afb4a60b14f058",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "2c1a25973b05fb406563442f0115d2caebba7566",
+    "路径": [
+      "scripts/analyze_terrain_reward_correlation.py"
+    ],
+    "行号": 659,
+    "内容": "            sys.exit(\"⚠️  --entity and --project are required for wandb source.\")"
+  },
+  {
+    "对象": "fe2adde23bb2c5778401befb77fd6100f99c6766",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "e97763f7d300d9a56fedb8a721f3793723e165a5",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "d35aa4823f83ae0a91385bd03938b4fcba084e5a",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "9e1c4b870ac3f84837a6b34716612d8c662c1495",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "14e786e2a33226af80124ad286512aec93da1d80",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "65a6871826ca0556dd87689f952c30c6fe72ee41",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "ff750fd70e26b33e5ee1b79f00703c819a7c3781",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "a74bf3929e96c4e8d8d50937c66d7ce96780e3e1",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "f33a522bdd31f78cdf55baf9f53158dcf06280f5",
+    "路径": [
+      "scripts/analyze_terrain_reward_correlation.py"
+    ],
+    "行号": 616,
+    "内容": "            sys.exit(\"⚠️  --entity and --project are required for wandb source.\")"
+  },
+  {
+    "对象": "9738a968f6df80d9ec9722c408f477e1683c5b95",
+    "路径": [
+      "archive-logs-dir.sh"
+    ],
+    "行号": 4,
+    "内容": "time tar -cf - ./logs/clean_rl/ | pv -s ${TOTAL_BYTES} | zstd --ultra -22 -T0 -o $/HOME/Downloads/constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "9738a968f6df80d9ec9722c408f477e1683c5b95",
+    "路径": [
+      "archive-logs-dir.sh"
+    ],
+    "行号": 7,
+    "内容": "swish $HOME/Downloads/constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "be8ce7f4cedc1d5118795f43fc43758aa6bac3ff",
+    "路径": [
+      "archive-logs-dir.sh"
+    ],
+    "行号": 4,
+    "内容": "time tar -cf - ./logs/clean_rl/ | pv -s ${TOTAL_BYTES} | zstd --ultra -22 -T0 -o constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "be8ce7f4cedc1d5118795f43fc43758aa6bac3ff",
+    "路径": [
+      "archive-logs-dir.sh"
+    ],
+    "行号": 7,
+    "内容": "swish constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "2b08ab4b027c2664056c1e05e976cba67d6ab469",
+    "路径": [
+      ".gitignore"
+    ],
+    "行号": 36,
+    "内容": "constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "c704e49551745d98c722881beb85883c9c3e0ca8",
+    "路径": [
+      "archive-logs-dir.sh"
+    ],
+    "行号": 3,
+    "内容": "time tar -cf constraints-as-terminations-logs-and-runs.tar.zst -I 'zstd --ultra -22 -T0' ./logs/clean_rl/"
+  },
+  {
+    "对象": "c704e49551745d98c722881beb85883c9c3e0ca8",
+    "路径": [
+      "archive-logs-dir.sh"
+    ],
+    "行号": 6,
+    "内容": "swish constraints-as-terminations-logs-and-runs.tar.zst"
+  },
+  {
+    "对象": "cc0f6974f2da552ef0cd2349774a5af76e1a3514",
+    "路径": [
+      "archive-logs-dir.sh"
+    ],
+    "行号": 3,
+    "内容": "tar -cf constraints-as-terminations-logs-and-runs.tar.zst -I 'zstd -5 -T0' ./logs/clean_rl/"
+  },
+  {
+    "对象": "cc0f6974f2da552ef0cd2349774a5af76e1a3514",
+    "路径": [
+      "archive-logs-dir.sh"
+    ],
+    "行号": 6,
+    "内容": "swish constraints-as-terminations-logs-and-runs.tar.zst"
+  }
+]

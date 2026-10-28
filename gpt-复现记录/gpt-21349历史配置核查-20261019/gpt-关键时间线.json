@@ -1,0 +1,65 @@
+[
+  {
+    "事件": "模型首次公开",
+    "提交": "fb5cd5282f1c024b63b154d2c8ca556b3c53a395",
+    "原提交时区时间": "2025-07-08T20:53:02+02:00",
+    "提交说明": "Add option to choose between joint state history vs no state history",
+    "链接": "https://github.com/LouKordos/locomposition/commit/fb5cd5282f1c024b63b154d2c8ca556b3c53a395"
+  },
+  {
+    "事件": "自适应改线性能耗",
+    "提交": "c90119cb7174fadf637d402a42965fe7805b10c8",
+    "原提交时区时间": "2025-07-24T16:06:03+02:00",
+    "提交说明": "Use linear curr by default",
+    "链接": "https://github.com/LouKordos/locomposition/commit/c90119cb7174fadf637d402a42965fe7805b10c8"
+  },
+  {
+    "事件": "约束训练重复缩放修复",
+    "提交": "4745ee2261929866653ed76939fd1d77a6149f53",
+    "原提交时区时间": "2025-08-19T19:54:08+02:00",
+    "提交说明": "Fix CaT implementation error",
+    "链接": "https://github.com/LouKordos/locomposition/commit/4745ee2261929866653ed76939fd1d77a6149f53"
+  },
+  {
+    "事件": "模型明确标为env75",
+    "提交": "a3a1e4909cedb8c50f96fa2c766460dfa1ff46af",
+    "原提交时区时间": "2026-01-28T19:15:48+01:00",
+    "提交说明": "Use hardcoded elevation depending on checkpoint used",
+    "链接": "https://github.com/LouKordos/locomposition/commit/a3a1e4909cedb8c50f96fa2c766460dfa1ff46af"
+  },
+  {
+    "事件": "能耗前后模型配对",
+    "提交": "a02e4a7cc4bcf8a87de16b6cebe3b1be9404e83a",
+    "原提交时区时间": "2026-04-11T15:59:31+02:00",
+    "提交说明": "Add checkpoint from before energy minimization to whitelist",
+    "链接": "https://github.com/LouKordos/locomposition/commit/a02e4a7cc4bcf8a87de16b6cebe3b1be9404e83a"
+  },
+  {
+    "事件": "修改评估重置姿态",
+    "提交": "7e3b4c8a642059a60c90419f6e4db8ffd74d2794",
+    "原提交时区时间": "2026-03-02T09:50:52+01:00",
+    "提交说明": "Set realistic reset pose during eval",
+    "链接": "https://github.com/LouKordos/locomposition/commit/7e3b4c8a642059a60c90419f6e4db8ffd74d2794"
+  },
+  {
+    "事件": "启用评估观测噪声",
+    "提交": "4223d48260e3ec5ed3613c3898b9110b0722aeee",
+    "原提交时区时间": "2026-04-08T19:21:31+02:00",
+    "提交说明": "Enable corruption during eval",
+    "链接": "https://github.com/LouKordos/locomposition/commit/4223d48260e3ec5ed3613c3898b9110b0722aeee"
+  },
+  {
+    "事件": "加入质心与质量随机化",
+    "提交": "462606a92a391370c35c76ab0d6d801debfa0228",
+    "原提交时区时间": "2026-04-30T18:49:20+02:00",
+    "提交说明": "Randomize CoM and mass",
+    "链接": "https://github.com/LouKordos/locomposition/commit/462606a92a391370c35c76ab0d6d801debfa0228"
+  },
+  {
+    "事件": "从零开始能耗课程",
+    "提交": "ece295a64983f435422ce5d29522f258ae7f9e82",
+    "原提交时区时间": "2025-09-23T20:43:34+02:00",
+    "提交说明": "start energy curr from iteration 0, enable push_robot, increase height map noise",
+    "链接": "https://github.com/LouKordos/locomposition/commit/ece295a64983f435422ce5d29522f258ae7f9e82"
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-30000模型对照评估-20261021/gpt-自训30000阶梯同步对比.mp4",
+    "SHA256": "8ebb5162ecfbf75423b27f7371ccfb27dc36c25ae455a34ebcafce5f96b3aabe",
+    "完整解码": "通过",
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "nb_frames": "375"
+      }
+    ],
+    "format": {
+      "duration": "15.000000"
+    }
+  },
+  {
+    "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-30000模型对照评估-20261021/崎岖楼梯视频/gpt-自训30000崎岖地形与楼梯.mp4",
+    "SHA256": "58650ec8950ca66efae0d6e851ece8c880ca6c386d6fcda41f463d511d4ea29c",
+    "完整解码": "通过",
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "nb_frames": "500"
+      }
+    ],
+    "format": {
+      "duration": "20.000000"
+    }
+  },
+  {
+    "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-30000模型对照评估-20261021/平地视频/gpt-自训30000平地行走.mp4",
+    "SHA256": "bab40389c5418c9cfc83be00240c01618bcbab2e84a0e161beee78e7b54d9ce0",
+    "完整解码": "通过",
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "nb_frames": "700"
+      }
+    ],
+    "format": {
+      "duration": "28.000000"
+    }
+  },
+  {
+    "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-30000模型对照评估-20261021/阶梯评估/15厘米/种子40/录像/gpt-15厘米种子40-失败.mp4",
+    "SHA256": "8f950ec83c971d8d86900ff4c904a0310f24fba681c191334f66478e2dcb7bd5",
+    "完整解码": "通过",
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "nb_frames": "375"
+      }
+    ],
+    "format": {
+      "duration": "15.000000"
+    }
+  },
+  {
+    "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-30000模型对照评估-20261021/阶梯评估/20厘米/种子40/录像/gpt-20厘米种子40-失败.mp4",
+    "SHA256": "d37e3ca7750ac95510cd05d6dcc5d7b94cbeef2a88905686b2551477eaaf1743",
+    "完整解码": "通过",
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "nb_frames": "375"
+      }
+    ],
+    "format": {
+      "duration": "15.000000"
+    }
+  },
+  {
+    "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-30000模型对照评估-20261021/阶梯评估/8.5厘米/种子40/录像/gpt-8.5厘米种子40-成功.mp4",
+    "SHA256": "c6c5e119a131b36be8576a46a0b8b2ec6348307560e87998f896c0a0c9177421",
+    "完整解码": "通过",
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "nb_frames": "375"
+      }
+    ],
+    "format": {
+      "duration": "15.000000"
+    }
+  }
+]

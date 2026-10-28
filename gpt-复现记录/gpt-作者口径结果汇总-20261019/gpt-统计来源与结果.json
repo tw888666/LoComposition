@@ -1,0 +1,150 @@
+{
+  "本次执行方式": "直接导入未修改的作者模块，调用其发现、解析、逐运行汇总和跨运行统计函数；未调用训练或仿真入口。训练数据适配来源为本地TensorBoard日志。",
+  "调用的作者函数": [
+    "discover_metrics_summary_candidates",
+    "parse_cot_dataframe（由发现函数内部调用）",
+    "parse_json_summary（由发现函数内部调用）",
+    "compute_wandb_metric_summary_from_history",
+    "resolve_selected_run_names",
+    "build_per_run_summary",
+    "build_aggregate_summary",
+    "save_text_summary"
+  ],
+  "参数": {
+    "summary_tail_points": 500,
+    "cot_velocity_range": [
+      0.6,
+      1.6
+    ],
+    "match_mode": "intersection",
+    "选中运行": [
+      "2026-10-10-09-56-51"
+    ],
+    "模拟步数": 14500,
+    "随机段步数": 4000,
+    "每固定场景步数": 500,
+    "场景数": 21
+  },
+  "训练数据来源说明": "作者原始输出中的 source=wandb 及 has_wandb 字段是作者函数内部固定名称；本次实际输入为本地TensorBoard（训练日志）同名指标，未查询或上传WandB。保留原输出字段不改名，避免误认为更改作者统计实现。",
+  "训练输入": {
+    "Curriculum/terrain_levels": {
+      "总记录数": 28701,
+      "末尾窗口起点": 29501,
+      "末尾窗口终点": 30000,
+      "末尾记录数": 500
+    },
+    "Episode_Reward/track_lin_vel_xy_exp": {
+      "总记录数": 28701,
+      "末尾窗口起点": 29501,
+      "末尾窗口终点": 30000,
+      "末尾记录数": 500
+    },
+    "Episode/MaxJointPos": {
+      "总记录数": 28701,
+      "末尾窗口起点": 29501,
+      "末尾窗口终点": 30000,
+      "末尾记录数": 500
+    },
+    "Episode/MaxAirTime": {
+      "总记录数": 28701,
+      "末尾窗口起点": 29501,
+      "末尾窗口终点": 30000,
+      "末尾记录数": 500
+    },
+    "Episode/EnergyConsumed": {
+      "总记录数": 28701,
+      "末尾窗口起点": 29501,
+      "末尾窗口终点": 30000,
+      "末尾记录数": 500
+    },
+    "数据来源": {
+      "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/events.out.tfevents.1791597457.gcykxjs-Server.165812.0": {
+        "字节数": 150769564,
+        "SHA256": "07e7f68f404bfd5a14060ece6b4cef25c39a771efc8d3514ef7368dd0a813f59"
+      }
+    }
+  },
+  "依赖目录": "/tmp/gpt-locomposition-summary-deps",
+  "依赖": {
+    "numpy": "1.26.0",
+    "pandas": "2.2.3"
+  },
+  "作者提交": "dd27a5a0e42ee0de9067ba09407d2a5afb08aeeb",
+  "文件校验": {
+    "/home/xy.chen/tw/LoComposition/locomposition/scripts/analyze_run_range.py": "c3f8d8d039ee44fd2770b2e3f836484aada13355297946a0909c77e2d07f9700",
+    "/home/xy.chen/tw/LoComposition/locomposition/scripts/metrics_utils.py": "ac52d588bca3f2eaabee89006ddf3e49074a0bd227907741ade3a91296938884",
+    "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/eval_checkpoint_30000_seed_46_action_delay_0/metrics_summary.json": "7ea2b4088638947b94811386a1e65c168700aad77d50b962c0b0f2f090d632b2",
+    "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/params/env.yaml": "fe41760c1d00383e5461da82723045fbc9b1f1801814d62c8b1285936e319630",
+    "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/params/agent.yaml": "ed2c96969e3006fccd3c78a5c2326d6ae8c74fb770b02aa6c277541e517f16fe"
+  },
+  "现有代码差异校验值": "13469ec721bb811d41a23b8287fe0679450cc2c4d7db84bf0014e928d9b718aa",
+  "比较结果": [
+    {
+      "指标": "速度均方根误差",
+      "作者字段": "rms_error_xy_mean",
+      "当前值": 0.17521952837705612,
+      "当前训练种子数": 1,
+      "当前95%置信区间": null,
+      "论文主方法均值": 0.19,
+      "论文95%置信区间半宽": 0.01,
+      "论文训练种子数": 12,
+      "单位": "米/秒",
+      "当前减论文中心值_仅算术差": -0.01478047162294388,
+      "相对论文中心值百分比_仅算术差": -7.779195591023091,
+      "可比性": "有限可比：作者公开脚本两轴各自均方根后平均；论文未绑定公式和场景"
+    },
+    {
+      "指标": "训练地形等级",
+      "作者字段": "Curriculum/terrain_levels",
+      "当前值": 3.2221653342247008,
+      "当前训练种子数": 1,
+      "当前95%置信区间": null,
+      "论文主方法均值": 3.11,
+      "论文95%置信区间半宽": 0.02,
+      "论文训练种子数": 12,
+      "单位": "等级",
+      "当前减论文中心值_仅算术差": 0.11216533422470087,
+      "相对论文中心值百分比_仅算术差": 3.6066023866463404,
+      "可比性": "统计窗口可比；训练指令与配置不同"
+    },
+    {
+      "指标": "平地运输能耗",
+      "作者字段": "mean_cost_of_transport_range",
+      "当前值": 0.2592472002109906,
+      "当前训练种子数": 1,
+      "当前95%置信区间": null,
+      "论文主方法均值": 0.28,
+      "论文95%置信区间半宽": 0.01,
+      "论文训练种子数": 12,
+      "单位": "无量纲",
+      "当前减论文中心值_仅算术差": -0.020752799789009402,
+      "相对论文中心值百分比_仅算术差": -7.411714210360499,
+      "可比性": "速度点、时长和聚合口径可比；训练配置不同"
+    },
+    {
+      "指标": "最大约束违规频率",
+      "作者字段": "max_constraint_violation_frequency_percent",
+      "当前值": 10.76551724137931,
+      "当前训练种子数": 1,
+      "当前95%置信区间": null,
+      "论文主方法均值": 0.5,
+      "论文95%置信区间半宽": 0.08,
+      "论文训练种子数": 12,
+      "单位": "%",
+      "当前减论文中心值_仅算术差": null,
+      "相对论文中心值百分比_仅算术差": null,
+      "可比性": "不可直接比较：作者遍历全部已记录约束且漏姿态，论文限定五类软约束"
+    }
+  ],
+  "最大频率来源": {
+    "约束字段路径": "/FR_hip_joint",
+    "违规频率百分比": 10.76551724137931
+  },
+  "限制": [
+    "只含一个训练种子，不能估计跨种子置信区间或显著性",
+    "论文表格实际脚本版本、运行清单和场景范围尚未确认",
+    "当前默认训练配置与论文存在差异；迁移时为近似续训",
+    "没有补入姿态指标、筛掉额外约束或修改评估采样窗口"
+  ],
+  "论文来源": "https://arxiv.org/html/2606.15896v2#S4.T2"
+}

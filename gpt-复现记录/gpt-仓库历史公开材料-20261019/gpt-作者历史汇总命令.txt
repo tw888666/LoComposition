@@ -1,0 +1,14 @@
+来源：提交 651924cd2747e75c8a6c9150b58cea0f8af6a56d 的历史分析计划。用途为 LP/LEP 答辩补充分析；不是已确认的论文主表生成命令。本次仅保存、未执行。路径指向作者机器。
+
+MPLCONFIGDIR=/tmp/lp-lep-rebuttal-mpl \
+/home/kordoslo/mamba_env_data/env_new_isaac_lab/.venv/bin/python scripts/analyze_run_range.py \
+  --labels LP LEP \
+  --env_names env_id_102_b2_no_energy_min_proper_seeding env_id_97_regression_perf_shorter_push_disturbance_seeding \
+  --start_times ALL ALL \
+  --end_times ALL ALL \
+  --metrics_summary_root_dir '/local_storage1/loukas-backup/logs/clean_rl/cluster_runs/env_id_102_b2_no_energy_min_proper_seeding/constraints-as-terminations/logs/clean_rl/env_id_102_b2_no_energy_min_proper_seeding' \
+  --metrics_summary_root_dir '/local_storage1/loukas-backup/logs/clean_rl/cluster_runs/env_id_97_regression_perf_shorter_push_disturbance_seeding/constraints-as-terminations/logs/clean_rl/env_id_97_regression_perf_shorter_push_disturbance_seeding' \
+  --skip_wandb \
+  --output_name lp_vs_lep_rebuttal_gait_dynamics \
+  --export_formats pdf png \
+  --plot_style corl

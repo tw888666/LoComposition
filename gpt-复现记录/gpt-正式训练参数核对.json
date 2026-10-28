@@ -1,0 +1,42 @@
+{
+  "并行环境": "7500",
+  "种子": "46",
+  "物理时间步": "0.005",
+  "控制降采样": "4",
+  "单回合秒数": "10.0",
+  "动作缩放": "0.8",
+  "前向速度范围": [
+    "-0.3",
+    "1.0"
+  ],
+  "能耗课程": {
+    "term_name": "minimize_power",
+    "num_steps_from_start_step": "300000",
+    "start_at_step": "0",
+    "start_weight": "0.0",
+    "end_weight": "0.008"
+  },
+  "控制器": {
+    "class_type": "isaaclab.actuators.actuator_pd:DCMotor",
+    "joint_names_expr": [
+      ".*_hip_joint",
+      ".*_thigh_joint",
+      ".*_calf_joint"
+    ],
+    "effort_limit": "70.0",
+    "velocity_limit": "30.0",
+    "effort_limit_sim": "null",
+    "velocity_limit_sim": "null",
+    "stiffness": "25.0",
+    "damping": "0.5",
+    "armature": "null",
+    "friction": "0.0",
+    "dynamic_friction": "null",
+    "viscous_friction": "null",
+    "saturation_effort": "70.0"
+  },
+  "训练迭代预算": "30000",
+  "采样长度": "24",
+  "小批量大小": "16384",
+  "日志工具": "tensorboard"
+}

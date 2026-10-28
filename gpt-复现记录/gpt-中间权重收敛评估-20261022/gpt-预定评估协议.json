@@ -1,0 +1,78 @@
+{
+  "迭代列表": [
+    2999,
+    4999,
+    9999,
+    12499,
+    14999,
+    19999,
+    24999,
+    30000
+  ],
+  "评估种子": [
+    40,
+    42,
+    44,
+    46,
+    48
+  ],
+  "地形种子": 46,
+  "场景": [
+    "平地1.0",
+    "平地1.6",
+    "崎岖地形",
+    "8.5厘米楼梯"
+  ],
+  "每场秒数": 10,
+  "高程图": "开启真实高程图",
+  "权重": {
+    "2999": {
+      "路径": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_2999.pt",
+      "SHA256": "77875a3c5f76c6fad0277bdc06c9a1d117e4e3332f028ebf064ba2078f02627a"
+    },
+    "4999": {
+      "路径": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_4999.pt",
+      "SHA256": "bba7f98fe8a4f0ca17ba8784aaf0ea9aa82d80fadba9a97860621e924fe3e63a"
+    },
+    "9999": {
+      "路径": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_9999.pt",
+      "SHA256": "66153973ef6600665e617b892714ac94a2fd6485b1e93ad11de23acdbeaabeab"
+    },
+    "12499": {
+      "路径": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_12499.pt",
+      "SHA256": "9e41632ea9f45b3f58e5ccdf70a2fc869ddaac20b3d71949fde691993f6df012"
+    },
+    "14999": {
+      "路径": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_14999.pt",
+      "SHA256": "a49aef067a457ef0f5e43c43a5cc07718fe3f1a6cf24fe8582c372193f01d640"
+    },
+    "19999": {
+      "路径": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_19999.pt",
+      "SHA256": "3c6e69809d4b327889e49215868c45b600620e8411351c0b80532e85b1d3778f"
+    },
+    "24999": {
+      "路径": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_24999.pt",
+      "SHA256": "4175edf6e07247f3adcba2ec0e808f4a51b3328155c6c27b9f831f5922211046"
+    },
+    "30000": {
+      "路径": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_30000.pt",
+      "SHA256": "3cfa3b846a8bcb72ed20dbba9e06e94cbfa5800e88adccfae2534ff7e69cec94"
+    }
+  },
+  "随机化": "固定地形布局，改变动力学及观测噪声；取消质心随机偏移，沿用上一轮其他设置。不是五种地形布局。",
+  "平地与崎岖通过定义": "10秒内无非超时终止，首次重置前世界负X净前进至少为指令速度×10秒的70%，末帧侧向偏移不超过1米。",
+  "楼梯通过定义": "沿用既定四足全部越过平台边界、机身直立并连续保持10步的判据；只在首次重置前判断。",
+  "速度误差定义": "前向速度均方根误差，单位米/秒。另保留前向/侧向两轴均方根误差均值。",
+  "机械功定义": "逐时刻十二关节|力矩×角速度|之和积分，除以水平路径长度；单位焦耳/米，不是电池能耗。",
+  "主连续指标窗口": "每个场景和种子，以八个权重中最早首次重置前的共同有效窗口计算；不拼接自动重置，不让失败权重独享较短窗口。包含起步。",
+  "误差带": "连续指标按五个配对种子整组重采样，每组包含四场景，给出95%自助法区间；五个种子的区间仅供参考。通过率直接报告成功数/20及逐场景成功数/5。",
+  "接近30000次参考标准": {
+    "总体通过率至少": 0.9,
+    "各场景通过率至少": 0.8,
+    "比30000次总体通过率至多低": 0.05,
+    "速度误差上限": "30000次×1.05 + 0.01米/秒",
+    "每米机械功上限": "30000次×1.10",
+    "稳定性": "该点及所有后续采样点均达标，且至少含三个采样点。"
+  },
+  "限制": "结论限于这次训练、固定四场景、五个种子；不证明所有地形收敛，不以最后权重天然最佳。"
+}

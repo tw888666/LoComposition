@@ -1,0 +1,12 @@
+services:
+  locomposition_sim2real:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      network: host
+      platforms: !reset []
+    volumes:
+      # Note that the path of the Dockerfile and context is relative to the *primary* compose.yml
+      - .:/app
+
+    command: sleep infinity

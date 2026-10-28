@@ -1,0 +1,1 @@
+2026-10-10 已按用户要求停止原 GPU0 训练并迁移至 GPU2。源模型 model_1299.pt；新会话 gpt-locomposition-s46-gpu2。详见 gpt-GPU2迁移配置.json。

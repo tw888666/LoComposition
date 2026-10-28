@@ -1,0 +1,23 @@
+{
+  "Python版本": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+  "PyTorch版本": "2.7.0+cu126",
+  "CUDA版本": "12.6",
+  "IsaacSim版本": "5.1.0.0",
+  "作者仓库提交": "dd27a5a0e42ee0de9067ba09407d2a5afb08aeeb",
+  "IsaacLab提交": "ddb044eb5b2300792de41e82d53b032f3632b489",
+  "评估种子": 46,
+  "默认评估物理GPU": 2,
+  "训练电机对照物理GPU": 4,
+  "训练种子": "作者未随该导出模型提供；不将评估种子46当作训练种子",
+  "来源文件SHA256": {
+    "locomposition/scripts/eval.py": "ee38ed513ef475885a7eb8195cb68f7aa23932fb9823ed781fccea750eacd71c",
+    "locomposition/scripts/torchscript_policy.py": "a48748908f6f4ecb177a242854c9ede1beeb75985ff3a838418752981087e627",
+    "gpt-作者21349评估.sh": "570e60dc618d9ccf3bddf283ac89ec5d96ed35714755f850e4a3ce260dd94033",
+    "gpt-作者21349结果分析.py": "15548e88d658ecb9409d3a5e8a325a8071a38026d9c3525a7d12746355249146",
+    "locomposition/exts/locomposition/locomposition/assets/go2_config.py": "8efd3eb8515a9862bfa086d18da33f6624169011bfb5136bb375be3f0381f1a9",
+    "locomposition/exts/locomposition/locomposition/tasks/utils/mdp/observations.py": "827c3daf53a300da63911d9d39b2aa7fd9c36bd7536e2c3391ce699d5d7f93ff",
+    "locomposition/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/locomposition_go2_rough_terrain_env_cfg.py": "5afa9a005c480bfa3d11ba7e2c23e1320eecc1d4cf49e0aa02a5ed838561242d",
+    "gpt-复现记录/gpt-论文第二版源文件-main.tex": "600f65e14597aa14a9fb3796b5a2de9916654c4b2839509e237433389d747e3a"
+  },
+  "本次修改说明": "eval.py保留既有无视频和跳过绘图改动，新增导出策略路径；原有训练与续训改动未改写。"
+}

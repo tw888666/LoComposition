@@ -1,0 +1,25 @@
+commit 4745ee2261929866653ed76939fd1d77a6149f53
+Author:     Loukas Kordos <loukas.kordos@uni-tuebingen.de>
+AuthorDate: Tue Aug 19 19:54:08 2025 +0200
+Commit:     Loukas Kordos <loukas.kordos@uni-tuebingen.de>
+CommitDate: Tue Aug 19 19:54:08 2025 +0200
+
+    Fix CaT implementation error
+    
+    https://github.com/Gepetto/constraints-as-terminations/issues/5
+
+diff --git a/exts/cat_envs/cat_envs/tasks/utils/cleanrl/ppo.py b/exts/cat_envs/cat_envs/tasks/utils/cleanrl/ppo.py
+index b587278..3376b61 100644
+--- a/exts/cat_envs/cat_envs/tasks/utils/cleanrl/ppo.py
++++ b/exts/cat_envs/cat_envs/tasks/utils/cleanrl/ppo.py
+@@ -398,10 +398,6 @@ def PPO(envs, ppo_cfg, run_path):
+             else:
+                 writer.add_scalar("Episode/" + key, value, iteration)
+ 
+-        # COMMENT OUT TO DISABLE CAT, AND ALSO ADJUST STEP FUNTION FOR SIMULATION!!! CaT: must compute the CaT quantity
+-        not_dones = 1.0 - dones
+-        rewards *= not_dones
+-
+         # bootstrap value if not done
+         with torch.no_grad():
+             next_value = agent.get_value(next_obs).reshape(1, -1)

@@ -1,0 +1,16 @@
+{
+  "台阶厘米": 20.0,
+  "种子": 40,
+  "结果": "失败",
+  "来源轨迹": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-21349高台阶多种子-20261019/20厘米/种子40/eval_checkpoint_deterministic_seed_40_action_delay_0_scenario_fast_walk_stairs_up/plots/sim_data.npz",
+  "来源SHA256": "bc59c5c6d3f90c0fabdee9cfdc45f8cff4230dbe504958be60a4f32b5799d868",
+  "地形SHA256": "5df2c1d71cf65289e4e79f97c5c957738b207fbdaecd047f10567bd060eb08b1",
+  "仅运动学回放": true,
+  "足端最大误差米": 0.0020013195672866483,
+  "实际播放至控制步": 749,
+  "实际轨迹时长秒": 15.0,
+  "定格说明": "通过后继续展示0.7秒再定格；失败展示至首次终止或15秒时限。余下时间保持末帧并标注。",
+  "输出时长秒": 15,
+  "帧数": 375,
+  "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-21349高台阶多种子-20261019/20厘米/种子40/录像/gpt-20厘米种子40-失败.mp4"
+}

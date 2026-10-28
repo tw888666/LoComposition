@@ -1,0 +1,22 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Action completed."
+    }
+  ],
+  "structuredContent": {
+    "content": "[]",
+    "title": "tags",
+    "modified_date": null,
+    "url": "https://api.github.com/repos/LouKordos/locomposition/git/matching-refs/tags",
+    "display_url": "https://api.github.com/repos/LouKordos/locomposition/git/matching-refs/tags",
+    "display_title": "tags",
+    "structuredContent": {
+      "title": "tags",
+      "content": "[]",
+      "display_url": "https://api.github.com/repos/LouKordos/locomposition/git/matching-refs/tags"
+    }
+  },
+  "isError": false
+}

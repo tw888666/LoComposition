@@ -1,0 +1,18 @@
+{
+  "programs": [],
+  "streams": [
+    {
+      "codec_name": "h264",
+      "width": 960,
+      "height": 540,
+      "r_frame_rate": "25/1",
+      "nb_frames": "700"
+    }
+  ],
+  "format": {
+    "duration": "28.000000",
+    "size": "5001454"
+  },
+  "SHA256": "fe0c98d265c6931af5e4fe64590a4c32c50d3d9a3f21144e380824c6786ecdbd",
+  "完整解码检查": "通过"
+}

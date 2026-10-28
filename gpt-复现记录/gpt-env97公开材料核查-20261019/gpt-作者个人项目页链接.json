@@ -1,0 +1,234 @@
+[
+  {
+    "标签": "link",
+    "链接": "https://www.loukaskordos.de/publications/locomposition/"
+  },
+  {
+    "标签": "link",
+    "链接": "/css/_entry.8351422ef641c72bccd4c3b0bdc9fabc688b99ed5f785dfbde9e620810e05f53.css"
+  },
+  {
+    "标签": "link",
+    "链接": "/css/custom.min.36acb26763da463855c81ca6d18b62c69ef811561f6dc5ce138ca7a4400a59aa.css"
+  },
+  {
+    "标签": "script",
+    "链接": "/js/hb-head.min.e9ff67ddf77122b225756bf5a926e24420bea2586199fddcb3b1813a009f4ee5.js"
+  },
+  {
+    "标签": "link",
+    "链接": "/media/icon.svg"
+  },
+  {
+    "标签": "link",
+    "链接": "/media/icon_hu_4b0b78af790c9e8a.png"
+  },
+  {
+    "标签": "link",
+    "链接": "https://www.loukaskordos.de/publications/locomposition/"
+  },
+  {
+    "标签": "link",
+    "链接": "https://fonts.googleapis.com"
+  },
+  {
+    "标签": "link",
+    "链接": "https://fonts.gstatic.com"
+  },
+  {
+    "标签": "link",
+    "链接": "https://fonts.googleapis.com/css2?family=Lora:wght@100..900&family=Source+Serif+4:wght@100..900&family=Source+Code+Pro:wght@400&display=swap"
+  },
+  {
+    "标签": "script",
+    "链接": "/js/hugo-blox-en.min.50bf5376bbbd2aea9b2e03e195eeee2f0afad8e84589a94b0ee493111b4be271.js"
+  },
+  {
+    "标签": "a",
+    "链接": "/"
+  },
+  {
+    "标签": "a",
+    "链接": "/"
+  },
+  {
+    "标签": "a",
+    "链接": "/publications/"
+  },
+  {
+    "标签": "a",
+    "链接": "/projects/"
+  },
+  {
+    "标签": "a",
+    "链接": "/experience/"
+  },
+  {
+    "标签": "a",
+    "链接": "/blog/"
+  },
+  {
+    "标签": "a",
+    "链接": "/uploads/loukas-kordos-cv.pdf"
+  },
+  {
+    "标签": "a",
+    "链接": "/experience/"
+  },
+  {
+    "标签": "a",
+    "链接": "/publications/"
+  },
+  {
+    "标签": "a",
+    "链接": "/publications/locomposition/"
+  },
+  {
+    "标签": "a",
+    "链接": "#tldr"
+  },
+  {
+    "标签": "a",
+    "链接": "#abstract"
+  },
+  {
+    "标签": "a",
+    "链接": "#overview-video"
+  },
+  {
+    "标签": "a",
+    "链接": "#zero-shot-sim-to-real"
+  },
+  {
+    "标签": "a",
+    "链接": "#cross-embodiment-results"
+  },
+  {
+    "标签": "a",
+    "链接": "#sensor-delay-robustness"
+  },
+  {
+    "标签": "a",
+    "链接": "/projects/"
+  },
+  {
+    "标签": "a",
+    "链接": "/projects/redacted-biped/"
+  },
+  {
+    "标签": "a",
+    "链接": "/blog/"
+  },
+  {
+    "标签": "a",
+    "链接": "#tldr"
+  },
+  {
+    "标签": "a",
+    "链接": "#abstract"
+  },
+  {
+    "标签": "a",
+    "链接": "#overview-video"
+  },
+  {
+    "标签": "a",
+    "链接": "#zero-shot-sim-to-real"
+  },
+  {
+    "标签": "a",
+    "链接": "#cross-embodiment-results"
+  },
+  {
+    "标签": "a",
+    "链接": "#sensor-delay-robustness"
+  },
+  {
+    "标签": "a",
+    "链接": "https://github.com/LouKordos/locomposition"
+  },
+  {
+    "标签": "a",
+    "链接": "https://arxiv.org/abs/2606.15896"
+  },
+  {
+    "标签": "a",
+    "链接": "https://youtu.be/byAA07ge4O0?si=N1BQvbIMXUZSpqvL"
+  },
+  {
+    "标签": "a",
+    "链接": "https://sites.google.com/view/locomposition"
+  },
+  {
+    "标签": "iframe",
+    "链接": "https://www.youtube-nocookie.com/embed/byAA07ge4O0?autoplay=1&mute=1&loop=1&playlist=byAA07ge4O0&playsinline=1"
+  },
+  {
+    "标签": "a",
+    "链接": "https://youtu.be/byAA07ge4O0"
+  },
+  {
+    "标签": "a",
+    "链接": "/tags/robotics/"
+  },
+  {
+    "标签": "a",
+    "链接": "/tags/reinforcement-learning/"
+  },
+  {
+    "标签": "a",
+    "链接": "/tags/robot-learning/"
+  },
+  {
+    "标签": "a",
+    "链接": "https://x.com/intent/tweet?url=https%3A%2F%2Fwww.loukaskordos.de%2Fpublications%2Flocomposition%2F&text=LoComposition%3A+Terrain-Adaptive+Energy-Efficient+Quadruped+Locomotion+without+Gait+Priors"
+  },
+  {
+    "标签": "a",
+    "链接": "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.loukaskordos.de%2Fpublications%2Flocomposition%2F&t=LoComposition%3A+Terrain-Adaptive+Energy-Efficient+Quadruped+Locomotion+without+Gait+Priors"
+  },
+  {
+    "标签": "a",
+    "链接": "mailto:?subject=LoComposition:%20Terrain-Adaptive%20Energy-Efficient%20Quadruped%20Locomotion%20without%20Gait%20Priors&body=https:%2F%2Fwww.loukaskordos.de%2Fpublications%2Flocomposition%2F"
+  },
+  {
+    "标签": "a",
+    "链接": "https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.loukaskordos.de%2Fpublications%2Flocomposition%2F&title=LoComposition%3A+Terrain-Adaptive+Energy-Efficient+Quadruped+Locomotion+without+Gait+Priors"
+  },
+  {
+    "标签": "a",
+    "链接": "whatsapp://send?text=LoComposition%3A+Terrain-Adaptive+Energy-Efficient+Quadruped+Locomotion+without+Gait+Priors%20https%3A%2F%2Fwww.loukaskordos.de%2Fpublications%2Flocomposition%2F"
+  },
+  {
+    "标签": "a",
+    "链接": "https://www.loukaskordos.de/"
+  },
+  {
+    "标签": "a",
+    "链接": "mailto:cv.loukas@kordos.de"
+  },
+  {
+    "标签": "a",
+    "链接": "https://github.com/LouKordos/"
+  },
+  {
+    "标签": "a",
+    "链接": "https://www.linkedin.com/in/loukas-kordos"
+  },
+  {
+    "标签": "script",
+    "链接": "/js/publication-video-controller.min.380e666546a3e2d18f0961a85fe6a0508a445c0281b762ea3301da2b78b95a06.js"
+  },
+  {
+    "标签": "a",
+    "链接": "https://hugoblox.com/templates/academic-cv?utm_source=site_footer&utm_medium=referral&utm_campaign=poweredby_oss&utm_content=brand_academic-cv&start=1"
+  },
+  {
+    "标签": "a",
+    "链接": "https://hugo.chat?utm_source=site_footer&utm_medium=referral&utm_campaign=poweredby_oss&utm_content=cta_academic-cv&template_id=academic-cv"
+  },
+  {
+    "标签": "script",
+    "链接": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+  }
+]

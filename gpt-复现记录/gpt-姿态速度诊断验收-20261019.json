@@ -1,0 +1,21 @@
+{
+  "默认评估": {
+    "复测最大绝对差": {
+      "commanded_velocity_array": 0.0,
+      "base_linear_velocity_body_array": 0.0,
+      "base_orientation_array": 0.0
+    },
+    "重力重建最大绝对误差": 2.6538226116645802e-08
+  },
+  "训练电机": {
+    "复测最大绝对差": {
+      "commanded_velocity_array": 0.0,
+      "base_linear_velocity_body_array": 0.0,
+      "base_orientation_array": 0.0
+    },
+    "重力重建最大绝对误差": 1.0852773180136666e-08
+  },
+  "完成运行数": 5,
+  "每次控制步数": 1500,
+  "数值检查": "所有数值轨迹有限；共同窗口已排除首次提前重置及后续随机指令"
+}

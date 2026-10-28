@@ -1,0 +1,22 @@
+commit 4223d48260e3ec5ed3613c3898b9110b0722aeee
+Author:     Loukas Kordos <loukas.kordos@uni-tuebingen.de>
+AuthorDate: Wed Apr 8 19:21:31 2026 +0200
+Commit:     Loukas Kordos <loukas.kordos@uni-tuebingen.de>
+CommitDate: Wed Apr 8 19:21:31 2026 +0200
+
+    Enable corruption during eval
+
+diff --git a/exts/cat_envs/cat_envs/tasks/locomotion/velocity/config/solo12/cat_go2_rough_terrain_env_cfg.py b/exts/cat_envs/cat_envs/tasks/locomotion/velocity/config/solo12/cat_go2_rough_terrain_env_cfg.py
+index 6bfa46c..7141679 100644
+--- a/exts/cat_envs/cat_envs/tasks/locomotion/velocity/config/solo12/cat_go2_rough_terrain_env_cfg.py
++++ b/exts/cat_envs/cat_envs/tasks/locomotion/velocity/config/solo12/cat_go2_rough_terrain_env_cfg.py
+@@ -993,8 +993,7 @@ class Go2RoughTerrainEnvCfg_PLAY(Go2RoughTerrainEnvCfg):
+         # Original torque limit as specified in isaac lab example config
+         self.scene.robot = UNITREE_GO2_CFG_EVAL.replace(prim_path="{ENV_REGEX_NS}/Robot")
+ 
+-        # disable randomization for play
+-        self.observations.policy.enable_corruption = False
++        self.observations.policy.enable_corruption = True
+         
+         # Pick the hardest terrain when testing the model.
+         # Technically, this is incorrect as it wlil only run after 

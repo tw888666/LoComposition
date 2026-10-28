@@ -1,0 +1,227 @@
+{
+  "状态": "全部评估和录像完成",
+  "实际策略输入与配对条件": "八组核验通过",
+  "录像": [
+    {
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/关闭高程图/崎岖地形/录像/gpt-关闭高程图-崎岖地形.mp4",
+      "时长秒": 10.0,
+      "帧数": 250,
+      "宽": 960,
+      "高": 540,
+      "完整解码": "通过",
+      "SHA256": "d4123789a7029bce83e95fd3e210b77321803d8bd9980c563f6ca41e77592cd5"
+    },
+    {
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/关闭高程图/平地1.0/录像/gpt-关闭高程图-平地1.0.mp4",
+      "时长秒": 10.0,
+      "帧数": 250,
+      "宽": 960,
+      "高": 540,
+      "完整解码": "通过",
+      "SHA256": "d9a1ab69e95a92b71ad30e5c78bccffb18347af9e0b0ca2c27da454a9384dccf"
+    },
+    {
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/关闭高程图/平地1.6/录像/gpt-关闭高程图-平地1.6.mp4",
+      "时长秒": 10.0,
+      "帧数": 250,
+      "宽": 960,
+      "高": 540,
+      "完整解码": "通过",
+      "SHA256": "83833b571c901864edd4c0c67fbe9b1520444098b2ca2b626213752cefb68b59"
+    },
+    {
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/平地1.0/录像/gpt-开启高程图-平地1.0.mp4",
+      "时长秒": 10.0,
+      "帧数": 250,
+      "宽": 960,
+      "高": 540,
+      "完整解码": "通过",
+      "SHA256": "6cd974a8218b0478e3f9e09b7f555d5640ff7a844ed1a9ade5275001db5b7d68"
+    },
+    {
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/平地1.6/录像/gpt-开启高程图-平地1.6.mp4",
+      "时长秒": 10.0,
+      "帧数": 250,
+      "宽": 960,
+      "高": 540,
+      "完整解码": "通过",
+      "SHA256": "3680c5cb5f03e36482b849f1ef67cd1817ea4195716732f455791c760c84ecf2"
+    },
+    {
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/崎岖地形/录像/gpt-开启高程图-崎岖地形.mp4",
+      "时长秒": 10.0,
+      "帧数": 250,
+      "宽": 960,
+      "高": 540,
+      "完整解码": "通过",
+      "SHA256": "39a60c5eff2941b8705fbf29b7042de399c44c51e6fc5e3a34b6d05ddd60d6d0"
+    },
+    {
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/关闭高程图/8.5厘米楼梯/录像/gpt-关闭高程图-8.5厘米楼梯.mp4",
+      "时长秒": 10.0,
+      "帧数": 250,
+      "宽": 960,
+      "高": 540,
+      "完整解码": "通过",
+      "SHA256": "1b0329dba1a8497456044ff87f32d9f599ec07f5f268104cb45d7f5b2411ab50"
+    },
+    {
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/8.5厘米楼梯/录像/gpt-开启高程图-8.5厘米楼梯.mp4",
+      "时长秒": 10.0,
+      "帧数": 250,
+      "宽": 960,
+      "高": 540,
+      "完整解码": "通过",
+      "SHA256": "c57b72b9879e6650f58abf13edc8b51b6e47e91a01481e5ad45130df2793d81f"
+    },
+    {
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/gpt-开启高程图-四场景行走.mp4",
+      "时长秒": 40.0,
+      "帧数": 1000,
+      "宽": 960,
+      "高": 540,
+      "完整解码": "通过",
+      "SHA256": "14644e89b8843ec09ae7a4b16ba7c60dd3f09f59bdef59ea67a0ee1a4b1e057d"
+    },
+    {
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/gpt-关闭高程图-四场景行走.mp4",
+      "时长秒": 40.0,
+      "帧数": 1000,
+      "宽": 960,
+      "高": 540,
+      "完整解码": "通过",
+      "SHA256": "dbc8dd3d47c0d1ad9e8f59e75efff44183a3c2daca3f507f83a9e94faf48be29"
+    },
+    {
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/gpt-高程图开关-同步对照.mp4",
+      "时长秒": 40.0,
+      "帧数": 1000,
+      "宽": 1920,
+      "高": 540,
+      "完整解码": "通过",
+      "SHA256": "53e13f2488a2e62246207dcb93f2faeb578c95f2a53018eae06af8b69de075f4"
+    }
+  ],
+  "轨迹渲染核验": [
+    {
+      "条件": "关闭高程图",
+      "场景": "崎岖地形",
+      "来源轨迹": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/关闭高程图/崎岖地形/eval_checkpoint_30000_seed_46_action_delay_0_scenario_fast_walk_x_uneven_terrain/plots/sim_data.npz",
+      "来源SHA256": "95a9263e8b88511ccc287b5d7daaa15b38bca6cb0377466ab76469c2d2a60fb6",
+      "地形SHA256": "dd5d4cbd14aef4ea5bc9b65a30d2a3f0120fda2776116bb8224bfefb3308769a",
+      "仅运动学回放": true,
+      "足端最大误差米": 0.002000566837651504,
+      "实际播放至控制步": 499,
+      "实际轨迹时长秒": 10.0,
+      "定格说明": "首次提前终止后定格，禁止显示自动重置后轨迹。",
+      "输出时长秒": 10,
+      "帧数": 250,
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/关闭高程图/崎岖地形/录像/gpt-关闭高程图-崎岖地形.mp4"
+    },
+    {
+      "条件": "关闭高程图",
+      "场景": "平地1.0",
+      "来源轨迹": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/关闭高程图/平地1.0/eval_checkpoint_30000_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/plots/sim_data.npz",
+      "来源SHA256": "0a46dc2a945a1d453d1fc081be91808d3a7f0bc26c9f7fcfdc1c0b3d16b99b66",
+      "地形SHA256": "dd5d4cbd14aef4ea5bc9b65a30d2a3f0120fda2776116bb8224bfefb3308769a",
+      "仅运动学回放": true,
+      "足端最大误差米": 0.0020033041182126203,
+      "实际播放至控制步": 499,
+      "实际轨迹时长秒": 10.0,
+      "定格说明": "首次提前终止后定格，禁止显示自动重置后轨迹。",
+      "输出时长秒": 10,
+      "帧数": 250,
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/关闭高程图/平地1.0/录像/gpt-关闭高程图-平地1.0.mp4"
+    },
+    {
+      "条件": "关闭高程图",
+      "场景": "平地1.6",
+      "来源轨迹": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/关闭高程图/平地1.6/eval_checkpoint_30000_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.6mps/plots/sim_data.npz",
+      "来源SHA256": "645850715e08365e9277d9ea954cb6efa737b5683280444234f1d1d43a3de988",
+      "地形SHA256": "dd5d4cbd14aef4ea5bc9b65a30d2a3f0120fda2776116bb8224bfefb3308769a",
+      "仅运动学回放": true,
+      "足端最大误差米": 0.0020031937004356725,
+      "实际播放至控制步": 499,
+      "实际轨迹时长秒": 10.0,
+      "定格说明": "首次提前终止后定格，禁止显示自动重置后轨迹。",
+      "输出时长秒": 10,
+      "帧数": 250,
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/关闭高程图/平地1.6/录像/gpt-关闭高程图-平地1.6.mp4"
+    },
+    {
+      "条件": "开启高程图",
+      "场景": "平地1.0",
+      "来源轨迹": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/平地1.0/eval_checkpoint_30000_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/plots/sim_data.npz",
+      "来源SHA256": "c1dd09eae37ed26cbc4e629b9cfd7ab3a5288b34c0d20343905e6945ea56ca7a",
+      "地形SHA256": "dd5d4cbd14aef4ea5bc9b65a30d2a3f0120fda2776116bb8224bfefb3308769a",
+      "仅运动学回放": true,
+      "足端最大误差米": 0.0020030384679695077,
+      "实际播放至控制步": 499,
+      "实际轨迹时长秒": 10.0,
+      "定格说明": "首次提前终止后定格，禁止显示自动重置后轨迹。",
+      "输出时长秒": 10,
+      "帧数": 250,
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/平地1.0/录像/gpt-开启高程图-平地1.0.mp4"
+    },
+    {
+      "条件": "开启高程图",
+      "场景": "平地1.6",
+      "来源轨迹": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/平地1.6/eval_checkpoint_30000_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.6mps/plots/sim_data.npz",
+      "来源SHA256": "b0705c0234f233e10e5cd51b6f74d7c1a4a5c563b394a1b3406b87f94571789e",
+      "地形SHA256": "dd5d4cbd14aef4ea5bc9b65a30d2a3f0120fda2776116bb8224bfefb3308769a",
+      "仅运动学回放": true,
+      "足端最大误差米": 0.0020031329675382677,
+      "实际播放至控制步": 499,
+      "实际轨迹时长秒": 10.0,
+      "定格说明": "首次提前终止后定格，禁止显示自动重置后轨迹。",
+      "输出时长秒": 10,
+      "帧数": 250,
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/平地1.6/录像/gpt-开启高程图-平地1.6.mp4"
+    },
+    {
+      "条件": "开启高程图",
+      "场景": "崎岖地形",
+      "来源轨迹": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/崎岖地形/eval_checkpoint_30000_seed_46_action_delay_0_scenario_fast_walk_x_uneven_terrain/plots/sim_data.npz",
+      "来源SHA256": "065ea9fbcc255d2c1b5d341621fdbc11f46262a634b241dc9101e89b7b259011",
+      "地形SHA256": "dd5d4cbd14aef4ea5bc9b65a30d2a3f0120fda2776116bb8224bfefb3308769a",
+      "仅运动学回放": true,
+      "足端最大误差米": 0.0020007637859727682,
+      "实际播放至控制步": 499,
+      "实际轨迹时长秒": 10.0,
+      "定格说明": "首次提前终止后定格，禁止显示自动重置后轨迹。",
+      "输出时长秒": 10,
+      "帧数": 250,
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/崎岖地形/录像/gpt-开启高程图-崎岖地形.mp4"
+    },
+    {
+      "条件": "关闭高程图",
+      "场景": "8.5厘米楼梯",
+      "来源轨迹": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/关闭高程图/8.5厘米楼梯/eval_checkpoint_30000_seed_46_action_delay_0_scenario_fast_walk_stairs_up/plots/sim_data.npz",
+      "来源SHA256": "917861e2ed517486ced22d93e560bc4a9b84c58a86512e716a387bdce0826522",
+      "地形SHA256": "966e1531ca5c2899368c361c4020c23a0922b0359d9437d71f655ce952d02334",
+      "仅运动学回放": true,
+      "足端最大误差米": 0.002001499379200226,
+      "实际播放至控制步": 499,
+      "实际轨迹时长秒": 10.0,
+      "定格说明": "首次提前终止后定格，禁止显示自动重置后轨迹。",
+      "输出时长秒": 10,
+      "帧数": 250,
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/关闭高程图/8.5厘米楼梯/录像/gpt-关闭高程图-8.5厘米楼梯.mp4"
+    },
+    {
+      "条件": "开启高程图",
+      "场景": "8.5厘米楼梯",
+      "来源轨迹": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/8.5厘米楼梯/eval_checkpoint_30000_seed_46_action_delay_0_scenario_fast_walk_stairs_up/plots/sim_data.npz",
+      "来源SHA256": "536bb115813d37e582f890570b4fddf4b78fbde5bd5fd86258c5d592a183fe43",
+      "地形SHA256": "966e1531ca5c2899368c361c4020c23a0922b0359d9437d71f655ce952d02334",
+      "仅运动学回放": true,
+      "足端最大误差米": 0.0020017495216483007,
+      "实际播放至控制步": 499,
+      "实际轨迹时长秒": 10.0,
+      "定格说明": "首次提前终止后定格，禁止显示自动重置后轨迹。",
+      "输出时长秒": 10,
+      "帧数": 250,
+      "视频": "/home/xy.chen/tw/LoComposition/gpt-复现记录/gpt-关闭高程图对照-20261022/开启高程图/8.5厘米楼梯/录像/gpt-开启高程图-8.5厘米楼梯.mp4"
+    }
+  ]
+}

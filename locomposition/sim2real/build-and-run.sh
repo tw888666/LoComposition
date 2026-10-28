@@ -1,0 +1,106 @@
+#!/bin/bash
+set -exo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+
+BUILD_TYPE="Release"
+CLEAN_BUILD=false
+SKIP_MULTIARCH_DOCKER_BUILD=true
+BUILD_DIR="${SCRIPT_DIR}/build"
+LOG_FILE="${SCRIPT_DIR}/build.log"
+CONTAINER_NAME="${LOCOMPOSITION_CONTAINER_NAME:-locomposition-locomposition_sim2real-1}"
+export CLICOLOR=1
+export CLICOLOR_FORCE=1
+
+# Parse command line arguments
+while [[ "$#" -gt 0 ]]; do
+    case $1 in
+        --clean-build)
+            CLEAN_BUILD=true
+            shift
+            echo "Script was executed with --clean-build. Press enter to acknowledge that ros2_ws/src/third_party will NOT be deleted in case temporary changes have been made that should not be lost!"
+            read
+            ;;
+        --no-multiarch-docker-build)
+        SKIP_MULTIARCH_DOCKER_BUILD=true
+        shift
+        ;;
+        --build-type=*)
+            BUILD_TYPE="${1#*=}"
+            shift
+            ;;
+        --build-type)
+            BUILD_TYPE="$2"
+            shift 2
+            ;;
+        *)
+            echo "Unknown parameter passed: $1, exiting."
+            exit 1
+            ;;
+    esac
+done
+        
+if [[ -z "${DOCKER_FLAG_FOR_RUN_SCRIPT}" ]]; then
+    echo "Host detected, we are outside of docker."
+    if [[ "$SKIP_MULTIARCH_DOCKER_BUILD" == false ]]; then
+        echo "Installing qemu emulation for arm64 builds..."
+        docker run --privileged --rm tonistiigi/binfmt --install all
+        echo "Creating buildx builder for multiarch builds if not exists..."
+        if ! docker buildx inspect multiarch-builder-${CONTAINER_NAME} >/dev/null 2>&1; then
+            echo "Creating multiarch builder…"
+            docker buildx create --name multiarch-builder-${CONTAINER_NAME} --driver docker-container --bootstrap --driver-opt network=host
+        else
+            echo "multiarch builder already exists, skipping creation."
+        fi 
+        echo "Starting multiarch build..."
+        docker compose --progress plain --builder multiarch-builder-${CONTAINER_NAME} -f "${REPO_ROOT}/compose.yml" --project-directory "${REPO_ROOT}" build
+    else
+        echo "Starting non-multiarch build."
+        docker compose --progress plain -f "${REPO_ROOT}/compose.yml" -f "${REPO_ROOT}/compose.no-multiarch.yml" --project-directory "${REPO_ROOT}" build
+        # Should the compose build fail, this is likely because stupid buildkit does not respect network=host option. So just comment out the line above and uncomment the line below:
+        # docker build .. -t "${LOCOMPOSITION_SIM2REAL_IMAGE:-loukordos/locomposition-sim2real:latest}" --network=host
+    fi
+    rm -rf "${SCRIPT_DIR}/build" || true # Reset build to a clean state, as build cache can cause confusing issues when changing installed deps in the Dockerfile.
+    rm -rf "${SCRIPT_DIR}/ros2_ws/{build,install,log}" || true # Same for ROS workspace
+    docker compose --project-directory "${REPO_ROOT}" up --no-build -d # Don't build due to multiarch check above
+    echo "Docker container is now running, starting interactive shell. Run ${SCRIPT_DIR}/build-and-run.sh inside the shell to proceed."
+    echo "If you require GUI access, you may need to run (outside the docker container) xhost +local:docker, as well as xhost +SI:localuser:root for ssh X forwarding => Docker => X11"
+    echo "You may also choose to docker compose push now for easy deployment. Not automating this due to high bandwidth and time usage."
+    echo "Do not forget to export ROS_DOMAIN_ID=0 if you want to communicate with the Go2. Check if it works with ros2 topic list, that should show topics such as /utlidar/cloud."
+    docker exec -it ${CONTAINER_NAME} /bin/bash
+else
+    echo "Docker detected."
+    if [[ "${CLEAN_BUILD}" == "true" ]]; then
+        echo "Performing clean build: deleting markers and build directories..."
+        rm -rf ${SCRIPT_DIR}/build ${SCRIPT_DIR}/ros2_ws/{build,install,log} /*.marker || true
+    fi
+
+    # if [[ ! -f "/tracy-for-capture-built.marker" ]]; then
+    #     echo "-----------------------------------------Setting up automatic tracy profile capture------------------------------------------------"
+    #     cp -r ${BUILD_DIR}/_deps/tracy-src/ /tracy-for-capture/
+    #     rm -r /tracy-for-capture/capture/build || true
+    #     cmake -B /tracy-for-capture/capture/build -S /tracy-for-capture/capture -DCMAKE_BUILD_TYPE=Release -DNO_FILESELECTOR=ON
+    #     cmake --build /tracy-for-capture/capture/build/ --config Release --parallel
+    #     touch "/tracy-for-capture-built.marker"
+    #     echo "-------------------------------------------------Tracy capture setup complete------------------------------------------------------"
+    # fi
+    # pkill -f tracy-capture || echo "No tracy capture instances running."
+    # mkdir -p /app/logs/tracy-capture/
+    # TRACY_LOG_FILE="/app/logs/tracy-capture/tracy-capture-$(date -u '+%Y-%m-%d-%H-%M-%S').log"
+    # # Start a new tracy-capture instance and redirect output to the log file 
+    # /tracy-for-capture/capture/build/tracy-capture -o /app/logs/tracy-profiles/$(date -u '+%Y-%m-%d-%H-%M-%S').tracy > "$TRACY_LOG_FILE" 2>&1 & 
+    # TRACY_PID=$!
+    # echo "Tracy capture started with PID $TRACY_PID. Logs are being written to $TRACY_LOG_FILE"
+    # chmod -R 777 /app/logs
+
+    echo "Building ROS packages..."
+    ${SCRIPT_DIR}/bootstrap_ros2_ws.sh
+
+    echo "Note that the following will fail if you have not followed the README.md setup steps! Just follow them and re-run this script in that case."
+    source ${SCRIPT_DIR}/ros2_ws/install/setup.bash
+    ros2 launch locomposition_bringup bringup.launch.py | grep -v "Failed to parse type hash for topic"
+    
+    echo "Remember to source /app/sim2real/ros2_ws/install/setup.bash if you are working with ROS custom packages! bashrc already sources /opt/ros/$ROS_DISTRO/setup.bash"
+    echo "Also remember to export ROS_DOMAIN_ID=0 if you want to communicate with the Go2."
+fi

@@ -1,0 +1,1 @@
+训练完成；评估退出码：0；模型目录：/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51

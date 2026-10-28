@@ -1,0 +1,26 @@
+[
+  {
+    "步骤": 499,
+    "重置信息": {
+      "Episode_Termination/time_out": "1.0",
+      "Episode_Termination/base_contact": "0.0",
+      "Episode_Termination/upside_down": "0.0"
+    }
+  },
+  {
+    "步骤": 999,
+    "重置信息": {
+      "Episode_Termination/time_out": "1.0",
+      "Episode_Termination/base_contact": "0.0",
+      "Episode_Termination/upside_down": "0.0"
+    }
+  },
+  {
+    "步骤": 1314,
+    "重置信息": {
+      "Episode_Termination/time_out": "0.0",
+      "Episode_Termination/base_contact": "1.0",
+      "Episode_Termination/upside_down": "0.0"
+    }
+  }
+]

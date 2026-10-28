@@ -1,0 +1,54 @@
+commit c90119cb7174fadf637d402a42965fe7805b10c8
+Author:     Loukas Kordos <loukas.kordos@uni-tuebingen.de>
+AuthorDate: Thu Jul 24 16:06:03 2025 +0200
+Commit:     Loukas Kordos <loukas.kordos@uni-tuebingen.de>
+CommitDate: Thu Jul 24 16:06:03 2025 +0200
+
+    Use linear curr by default
+
+diff --git a/exts/cat_envs/cat_envs/tasks/locomotion/velocity/config/solo12/cat_go2_rough_terrain_env_cfg.py b/exts/cat_envs/cat_envs/tasks/locomotion/velocity/config/solo12/cat_go2_rough_terrain_env_cfg.py
+index 5bcfc01..0f66b86 100644
+--- a/exts/cat_envs/cat_envs/tasks/locomotion/velocity/config/solo12/cat_go2_rough_terrain_env_cfg.py
++++ b/exts/cat_envs/cat_envs/tasks/locomotion/velocity/config/solo12/cat_go2_rough_terrain_env_cfg.py
+@@ -819,17 +819,18 @@ class CurriculumCfg:
+     )
+     '''
+ 
+-    # power = CurrTerm(
+-    #     func=curriculums.update_reward_weight_linear,
+-    #     params={
+-    #         "term_name": "minimize_power",
+-    #         "num_steps_from_start_step": 3000,
+-    #         "start_at_step": 15000 * 10,
+-    #         "start_weight": 0.0,
+-    #         "end_weight": 0.4 * 0.02 # Instead of setting scaling_factor=0.02 because ppo.py overrides it
++    
++    power = CurrTerm(
++        func=curriculums.update_reward_weight_linear,
++        params={
++            "term_name": "minimize_power",
++            "num_steps_from_start_step": 3000,
++            "start_at_step": 15000 * 10,
++            "start_weight": 0.0,
++            "end_weight": 0.4 * 0.02 # Instead of setting scaling_factor=0.02 because ppo.py overrides it
+ 
+-    #     }
+-    # )
++        }
++    )
+ 
+     terrain_levels = CurrTerm(func=terrain_levels_with_ray_caster_refresh)
+     # terrain_levels = CurrTerm(func=mdp.terrain_levels_vel)
+diff --git a/exts/cat_envs/cat_envs/tasks/utils/cleanrl/ppo.py b/exts/cat_envs/cat_envs/tasks/utils/cleanrl/ppo.py
+index b99677c..b587278 100644
+--- a/exts/cat_envs/cat_envs/tasks/utils/cleanrl/ppo.py
++++ b/exts/cat_envs/cat_envs/tasks/utils/cleanrl/ppo.py
+@@ -335,7 +335,7 @@ def PPO(envs, ppo_cfg, run_path):
+         # To determine how many samples the threshold metric has on average, check the Episode_Termination category in wandb.
+         total_resets_over_rollout = sum(sum(done_count for (key, done_count) in info.items() if key.startswith("Episode_Termination/")) for info in ep_infos)
+ 
+-        ADAPTIVE_CURR_ALGORITHM = "deprl"
++        ADAPTIVE_CURR_ALGORITHM = "none" # deprl,simple,none
+         if ADAPTIVE_CURR_ALGORITHM.lower() == "simple":
+             simple_curr_lambda = 0.97
+             delta_alpha_init_simple_algo = 9e-5

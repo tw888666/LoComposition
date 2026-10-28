@@ -1,0 +1,301 @@
+diff --git a/exts/locomposition/locomposition/tasks/utils/cleanrl/ppo.py b/exts/locomposition/locomposition/tasks/utils/cleanrl/ppo.py
+index 74a31b0..8b869bd 100644
+--- a/exts/locomposition/locomposition/tasks/utils/cleanrl/ppo.py
++++ b/exts/locomposition/locomposition/tasks/utils/cleanrl/ppo.py
+@@ -124,7 +124,7 @@ class ActorWithRMS(nn.Module):
+         return self.actor(normalized_observation)
+ 
+ def PPO(envs, ppo_cfg, run_path):
+-    print(f"Env in PPO function:\n{os.environ}")
++    print(f"[INFO] 训练输出目录: {run_path}")
+ 
+     seed = ppo_cfg.seed
+     env_seed = envs.unwrapped.cfg.seed
+@@ -243,21 +243,34 @@ def PPO(envs, ppo_cfg, run_path):
+         zroot.attrs["append_interval"] = tensor_zarr_append_interval
+ 
+     agent = Agent(envs).to(device)
+-
+-    LOAD_CHECKPOINT = False
+-    checkpoint_path = (
+-        "/home/kordos/mamba_env_data/env_id_68_performance_based_energy_curr/LoComposition/"
+-        "logs/clean_rl/env_id_68_performance_based_energy_curr/"
+-        "2025-06-15-11-15-38/model_13899.pt"
+-    )
+-    if LOAD_CHECKPOINT:
+-        print(f"[INFO] Loading model from: {checkpoint_path}")
+-        print("Loading from model currently assumes constraints curriculum progress = 1.0 i.e. fully enforced and resets the learning rate annealing!")
+-        model_state = torch.load(checkpoint_path, weights_only=True)
+-        agent.load_state_dict(model_state)
+-        envs.unwrapped.curriculum_manager.constraints_curriculum = 1.0
+-    
+     optimizer = optim.Adam(agent.parameters(), lr=LEARNING_RATE, eps=1e-5)
++    from .checkpoints import atomic_save, load_training_checkpoint, restore_environment_progress, save_training_checkpoint
++    start_iteration = 0
++    if ppo_cfg.resume:
++        resume_state = load_training_checkpoint(
++            ppo_cfg.load_checkpoint, agent, optimizer, device=device,
++            total_iterations=NUM_ITERATIONS,
++            allow_partial=ppo_cfg.allow_partial_resume,
++            constraint_progress=ppo_cfg.resume_constraint_progress,
++        )
++        start_iteration = resume_state["iteration"]
++        restore_environment_progress(envs.unwrapped, resume_state, NUM_STEPS)
++        import json
++        from pathlib import Path
++        provenance = {
++            "来源检查点": resume_state["source_path"],
++            "已完成迭代": start_iteration,
++            "下一迭代": start_iteration + 1,
++            "优化器已恢复": not resume_state["partial_resume"],
++            "已恢复控制步数": envs.unwrapped.common_step_counter,
++            "约束课程进度": envs.unwrapped.curriculum_manager.constraints_curriculum,
++            "限制": "物理仿真及随机数状态重新初始化；旧模型还缺少优化器、约束归一化和地形分配。",
++        }
++        Path(run_path, "gpt-续训来源.json").write_text(json.dumps(provenance, ensure_ascii=False, indent=2))
++        print("[续训] " + json.dumps(provenance, ensure_ascii=False))
++    if ppo_cfg.stop_after_iterations < 0:
++        raise ValueError("stop_after_iterations 不得为负数。")
++    final_iteration = min(NUM_ITERATIONS, start_iteration + ppo_cfg.stop_after_iterations) if ppo_cfg.stop_after_iterations else NUM_ITERATIONS
+ 
+     obs = torch.zeros((NUM_STEPS, NUM_ENVS) + SINGLE_OBSERVATION_SPACE, dtype=torch.float).to(device)
+     actions = torch.zeros((NUM_STEPS, NUM_ENVS) + SINGLE_ACTION_SPACE, dtype=torch.float).to(device)
+@@ -272,7 +285,7 @@ def PPO(envs, ppo_cfg, run_path):
+     num_joints = len(joint_names)
+ 
+     # TRY NOT TO MODIFY: start the game
+-    global_step = 0
++    global_step = start_iteration * NUM_STEPS * NUM_ENVS
+     start_time = time.time()
+     next_obs = envs.reset(seed=seed)[0]["policy"]
+     next_obs = agent.obs_rms(next_obs)
+@@ -299,7 +312,8 @@ def PPO(envs, ppo_cfg, run_path):
+     envs.unwrapped.reward_manager.set_term_cfg(energy_reward_term_name, term)
+ 
+     print(f"Starting training for {NUM_ITERATIONS} steps")
+-    for iteration in range(1, NUM_ITERATIONS + 1):
++    for iteration in range(start_iteration + 1, final_iteration + 1):
++        iteration_start = time.monotonic()
+         ep_infos = []
+ 
+         if ANNEAL_LR:
+@@ -566,7 +580,19 @@ def PPO(envs, ppo_cfg, run_path):
+             writer.add_scalar(f"action_std/{sanitized}/mean", mean_per_joint[j], iteration)
+             writer.add_scalar(f"action_std/{sanitized}/std", std_per_joint[j], iteration)
+ 
+-        if (iteration + 1) % ppo_cfg.save_interval == 0:
++        if iteration <= start_iteration + 3 or iteration % 10 == 0 or iteration == final_iteration:
++            print(
++                f"[训练] 迭代={iteration}/{NUM_ITERATIONS} "
++                f"耗时={time.monotonic() - iteration_start:.2f}s "
++                f"平均奖励={rewards.mean().item():.6f} "
++                f"学习率={optimizer.param_groups[0]['lr']:.3g}"
++            )
++
++        if (iteration + 1) % ppo_cfg.save_interval == 0 or iteration == final_iteration or (ppo_cfg.resume and iteration == start_iteration + 1):
+             model_path = f"{run_path}/model_{iteration}.pt"
+-            torch.save(agent.state_dict(), model_path)
+-            print("Saved model")
++            atomic_save(agent.state_dict(), model_path)
++            save_training_checkpoint(f"{run_path}/training_state_{iteration}.pt", agent, optimizer,
++                                     envs.unwrapped, iteration, NUM_ITERATIONS)
++            print(f"[INFO] 已保存模型: {model_path}")
++
++    writer.close()
+diff --git a/exts/locomposition/locomposition/tasks/utils/cleanrl/rl_cfg.py b/exts/locomposition/locomposition/tasks/utils/cleanrl/rl_cfg.py
+index c67e749..0e3a998 100644
+--- a/exts/locomposition/locomposition/tasks/utils/cleanrl/rl_cfg.py
++++ b/exts/locomposition/locomposition/tasks/utils/cleanrl/rl_cfg.py
+@@ -36,3 +36,7 @@ class CleanRlPpoActorCriticCfg:
+ 
+     load_run: str = MISSING
+     load_checkpoint: str = MISSING
++    resume: bool = False
++    allow_partial_resume: bool = False
++    resume_constraint_progress: float = 1.0
++    stop_after_iterations: int = 0
+diff --git a/scripts/clean_rl/cli_args.py b/scripts/clean_rl/cli_args.py
+index e081901..225c67b 100644
+--- a/scripts/clean_rl/cli_args.py
++++ b/scripts/clean_rl/cli_args.py
+@@ -19,8 +19,11 @@ def add_clean_rl_args(parser: argparse.ArgumentParser):
+         help="Name of the experiment folder where logs will be stored.",
+     )
+     arg_group.add_argument(
+-        "--resume", type=bool, default=None, help="Whether to resume from a checkpoint."
++        "--resume", action="store_true", default=False, help="从指定检查点继续训练。"
+     )
++    arg_group.add_argument("--allow_partial_resume", action="store_true", help="允许旧模型缺少优化器等状态的近似续训。")
++    arg_group.add_argument("--resume_constraint_progress", type=float, default=1.0, help="旧模型约束课程进度，范围 0 到 1。")
++    arg_group.add_argument("--stop_after_iterations", type=int, default=0, help="本进程完成指定轮数后停止；不改变总训练预算和学习率调度。")
+     arg_group.add_argument(
+         "--load_run",
+         type=str,
+@@ -60,6 +63,9 @@ def update_clean_rl_cfg(agent_cfg, args_cli: argparse.Namespace):
+         agent_cfg.seed = args_cli.seed
+     if args_cli.resume is not None:
+         agent_cfg.resume = args_cli.resume
++    agent_cfg.allow_partial_resume = args_cli.allow_partial_resume
++    agent_cfg.resume_constraint_progress = args_cli.resume_constraint_progress
++    agent_cfg.stop_after_iterations = args_cli.stop_after_iterations
+     if args_cli.load_run is not None:
+         agent_cfg.load_run = args_cli.load_run
+     if args_cli.checkpoint is not None:
+diff --git a/scripts/eval.py b/scripts/eval.py
+index 89ce629..5d7805e 100644
+--- a/scripts/eval.py
++++ b/scripts/eval.py
+@@ -594,6 +594,8 @@ def build_rsl_rl_runner_cfg_dict(agent_cfg) -> dict:
+ def parse_arguments():
+     parser = argparse.ArgumentParser(description="Play an RL agent with detailed logging.")
+     parser.add_argument("--run_dir", type=str, required=True, help="ABSOLUTE path to directory containing model checkpoints and params.")
++    parser.add_argument("--no_video", action="store_true", help="关闭视频和渲染相机，用于无 RTX 渲染能力的服务器。")
++    parser.add_argument("--skip_plots", action="store_true", help="仅保存评估数组和指标，跳过绘图子进程。")
+     parser.add_argument("--eval_checkpoint", type=str, default=None, help="Optionally specify the model save checkpoint number instead of automatically using the last saved one.")
+     parser.add_argument("--random_sim_step_length", type=int, default=4000, help="Number of steps to run with random commands and spawn points. Standardized tests like standing and walking forward will always run.")
+     parser.add_argument(
+@@ -643,7 +645,7 @@ def parse_arguments():
+         parser.error("--random_sim_step_length must be non-negative")
+     if arguments.fixed_command_sim_steps <= 0:
+         parser.error("--fixed_command_sim_steps must be positive")
+-    arguments.enable_cameras = True  # Video
++    arguments.enable_cameras = not arguments.no_video
+     return arguments
+ 
+ 
+@@ -1436,7 +1438,12 @@ def main():
+     )
+ 
+     total_sim_steps = args.random_sim_step_length + len(fixed_command_scenarios) * fixed_command_sim_steps
+-    env = gym.make(args.task, cfg=env_cfg, render_mode="rgb_array")
++    if args.no_video:
++        for scene_item in vars(env_cfg.scene).values():
++            if hasattr(scene_item, "debug_vis"):
++                scene_item.debug_vis = False
++        env_cfg.commands.base_velocity.debug_vis = False
++    env = gym.make(args.task, cfg=env_cfg, render_mode=None if args.no_video else "rgb_array")
+ 
+     print(f"[INFO] Runtime env actions.joint_pos.scale = {env.unwrapped.cfg.actions.joint_pos.scale}")
+     print(f"[SEED CHECK] runtime env seed={getattr(env.unwrapped.cfg, 'seed', None)}")
+@@ -1593,9 +1600,10 @@ def main():
+         video_output_path
+     ]
+     ffmpeg_process_log_path = os.path.join(eval_base_dir, "ffmpeg_encode.log")
+-    with open(ffmpeg_process_log_path, "w") as ffmpeg_process_logfile:
+-        print(f"Starting ffmpeg process={' '.join(ffmpeg_cmd)}")
+-        ffmpeg_process = subprocess.Popen(ffmpeg_cmd, stdout=ffmpeg_process_logfile, stderr=subprocess.STDOUT, stdin=subprocess.PIPE, bufsize=4 * 1024 * 1024)
++    if not args.no_video:
++        with open(ffmpeg_process_log_path, "w") as ffmpeg_process_logfile:
++            print(f"Starting ffmpeg process={' '.join(ffmpeg_cmd)}")
++            ffmpeg_process = subprocess.Popen(ffmpeg_cmd, stdout=ffmpeg_process_logfile, stderr=subprocess.STDOUT, stdin=subprocess.PIPE, bufsize=4 * 1024 * 1024)
+ 
+     CPP_INFERENCE = False  # Allows testing C++ inference in devcontainer (test_pytorch_policy.cpp) in simulation
+     if CPP_INFERENCE:
+@@ -2180,8 +2188,16 @@ def main():
+     raw_frames = get_render_frames(env)
+     for frame in raw_frames:
+         ffmpeg_process.stdin.write(frame.tobytes())
+-    ffmpeg_process.stdin.close()
+-    ffmpeg_process.wait()
++    if ffmpeg_process is not None:
++        ffmpeg_process.stdin.close()
++        ffmpeg_process.wait()
++
++    if args.skip_plots:
++        print(f"[INFO] 已保存评估指标: {summary_path}")
++        print(f"[INFO] 已保存评估数组: {np_data_file}")
++        cleanup_runtime_resources()
++        atexit.unregister(cleanup_runtime_resources)
++        return
+ 
+     plot_jobs = []
+     for k, (scenario_tag, *_rest) in enumerate(fixed_command_scenarios):
+diff --git a/exts/locomposition/locomposition/tasks/utils/cleanrl/checkpoints.py b/exts/locomposition/locomposition/tasks/utils/cleanrl/checkpoints.py
+new file mode 100644
+index 0000000..54ebdae
+--- /dev/null
++++ b/exts/locomposition/locomposition/tasks/utils/cleanrl/checkpoints.py
+@@ -0,0 +1,83 @@
++"""保存和加载优化器状态；恢复时物理仿真仍从新回合开始。"""
++from pathlib import Path
++import os
++import re
++import torch
++
++
++def atomic_save(value, path):
++    path = Path(path)
++    temporary = path.with_name(path.name + ".tmp")
++    torch.save(value, temporary)
++    os.replace(temporary, path)
++
++
++def load_training_checkpoint(path, agent, optimizer, *, device, total_iterations,
++                             allow_partial=False, constraint_progress=1.0):
++    path = Path(path).expanduser().resolve()
++    if not 0 <= constraint_progress <= 1:
++        raise ValueError("约束课程进度必须位于 [0, 1]。")
++    state = torch.load(path, map_location=device, weights_only=True)
++    full_state = isinstance(state, dict) and state.get("format_version") == 1
++    if full_state:
++        if state["total_iterations"] != total_iterations:
++            raise ValueError("恢复时总迭代预算必须与检查点一致，以保持学习率调度。")
++        model_state = state["model_state_dict"]
++        iteration = int(state["iteration"])
++    else:
++        if not allow_partial:
++            raise ValueError("旧文件没有优化器及环境课程状态；需明确指定 --allow_partial_resume。")
++        match = re.fullmatch(r"model_(\d+)\.pt", path.name)
++        if match is None:
++            raise ValueError("旧模型文件名必须为 model_迭代数.pt，以确定课程和学习率进度。")
++        iteration = int(match.group(1))
++        model_state = state
++        state = {"iteration": iteration, "constraints_curriculum": constraint_progress}
++    if not 0 <= iteration < total_iterations:
++        raise ValueError("检查点迭代数必须小于总训练预算。")
++    if not all(torch.isfinite(value).all() for value in model_state.values()):
++        raise ValueError("模型包含非有限数值。")
++    agent.load_state_dict(model_state)
++    if full_state:
++        optimizer.load_state_dict(state["optimizer_state_dict"])
++    state["source_path"] = str(path)
++    state["partial_resume"] = not full_state
++    return state
++
++
++def restore_environment_progress(env, state, num_steps):
++    env.common_step_counter = int(state.get("common_step_counter", state["iteration"] * num_steps))
++    env._sim_step_counter = env.common_step_counter * env.cfg.decimation
++    env.curriculum_manager.constraints_curriculum = float(state["constraints_curriculum"])
++    if "constraint_running_maxes" in state:
++        env.constraint_manager.cat.running_maxes = {
++            name: value.to(env.device) for name, value in state["constraint_running_maxes"].items()
++        }
++    if "terrain_levels" in state:
++        terrain = env.scene.terrain
++        levels = state["terrain_levels"].to(env.device)
++        types = state["terrain_types"].to(env.device)
++        if levels.shape != terrain.terrain_levels.shape or types.shape != terrain.terrain_types.shape:
++            raise ValueError("恢复地形分配需要相同的并行环境数量。")
++        terrain.terrain_levels.copy_(levels)
++        terrain.terrain_types.copy_(types)
++        terrain.env_origins.copy_(terrain.terrain_origins[levels, types])
++
++
++def save_training_checkpoint(path, agent, optimizer, env, iteration, total_iterations):
++    state = {
++        "format_version": 1,
++        "model_state_dict": agent.state_dict(),
++        "optimizer_state_dict": optimizer.state_dict(),
++        "iteration": iteration,
++        "total_iterations": total_iterations,
++        "common_step_counter": env.common_step_counter,
++        "constraints_curriculum": float(env.curriculum_manager.constraints_curriculum),
++        "constraint_running_maxes": env.constraint_manager.cat.running_maxes,
++        "resume_semantics": "恢复模型、优化器、课程和地形分配；物理仿真及随机数状态重新初始化。",
++    }
++    terrain = env.scene.terrain
++    if getattr(terrain, "terrain_levels", None) is not None:
++        state["terrain_levels"] = terrain.terrain_levels
++        state["terrain_types"] = terrain.terrain_types
++    atomic_save(state, path)
