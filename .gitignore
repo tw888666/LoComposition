@@ -1,0 +1,24 @@
+# 默认忽略整个目录，只放行能耗约束相关的文件
+/*
+!/.gitignore
+!/AGENTS.md
+!/claude-能耗约束工作总结-20261103.md
+!/claude-能耗约束结果比较.py
+!/claude-能耗约束训练.sh
+!/gpt-四组微调评估.py
+!/claude-能耗约束实验-20261029/
+!/claude-能耗约束实验-v2-20261101/
+
+# 检查点、仿真原始数据、视频、TensorBoard 日志只保留在本机
+*.pt
+*.npz
+*.npy
+*.tfevents.*
+*.mp4
+*.zarr/
+*.tar.gz
+__pycache__/
+
+# 评估目录中的符号链接指向训练目录，运行锁只是本机状态
+**/params
+**/gpt-运行锁

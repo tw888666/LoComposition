@@ -1,0 +1,269 @@
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/xy.chen/tw/LoComposition/dependencies/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261102_161715.log
+2026-11-02T08:17:16Z [230ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-02T08:17:16Z [947ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-02T08:17:17Z [1,060ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-02T08:17:17Z [1,068ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-11-02T08:17:21Z [5,281ms] [Warning] [carb.cudainterop.plugin] CUDA_VISIBLE_DEVICES environment variable is set.
+2026-11-02T08:17:21Z [5,281ms] [Warning] [carb.cudainterop.plugin] Note CUDA device enumeration and Omniverse device enumeration are different.
+2026-11-02T08:17:21Z [5,281ms] [Warning] [carb.cudainterop.plugin] Setting CUDA_VISIBLE_DEVICES can lead to undesired behavior or crashes.
+2026-11-02T08:17:22Z [6,075ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-02T08:17:22Z [6,075ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-02T08:17:22Z [6,075ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-02T08:17:22Z [6,075ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-02T08:17:22Z [6,076ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-02T08:17:22Z [6,076ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-02T08:17:22Z [6,076ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-02T08:17:22Z [6,076ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-02T08:17:22Z [6,076ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-02T08:17:22Z [6,076ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-02T08:17:22Z [6,077ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-02T08:17:22Z [6,077ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-02T08:17:22Z [6,077ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-02T08:17:22Z [6,077ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-02T08:17:22Z [6,077ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-02T08:17:22Z [6,077ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-02T08:17:22Z [6,077ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-02T08:17:22Z [6,077ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-02T08:17:22Z [6,077ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-02T08:17:22Z [6,077ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 550.163.01    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 15478ce1.. |
+|     |                                  |        |     |            | 41        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 2d0e24e4.. |
+|     |                                  |        |     |            | 61        |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 2f067e11.. |
+|     |                                  |        |     |            | 81        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 5ed17834.. |
+|     |                                  |        |     |            | a1        |            |
+|---------------------------------------------------------------------------------------------|
+| 4   | Tesla V100-PCIE-32GB             | Yes: 0 |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 385c2c9d.. |
+|     |                                  |        |     |            | c1        |            |
+|---------------------------------------------------------------------------------------------|
+| 5   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | ae07b535.. |
+|     |                                  |        |     |            | e1        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-136-generic
+| Processor: AMD EPYC 9654 96-Core Processor
+| Cores: 192 | Logical Cores: 192
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 1031725 | Free Memory: 677536
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-02T08:17:22Z [6,485ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 4
+2026-11-02T08:17:22Z [6,548ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+[INFO]: Parsing configuration from: locomposition.tasks.locomotion.velocity.config.solo12.locomposition_go2_rough_terrain_env_cfg:Go2RoughTerrainEnvCfgJointStateHistory
+[INFO]: Parsing configuration from: locomposition.tasks.locomotion.velocity.config.solo12.agents.clean_rl_ppo_cfg:Solo12FlatPPORunnerCfg
+[INFO] Using seed=46
+[INFO] agent_cfg.seed=46
+[INFO] env_cfg.seed=46
+[INFO] env_cfg.sim.random_seed=46
+[INFO] terrain_generator.seed=46
+[INFO] Resolved training embodiment/configuration:
+[INFO] task=LoComposition-Go2-Rough-Terrain-Joint-State-History-v0
+[INFO] robot_usd=https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab/Robots/Unitree/Go2/go2.usd
+[INFO] action_joint_names=['FL_hip_joint', 'FR_hip_joint', 'RL_hip_joint', 'RR_hip_joint', 'FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint', 'FL_calf_joint', 'FR_calf_joint', 'RL_calf_joint', 'RR_calf_joint']
+[INFO] action_scale=0.8
+[INFO] control_step_dt=0.02
+[INFO] episode_length_s=10.0
+[INFO] energy_end_weight=None
+[INFO] constraint.joint_torque={'limit': 20.0, 'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']}
+[INFO] constraint.joint_velocity={'limit': 25.0, 'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']}
+[INFO] constraint.joint_acceleration={'limit': 800.0, 'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']}
+[INFO] constraint.action_rate={'limit': 80.0, 'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']}
+[INFO] constraint.foot_contact_force={'limit': 300.0, 'names': ['.*_foot']}
+[INFO] constraint.front_hfe_position={'limit': 1.5, 'names': ['FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint']}
+[INFO] constraint.hip_position={'limit': 0.3, 'names': ['.*_hip_joint'], 'velocity_deadzone': 0.1}
+[INFO] constraint.no_move={'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint'], 'velocity_deadzone': 0.1, 'joint_vel_limit': 4.0}
+[INFO] event.randomize_mass={'asset_cfg': SceneEntityCfg(name='robot', joint_names=None, joint_ids=slice(None, None, None), fixed_tendon_names=None, fixed_tendon_ids=slice(None, None, None), body_names=['base'], body_ids=slice(None, None, None), object_collection_names=None, object_collection_ids=slice(None, None, None), preserve_order=False), 'mass_distribution_params': (-1.5, 1.5), 'operation': 'add', 'distribution': 'uniform', 'recompute_inertia': True}
+[INFO] event.push_robot={'velocity_range': {'x': (-0.5, 0.5), 'y': (-0.5, 0.5)}}
+[INFO] event.push_base_wrench={'asset_cfg': SceneEntityCfg(name='robot', joint_names=None, joint_ids=slice(None, None, None), fixed_tendon_names=None, fixed_tendon_ids=slice(None, None, None), body_names=['base'], body_ids=slice(None, None, None), object_collection_names=None, object_collection_ids=slice(None, None, None), preserve_order=False), 'force_range': (-10.0, 10.0), 'torque_range': (-0.5, 0.5)}
+[INFO] Logging experiment in directory: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-v2-smoke
+[INFO] Reserved run directory: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-v2-smoke/2026-11-02-16-17-23
+[能耗约束配置] {"约束形式": "PPO-Lagrangian（拉格朗日对偶 PPO）：E[平滑机械功率] <= P_lim", "版本": "第二版（2026-11-01）：上限只收紧或保持且最多回退一步；lambda 加比例项；跟踪为主判据、地形只作下限；代价以上限为零点", "每步代价": "(平滑功率 - P_lim) / power_ref * step_dt，可正可负；热身期以平滑功率滑动平均为零点", "平滑方式": "指数滑动平均，时间常数 0.5 秒；新回合首步以瞬时功率初始化", "优势合成": "(A_r - lambda*A_c) / (1 + lambda)", "lambda更新": "积分项 I <- clip(I + lr*v, 0, lambda_max)，v=(平均平滑功率 - P_lim)/power_ref；lambda = clip(I + kp*EMA(v), 0, lambda_max)", "上限调整": "跟踪 >= perf_ratio*track_ref、地形 >= terrain_floor*terrain_ref 且约束满足时收紧 shrink；跟踪 < (perf_ratio-relax_margin)*track_ref 或地形低于下限时回退到上一次收紧前的值（每次收紧最多回退一次），并暂停收紧 backoff_cooldown 个判断周期；上限不会超过已到达过的最高值", "已移除奖励项": "minimize_power", "原能耗奖励终值权重": 0.008, "初始上限说明": "热身结束时用实测平滑功率滑动平均标定", "学习率": 3e-05, "学习率退火": false, "参数": {"enabled": true, "power_ref": 40.05852980620652, "limit_init": null, "limit_min": 10.0, "limit_max": 80.0, "terrain_ref": 3.2, "track_ref": 0.8, "perf_ratio": 0.95, "relax_margin": 0.05, "terrain_floor": 0.85, "satisfy_tol": 0.05, "shrink": 0.03, "adapt_interval": 2, "warmup_iters": 2, "backoff_cooldown": 1, "perf_beta": 0.9, "lambda_init": 0.0, "lambda_lr": 0.05, "lambda_kp": 10.0, "lambda_kp_beta": 0.9, "lambda_max": 10.0, "cost_centered": true, "cost_critic_lr": 0.0003}, "参考尺度文件": "/home/xy.chen/tw/LoComposition/gpt-四组微调实验-20261026/gpt-固定参考尺度.json", "参考尺度SHA256": "1eff524dfafd80aee3866de8b1b65a41d425a6b5842a0454d1dc1d6605ef55a8"}
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-02_16-17-23.log[0m
+[36m======================================================================================[0m
+
+[33m16:17:24 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 46
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+[33m16:17:54 [assets.py] WARNING: Checking server availability for USD path: https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab/Robots/Unitree/Go2/go2.usd (timeout: 300s)[0m
+[33m16:17:54 [assets.py] WARNING: Waiting for server response... (30s elapsed)[0m
+[33m16:18:24 [assets.py] WARNING: Waiting for server response... (60s elapsed)[0m
+[33m16:18:54 [assets.py] WARNING: Waiting for server response... (90s elapsed)[0m
+[INFO] Generating terrains based on curriculum took : 46.439431 seconds
+[INFO]: Time taken for scene creation : 144.644111 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 64
+	Environment spacing   : 3.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 2.345096 seconds
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++------------------------------------------------------------+
+|                    Active Command Terms                    |
++-------+---------------+------------------------------------+
+| Index | Name          |                Type                |
++-------+---------------+------------------------------------+
+|   0   | base_velocity | UniformVelocityCommandWithDeadzone |
++-------+---------------+------------------------------------+
+
+[INFO] Event Manager:  <EventManager> contains 3 active terms.
++--------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++----------+---------------------------+
+|  Index   | Name                      |
++----------+---------------------------+
+|    0     | physics_material          |
+|    1     | randomize_com             |
+|    2     | randomize_mass            |
++----------+---------------------------+
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++--------+----------------------------+
+| Index  | Name                       |
++--------+----------------------------+
+|   0    | reset_base                 |
+|   1    | reset_robot_joints         |
+|   2    | episodic_height_offset     |
++--------+----------------------------+
++----------------------------------------------------+
+|       Active Event Terms in Mode: 'interval'       |
++-------+------------------+-------------------------+
+| Index | Name             | Interval time range (s) |
++-------+------------------+-------------------------+
+|   0   | push_robot       |       (0.0, 0.005)      |
+|   1   | push_base_wrench |       (0.05, 0.1)       |
++-------+------------------+-------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 12)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          12 |
++--------+-------------+-------------+
+
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[INFO] Observation Manager: <ObservationManager> contains 1 groups.
++----------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (236,)) |
++-----------+--------------------------------+-------------+
+|   Index   | Name                           |    Shape    |
++-----------+--------------------------------+-------------+
+|     0     | base_ang_vel                   |     (3,)    |
+|     1     | velocity_commands              |     (3,)    |
+|     2     | projected_gravity              |     (3,)    |
+|     3     | joint_pos_history              |    (36,)    |
+|     4     | joint_vel_history              |    (36,)    |
+|     5     | actions                        |    (12,)    |
+|     6     | height_map                     |    (143,)   |
++-----------+--------------------------------+-------------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 3 active terms.
++---------------------------------+
+|     Active Termination Terms    |
++-------+--------------+----------+
+| Index | Name         | Time Out |
++-------+--------------+----------+
+|   0   | time_out     |   True   |
+|   1   | base_contact |  False   |
+|   2   | upside_down  |  False   |
++-------+--------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 2 active terms.
++---------------------------------------+
+|          Active Reward Terms          |
++-------+----------------------+--------+
+| Index | Name                 | Weight |
++-------+----------------------+--------+
+|   0   | track_lin_vel_xy_exp |    1.0 |
+|   1   | track_ang_vel_z_exp  |    0.5 |
++-------+----------------------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 7 active terms.
++----------------------------+
+|  Active Curriculum Terms   |
++-------+--------------------+
+| Index | Name               |
++-------+--------------------+
+|   0   | joint_torque       |
+|   1   | joint_velocity     |
+|   2   | joint_acceleration |
+|   3   | action_rate        |
+|   4   | hip_position       |
+|   5   | base_orientation   |
+|   6   | terrain_levels     |
++-------+--------------------+
+
+[INFO] Constraint Manager:  <ConstraintManager> contains 11 active terms.
++-----------------------------------------------------------------------------------------------------------------------+
+|                                                Active Constraint Terms                                                |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+| Index | Name               | Limit |                                  Names                                   | Max p |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+|   0   | joint_torque       |  20.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   1   | joint_velocity     |  25.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   2   | joint_acceleration | 800.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   3   | action_rate        |  80.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   4   | base_orientation   |   0.1 |                                    -                                     |  0.25 |
+|   5   | contact            |     - |                           ['base', '.*_thigh']                           |   1.0 |
+|   6   | foot_contact_force | 300.0 |                               ['.*_foot']                                |   1.0 |
+|   7   | front_hfe_position |   1.5 | ['FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint'] |   1.0 |
+|   8   | upsidedown         |   0.0 |                                    -                                     |   1.0 |
+|   9   | hip_position       |   0.3 |                             ['.*_hip_joint']                             |  0.25 |
+|   10  | no_move            |     - |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |   0.1 |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+
+[INFO] Energy cost: tau_s=0.5, power_ref=40.05852980620652, alpha=0.04
+[INFO]: Completed setting up the environment...
+Terrain hash: e3f8594b1c2755f00290cebc3d98598721063bd0
+[INFO] 训练输出目录: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-v2-smoke/2026-11-02-16-17-23
+seed in ppo.py= 46
+[微调] {"来源检查点": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_30000.pt", "来源文件SHA256": "3cfa3b846a8bcb72ed20dbba9e06e94cbfa5800e88adccfae2534ff7e69cec94", "来源迭代": 30000, "来源格式": "完整智能体状态字典", "逐键完全一致": true, "已核验状态键": ["actor_logstd", "critic.0.weight", "critic.0.bias", "critic.2.weight", "critic.2.bias", "critic.4.weight", "critic.4.bias", "critic.6.weight", "critic.6.bias", "actor_mean.0.weight", "actor_mean.0.bias", "actor_mean.2.weight", "actor_mean.2.bias", "actor_mean.4.weight", "actor_mean.4.bias", "actor_mean.6.weight", "actor_mean.6.bias", "obs_rms.running_mean", "obs_rms.running_var", "obs_rms.count", "value_rms.running_mean", "value_rms.running_var", "value_rms.count"], "优化器已恢复": false, "地形与约束归一化已恢复": false, "微调已完成迭代": 0, "微调总迭代": 12, "优化器": "新 Adam（自适应矩估计优化器）", "优化器状态条目数": 0, "初始学习率": 3e-05, "学习率衰减": false, "约束课程进度": 1.0, "环境随机种子": 46, "并行环境数": 64, "初始化说明": "完整加载 actor、critic、actor_logstd、obs_rms、value_rms；所有组的新环境、地形和约束归一化采用相同随机种子重新初始化。"}
+[微调运行参数] {"learning_rate": 3e-05, "constraint_progress": 1.0}
+Starting training for 12 steps
+[训练] 迭代=1/12 耗时=2.90s 平均奖励=0.021335 学习率=3e-05 平滑功率=43.55W 上限=None lambda=0.0000
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-v2-smoke/2026-11-02-16-17-23/model_1.pt
+[能耗约束] 迭代=2 决策=warmup 上限=43.052642059326175 平均平滑功率=38.58W lambda=0.0000 地形=1.469 跟踪=0.000
+[训练] 迭代=2/12 耗时=2.92s 平均奖励=0.026908 学习率=3e-05 平滑功率=38.58W 上限=43.052642059326175 lambda=0.0000
+[训练] 迭代=3/12 耗时=3.22s 平均奖励=0.027195 学习率=3e-05 平滑功率=34.83W 上限=43.052642059326175 lambda=0.0000
+[训练] 迭代=10/12 耗时=3.35s 平均奖励=0.027239 学习率=3e-05 平滑功率=34.04W 上限=43.052642059326175 lambda=0.0000
+[训练] 迭代=12/12 耗时=3.23s 平均奖励=0.027151 学习率=3e-05 平滑功率=34.28W 上限=43.052642059326175 lambda=0.0000
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-v2-smoke/2026-11-02-16-17-23/model_12.pt
