@@ -1,0 +1,19 @@
+{
+  "class_type": "isaaclab.actuators.actuator_pd:DCMotor",
+  "joint_names_expr": [
+    ".*_hip_joint",
+    ".*_thigh_joint",
+    ".*_calf_joint"
+  ],
+  "effort_limit": 70.0,
+  "velocity_limit": 30.0,
+  "effort_limit_sim": null,
+  "velocity_limit_sim": null,
+  "stiffness": 25.0,
+  "damping": 0.5,
+  "armature": null,
+  "friction": 0.0,
+  "dynamic_friction": null,
+  "viscous_friction": null,
+  "saturation_effort": 70.0
+}

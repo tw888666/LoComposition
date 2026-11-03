@@ -84,8 +84,10 @@ parser.add_argument(
     default=None,
     help="Override curriculum.power.params['end_weight']; defaults to the task configuration.",
 )
-parser.add_argument("--energy_branch", choices=("A", "B", "C", "D"), help="固定能耗目标的四组微调配置。")
+parser.add_argument("--energy_branch", choices=("A", "B", "C", "D", "E"), help="固定能耗微调配置；E为0.0072纯机械功率消融。")
 parser.add_argument("--energy_reference", type=str, help="四组共用的固定参考尺度JSON路径。")
+parser.add_argument("--energy_constraint", action="store_true", help="能耗改为拉格朗日约束（平滑机械功率<=动态上限），移除能耗奖励项。")
+parser.add_argument("--energy_limit_init", type=float, default=None, help="初始功率上限（瓦）；默认在热身结束时用实测平滑功率标定。")
 cli_args.add_clean_rl_args(parser)
 AppLauncher.add_app_launcher_args(parser)
 args_cli, hydra_args = parser.parse_known_args()
@@ -250,6 +252,17 @@ def main(
         from locomposition.tasks.utils.cleanrl.energy_finetune import configure_energy_finetune
         energy_manifest = configure_energy_finetune(env_cfg, agent_cfg, args_cli.energy_branch, args_cli.energy_reference)
 
+    constraint_manifest = None
+    if args_cli.energy_limit_init is not None and not args_cli.energy_constraint:
+        raise ValueError("--energy_limit_init 需要与 --energy_constraint 一起使用。")
+    if args_cli.energy_constraint:
+        if args_cli.energy_branch is not None or args_cli.energy_end_weight is not None:
+            raise ValueError("--energy_constraint 与 --energy_branch、--energy_end_weight 互斥。")
+        from locomposition.tasks.utils.cleanrl.energy_constraint_setup import configure_energy_constraint
+        constraint_manifest = configure_energy_constraint(
+            env_cfg, agent_cfg, args_cli.energy_reference, args_cli.energy_limit_init
+        )
+
     seed = args_cli.seed
     agent_cfg.seed = seed
     env_cfg.seed = seed
@@ -303,6 +316,11 @@ def main(
         with open(os.path.join(log_dir, "gpt-四组微调配置.json"), "w", encoding="utf-8") as file:
             json.dump(energy_manifest, file, ensure_ascii=False, indent=2)
         print("[微调配置] " + json.dumps(energy_manifest, ensure_ascii=False))
+    if constraint_manifest is not None:
+        import json
+        with open(os.path.join(log_dir, "claude-能耗约束配置.json"), "w", encoding="utf-8") as file:
+            json.dump(constraint_manifest, file, ensure_ascii=False, indent=2)
+        print("[能耗约束配置] " + json.dumps(constraint_manifest, ensure_ascii=False))
 
     env = gym.make(
         args_cli.task,

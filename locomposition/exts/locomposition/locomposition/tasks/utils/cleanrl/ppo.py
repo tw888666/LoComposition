@@ -125,23 +125,50 @@ class ActorWithRMS(nn.Module):
         normalized_observation = (obs - self.running_mean) / torch.sqrt(self.running_var + self.epsilon)
         return self.actor(normalized_observation)
 
-def finetune_runtime_snapshot(env, optimizer):
+class CostCritic(nn.Module):
+    """能耗代价价值网络；独立于 Agent，保持 model_*.pt 格式不变。"""
+    def __init__(self, envs):
+        super().__init__()
+        SINGLE_OBSERVATION_SPACE = envs.unwrapped.single_observation_space["policy"].shape
+        self.critic = nn.Sequential(
+            layer_init(nn.Linear(int(np.array(SINGLE_OBSERVATION_SPACE).prod()), 512)),
+            nn.ELU(),
+            layer_init(nn.Linear(512, 256)),
+            nn.ELU(),
+            layer_init(nn.Linear(256, 128)),
+            nn.ELU(),
+            layer_init(nn.Linear(128, 1), std=1.0),
+        )
+        self.value_rms = RunningMeanStd(shape=())
+
+    def forward(self, x):
+        return self.critic(x)
+
+def finetune_runtime_snapshot(env, optimizer, energy_constrained=False):
     """读取真实管理器与优化器参数，避免只记录命令行配置。"""
-    energy = env.reward_manager.get_term_cfg("minimize_power")
     values = {
-        "energy_weight": float(energy.weight),
-        "mix_alpha": float(energy.params.get("mix_alpha", 0.0)),
-        "torque_scale": float(energy.params.get("torque_scale", 1.0)),
-        "scaling_factor": float(energy.params.get("scaling_factor", 1.0)),
         "learning_rate": float(optimizer.param_groups[0]["lr"]),
         "constraint_progress": float(env.curriculum_manager.constraints_curriculum),
     }
+    if not energy_constrained:
+        energy = env.reward_manager.get_term_cfg("minimize_power")
+        values.update({
+            "energy_weight": float(energy.weight),
+            "mix_alpha": float(energy.params.get("mix_alpha", 0.0)),
+            "torque_scale": float(energy.params.get("torque_scale", 1.0)),
+            "scaling_factor": float(energy.params.get("scaling_factor", 1.0)),
+        })
+    elif "minimize_power" in env.reward_manager.active_terms:
+        raise RuntimeError("启用能耗约束时奖励中不得再含 minimize_power。")
     if not all(np.isfinite(value) for value in values.values()):
         raise ValueError("微调运行参数存在非有限数值。")
-    if values["energy_weight"] <= 0 or values["learning_rate"] <= 0 or values["torque_scale"] <= 0:
-        raise ValueError("微调能耗权重、学习率和扭矩尺度必须为正数。")
-    if not 0 <= values["mix_alpha"] <= 1 or values["scaling_factor"] != 1.0:
-        raise ValueError("微调混合系数须在 [0, 1]，scaling_factor 须为 1。")
+    if values["learning_rate"] <= 0:
+        raise ValueError("微调学习率必须为正数。")
+    if not energy_constrained:
+        if values["energy_weight"] <= 0 or values["torque_scale"] <= 0:
+            raise ValueError("微调能耗权重和扭矩尺度必须为正数。")
+        if not 0 <= values["mix_alpha"] <= 1 or values["scaling_factor"] != 1.0:
+            raise ValueError("微调混合系数须在 [0, 1]，scaling_factor 须为 1。")
     if values["constraint_progress"] != 1.0:
         raise RuntimeError("微调 CaT（约束终止）课程必须保持成熟阶段 1.0。")
     return values
@@ -281,6 +308,29 @@ def PPO(envs, ppo_cfg, run_path):
     optimizer = optim.Adam(agent.parameters(), lr=LEARNING_RATE, eps=1e-5)
     from .checkpoints import (atomic_save, initialize_finetune_environment, load_finetune_checkpoint,
                               load_training_checkpoint, restore_environment_progress, save_training_checkpoint)
+
+    # PPO-Lagrangian（拉格朗日对偶 PPO）能耗约束；关闭时不创建任何额外网络，随机数序列与原实现一致
+    energy_cfg = getattr(ppo_cfg, "energy_constraint", None)
+    ENERGY_CONSTRAINED = bool(energy_cfg is not None and energy_cfg.enabled)
+    if ENERGY_CONSTRAINED:
+        from .energy_constraint import AdaptiveLimitScheduler, LagrangeMultiplier
+        if getattr(envs.unwrapped, "energy_cost_cfg", None) is None:
+            raise RuntimeError("启用能耗约束需要环境配置 energy_cost。")
+        if not np.isclose(envs.unwrapped.energy_cost_cfg.power_ref, energy_cfg.power_ref, rtol=0.0, atol=1e-9):
+            raise ValueError("环境 energy_cost.power_ref 与 PPO energy_constraint.power_ref 不一致。")
+        cost_critic = CostCritic(envs).to(device)
+        cost_optimizer = optim.Adam(cost_critic.parameters(), lr=energy_cfg.cost_critic_lr, eps=1e-5)
+        lagrange = LagrangeMultiplier(init=energy_cfg.lambda_init, lr=energy_cfg.lambda_lr,
+                                      kp=energy_cfg.lambda_kp, kp_beta=energy_cfg.lambda_kp_beta,
+                                      max_value=energy_cfg.lambda_max)
+        limit_scheduler = AdaptiveLimitScheduler(
+            limit_init=energy_cfg.limit_init, limit_min=energy_cfg.limit_min, limit_max=energy_cfg.limit_max,
+            terrain_ref=energy_cfg.terrain_ref, track_ref=energy_cfg.track_ref,
+            perf_ratio=energy_cfg.perf_ratio, relax_margin=energy_cfg.relax_margin,
+            terrain_floor=energy_cfg.terrain_floor, satisfy_tol=energy_cfg.satisfy_tol, shrink=energy_cfg.shrink,
+            interval=energy_cfg.adapt_interval, warmup=energy_cfg.warmup_iters,
+            cooldown=energy_cfg.backoff_cooldown, beta=energy_cfg.perf_beta,
+        )
     start_iteration = 0
     if FINETUNE:
         provenance = load_finetune_checkpoint(ppo_cfg.load_checkpoint, agent, device=device)
@@ -310,6 +360,15 @@ def PPO(envs, ppo_cfg, run_path):
         )
         start_iteration = resume_state["iteration"]
         restore_environment_progress(envs.unwrapped, resume_state, NUM_STEPS)
+        if ENERGY_CONSTRAINED:
+            if "energy_constraint_state" in resume_state:
+                cost_critic.load_state_dict(resume_state["cost_critic_state_dict"])
+                cost_optimizer.load_state_dict(resume_state["cost_optimizer_state_dict"])
+                lagrange.load_state_dict(resume_state["energy_constraint_state"]["lagrange"])
+                limit_scheduler.load_state_dict(resume_state["energy_constraint_state"]["scheduler"])
+                print(f"[续训] 已恢复能耗约束：lambda={lagrange.value}, power_limit={limit_scheduler.limit}")
+            else:
+                print("[续训] 检查点不含能耗约束状态，代价网络、lambda 与功率上限从初值开始。")
         provenance = {
             "来源检查点": resume_state["source_path"],
             "已完成迭代": start_iteration,
@@ -333,6 +392,10 @@ def PPO(envs, ppo_cfg, run_path):
     true_dones = torch.zeros((NUM_STEPS, NUM_ENVS), dtype=torch.float).to(device)
     values = torch.zeros((NUM_STEPS, NUM_ENVS), dtype=torch.float).to(device)
     advantages = torch.zeros_like(rewards, dtype=torch.float).to(device)
+    if ENERGY_CONSTRAINED:
+        costs = torch.zeros((NUM_STEPS, NUM_ENVS), dtype=torch.float).to(device)
+        cost_values = torch.zeros((NUM_STEPS, NUM_ENVS), dtype=torch.float).to(device)
+        smoothed_powers = torch.zeros((NUM_STEPS, NUM_ENVS), dtype=torch.float).to(device)
 
     joint_names = envs.unwrapped.scene["robot"].data.joint_names
     num_joints = len(joint_names)
@@ -358,14 +421,20 @@ def PPO(envs, ppo_cfg, run_path):
     delta_alpha_simple_algo = 9e-5
     curr_energy_weight = 0.0 
 
+    TRACK_METRIC_NAME = "Episode_Reward/track_lin_vel_xy_exp"
     energy_reward_term_name = "minimize_power"
-    # Just to make sure there are no other scaling factors at play
-    term = envs.unwrapped.reward_manager.get_term_cfg(energy_reward_term_name)
-    term.params["scaling_factor"] = 1.0
-    envs.unwrapped.reward_manager.set_term_cfg(energy_reward_term_name, term)
+    if not ENERGY_CONSTRAINED:
+        # Just to make sure there are no other scaling factors at play
+        term = envs.unwrapped.reward_manager.get_term_cfg(energy_reward_term_name)
+        term.params["scaling_factor"] = 1.0
+        envs.unwrapped.reward_manager.set_term_cfg(energy_reward_term_name, term)
+    elif energy_reward_term_name in envs.unwrapped.reward_manager.active_terms:
+        raise RuntimeError("启用能耗约束时必须移除 minimize_power 奖励项，避免重复惩罚。")
     if FINETUNE:
-        finetune_expected = finetune_runtime_snapshot(envs.unwrapped, optimizer)
+        finetune_expected = finetune_runtime_snapshot(envs.unwrapped, optimizer, ENERGY_CONSTRAINED)
         power_curriculum = getattr(envs.unwrapped.cfg.curriculum, "power", None)
+        if power_curriculum is not None and ENERGY_CONSTRAINED:
+            raise RuntimeError("启用能耗约束时必须移除 curriculum.power。")
         if power_curriculum is not None:
             for name in ("start_weight", "end_weight"):
                 if power_curriculum.params.get(name) != finetune_expected["energy_weight"]:
@@ -396,6 +465,15 @@ def PPO(envs, ppo_cfg, run_path):
             lrnow = frac * LEARNING_RATE
             optimizer.param_groups[0]["lr"] = lrnow
 
+        if ENERGY_CONSTRAINED:
+            # 热身期上限尚未标定，用平滑功率滑动平均作零点；热身末上限即取该值，代价尺度连续
+            if limit_scheduler.limit is not None:
+                cost_center = limit_scheduler.limit
+            elif limit_scheduler.power_polyak is not None:
+                cost_center = limit_scheduler.power_polyak
+            else:
+                cost_center = energy_cfg.power_ref
+
         action_std_buffer = [] # Buffer over sim steps, then take mean across env and time steps
         # Collecting trajectories for NUM_STEPS before updating the networks
         for step in range(0, NUM_STEPS):
@@ -409,6 +487,8 @@ def PPO(envs, ppo_cfg, run_path):
                 action, logprob, _, value, action_std = agent.get_action_and_value(next_obs)
                 action_std_buffer.append(action_std.detach())
                 values[step] = value.flatten()
+                if ENERGY_CONSTRAINED:
+                    cost_values[step] = cost_critic(next_obs).flatten()
             actions[step] = action
             logprobs[step] = logprob
 
@@ -417,6 +497,13 @@ def PPO(envs, ppo_cfg, run_path):
             # next_obs, rewards[step], next_done, timeouts, info = envs.step(torch.rand_like(action) * 0.6 - torch.ones_like(action) * 0.3)
             next_done = next_done.to(torch.float)
             next_obs = next_obs["policy"]
+            if ENERGY_CONSTRAINED:
+                smoothed_powers[step] = info["smoothed_power"]
+                if energy_cfg.cost_centered:
+                    # 以当前上限为零点的代价：低于上限时为负，提前终止会失去这部分负代价，不再是逃避手段
+                    costs[step] = (info["smoothed_power"] - cost_center) / energy_cfg.power_ref * envs.unwrapped.step_dt
+                else:
+                    costs[step] = info["energy_cost"]
 
             if STORE_AND_HASH_TENSORS:
                 # Store only first time step of each global iteration because otherwise it takes way too long.
@@ -548,6 +635,27 @@ def PPO(envs, ppo_cfg, run_path):
                 advantages[t] = lastgaelam = (delta + GAMMA * GAE_LAMBDA * nextnonterminal * true_nextnonterminal * lastgaelam)
             returns = advantages + values
 
+            if ENERGY_CONSTRAINED:
+                # 代价 GAE 与奖励 GAE 使用相同的软终止和超时掩码
+                next_cost_value = cost_critic(next_obs).reshape(1, -1)
+                cost_advantages = torch.zeros_like(costs).to(device)
+                lastgaelam = 0
+                for t in reversed(range(NUM_STEPS)):
+                    if t == NUM_STEPS - 1:
+                        nextnonterminal = 1.0 - next_done
+                        true_nextnonterminal = 1 - next_true_done
+                        nextvalues = next_cost_value
+                    else:
+                        nextnonterminal = 1.0 - dones[t + 1]
+                        true_nextnonterminal = 1 - true_dones[t + 1]
+                        nextvalues = cost_values[t + 1]
+                    delta = (costs[t] + GAMMA * nextvalues * nextnonterminal * true_nextnonterminal - cost_values[t])
+                    cost_advantages[t] = lastgaelam = (delta + GAMMA * GAE_LAMBDA * nextnonterminal * true_nextnonterminal * lastgaelam)
+                cost_returns = cost_advantages + cost_values
+                # 拉格朗日合成优势：A = (A_r - λ A_c) / (1 + λ)，λ 取本轮 rollout 开始时的值
+                current_lambda = lagrange.value
+                advantages = (advantages - current_lambda * cost_advantages) / (1.0 + current_lambda)
+
             if STORE_AND_HASH_TENSORS:
                 # Uses training iteration steps because it does not run in nested sim step loop
                 if iteration % tensor_zarr_append_interval == 0:
@@ -590,6 +698,10 @@ def PPO(envs, ppo_cfg, run_path):
 
         b_values = agent.value_rms(b_values)
         b_returns = agent.value_rms(b_returns)
+        if ENERGY_CONSTRAINED:
+            b_cost_values = cost_critic.value_rms(cost_values.reshape(-1))
+            b_cost_returns = cost_critic.value_rms(cost_returns.reshape(-1))
+            sum_cost_v_loss = 0.0
 
         sum_pg_loss = sum_entropy_loss = sum_v_loss = sum_surrogate_loss = 0.0
 
@@ -639,14 +751,62 @@ def PPO(envs, ppo_cfg, run_path):
                 nn.utils.clip_grad_norm_(agent.parameters(), MAX_GRAD_NORM)
                 optimizer.step()
 
+                if ENERGY_CONSTRAINED:
+                    # 代价价值回归，与奖励 critic 相同的归一化与裁剪方式，独立优化器
+                    new_cost_value = cost_critic.value_rms(cost_critic(b_obs[mb_inds]).view(-1), update=False)
+                    if CLIP_VLOSS:
+                        cost_v_unclipped = (new_cost_value - b_cost_returns[mb_inds]) ** 2
+                        cost_v_clipped = b_cost_values[mb_inds] + torch.clamp(new_cost_value - b_cost_values[mb_inds], -CLIP_COEF, CLIP_COEF)
+                        cost_v_loss = 0.5 * torch.max(cost_v_unclipped, (cost_v_clipped - b_cost_returns[mb_inds]) ** 2).mean()
+                    else:
+                        cost_v_loss = 0.5 * ((new_cost_value - b_cost_returns[mb_inds]) ** 2).mean()
+                    sum_cost_v_loss += cost_v_loss.detach()
+                    cost_optimizer.zero_grad()
+                    (cost_v_loss * VF_COEF).backward()
+                    nn.utils.clip_grad_norm_(cost_critic.parameters(), MAX_GRAD_NORM)
+                    cost_optimizer.step()
+
         num_updates = UPDATES_EPOCHS * BATCH_SIZE / MINIBATCH_SIZE
         writer.add_scalar("Loss/mean_pg_loss", sum_pg_loss / num_updates, iteration)
         writer.add_scalar("Loss/mean_entropy_loss", sum_entropy_loss / num_updates, iteration)
         writer.add_scalar("Loss/mean_v_loss", sum_v_loss / num_updates, iteration)
         writer.add_scalar("Loss/mean_surrogate_loss", sum_surrogate_loss / num_updates, iteration)
         writer.add_scalar("Loss/learning_rate", optimizer.param_groups[0]["lr"], iteration)
+        if ENERGY_CONSTRAINED:
+            # 用本轮 rollout 统计更新功率上限与 λ，作用于下一轮
+            mean_smoothed_power = smoothed_powers.mean().item()
+            track_values = [float(torch.as_tensor(ep_info[TRACK_METRIC_NAME]).float().mean())
+                            for ep_info in ep_infos if TRACK_METRIC_NAME in ep_info]
+            if not track_values:
+                raise RuntimeError(f"本轮 rollout 未记录 {TRACK_METRIC_NAME}，无法判断表现。")
+            mean_track_metric = float(np.mean(track_values))
+            limit_decision = limit_scheduler.observe(terrain=mean_threshold_metric, track=mean_track_metric, power=mean_smoothed_power)
+            violation = float("nan")
+            if not limit_scheduler.in_warmup:
+                violation = (mean_smoothed_power - limit_scheduler.limit) / energy_cfg.power_ref
+                lagrange.update(violation)
+            decision_code = {"warmup": -2, "backoff": -1, "hold": 0, "tighten": 1}[limit_decision]
+            writer.add_scalar("Energy_Constraint/lambda", lagrange.value, iteration)
+            writer.add_scalar("Energy_Constraint/lambda_integral", lagrange.integral, iteration)
+            writer.add_scalar("Energy_Constraint/violation_ema", lagrange.violation_ema, iteration)
+            writer.add_scalar("Energy_Constraint/cost_center", cost_center, iteration)
+            writer.add_scalar("Energy_Constraint/tighten_cooldown_left", limit_scheduler.cooldown_left, iteration)
+            writer.add_scalar("Energy_Constraint/lambda_used_this_iter", current_lambda, iteration)
+            writer.add_scalar("Energy_Constraint/power_limit", float("nan") if limit_scheduler.limit is None else limit_scheduler.limit, iteration)
+            writer.add_scalar("Energy_Constraint/mean_smoothed_power", mean_smoothed_power, iteration)
+            writer.add_scalar("Energy_Constraint/power_polyak", limit_scheduler.power_polyak, iteration)
+            writer.add_scalar("Energy_Constraint/violation", violation, iteration)
+            writer.add_scalar("Energy_Constraint/terrain_polyak", limit_scheduler.terrain_polyak, iteration)
+            writer.add_scalar("Energy_Constraint/track_polyak", limit_scheduler.track_polyak, iteration)
+            writer.add_scalar("Energy_Constraint/limit_decision", decision_code, iteration)
+            writer.add_scalar("Energy_Constraint/mean_cost", costs.mean().item(), iteration)
+            writer.add_scalar("Energy_Constraint/cost_v_loss", sum_cost_v_loss / num_updates, iteration)
+            if limit_decision in ("tighten", "backoff") or iteration == start_iteration + energy_cfg.warmup_iters:
+                print(f"[能耗约束] 迭代={iteration} 决策={limit_decision} 上限={limit_scheduler.limit} "
+                      f"平均平滑功率={mean_smoothed_power:.2f}W lambda={lagrange.value:.4f} "
+                      f"地形={limit_scheduler.terrain_polyak:.3f} 跟踪={limit_scheduler.track_polyak:.3f}")
         if FINETUNE:
-            actual_parameters = finetune_runtime_snapshot(envs.unwrapped, optimizer)
+            actual_parameters = finetune_runtime_snapshot(envs.unwrapped, optimizer, ENERGY_CONSTRAINED)
             assert_finetune_runtime_fixed(actual_parameters, finetune_expected)
             for name, value in actual_parameters.items():
                 writer.add_scalar(f"Finetune/{name}", value, iteration)
@@ -666,13 +826,22 @@ def PPO(envs, ppo_cfg, run_path):
                 f"耗时={time.monotonic() - iteration_start:.2f}s "
                 f"平均奖励={rewards.mean().item():.6f} "
                 f"学习率={optimizer.param_groups[0]['lr']:.3g}"
+                + (f" 平滑功率={mean_smoothed_power:.2f}W 上限={limit_scheduler.limit} lambda={lagrange.value:.4f}"
+                   if ENERGY_CONSTRAINED else "")
             )
 
         if (iteration + 1) % ppo_cfg.save_interval == 0 or iteration == final_iteration or ((ppo_cfg.resume or FINETUNE) and iteration == start_iteration + 1):
             model_path = f"{run_path}/model_{iteration}.pt"
             atomic_save(agent.state_dict(), model_path)
+            extra_state = None
+            if ENERGY_CONSTRAINED:
+                extra_state = {
+                    "cost_critic_state_dict": cost_critic.state_dict(),
+                    "cost_optimizer_state_dict": cost_optimizer.state_dict(),
+                    "energy_constraint_state": {"lagrange": lagrange.state_dict(), "scheduler": limit_scheduler.state_dict()},
+                }
             save_training_checkpoint(f"{run_path}/training_state_{iteration}.pt", agent, optimizer,
-                                     envs.unwrapped, iteration, NUM_ITERATIONS)
+                                     envs.unwrapped, iteration, NUM_ITERATIONS, extra_state=extra_state)
             print(f"[INFO] 已保存模型: {model_path}")
 
     writer.close()

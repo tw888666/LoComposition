@@ -24,6 +24,7 @@ from isaaclab.managers import RewardTermCfg as RewTerm
 import isaaclab.envs.mdp.curriculums as isaac_curriculums
 from locomposition.tasks.utils.cat.manager_constraint_cfg import (
     ConstraintTermCfg as ConstraintTerm,
+    EnergyCostCfg,
 )
 from isaaclab.managers import SceneEntityCfg
 from isaaclab.managers import TerminationTermCfg as DoneTerm
@@ -913,6 +914,8 @@ class Go2RoughTerrainEnvCfg(ManagerBasedRLEnvCfg):
     curriculum: CurriculumCfg = CurriculumCfg()
     terminations: TerminationsCfg = TerminationsCfg()
     events: EventCfg = EventCfg()
+    # 拉格朗日能耗约束的代价信号；None 表示不计算（默认，奖励式能耗与评估环境不受影响）
+    energy_cost: EnergyCostCfg | None = None
 
     def __post_init__(self):
         """Post initialization."""

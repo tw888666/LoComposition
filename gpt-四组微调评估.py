@@ -33,7 +33,8 @@ def sha(path):
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--run-dir', type=Path, required=True)
-    p.add_argument('--label', choices=('A0', 'A', 'B', 'C', 'D'), required=True)
+    # L：能耗拉格朗日约束组（claude-能耗约束实验-20261029）
+    p.add_argument('--label', choices=('A0', 'A', 'B', 'C', 'D', 'E', 'L'), required=True)
     p.add_argument('--checkpoint', type=int, required=True)
     p.add_argument('--gpu', default='4')
     p.add_argument('--seed', type=int, default=46)

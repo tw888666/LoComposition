@@ -1,0 +1,1614 @@
+[INFO] Using eval seed=46
+[INFO] Loading model from: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/平地0.4/model_1500.pt
+[INFO] Detected policy backend=clean_rl, selected policy backend=clean_rl
+Observation dimension=236, selected task=LoComposition-Go2-Rough-Terrain-Joint-State-History-Play-v0
+[INFO] Resolved evaluation robot profile=go2
+[INFO][AppLauncher]: Using device: cuda
+[INFO][AppLauncher]: Loading experience file: /home/xy.chen/tw/LoComposition/dependencies/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261103_103559.log
+2026-11-03T02:36:02Z [3,194ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-03T02:36:05Z [5,801ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-03T02:36:08Z [8,775ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-03T02:36:08Z [8,951ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-11-03T02:36:23Z [23,556ms] [Warning] [carb.cudainterop.plugin] CUDA_VISIBLE_DEVICES environment variable is set.
+2026-11-03T02:36:23Z [23,556ms] [Warning] [carb.cudainterop.plugin] Note CUDA device enumeration and Omniverse device enumeration are different.
+2026-11-03T02:36:23Z [23,556ms] [Warning] [carb.cudainterop.plugin] Setting CUDA_VISIBLE_DEVICES can lead to undesired behavior or crashes.
+2026-11-03T02:36:24Z [24,825ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:36:24Z [24,825ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:36:24Z [24,827ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:36:24Z [24,827ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:36:24Z [24,828ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:36:24Z [24,828ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:36:24Z [24,828ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:36:24Z [24,828ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:36:24Z [24,830ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:36:24Z [24,830ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:36:24Z [24,830ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:36:24Z [24,830ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:36:24Z [24,830ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:36:24Z [24,830ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:36:24Z [24,830ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:36:24Z [24,830ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:36:24Z [24,830ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:36:24Z [24,830ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:36:24Z [24,830ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:36:24Z [24,830ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+ISAACLAB_NUCLEUS_DIR=https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab
+[INFO]: Parsing configuration from: locomposition.tasks.locomotion.velocity.config.solo12.locomposition_go2_rough_terrain_env_cfg:Go2RoughTerrainEnvCfgJointStateHistory_PLAY
+[INFO] Replaced the PLAY robot config with UNITREE_GO2_CFG_TRAIN for this evaluation.
+[INFO] Loaded action scale from training params/env.yaml
+[INFO] Training actions.joint_pos.scale = 0.8
+[INFO] Eval actions.joint_pos.scale before override = 0.8
+[INFO] Eval actions.joint_pos.scale after override = 0.8
+[INFO] Set latency for joint_pos_history to 0
+[INFO] Set latency for joint_vel_history to 0
+[INFO] Set latency for base_ang_vel to 0
+[INFO] Set latency for projected_gravity to 0
+[INFO] Set latency for actions to 0
+[INFO] Set latency for height_map to 0
+seed=46
+env_cfg.seed=46
+env_cfg.sim.random_seed=46
+terrain_generator.seed=46
+eval_base_dir=/home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/平地0.4/eval_checkpoint_1500_seed_46_action_delay_0_scenario_walk_x_flat_terrain_0.4mps, env_name=种子46, run_name=平地0.4, task_name=LoComposition-Go2-Rough-Terrain-Joint-State-History-Play-v0
+Skipping Cost of Transport sweep scenarios
+[INFO] Loaded eval constraint bounds from params/env.yaml:
+{
+    joint_torque: (-20.0, 20.0)
+    joint_velocity: (-25.0, 25.0)
+    joint_acceleration: (-800.0, 800.0)
+    action_rate: (-80.0, 80.0)
+    base_orientation: (-0.1, 0.1)
+    foot_contact_force: (0.0, 300.0)
+    FL_thigh_joint: (None, 1.5)
+    FR_thigh_joint: (None, 1.5)
+    RL_thigh_joint: (None, 1.5)
+    RR_thigh_joint: (None, 1.5)
+    upsidedown: (-0.0, 0.0)
+    FL_hip_joint: (-0.19999999999999998, 0.4)
+    FR_hip_joint: (-0.4, 0.19999999999999998)
+    RL_hip_joint: (-0.19999999999999998, 0.4)
+    RR_hip_joint: (-0.4, 0.19999999999999998)
+}
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-03_10-36-31.log[0m
+[36m======================================================================================[0m
+
+[33m10:36:31 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 46
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+[INFO] Generating terrains randomly took : 2.777629 seconds
+[INFO]: Time taken for scene creation : 4.849483 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 8
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 1.059242 seconds
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++------------------------------------------------------------+
+|                    Active Command Terms                    |
++-------+---------------+------------------------------------+
+| Index | Name          |                Type                |
++-------+---------------+------------------------------------+
+|   0   | base_velocity | UniformVelocityCommandWithDeadzone |
++-------+---------------+------------------------------------+
+
+[INFO] Event Manager:  <EventManager> contains 2 active terms.
++---------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++----------+----------------------------+
+|  Index   | Name                       |
++----------+----------------------------+
+|    0     | physics_material           |
+|    1     | randomize_com              |
+|    2     | randomize_mass             |
+|    3     | force_hard_terrain         |
++----------+----------------------------+
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++--------+----------------------------+
+| Index  | Name                       |
++--------+----------------------------+
+|   0    | reset_base                 |
+|   1    | reset_robot_joints         |
+|   2    | episodic_height_offset     |
++--------+----------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 12)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          12 |
++--------+-------------+-------------+
+
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[INFO] Observation Manager: <ObservationManager> contains 1 groups.
++----------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (236,)) |
++-----------+--------------------------------+-------------+
+|   Index   | Name                           |    Shape    |
++-----------+--------------------------------+-------------+
+|     0     | base_ang_vel                   |     (3,)    |
+|     1     | velocity_commands              |     (3,)    |
+|     2     | projected_gravity              |     (3,)    |
+|     3     | joint_pos_history              |    (36,)    |
+|     4     | joint_vel_history              |    (36,)    |
+|     5     | actions                        |    (12,)    |
+|     6     | height_map                     |    (143,)   |
++-----------+--------------------------------+-------------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 3 active terms.
++---------------------------------+
+|     Active Termination Terms    |
++-------+--------------+----------+
+| Index | Name         | Time Out |
++-------+--------------+----------+
+|   0   | time_out     |   True   |
+|   1   | base_contact |  False   |
+|   2   | upside_down  |  False   |
++-------+--------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 2 active terms.
++---------------------------------------+
+|          Active Reward Terms          |
++-------+----------------------+--------+
+| Index | Name                 | Weight |
++-------+----------------------+--------+
+|   0   | track_lin_vel_xy_exp |    1.0 |
+|   1   | track_ang_vel_z_exp  |    0.5 |
++-------+----------------------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 7 active terms.
++----------------------------+
+|  Active Curriculum Terms   |
++-------+--------------------+
+| Index | Name               |
++-------+--------------------+
+|   0   | joint_torque       |
+|   1   | joint_velocity     |
+|   2   | joint_acceleration |
+|   3   | action_rate        |
+|   4   | hip_position       |
+|   5   | base_orientation   |
+|   6   | terrain_levels     |
++-------+--------------------+
+
+[INFO] Constraint Manager:  <ConstraintManager> contains 11 active terms.
++-----------------------------------------------------------------------------------------------------------------------+
+|                                                Active Constraint Terms                                                |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+| Index | Name               | Limit |                                  Names                                   | Max p |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+|   0   | joint_torque       |  20.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   1   | joint_velocity     |  25.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   2   | joint_acceleration | 800.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   3   | action_rate        |  80.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   4   | base_orientation   |   0.1 |                                    -                                     |  0.25 |
+|   5   | contact            |     - |                           ['base', '.*_thigh']                           |   1.0 |
+|   6   | foot_contact_force | 300.0 |                               ['.*_foot']                                |   1.0 |
+|   7   | front_hfe_position |   1.5 | ['FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint'] |   1.0 |
+|   8   | upsidedown         |   0.0 |                                    -                                     |   1.0 |
+|   9   | hip_position       |   0.3 |                             ['.*_hip_joint']                             |  0.25 |
+|   10  | no_move            |     - |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |   0.1 |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+
+[INFO]: Completed setting up the environment...
+[INFO] Runtime env actions.joint_pos.scale = 0.8
+[SEED CHECK] runtime env seed=46
+[SEED CHECK] runtime sim seed=46
+[SEED CHECK] runtime terrain seed=46
+[INFO] Recording base COM acceleration from body index 0: base
+  0%|          | 0/500 [00:00<?, ?it/s]Resetting env and setting fixed command + spawn point for scenario=('walk_x_flat_terrain_0.4mps', tensor([0.4000, 0.0000, 0.0000], device='cuda:0'), (tensor([30.0000, 30.0000,  0.4000], device='cuda:0'), tensor([0., 0., 0., 1.], device='cuda:0')))...
+  0%|          | 1/500 [00:00<06:36,  1.26it/s]  0%|          | 2/500 [00:01<03:54,  2.12it/s]  1%|          | 3/500 [00:01<02:50,  2.91it/s]  1%|          | 4/500 [00:01<02:45,  3.00it/s]  1%|          | 5/500 [00:01<02:22,  3.47it/s]  2%|▏         | 8/500 [00:01<01:05,  7.47it/s]  2%|▏         | 11/500 [00:01<00:43, 11.19it/s]  3%|▎         | 13/500 [00:02<00:55,  8.76it/s]  3%|▎         | 15/500 [00:02<01:09,  7.00it/s]  3%|▎         | 17/500 [00:02<00:55,  8.69it/s]  4%|▍         | 20/500 [00:02<00:40, 11.82it/s]  4%|▍         | 22/500 [00:03<00:42, 11.34it/s]  5%|▍         | 24/500 [00:03<01:08,  6.99it/s]  5%|▌         | 27/500 [00:03<00:49,  9.64it/s]  6%|▌         | 30/500 [00:03<00:37, 12.48it/s]  6%|▋         | 32/500 [00:04<00:46, 10.14it/s]  7%|▋         | 34/500 [00:04<01:01,  7.52it/s]  7%|▋         | 37/500 [00:04<00:45, 10.16it/s]  8%|▊         | 40/500 [00:04<00:35, 12.93it/s]  8%|▊         | 42/500 [00:05<00:53,  8.59it/s]  9%|▉         | 44/500 [00:05<00:56,  8.09it/s]  9%|▉         | 47/500 [00:05<00:42, 10.78it/s] 10%|█         | 50/500 [00:05<00:34, 13.18it/s] 10%|█         | 52/500 [00:06<00:57,  7.79it/s] 11%|█         | 54/500 [00:06<00:51,  8.63it/s] 12%|█▏        | 58/500 [00:06<00:36, 12.01it/s] 12%|█▏        | 60/500 [00:06<00:33, 13.18it/s] 12%|█▏        | 62/500 [00:07<00:38, 11.37it/s] 13%|█▎        | 64/500 [00:07<00:49,  8.74it/s] 13%|█▎        | 66/500 [00:08<01:11,  6.06it/s] 14%|█▎        | 68/500 [00:08<00:58,  7.38it/s] 14%|█▍        | 71/500 [00:08<00:42, 10.19it/s] 15%|█▍        | 74/500 [00:08<00:32, 13.07it/s] 15%|█▌        | 76/500 [00:09<00:51,  8.22it/s] 16%|█▌        | 78/500 [00:09<00:51,  8.20it/s] 16%|█▌        | 81/500 [00:09<00:39, 10.71it/s] 17%|█▋        | 84/500 [00:09<00:34, 12.12it/s] 17%|█▋        | 86/500 [00:10<00:56,  7.32it/s] 18%|█▊        | 89/500 [00:10<00:41,  9.80it/s] 18%|█▊        | 92/500 [00:10<00:33, 12.36it/s] 19%|█▉        | 94/500 [00:10<00:36, 11.12it/s] 19%|█▉        | 96/500 [00:11<00:53,  7.53it/s] 20%|█▉        | 99/500 [00:11<00:39, 10.17it/s] 20%|██        | 102/500 [00:11<00:30, 12.94it/s] 21%|██        | 105/500 [00:11<00:44,  8.85it/s] 21%|██▏       | 107/500 [00:12<00:44,  8.74it/s] 22%|██▏       | 110/500 [00:12<00:34, 11.39it/s] 23%|██▎       | 113/500 [00:12<00:30, 12.89it/s] 23%|██▎       | 115/500 [00:12<00:48,  7.96it/s] 23%|██▎       | 117/500 [00:13<00:43,  8.73it/s] 24%|██▍       | 120/500 [00:13<00:33, 11.27it/s] 25%|██▍       | 123/500 [00:13<00:36, 10.34it/s] 25%|██▌       | 125/500 [00:14<00:48,  7.71it/s] 26%|██▌       | 128/500 [00:14<00:36, 10.28it/s] 26%|██▌       | 131/500 [00:14<00:28, 12.88it/s] 27%|██▋       | 133/500 [00:14<00:35, 10.30it/s] 27%|██▋       | 135/500 [00:15<00:46,  7.79it/s] 28%|██▊       | 138/500 [00:15<00:34, 10.46it/s] 28%|██▊       | 141/500 [00:15<00:27, 13.21it/s] 29%|██▉       | 144/500 [00:15<00:39,  8.98it/s] 29%|██▉       | 146/500 [00:16<00:40,  8.80it/s] 30%|██▉       | 149/500 [00:16<00:30, 11.35it/s] 30%|███       | 152/500 [00:16<00:25, 13.68it/s] 31%|███       | 154/500 [00:16<00:40,  8.45it/s] 31%|███       | 156/500 [00:17<00:40,  8.53it/s] 32%|███▏      | 159/500 [00:17<00:30, 11.10it/s] 32%|███▏      | 162/500 [00:17<00:31, 10.85it/s] 33%|███▎      | 164/500 [00:17<00:44,  7.57it/s] 33%|███▎      | 167/500 [00:18<00:33, 10.07it/s] 34%|███▍      | 169/500 [00:18<00:29, 11.38it/s] 34%|███▍      | 171/500 [00:18<00:29, 11.33it/s] 35%|███▍      | 173/500 [00:18<00:45,  7.24it/s] 35%|███▌      | 175/500 [00:19<00:37,  8.74it/s] 36%|███▌      | 178/500 [00:19<00:28, 11.32it/s] 36%|███▌      | 181/500 [00:19<00:27, 11.57it/s] 37%|███▋      | 183/500 [00:19<00:39,  8.01it/s] 37%|███▋      | 187/500 [00:20<00:27, 11.56it/s] 38%|███▊      | 190/500 [00:20<00:22, 14.09it/s] 39%|███▊      | 193/500 [00:20<00:36,  8.43it/s] 39%|███▉      | 196/500 [00:20<00:28, 10.77it/s] 40%|███▉      | 199/500 [00:21<00:22, 13.14it/s] 40%|████      | 202/500 [00:21<00:35,  8.48it/s] 41%|████      | 205/500 [00:21<00:28, 10.48it/s] 42%|████▏     | 208/500 [00:21<00:22, 12.99it/s] 42%|████▏     | 211/500 [00:22<00:24, 11.89it/s] 43%|████▎     | 213/500 [00:22<00:33,  8.63it/s] 43%|████▎     | 216/500 [00:22<00:25, 11.12it/s] 44%|████▍     | 219/500 [00:22<00:21, 13.18it/s] 44%|████▍     | 221/500 [00:23<00:33,  8.44it/s] 45%|████▍     | 223/500 [00:23<00:31,  8.74it/s] 45%|████▌     | 226/500 [00:23<00:23, 11.58it/s] 46%|████▌     | 229/500 [00:23<00:19, 14.20it/s] 46%|████▋     | 232/500 [00:24<00:32,  8.18it/s] 47%|████▋     | 235/500 [00:24<00:25, 10.35it/s] 48%|████▊     | 238/500 [00:24<00:20, 12.93it/s] 48%|████▊     | 241/500 [00:25<00:28,  9.09it/s] 49%|████▊     | 243/500 [00:25<00:29,  8.86it/s] 49%|████▉     | 245/500 [00:25<00:25, 10.02it/s] 50%|████▉     | 248/500 [00:25<00:20, 12.48it/s] 50%|█████     | 250/500 [00:25<00:18, 13.48it/s] 50%|█████     | 252/500 [00:26<00:33,  7.31it/s] 51%|█████     | 255/500 [00:26<00:25,  9.66it/s] 52%|█████▏    | 258/500 [00:26<00:19, 12.23it/s] 52%|█████▏    | 261/500 [00:27<00:20, 11.52it/s] 53%|█████▎    | 263/500 [00:27<00:30,  7.83it/s] 53%|█████▎    | 266/500 [00:27<00:23, 10.06it/s] 54%|█████▍    | 269/500 [00:27<00:18, 12.21it/s] 54%|█████▍    | 272/500 [00:28<00:15, 14.33it/s] 55%|█████▍    | 274/500 [00:28<00:26,  8.59it/s] 55%|█████▌    | 276/500 [00:28<00:26,  8.46it/s] 56%|█████▌    | 279/500 [00:28<00:20, 10.58it/s] 56%|█████▋    | 282/500 [00:29<00:17, 12.54it/s] 57%|█████▋    | 284/500 [00:29<00:21, 10.24it/s] 57%|█████▋    | 286/500 [00:29<00:28,  7.58it/s] 58%|█████▊    | 289/500 [00:30<00:21,  9.81it/s] 58%|█████▊    | 292/500 [00:30<00:17, 11.93it/s] 59%|█████▉    | 294/500 [00:30<00:20,  9.95it/s] 59%|█████▉    | 296/500 [00:30<00:27,  7.45it/s] 60%|█████▉    | 299/500 [00:31<00:20,  9.69it/s] 60%|██████    | 302/500 [00:31<00:16, 11.81it/s] 61%|██████    | 304/500 [00:31<00:15, 12.60it/s] 61%|██████    | 306/500 [00:31<00:18, 10.59it/s] 62%|██████▏   | 308/500 [00:31<00:21,  8.83it/s] 62%|██████▏   | 311/500 [00:32<00:16, 11.64it/s] 63%|██████▎   | 314/500 [00:32<00:15, 11.70it/s] 63%|██████▎   | 316/500 [00:32<00:24,  7.66it/s] 64%|██████▍   | 319/500 [00:32<00:18, 10.03it/s] 64%|██████▍   | 322/500 [00:33<00:14, 12.31it/s] 65%|██████▌   | 325/500 [00:33<00:16, 10.43it/s] 65%|██████▌   | 327/500 [00:33<00:21,  8.08it/s] 66%|██████▌   | 330/500 [00:34<00:16, 10.39it/s] 67%|██████▋   | 333/500 [00:34<00:13, 12.74it/s] 67%|██████▋   | 335/500 [00:34<00:20,  8.09it/s] 67%|██████▋   | 337/500 [00:34<00:19,  8.24it/s] 68%|██████▊   | 340/500 [00:35<00:14, 10.71it/s] 69%|██████▊   | 343/500 [00:35<00:12, 12.63it/s] 69%|██████▉   | 345/500 [00:35<00:18,  8.47it/s] 69%|██████▉   | 347/500 [00:36<00:19,  7.82it/s] 70%|███████   | 350/500 [00:36<00:14, 10.17it/s] 71%|███████   | 353/500 [00:36<00:11, 12.78it/s] 71%|███████   | 356/500 [00:36<00:11, 12.21it/s] 72%|███████▏  | 358/500 [00:37<00:18,  7.77it/s] 72%|███████▏  | 360/500 [00:37<00:15,  9.18it/s] 73%|███████▎  | 363/500 [00:37<00:11, 11.80it/s] 73%|███████▎  | 366/500 [00:37<00:11, 11.52it/s] 74%|███████▎  | 368/500 [00:38<00:17,  7.64it/s] 74%|███████▍  | 371/500 [00:38<00:12,  9.92it/s] 75%|███████▍  | 374/500 [00:38<00:10, 12.01it/s] 75%|███████▌  | 377/500 [00:38<00:11, 10.77it/s] 76%|███████▌  | 379/500 [00:39<00:15,  7.91it/s] 76%|███████▋  | 382/500 [00:39<00:11, 10.28it/s] 77%|███████▋  | 385/500 [00:39<00:09, 12.58it/s] 78%|███████▊  | 388/500 [00:39<00:07, 14.85it/s] 78%|███████▊  | 391/500 [00:40<00:11,  9.64it/s] 79%|███████▊  | 393/500 [00:40<00:11,  9.10it/s] 79%|███████▉  | 396/500 [00:40<00:09, 11.22it/s] 80%|███████▉  | 399/500 [00:40<00:07, 13.58it/s] 80%|████████  | 401/500 [00:41<00:10,  9.60it/s] 81%|████████  | 403/500 [00:41<00:12,  7.87it/s] 81%|████████  | 406/500 [00:41<00:09, 10.10it/s] 82%|████████▏ | 409/500 [00:41<00:07, 12.36it/s] 82%|████████▏ | 411/500 [00:42<00:10,  8.44it/s] 83%|████████▎ | 413/500 [00:42<00:11,  7.86it/s] 83%|████████▎ | 416/500 [00:42<00:08, 10.45it/s] 84%|████████▍ | 419/500 [00:42<00:06, 12.77it/s] 84%|████████▍ | 421/500 [00:43<00:08,  9.66it/s] 85%|████████▍ | 423/500 [00:43<00:10,  7.64it/s] 85%|████████▌ | 426/500 [00:43<00:07, 10.12it/s] 86%|████████▌ | 429/500 [00:43<00:05, 12.65it/s] 86%|████████▌ | 431/500 [00:44<00:07,  9.41it/s] 87%|████████▋ | 433/500 [00:44<00:08,  7.73it/s] 87%|████████▋ | 436/500 [00:44<00:06, 10.34it/s] 88%|████████▊ | 439/500 [00:44<00:04, 12.63it/s] 88%|████████▊ | 442/500 [00:45<00:05, 10.31it/s] 89%|████████▉ | 444/500 [00:45<00:06,  8.07it/s] 89%|████████▉ | 447/500 [00:45<00:05, 10.37it/s] 90%|█████████ | 450/500 [00:45<00:03, 12.91it/s] 90%|█████████ | 452/500 [00:46<00:04,  9.78it/s] 91%|█████████ | 454/500 [00:46<00:05,  7.83it/s] 91%|█████████▏| 457/500 [00:46<00:04, 10.56it/s] 92%|█████████▏| 460/500 [00:46<00:02, 13.40it/s] 93%|█████████▎| 463/500 [00:47<00:04,  8.27it/s] 93%|█████████▎| 465/500 [00:47<00:03,  8.96it/s] 94%|█████████▎| 468/500 [00:47<00:02, 11.53it/s] 94%|█████████▍| 471/500 [00:47<00:02, 14.05it/s] 95%|█████████▍| 474/500 [00:48<00:03,  8.05it/s] 95%|█████████▌| 477/500 [00:48<00:02, 10.13it/s] 96%|█████████▌| 480/500 [00:48<00:01, 12.41it/s] 97%|█████████▋| 483/500 [00:49<00:01, 10.05it/s] 97%|█████████▋| 485/500 [00:49<00:01,  8.19it/s] 98%|█████████▊| 488/500 [00:49<00:01, 10.48it/s] 98%|█████████▊| 491/500 [00:49<00:00, 12.75it/s] 99%|█████████▊| 493/500 [00:50<00:00,  9.52it/s] 99%|█████████▉| 495/500 [00:50<00:00,  7.87it/s]100%|█████████▉| 498/500 [00:50<00:00, 10.21it/s]100%|██████████| 500/500 [00:50<00:00,  9.82it/s]
+Sim loop done, converting and saving recorded sim data...
+All reset times:  [0.0, 9.98]
+(500, 3)
+(500, 3)
+[INFO] 已保存评估指标: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/平地0.4/eval_checkpoint_1500_seed_46_action_delay_0_scenario_walk_x_flat_terrain_0.4mps/metrics_summary.json
+[INFO] 已保存评估数组: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/平地0.4/eval_checkpoint_1500_seed_46_action_delay_0_scenario_walk_x_flat_terrain_0.4mps/plots/sim_data.npz
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 550.163.01    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 15478ce1.. |
+|     |                                  |        |     |            | 41        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 2d0e24e4.. |
+|     |                                  |        |     |            | 61        |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 2f067e11.. |
+|     |                                  |        |     |            | 81        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 5ed17834.. |
+|     |                                  |        |     |            | a1        |            |
+|---------------------------------------------------------------------------------------------|
+| 4   | Tesla V100-PCIE-32GB             | Yes: 0 |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 385c2c9d.. |
+|     |                                  |        |     |            | c1        |            |
+|---------------------------------------------------------------------------------------------|
+| 5   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | ae07b535.. |
+|     |                                  |        |     |            | e1        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-136-generic
+| Processor: AMD EPYC 9654 96-Core Processor
+| Cores: 192 | Logical Cores: 192
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 1031725 | Free Memory: 667124
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-03T02:36:24Z [25,280ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 4
+2026-11-03T02:36:25Z [25,316ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+[INFO] Using eval seed=46
+[INFO] Loading model from: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/平地0.8/model_1500.pt
+[INFO] Detected policy backend=clean_rl, selected policy backend=clean_rl
+Observation dimension=236, selected task=LoComposition-Go2-Rough-Terrain-Joint-State-History-Play-v0
+[INFO] Resolved evaluation robot profile=go2
+[INFO][AppLauncher]: Using device: cuda
+[INFO][AppLauncher]: Loading experience file: /home/xy.chen/tw/LoComposition/dependencies/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261103_103732.log
+2026-11-03T02:37:32Z [117ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-03T02:37:32Z [508ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-03T02:37:32Z [645ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-03T02:37:32Z [655ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-11-03T02:37:34Z [2,111ms] [Warning] [carb.cudainterop.plugin] CUDA_VISIBLE_DEVICES environment variable is set.
+2026-11-03T02:37:34Z [2,111ms] [Warning] [carb.cudainterop.plugin] Note CUDA device enumeration and Omniverse device enumeration are different.
+2026-11-03T02:37:34Z [2,111ms] [Warning] [carb.cudainterop.plugin] Setting CUDA_VISIBLE_DEVICES can lead to undesired behavior or crashes.
+2026-11-03T02:37:34Z [2,724ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:37:34Z [2,724ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:37:34Z [2,724ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:37:34Z [2,724ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:37:34Z [2,724ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:37:34Z [2,724ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:37:34Z [2,725ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+ISAACLAB_NUCLEUS_DIR=https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab
+[INFO]: Parsing configuration from: locomposition.tasks.locomotion.velocity.config.solo12.locomposition_go2_rough_terrain_env_cfg:Go2RoughTerrainEnvCfgJointStateHistory_PLAY
+[INFO] Replaced the PLAY robot config with UNITREE_GO2_CFG_TRAIN for this evaluation.
+[INFO] Loaded action scale from training params/env.yaml
+[INFO] Training actions.joint_pos.scale = 0.8
+[INFO] Eval actions.joint_pos.scale before override = 0.8
+[INFO] Eval actions.joint_pos.scale after override = 0.8
+[INFO] Set latency for joint_pos_history to 0
+[INFO] Set latency for joint_vel_history to 0
+[INFO] Set latency for base_ang_vel to 0
+[INFO] Set latency for projected_gravity to 0
+[INFO] Set latency for actions to 0
+[INFO] Set latency for height_map to 0
+seed=46
+env_cfg.seed=46
+env_cfg.sim.random_seed=46
+terrain_generator.seed=46
+eval_base_dir=/home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/平地0.8/eval_checkpoint_1500_seed_46_action_delay_0_scenario_cot_sweep_walk_x_flat_terrain_0.8, env_name=种子46, run_name=平地0.8, task_name=LoComposition-Go2-Rough-Terrain-Joint-State-History-Play-v0
+Skipping Cost of Transport sweep scenarios
+[INFO] Loaded eval constraint bounds from params/env.yaml:
+{
+    joint_torque: (-20.0, 20.0)
+    joint_velocity: (-25.0, 25.0)
+    joint_acceleration: (-800.0, 800.0)
+    action_rate: (-80.0, 80.0)
+    base_orientation: (-0.1, 0.1)
+    foot_contact_force: (0.0, 300.0)
+    FL_thigh_joint: (None, 1.5)
+    FR_thigh_joint: (None, 1.5)
+    RL_thigh_joint: (None, 1.5)
+    RR_thigh_joint: (None, 1.5)
+    upsidedown: (-0.0, 0.0)
+    FL_hip_joint: (-0.19999999999999998, 0.4)
+    FR_hip_joint: (-0.4, 0.19999999999999998)
+    RL_hip_joint: (-0.19999999999999998, 0.4)
+    RR_hip_joint: (-0.4, 0.19999999999999998)
+}
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-03_10-37-37.log[0m
+[36m======================================================================================[0m
+
+[33m10:37:37 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 46
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+[INFO] Generating terrains randomly took : 2.304359 seconds
+[INFO]: Time taken for scene creation : 4.413253 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 8
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 1.233178 seconds
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++------------------------------------------------------------+
+|                    Active Command Terms                    |
++-------+---------------+------------------------------------+
+| Index | Name          |                Type                |
++-------+---------------+------------------------------------+
+|   0   | base_velocity | UniformVelocityCommandWithDeadzone |
++-------+---------------+------------------------------------+
+
+[INFO] Event Manager:  <EventManager> contains 2 active terms.
++---------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++----------+----------------------------+
+|  Index   | Name                       |
++----------+----------------------------+
+|    0     | physics_material           |
+|    1     | randomize_com              |
+|    2     | randomize_mass             |
+|    3     | force_hard_terrain         |
++----------+----------------------------+
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++--------+----------------------------+
+| Index  | Name                       |
++--------+----------------------------+
+|   0    | reset_base                 |
+|   1    | reset_robot_joints         |
+|   2    | episodic_height_offset     |
++--------+----------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 12)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          12 |
++--------+-------------+-------------+
+
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[INFO] Observation Manager: <ObservationManager> contains 1 groups.
++----------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (236,)) |
++-----------+--------------------------------+-------------+
+|   Index   | Name                           |    Shape    |
++-----------+--------------------------------+-------------+
+|     0     | base_ang_vel                   |     (3,)    |
+|     1     | velocity_commands              |     (3,)    |
+|     2     | projected_gravity              |     (3,)    |
+|     3     | joint_pos_history              |    (36,)    |
+|     4     | joint_vel_history              |    (36,)    |
+|     5     | actions                        |    (12,)    |
+|     6     | height_map                     |    (143,)   |
++-----------+--------------------------------+-------------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 3 active terms.
++---------------------------------+
+|     Active Termination Terms    |
++-------+--------------+----------+
+| Index | Name         | Time Out |
++-------+--------------+----------+
+|   0   | time_out     |   True   |
+|   1   | base_contact |  False   |
+|   2   | upside_down  |  False   |
++-------+--------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 2 active terms.
++---------------------------------------+
+|          Active Reward Terms          |
++-------+----------------------+--------+
+| Index | Name                 | Weight |
++-------+----------------------+--------+
+|   0   | track_lin_vel_xy_exp |    1.0 |
+|   1   | track_ang_vel_z_exp  |    0.5 |
++-------+----------------------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 7 active terms.
++----------------------------+
+|  Active Curriculum Terms   |
++-------+--------------------+
+| Index | Name               |
++-------+--------------------+
+|   0   | joint_torque       |
+|   1   | joint_velocity     |
+|   2   | joint_acceleration |
+|   3   | action_rate        |
+|   4   | hip_position       |
+|   5   | base_orientation   |
+|   6   | terrain_levels     |
++-------+--------------------+
+
+[INFO] Constraint Manager:  <ConstraintManager> contains 11 active terms.
++-----------------------------------------------------------------------------------------------------------------------+
+|                                                Active Constraint Terms                                                |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+| Index | Name               | Limit |                                  Names                                   | Max p |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+|   0   | joint_torque       |  20.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   1   | joint_velocity     |  25.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   2   | joint_acceleration | 800.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   3   | action_rate        |  80.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   4   | base_orientation   |   0.1 |                                    -                                     |  0.25 |
+|   5   | contact            |     - |                           ['base', '.*_thigh']                           |   1.0 |
+|   6   | foot_contact_force | 300.0 |                               ['.*_foot']                                |   1.0 |
+|   7   | front_hfe_position |   1.5 | ['FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint'] |   1.0 |
+|   8   | upsidedown         |   0.0 |                                    -                                     |   1.0 |
+|   9   | hip_position       |   0.3 |                             ['.*_hip_joint']                             |  0.25 |
+|   10  | no_move            |     - |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |   0.1 |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+
+[INFO]: Completed setting up the environment...
+[INFO] Runtime env actions.joint_pos.scale = 0.8
+[SEED CHECK] runtime env seed=46
+[SEED CHECK] runtime sim seed=46
+[SEED CHECK] runtime terrain seed=46
+[INFO] Recording base COM acceleration from body index 0: base
+  0%|          | 0/500 [00:00<?, ?it/s]Resetting env and setting fixed command + spawn point for scenario=('cot_sweep_walk_x_flat_terrain_0.8', tensor([0.8000, 0.0000, 0.0000], device='cuda:0'), (tensor([30.0000, 30.0000,  0.4000], device='cuda:0'), tensor([0., 0., 0., 1.], device='cuda:0')))...
+  0%|          | 1/500 [00:00<04:17,  1.94it/s]  0%|          | 2/500 [00:01<04:18,  1.93it/s]  1%|          | 5/500 [00:01<01:26,  5.70it/s]  2%|▏         | 8/500 [00:01<00:53,  9.25it/s]  2%|▏         | 10/500 [00:01<01:01,  7.96it/s]  2%|▏         | 12/500 [00:02<01:16,  6.41it/s]  3%|▎         | 15/500 [00:02<00:53,  9.09it/s]  3%|▎         | 17/500 [00:02<00:45, 10.71it/s]  4%|▍         | 19/500 [00:02<00:39, 12.03it/s]  4%|▍         | 21/500 [00:02<01:04,  7.46it/s]  5%|▍         | 23/500 [00:03<01:04,  7.35it/s]  5%|▌         | 25/500 [00:03<00:55,  8.53it/s]  6%|▌         | 28/500 [00:03<00:51,  9.16it/s]  6%|▌         | 30/500 [00:04<01:10,  6.65it/s]  7%|▋         | 33/500 [00:04<00:51,  9.11it/s]  7%|▋         | 36/500 [00:04<00:41, 11.24it/s]  8%|▊         | 38/500 [00:04<00:45, 10.13it/s]  8%|▊         | 40/500 [00:05<01:05,  6.99it/s]  9%|▊         | 43/500 [00:05<00:50,  9.14it/s]  9%|▉         | 45/500 [00:05<00:43, 10.36it/s]  9%|▉         | 47/500 [00:06<01:04,  6.97it/s] 10%|▉         | 49/500 [00:06<01:01,  7.36it/s] 10%|█         | 52/500 [00:06<00:45,  9.88it/s] 11%|█         | 55/500 [00:06<00:42, 10.52it/s] 11%|█▏        | 57/500 [00:07<01:03,  6.95it/s] 12%|█▏        | 59/500 [00:07<00:53,  8.26it/s] 12%|█▏        | 61/500 [00:07<00:45,  9.64it/s] 13%|█▎        | 63/500 [00:07<00:55,  7.88it/s] 13%|█▎        | 65/500 [00:08<01:05,  6.60it/s] 14%|█▎        | 68/500 [00:08<00:47,  9.15it/s] 14%|█▍        | 71/500 [00:08<00:36, 11.78it/s] 15%|█▍        | 74/500 [00:08<00:38, 11.15it/s] 15%|█▌        | 76/500 [00:09<00:55,  7.71it/s] 16%|█▌        | 79/500 [00:09<00:41, 10.18it/s] 16%|█▋        | 82/500 [00:09<00:32, 12.82it/s] 17%|█▋        | 84/500 [00:09<00:45,  9.12it/s] 17%|█▋        | 86/500 [00:10<00:52,  7.95it/s] 18%|█▊        | 89/500 [00:10<00:39, 10.37it/s] 18%|█▊        | 92/500 [00:10<00:31, 12.81it/s] 19%|█▉        | 94/500 [00:10<00:38, 10.46it/s] 19%|█▉        | 96/500 [00:11<00:54,  7.44it/s] 20%|█▉        | 99/500 [00:11<00:40, 10.00it/s] 20%|██        | 102/500 [00:11<00:31, 12.52it/s] 21%|██        | 104/500 [00:11<00:42,  9.29it/s] 21%|██        | 106/500 [00:12<00:51,  7.62it/s] 22%|██▏       | 108/500 [00:12<00:43,  9.12it/s] 22%|██▏       | 110/500 [00:12<00:36, 10.68it/s] 23%|██▎       | 113/500 [00:12<00:34, 11.19it/s] 23%|██▎       | 115/500 [00:13<00:55,  6.97it/s] 24%|██▎       | 118/500 [00:13<00:40,  9.34it/s] 24%|██▍       | 120/500 [00:13<00:35, 10.73it/s] 24%|██▍       | 122/500 [00:14<00:47,  8.01it/s] 25%|██▍       | 124/500 [00:14<00:51,  7.25it/s] 25%|██▌       | 127/500 [00:14<00:37,  9.84it/s] 26%|██▌       | 130/500 [00:14<00:29, 12.50it/s] 26%|██▋       | 132/500 [00:14<00:29, 12.33it/s] 27%|██▋       | 134/500 [00:15<00:41,  8.78it/s] 27%|██▋       | 136/500 [00:15<00:51,  7.10it/s] 28%|██▊       | 138/500 [00:16<00:56,  6.42it/s] 28%|██▊       | 141/500 [00:16<00:40,  8.77it/s] 29%|██▊       | 143/500 [00:16<00:34, 10.26it/s] 29%|██▉       | 145/500 [00:16<00:30, 11.63it/s] 29%|██▉       | 147/500 [00:16<00:49,  7.10it/s] 30%|██▉       | 149/500 [00:17<00:44,  7.97it/s] 30%|███       | 152/500 [00:17<00:32, 10.73it/s] 31%|███       | 155/500 [00:17<00:35,  9.73it/s] 31%|███▏      | 157/500 [00:18<00:46,  7.45it/s] 32%|███▏      | 160/500 [00:18<00:34,  9.78it/s] 33%|███▎      | 163/500 [00:18<00:28, 12.03it/s] 33%|███▎      | 165/500 [00:18<00:25, 13.19it/s] 33%|███▎      | 167/500 [00:19<00:46,  7.21it/s] 34%|███▍      | 169/500 [00:19<00:38,  8.63it/s] 34%|███▍      | 172/500 [00:19<00:28, 11.40it/s] 35%|███▍      | 174/500 [00:19<00:26, 12.36it/s] 35%|███▌      | 176/500 [00:20<00:47,  6.79it/s] 36%|███▌      | 178/500 [00:20<00:40,  8.01it/s] 36%|███▌      | 181/500 [00:20<00:30, 10.40it/s] 37%|███▋      | 183/500 [00:20<00:33,  9.55it/s] 37%|███▋      | 185/500 [00:21<00:46,  6.72it/s] 37%|███▋      | 187/500 [00:21<00:39,  7.89it/s] 38%|███▊      | 190/500 [00:21<00:29, 10.49it/s] 38%|███▊      | 192/500 [00:21<00:36,  8.42it/s] 39%|███▉      | 194/500 [00:22<00:43,  7.08it/s] 39%|███▉      | 197/500 [00:22<00:31,  9.76it/s] 40%|████      | 200/500 [00:22<00:23, 12.51it/s] 40%|████      | 202/500 [00:22<00:32,  9.15it/s] 41%|████      | 204/500 [00:23<00:38,  7.71it/s] 41%|████▏     | 207/500 [00:23<00:28, 10.10it/s] 42%|████▏     | 210/500 [00:23<00:24, 11.97it/s] 42%|████▏     | 212/500 [00:24<00:38,  7.55it/s] 43%|████▎     | 214/500 [00:24<00:34,  8.18it/s] 43%|████▎     | 216/500 [00:24<00:29,  9.58it/s] 44%|████▎     | 218/500 [00:24<00:26, 10.47it/s] 44%|████▍     | 220/500 [00:25<00:40,  6.90it/s] 44%|████▍     | 222/500 [00:25<00:38,  7.20it/s] 45%|████▌     | 225/500 [00:25<00:27,  9.93it/s] 46%|████▌     | 228/500 [00:25<00:21, 12.50it/s] 46%|████▌     | 230/500 [00:25<00:20, 13.49it/s] 46%|████▋     | 232/500 [00:26<00:34,  7.77it/s] 47%|████▋     | 234/500 [00:26<00:31,  8.50it/s] 47%|████▋     | 237/500 [00:26<00:23, 11.27it/s] 48%|████▊     | 240/500 [00:26<00:18, 13.70it/s] 48%|████▊     | 242/500 [00:27<00:30,  8.50it/s] 49%|████▉     | 244/500 [00:27<00:31,  8.15it/s] 49%|████▉     | 247/500 [00:27<00:23, 10.86it/s] 50%|█████     | 250/500 [00:27<00:18, 13.48it/s] 50%|█████     | 252/500 [00:27<00:25,  9.58it/s] 51%|█████     | 254/500 [00:28<00:31,  7.91it/s] 51%|█████▏    | 257/500 [00:28<00:23, 10.21it/s] 52%|█████▏    | 260/500 [00:28<00:19, 12.44it/s] 52%|█████▏    | 262/500 [00:28<00:22, 10.71it/s] 53%|█████▎    | 264/500 [00:29<00:32,  7.35it/s] 53%|█████▎    | 267/500 [00:29<00:23,  9.85it/s] 54%|█████▍    | 270/500 [00:29<00:18, 12.32it/s] 54%|█████▍    | 272/500 [00:29<00:20, 11.03it/s] 55%|█████▍    | 274/500 [00:30<00:30,  7.32it/s] 55%|█████▌    | 277/500 [00:30<00:23,  9.58it/s] 56%|█████▌    | 280/500 [00:30<00:18, 11.73it/s] 56%|█████▋    | 282/500 [00:31<00:28,  7.57it/s] 57%|█████▋    | 284/500 [00:31<00:26,  8.08it/s] 57%|█████▋    | 287/500 [00:31<00:19, 10.80it/s] 58%|█████▊    | 290/500 [00:31<00:15, 13.41it/s] 59%|█████▊    | 293/500 [00:31<00:13, 15.09it/s] 59%|█████▉    | 295/500 [00:32<00:25,  7.89it/s] 60%|█████▉    | 298/500 [00:32<00:19, 10.21it/s] 60%|██████    | 301/500 [00:32<00:15, 12.66it/s] 61%|██████    | 304/500 [00:32<00:13, 14.81it/s] 61%|██████▏   | 307/500 [00:33<00:23,  8.20it/s] 62%|██████▏   | 310/500 [00:33<00:18, 10.40it/s] 63%|██████▎   | 313/500 [00:33<00:14, 12.53it/s] 63%|██████▎   | 316/500 [00:34<00:23,  7.70it/s] 64%|██████▍   | 319/500 [00:34<00:18,  9.81it/s] 64%|██████▍   | 322/500 [00:34<00:14, 12.15it/s] 65%|██████▌   | 325/500 [00:35<00:19,  9.06it/s] 65%|██████▌   | 327/500 [00:35<00:20,  8.56it/s] 66%|██████▌   | 330/500 [00:35<00:15, 10.96it/s] 67%|██████▋   | 333/500 [00:35<00:12, 13.44it/s] 67%|██████▋   | 336/500 [00:36<00:18,  9.11it/s] 68%|██████▊   | 338/500 [00:36<00:18,  8.82it/s] 68%|██████▊   | 341/500 [00:36<00:14, 11.14it/s] 69%|██████▉   | 344/500 [00:36<00:11, 13.53it/s] 69%|██████▉   | 346/500 [00:37<00:18,  8.55it/s] 70%|██████▉   | 348/500 [00:37<00:18,  8.04it/s] 70%|███████   | 351/500 [00:37<00:14, 10.56it/s] 71%|███████   | 353/500 [00:37<00:13, 10.97it/s] 71%|███████   | 355/500 [00:38<00:21,  6.83it/s] 72%|███████▏  | 358/500 [00:38<00:15,  9.33it/s] 72%|███████▏  | 361/500 [00:38<00:11, 11.77it/s] 73%|███████▎  | 363/500 [00:38<00:11, 11.90it/s] 73%|███████▎  | 365/500 [00:39<00:19,  7.05it/s] 74%|███████▎  | 368/500 [00:39<00:14,  9.34it/s] 74%|███████▍  | 370/500 [00:39<00:12, 10.69it/s] 74%|███████▍  | 372/500 [00:39<00:10, 11.68it/s] 75%|███████▍  | 374/500 [00:40<00:10, 12.52it/s] 75%|███████▌  | 376/500 [00:40<00:14,  8.79it/s] 76%|███████▌  | 378/500 [00:40<00:16,  7.39it/s] 76%|███████▌  | 380/500 [00:41<00:19,  6.04it/s] 77%|███████▋  | 383/500 [00:41<00:14,  8.33it/s] 77%|███████▋  | 385/500 [00:41<00:12,  9.53it/s] 77%|███████▋  | 387/500 [00:41<00:11, 10.21it/s] 78%|███████▊  | 389/500 [00:42<00:16,  6.90it/s] 78%|███████▊  | 391/500 [00:42<00:15,  7.26it/s] 79%|███████▊  | 393/500 [00:42<00:12,  8.61it/s] 79%|███████▉  | 395/500 [00:42<00:10,  9.64it/s] 79%|███████▉  | 397/500 [00:43<00:13,  7.69it/s] 80%|███████▉  | 399/500 [00:43<00:15,  6.63it/s] 80%|████████  | 402/500 [00:43<00:10,  9.25it/s] 81%|████████  | 405/500 [00:43<00:08, 11.73it/s] 81%|████████▏ | 407/500 [00:44<00:07, 12.19it/s] 82%|████████▏ | 409/500 [00:44<00:13,  6.97it/s] 82%|████████▏ | 412/500 [00:44<00:09,  9.23it/s] 83%|████████▎ | 415/500 [00:44<00:07, 11.52it/s] 83%|████████▎ | 417/500 [00:45<00:09,  8.87it/s] 84%|████████▍ | 419/500 [00:45<00:10,  7.47it/s] 84%|████████▍ | 422/500 [00:45<00:07,  9.91it/s] 85%|████████▌ | 425/500 [00:45<00:06, 12.35it/s] 86%|████████▌ | 428/500 [00:46<00:06, 10.63it/s] 86%|████████▌ | 430/500 [00:46<00:08,  7.87it/s] 87%|████████▋ | 433/500 [00:46<00:06, 10.02it/s] 87%|████████▋ | 436/500 [00:47<00:05, 12.24it/s] 88%|████████▊ | 438/500 [00:47<00:06,  9.12it/s] 88%|████████▊ | 440/500 [00:47<00:07,  7.76it/s] 89%|████████▊ | 443/500 [00:47<00:05, 10.11it/s] 89%|████████▉ | 446/500 [00:48<00:04, 12.06it/s] 90%|████████▉ | 448/500 [00:48<00:06,  8.06it/s] 90%|█████████ | 450/500 [00:48<00:06,  7.96it/s] 91%|█████████ | 453/500 [00:48<00:04, 10.48it/s] 91%|█████████ | 456/500 [00:49<00:03, 12.78it/s] 92%|█████████▏| 459/500 [00:49<00:02, 14.93it/s] 92%|█████████▏| 461/500 [00:49<00:04,  8.76it/s] 93%|█████████▎| 463/500 [00:50<00:04,  8.76it/s] 93%|█████████▎| 466/500 [00:50<00:03, 11.21it/s] 94%|█████████▍| 469/500 [00:50<00:02, 12.20it/s] 94%|█████████▍| 471/500 [00:50<00:03,  7.34it/s] 95%|█████████▍| 474/500 [00:51<00:02,  9.71it/s] 95%|█████████▌| 477/500 [00:51<00:01, 12.22it/s] 96%|█████████▌| 480/500 [00:51<00:01, 12.00it/s] 96%|█████████▋| 482/500 [00:52<00:02,  7.77it/s] 97%|█████████▋| 485/500 [00:52<00:01,  9.79it/s] 98%|█████████▊| 488/500 [00:52<00:00, 12.04it/s] 98%|█████████▊| 490/500 [00:52<00:00, 13.04it/s] 98%|█████████▊| 492/500 [00:53<00:01,  7.16it/s] 99%|█████████▉| 494/500 [00:53<00:00,  8.57it/s] 99%|█████████▉| 497/500 [00:53<00:00, 11.15it/s]100%|█████████▉| 499/500 [00:53<00:00, 10.03it/s]100%|██████████| 500/500 [00:53<00:00,  9.28it/s]
+Sim loop done, converting and saving recorded sim data...
+All reset times:  [0.0, 9.98]
+(500, 3)
+(500, 3)
+[INFO] 已保存评估指标: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/平地0.8/eval_checkpoint_1500_seed_46_action_delay_0_scenario_cot_sweep_walk_x_flat_terrain_0.8/metrics_summary.json
+[INFO] 已保存评估数组: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/平地0.8/eval_checkpoint_1500_seed_46_action_delay_0_scenario_cot_sweep_walk_x_flat_terrain_0.8/plots/sim_data.npz
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 550.163.01    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 15478ce1.. |
+|     |                                  |        |     |            | 41        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 2d0e24e4.. |
+|     |                                  |        |     |            | 61        |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 2f067e11.. |
+|     |                                  |        |     |            | 81        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 5ed17834.. |
+|     |                                  |        |     |            | a1        |            |
+|---------------------------------------------------------------------------------------------|
+| 4   | Tesla V100-PCIE-32GB             | Yes: 0 |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 385c2c9d.. |
+|     |                                  |        |     |            | c1        |            |
+|---------------------------------------------------------------------------------------------|
+| 5   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | ae07b535.. |
+|     |                                  |        |     |            | e1        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-136-generic
+| Processor: AMD EPYC 9654 96-Core Processor
+| Cores: 192 | Logical Cores: 192
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 1031725 | Free Memory: 651749
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-03T02:37:35Z [3,324ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 4
+2026-11-03T02:37:35Z [3,457ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+[INFO] Using eval seed=46
+[INFO] Loading model from: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/平地1.0/model_1500.pt
+[INFO] Detected policy backend=clean_rl, selected policy backend=clean_rl
+Observation dimension=236, selected task=LoComposition-Go2-Rough-Terrain-Joint-State-History-Play-v0
+[INFO] Resolved evaluation robot profile=go2
+[INFO][AppLauncher]: Using device: cuda
+[INFO][AppLauncher]: Loading experience file: /home/xy.chen/tw/LoComposition/dependencies/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261103_103840.log
+2026-11-03T02:38:40Z [106ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-03T02:38:41Z [461ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-03T02:38:41Z [587ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-03T02:38:41Z [597ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-11-03T02:38:42Z [2,012ms] [Warning] [carb.cudainterop.plugin] CUDA_VISIBLE_DEVICES environment variable is set.
+2026-11-03T02:38:42Z [2,012ms] [Warning] [carb.cudainterop.plugin] Note CUDA device enumeration and Omniverse device enumeration are different.
+2026-11-03T02:38:42Z [2,012ms] [Warning] [carb.cudainterop.plugin] Setting CUDA_VISIBLE_DEVICES can lead to undesired behavior or crashes.
+2026-11-03T02:38:43Z [2,755ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:38:43Z [2,755ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:38:43Z [2,755ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:38:43Z [2,755ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:38:43Z [2,755ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:38:43Z [2,755ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:38:43Z [2,756ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+ISAACLAB_NUCLEUS_DIR=https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab
+[INFO]: Parsing configuration from: locomposition.tasks.locomotion.velocity.config.solo12.locomposition_go2_rough_terrain_env_cfg:Go2RoughTerrainEnvCfgJointStateHistory_PLAY
+[INFO] Replaced the PLAY robot config with UNITREE_GO2_CFG_TRAIN for this evaluation.
+[INFO] Loaded action scale from training params/env.yaml
+[INFO] Training actions.joint_pos.scale = 0.8
+[INFO] Eval actions.joint_pos.scale before override = 0.8
+[INFO] Eval actions.joint_pos.scale after override = 0.8
+[INFO] Set latency for joint_pos_history to 0
+[INFO] Set latency for joint_vel_history to 0
+[INFO] Set latency for base_ang_vel to 0
+[INFO] Set latency for projected_gravity to 0
+[INFO] Set latency for actions to 0
+[INFO] Set latency for height_map to 0
+seed=46
+env_cfg.seed=46
+env_cfg.sim.random_seed=46
+terrain_generator.seed=46
+eval_base_dir=/home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/平地1.0/eval_checkpoint_1500_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps, env_name=种子46, run_name=平地1.0, task_name=LoComposition-Go2-Rough-Terrain-Joint-State-History-Play-v0
+Skipping Cost of Transport sweep scenarios
+[INFO] Loaded eval constraint bounds from params/env.yaml:
+{
+    joint_torque: (-20.0, 20.0)
+    joint_velocity: (-25.0, 25.0)
+    joint_acceleration: (-800.0, 800.0)
+    action_rate: (-80.0, 80.0)
+    base_orientation: (-0.1, 0.1)
+    foot_contact_force: (0.0, 300.0)
+    FL_thigh_joint: (None, 1.5)
+    FR_thigh_joint: (None, 1.5)
+    RL_thigh_joint: (None, 1.5)
+    RR_thigh_joint: (None, 1.5)
+    upsidedown: (-0.0, 0.0)
+    FL_hip_joint: (-0.19999999999999998, 0.4)
+    FR_hip_joint: (-0.4, 0.19999999999999998)
+    RL_hip_joint: (-0.19999999999999998, 0.4)
+    RR_hip_joint: (-0.4, 0.19999999999999998)
+}
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-03_10-38-46.log[0m
+[36m======================================================================================[0m
+
+[33m10:38:46 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 46
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+[INFO] Generating terrains randomly took : 2.170128 seconds
+[INFO]: Time taken for scene creation : 5.419983 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 8
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 1.288967 seconds
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++------------------------------------------------------------+
+|                    Active Command Terms                    |
++-------+---------------+------------------------------------+
+| Index | Name          |                Type                |
++-------+---------------+------------------------------------+
+|   0   | base_velocity | UniformVelocityCommandWithDeadzone |
++-------+---------------+------------------------------------+
+
+[INFO] Event Manager:  <EventManager> contains 2 active terms.
++---------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++----------+----------------------------+
+|  Index   | Name                       |
++----------+----------------------------+
+|    0     | physics_material           |
+|    1     | randomize_com              |
+|    2     | randomize_mass             |
+|    3     | force_hard_terrain         |
++----------+----------------------------+
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++--------+----------------------------+
+| Index  | Name                       |
++--------+----------------------------+
+|   0    | reset_base                 |
+|   1    | reset_robot_joints         |
+|   2    | episodic_height_offset     |
++--------+----------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 12)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          12 |
++--------+-------------+-------------+
+
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[INFO] Observation Manager: <ObservationManager> contains 1 groups.
++----------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (236,)) |
++-----------+--------------------------------+-------------+
+|   Index   | Name                           |    Shape    |
++-----------+--------------------------------+-------------+
+|     0     | base_ang_vel                   |     (3,)    |
+|     1     | velocity_commands              |     (3,)    |
+|     2     | projected_gravity              |     (3,)    |
+|     3     | joint_pos_history              |    (36,)    |
+|     4     | joint_vel_history              |    (36,)    |
+|     5     | actions                        |    (12,)    |
+|     6     | height_map                     |    (143,)   |
++-----------+--------------------------------+-------------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 3 active terms.
++---------------------------------+
+|     Active Termination Terms    |
++-------+--------------+----------+
+| Index | Name         | Time Out |
++-------+--------------+----------+
+|   0   | time_out     |   True   |
+|   1   | base_contact |  False   |
+|   2   | upside_down  |  False   |
++-------+--------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 2 active terms.
++---------------------------------------+
+|          Active Reward Terms          |
++-------+----------------------+--------+
+| Index | Name                 | Weight |
++-------+----------------------+--------+
+|   0   | track_lin_vel_xy_exp |    1.0 |
+|   1   | track_ang_vel_z_exp  |    0.5 |
++-------+----------------------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 7 active terms.
++----------------------------+
+|  Active Curriculum Terms   |
++-------+--------------------+
+| Index | Name               |
++-------+--------------------+
+|   0   | joint_torque       |
+|   1   | joint_velocity     |
+|   2   | joint_acceleration |
+|   3   | action_rate        |
+|   4   | hip_position       |
+|   5   | base_orientation   |
+|   6   | terrain_levels     |
++-------+--------------------+
+
+[INFO] Constraint Manager:  <ConstraintManager> contains 11 active terms.
++-----------------------------------------------------------------------------------------------------------------------+
+|                                                Active Constraint Terms                                                |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+| Index | Name               | Limit |                                  Names                                   | Max p |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+|   0   | joint_torque       |  20.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   1   | joint_velocity     |  25.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   2   | joint_acceleration | 800.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   3   | action_rate        |  80.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   4   | base_orientation   |   0.1 |                                    -                                     |  0.25 |
+|   5   | contact            |     - |                           ['base', '.*_thigh']                           |   1.0 |
+|   6   | foot_contact_force | 300.0 |                               ['.*_foot']                                |   1.0 |
+|   7   | front_hfe_position |   1.5 | ['FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint'] |   1.0 |
+|   8   | upsidedown         |   0.0 |                                    -                                     |   1.0 |
+|   9   | hip_position       |   0.3 |                             ['.*_hip_joint']                             |  0.25 |
+|   10  | no_move            |     - |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |   0.1 |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+
+[INFO]: Completed setting up the environment...
+[INFO] Runtime env actions.joint_pos.scale = 0.8
+[SEED CHECK] runtime env seed=46
+[SEED CHECK] runtime sim seed=46
+[SEED CHECK] runtime terrain seed=46
+[INFO] Recording base COM acceleration from body index 0: base
+  0%|          | 0/500 [00:00<?, ?it/s]Resetting env and setting fixed command + spawn point for scenario=('walk_x_flat_terrain_1.0mps', tensor([1., 0., 0.], device='cuda:0'), (tensor([30.0000, 30.0000,  0.4000], device='cuda:0'), tensor([0., 0., 0., 1.], device='cuda:0')))...
+  0%|          | 1/500 [00:00<05:12,  1.60it/s]  0%|          | 2/500 [00:01<04:55,  1.68it/s]  1%|          | 5/500 [00:01<01:38,  5.05it/s]  1%|▏         | 7/500 [00:01<01:12,  6.82it/s]  2%|▏         | 9/500 [00:02<01:39,  4.94it/s]  2%|▏         | 10/500 [00:02<01:32,  5.31it/s]  3%|▎         | 13/500 [00:02<00:56,  8.60it/s]  3%|▎         | 16/500 [00:02<00:40, 11.88it/s]  4%|▍         | 19/500 [00:02<00:32, 14.73it/s]  4%|▍         | 22/500 [00:03<01:00,  7.89it/s]  5%|▌         | 25/500 [00:03<00:46, 10.21it/s]  6%|▌         | 28/500 [00:03<00:37, 12.51it/s]  6%|▌         | 31/500 [00:03<00:47,  9.97it/s]  7%|▋         | 33/500 [00:04<00:55,  8.41it/s]  7%|▋         | 36/500 [00:04<00:42, 10.89it/s]  8%|▊         | 39/500 [00:04<00:34, 13.45it/s]  8%|▊         | 42/500 [00:05<00:53,  8.61it/s]  9%|▉         | 44/500 [00:05<00:51,  8.91it/s]  9%|▉         | 47/500 [00:05<00:39, 11.35it/s] 10%|█         | 50/500 [00:05<00:35, 12.70it/s] 10%|█         | 52/500 [00:06<00:55,  8.13it/s] 11%|█         | 54/500 [00:06<00:54,  8.22it/s] 11%|█▏        | 57/500 [00:06<00:41, 10.63it/s] 12%|█▏        | 59/500 [00:06<00:36, 11.92it/s] 12%|█▏        | 61/500 [00:06<00:35, 12.41it/s] 13%|█▎        | 63/500 [00:07<01:04,  6.80it/s] 13%|█▎        | 66/500 [00:07<00:46,  9.30it/s] 14%|█▍        | 69/500 [00:07<00:35, 12.04it/s] 14%|█▍        | 72/500 [00:07<00:29, 14.61it/s] 15%|█▌        | 75/500 [00:08<00:52,  8.06it/s] 15%|█▌        | 77/500 [00:08<00:45,  9.24it/s] 16%|█▌        | 79/500 [00:08<00:39, 10.60it/s] 16%|█▌        | 81/500 [00:09<00:46,  8.98it/s] 17%|█▋        | 83/500 [00:09<01:00,  6.90it/s] 17%|█▋        | 86/500 [00:09<00:44,  9.36it/s] 18%|█▊        | 89/500 [00:09<00:35, 11.59it/s] 18%|█▊        | 91/500 [00:10<00:48,  8.39it/s] 19%|█▊        | 93/500 [00:10<00:53,  7.55it/s] 19%|█▉        | 96/500 [00:10<00:39, 10.20it/s] 20%|█▉        | 99/500 [00:10<00:31, 12.84it/s] 20%|██        | 101/500 [00:10<00:28, 14.03it/s] 21%|██        | 103/500 [00:11<00:47,  8.41it/s] 21%|██        | 105/500 [00:11<00:49,  8.02it/s] 21%|██▏       | 107/500 [00:11<00:42,  9.36it/s] 22%|██▏       | 109/500 [00:11<00:35, 10.97it/s] 22%|██▏       | 111/500 [00:12<00:38, 10.15it/s] 23%|██▎       | 113/500 [00:12<00:58,  6.56it/s] 23%|██▎       | 116/500 [00:12<00:42,  8.95it/s] 24%|██▍       | 119/500 [00:12<00:33, 11.23it/s] 24%|██▍       | 121/500 [00:13<00:51,  7.40it/s] 25%|██▍       | 123/500 [00:13<00:48,  7.76it/s] 25%|██▌       | 125/500 [00:13<00:40,  9.24it/s] 26%|██▌       | 128/500 [00:13<00:31, 11.63it/s] 26%|██▌       | 130/500 [00:14<00:49,  7.54it/s] 26%|██▋       | 132/500 [00:14<00:47,  7.81it/s] 27%|██▋       | 135/500 [00:14<00:36, 10.12it/s] 27%|██▋       | 137/500 [00:15<00:31, 11.43it/s] 28%|██▊       | 139/500 [00:15<00:55,  6.55it/s] 28%|██▊       | 142/500 [00:15<00:40,  8.88it/s] 29%|██▉       | 145/500 [00:15<00:30, 11.56it/s] 30%|██▉       | 148/500 [00:16<00:26, 13.48it/s] 30%|███       | 150/500 [00:16<00:46,  7.53it/s] 30%|███       | 152/500 [00:16<00:39,  8.84it/s] 31%|███       | 155/500 [00:16<00:30, 11.40it/s] 32%|███▏      | 158/500 [00:17<00:24, 14.04it/s] 32%|███▏      | 161/500 [00:17<00:42,  7.88it/s] 33%|███▎      | 164/500 [00:17<00:33, 10.14it/s] 33%|███▎      | 167/500 [00:18<00:27, 12.31it/s] 34%|███▍      | 170/500 [00:18<00:32, 10.27it/s] 34%|███▍      | 172/500 [00:18<00:40,  8.19it/s] 35%|███▌      | 175/500 [00:18<00:31, 10.37it/s] 36%|███▌      | 178/500 [00:19<00:24, 12.91it/s] 36%|███▌      | 181/500 [00:19<00:22, 13.97it/s] 37%|███▋      | 183/500 [00:19<00:26, 11.79it/s] 37%|███▋      | 185/500 [00:19<00:32,  9.61it/s] 37%|███▋      | 187/500 [00:20<00:39,  7.93it/s] 38%|███▊      | 189/500 [00:20<00:45,  6.88it/s] 38%|███▊      | 191/500 [00:20<00:37,  8.15it/s] 39%|███▊      | 193/500 [00:20<00:32,  9.58it/s] 39%|███▉      | 195/500 [00:21<00:37,  8.21it/s] 39%|███▉      | 197/500 [00:21<00:45,  6.64it/s] 40%|████      | 200/500 [00:21<00:32,  9.36it/s] 41%|████      | 203/500 [00:21<00:24, 12.17it/s] 41%|████      | 205/500 [00:21<00:23, 12.63it/s] 41%|████▏     | 207/500 [00:22<00:41,  7.13it/s] 42%|████▏     | 210/500 [00:22<00:29,  9.79it/s] 43%|████▎     | 213/500 [00:22<00:22, 12.59it/s] 43%|████▎     | 216/500 [00:22<00:20, 14.07it/s] 44%|████▍     | 219/500 [00:23<00:34,  8.16it/s] 44%|████▍     | 222/500 [00:23<00:27, 10.11it/s] 45%|████▍     | 224/500 [00:23<00:24, 11.21it/s] 45%|████▌     | 226/500 [00:24<00:31,  8.73it/s] 46%|████▌     | 228/500 [00:24<00:37,  7.32it/s] 46%|████▌     | 231/500 [00:24<00:27,  9.96it/s] 47%|████▋     | 234/500 [00:24<00:21, 12.58it/s] 47%|████▋     | 236/500 [00:25<00:21, 12.32it/s] 48%|████▊     | 238/500 [00:25<00:36,  7.19it/s] 48%|████▊     | 241/500 [00:25<00:26,  9.66it/s] 49%|████▉     | 244/500 [00:25<00:20, 12.37it/s] 49%|████▉     | 246/500 [00:26<00:20, 12.64it/s] 50%|████▉     | 248/500 [00:26<00:35,  7.20it/s] 50%|█████     | 251/500 [00:26<00:26,  9.50it/s] 51%|█████     | 254/500 [00:26<00:20, 12.10it/s] 51%|█████▏    | 257/500 [00:27<00:17, 13.77it/s] 52%|█████▏    | 259/500 [00:27<00:30,  7.85it/s] 52%|█████▏    | 261/500 [00:27<00:27,  8.83it/s] 53%|█████▎    | 264/500 [00:27<00:20, 11.69it/s] 53%|█████▎    | 267/500 [00:28<00:16, 14.26it/s] 54%|█████▍    | 270/500 [00:28<00:24,  9.34it/s] 54%|█████▍    | 272/500 [00:28<00:25,  9.04it/s] 55%|█████▌    | 275/500 [00:29<00:20, 11.06it/s] 56%|█████▌    | 278/500 [00:29<00:16, 13.24it/s] 56%|█████▌    | 280/500 [00:29<00:26,  8.25it/s] 56%|█████▋    | 282/500 [00:29<00:26,  8.21it/s] 57%|█████▋    | 285/500 [00:30<00:20, 10.70it/s] 58%|█████▊    | 288/500 [00:30<00:15, 13.27it/s] 58%|█████▊    | 290/500 [00:30<00:24,  8.69it/s] 58%|█████▊    | 292/500 [00:30<00:25,  8.08it/s] 59%|█████▉    | 295/500 [00:31<00:19, 10.56it/s] 60%|█████▉    | 298/500 [00:31<00:19, 10.60it/s] 60%|██████    | 300/500 [00:31<00:27,  7.40it/s] 61%|██████    | 303/500 [00:32<00:20,  9.53it/s] 61%|██████    | 306/500 [00:32<00:16, 11.77it/s] 62%|██████▏   | 309/500 [00:32<00:16, 11.43it/s] 62%|██████▏   | 311/500 [00:32<00:24,  7.69it/s] 63%|██████▎   | 314/500 [00:33<00:18, 10.10it/s] 63%|██████▎   | 317/500 [00:33<00:14, 12.26it/s] 64%|██████▍   | 319/500 [00:33<00:17, 10.21it/s] 64%|██████▍   | 321/500 [00:34<00:27,  6.57it/s] 65%|██████▍   | 323/500 [00:34<00:23,  7.60it/s] 65%|██████▌   | 325/500 [00:34<00:23,  7.30it/s] 65%|██████▌   | 327/500 [00:35<00:29,  5.84it/s] 66%|██████▌   | 330/500 [00:35<00:20,  8.24it/s] 67%|██████▋   | 333/500 [00:35<00:15, 10.69it/s] 67%|██████▋   | 335/500 [00:35<00:17,  9.68it/s] 67%|██████▋   | 337/500 [00:36<00:23,  6.94it/s] 68%|██████▊   | 340/500 [00:36<00:17,  9.06it/s] 69%|██████▊   | 343/500 [00:36<00:14, 11.11it/s] 69%|██████▉   | 345/500 [00:36<00:15, 10.31it/s] 69%|██████▉   | 347/500 [00:37<00:21,  7.11it/s] 70%|███████   | 350/500 [00:37<00:15,  9.73it/s] 71%|███████   | 353/500 [00:37<00:11, 12.36it/s] 71%|███████   | 356/500 [00:37<00:13, 10.36it/s] 72%|███████▏  | 358/500 [00:38<00:17,  8.11it/s] 72%|███████▏  | 361/500 [00:38<00:13, 10.55it/s] 73%|███████▎  | 363/500 [00:38<00:11, 11.69it/s] 73%|███████▎  | 365/500 [00:38<00:11, 11.84it/s] 73%|███████▎  | 367/500 [00:39<00:20,  6.40it/s] 74%|███████▍  | 369/500 [00:39<00:17,  7.57it/s] 74%|███████▍  | 371/500 [00:39<00:15,  8.60it/s] 75%|███████▍  | 373/500 [00:40<00:23,  5.39it/s] 75%|███████▍  | 374/500 [00:40<00:22,  5.71it/s] 75%|███████▌  | 376/500 [00:40<00:17,  6.94it/s] 76%|███████▌  | 378/500 [00:40<00:18,  6.75it/s] 76%|███████▌  | 379/500 [00:41<00:22,  5.32it/s] 76%|███████▌  | 380/500 [00:41<00:23,  5.17it/s] 76%|███████▋  | 382/500 [00:41<00:17,  6.82it/s] 77%|███████▋  | 383/500 [00:41<00:16,  7.23it/s] 77%|███████▋  | 385/500 [00:42<00:18,  6.33it/s] 77%|███████▋  | 386/500 [00:42<00:24,  4.63it/s] 77%|███████▋  | 387/500 [00:42<00:21,  5.20it/s] 78%|███████▊  | 389/500 [00:42<00:16,  6.71it/s] 78%|███████▊  | 390/500 [00:42<00:15,  7.02it/s] 78%|███████▊  | 391/500 [00:43<00:20,  5.26it/s] 78%|███████▊  | 392/500 [00:43<00:25,  4.30it/s] 79%|███████▉  | 394/500 [00:43<00:17,  6.05it/s] 79%|███████▉  | 396/500 [00:43<00:13,  7.49it/s] 80%|███████▉  | 398/500 [00:44<00:15,  6.48it/s] 80%|███████▉  | 399/500 [00:44<00:21,  4.75it/s] 80%|████████  | 401/500 [00:44<00:15,  6.26it/s] 81%|████████  | 403/500 [00:45<00:12,  7.75it/s] 81%|████████  | 405/500 [00:45<00:10,  8.85it/s] 81%|████████▏ | 407/500 [00:45<00:10,  9.01it/s] 82%|████████▏ | 409/500 [00:45<00:12,  7.07it/s] 82%|████████▏ | 410/500 [00:46<00:13,  6.76it/s] 82%|████████▏ | 411/500 [00:46<00:14,  6.12it/s] 82%|████████▏ | 412/500 [00:46<00:18,  4.82it/s] 83%|████████▎ | 413/500 [00:46<00:18,  4.73it/s] 83%|████████▎ | 414/500 [00:46<00:15,  5.45it/s] 83%|████████▎ | 416/500 [00:47<00:11,  7.39it/s] 83%|████████▎ | 417/500 [00:47<00:11,  6.95it/s] 84%|████████▎ | 418/500 [00:47<00:16,  4.88it/s] 84%|████████▍ | 419/500 [00:47<00:18,  4.48it/s] 84%|████████▍ | 421/500 [00:48<00:12,  6.31it/s] 85%|████████▍ | 423/500 [00:48<00:09,  7.90it/s] 85%|████████▌ | 425/500 [00:48<00:09,  7.94it/s] 85%|████████▌ | 426/500 [00:48<00:13,  5.47it/s] 85%|████████▌ | 427/500 [00:49<00:14,  5.05it/s] 86%|████████▌ | 429/500 [00:49<00:10,  6.71it/s] 86%|████████▌ | 431/500 [00:49<00:08,  8.22it/s] 87%|████████▋ | 433/500 [00:50<00:12,  5.51it/s] 87%|████████▋ | 434/500 [00:50<00:12,  5.29it/s] 87%|████████▋ | 436/500 [00:50<00:09,  6.82it/s] 88%|████████▊ | 438/500 [00:50<00:07,  8.12it/s] 88%|████████▊ | 440/500 [00:51<00:10,  5.48it/s] 88%|████████▊ | 441/500 [00:51<00:11,  5.31it/s] 89%|████████▊ | 443/500 [00:51<00:08,  6.78it/s] 89%|████████▉ | 446/500 [00:51<00:05,  9.84it/s] 90%|████████▉ | 449/500 [00:51<00:03, 12.85it/s] 90%|█████████ | 451/500 [00:52<00:06,  7.38it/s] 91%|█████████ | 453/500 [00:52<00:06,  7.27it/s] 91%|█████████ | 455/500 [00:52<00:05,  8.43it/s] 91%|█████████▏| 457/500 [00:52<00:04,  9.14it/s] 92%|█████████▏| 459/500 [00:53<00:07,  5.51it/s] 92%|█████████▏| 461/500 [00:53<00:05,  6.52it/s] 93%|█████████▎| 463/500 [00:53<00:04,  7.70it/s] 93%|█████████▎| 465/500 [00:54<00:06,  5.58it/s] 93%|█████████▎| 466/500 [00:54<00:06,  5.39it/s] 94%|█████████▎| 468/500 [00:54<00:04,  6.82it/s] 94%|█████████▍| 470/500 [00:55<00:03,  7.88it/s] 94%|█████████▍| 472/500 [00:55<00:05,  5.03it/s] 95%|█████████▍| 474/500 [00:55<00:04,  6.10it/s] 95%|█████████▌| 476/500 [00:56<00:03,  7.33it/s] 96%|█████████▌| 478/500 [00:56<00:03,  5.50it/s] 96%|█████████▌| 479/500 [00:56<00:04,  5.21it/s] 96%|█████████▌| 481/500 [00:57<00:02,  6.44it/s] 97%|█████████▋| 483/500 [00:57<00:02,  6.70it/s] 97%|█████████▋| 484/500 [00:57<00:03,  5.14it/s] 97%|█████████▋| 485/500 [00:57<00:03,  4.92it/s] 97%|█████████▋| 487/500 [00:58<00:02,  6.43it/s] 98%|█████████▊| 489/500 [00:58<00:01,  8.02it/s] 98%|█████████▊| 491/500 [00:58<00:01,  6.24it/s] 98%|█████████▊| 492/500 [00:59<00:01,  5.09it/s] 99%|█████████▉| 494/500 [00:59<00:00,  6.54it/s] 99%|█████████▉| 496/500 [00:59<00:00,  7.97it/s]100%|█████████▉| 498/500 [00:59<00:00,  5.67it/s]100%|█████████▉| 499/500 [01:00<00:00,  5.14it/s]100%|██████████| 500/500 [01:00<00:00,  5.71it/s]100%|██████████| 500/500 [01:00<00:00,  8.29it/s]
+Sim loop done, converting and saving recorded sim data...
+All reset times:  [0.0, 9.98]
+(500, 3)
+(500, 3)
+[INFO] 已保存评估指标: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/平地1.0/eval_checkpoint_1500_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json
+[INFO] 已保存评估数组: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/平地1.0/eval_checkpoint_1500_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/plots/sim_data.npz
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 550.163.01    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 15478ce1.. |
+|     |                                  |        |     |            | 41        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 2d0e24e4.. |
+|     |                                  |        |     |            | 61        |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 2f067e11.. |
+|     |                                  |        |     |            | 81        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 5ed17834.. |
+|     |                                  |        |     |            | a1        |            |
+|---------------------------------------------------------------------------------------------|
+| 4   | Tesla V100-PCIE-32GB             | Yes: 0 |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 385c2c9d.. |
+|     |                                  |        |     |            | c1        |            |
+|---------------------------------------------------------------------------------------------|
+| 5   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | ae07b535.. |
+|     |                                  |        |     |            | e1        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-136-generic
+| Processor: AMD EPYC 9654 96-Core Processor
+| Cores: 192 | Logical Cores: 192
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 1031725 | Free Memory: 646431
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-03T02:38:43Z [3,271ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 4
+2026-11-03T02:38:44Z [3,354ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+[INFO] Using eval seed=46
+[INFO] Loading model from: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/崎岖1.0/model_1500.pt
+[INFO] Detected policy backend=clean_rl, selected policy backend=clean_rl
+Observation dimension=236, selected task=LoComposition-Go2-Rough-Terrain-Joint-State-History-Play-v0
+[INFO] Resolved evaluation robot profile=go2
+[INFO][AppLauncher]: Using device: cuda
+[INFO][AppLauncher]: Loading experience file: /home/xy.chen/tw/LoComposition/dependencies/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261103_103956.log
+2026-11-03T02:39:56Z [118ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-03T02:39:56Z [617ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-03T02:39:57Z [782ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-03T02:39:57Z [792ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-11-03T02:39:58Z [2,211ms] [Warning] [carb.cudainterop.plugin] CUDA_VISIBLE_DEVICES environment variable is set.
+2026-11-03T02:39:58Z [2,211ms] [Warning] [carb.cudainterop.plugin] Note CUDA device enumeration and Omniverse device enumeration are different.
+2026-11-03T02:39:58Z [2,211ms] [Warning] [carb.cudainterop.plugin] Setting CUDA_VISIBLE_DEVICES can lead to undesired behavior or crashes.
+2026-11-03T02:39:59Z [2,813ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:39:59Z [2,813ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:39:59Z [2,813ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:39:59Z [2,813ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:39:59Z [2,814ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:39:59Z [2,814ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:39:59Z [2,814ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:39:59Z [2,814ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:39:59Z [2,815ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:39:59Z [2,815ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:39:59Z [2,815ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:39:59Z [2,815ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:39:59Z [2,815ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:39:59Z [2,815ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:39:59Z [2,815ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:39:59Z [2,815ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:39:59Z [2,815ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:39:59Z [2,815ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:39:59Z [2,815ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:39:59Z [2,815ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+ISAACLAB_NUCLEUS_DIR=https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab
+[INFO]: Parsing configuration from: locomposition.tasks.locomotion.velocity.config.solo12.locomposition_go2_rough_terrain_env_cfg:Go2RoughTerrainEnvCfgJointStateHistory_PLAY
+[INFO] Replaced the PLAY robot config with UNITREE_GO2_CFG_TRAIN for this evaluation.
+[INFO] Loaded action scale from training params/env.yaml
+[INFO] Training actions.joint_pos.scale = 0.8
+[INFO] Eval actions.joint_pos.scale before override = 0.8
+[INFO] Eval actions.joint_pos.scale after override = 0.8
+[INFO] Set latency for joint_pos_history to 0
+[INFO] Set latency for joint_vel_history to 0
+[INFO] Set latency for base_ang_vel to 0
+[INFO] Set latency for projected_gravity to 0
+[INFO] Set latency for actions to 0
+[INFO] Set latency for height_map to 0
+seed=46
+env_cfg.seed=46
+env_cfg.sim.random_seed=46
+terrain_generator.seed=46
+eval_base_dir=/home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/崎岖1.0/eval_checkpoint_1500_seed_46_action_delay_0_scenario_fast_walk_x_uneven_terrain, env_name=种子46, run_name=崎岖1.0, task_name=LoComposition-Go2-Rough-Terrain-Joint-State-History-Play-v0
+Skipping Cost of Transport sweep scenarios
+[INFO] Loaded eval constraint bounds from params/env.yaml:
+{
+    joint_torque: (-20.0, 20.0)
+    joint_velocity: (-25.0, 25.0)
+    joint_acceleration: (-800.0, 800.0)
+    action_rate: (-80.0, 80.0)
+    base_orientation: (-0.1, 0.1)
+    foot_contact_force: (0.0, 300.0)
+    FL_thigh_joint: (None, 1.5)
+    FR_thigh_joint: (None, 1.5)
+    RL_thigh_joint: (None, 1.5)
+    RR_thigh_joint: (None, 1.5)
+    upsidedown: (-0.0, 0.0)
+    FL_hip_joint: (-0.19999999999999998, 0.4)
+    FR_hip_joint: (-0.4, 0.19999999999999998)
+    RL_hip_joint: (-0.19999999999999998, 0.4)
+    RR_hip_joint: (-0.4, 0.19999999999999998)
+}
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-03_10-40-02.log[0m
+[36m======================================================================================[0m
+
+[33m10:40:02 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 46
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+[INFO] Generating terrains randomly took : 2.421503 seconds
+[INFO]: Time taken for scene creation : 4.749769 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 8
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 1.502213 seconds
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++------------------------------------------------------------+
+|                    Active Command Terms                    |
++-------+---------------+------------------------------------+
+| Index | Name          |                Type                |
++-------+---------------+------------------------------------+
+|   0   | base_velocity | UniformVelocityCommandWithDeadzone |
++-------+---------------+------------------------------------+
+
+[INFO] Event Manager:  <EventManager> contains 2 active terms.
++---------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++----------+----------------------------+
+|  Index   | Name                       |
++----------+----------------------------+
+|    0     | physics_material           |
+|    1     | randomize_com              |
+|    2     | randomize_mass             |
+|    3     | force_hard_terrain         |
++----------+----------------------------+
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++--------+----------------------------+
+| Index  | Name                       |
++--------+----------------------------+
+|   0    | reset_base                 |
+|   1    | reset_robot_joints         |
+|   2    | episodic_height_offset     |
++--------+----------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 12)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          12 |
++--------+-------------+-------------+
+
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[INFO] Observation Manager: <ObservationManager> contains 1 groups.
++----------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (236,)) |
++-----------+--------------------------------+-------------+
+|   Index   | Name                           |    Shape    |
++-----------+--------------------------------+-------------+
+|     0     | base_ang_vel                   |     (3,)    |
+|     1     | velocity_commands              |     (3,)    |
+|     2     | projected_gravity              |     (3,)    |
+|     3     | joint_pos_history              |    (36,)    |
+|     4     | joint_vel_history              |    (36,)    |
+|     5     | actions                        |    (12,)    |
+|     6     | height_map                     |    (143,)   |
++-----------+--------------------------------+-------------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 3 active terms.
++---------------------------------+
+|     Active Termination Terms    |
++-------+--------------+----------+
+| Index | Name         | Time Out |
++-------+--------------+----------+
+|   0   | time_out     |   True   |
+|   1   | base_contact |  False   |
+|   2   | upside_down  |  False   |
++-------+--------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 2 active terms.
++---------------------------------------+
+|          Active Reward Terms          |
++-------+----------------------+--------+
+| Index | Name                 | Weight |
++-------+----------------------+--------+
+|   0   | track_lin_vel_xy_exp |    1.0 |
+|   1   | track_ang_vel_z_exp  |    0.5 |
++-------+----------------------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 7 active terms.
++----------------------------+
+|  Active Curriculum Terms   |
++-------+--------------------+
+| Index | Name               |
++-------+--------------------+
+|   0   | joint_torque       |
+|   1   | joint_velocity     |
+|   2   | joint_acceleration |
+|   3   | action_rate        |
+|   4   | hip_position       |
+|   5   | base_orientation   |
+|   6   | terrain_levels     |
++-------+--------------------+
+
+[INFO] Constraint Manager:  <ConstraintManager> contains 11 active terms.
++-----------------------------------------------------------------------------------------------------------------------+
+|                                                Active Constraint Terms                                                |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+| Index | Name               | Limit |                                  Names                                   | Max p |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+|   0   | joint_torque       |  20.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   1   | joint_velocity     |  25.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   2   | joint_acceleration | 800.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   3   | action_rate        |  80.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   4   | base_orientation   |   0.1 |                                    -                                     |  0.25 |
+|   5   | contact            |     - |                           ['base', '.*_thigh']                           |   1.0 |
+|   6   | foot_contact_force | 300.0 |                               ['.*_foot']                                |   1.0 |
+|   7   | front_hfe_position |   1.5 | ['FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint'] |   1.0 |
+|   8   | upsidedown         |   0.0 |                                    -                                     |   1.0 |
+|   9   | hip_position       |   0.3 |                             ['.*_hip_joint']                             |  0.25 |
+|   10  | no_move            |     - |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |   0.1 |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+
+[INFO]: Completed setting up the environment...
+[INFO] Runtime env actions.joint_pos.scale = 0.8
+[SEED CHECK] runtime env seed=46
+[SEED CHECK] runtime sim seed=46
+[SEED CHECK] runtime terrain seed=46
+[INFO] Recording base COM acceleration from body index 0: base
+  0%|          | 0/500 [00:00<?, ?it/s]Resetting env and setting fixed command + spawn point for scenario=('fast_walk_x_uneven_terrain', tensor([1., 0., 0.], device='cuda:0'), (tensor([0.0000, 0.0000, 0.4000], device='cuda:0'), tensor([0., 0., 0., 1.], device='cuda:0')))...
+  0%|          | 1/500 [00:00<04:21,  1.91it/s]  0%|          | 2/500 [00:00<03:58,  2.08it/s]  1%|          | 5/500 [00:01<01:21,  6.10it/s]  1%|▏         | 7/500 [00:01<01:03,  7.73it/s]  2%|▏         | 9/500 [00:01<01:36,  5.08it/s]  2%|▏         | 12/500 [00:02<01:03,  7.70it/s]  3%|▎         | 15/500 [00:02<00:46, 10.39it/s]  3%|▎         | 17/500 [00:02<01:05,  7.41it/s]  4%|▍         | 19/500 [00:02<01:09,  6.89it/s]  4%|▍         | 21/500 [00:03<01:00,  7.96it/s]  5%|▍         | 23/500 [00:03<00:57,  8.36it/s]  5%|▌         | 25/500 [00:03<01:21,  5.82it/s]  5%|▌         | 27/500 [00:04<01:07,  7.00it/s]  6%|▌         | 29/500 [00:04<00:56,  8.37it/s]  6%|▌         | 31/500 [00:04<01:14,  6.28it/s]  6%|▋         | 32/500 [00:04<01:20,  5.80it/s]  7%|▋         | 35/500 [00:05<00:55,  8.45it/s]  7%|▋         | 37/500 [00:05<00:45, 10.15it/s]  8%|▊         | 39/500 [00:05<00:58,  7.83it/s]  8%|▊         | 41/500 [00:05<01:08,  6.70it/s]  9%|▉         | 44/500 [00:06<00:49,  9.13it/s]  9%|▉         | 46/500 [00:06<00:42, 10.63it/s] 10%|▉         | 49/500 [00:06<00:42, 10.68it/s] 10%|█         | 51/500 [00:07<01:03,  7.08it/s] 11%|█         | 53/500 [00:07<00:52,  8.45it/s] 11%|█         | 55/500 [00:07<00:45,  9.81it/s] 11%|█▏        | 57/500 [00:07<01:05,  6.71it/s] 12%|█▏        | 59/500 [00:08<01:02,  7.04it/s] 12%|█▏        | 62/500 [00:08<00:45,  9.73it/s] 13%|█▎        | 65/500 [00:08<00:35, 12.30it/s] 13%|█▎        | 67/500 [00:08<00:46,  9.26it/s] 14%|█▍        | 69/500 [00:09<00:57,  7.45it/s] 14%|█▍        | 72/500 [00:09<00:43,  9.74it/s] 15%|█▍        | 74/500 [00:09<00:38, 10.94it/s] 15%|█▌        | 76/500 [00:09<00:43,  9.81it/s] 16%|█▌        | 78/500 [00:10<01:01,  6.87it/s] 16%|█▌        | 81/500 [00:10<00:44,  9.34it/s] 17%|█▋        | 84/500 [00:10<00:35, 11.63it/s] 17%|█▋        | 86/500 [00:10<00:54,  7.58it/s] 18%|█▊        | 88/500 [00:11<00:54,  7.62it/s] 18%|█▊        | 90/500 [00:11<00:45,  9.00it/s] 18%|█▊        | 92/500 [00:11<00:39, 10.33it/s] 19%|█▉        | 94/500 [00:11<00:51,  7.92it/s] 19%|█▉        | 96/500 [00:12<01:00,  6.71it/s] 20%|█▉        | 98/500 [00:12<00:49,  8.10it/s] 20%|██        | 100/500 [00:12<00:43,  9.28it/s] 20%|██        | 102/500 [00:13<01:00,  6.57it/s] 21%|██        | 103/500 [00:13<01:05,  6.05it/s] 21%|██        | 105/500 [00:13<00:50,  7.85it/s] 22%|██▏       | 108/500 [00:13<00:36, 10.82it/s] 22%|██▏       | 110/500 [00:13<00:43,  8.99it/s] 22%|██▏       | 112/500 [00:14<00:56,  6.81it/s] 23%|██▎       | 115/500 [00:14<00:40,  9.39it/s] 24%|██▎       | 118/500 [00:14<00:33, 11.49it/s] 24%|██▍       | 120/500 [00:15<00:55,  6.81it/s] 24%|██▍       | 122/500 [00:15<00:46,  8.16it/s] 25%|██▌       | 125/500 [00:15<00:34, 10.72it/s] 25%|██▌       | 127/500 [00:15<00:34, 10.87it/s] 26%|██▌       | 129/500 [00:16<00:55,  6.65it/s] 26%|██▌       | 131/500 [00:16<00:45,  8.09it/s] 27%|██▋       | 133/500 [00:16<00:38,  9.61it/s] 27%|██▋       | 135/500 [00:16<00:48,  7.55it/s] 27%|██▋       | 137/500 [00:17<00:54,  6.61it/s] 28%|██▊       | 140/500 [00:17<00:39,  9.12it/s] 29%|██▊       | 143/500 [00:17<00:31, 11.32it/s] 29%|██▉       | 145/500 [00:17<00:40,  8.76it/s] 29%|██▉       | 147/500 [00:18<00:48,  7.31it/s] 30%|███       | 150/500 [00:18<00:36,  9.53it/s] 30%|███       | 152/500 [00:18<00:33, 10.34it/s] 31%|███       | 154/500 [00:19<00:52,  6.63it/s] 31%|███       | 156/500 [00:19<00:46,  7.44it/s] 32%|███▏      | 159/500 [00:19<00:34,  9.93it/s] 32%|███▏      | 161/500 [00:19<00:31, 10.86it/s] 33%|███▎      | 163/500 [00:20<00:41,  8.09it/s] 33%|███▎      | 165/500 [00:20<00:48,  6.98it/s] 33%|███▎      | 167/500 [00:20<00:39,  8.35it/s] 34%|███▍      | 170/500 [00:20<00:31, 10.39it/s] 34%|███▍      | 172/500 [00:21<00:36,  8.98it/s] 35%|███▍      | 174/500 [00:21<00:46,  7.09it/s] 35%|███▌      | 175/500 [00:21<00:54,  5.98it/s] 35%|███▌      | 176/500 [00:22<01:00,  5.37it/s] 36%|███▌      | 179/500 [00:22<00:38,  8.26it/s] 36%|███▋      | 182/500 [00:22<00:29, 10.68it/s] 37%|███▋      | 184/500 [00:22<00:46,  6.74it/s] 37%|███▋      | 186/500 [00:23<00:42,  7.47it/s] 38%|███▊      | 188/500 [00:23<00:35,  8.84it/s] 38%|███▊      | 190/500 [00:23<00:30, 10.28it/s] 38%|███▊      | 192/500 [00:23<00:33,  9.17it/s] 39%|███▉      | 194/500 [00:24<00:48,  6.34it/s] 39%|███▉      | 197/500 [00:24<00:34,  8.88it/s] 40%|████      | 200/500 [00:24<00:26, 11.14it/s] 40%|████      | 202/500 [00:24<00:35,  8.51it/s] 41%|████      | 204/500 [00:25<00:40,  7.31it/s] 41%|████▏     | 207/500 [00:25<00:30,  9.58it/s] 42%|████▏     | 209/500 [00:25<00:26, 11.00it/s] 42%|████▏     | 211/500 [00:25<00:35,  8.25it/s] 43%|████▎     | 213/500 [00:26<00:40,  7.05it/s] 43%|████▎     | 216/500 [00:26<00:29,  9.75it/s] 44%|████▍     | 219/500 [00:26<00:22, 12.45it/s] 44%|████▍     | 221/500 [00:26<00:27, 10.18it/s] 45%|████▍     | 223/500 [00:27<00:37,  7.32it/s] 45%|████▌     | 225/500 [00:27<00:31,  8.78it/s] 45%|████▌     | 227/500 [00:27<00:26, 10.41it/s] 46%|████▌     | 229/500 [00:27<00:28,  9.66it/s] 46%|████▌     | 231/500 [00:28<00:41,  6.52it/s] 47%|████▋     | 234/500 [00:28<00:29,  9.09it/s] 47%|████▋     | 236/500 [00:28<00:25, 10.32it/s] 48%|████▊     | 238/500 [00:29<00:38,  6.89it/s] 48%|████▊     | 240/500 [00:29<00:36,  7.14it/s] 49%|████▊     | 243/500 [00:29<00:26,  9.64it/s] 49%|████▉     | 246/500 [00:29<00:27,  9.24it/s] 50%|████▉     | 248/500 [00:30<00:35,  7.06it/s] 50%|█████     | 251/500 [00:30<00:27,  9.14it/s] 51%|█████     | 254/500 [00:30<00:25,  9.71it/s] 51%|█████     | 256/500 [00:31<00:34,  6.99it/s] 52%|█████▏    | 259/500 [00:31<00:25,  9.31it/s] 52%|█████▏    | 262/500 [00:31<00:20, 11.77it/s] 53%|█████▎    | 264/500 [00:31<00:26,  9.02it/s] 53%|█████▎    | 266/500 [00:32<00:30,  7.58it/s] 54%|█████▍    | 269/500 [00:32<00:22, 10.15it/s] 54%|█████▍    | 272/500 [00:32<00:17, 12.78it/s] 55%|█████▍    | 274/500 [00:32<00:24,  9.30it/s] 55%|█████▌    | 276/500 [00:33<00:29,  7.68it/s] 56%|█████▌    | 278/500 [00:33<00:25,  8.69it/s] 56%|█████▌    | 280/500 [00:33<00:21, 10.29it/s] 56%|█████▋    | 282/500 [00:34<00:31,  6.87it/s] 57%|█████▋    | 284/500 [00:34<00:29,  7.29it/s] 57%|█████▋    | 287/500 [00:34<00:21,  9.98it/s] 58%|█████▊    | 290/500 [00:34<00:17, 12.20it/s] 58%|█████▊    | 292/500 [00:35<00:28,  7.24it/s] 59%|█████▉    | 294/500 [00:35<00:24,  8.37it/s] 59%|█████▉    | 296/500 [00:35<00:20,  9.86it/s] 60%|█████▉    | 298/500 [00:35<00:17, 11.34it/s] 60%|██████    | 300/500 [00:35<00:25,  7.84it/s] 60%|██████    | 302/500 [00:36<00:27,  7.12it/s] 61%|██████    | 305/500 [00:36<00:19,  9.90it/s] 62%|██████▏   | 308/500 [00:36<00:15, 12.52it/s] 62%|██████▏   | 310/500 [00:37<00:24,  7.85it/s] 62%|██████▏   | 312/500 [00:37<00:23,  8.09it/s] 63%|██████▎   | 315/500 [00:37<00:17, 10.86it/s] 64%|██████▎   | 318/500 [00:37<00:13, 13.59it/s] 64%|██████▍   | 320/500 [00:37<00:18,  9.91it/s] 64%|██████▍   | 322/500 [00:38<00:22,  7.92it/s] 65%|██████▌   | 325/500 [00:38<00:16, 10.54it/s] 66%|██████▌   | 328/500 [00:38<00:13, 12.84it/s] 66%|██████▌   | 330/500 [00:38<00:18,  9.20it/s] 66%|██████▋   | 332/500 [00:39<00:21,  7.78it/s] 67%|██████▋   | 335/500 [00:39<00:16, 10.29it/s] 68%|██████▊   | 338/500 [00:39<00:12, 12.67it/s] 68%|██████▊   | 340/500 [00:40<00:21,  7.53it/s] 68%|██████▊   | 342/500 [00:40<00:19,  8.01it/s] 69%|██████▉   | 345/500 [00:40<00:15, 10.28it/s] 69%|██████▉   | 347/500 [00:40<00:17,  8.85it/s] 70%|██████▉   | 349/500 [00:41<00:21,  6.95it/s] 70%|███████   | 352/500 [00:41<00:16,  9.16it/s] 71%|███████   | 354/500 [00:41<00:13, 10.60it/s] 71%|███████   | 356/500 [00:42<00:18,  7.69it/s] 72%|███████▏  | 358/500 [00:42<00:19,  7.21it/s] 72%|███████▏  | 361/500 [00:42<00:14,  9.73it/s] 73%|███████▎  | 364/500 [00:42<00:13, 10.43it/s] 73%|███████▎  | 366/500 [00:43<00:17,  7.63it/s] 74%|███████▎  | 368/500 [00:43<00:15,  8.38it/s] 74%|███████▍  | 371/500 [00:43<00:11, 11.04it/s] 75%|███████▍  | 374/500 [00:43<00:09, 13.55it/s] 75%|███████▌  | 376/500 [00:43<00:12,  9.69it/s] 76%|███████▌  | 378/500 [00:44<00:15,  7.75it/s] 76%|███████▌  | 381/500 [00:44<00:11, 10.11it/s] 77%|███████▋  | 384/500 [00:44<00:09, 12.49it/s] 77%|███████▋  | 386/500 [00:45<00:11,  9.58it/s] 78%|███████▊  | 388/500 [00:45<00:15,  7.46it/s] 78%|███████▊  | 390/500 [00:45<00:12,  8.93it/s] 79%|███████▊  | 393/500 [00:45<00:09, 11.31it/s] 79%|███████▉  | 395/500 [00:45<00:08, 11.83it/s] 79%|███████▉  | 397/500 [00:46<00:11,  8.88it/s] 80%|███████▉  | 399/500 [00:46<00:15,  6.70it/s] 80%|████████  | 400/500 [00:47<00:17,  5.57it/s] 80%|████████  | 402/500 [00:47<00:14,  6.93it/s] 81%|████████  | 404/500 [00:47<00:11,  8.70it/s] 81%|████████  | 406/500 [00:47<00:09,  9.90it/s] 82%|████████▏ | 408/500 [00:48<00:15,  6.04it/s] 82%|████████▏ | 410/500 [00:48<00:11,  7.58it/s] 83%|████████▎ | 413/500 [00:48<00:08, 10.30it/s] 83%|████████▎ | 416/500 [00:48<00:07, 11.58it/s] 84%|████████▎ | 418/500 [00:49<00:11,  6.97it/s] 84%|████████▍ | 421/500 [00:49<00:08,  9.18it/s] 85%|████████▍ | 424/500 [00:49<00:06, 11.02it/s] 85%|████████▌ | 426/500 [00:50<00:10,  6.90it/s] 86%|████████▌ | 428/500 [00:50<00:09,  7.85it/s] 86%|████████▌ | 431/500 [00:50<00:06, 10.46it/s] 87%|████████▋ | 434/500 [00:50<00:05, 12.73it/s] 87%|████████▋ | 436/500 [00:50<00:07,  8.06it/s] 88%|████████▊ | 438/500 [00:51<00:07,  7.99it/s] 88%|████████▊ | 441/500 [00:51<00:05, 10.29it/s] 89%|████████▉ | 444/500 [00:51<00:05, 10.20it/s] 89%|████████▉ | 446/500 [00:52<00:07,  7.16it/s] 90%|████████▉ | 449/500 [00:52<00:05,  9.27it/s] 90%|█████████ | 452/500 [00:52<00:04, 10.99it/s] 91%|█████████ | 454/500 [00:53<00:06,  6.93it/s] 91%|█████████ | 456/500 [00:53<00:05,  8.15it/s] 92%|█████████▏| 459/500 [00:53<00:03, 10.53it/s] 92%|█████████▏| 462/500 [00:53<00:03, 10.28it/s] 93%|█████████▎| 464/500 [00:54<00:04,  7.39it/s] 93%|█████████▎| 467/500 [00:54<00:03,  9.68it/s] 94%|█████████▍| 470/500 [00:54<00:02, 12.22it/s] 94%|█████████▍| 472/500 [00:55<00:03,  7.40it/s] 95%|█████████▍| 474/500 [00:55<00:03,  8.19it/s] 95%|█████████▌| 477/500 [00:55<00:02, 10.80it/s] 96%|█████████▌| 480/500 [00:55<00:01, 13.28it/s] 96%|█████████▋| 482/500 [00:55<00:01,  9.65it/s] 97%|█████████▋| 484/500 [00:56<00:02,  7.71it/s] 97%|█████████▋| 487/500 [00:56<00:01, 10.25it/s] 98%|█████████▊| 490/500 [00:56<00:00, 12.42it/s] 98%|█████████▊| 492/500 [00:57<00:00,  8.12it/s] 99%|█████████▉| 494/500 [00:57<00:00,  7.89it/s] 99%|█████████▉| 497/500 [00:57<00:00, 10.41it/s]100%|██████████| 500/500 [00:57<00:00, 12.46it/s]100%|██████████| 500/500 [00:57<00:00,  8.68it/s]
+Sim loop done, converting and saving recorded sim data...
+All reset times:  [0.0, 9.98]
+(500, 3)
+(500, 3)
+[INFO] 已保存评估指标: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/崎岖1.0/eval_checkpoint_1500_seed_46_action_delay_0_scenario_fast_walk_x_uneven_terrain/metrics_summary.json
+[INFO] 已保存评估数组: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/崎岖1.0/eval_checkpoint_1500_seed_46_action_delay_0_scenario_fast_walk_x_uneven_terrain/plots/sim_data.npz
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 550.163.01    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 15478ce1.. |
+|     |                                  |        |     |            | 41        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 2d0e24e4.. |
+|     |                                  |        |     |            | 61        |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 2f067e11.. |
+|     |                                  |        |     |            | 81        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 5ed17834.. |
+|     |                                  |        |     |            | a1        |            |
+|---------------------------------------------------------------------------------------------|
+| 4   | Tesla V100-PCIE-32GB             | Yes: 0 |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 385c2c9d.. |
+|     |                                  |        |     |            | c1        |            |
+|---------------------------------------------------------------------------------------------|
+| 5   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | ae07b535.. |
+|     |                                  |        |     |            | e1        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-136-generic
+| Processor: AMD EPYC 9654 96-Core Processor
+| Cores: 192 | Logical Cores: 192
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 1031725 | Free Memory: 635715
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-03T02:39:59Z [3,528ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 4
+2026-11-03T02:39:59Z [3,593ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+[INFO] Using eval seed=46
+[INFO] Loading model from: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/楼梯8.5厘米/model_1500.pt
+[INFO] Detected policy backend=clean_rl, selected policy backend=clean_rl
+Observation dimension=236, selected task=LoComposition-Go2-Rough-Terrain-Joint-State-History-Play-v0
+[INFO] Resolved evaluation robot profile=go2
+[INFO][AppLauncher]: Using device: cuda
+[INFO][AppLauncher]: Loading experience file: /home/xy.chen/tw/LoComposition/dependencies/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261103_104109.log
+2026-11-03T02:41:09Z [113ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-03T02:41:09Z [530ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-03T02:41:10Z [672ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-03T02:41:10Z [683ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-11-03T02:41:11Z [2,207ms] [Warning] [carb.cudainterop.plugin] CUDA_VISIBLE_DEVICES environment variable is set.
+2026-11-03T02:41:11Z [2,207ms] [Warning] [carb.cudainterop.plugin] Note CUDA device enumeration and Omniverse device enumeration are different.
+2026-11-03T02:41:11Z [2,207ms] [Warning] [carb.cudainterop.plugin] Setting CUDA_VISIBLE_DEVICES can lead to undesired behavior or crashes.
+2026-11-03T02:41:12Z [2,809ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:41:12Z [2,809ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:41:12Z [2,809ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:41:12Z [2,809ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:41:12Z [2,809ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:41:12Z [2,809ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:41:12Z [2,810ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+ISAACLAB_NUCLEUS_DIR=https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab
+[INFO]: Parsing configuration from: locomposition.tasks.locomotion.velocity.config.solo12.locomposition_go2_rough_terrain_env_cfg:Go2RoughTerrainEnvCfgJointStateHistory_PLAY
+[INFO] Replaced the PLAY robot config with UNITREE_GO2_CFG_TRAIN for this evaluation.
+[INFO] Loaded action scale from training params/env.yaml
+[INFO] Training actions.joint_pos.scale = 0.8
+[INFO] Eval actions.joint_pos.scale before override = 0.8
+[INFO] Eval actions.joint_pos.scale after override = 0.8
+[INFO] Set latency for joint_pos_history to 0
+[INFO] Set latency for joint_vel_history to 0
+[INFO] Set latency for base_ang_vel to 0
+[INFO] Set latency for projected_gravity to 0
+[INFO] Set latency for actions to 0
+[INFO] Set latency for height_map to 0
+seed=46
+env_cfg.seed=46
+env_cfg.sim.random_seed=46
+terrain_generator.seed=46
+eval_base_dir=/home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/楼梯8.5厘米/eval_checkpoint_1500_seed_46_action_delay_0_scenario_fast_walk_stairs_up, env_name=种子46, run_name=楼梯8.5厘米, task_name=LoComposition-Go2-Rough-Terrain-Joint-State-History-Play-v0
+Skipping Cost of Transport sweep scenarios
+[INFO] Loaded eval constraint bounds from params/env.yaml:
+{
+    joint_torque: (-20.0, 20.0)
+    joint_velocity: (-25.0, 25.0)
+    joint_acceleration: (-800.0, 800.0)
+    action_rate: (-80.0, 80.0)
+    base_orientation: (-0.1, 0.1)
+    foot_contact_force: (0.0, 300.0)
+    FL_thigh_joint: (None, 1.5)
+    FR_thigh_joint: (None, 1.5)
+    RL_thigh_joint: (None, 1.5)
+    RR_thigh_joint: (None, 1.5)
+    upsidedown: (-0.0, 0.0)
+    FL_hip_joint: (-0.19999999999999998, 0.4)
+    FR_hip_joint: (-0.4, 0.19999999999999998)
+    RL_hip_joint: (-0.19999999999999998, 0.4)
+    RR_hip_joint: (-0.4, 0.19999999999999998)
+}
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-03_10-41-15.log[0m
+[36m======================================================================================[0m
+
+[33m10:41:15 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 46
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+[INFO] Generating terrains randomly took : 2.825320 seconds
+[INFO]: Time taken for scene creation : 4.949846 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 8
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 1.590959 seconds
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++------------------------------------------------------------+
+|                    Active Command Terms                    |
++-------+---------------+------------------------------------+
+| Index | Name          |                Type                |
++-------+---------------+------------------------------------+
+|   0   | base_velocity | UniformVelocityCommandWithDeadzone |
++-------+---------------+------------------------------------+
+
+[INFO] Event Manager:  <EventManager> contains 2 active terms.
++---------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++----------+----------------------------+
+|  Index   | Name                       |
++----------+----------------------------+
+|    0     | physics_material           |
+|    1     | randomize_com              |
+|    2     | randomize_mass             |
+|    3     | force_hard_terrain         |
++----------+----------------------------+
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++--------+----------------------------+
+| Index  | Name                       |
++--------+----------------------------+
+|   0    | reset_base                 |
+|   1    | reset_robot_joints         |
+|   2    | episodic_height_offset     |
++--------+----------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 12)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          12 |
++--------+-------------+-------------+
+
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[INFO] Observation Manager: <ObservationManager> contains 1 groups.
++----------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (236,)) |
++-----------+--------------------------------+-------------+
+|   Index   | Name                           |    Shape    |
++-----------+--------------------------------+-------------+
+|     0     | base_ang_vel                   |     (3,)    |
+|     1     | velocity_commands              |     (3,)    |
+|     2     | projected_gravity              |     (3,)    |
+|     3     | joint_pos_history              |    (36,)    |
+|     4     | joint_vel_history              |    (36,)    |
+|     5     | actions                        |    (12,)    |
+|     6     | height_map                     |    (143,)   |
++-----------+--------------------------------+-------------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 3 active terms.
++---------------------------------+
+|     Active Termination Terms    |
++-------+--------------+----------+
+| Index | Name         | Time Out |
++-------+--------------+----------+
+|   0   | time_out     |   True   |
+|   1   | base_contact |  False   |
+|   2   | upside_down  |  False   |
++-------+--------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 2 active terms.
++---------------------------------------+
+|          Active Reward Terms          |
++-------+----------------------+--------+
+| Index | Name                 | Weight |
++-------+----------------------+--------+
+|   0   | track_lin_vel_xy_exp |    1.0 |
+|   1   | track_ang_vel_z_exp  |    0.5 |
++-------+----------------------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 7 active terms.
++----------------------------+
+|  Active Curriculum Terms   |
++-------+--------------------+
+| Index | Name               |
++-------+--------------------+
+|   0   | joint_torque       |
+|   1   | joint_velocity     |
+|   2   | joint_acceleration |
+|   3   | action_rate        |
+|   4   | hip_position       |
+|   5   | base_orientation   |
+|   6   | terrain_levels     |
++-------+--------------------+
+
+[INFO] Constraint Manager:  <ConstraintManager> contains 11 active terms.
++-----------------------------------------------------------------------------------------------------------------------+
+|                                                Active Constraint Terms                                                |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+| Index | Name               | Limit |                                  Names                                   | Max p |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+|   0   | joint_torque       |  20.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   1   | joint_velocity     |  25.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   2   | joint_acceleration | 800.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   3   | action_rate        |  80.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   4   | base_orientation   |   0.1 |                                    -                                     |  0.25 |
+|   5   | contact            |     - |                           ['base', '.*_thigh']                           |   1.0 |
+|   6   | foot_contact_force | 300.0 |                               ['.*_foot']                                |   1.0 |
+|   7   | front_hfe_position |   1.5 | ['FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint'] |   1.0 |
+|   8   | upsidedown         |   0.0 |                                    -                                     |   1.0 |
+|   9   | hip_position       |   0.3 |                             ['.*_hip_joint']                             |  0.25 |
+|   10  | no_move            |     - |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |   0.1 |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+
+[INFO]: Completed setting up the environment...
+[INFO] Runtime env actions.joint_pos.scale = 0.8
+[SEED CHECK] runtime env seed=46
+[SEED CHECK] runtime sim seed=46
+[SEED CHECK] runtime terrain seed=46
+[INFO] Recording base COM acceleration from body index 0: base
+  0%|          | 0/500 [00:00<?, ?it/s]Resetting env and setting fixed command + spawn point for scenario=('fast_walk_stairs_up', tensor([1., 0., 0.], device='cuda:0'), (tensor([-8.0000, 16.0000, -0.1950], device='cuda:0'), tensor([0., 0., 0., 1.], device='cuda:0')))...
+  0%|          | 1/500 [00:00<06:12,  1.34it/s]  0%|          | 2/500 [00:01<05:01,  1.65it/s]  1%|          | 3/500 [00:01<03:21,  2.47it/s]  1%|          | 6/500 [00:01<01:20,  6.15it/s]  2%|▏         | 9/500 [00:01<00:49,  9.83it/s]  2%|▏         | 11/500 [00:01<00:49,  9.94it/s]  3%|▎         | 13/500 [00:02<01:17,  6.32it/s]  3%|▎         | 16/500 [00:02<00:54,  8.93it/s]  4%|▍         | 19/500 [00:02<00:41, 11.62it/s]  4%|▍         | 21/500 [00:03<01:01,  7.74it/s]  5%|▍         | 23/500 [00:03<01:03,  7.52it/s]  5%|▌         | 26/500 [00:03<00:47, 10.00it/s]  6%|▌         | 29/500 [00:03<00:38, 12.23it/s]  6%|▌         | 31/500 [00:04<00:59,  7.87it/s]  7%|▋         | 33/500 [00:04<00:57,  8.09it/s]  7%|▋         | 36/500 [00:04<00:43, 10.69it/s]  8%|▊         | 39/500 [00:04<00:35, 12.98it/s]  8%|▊         | 41/500 [00:05<00:56,  8.18it/s]  9%|▊         | 43/500 [00:05<00:55,  8.19it/s]  9%|▉         | 46/500 [00:05<00:42, 10.56it/s] 10%|▉         | 48/500 [00:05<00:37, 11.90it/s] 10%|█         | 50/500 [00:06<00:59,  7.60it/s] 10%|█         | 52/500 [00:06<00:58,  7.64it/s] 11%|█         | 55/500 [00:06<00:44, 10.08it/s] 12%|█▏        | 58/500 [00:07<00:49,  8.94it/s] 12%|█▏        | 60/500 [00:07<00:59,  7.36it/s] 12%|█▏        | 62/500 [00:07<00:50,  8.66it/s] 13%|█▎        | 65/500 [00:07<00:45,  9.53it/s] 13%|█▎        | 67/500 [00:08<01:04,  6.68it/s] 14%|█▍        | 70/500 [00:08<00:48,  8.91it/s] 15%|█▍        | 73/500 [00:08<00:38, 11.10it/s] 15%|█▌        | 75/500 [00:09<00:54,  7.74it/s] 15%|█▌        | 77/500 [00:09<00:54,  7.71it/s] 16%|█▌        | 80/500 [00:09<00:40, 10.28it/s] 16%|█▋        | 82/500 [00:09<00:35, 11.63it/s] 17%|█▋        | 84/500 [00:10<01:01,  6.75it/s] 17%|█▋        | 86/500 [00:10<00:51,  8.05it/s] 18%|█▊        | 89/500 [00:10<00:38, 10.68it/s] 18%|█▊        | 92/500 [00:10<00:31, 12.90it/s] 19%|█▉        | 94/500 [00:11<00:49,  8.16it/s] 19%|█▉        | 96/500 [00:11<00:49,  8.23it/s] 20%|█▉        | 99/500 [00:11<00:37, 10.62it/s] 20%|██        | 101/500 [00:11<00:33, 11.88it/s] 21%|██        | 103/500 [00:12<00:48,  8.20it/s] 21%|██        | 105/500 [00:12<00:57,  6.84it/s] 22%|██▏       | 108/500 [00:12<00:42,  9.15it/s] 22%|██▏       | 110/500 [00:12<00:37, 10.34it/s] 22%|██▏       | 112/500 [00:13<01:01,  6.35it/s] 23%|██▎       | 114/500 [00:13<00:49,  7.81it/s] 23%|██▎       | 117/500 [00:13<00:35, 10.70it/s] 24%|██▍       | 120/500 [00:13<00:30, 12.48it/s] 24%|██▍       | 122/500 [00:14<00:51,  7.30it/s] 25%|██▍       | 124/500 [00:14<00:43,  8.71it/s] 25%|██▌       | 127/500 [00:14<00:33, 11.23it/s] 26%|██▌       | 130/500 [00:14<00:27, 13.36it/s] 26%|██▋       | 132/500 [00:15<00:46,  7.85it/s] 27%|██▋       | 134/500 [00:15<00:42,  8.60it/s] 27%|██▋       | 137/500 [00:15<00:33, 10.91it/s] 28%|██▊       | 139/500 [00:15<00:29, 12.27it/s] 28%|██▊       | 141/500 [00:16<00:51,  7.03it/s] 29%|██▊       | 143/500 [00:16<00:43,  8.23it/s] 29%|██▉       | 146/500 [00:16<00:32, 11.01it/s] 30%|██▉       | 149/500 [00:16<00:31, 11.00it/s] 30%|███       | 151/500 [00:17<00:47,  7.31it/s] 31%|███       | 154/500 [00:17<00:35,  9.62it/s] 31%|███▏      | 157/500 [00:17<00:28, 11.87it/s] 32%|███▏      | 159/500 [00:18<00:36,  9.38it/s] 32%|███▏      | 161/500 [00:18<00:44,  7.60it/s] 33%|███▎      | 164/500 [00:18<00:33, 10.13it/s] 33%|███▎      | 167/500 [00:18<00:26, 12.70it/s] 34%|███▍      | 169/500 [00:19<00:43,  7.58it/s] 34%|███▍      | 171/500 [00:19<00:39,  8.42it/s] 35%|███▍      | 174/500 [00:19<00:30, 10.82it/s] 35%|███▌      | 177/500 [00:19<00:25, 12.74it/s] 36%|███▌      | 179/500 [00:20<00:35,  9.09it/s] 36%|███▌      | 181/500 [00:20<00:43,  7.40it/s] 37%|███▋      | 183/500 [00:21<00:50,  6.34it/s] 37%|███▋      | 186/500 [00:21<00:36,  8.71it/s] 38%|███▊      | 188/500 [00:21<00:31, 10.03it/s] 38%|███▊      | 190/500 [00:21<00:42,  7.22it/s] 38%|███▊      | 192/500 [00:22<00:43,  7.10it/s] 39%|███▉      | 195/500 [00:22<00:31,  9.76it/s] 40%|███▉      | 198/500 [00:22<00:25, 11.78it/s] 40%|████      | 200/500 [00:23<00:42,  7.06it/s] 41%|████      | 203/500 [00:23<00:32,  9.24it/s] 41%|████      | 206/500 [00:23<00:25, 11.62it/s] 42%|████▏     | 208/500 [00:23<00:22, 12.74it/s] 42%|████▏     | 210/500 [00:24<00:41,  7.07it/s] 42%|████▏     | 212/500 [00:24<00:33,  8.51it/s] 43%|████▎     | 215/500 [00:24<00:25, 11.25it/s] 43%|████▎     | 217/500 [00:24<00:22, 12.32it/s] 44%|████▍     | 219/500 [00:25<00:40,  6.95it/s] 44%|████▍     | 222/500 [00:25<00:29,  9.27it/s] 45%|████▌     | 225/500 [00:25<00:23, 11.85it/s] 45%|████▌     | 227/500 [00:25<00:25, 10.71it/s] 46%|████▌     | 229/500 [00:26<00:38,  7.12it/s] 46%|████▌     | 231/500 [00:26<00:31,  8.53it/s] 47%|████▋     | 234/500 [00:26<00:23, 11.27it/s] 47%|████▋     | 236/500 [00:26<00:33,  7.99it/s] 48%|████▊     | 238/500 [00:27<00:35,  7.34it/s] 48%|████▊     | 241/500 [00:27<00:26,  9.95it/s] 49%|████▉     | 244/500 [00:27<00:21, 12.15it/s] 49%|████▉     | 246/500 [00:27<00:32,  7.84it/s] 50%|████▉     | 248/500 [00:28<00:32,  7.77it/s] 50%|█████     | 251/500 [00:28<00:25,  9.95it/s] 51%|█████     | 253/500 [00:28<00:22, 11.04it/s] 51%|█████     | 255/500 [00:29<00:37,  6.55it/s] 51%|█████▏    | 257/500 [00:29<00:31,  7.80it/s] 52%|█████▏    | 260/500 [00:29<00:23, 10.21it/s] 52%|█████▏    | 262/500 [00:29<00:20, 11.68it/s] 53%|█████▎    | 264/500 [00:30<00:36,  6.56it/s] 53%|█████▎    | 266/500 [00:30<00:31,  7.37it/s] 54%|█████▎    | 268/500 [00:30<00:28,  8.05it/s] 54%|█████▍    | 270/500 [00:31<00:42,  5.45it/s] 54%|█████▍    | 272/500 [00:31<00:32,  6.92it/s] 55%|█████▍    | 274/500 [00:31<00:26,  8.57it/s] 55%|█████▌    | 277/500 [00:31<00:23,  9.67it/s] 56%|█████▌    | 279/500 [00:32<00:34,  6.49it/s] 56%|█████▌    | 281/500 [00:32<00:28,  7.71it/s] 57%|█████▋    | 283/500 [00:32<00:26,  8.12it/s] 57%|█████▋    | 285/500 [00:33<00:39,  5.47it/s] 57%|█████▋    | 287/500 [00:33<00:32,  6.49it/s] 58%|█████▊    | 289/500 [00:33<00:27,  7.75it/s] 58%|█████▊    | 291/500 [00:33<00:28,  7.25it/s] 58%|█████▊    | 292/500 [00:34<00:34,  5.97it/s] 59%|█████▊    | 293/500 [00:34<00:35,  5.79it/s] 59%|█████▉    | 295/500 [00:34<00:26,  7.77it/s] 59%|█████▉    | 297/500 [00:34<00:21,  9.66it/s] 60%|█████▉    | 299/500 [00:34<00:22,  8.90it/s] 60%|██████    | 301/500 [00:35<00:33,  5.94it/s] 61%|██████    | 304/500 [00:35<00:23,  8.45it/s] 61%|██████▏   | 307/500 [00:35<00:17, 10.91it/s] 62%|██████▏   | 309/500 [00:36<00:23,  7.97it/s] 62%|██████▏   | 311/500 [00:36<00:26,  7.24it/s] 63%|██████▎   | 313/500 [00:36<00:21,  8.56it/s] 63%|██████▎   | 315/500 [00:36<00:19,  9.27it/s] 63%|██████▎   | 317/500 [00:37<00:30,  5.96it/s] 64%|██████▍   | 320/500 [00:37<00:22,  8.09it/s] 65%|██████▍   | 323/500 [00:37<00:16, 10.44it/s] 65%|██████▌   | 325/500 [00:37<00:15, 11.26it/s] 65%|██████▌   | 327/500 [00:38<00:25,  6.82it/s] 66%|██████▌   | 329/500 [00:38<00:20,  8.27it/s] 66%|██████▋   | 332/500 [00:38<00:15, 10.55it/s] 67%|██████▋   | 334/500 [00:38<00:14, 11.19it/s] 67%|██████▋   | 336/500 [00:39<00:23,  7.00it/s] 68%|██████▊   | 338/500 [00:39<00:21,  7.68it/s] 68%|██████▊   | 341/500 [00:39<00:16,  9.92it/s] 69%|██████▉   | 344/500 [00:39<00:14, 11.01it/s] 69%|██████▉   | 346/500 [00:40<00:22,  6.92it/s] 70%|██████▉   | 349/500 [00:40<00:16,  9.28it/s] 70%|███████   | 352/500 [00:40<00:12, 11.73it/s] 71%|███████   | 354/500 [00:41<00:18,  7.74it/s] 71%|███████   | 356/500 [00:41<00:18,  7.67it/s] 72%|███████▏  | 358/500 [00:41<00:15,  9.06it/s] 72%|███████▏  | 360/500 [00:41<00:13, 10.38it/s] 72%|███████▏  | 362/500 [00:42<00:22,  6.25it/s] 73%|███████▎  | 364/500 [00:42<00:18,  7.51it/s] 73%|███████▎  | 367/500 [00:42<00:12, 10.29it/s] 74%|███████▍  | 370/500 [00:42<00:12, 10.36it/s] 74%|███████▍  | 372/500 [00:43<00:17,  7.23it/s] 75%|███████▍  | 374/500 [00:43<00:15,  8.24it/s] 75%|███████▌  | 376/500 [00:43<00:16,  7.51it/s] 76%|███████▌  | 378/500 [00:44<00:20,  5.89it/s] 76%|███████▌  | 381/500 [00:44<00:14,  8.09it/s] 77%|███████▋  | 384/500 [00:44<00:11, 10.46it/s] 77%|███████▋  | 386/500 [00:44<00:10, 11.38it/s] 78%|███████▊  | 388/500 [00:45<00:12,  9.27it/s] 78%|███████▊  | 390/500 [00:45<00:17,  6.41it/s] 78%|███████▊  | 391/500 [00:46<00:19,  5.46it/s] 79%|███████▉  | 394/500 [00:46<00:13,  7.81it/s] 79%|███████▉  | 397/500 [00:46<00:10, 10.15it/s] 80%|███████▉  | 399/500 [00:46<00:14,  7.10it/s] 80%|████████  | 401/500 [00:47<00:13,  7.33it/s] 81%|████████  | 404/500 [00:47<00:09,  9.83it/s] 81%|████████▏ | 407/500 [00:47<00:07, 12.04it/s] 82%|████████▏ | 409/500 [00:47<00:10,  9.05it/s] 82%|████████▏ | 411/500 [00:48<00:11,  7.57it/s] 83%|████████▎ | 414/500 [00:48<00:08,  9.99it/s] 83%|████████▎ | 416/500 [00:48<00:07, 11.13it/s] 84%|████████▎ | 418/500 [00:48<00:10,  8.10it/s] 84%|████████▍ | 420/500 [00:49<00:11,  7.15it/s] 85%|████████▍ | 423/500 [00:49<00:07,  9.80it/s] 85%|████████▌ | 426/500 [00:49<00:05, 12.43it/s] 86%|████████▌ | 428/500 [00:50<00:09,  7.89it/s] 86%|████████▌ | 430/500 [00:50<00:08,  8.14it/s] 87%|████████▋ | 433/500 [00:50<00:06, 10.70it/s] 87%|████████▋ | 436/500 [00:50<00:05, 10.94it/s] 88%|████████▊ | 438/500 [00:51<00:08,  7.32it/s] 88%|████████▊ | 441/500 [00:51<00:06,  9.70it/s] 89%|████████▉ | 444/500 [00:51<00:04, 12.23it/s] 89%|████████▉ | 446/500 [00:51<00:06,  8.02it/s] 90%|████████▉ | 448/500 [00:52<00:06,  7.94it/s] 90%|█████████ | 450/500 [00:52<00:05,  9.31it/s] 90%|█████████ | 452/500 [00:52<00:04, 10.80it/s] 91%|█████████ | 454/500 [00:53<00:07,  6.42it/s] 91%|█████████ | 456/500 [00:53<00:05,  7.42it/s] 92%|█████████▏| 459/500 [00:53<00:04, 10.17it/s] 92%|█████████▏| 461/500 [00:53<00:05,  7.50it/s] 93%|█████████▎| 463/500 [00:54<00:05,  7.07it/s] 93%|█████████▎| 466/500 [00:54<00:03,  9.65it/s] 94%|█████████▍| 469/500 [00:54<00:02, 12.38it/s] 94%|█████████▍| 472/500 [00:54<00:02, 13.34it/s] 95%|█████████▍| 474/500 [00:55<00:03,  7.58it/s] 95%|█████████▌| 477/500 [00:55<00:02, 10.02it/s] 96%|█████████▌| 480/500 [00:55<00:01, 12.55it/s] 97%|█████████▋| 483/500 [00:56<00:02,  7.48it/s] 97%|█████████▋| 486/500 [00:56<00:01,  9.65it/s] 98%|█████████▊| 489/500 [00:56<00:00, 12.00it/s] 98%|█████████▊| 492/500 [00:57<00:01,  7.82it/s] 99%|█████████▉| 494/500 [00:57<00:00,  8.24it/s] 99%|█████████▉| 497/500 [00:57<00:00, 10.47it/s]100%|█████████▉| 499/500 [00:57<00:00,  9.93it/s]100%|██████████| 500/500 [00:58<00:00,  8.58it/s]
+Sim loop done, converting and saving recorded sim data...
+All reset times:  [0.0, 9.98]
+(500, 3)
+(500, 3)
+[INFO] 已保存评估指标: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/楼梯8.5厘米/eval_checkpoint_1500_seed_46_action_delay_0_scenario_fast_walk_stairs_up/metrics_summary.json
+[INFO] 已保存评估数组: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/楼梯8.5厘米/eval_checkpoint_1500_seed_46_action_delay_0_scenario_fast_walk_stairs_up/plots/sim_data.npz
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 550.163.01    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 15478ce1.. |
+|     |                                  |        |     |            | 41        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 2d0e24e4.. |
+|     |                                  |        |     |            | 61        |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 2f067e11.. |
+|     |                                  |        |     |            | 81        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 5ed17834.. |
+|     |                                  |        |     |            | a1        |            |
+|---------------------------------------------------------------------------------------------|
+| 4   | Tesla V100-PCIE-32GB             | Yes: 0 |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 385c2c9d.. |
+|     |                                  |        |     |            | c1        |            |
+|---------------------------------------------------------------------------------------------|
+| 5   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | ae07b535.. |
+|     |                                  |        |     |            | e1        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-136-generic
+| Processor: AMD EPYC 9654 96-Core Processor
+| Cores: 192 | Logical Cores: 192
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 1031725 | Free Memory: 624593
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-03T02:41:12Z [3,511ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 4
+2026-11-03T02:41:13Z [3,648ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+[INFO] Using eval seed=46
+[INFO] Loading model from: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/坡道0.8/model_1500.pt
+[INFO] Detected policy backend=clean_rl, selected policy backend=clean_rl
+Observation dimension=236, selected task=LoComposition-Go2-Rough-Terrain-Joint-State-History-Play-v0
+[INFO] Resolved evaluation robot profile=go2
+[INFO][AppLauncher]: Using device: cuda
+[INFO][AppLauncher]: Loading experience file: /home/xy.chen/tw/LoComposition/dependencies/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261103_104223.log
+2026-11-03T02:42:23Z [118ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-03T02:42:24Z [592ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-03T02:42:24Z [705ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-03T02:42:24Z [715ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-11-03T02:42:25Z [2,233ms] [Warning] [carb.cudainterop.plugin] CUDA_VISIBLE_DEVICES environment variable is set.
+2026-11-03T02:42:25Z [2,233ms] [Warning] [carb.cudainterop.plugin] Note CUDA device enumeration and Omniverse device enumeration are different.
+2026-11-03T02:42:25Z [2,233ms] [Warning] [carb.cudainterop.plugin] Setting CUDA_VISIBLE_DEVICES can lead to undesired behavior or crashes.
+2026-11-03T02:42:26Z [2,954ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:42:26Z [2,954ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:42:26Z [2,955ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:42:26Z [2,955ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:42:26Z [2,955ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:42:26Z [2,955ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:42:26Z [2,955ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:42:26Z [2,955ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:42:26Z [2,956ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:42:26Z [2,956ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:42:26Z [2,956ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:42:26Z [2,956ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:42:26Z [2,956ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T02:42:26Z [2,956ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:42:26Z [2,956ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:42:26Z [2,956ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:42:26Z [2,956ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:42:26Z [2,956ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T02:42:26Z [2,956ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T02:42:26Z [2,956ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+ISAACLAB_NUCLEUS_DIR=https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab
+[INFO]: Parsing configuration from: locomposition.tasks.locomotion.velocity.config.solo12.locomposition_go2_rough_terrain_env_cfg:Go2RoughTerrainEnvCfgJointStateHistory_PLAY
+[INFO] Replaced the PLAY robot config with UNITREE_GO2_CFG_TRAIN for this evaluation.
+[INFO] Loaded action scale from training params/env.yaml
+[INFO] Training actions.joint_pos.scale = 0.8
+[INFO] Eval actions.joint_pos.scale before override = 0.8
+[INFO] Eval actions.joint_pos.scale after override = 0.8
+[INFO] Set latency for joint_pos_history to 0
+[INFO] Set latency for joint_vel_history to 0
+[INFO] Set latency for base_ang_vel to 0
+[INFO] Set latency for projected_gravity to 0
+[INFO] Set latency for actions to 0
+[INFO] Set latency for height_map to 0
+seed=46
+env_cfg.seed=46
+env_cfg.sim.random_seed=46
+terrain_generator.seed=46
+eval_base_dir=/home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/坡道0.8/eval_checkpoint_1500_seed_46_action_delay_0_scenario_walk_existing_slope_0.8mps, env_name=种子46, run_name=坡道0.8, task_name=LoComposition-Go2-Rough-Terrain-Joint-State-History-Play-v0
+Skipping Cost of Transport sweep scenarios
+[INFO] Loaded eval constraint bounds from params/env.yaml:
+{
+    joint_torque: (-20.0, 20.0)
+    joint_velocity: (-25.0, 25.0)
+    joint_acceleration: (-800.0, 800.0)
+    action_rate: (-80.0, 80.0)
+    base_orientation: (-0.1, 0.1)
+    foot_contact_force: (0.0, 300.0)
+    FL_thigh_joint: (None, 1.5)
+    FR_thigh_joint: (None, 1.5)
+    RL_thigh_joint: (None, 1.5)
+    RR_thigh_joint: (None, 1.5)
+    upsidedown: (-0.0, 0.0)
+    FL_hip_joint: (-0.19999999999999998, 0.4)
+    FR_hip_joint: (-0.4, 0.19999999999999998)
+    RL_hip_joint: (-0.19999999999999998, 0.4)
+    RR_hip_joint: (-0.4, 0.19999999999999998)
+}
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-03_10-42-29.log[0m
+[36m======================================================================================[0m
+
+[33m10:42:29 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 46
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+[INFO] Generating terrains randomly took : 3.581014 seconds
+[INFO]: Time taken for scene creation : 6.112018 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 8
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 1.107459 seconds
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++------------------------------------------------------------+
+|                    Active Command Terms                    |
++-------+---------------+------------------------------------+
+| Index | Name          |                Type                |
++-------+---------------+------------------------------------+
+|   0   | base_velocity | UniformVelocityCommandWithDeadzone |
++-------+---------------+------------------------------------+
+
+[INFO] Event Manager:  <EventManager> contains 2 active terms.
++---------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++----------+----------------------------+
+|  Index   | Name                       |
++----------+----------------------------+
+|    0     | physics_material           |
+|    1     | randomize_com              |
+|    2     | randomize_mass             |
+|    3     | force_hard_terrain         |
++----------+----------------------------+
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++--------+----------------------------+
+| Index  | Name                       |
++--------+----------------------------+
+|   0    | reset_base                 |
+|   1    | reset_robot_joints         |
+|   2    | episodic_height_offset     |
++--------+----------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 12)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          12 |
++--------+-------------+-------------+
+
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[INFO] Observation Manager: <ObservationManager> contains 1 groups.
++----------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (236,)) |
++-----------+--------------------------------+-------------+
+|   Index   | Name                           |    Shape    |
++-----------+--------------------------------+-------------+
+|     0     | base_ang_vel                   |     (3,)    |
+|     1     | velocity_commands              |     (3,)    |
+|     2     | projected_gravity              |     (3,)    |
+|     3     | joint_pos_history              |    (36,)    |
+|     4     | joint_vel_history              |    (36,)    |
+|     5     | actions                        |    (12,)    |
+|     6     | height_map                     |    (143,)   |
++-----------+--------------------------------+-------------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 3 active terms.
++---------------------------------+
+|     Active Termination Terms    |
++-------+--------------+----------+
+| Index | Name         | Time Out |
++-------+--------------+----------+
+|   0   | time_out     |   True   |
+|   1   | base_contact |  False   |
+|   2   | upside_down  |  False   |
++-------+--------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 2 active terms.
++---------------------------------------+
+|          Active Reward Terms          |
++-------+----------------------+--------+
+| Index | Name                 | Weight |
++-------+----------------------+--------+
+|   0   | track_lin_vel_xy_exp |    1.0 |
+|   1   | track_ang_vel_z_exp  |    0.5 |
++-------+----------------------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 7 active terms.
++----------------------------+
+|  Active Curriculum Terms   |
++-------+--------------------+
+| Index | Name               |
++-------+--------------------+
+|   0   | joint_torque       |
+|   1   | joint_velocity     |
+|   2   | joint_acceleration |
+|   3   | action_rate        |
+|   4   | hip_position       |
+|   5   | base_orientation   |
+|   6   | terrain_levels     |
++-------+--------------------+
+
+[INFO] Constraint Manager:  <ConstraintManager> contains 11 active terms.
++-----------------------------------------------------------------------------------------------------------------------+
+|                                                Active Constraint Terms                                                |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+| Index | Name               | Limit |                                  Names                                   | Max p |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+|   0   | joint_torque       |  20.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   1   | joint_velocity     |  25.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   2   | joint_acceleration | 800.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   3   | action_rate        |  80.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   4   | base_orientation   |   0.1 |                                    -                                     |  0.25 |
+|   5   | contact            |     - |                           ['base', '.*_thigh']                           |   1.0 |
+|   6   | foot_contact_force | 300.0 |                               ['.*_foot']                                |   1.0 |
+|   7   | front_hfe_position |   1.5 | ['FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint'] |   1.0 |
+|   8   | upsidedown         |   0.0 |                                    -                                     |   1.0 |
+|   9   | hip_position       |   0.3 |                             ['.*_hip_joint']                             |  0.25 |
+|   10  | no_move            |     - |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |   0.1 |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+
+[INFO]: Completed setting up the environment...
+[INFO] Runtime env actions.joint_pos.scale = 0.8
+[SEED CHECK] runtime env seed=46
+[SEED CHECK] runtime sim seed=46
+[SEED CHECK] runtime terrain seed=46
+[INFO] Recording base COM acceleration from body index 0: base
+  0%|          | 0/250 [00:00<?, ?it/s]Resetting env and setting fixed command + spawn point for scenario=('walk_existing_slope_0.8mps', tensor([0.8000, 0.0000, 0.0000], device='cuda:0'), (tensor([ -4.7000, -16.0000,   0.4500], device='cuda:0'), tensor([0., 0., 0., 1.], device='cuda:0')))...
+  0%|          | 1/250 [00:00<02:40,  1.55it/s]  1%|          | 2/250 [00:01<02:33,  1.61it/s]  1%|          | 3/250 [00:01<01:35,  2.59it/s]  2%|▏         | 4/250 [00:01<01:08,  3.60it/s]  2%|▏         | 5/250 [00:01<00:53,  4.62it/s]  2%|▏         | 6/250 [00:01<00:55,  4.40it/s]  3%|▎         | 7/250 [00:02<01:08,  3.54it/s]  3%|▎         | 8/250 [00:02<01:08,  3.51it/s]  4%|▎         | 9/250 [00:02<00:55,  4.35it/s]  4%|▍         | 10/250 [00:02<00:46,  5.15it/s]  4%|▍         | 11/250 [00:02<00:49,  4.87it/s]  5%|▍         | 12/250 [00:03<01:05,  3.64it/s]  5%|▌         | 13/250 [00:03<01:05,  3.61it/s]  6%|▌         | 14/250 [00:03<00:53,  4.38it/s]  6%|▌         | 15/250 [00:03<00:45,  5.11it/s]  6%|▋         | 16/250 [00:04<00:45,  5.12it/s]  7%|▋         | 17/250 [00:04<01:01,  3.78it/s]  7%|▋         | 18/250 [00:04<01:05,  3.55it/s]  8%|▊         | 19/250 [00:04<00:52,  4.38it/s]  8%|▊         | 20/250 [00:05<00:44,  5.21it/s]  8%|▊         | 21/250 [00:05<00:44,  5.10it/s]  9%|▉         | 22/250 [00:05<00:53,  4.24it/s]  9%|▉         | 23/250 [00:05<01:04,  3.53it/s] 10%|▉         | 24/250 [00:06<00:52,  4.27it/s] 10%|█         | 25/250 [00:06<00:45,  4.99it/s] 10%|█         | 26/250 [00:06<00:45,  4.94it/s] 11%|█         | 27/250 [00:06<01:00,  3.67it/s] 11%|█         | 28/250 [00:07<01:02,  3.54it/s] 12%|█▏        | 29/250 [00:07<00:51,  4.29it/s] 12%|█▏        | 30/250 [00:07<00:43,  5.00it/s] 12%|█▏        | 31/250 [00:07<00:51,  4.24it/s] 13%|█▎        | 32/250 [00:08<01:02,  3.49it/s] 13%|█▎        | 33/250 [00:08<00:55,  3.88it/s] 14%|█▎        | 34/250 [00:08<00:46,  4.69it/s] 14%|█▍        | 35/250 [00:08<00:39,  5.45it/s] 14%|█▍        | 36/250 [00:08<00:44,  4.80it/s] 15%|█▍        | 37/250 [00:09<00:57,  3.72it/s] 15%|█▌        | 38/250 [00:09<00:57,  3.66it/s] 16%|█▌        | 39/250 [00:09<00:47,  4.44it/s] 16%|█▌        | 40/250 [00:09<00:40,  5.16it/s] 16%|█▋        | 41/250 [00:10<00:47,  4.42it/s] 17%|█▋        | 42/250 [00:10<00:59,  3.51it/s] 17%|█▋        | 43/250 [00:10<00:55,  3.75it/s] 18%|█▊        | 44/250 [00:10<00:45,  4.50it/s] 18%|█▊        | 45/250 [00:10<00:39,  5.15it/s] 18%|█▊        | 46/250 [00:11<00:52,  3.90it/s] 19%|█▉        | 47/250 [00:11<01:01,  3.30it/s] 19%|█▉        | 48/250 [00:11<00:50,  4.01it/s] 20%|█▉        | 49/250 [00:12<00:41,  4.79it/s] 20%|██        | 50/250 [00:12<00:36,  5.54it/s] 20%|██        | 51/250 [00:12<00:41,  4.81it/s] 21%|██        | 52/250 [00:12<00:53,  3.69it/s] 21%|██        | 53/250 [00:13<00:49,  3.97it/s] 22%|██▏       | 54/250 [00:13<00:41,  4.73it/s] 22%|██▏       | 55/250 [00:13<00:36,  5.37it/s] 22%|██▏       | 56/250 [00:13<00:47,  4.10it/s] 23%|██▎       | 57/250 [00:14<00:55,  3.50it/s] 23%|██▎       | 58/250 [00:14<00:45,  4.18it/s] 24%|██▎       | 59/250 [00:14<00:38,  4.96it/s] 24%|██▍       | 60/250 [00:14<00:33,  5.60it/s] 24%|██▍       | 61/250 [00:14<00:46,  4.06it/s] 25%|██▍       | 62/250 [00:15<00:56,  3.35it/s] 25%|██▌       | 63/250 [00:15<00:46,  4.00it/s] 26%|██▌       | 64/250 [00:15<00:40,  4.61it/s] 26%|██▌       | 65/250 [00:15<00:41,  4.50it/s] 26%|██▋       | 66/250 [00:16<00:51,  3.59it/s] 27%|██▋       | 67/250 [00:16<00:51,  3.58it/s] 27%|██▋       | 68/250 [00:16<00:41,  4.34it/s] 28%|██▊       | 69/250 [00:16<00:36,  5.02it/s] 28%|██▊       | 70/250 [00:16<00:38,  4.70it/s] 28%|██▊       | 71/250 [00:17<00:49,  3.62it/s] 29%|██▉       | 72/250 [00:17<00:49,  3.61it/s] 29%|██▉       | 73/250 [00:17<00:40,  4.35it/s] 30%|██▉       | 74/250 [00:17<00:34,  5.07it/s] 30%|███       | 75/250 [00:18<00:40,  4.33it/s] 30%|███       | 76/250 [00:18<00:47,  3.69it/s] 31%|███       | 77/250 [00:18<00:44,  3.91it/s] 31%|███       | 78/250 [00:18<00:36,  4.68it/s] 32%|███▏      | 79/250 [00:18<00:31,  5.40it/s] 32%|███▏      | 80/250 [00:19<00:34,  4.90it/s] 32%|███▏      | 81/250 [00:19<00:45,  3.71it/s] 33%|███▎      | 82/250 [00:19<00:45,  3.67it/s] 33%|███▎      | 83/250 [00:20<00:37,  4.40it/s] 34%|███▎      | 84/250 [00:20<00:32,  5.13it/s] 34%|███▍      | 85/250 [00:20<00:35,  4.70it/s] 34%|███▍      | 86/250 [00:20<00:44,  3.67it/s] 35%|███▍      | 87/250 [00:21<00:44,  3.66it/s] 35%|███▌      | 88/250 [00:21<00:36,  4.42it/s] 36%|███▌      | 89/250 [00:21<00:31,  5.10it/s] 36%|███▌      | 90/250 [00:21<00:38,  4.15it/s] 36%|███▋      | 91/250 [00:22<00:46,  3.44it/s] 37%|███▋      | 92/250 [00:22<00:40,  3.90it/s] 37%|███▋      | 93/250 [00:22<00:33,  4.68it/s] 38%|███▊      | 94/250 [00:22<00:28,  5.39it/s] 38%|███▊      | 95/250 [00:22<00:31,  4.85it/s] 38%|███▊      | 96/250 [00:23<00:40,  3.77it/s] 39%|███▉      | 97/250 [00:23<00:40,  3.79it/s] 39%|███▉      | 98/250 [00:23<00:33,  4.56it/s] 40%|███▉      | 99/250 [00:23<00:28,  5.26it/s] 40%|████      | 100/250 [00:23<00:32,  4.56it/s] 40%|████      | 101/250 [00:24<00:39,  3.80it/s] 41%|████      | 102/250 [00:24<00:37,  3.90it/s] 41%|████      | 103/250 [00:24<00:31,  4.69it/s] 42%|████▏     | 104/250 [00:24<00:26,  5.42it/s] 42%|████▏     | 105/250 [00:24<00:25,  5.79it/s] 42%|████▏     | 106/250 [00:25<00:23,  6.16it/s] 43%|████▎     | 107/250 [00:25<00:30,  4.72it/s] 43%|████▎     | 108/250 [00:25<00:34,  4.08it/s] 44%|████▎     | 109/250 [00:26<00:41,  3.44it/s] 44%|████▍     | 110/250 [00:26<00:45,  3.06it/s] 44%|████▍     | 111/250 [00:26<00:36,  3.80it/s] 45%|████▍     | 112/250 [00:26<00:29,  4.66it/s] 45%|████▌     | 113/250 [00:26<00:25,  5.44it/s] 46%|████▌     | 114/250 [00:27<00:31,  4.33it/s] 46%|████▌     | 115/250 [00:27<00:38,  3.51it/s] 46%|████▋     | 116/250 [00:27<00:33,  3.96it/s] 47%|████▋     | 117/250 [00:27<00:28,  4.70it/s] 47%|████▋     | 118/250 [00:28<00:26,  5.07it/s] 48%|████▊     | 119/250 [00:28<00:34,  3.76it/s] 48%|████▊     | 120/250 [00:28<00:38,  3.40it/s] 48%|████▊     | 121/250 [00:28<00:31,  4.14it/s] 49%|████▉     | 122/250 [00:29<00:26,  4.89it/s] 49%|████▉     | 123/250 [00:29<00:26,  4.86it/s] 50%|████▉     | 124/250 [00:29<00:34,  3.63it/s] 50%|█████     | 125/250 [00:30<00:35,  3.54it/s] 50%|█████     | 126/250 [00:30<00:29,  4.24it/s] 51%|█████     | 127/250 [00:30<00:25,  4.90it/s] 51%|█████     | 128/250 [00:30<00:32,  3.72it/s] 52%|█████▏    | 129/250 [00:31<00:37,  3.24it/s] 52%|█████▏    | 130/250 [00:31<00:30,  4.00it/s] 52%|█████▏    | 131/250 [00:31<00:24,  4.79it/s] 53%|█████▎    | 132/250 [00:31<00:21,  5.61it/s] 53%|█████▎    | 133/250 [00:31<00:24,  4.81it/s] 54%|█████▎    | 134/250 [00:32<00:31,  3.74it/s] 54%|█████▍    | 135/250 [00:32<00:29,  3.94it/s] 54%|█████▍    | 136/250 [00:32<00:24,  4.68it/s] 55%|█████▍    | 137/250 [00:32<00:21,  5.26it/s] 55%|█████▌    | 138/250 [00:33<00:28,  3.87it/s] 56%|█████▌    | 139/250 [00:33<00:33,  3.35it/s] 56%|█████▌    | 140/250 [00:33<00:27,  4.07it/s] 56%|█████▋    | 141/250 [00:33<00:22,  4.75it/s] 57%|█████▋    | 142/250 [00:33<00:22,  4.77it/s] 57%|█████▋    | 143/250 [00:34<00:29,  3.68it/s] 58%|█████▊    | 144/250 [00:34<00:30,  3.52it/s] 58%|█████▊    | 145/250 [00:34<00:24,  4.28it/s] 58%|█████▊    | 146/250 [00:34<00:20,  5.00it/s] 59%|█████▉    | 147/250 [00:35<00:20,  5.06it/s] 59%|█████▉    | 148/250 [00:35<00:27,  3.75it/s] 60%|█████▉    | 149/250 [00:35<00:28,  3.51it/s] 60%|██████    | 150/250 [00:35<00:23,  4.28it/s] 60%|██████    | 151/250 [00:36<00:19,  5.04it/s] 61%|██████    | 152/250 [00:36<00:17,  5.66it/s] 61%|██████    | 153/250 [00:36<00:22,  4.24it/s] 62%|██████▏   | 154/250 [00:36<00:27,  3.51it/s] 62%|██████▏   | 155/250 [00:37<00:22,  4.27it/s] 62%|██████▏   | 156/250 [00:37<00:18,  5.00it/s] 63%|██████▎   | 157/250 [00:37<00:17,  5.41it/s] 63%|██████▎   | 158/250 [00:37<00:22,  4.04it/s] 64%|██████▎   | 159/250 [00:38<00:26,  3.42it/s] 64%|██████▍   | 160/250 [00:38<00:21,  4.12it/s] 64%|██████▍   | 161/250 [00:38<00:18,  4.85it/s] 65%|██████▍   | 162/250 [00:38<00:17,  4.96it/s] 65%|██████▌   | 163/250 [00:38<00:23,  3.75it/s] 66%|██████▌   | 164/250 [00:39<00:24,  3.48it/s] 66%|██████▌   | 165/250 [00:39<00:19,  4.27it/s] 66%|██████▋   | 166/250 [00:39<00:16,  5.14it/s] 67%|██████▋   | 167/250 [00:39<00:16,  4.99it/s] 67%|██████▋   | 168/250 [00:40<00:21,  3.76it/s] 68%|██████▊   | 169/250 [00:40<00:22,  3.65it/s] 68%|██████▊   | 170/250 [00:40<00:18,  4.41it/s] 68%|██████▊   | 171/250 [00:40<00:15,  5.14it/s] 69%|██████▉   | 172/250 [00:40<00:16,  4.74it/s] 69%|██████▉   | 173/250 [00:41<00:21,  3.63it/s] 70%|██████▉   | 174/250 [00:41<00:21,  3.62it/s] 70%|███████   | 175/250 [00:41<00:17,  4.38it/s] 70%|███████   | 176/250 [00:41<00:14,  5.04it/s] 71%|███████   | 177/250 [00:42<00:16,  4.51it/s] 71%|███████   | 178/250 [00:42<00:20,  3.59it/s] 72%|███████▏  | 179/250 [00:42<00:19,  3.70it/s] 72%|███████▏  | 180/250 [00:42<00:15,  4.45it/s] 72%|███████▏  | 181/250 [00:43<00:13,  5.14it/s] 73%|███████▎  | 182/250 [00:43<00:16,  4.09it/s] 73%|███████▎  | 183/250 [00:43<00:18,  3.53it/s] 74%|███████▎  | 184/250 [00:43<00:16,  4.09it/s] 74%|███████▍  | 185/250 [00:44<00:13,  4.87it/s] 74%|███████▍  | 186/250 [00:44<00:11,  5.56it/s] 75%|███████▍  | 187/250 [00:44<00:13,  4.53it/s] 75%|███████▌  | 188/250 [00:44<00:17,  3.56it/s] 76%|███████▌  | 189/250 [00:45<00:15,  3.93it/s] 76%|███████▌  | 190/250 [00:45<00:12,  4.71it/s] 76%|███████▋  | 191/250 [00:45<00:10,  5.56it/s] 77%|███████▋  | 192/250 [00:45<00:11,  5.08it/s] 77%|███████▋  | 193/250 [00:45<00:14,  3.88it/s] 78%|███████▊  | 194/250 [00:46<00:14,  3.82it/s] 78%|███████▊  | 195/250 [00:46<00:11,  4.59it/s] 78%|███████▊  | 196/250 [00:46<00:10,  5.30it/s] 79%|███████▉  | 197/250 [00:46<00:10,  4.87it/s] 79%|███████▉  | 198/250 [00:47<00:14,  3.65it/s] 80%|███████▉  | 199/250 [00:47<00:14,  3.63it/s] 80%|████████  | 200/250 [00:47<00:11,  4.43it/s] 80%|████████  | 201/250 [00:47<00:09,  5.30it/s] 81%|████████  | 202/250 [00:47<00:09,  4.91it/s] 81%|████████  | 203/250 [00:48<00:12,  3.78it/s] 82%|████████▏ | 204/250 [00:48<00:12,  3.76it/s] 82%|████████▏ | 205/250 [00:48<00:10,  4.50it/s] 82%|████████▏ | 206/250 [00:48<00:08,  5.23it/s] 83%|████████▎ | 207/250 [00:49<00:09,  4.66it/s] 83%|████████▎ | 208/250 [00:49<00:11,  3.68it/s] 84%|████████▎ | 209/250 [00:49<00:11,  3.68it/s] 84%|████████▍ | 210/250 [00:49<00:08,  4.45it/s] 84%|████████▍ | 211/250 [00:49<00:07,  5.14it/s] 85%|████████▍ | 212/250 [00:50<00:09,  4.19it/s] 85%|████████▌ | 213/250 [00:50<00:10,  3.41it/s] 86%|████████▌ | 214/250 [00:50<00:08,  4.03it/s] 86%|████████▌ | 215/250 [00:50<00:07,  4.84it/s] 86%|████████▋ | 216/250 [00:51<00:06,  5.55it/s] 87%|████████▋ | 217/250 [00:51<00:06,  4.78it/s] 87%|████████▋ | 218/250 [00:51<00:08,  3.74it/s] 88%|████████▊ | 219/250 [00:52<00:08,  3.77it/s] 88%|████████▊ | 220/250 [00:52<00:06,  4.54it/s] 88%|████████▊ | 221/250 [00:52<00:05,  5.34it/s] 89%|████████▉ | 222/250 [00:52<00:05,  4.90it/s] 89%|████████▉ | 223/250 [00:52<00:07,  3.83it/s] 90%|████████▉ | 224/250 [00:53<00:06,  3.83it/s] 90%|█████████ | 225/250 [00:53<00:05,  4.60it/s] 90%|█████████ | 226/250 [00:53<00:04,  5.33it/s] 91%|█████████ | 227/250 [00:53<00:04,  5.70it/s] 91%|█████████ | 228/250 [00:53<00:03,  6.19it/s] 92%|█████████▏| 229/250 [00:53<00:03,  5.30it/s] 92%|█████████▏| 230/250 [00:54<00:04,  4.40it/s] 92%|█████████▏| 231/250 [00:54<00:04,  4.15it/s] 93%|█████████▎| 232/250 [00:54<00:05,  3.47it/s] 93%|█████████▎| 233/250 [00:55<00:04,  3.51it/s] 94%|█████████▎| 234/250 [00:55<00:03,  4.24it/s] 94%|█████████▍| 235/250 [00:55<00:02,  5.00it/s] 94%|█████████▍| 236/250 [00:55<00:02,  4.81it/s] 95%|█████████▍| 237/250 [00:56<00:03,  3.60it/s] 95%|█████████▌| 238/250 [00:56<00:03,  3.60it/s] 96%|█████████▌| 239/250 [00:56<00:02,  4.36it/s] 96%|█████████▌| 240/250 [00:56<00:01,  5.04it/s] 96%|█████████▋| 241/250 [00:56<00:02,  4.48it/s] 97%|█████████▋| 242/250 [00:57<00:02,  3.60it/s] 97%|█████████▋| 243/250 [00:57<00:01,  3.68it/s] 98%|█████████▊| 244/250 [00:57<00:01,  4.44it/s] 98%|█████████▊| 245/250 [00:57<00:00,  5.32it/s] 98%|█████████▊| 246/250 [00:58<00:00,  4.89it/s] 99%|█████████▉| 247/250 [00:58<00:00,  3.78it/s] 99%|█████████▉| 248/250 [00:58<00:00,  3.77it/s]100%|█████████▉| 249/250 [00:58<00:00,  4.52it/s]100%|██████████| 250/250 [00:59<00:00,  4.61it/s]100%|██████████| 250/250 [00:59<00:00,  4.24it/s]
+Sim loop done, converting and saving recorded sim data...
+All reset times:  [0.0, 4.98]
+(250, 3)
+(250, 3)
+[INFO] 已保存评估指标: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/坡道0.8/eval_checkpoint_1500_seed_46_action_delay_0_scenario_walk_existing_slope_0.8mps/metrics_summary.json
+[INFO] 已保存评估数组: /home/xy.chen/tw/LoComposition/claude-能耗约束实验-v2-20261101/评估/L/检查点1500/种子46/坡道0.8/eval_checkpoint_1500_seed_46_action_delay_0_scenario_walk_existing_slope_0.8mps/plots/sim_data.npz
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 550.163.01    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 15478ce1.. |
+|     |                                  |        |     |            | 41        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 2d0e24e4.. |
+|     |                                  |        |     |            | 61        |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 2f067e11.. |
+|     |                                  |        |     |            | 81        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 5ed17834.. |
+|     |                                  |        |     |            | a1        |            |
+|---------------------------------------------------------------------------------------------|
+| 4   | Tesla V100-PCIE-32GB             | Yes: 0 |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 385c2c9d.. |
+|     |                                  |        |     |            | c1        |            |
+|---------------------------------------------------------------------------------------------|
+| 5   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | ae07b535.. |
+|     |                                  |        |     |            | e1        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-136-generic
+| Processor: AMD EPYC 9654 96-Core Processor
+| Cores: 192 | Logical Cores: 192
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 1031725 | Free Memory: 643929
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-03T02:42:27Z [3,492ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 4
+2026-11-03T02:42:27Z [3,638ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it

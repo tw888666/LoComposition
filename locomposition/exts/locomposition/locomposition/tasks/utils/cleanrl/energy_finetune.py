@@ -1,11 +1,12 @@
-"""同一起点、同预算的四组能耗微调配置。"""
+"""同一起点、同预算的能耗微调配置；E用于隔离C的力矩平方项。"""
 import hashlib
 import json
 import math
 from pathlib import Path
 
 
-BRANCHES = {"A": (1.0, 0.0), "B": (1.5, 0.0), "C": (1.0, 0.1), "D": (1.0, 0.3)}
+BRANCHES = {"A": (1.0, 0.0), "B": (1.5, 0.0), "C": (1.0, 0.1), "D": (1.0, 0.3),
+            "E": (0.9, 0.0)}
 
 
 def configure_energy_finetune(env_cfg, agent_cfg, branch, reference_path):

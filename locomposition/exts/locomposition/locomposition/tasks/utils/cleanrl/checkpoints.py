@@ -109,7 +109,7 @@ def restore_environment_progress(env, state, num_steps):
         terrain.env_origins.copy_(terrain.terrain_origins[levels, types])
 
 
-def save_training_checkpoint(path, agent, optimizer, env, iteration, total_iterations):
+def save_training_checkpoint(path, agent, optimizer, env, iteration, total_iterations, extra_state=None):
     state = {
         "format_version": 1,
         "model_state_dict": agent.state_dict(),
@@ -125,4 +125,10 @@ def save_training_checkpoint(path, agent, optimizer, env, iteration, total_itera
     if getattr(terrain, "terrain_levels", None) is not None:
         state["terrain_levels"] = terrain.terrain_levels
         state["terrain_types"] = terrain.terrain_types
+    if extra_state:
+        # 例如能耗约束的代价网络、λ 与功率上限；续训时由 PPO 读取
+        overlap = set(extra_state) & set(state)
+        if overlap:
+            raise KeyError(f"额外检查点状态与已有键冲突：{sorted(overlap)}")
+        state.update(extra_state)
     atomic_save(state, path)

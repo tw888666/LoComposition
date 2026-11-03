@@ -6,7 +6,7 @@
 - English terms must include Chinese meaning on first use, for example GitHub（代码托管平台）, Git（版本控制系统）, branch（分支）, commit（提交）, and push（推送）。
 - 不确定时必须明确说明不确定点，不要编造不存在的文件、接口、命令或结果。
 - 生成的各种数据文件，png，csv，md等，尽量使用中文描述，如是英语专业名称，旁边需要附上中文解释。md文件也尽量用中文命名。
-- 生成的md文件，log文件等命名前加上gpt-前缀，便于区分人工和AI生成的文件。
+- 生成的md文件，log文件等命名前加上gpt-前缀或claude-前缀，便于区分人工和AI生成的文件。
 - md里的数学公式要渲染正确，不要使用\[
 P_{\mathrm{cost}}=P_{\mathrm{el}}+P_{\mathrm{mech}}.
 \],$r$这种无法渲染成功的格式。

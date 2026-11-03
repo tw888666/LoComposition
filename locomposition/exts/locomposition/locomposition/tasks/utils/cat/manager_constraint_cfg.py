@@ -25,3 +25,14 @@ class ConstraintTermCfg(ManagerTermBaseCfg):
     func: Callable[..., torch.Tensor] = MISSING
 
     max_p: float = MISSING
+
+
+@configclass
+class EnergyCostCfg:
+    """拉格朗日能耗约束的环境侧代价：平滑机械功率 sum|tau*dq| 的指数滑动平均。"""
+
+    tau_s: float = 0.5
+    """指数滑动平均的时间常数（秒）。"""
+
+    power_ref: float = MISSING
+    """功率归一化尺度（瓦）；每步代价为 平滑功率 / power_ref * step_dt。"""

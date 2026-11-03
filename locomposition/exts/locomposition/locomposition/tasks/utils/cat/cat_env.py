@@ -46,6 +46,17 @@ class CaTEnv(ManagerBasedRLEnv):
             self.constraint_manager = ConstraintManager(self.cfg.constraints, self)
             print("[INFO] Constraint Manager: ", self.constraint_manager)
 
+        # -- 拉格朗日能耗约束的代价信号（平滑机械功率）
+        self.energy_cost_cfg = getattr(self.cfg, "energy_cost", None)
+        if self.energy_cost_cfg is not None:
+            if not (self.energy_cost_cfg.tau_s > 0 and self.energy_cost_cfg.power_ref > 0):
+                raise ValueError("energy_cost.tau_s 与 energy_cost.power_ref 必须为正数。")
+            self._energy_alpha = min(self.step_dt / self.energy_cost_cfg.tau_s, 1.0)
+            self._smoothed_power = torch.zeros(self.num_envs, dtype=torch.float, device=self.device)
+            # 新回合首步直接用瞬时功率初始化滑动平均，避免从 0 起步低估
+            self._smoothed_power_needs_init = torch.ones(self.num_envs, dtype=torch.bool, device=self.device)
+            print(f"[INFO] Energy cost: tau_s={self.energy_cost_cfg.tau_s}, power_ref={self.energy_cost_cfg.power_ref}, alpha={self._energy_alpha}")
+
     def step(self, action: torch.Tensor) -> VecEnvStepReturn:
         """Execute one time-step of the environment's dynamics and reset terminated environments.
 
@@ -113,6 +124,16 @@ class CaTEnv(ManagerBasedRLEnv):
         else:
             self.reward_buf = self.reward_manager.compute(dt=self.step_dt)
             dones = torch.zeros(self.num_envs, device=self.device)
+
+        # -- 能耗代价必须在重置前读取，与奖励对应同一转移
+        if self.energy_cost_cfg is not None:
+            data = self.scene["robot"].data
+            power = torch.sum(torch.abs(data.applied_torque * data.joint_vel), dim=1)
+            smoothed = self._smoothed_power + self._energy_alpha * (power - self._smoothed_power)
+            self._smoothed_power = torch.where(self._smoothed_power_needs_init, power, smoothed)
+            self._smoothed_power_needs_init[:] = False
+            self.extras["smoothed_power"] = self._smoothed_power.clone()
+            self.extras["energy_cost"] = self._smoothed_power / self.energy_cost_cfg.power_ref * self.step_dt
 
         if len(self.recorder_manager.active_terms) > 0:
             # update observations for recording if needed
@@ -198,6 +219,9 @@ class CaTEnv(ManagerBasedRLEnv):
         # -- recorder manager
         info = self.recorder_manager.reset(env_ids)
         self.extras["log"].update(info)
+
+        if self.energy_cost_cfg is not None:
+            self._smoothed_power_needs_init[env_ids] = True
 
         # reset the episode length buffer
         self.episode_length_buf[env_ids] = 0
