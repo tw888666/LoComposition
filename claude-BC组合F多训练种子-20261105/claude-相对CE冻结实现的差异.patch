@@ -1,0 +1,41 @@
+diff -ru '--exclude=__pycache__' "gpt-CE\345\244\232\350\256\255\347\273\203\347\247\215\345\255\220\345\244\215\351\252\214-20261102/\345\206\273\347\273\223\345\256\236\347\216\260/exts/locomposition/locomposition/tasks/utils/cleanrl/energy_finetune.py" "claude-BC\347\273\204\345\220\210F\345\244\232\350\256\255\347\273\203\347\247\215\345\255\220-20261105/\345\206\273\347\273\223\345\256\236\347\216\260/exts/locomposition/locomposition/tasks/utils/cleanrl/energy_finetune.py"
+--- "gpt-CE\345\244\232\350\256\255\347\273\203\347\247\215\345\255\220\345\244\215\351\252\214-20261102/\345\206\273\347\273\223\345\256\236\347\216\260/exts/locomposition/locomposition/tasks/utils/cleanrl/energy_finetune.py"	2026-10-29 21:37:07.000000000 +0800
++++ "claude-BC\347\273\204\345\220\210F\345\244\232\350\256\255\347\273\203\347\247\215\345\255\220-20261105/\345\206\273\347\273\223\345\256\236\347\216\260/exts/locomposition/locomposition/tasks/utils/cleanrl/energy_finetune.py"	2026-11-05 15:42:41.834830230 +0800
+@@ -1,4 +1,4 @@
+-"""同一起点、同预算的能耗微调配置；E用于隔离C的力矩平方项。"""
++"""同一起点、同预算的能耗微调配置；E用于隔离C的力矩平方项；F为B的权重加C的10%力矩平方混合。"""
+ import hashlib
+ import json
+ import math
+@@ -6,7 +6,7 @@
+ 
+ 
+ BRANCHES = {"A": (1.0, 0.0), "B": (1.5, 0.0), "C": (1.0, 0.1), "D": (1.0, 0.3),
+-            "E": (0.9, 0.0)}
++            "E": (0.9, 0.0), "F": (1.5, 0.1)}
+ 
+ 
+ def configure_energy_finetune(env_cfg, agent_cfg, branch, reference_path):
+diff -ru '--exclude=__pycache__' "gpt-CE\345\244\232\350\256\255\347\273\203\347\247\215\345\255\220\345\244\215\351\252\214-20261102/\345\206\273\347\273\223\345\256\236\347\216\260/scripts/clean_rl/train.py" "claude-BC\347\273\204\345\220\210F\345\244\232\350\256\255\347\273\203\347\247\215\345\255\220-20261105/\345\206\273\347\273\223\345\256\236\347\216\260/scripts/clean_rl/train.py"
+--- "gpt-CE\345\244\232\350\256\255\347\273\203\347\247\215\345\255\220\345\244\215\351\252\214-20261102/\345\206\273\347\273\223\345\256\236\347\216\260/scripts/clean_rl/train.py"	2026-10-29 21:37:07.000000000 +0800
++++ "claude-BC\347\273\204\345\220\210F\345\244\232\350\256\255\347\273\203\347\247\215\345\255\220-20261105/\345\206\273\347\273\223\345\256\236\347\216\260/scripts/clean_rl/train.py"	2026-11-05 15:42:41.838830370 +0800
+@@ -84,7 +84,7 @@
+     default=None,
+     help="Override curriculum.power.params['end_weight']; defaults to the task configuration.",
+ )
+-parser.add_argument("--energy_branch", choices=("A", "B", "C", "D", "E"), help="固定能耗微调配置；E为0.0072纯机械功率消融。")
++parser.add_argument("--energy_branch", choices=("A", "B", "C", "D", "E", "F"), help="固定能耗微调配置；E为0.0072纯机械功率消融；F为0.012权重、10%力矩平方混合。")
+ parser.add_argument("--energy_reference", type=str, help="四组共用的固定参考尺度JSON路径。")
+ cli_args.add_clean_rl_args(parser)
+ AppLauncher.add_app_launcher_args(parser)
+--- "gpt-CE\345\244\232\350\256\255\347\273\203\347\247\215\345\255\220\345\244\215\351\252\214-20261102/gpt-\345\206\273\347\273\223\350\257\204\344\274\260\345\205\245\345\217\243.py"	2026-11-02 11:17:29.893768663 +0800
++++ "claude-BC\347\273\204\345\220\210F\345\244\232\350\256\255\347\273\203\347\247\215\345\255\220-20261105/claude-\345\206\273\347\273\223\350\257\204\344\274\260\345\205\245\345\217\243.py"	2026-11-05 15:42:41.845830614 +0800
+@@ -33,7 +33,7 @@
+ def main():
+     p = argparse.ArgumentParser(description=__doc__)
+     p.add_argument('--run-dir', type=Path, required=True)
+-    p.add_argument('--label', choices=('A0', 'A', 'B', 'C', 'D', 'E'), required=True)
++    p.add_argument('--label', choices=('A0', 'A', 'B', 'C', 'D', 'E', 'F'), required=True)
+     p.add_argument('--checkpoint', type=int, required=True)
+     p.add_argument('--gpu', default='4')
+     p.add_argument('--seed', type=int, default=46)

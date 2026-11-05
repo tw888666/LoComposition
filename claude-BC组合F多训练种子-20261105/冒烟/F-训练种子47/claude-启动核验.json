@@ -1,0 +1,74 @@
+{
+  "状态": "通过",
+  "训练种子": 47,
+  "组别": "F",
+  "正式训练": false,
+  "时间": "2026-11-05T15:47:12+08:00",
+  "初始权重逐项一致": true,
+  "首轮已更新且有限": true,
+  "更新键数": 21,
+  "实际运行参数": {
+    "energy_weight": 0.012,
+    "mix_alpha": 0.1,
+    "torque_scale": 0.17440421040278947,
+    "scaling_factor": 1.0,
+    "learning_rate": 3e-05,
+    "constraint_progress": 1.0
+  },
+  "与C组种子46环境差异": [
+    [
+      ".curriculum.power.params.end_weight",
+      0.008,
+      0.012
+    ],
+    [
+      ".curriculum.power.params.start_weight",
+      0.008,
+      0.012
+    ],
+    [
+      ".rewards.minimize_power.weight",
+      0.008,
+      0.012
+    ],
+    [
+      ".scene.num_envs",
+      7500,
+      64
+    ],
+    [
+      ".scene.terrain.terrain_generator.seed",
+      46,
+      47
+    ],
+    [
+      ".seed",
+      46,
+      47
+    ],
+    [
+      ".sim.random_seed",
+      46,
+      47
+    ]
+  ],
+  "算法差异": [
+    [
+      ".experiment_name",
+      "gpt-energy-finetune-C-seed46-20261026",
+      "claude-energy-F-seed47-smoke-20261105"
+    ],
+    [
+      ".num_iterations",
+      5000,
+      3
+    ],
+    [
+      ".seed",
+      46,
+      47
+    ]
+  ],
+  "实际项目模块全部来自冻结目录": true,
+  "模型目录": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed47-smoke-20261105/2026-11-05-15-46-22"
+}

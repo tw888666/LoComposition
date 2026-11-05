@@ -7,6 +7,9 @@
 !/claude-能耗约束结果比较.py
 !/claude-能耗约束训练.sh
 !/gpt-四组微调评估.py
+!/claude-BC组合F冻结代码启动.py
+!/claude-BC组合F多训练种子流水线.py
+!/claude-BC组合F多训练种子-20261105/
 !/claude-能耗约束实验-20261029/
 !/claude-能耗约束实验-v2-20261101/
 !/claude-能耗约束实验-v3-20261103/
