@@ -1,0 +1,39 @@
+{
+  "观测顺序": [
+    "base_ang_vel",
+    "velocity_commands",
+    "projected_gravity",
+    "joint_pos_history",
+    "joint_vel_history",
+    "actions",
+    "height_map"
+  ],
+  "各项维度": [
+    [
+      3
+    ],
+    [
+      3
+    ],
+    [
+      3
+    ],
+    [
+      36
+    ],
+    [
+      36
+    ],
+    [
+      12
+    ],
+    [
+      143
+    ]
+  ],
+  "高程图切片": [
+    93,
+    236
+  ],
+  "高程": "真实高程不遮蔽"
+}
