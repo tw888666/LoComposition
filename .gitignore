@@ -3,6 +3,7 @@
 !/.gitignore
 !/AGENTS.md
 !/claude-能耗约束工作总结-20261103.md
+!/claude-能耗拉格朗日约束实验收口与B组分析-20261105.md
 !/claude-能耗约束结果比较.py
 !/claude-能耗约束训练.sh
 !/gpt-四组微调评估.py
