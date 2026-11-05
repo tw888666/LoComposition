@@ -46,16 +46,22 @@ class CaTEnv(ManagerBasedRLEnv):
             self.constraint_manager = ConstraintManager(self.cfg.constraints, self)
             print("[INFO] Constraint Manager: ", self.constraint_manager)
 
-        # -- 拉格朗日能耗约束的代价信号（平滑机械功率）
+        # -- 拉格朗日能耗约束的代价信号（平滑机械功率 / (平滑有效速度 + 偏移)，单位焦耳/米）
         self.energy_cost_cfg = getattr(self.cfg, "energy_cost", None)
         if self.energy_cost_cfg is not None:
-            if not (self.energy_cost_cfg.tau_s > 0 and self.energy_cost_cfg.power_ref > 0):
-                raise ValueError("energy_cost.tau_s 与 energy_cost.power_ref 必须为正数。")
-            self._energy_alpha = min(self.step_dt / self.energy_cost_cfg.tau_s, 1.0)
+            cfg = self.energy_cost_cfg
+            if not (cfg.tau_s > 0 and cfg.power_ref > 0 and cfg.speed_offset > 0 and cfg.yaw_rate_weight >= 0
+                    and cfg.lateral_penalty >= 0 and cfg.yaw_error_penalty >= 0 and cfg.perp_cmd_threshold >= 0):
+                raise ValueError("energy_cost.tau_s、power_ref、speed_offset 必须为正数，其余权重与阈值不得为负。")
+            self._energy_alpha = min(self.step_dt / cfg.tau_s, 1.0)
             self._smoothed_power = torch.zeros(self.num_envs, dtype=torch.float, device=self.device)
-            # 新回合首步直接用瞬时功率初始化滑动平均，避免从 0 起步低估
+            self._smoothed_v_eff = torch.zeros(self.num_envs, dtype=torch.float, device=self.device)
+            # 新回合首步直接用瞬时值初始化滑动平均，避免从 0 起步低估
             self._smoothed_power_needs_init = torch.ones(self.num_envs, dtype=torch.bool, device=self.device)
-            print(f"[INFO] Energy cost: tau_s={self.energy_cost_cfg.tau_s}, power_ref={self.energy_cost_cfg.power_ref}, alpha={self._energy_alpha}")
+            print(f"[INFO] Energy cost: tau_s={cfg.tau_s}, alpha={self._energy_alpha}, "
+                  f"speed_offset={cfg.speed_offset}, yaw_rate_weight={cfg.yaw_rate_weight}, "
+                  f"lateral_penalty={cfg.lateral_penalty}, yaw_error_penalty={cfg.yaw_error_penalty}, "
+                  f"perp_cmd_threshold={cfg.perp_cmd_threshold}")
 
     def step(self, action: torch.Tensor) -> VecEnvStepReturn:
         """Execute one time-step of the environment's dynamics and reset terminated environments.
@@ -129,11 +135,35 @@ class CaTEnv(ManagerBasedRLEnv):
         if self.energy_cost_cfg is not None:
             data = self.scene["robot"].data
             power = torch.sum(torch.abs(data.applied_torque * data.joint_vel), dim=1)
-            smoothed = self._smoothed_power + self._energy_alpha * (power - self._smoothed_power)
-            self._smoothed_power = torch.where(self._smoothed_power_needs_init, power, smoothed)
+            # 有效速度：机体系水平速度在指令方向上的投影，截断到 [0, |指令|]，防止靠超速或侧偏增大分母；
+            # 另加转向项，兼容训练中的偏航角速度指令；再扣除侧滑与偏航误差，让代价梯度直接惩罚走偏
+            cfg = self.energy_cost_cfg
+            command = self.command_manager.get_command("base_velocity")
+            cmd_xy, vel_xy = command[:, :2], data.root_lin_vel_b[:, :2]
+            cmd_speed = torch.linalg.norm(cmd_xy, dim=1)
+            direction = cmd_xy / (cmd_speed.unsqueeze(1) + 1e-6)
+            projected = torch.sum(vel_xy * direction, dim=1)
+            linear = torch.where(cmd_speed > 1e-3, torch.minimum(projected.clamp_min(0.0), cmd_speed), torch.zeros_like(cmd_speed))
+            cmd_yaw, yaw_rate = command[:, 2], data.root_ang_vel_b[:, 2]
+            yaw = torch.minimum((yaw_rate * torch.sign(cmd_yaw)).clamp_min(0.0), cmd_yaw.abs())
+            # 侧滑速度：垂直于指令方向的水平速度；指令很小时方向不可靠，整个水平速度都算侧滑
+            lateral_slip = torch.where(cmd_speed < cfg.perp_cmd_threshold, torch.linalg.norm(vel_xy, dim=1),
+                                       torch.linalg.norm(vel_xy - projected.unsqueeze(1) * direction, dim=1))
+            yaw_rate_error = torch.abs(yaw_rate - cmd_yaw)
+            v_eff = (linear + cfg.yaw_rate_weight * yaw - cfg.lateral_penalty * lateral_slip
+                     - cfg.yaw_error_penalty * yaw_rate_error).clamp_min(0.0)
+            init = self._smoothed_power_needs_init
+            self._smoothed_power = torch.where(init, power, self._smoothed_power + self._energy_alpha * (power - self._smoothed_power))
+            self._smoothed_v_eff = torch.where(init, v_eff, self._smoothed_v_eff + self._energy_alpha * (v_eff - self._smoothed_v_eff))
             self._smoothed_power_needs_init[:] = False
+            denominator = self._smoothed_v_eff + self.energy_cost_cfg.speed_offset
             self.extras["smoothed_power"] = self._smoothed_power.clone()
-            self.extras["energy_cost"] = self._smoothed_power / self.energy_cost_cfg.power_ref * self.step_dt
+            self.extras["smoothed_v_eff"] = self._smoothed_v_eff.clone()
+            self.extras["energy_denominator"] = denominator
+            self.extras["energy_per_distance"] = self._smoothed_power / denominator
+            self.extras["lin_vel_error"] = torch.linalg.norm(cmd_xy - vel_xy, dim=1)
+            self.extras["lateral_slip"] = lateral_slip
+            self.extras["yaw_rate_error"] = yaw_rate_error
 
         if len(self.recorder_manager.active_terms) > 0:
             # update observations for recording if needed

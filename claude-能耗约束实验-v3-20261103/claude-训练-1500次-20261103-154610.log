@@ -1,0 +1,447 @@
+代码版本：d97f6c7e2df9dc7c870c952c5a10c8989198a263
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/xy.chen/tw/LoComposition/dependencies/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261103_154610.log
+2026-11-03T07:46:10Z [112ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-03T07:46:10Z [492ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-03T07:46:10Z [591ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-03T07:46:10Z [600ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-11-03T07:46:14Z [4,544ms] [Warning] [carb.cudainterop.plugin] CUDA_VISIBLE_DEVICES environment variable is set.
+2026-11-03T07:46:14Z [4,544ms] [Warning] [carb.cudainterop.plugin] Note CUDA device enumeration and Omniverse device enumeration are different.
+2026-11-03T07:46:14Z [4,544ms] [Warning] [carb.cudainterop.plugin] Setting CUDA_VISIBLE_DEVICES can lead to undesired behavior or crashes.
+2026-11-03T07:46:15Z [5,147ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T07:46:15Z [5,147ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T07:46:15Z [5,148ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T07:46:15Z [5,148ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T07:46:15Z [5,148ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T07:46:15Z [5,148ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T07:46:15Z [5,148ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T07:46:15Z [5,148ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T07:46:15Z [5,149ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T07:46:15Z [5,149ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T07:46:15Z [5,149ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T07:46:15Z [5,149ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T07:46:15Z [5,149ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-03T07:46:15Z [5,149ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T07:46:15Z [5,149ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T07:46:15Z [5,149ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T07:46:15Z [5,149ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T07:46:15Z [5,149ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-03T07:46:15Z [5,149ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-03T07:46:15Z [5,149ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 550.163.01    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 15478ce1.. |
+|     |                                  |        |     |            | 41        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 2d0e24e4.. |
+|     |                                  |        |     |            | 61        |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 2f067e11.. |
+|     |                                  |        |     |            | 81        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 5ed17834.. |
+|     |                                  |        |     |            | a1        |            |
+|---------------------------------------------------------------------------------------------|
+| 4   | Tesla V100-PCIE-32GB             | Yes: 0 |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 385c2c9d.. |
+|     |                                  |        |     |            | c1        |            |
+|---------------------------------------------------------------------------------------------|
+| 5   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | ae07b535.. |
+|     |                                  |        |     |            | e1        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-136-generic
+| Processor: AMD EPYC 9654 96-Core Processor
+| Cores: 192 | Logical Cores: 192
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 1031725 | Free Memory: 667226
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-03T07:46:15Z [5,687ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 4
+[INFO]: Parsing configuration from: locomposition.tasks.locomotion.velocity.config.solo12.locomposition_go2_rough_terrain_env_cfg:Go2RoughTerrainEnvCfgJointStateHistory
+[INFO]: Parsing configuration from: locomposition.tasks.locomotion.velocity.config.solo12.agents.clean_rl_ppo_cfg:Solo12FlatPPORunnerCfg
+[INFO] Using seed=46
+[INFO] agent_cfg.seed=46
+[INFO] env_cfg.seed=46
+[INFO] env_cfg.sim.random_seed=46
+[INFO] terrain_generator.seed=46
+[INFO] Resolved training embodiment/configuration:
+[INFO] task=LoComposition-Go2-Rough-Terrain-Joint-State-History-v0
+[INFO] robot_usd=https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab/Robots/Unitree/Go2/go2.usd
+[INFO] action_joint_names=['FL_hip_joint', 'FR_hip_joint', 'RL_hip_joint', 'RR_hip_joint', 'FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint', 'FL_calf_joint', 'FR_calf_joint', 'RL_calf_joint', 'RR_calf_joint']
+[INFO] action_scale=0.8
+[INFO] control_step_dt=0.02
+[INFO] episode_length_s=10.0
+[INFO] energy_end_weight=None
+[INFO] constraint.joint_torque={'limit': 20.0, 'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']}
+[INFO] constraint.joint_velocity={'limit': 25.0, 'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']}
+[INFO] constraint.joint_acceleration={'limit': 800.0, 'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']}
+[INFO] constraint.action_rate={'limit': 80.0, 'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']}
+[INFO] constraint.foot_contact_force={'limit': 300.0, 'names': ['.*_foot']}
+[INFO] constraint.front_hfe_position={'limit': 1.5, 'names': ['FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint']}
+[INFO] constraint.hip_position={'limit': 0.3, 'names': ['.*_hip_joint'], 'velocity_deadzone': 0.1}
+[INFO] constraint.no_move={'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint'], 'velocity_deadzone': 0.1, 'joint_vel_limit': 4.0}
+[INFO] event.randomize_mass={'asset_cfg': SceneEntityCfg(name='robot', joint_names=None, joint_ids=slice(None, None, None), fixed_tendon_names=None, fixed_tendon_ids=slice(None, None, None), body_names=['base'], body_ids=slice(None, None, None), object_collection_names=None, object_collection_ids=slice(None, None, None), preserve_order=False), 'mass_distribution_params': (-1.5, 1.5), 'operation': 'add', 'distribution': 'uniform', 'recompute_inertia': True}
+[INFO] event.push_robot={'velocity_range': {'x': (-0.5, 0.5), 'y': (-0.5, 0.5)}}
+[INFO] event.push_base_wrench={'asset_cfg': SceneEntityCfg(name='robot', joint_names=None, joint_ids=slice(None, None, None), fixed_tendon_names=None, fixed_tendon_ids=slice(None, None, None), body_names=['base'], body_ids=slice(None, None, None), object_collection_names=None, object_collection_ids=slice(None, None, None), preserve_order=False), 'force_range': (-10.0, 10.0), 'torque_range': (-0.5, 0.5)}
+[INFO] Logging experiment in directory: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500
+[INFO] Reserved run directory: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17
+[能耗约束配置] {"约束形式": "PPO-Lagrangian（拉格朗日对偶 PPO）：E[q = 平滑功率 / (平滑有效速度 + v_0)，v_0=0.28 米/秒] <= 上限（焦耳/米）", "版本": "第三版（2026-11-03）：约束每米能耗；有效速度为指令方向投影并截断；λ 初值对齐原奖励权重并预热；速度误差为收紧判据", "有效速度": "机体系水平速度在指令方向的投影，截断到 [0, |v_cmd_xy|]，加 0.5*clip(w_z*sign(w_cmd), 0, |w_cmd|)；与功率同为 0.5 秒指数滑动平均", "每步代价": "(约束量 - 上限) / metric_ref * step_dt，可正可负；热身期以约束量滑动平均为零点", "metric_ref": "在 λ 置零预热期末标定为 power_ref / 平均分母", "平滑方式": "指数滑动平均，时间常数 0.5 秒；新回合首步以瞬时值初始化", "优势合成": "(A_r - lambda*A_c) / (1 + lambda)", "lambda预热": "前 100 次为 0（只训练代价网络），之后 100 次线性升到 0.32，保持到第 500 次热身结束", "lambda更新": "积分项 I <- clip(I + lr*v, 0, lambda_max)，v=(约束量均值 - 上限)/metric_ref；lambda = clip(I + kp*EMA(v), 0, lambda_max)", "上限调整": "每步全环境水平速度误差均值，<= 1.04 倍热身参考值才收紧，> 1.09 倍回退；地形 < terrain_floor*terrain_ref 也回退；回退到上一次收紧前的值（每次收紧最多回退一次），并暂停收紧 backoff_cooldown 个判断周期；上限不会超过已到达过的最高值", "已移除奖励项": "minimize_power", "原能耗奖励终值权重": 0.008, "初始上限说明": "热身结束时用实测约束量滑动平均标定", "学习率": 3e-05, "学习率退火": false, "参数": {"enabled": true, "power_ref": 40.05852980620652, "cost_metric": "per_distance", "speed_offset": 0.28, "yaw_rate_weight": 0.5, "metric_ref": null, "limit_init": null, "limit_min": 5.0, "limit_max": 200.0, "terrain_ref": 3.2, "track_ref": 0.8, "perf_ratio": 0.95, "relax_margin": 0.05, "track_mode": "error", "err_tighten_ratio": 1.04, "err_backoff_ratio": 1.09, "terrain_floor": 0.85, "satisfy_tol": 0.05, "shrink": 0.03, "adapt_interval": 50, "warmup_iters": 500, "backoff_cooldown": 4, "perf_beta": 0.9, "lambda_init": 0.32, "lambda_warmup_zero_iters": 100, "lambda_warmup_ramp_iters": 100, "lambda_lr": 0.05, "lambda_kp": 10.0, "lambda_kp_beta": 0.9, "lambda_max": 10.0, "cost_centered": true, "cost_critic_lr": 0.0003}, "参考尺度文件": "/home/xy.chen/tw/LoComposition/gpt-四组微调实验-20261026/gpt-固定参考尺度.json", "参考尺度SHA256": "1eff524dfafd80aee3866de8b1b65a41d425a6b5842a0454d1dc1d6605ef55a8"}
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-03_15-46-17.log[0m
+[36m======================================================================================[0m
+
+[33m15:46:17 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 46
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+[INFO] Generating terrains based on curriculum took : 68.777429 seconds
+[INFO]: Time taken for scene creation : 78.308851 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 7500
+	Environment spacing   : 3.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 39.688962 seconds
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++------------------------------------------------------------+
+|                    Active Command Terms                    |
++-------+---------------+------------------------------------+
+| Index | Name          |                Type                |
++-------+---------------+------------------------------------+
+|   0   | base_velocity | UniformVelocityCommandWithDeadzone |
++-------+---------------+------------------------------------+
+
+[INFO] Event Manager:  <EventManager> contains 3 active terms.
++--------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++----------+---------------------------+
+|  Index   | Name                      |
++----------+---------------------------+
+|    0     | physics_material          |
+|    1     | randomize_com             |
+|    2     | randomize_mass            |
++----------+---------------------------+
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++--------+----------------------------+
+| Index  | Name                       |
++--------+----------------------------+
+|   0    | reset_base                 |
+|   1    | reset_robot_joints         |
+|   2    | episodic_height_offset     |
++--------+----------------------------+
++----------------------------------------------------+
+|       Active Event Terms in Mode: 'interval'       |
++-------+------------------+-------------------------+
+| Index | Name             | Interval time range (s) |
++-------+------------------+-------------------------+
+|   0   | push_robot       |       (0.0, 0.005)      |
+|   1   | push_base_wrench |       (0.05, 0.1)       |
++-------+------------------+-------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 12)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          12 |
++--------+-------------+-------------+
+
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[INFO] Observation Manager: <ObservationManager> contains 1 groups.
++----------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (236,)) |
++-----------+--------------------------------+-------------+
+|   Index   | Name                           |    Shape    |
++-----------+--------------------------------+-------------+
+|     0     | base_ang_vel                   |     (3,)    |
+|     1     | velocity_commands              |     (3,)    |
+|     2     | projected_gravity              |     (3,)    |
+|     3     | joint_pos_history              |    (36,)    |
+|     4     | joint_vel_history              |    (36,)    |
+|     5     | actions                        |    (12,)    |
+|     6     | height_map                     |    (143,)   |
++-----------+--------------------------------+-------------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 3 active terms.
++---------------------------------+
+|     Active Termination Terms    |
++-------+--------------+----------+
+| Index | Name         | Time Out |
++-------+--------------+----------+
+|   0   | time_out     |   True   |
+|   1   | base_contact |  False   |
+|   2   | upside_down  |  False   |
++-------+--------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 2 active terms.
++---------------------------------------+
+|          Active Reward Terms          |
++-------+----------------------+--------+
+| Index | Name                 | Weight |
++-------+----------------------+--------+
+|   0   | track_lin_vel_xy_exp |    1.0 |
+|   1   | track_ang_vel_z_exp  |    0.5 |
++-------+----------------------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 7 active terms.
++----------------------------+
+|  Active Curriculum Terms   |
++-------+--------------------+
+| Index | Name               |
++-------+--------------------+
+|   0   | joint_torque       |
+|   1   | joint_velocity     |
+|   2   | joint_acceleration |
+|   3   | action_rate        |
+|   4   | hip_position       |
+|   5   | base_orientation   |
+|   6   | terrain_levels     |
++-------+--------------------+
+
+[INFO] Constraint Manager:  <ConstraintManager> contains 11 active terms.
++-----------------------------------------------------------------------------------------------------------------------+
+|                                                Active Constraint Terms                                                |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+| Index | Name               | Limit |                                  Names                                   | Max p |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+|   0   | joint_torque       |  20.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   1   | joint_velocity     |  25.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   2   | joint_acceleration | 800.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   3   | action_rate        |  80.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   4   | base_orientation   |   0.1 |                                    -                                     |  0.25 |
+|   5   | contact            |     - |                           ['base', '.*_thigh']                           |   1.0 |
+|   6   | foot_contact_force | 300.0 |                               ['.*_foot']                                |   1.0 |
+|   7   | front_hfe_position |   1.5 | ['FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint'] |   1.0 |
+|   8   | upsidedown         |   0.0 |                                    -                                     |   1.0 |
+|   9   | hip_position       |   0.3 |                             ['.*_hip_joint']                             |  0.25 |
+|   10  | no_move            |     - |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |   0.1 |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+
+[INFO] Energy cost: tau_s=0.5, alpha=0.04, speed_offset=0.28, yaw_rate_weight=0.5
+[INFO]: Completed setting up the environment...
+Terrain hash: e3f8594b1c2755f00290cebc3d98598721063bd0
+[INFO] 训练输出目录: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17
+seed in ppo.py= 46
+[微调] {"来源检查点": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_30000.pt", "来源文件SHA256": "3cfa3b846a8bcb72ed20dbba9e06e94cbfa5800e88adccfae2534ff7e69cec94", "来源迭代": 30000, "来源格式": "完整智能体状态字典", "逐键完全一致": true, "已核验状态键": ["actor_logstd", "critic.0.weight", "critic.0.bias", "critic.2.weight", "critic.2.bias", "critic.4.weight", "critic.4.bias", "critic.6.weight", "critic.6.bias", "actor_mean.0.weight", "actor_mean.0.bias", "actor_mean.2.weight", "actor_mean.2.bias", "actor_mean.4.weight", "actor_mean.4.bias", "actor_mean.6.weight", "actor_mean.6.bias", "obs_rms.running_mean", "obs_rms.running_var", "obs_rms.count", "value_rms.running_mean", "value_rms.running_var", "value_rms.count"], "优化器已恢复": false, "地形与约束归一化已恢复": false, "微调已完成迭代": 0, "微调总迭代": 1500, "优化器": "新 Adam（自适应矩估计优化器）", "优化器状态条目数": 0, "初始学习率": 3e-05, "学习率衰减": false, "约束课程进度": 1.0, "环境随机种子": 46, "并行环境数": 7500, "初始化说明": "完整加载 actor、critic、actor_logstd、obs_rms、value_rms；所有组的新环境、地形和约束归一化采用相同随机种子重新初始化。"}
+[微调运行参数] {"learning_rate": 3e-05, "constraint_progress": 1.0}
+Starting training for 1500 steps
+[训练] 迭代=1/1500 耗时=35.88s 平均奖励=0.021311 学习率=3e-05 约束量=107.112 平滑功率=43.65W 速度误差=0.3577 上限=None lambda=0.0000
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_1.pt
+[训练] 迭代=2/1500 耗时=37.23s 平均奖励=0.027313 学习率=3e-05 约束量=55.584 平滑功率=37.79W 速度误差=0.1587 上限=None lambda=0.0000
+[训练] 迭代=3/1500 耗时=37.01s 平均奖励=0.027573 学习率=3e-05 约束量=40.989 平滑功率=33.75W 速度误差=0.1475 上限=None lambda=0.0000
+[训练] 迭代=10/1500 耗时=37.31s 平均奖励=0.027272 学习率=3e-05 约束量=36.931 平滑功率=33.32W 速度误差=0.1582 上限=None lambda=0.0000
+[训练] 迭代=20/1500 耗时=37.76s 平均奖励=0.027425 学习率=3e-05 约束量=37.018 平滑功率=33.25W 速度误差=0.1516 上限=None lambda=0.0000
+[训练] 迭代=30/1500 耗时=37.67s 平均奖励=0.027312 学习率=3e-05 约束量=37.239 平滑功率=33.80W 速度误差=0.1550 上限=None lambda=0.0000
+[训练] 迭代=40/1500 耗时=37.33s 平均奖励=0.027484 学习率=3e-05 约束量=37.110 平滑功率=33.70W 速度误差=0.1482 上限=None lambda=0.0000
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_49.pt
+[训练] 迭代=50/1500 耗时=37.51s 平均奖励=0.027329 学习率=3e-05 约束量=37.858 平滑功率=34.44W 速度误差=0.1534 上限=None lambda=0.0000
+[训练] 迭代=60/1500 耗时=37.57s 平均奖励=0.027358 学习率=3e-05 约束量=38.325 平滑功率=34.41W 速度误差=0.1524 上限=None lambda=0.0000
+[训练] 迭代=70/1500 耗时=37.20s 平均奖励=0.027360 学习率=3e-05 约束量=38.019 平滑功率=34.63W 速度误差=0.1516 上限=None lambda=0.0000
+[训练] 迭代=80/1500 耗时=37.51s 平均奖励=0.027342 学习率=3e-05 约束量=39.087 平滑功率=34.99W 速度误差=0.1522 上限=None lambda=0.0000
+[训练] 迭代=90/1500 耗时=37.17s 平均奖励=0.027385 学习率=3e-05 约束量=38.503 平滑功率=35.09W 速度误差=0.1503 上限=None lambda=0.0000
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_99.pt
+[能耗约束] 迭代=100 标定 metric_ref=44.655（平均分母 0.8971）
+[训练] 迭代=100/1500 耗时=37.22s 平均奖励=0.027325 学习率=3e-05 约束量=39.717 平滑功率=35.62W 速度误差=0.1520 上限=None lambda=0.0000
+[训练] 迭代=110/1500 耗时=37.29s 平均奖励=0.027459 学习率=3e-05 约束量=38.608 平滑功率=35.04W 速度误差=0.1470 上限=None lambda=0.0320
+[训练] 迭代=120/1500 耗时=37.41s 平均奖励=0.027234 学习率=3e-05 约束量=39.981 平滑功率=35.33W 速度误差=0.1559 上限=None lambda=0.0640
+[训练] 迭代=130/1500 耗时=37.29s 平均奖励=0.027446 学习率=3e-05 约束量=38.677 平滑功率=34.90W 速度误差=0.1478 上限=None lambda=0.0960
+[训练] 迭代=140/1500 耗时=37.72s 平均奖励=0.027204 学习率=3e-05 约束量=40.201 平滑功率=35.82W 速度误差=0.1563 上限=None lambda=0.1280
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_149.pt
+[训练] 迭代=150/1500 耗时=37.25s 平均奖励=0.027464 学习率=3e-05 约束量=39.632 平滑功率=35.27W 速度误差=0.1468 上限=None lambda=0.1600
+[训练] 迭代=160/1500 耗时=37.63s 平均奖励=0.027216 学习率=3e-05 约束量=40.639 平滑功率=36.34W 速度误差=0.1551 上限=None lambda=0.1920
+[训练] 迭代=170/1500 耗时=36.91s 平均奖励=0.027648 学习率=3e-05 约束量=41.404 平滑功率=35.92W 速度误差=0.1400 上限=None lambda=0.2240
+[训练] 迭代=180/1500 耗时=37.35s 平均奖励=0.027157 学习率=3e-05 约束量=40.582 平滑功率=36.27W 速度误差=0.1577 上限=None lambda=0.2560
+[训练] 迭代=190/1500 耗时=37.01s 平均奖励=0.027670 学习率=3e-05 约束量=46.903 平滑功率=37.43W 速度误差=0.1400 上限=None lambda=0.2880
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_199.pt
+[训练] 迭代=200/1500 耗时=38.37s 平均奖励=0.027072 学习率=3e-05 约束量=41.502 平滑功率=36.74W 速度误差=0.1608 上限=None lambda=0.3200
+[训练] 迭代=210/1500 耗时=36.83s 平均奖励=0.027072 学习率=3e-05 约束量=64.841 平滑功率=41.67W 速度误差=0.1640 上限=None lambda=0.3200
+[训练] 迭代=220/1500 耗时=37.60s 平均奖励=0.027074 学习率=3e-05 约束量=41.347 平滑功率=36.93W 速度误差=0.1602 上限=None lambda=0.3200
+[训练] 迭代=230/1500 耗时=36.24s 平均奖励=0.022533 学习率=3e-05 约束量=86.194 平滑功率=41.66W 速度误差=0.3158 上限=None lambda=0.3200
+[训练] 迭代=240/1500 耗时=38.55s 平均奖励=0.027033 学习率=3e-05 约束量=41.509 平滑功率=36.98W 速度误差=0.1615 上限=None lambda=0.3200
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_249.pt
+[训练] 迭代=250/1500 耗时=37.36s 平均奖励=0.026814 学习率=3e-05 约束量=40.995 平滑功率=36.03W 速度误差=0.1705 上限=None lambda=0.3200
+[训练] 迭代=260/1500 耗时=37.77s 平均奖励=0.026960 学习率=3e-05 约束量=41.601 平滑功率=36.65W 速度误差=0.1645 上限=None lambda=0.3200
+[训练] 迭代=270/1500 耗时=36.29s 平均奖励=0.027042 学习率=3e-05 约束量=41.274 平滑功率=36.19W 速度误差=0.1612 上限=None lambda=0.3200
+[训练] 迭代=280/1500 耗时=31.11s 平均奖励=0.026975 学习率=3e-05 约束量=41.913 平滑功率=36.95W 速度误差=0.1639 上限=None lambda=0.3200
+[训练] 迭代=290/1500 耗时=32.37s 平均奖励=0.026997 学习率=3e-05 约束量=41.541 平滑功率=36.30W 速度误差=0.1626 上限=None lambda=0.3200
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_299.pt
+[训练] 迭代=300/1500 耗时=31.37s 平均奖励=0.026904 学习率=3e-05 约束量=41.996 平滑功率=37.27W 速度误差=0.1661 上限=None lambda=0.3200
+[训练] 迭代=310/1500 耗时=31.39s 平均奖励=0.026988 学习率=3e-05 约束量=41.338 平滑功率=36.53W 速度误差=0.1629 上限=None lambda=0.3200
+[训练] 迭代=320/1500 耗时=31.30s 平均奖励=0.026941 学习率=3e-05 约束量=42.149 平滑功率=37.33W 速度误差=0.1645 上限=None lambda=0.3200
+[训练] 迭代=330/1500 耗时=31.31s 平均奖励=0.026922 学习率=3e-05 约束量=41.754 平滑功率=36.59W 速度误差=0.1655 上限=None lambda=0.3200
+[训练] 迭代=340/1500 耗时=31.09s 平均奖励=0.026990 学习率=3e-05 约束量=41.675 平滑功率=36.93W 速度误差=0.1627 上限=None lambda=0.3200
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_349.pt
+[训练] 迭代=350/1500 耗时=31.03s 平均奖励=0.026956 学习率=3e-05 约束量=42.159 平滑功率=36.81W 速度误差=0.1641 上限=None lambda=0.3200
+[训练] 迭代=360/1500 耗时=31.00s 平均奖励=0.026973 学习率=3e-05 约束量=41.536 平滑功率=36.79W 速度误差=0.1634 上限=None lambda=0.3200
+[训练] 迭代=370/1500 耗时=31.08s 平均奖励=0.026938 学习率=3e-05 约束量=42.358 平滑功率=36.91W 速度误差=0.1648 上限=None lambda=0.3200
+[训练] 迭代=380/1500 耗时=31.02s 平均奖励=0.027046 学习率=3e-05 约束量=40.980 平滑功率=36.37W 速度误差=0.1610 上限=None lambda=0.3200
+[训练] 迭代=390/1500 耗时=31.27s 平均奖励=0.026868 学习率=3e-05 约束量=42.632 平滑功率=37.08W 速度误差=0.1677 上限=None lambda=0.3200
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_399.pt
+[训练] 迭代=400/1500 耗时=30.75s 平均奖励=0.027177 学习率=3e-05 约束量=41.452 平滑功率=36.34W 速度误差=0.1564 上限=None lambda=0.3200
+[训练] 迭代=410/1500 耗时=31.32s 平均奖励=0.026915 学习率=3e-05 约束量=42.325 平滑功率=36.88W 速度误差=0.1659 上限=None lambda=0.3200
+[训练] 迭代=420/1500 耗时=30.84s 平均奖励=0.027232 学习率=3e-05 约束量=42.737 平滑功率=36.70W 速度误差=0.1542 上限=None lambda=0.3200
+[训练] 迭代=430/1500 耗时=31.22s 平均奖励=0.026787 学习率=3e-05 约束量=42.901 平滑功率=37.24W 速度误差=0.1706 上限=None lambda=0.3200
+[训练] 迭代=440/1500 耗时=30.57s 平均奖励=0.027357 学习率=3e-05 约束量=46.416 平滑功率=37.66W 速度误差=0.1505 上限=None lambda=0.3200
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_449.pt
+[训练] 迭代=450/1500 耗时=31.15s 平均奖励=0.026847 学习率=3e-05 约束量=43.152 平滑功率=37.53W 速度误差=0.1678 上限=None lambda=0.3200
+[训练] 迭代=460/1500 耗时=31.61s 平均奖励=0.026963 学习率=3e-05 约束量=58.685 平滑功率=40.60W 速度误差=0.1668 上限=None lambda=0.3200
+[训练] 迭代=470/1500 耗时=31.31s 平均奖励=0.026819 学习率=3e-05 约束量=43.479 平滑功率=37.61W 速度误差=0.1697 上限=None lambda=0.3200
+[训练] 迭代=480/1500 耗时=30.16s 平均奖励=0.023594 学习率=3e-05 约束量=72.378 平滑功率=40.11W 速度误差=0.2800 上限=None lambda=0.3200
+[训练] 迭代=490/1500 耗时=31.38s 平均奖励=0.026785 学习率=3e-05 约束量=43.743 平滑功率=38.06W 速度误差=0.1705 上限=None lambda=0.3200
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_499.pt
+[能耗约束] 迭代=500 决策=warmup 上限=44.686209915161136 约束量=43.107 平均平滑功率=37.43W lambda=0.3200 地形=3.150 跟踪=0.1699 误差参考=0.16994169956445693
+[训练] 迭代=500/1500 耗时=30.83s 平均奖励=0.026603 学习率=3e-05 约束量=43.107 平滑功率=37.43W 速度误差=0.1775 上限=44.686209915161136 lambda=0.3200
+[训练] 迭代=510/1500 耗时=31.13s 平均奖励=0.026835 学习率=3e-05 约束量=43.503 平滑功率=37.56W 速度误差=0.1691 上限=44.686209915161136 lambda=0.4517
+[训练] 迭代=520/1500 耗时=30.98s 平均奖励=0.026864 学习率=3e-05 约束量=43.171 平滑功率=37.01W 速度误差=0.1677 上限=44.686209915161136 lambda=0.1762
+[训练] 迭代=530/1500 耗时=31.01s 平均奖励=0.026725 学习率=3e-05 约束量=43.962 平滑功率=37.89W 速度误差=0.1727 上限=44.686209915161136 lambda=0.4947
+[训练] 迭代=540/1500 耗时=31.20s 平均奖励=0.026844 学习率=3e-05 约束量=43.313 平滑功率=37.33W 速度误差=0.1681 上限=44.686209915161136 lambda=0.2445
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_549.pt
+[能耗约束] 迭代=550 决策=tighten 上限=43.3456236177063 约束量=43.651 平均平滑功率=37.80W lambda=0.5453 地形=3.207 跟踪=0.1725 误差参考=0.16994169956445693
+[训练] 迭代=550/1500 耗时=31.21s 平均奖励=0.026764 学习率=3e-05 约束量=43.651 平滑功率=37.80W 速度误差=0.1713 上限=43.3456236177063 lambda=0.5453
+[训练] 迭代=560/1500 耗时=30.94s 平均奖励=0.026820 学习率=3e-05 约束量=43.760 平滑功率=37.51W 速度误差=0.1688 上限=43.3456236177063 lambda=0.4880
+[训练] 迭代=570/1500 耗时=30.76s 平均奖励=0.026890 学习率=3e-05 约束量=43.112 平滑功率=37.65W 速度误差=0.1659 上限=43.3456236177063 lambda=0.8483
+[训练] 迭代=580/1500 耗时=30.92s 平均奖励=0.026923 学习率=3e-05 约束量=43.215 平滑功率=37.32W 速度误差=0.1639 上限=43.3456236177063 lambda=0.5478
+[训练] 迭代=590/1500 耗时=31.18s 平均奖励=0.026848 学习率=3e-05 约束量=42.779 平滑功率=37.12W 速度误差=0.1682 上限=43.3456236177063 lambda=0.8445
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_599.pt
+[能耗约束] 迭代=600 决策=tighten 上限=42.045254909175114 约束量=43.466 平均平滑功率=37.26W lambda=0.6412 地形=3.221 跟踪=0.1698 误差参考=0.16994169956445693
+[训练] 迭代=600/1500 耗时=31.32s 平均奖励=0.026837 学习率=3e-05 约束量=43.466 平滑功率=37.26W 速度误差=0.1681 上限=42.045254909175114 lambda=0.6412
+[训练] 迭代=610/1500 耗时=31.17s 平均奖励=0.026911 学习率=3e-05 约束量=42.411 平滑功率=36.94W 速度误差=0.1658 上限=42.045254909175114 lambda=1.1636
+[训练] 迭代=620/1500 耗时=31.01s 平均奖励=0.026827 学习率=3e-05 约束量=42.693 平滑功率=37.00W 速度误差=0.1695 上限=42.045254909175114 lambda=0.9055
+[训练] 迭代=630/1500 耗时=30.90s 平均奖励=0.026840 学习率=3e-05 约束量=41.901 平滑功率=36.53W 速度误差=0.1687 上限=42.045254909175114 lambda=1.2590
+[训练] 迭代=640/1500 耗时=31.01s 平均奖励=0.026688 学习率=3e-05 约束量=42.869 平滑功率=36.75W 速度误差=0.1754 上限=42.045254909175114 lambda=0.9359
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_649.pt
+[训练] 迭代=650/1500 耗时=31.07s 平均奖励=0.026776 学习率=3e-05 约束量=42.280 平滑功率=36.20W 速度误差=0.1720 上限=42.045254909175114 lambda=1.3199
+[训练] 迭代=660/1500 耗时=31.00s 平均奖励=0.026537 学习率=3e-05 约束量=43.281 平滑功率=36.80W 速度误差=0.1810 上限=42.045254909175114 lambda=1.0395
+[训练] 迭代=670/1500 耗时=30.93s 平均奖励=0.026816 学习率=3e-05 约束量=42.779 平滑功率=36.16W 速度误差=0.1712 上限=42.045254909175114 lambda=1.4406
+[训练] 迭代=680/1500 耗时=31.13s 平均奖励=0.026611 学习率=3e-05 约束量=42.643 平滑功率=36.49W 速度误差=0.1777 上限=42.045254909175114 lambda=1.0412
+[训练] 迭代=690/1500 耗时=30.98s 平均奖励=0.026897 学习率=3e-05 约束量=45.026 平滑功率=36.72W 速度误差=0.1678 上限=42.045254909175114 lambda=1.4649
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_699.pt
+[训练] 迭代=700/1500 耗时=31.68s 平均奖励=0.026576 学习率=3e-05 约束量=42.782 平滑功率=36.62W 速度误差=0.1793 上限=42.045254909175114 lambda=1.0898
+[训练] 迭代=710/1500 耗时=30.85s 平均奖励=0.026616 学习率=3e-05 约束量=52.895 平滑功率=37.61W 速度误差=0.1805 上限=42.045254909175114 lambda=1.5092
+[训练] 迭代=720/1500 耗时=31.20s 平均奖励=0.026537 学习率=3e-05 约束量=43.125 平滑功率=36.34W 速度误差=0.1809 上限=42.045254909175114 lambda=1.0893
+[训练] 迭代=730/1500 耗时=30.27s 平均奖励=0.023996 学习率=3e-05 约束量=60.542 平滑功率=37.01W 速度误差=0.2675 上限=42.045254909175114 lambda=1.3954
+[训练] 迭代=740/1500 耗时=31.28s 平均奖励=0.026505 学习率=3e-05 约束量=42.463 平滑功率=36.31W 速度误差=0.1818 上限=42.045254909175114 lambda=1.1541
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_749.pt
+[训练] 迭代=750/1500 耗时=30.86s 平均奖励=0.026415 学习率=3e-05 约束量=41.863 平滑功率=36.00W 速度误差=0.1851 上限=42.045254909175114 lambda=0.9460
+[训练] 迭代=760/1500 耗时=31.07s 平均奖励=0.026454 学习率=3e-05 约束量=42.601 平滑功率=36.55W 速度误差=0.1834 上限=42.045254909175114 lambda=1.1220
+[训练] 迭代=770/1500 耗时=31.05s 平均奖励=0.026511 学习率=3e-05 约束量=42.080 平滑功率=36.02W 速度误差=0.1807 上限=42.045254909175114 lambda=0.9657
+[训练] 迭代=780/1500 耗时=31.06s 平均奖励=0.026518 学习率=3e-05 约束量=42.176 平滑功率=36.19W 速度误差=0.1805 上限=42.045254909175114 lambda=1.1101
+[训练] 迭代=790/1500 耗时=30.89s 平均奖励=0.026610 学习率=3e-05 约束量=41.820 平滑功率=35.53W 速度误差=0.1775 上限=42.045254909175114 lambda=0.9259
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_799.pt
+[训练] 迭代=800/1500 耗时=30.92s 平均奖励=0.026592 学习率=3e-05 约束量=41.847 平滑功率=35.87W 速度误差=0.1777 上限=42.045254909175114 lambda=1.1047
+[训练] 迭代=810/1500 耗时=30.93s 平均奖励=0.026655 学习率=3e-05 约束量=42.174 平滑功率=35.97W 速度误差=0.1754 上限=42.045254909175114 lambda=0.9590
+[训练] 迭代=820/1500 耗时=30.82s 平均奖励=0.026524 学习率=3e-05 约束量=42.220 平滑功率=36.22W 速度误差=0.1797 上限=42.045254909175114 lambda=1.1260
+[训练] 迭代=830/1500 耗时=30.91s 平均奖励=0.026619 学习率=3e-05 约束量=41.928 平滑功率=35.88W 速度误差=0.1771 上限=42.045254909175114 lambda=0.9797
+[训练] 迭代=840/1500 耗时=30.77s 平均奖励=0.026647 学习率=3e-05 约束量=41.607 平滑功率=36.10W 速度误差=0.1758 上限=42.045254909175114 lambda=1.1615
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_849.pt
+[训练] 迭代=850/1500 耗时=30.88s 平均奖励=0.026610 学习率=3e-05 约束量=42.088 平滑功率=36.33W 速度误差=0.1775 上限=42.045254909175114 lambda=1.0163
+[训练] 迭代=860/1500 耗时=31.20s 平均奖励=0.026641 学习率=3e-05 约束量=41.116 平滑功率=35.77W 速度误差=0.1771 上限=42.045254909175114 lambda=1.2363
+[训练] 迭代=870/1500 耗时=31.07s 平均奖励=0.026552 学习率=3e-05 约束量=41.918 平滑功率=36.31W 速度误差=0.1793 上限=42.045254909175114 lambda=1.0294
+[训练] 迭代=880/1500 耗时=31.00s 平均奖励=0.026681 学习率=3e-05 约束量=41.192 平滑功率=35.44W 速度误差=0.1748 上限=42.045254909175114 lambda=1.2611
+[训练] 迭代=890/1500 耗时=31.34s 平均奖励=0.026698 学习率=3e-05 约束量=41.933 平滑功率=36.01W 速度误差=0.1740 上限=42.045254909175114 lambda=1.0861
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_899.pt
+[训练] 迭代=900/1500 耗时=31.00s 平均奖励=0.026816 学习率=3e-05 约束量=40.672 平滑功率=35.06W 速度误差=0.1697 上限=42.045254909175114 lambda=1.2930
+[训练] 迭代=910/1500 耗时=30.98s 平均奖励=0.026667 学习率=3e-05 约束量=41.961 平滑功率=36.14W 速度误差=0.1755 上限=42.045254909175114 lambda=1.0412
+[训练] 迭代=920/1500 耗时=30.81s 平均奖励=0.026769 学习率=3e-05 约束量=42.247 平滑功率=35.74W 速度误差=0.1714 上限=42.045254909175114 lambda=1.3915
+[训练] 迭代=930/1500 耗时=30.93s 平均奖励=0.026596 学习率=3e-05 约束量=42.343 平滑功率=36.23W 速度误差=0.1779 上限=42.045254909175114 lambda=1.1667
+[训练] 迭代=940/1500 耗时=30.94s 平均奖励=0.026858 学习率=3e-05 约束量=42.990 平滑功率=35.14W 速度误差=0.1687 上限=42.045254909175114 lambda=1.4458
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_949.pt
+[训练] 迭代=950/1500 耗时=30.93s 平均奖励=0.026612 学习率=3e-05 约束量=42.073 平滑功率=36.11W 速度误差=0.1777 上限=42.045254909175114 lambda=1.1642
+[训练] 迭代=960/1500 耗时=30.66s 平均奖励=0.026514 学习率=3e-05 约束量=49.906 平滑功率=37.08W 速度误差=0.1826 上限=42.045254909175114 lambda=1.4926
+[训练] 迭代=970/1500 耗时=30.80s 平均奖励=0.026599 学习率=3e-05 约束量=42.475 平滑功率=36.19W 速度误差=0.1787 上限=42.045254909175114 lambda=1.2328
+[训练] 迭代=980/1500 耗时=30.15s 平均奖励=0.024418 学习率=3e-05 约束量=54.898 平滑功率=35.92W 速度误差=0.2532 上限=42.045254909175114 lambda=1.3333
+[训练] 迭代=990/1500 耗时=21.37s 平均奖励=0.026520 学习率=3e-05 约束量=41.539 平滑功率=35.88W 速度误差=0.1803 上限=42.045254909175114 lambda=1.1169
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_999.pt
+[训练] 迭代=1000/1500 耗时=24.25s 平均奖励=0.026534 学习率=3e-05 约束量=41.335 平滑功率=35.81W 速度误差=0.1808 上限=42.045254909175114 lambda=1.0538
+[训练] 迭代=1010/1500 耗时=24.26s 平均奖励=0.026506 学习率=3e-05 约束量=41.783 平滑功率=35.97W 速度误差=0.1814 上限=42.045254909175114 lambda=1.1344
+[训练] 迭代=1020/1500 耗时=23.08s 平均奖励=0.026567 学习率=3e-05 约束量=41.628 平滑功率=35.85W 速度误差=0.1800 上限=42.045254909175114 lambda=1.0350
+[训练] 迭代=1030/1500 耗时=24.50s 平均奖励=0.026466 学习率=3e-05 约束量=42.015 平滑功率=35.99W 速度误差=0.1834 上限=42.045254909175114 lambda=1.1942
+[训练] 迭代=1040/1500 耗时=19.93s 平均奖励=0.026535 学习率=3e-05 约束量=41.369 平滑功率=35.54W 速度误差=0.1810 上限=42.045254909175114 lambda=1.0480
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_1049.pt
+[能耗约束] 迭代=1050 决策=backoff 上限=43.3456236177063 约束量=41.283 平均平滑功率=35.61W lambda=1.1146 地形=3.333 跟踪=0.1854 误差参考=0.16994169956445693
+[训练] 迭代=1050/1500 耗时=20.15s 平均奖励=0.026411 学习率=3e-05 约束量=41.283 平滑功率=35.61W 速度误差=0.1861 上限=43.3456236177063 lambda=1.1146
+[训练] 迭代=1060/1500 耗时=20.15s 平均奖励=0.026498 学习率=3e-05 约束量=41.880 平滑功率=35.96W 速度误差=0.1830 上限=43.3456236177063 lambda=0.8459
+[训练] 迭代=1070/1500 耗时=20.02s 平均奖励=0.026442 学习率=3e-05 约束量=41.411 平滑功率=35.80W 速度误差=0.1839 上限=43.3456236177063 lambda=0.8908
+[训练] 迭代=1080/1500 耗时=19.92s 平均奖励=0.026422 学习率=3e-05 约束量=41.683 平滑功率=35.50W 速度误差=0.1861 上限=43.3456236177063 lambda=0.7524
+[训练] 迭代=1090/1500 耗时=19.92s 平均奖励=0.026385 学习率=3e-05 约束量=41.312 平滑功率=35.66W 速度误差=0.1862 上限=43.3456236177063 lambda=0.8668
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_1099.pt
+[训练] 迭代=1100/1500 耗时=19.86s 平均奖励=0.026430 学习率=3e-05 约束量=41.492 平滑功率=35.47W 速度误差=0.1843 上限=43.3456236177063 lambda=0.7224
+[训练] 迭代=1110/1500 耗时=20.03s 平均奖励=0.026504 学习率=3e-05 约束量=41.256 平滑功率=35.44W 速度误差=0.1821 上限=43.3456236177063 lambda=0.8662
+[训练] 迭代=1120/1500 耗时=19.98s 平均奖励=0.026464 学习率=3e-05 约束量=41.701 平滑功率=35.66W 速度误差=0.1833 上限=43.3456236177063 lambda=0.7054
+[训练] 迭代=1130/1500 耗时=20.07s 平均奖励=0.026451 学习率=3e-05 约束量=40.726 平滑功率=35.09W 速度误差=0.1836 上限=43.3456236177063 lambda=0.8840
+[训练] 迭代=1140/1500 耗时=19.85s 平均奖励=0.026573 学习率=3e-05 约束量=41.249 平滑功率=35.62W 速度误差=0.1789 上限=43.3456236177063 lambda=0.6587
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_1149.pt
+[训练] 迭代=1150/1500 耗时=20.02s 平均奖励=0.026572 学习率=3e-05 约束量=40.831 平滑功率=34.97W 速度误差=0.1794 上限=43.3456236177063 lambda=0.8536
+[训练] 迭代=1160/1500 耗时=20.02s 平均奖励=0.026456 学习率=3e-05 约束量=41.855 平滑功率=35.70W 速度误差=0.1835 上限=43.3456236177063 lambda=0.6751
+[训练] 迭代=1170/1500 耗时=19.79s 平均奖励=0.026709 学习率=3e-05 约束量=41.051 平滑功率=35.04W 速度误差=0.1743 上限=43.3456236177063 lambda=0.8898
+[训练] 迭代=1180/1500 耗时=19.93s 平均奖励=0.026452 学习率=3e-05 约束量=41.963 平滑功率=35.73W 速度误差=0.1837 上限=43.3456236177063 lambda=0.6451
+[训练] 迭代=1190/1500 耗时=19.78s 平均奖励=0.026700 学习率=3e-05 约束量=43.052 平滑功率=35.27W 速度误差=0.1750 上限=43.3456236177063 lambda=0.8848
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_1199.pt
+[训练] 迭代=1200/1500 耗时=20.17s 平均奖励=0.026440 学习率=3e-05 约束量=41.880 平滑功率=35.60W 速度误差=0.1845 上限=43.3456236177063 lambda=0.6690
+[训练] 迭代=1210/1500 耗时=19.80s 平均奖励=0.026510 学习率=3e-05 约束量=47.852 平滑功率=36.07W 速度误差=0.1830 上限=43.3456236177063 lambda=0.8897
+[训练] 迭代=1220/1500 耗时=20.08s 平均奖励=0.026499 学习率=3e-05 约束量=41.532 平滑功率=35.51W 速度误差=0.1823 上限=43.3456236177063 lambda=0.6188
+[训练] 迭代=1230/1500 耗时=19.58s 平均奖励=0.024698 学习率=3e-05 约束量=52.434 平滑功率=35.67W 速度误差=0.2432 上限=43.3456236177063 lambda=0.7949
+[训练] 迭代=1240/1500 耗时=20.05s 平均奖励=0.026436 学习率=3e-05 约束量=41.989 平滑功率=35.87W 速度误差=0.1846 上限=43.3456236177063 lambda=0.6726
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_1249.pt
+[训练] 迭代=1250/1500 耗时=19.94s 平均奖励=0.026392 学习率=3e-05 约束量=41.862 平滑功率=35.73W 速度误差=0.1864 上限=43.3456236177063 lambda=0.5389
+[训练] 迭代=1260/1500 耗时=19.78s 平均奖励=0.026354 学习率=3e-05 约束量=42.397 平滑功率=35.84W 速度误差=0.1877 上限=43.3456236177063 lambda=0.6704
+[训练] 迭代=1270/1500 耗时=19.94s 平均奖励=0.026536 学习率=3e-05 约束量=41.848 平滑功率=35.64W 速度误差=0.1802 上限=43.3456236177063 lambda=0.5587
+[训练] 迭代=1280/1500 耗时=19.93s 平均奖励=0.026423 学习率=3e-05 约束量=42.361 平滑功率=36.08W 速度误差=0.1849 上限=43.3456236177063 lambda=0.7001
+[训练] 迭代=1290/1500 耗时=20.03s 平均奖励=0.026573 学习率=3e-05 约束量=41.501 平滑功率=35.68W 速度误差=0.1791 上限=43.3456236177063 lambda=0.5555
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_1299.pt
+[训练] 迭代=1300/1500 耗时=19.93s 平均奖励=0.026399 学习率=3e-05 约束量=42.263 平滑功率=35.74W 速度误差=0.1861 上限=43.3456236177063 lambda=0.6659
+[训练] 迭代=1310/1500 耗时=19.84s 平均奖励=0.026495 学习率=3e-05 约束量=41.820 平滑功率=35.28W 速度误差=0.1831 上限=43.3456236177063 lambda=0.5548
+[训练] 迭代=1320/1500 耗时=19.93s 平均奖励=0.026363 学习率=3e-05 约束量=42.255 平滑功率=35.74W 速度误差=0.1871 上限=43.3456236177063 lambda=0.6630
+[训练] 迭代=1330/1500 耗时=19.95s 平均奖励=0.026513 学习率=3e-05 约束量=42.417 平滑功率=35.77W 速度误差=0.1815 上限=43.3456236177063 lambda=0.5920
+[训练] 迭代=1340/1500 耗时=19.91s 平均奖励=0.026579 学习率=3e-05 约束量=41.551 平滑功率=35.40W 速度误差=0.1785 上限=43.3456236177063 lambda=0.6738
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_1349.pt
+[训练] 迭代=1350/1500 耗时=19.92s 平均奖励=0.026533 学习率=3e-05 约束量=42.065 平滑功率=35.80W 速度误差=0.1803 上限=43.3456236177063 lambda=0.5577
+[训练] 迭代=1360/1500 耗时=19.80s 平均奖励=0.026534 学习率=3e-05 约束量=41.944 平滑功率=36.03W 速度误差=0.1809 上限=43.3456236177063 lambda=0.7057
+[训练] 迭代=1370/1500 耗时=20.20s 平均奖励=0.026549 学习率=3e-05 约束量=42.018 平滑功率=36.23W 速度误差=0.1795 上限=43.3456236177063 lambda=0.5876
+[训练] 迭代=1380/1500 耗时=20.03s 平均奖励=0.026628 学习率=3e-05 约束量=41.601 平滑功率=36.05W 速度误差=0.1766 上限=43.3456236177063 lambda=0.7340
+[训练] 迭代=1390/1500 耗时=19.96s 平均奖励=0.026626 学习率=3e-05 约束量=42.128 平滑功率=36.09W 速度误差=0.1768 上限=43.3456236177063 lambda=0.5545
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_1399.pt
+[训练] 迭代=1400/1500 耗时=19.79s 平均奖励=0.026709 学习率=3e-05 约束量=41.851 平滑功率=35.61W 速度误差=0.1730 上限=43.3456236177063 lambda=0.7988
+[训练] 迭代=1410/1500 耗时=19.96s 平均奖励=0.026589 学习率=3e-05 约束量=42.012 平滑功率=35.75W 速度误差=0.1783 上限=43.3456236177063 lambda=0.5728
+[训练] 迭代=1420/1500 耗时=19.87s 平均奖励=0.026665 学习率=3e-05 约束量=41.809 平滑功率=35.78W 速度误差=0.1753 上限=43.3456236177063 lambda=0.7698
+[训练] 迭代=1430/1500 耗时=19.93s 平均奖励=0.026472 学习率=3e-05 约束量=42.159 平滑功率=36.20W 速度误差=0.1832 上限=43.3456236177063 lambda=0.5754
+[训练] 迭代=1440/1500 耗时=19.75s 平均奖励=0.026671 学习率=3e-05 约束量=43.226 平滑功率=35.92W 速度误差=0.1761 上限=43.3456236177063 lambda=0.7946
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_1449.pt
+[训练] 迭代=1450/1500 耗时=20.04s 平均奖励=0.026472 学习率=3e-05 约束量=42.139 平滑功率=36.23W 速度误差=0.1826 上限=43.3456236177063 lambda=0.5696
+[训练] 迭代=1460/1500 耗时=19.83s 平均奖励=0.026520 学习率=3e-05 约束量=48.495 平滑功率=37.31W 速度误差=0.1815 上限=43.3456236177063 lambda=0.8468
+[训练] 迭代=1470/1500 耗时=20.05s 平均奖励=0.026532 学习率=3e-05 约束量=42.853 平滑功率=36.40W 速度误差=0.1801 上限=43.3456236177063 lambda=0.6533
+[训练] 迭代=1480/1500 耗时=19.69s 平均奖励=0.024820 学习率=3e-05 约束量=52.112 平滑功率=35.95W 速度误差=0.2395 上限=43.3456236177063 lambda=0.7768
+[训练] 迭代=1490/1500 耗时=20.00s 平均奖励=0.026489 学习率=3e-05 约束量=42.511 平滑功率=36.18W 速度误差=0.1820 上限=43.3456236177063 lambda=0.6257
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_1499.pt
+[训练] 迭代=1500/1500 耗时=19.93s 平均奖励=0.026480 学习率=3e-05 约束量=42.370 平滑功率=35.95W 速度误差=0.1817 上限=43.3456236177063 lambda=0.5187
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-constraint-seed46-v3-20261103-1500/2026-11-03-15-46-17/model_1500.pt
