@@ -1,13 +1,3828 @@
 [
   {
+    "路径": ".gitignore",
+    "字节数": 396,
+    "SHA256（内容校验值）": "789307e480c41a0dc59cd78957fd90de2b7c0209c27ab47a0f70e8d657abc89d"
+  },
+  {
     "路径": "AGENTS.md",
     "字节数": 1521,
     "SHA256（内容校验值）": "86580f06c7e2e929989871be7ac3ca4adcf8ed47dd30a39703fdc47718355d74"
   },
   {
+    "路径": "claude-BC组合F冻结代码启动.py",
+    "字节数": 2569,
+    "SHA256（内容校验值）": "6474989fd0213662f45fc7237d9c0613ad4e04ba43560b209f8b393dedfe7770"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/claude-冒烟总状态.json",
+    "字节数": 316,
+    "SHA256（内容校验值）": "cef1ee39d7e8609fff1683eefff80ffb87d56e4b219cd8ef2b443098ef60634b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/claude-冒烟流水线.log",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/claude-冻结评估入口.py",
+    "字节数": 16274,
+    "SHA256（内容校验值）": "8490509076c6c883fb14744ed6cdf1b79966ae93f6cdd94142984af97daf493c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/claude-实验代码清单.json",
+    "字节数": 35653,
+    "SHA256（内容校验值）": "6eb989460f670525609c104a082a64a6390dc57e0f7397dfd35d4ccdf541b2df"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/claude-总状态.json",
+    "字节数": 315,
+    "SHA256（内容校验值）": "121ad63f08b40f2330130369bdcb7ba8f222430082bcdfce01009d4756e7ce18"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/claude-总运行锁",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/claude-正式流水线.log",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/claude-相对CE冻结实现的差异.patch",
+    "字节数": 3975,
+    "SHA256（内容校验值）": "86ed6d7280e091801c89cfdde383ab5960515230830cc4a3aede770e7ebdd2fe"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子46/claude-启动核验.json",
+    "字节数": 1182,
+    "SHA256（内容校验值）": "3eaf418d32c8af71d490a621b7e71dc7a1b219859c96d866639ac2fac653ae3e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子46/claude-状态.json",
+    "字节数": 1928,
+    "SHA256（内容校验值）": "c24385e14571ec77052e06a9903cb476575347b1176065c6f7c8976cf1e74781"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子46/claude-训练.log",
+    "字节数": 22792,
+    "SHA256（内容校验值）": "20e38e16da4fa634937cc9b185bc81845394321029fec38d6ce9791d5d50313e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子46/claude-训练导入来源.json",
+    "字节数": 8355,
+    "SHA256（内容校验值）": "d2d0ac4a83d505669ae4f0a53f2ce634cb4e3cefd8632c3c3685dbfbded68005"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子46/claude-评估-46-平地1.0.log",
+    "字节数": 19540,
+    "SHA256（内容校验值）": "18d20b449166e7c10e69ec203f3f9206bacee65b07c20288aa87b92e9c10b50c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子46/claude-评估导入来源-46-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子46/claude-运行锁",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子47/claude-启动核验.json",
+    "字节数": 1413,
+    "SHA256（内容校验值）": "ed9c28b319f8052b89edf1757b01cc5829c48a9615fc2b83deb64ebe4c10a73d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子47/claude-状态.json",
+    "字节数": 1928,
+    "SHA256（内容校验值）": "ecea39c94caa7ee12171fee1b64d753d538ab5974831639deda6005ebca59e78"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子47/claude-训练.log",
+    "字节数": 23043,
+    "SHA256（内容校验值）": "1d515534317e899e845066f4109afc36ff209e1a6d1cec46c45b2ee7381d06a6"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子47/claude-训练导入来源.json",
+    "字节数": 8355,
+    "SHA256（内容校验值）": "d2d0ac4a83d505669ae4f0a53f2ce634cb4e3cefd8632c3c3685dbfbded68005"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子47/claude-评估-46-平地1.0.log",
+    "字节数": 19476,
+    "SHA256（内容校验值）": "05094612f9f34ef453e7ae79712f3e0910bca8f8af1e06e5c2228300b720eb59"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子47/claude-评估导入来源-46-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子47/claude-运行锁",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子48/claude-启动核验.json",
+    "字节数": 1413,
+    "SHA256（内容校验值）": "2d8b14b4e6e41f318d0b51e248d8e24eb7de99dd47ad3db51c1ac44d98b1e0ef"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子48/claude-状态.json",
+    "字节数": 1914,
+    "SHA256（内容校验值）": "d0b5fe1695c5356ebfa7a78db2f0bd8128df95c3429ee219ff5909946fd96471"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子48/claude-训练.log",
+    "字节数": 23140,
+    "SHA256（内容校验值）": "d6941627e367103c3c97a033774089a90ffce377e54a146faa5f13f8456728e7"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子48/claude-训练导入来源.json",
+    "字节数": 8355,
+    "SHA256（内容校验值）": "d2d0ac4a83d505669ae4f0a53f2ce634cb4e3cefd8632c3c3685dbfbded68005"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子48/claude-评估-46-平地1.0.log",
+    "字节数": 19840,
+    "SHA256（内容校验值）": "1d9646ee800ffb0f487c064314a324cf77e6ff80ae595e96b2b317708c70d08e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子48/claude-评估导入来源-46-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟/F-训练种子48/claude-运行锁",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子46/评估/F/检查点3/种子46/平地1.0/冒烟12步/eval_checkpoint_3_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 211952,
+    "SHA256（内容校验值）": "936c47048d9c994572173f92d969a3dac2fbaec8c7a0e42048bbee00a7cf4350"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子46/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "aa43fe57ade0487ba899709641ae0cfda10afb9b41a1acfc6478bdfc2b698096"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子46/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子46/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "838cbfacbbd100be6535a49d836b3793b462e1f59202774bb636f6cc6f49854e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子46/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "9bdcd635a7dd6ebf0f21eeb6174d7890c1e6cba43c4544005cb2b7a55d764d04"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子46/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子46/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子46/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-重置前真实状态.json",
+    "字节数": 1176,
+    "SHA256（内容校验值）": "e34ac33f159edf7d943263c6900b8983c10a1fd01ddfd5f5039ba10a8ba91362"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子47/评估/F/检查点3/种子46/平地1.0/冒烟12步/eval_checkpoint_3_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 211881,
+    "SHA256（内容校验值）": "6f90f4ce62e624d3cbcc626464c1615ec697789c951cbc692cdf077548c76f4a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子47/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "aa43fe57ade0487ba899709641ae0cfda10afb9b41a1acfc6478bdfc2b698096"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子47/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子47/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "838cbfacbbd100be6535a49d836b3793b462e1f59202774bb636f6cc6f49854e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子47/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "6d42e7a710d4f8d7a787b0d51fac868ebab079b6f0109292f140181a34b08142"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子47/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子47/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子47/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-重置前真实状态.json",
+    "字节数": 1174,
+    "SHA256（内容校验值）": "270bd342b20b99c1df0bb8e8573517853a226cf83179d27b8effeaa44e0bf87e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子48/评估/F/检查点3/种子46/平地1.0/冒烟12步/eval_checkpoint_3_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 211962,
+    "SHA256（内容校验值）": "9eb7f90d84a63c8b20f0a821cbe872613d98872d1a17609de6ff457403cb55dc"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子48/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "aa43fe57ade0487ba899709641ae0cfda10afb9b41a1acfc6478bdfc2b698096"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子48/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子48/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "838cbfacbbd100be6535a49d836b3793b462e1f59202774bb636f6cc6f49854e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子48/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "8059abfdaf991e902962c93687b5d0d2cd9dcfb208938e3b0d99aae480b34a63"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子48/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子48/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冒烟评估/训练种子48/评估/F/检查点3/种子46/平地1.0/冒烟12步/gpt-重置前真实状态.json",
+    "字节数": 1178,
+    "SHA256（内容校验值）": "ffffeb8c5c2b46e1ce009ad4a90e22aeba4a9d42d46c581d0c9f7d3be0ade4e2"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/config/extension.toml",
+    "字节数": 944,
+    "SHA256（内容校验值）": "8c62f405c1a87368e06d4d71401a1c0f499ac8d81b1b11d04f0b2c0abfde48c6"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/docs/CHANGELOG.rst",
+    "字节数": 159,
+    "SHA256（内容校验值）": "58f29c389e65324615b59465ca35c3418e3b1d7d8e655413e058d9bc774b10e7"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/__init__.py",
+    "字节数": 185,
+    "SHA256（内容校验值）": "7818fd2f301d1c88b4503894f4a0ed79aa0d90347fcf5473c402c054bcc10c81"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/checker_blue.png",
+    "字节数": 6379,
+    "SHA256（内容校验值）": "266d8e7010b8d615c873c27dccb4eca37e79035bd24efdca0b54eeb74a9fa419"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/cube.obj",
+    "字节数": 1083,
+    "SHA256（内容校验值）": "d038beae374d97b73e512ae67ef3437a2864fefba43f3483e08a691a3db3255a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/cylinder.obj",
+    "字节数": 12737,
+    "SHA256（内容校验值）": "487d8479ef4ca423d23870d0a8441a48fb0696130e57d48d259894f07e3c4573"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/_solo12_visualisation_model.PDF",
+    "字节数": 105060,
+    "SHA256（内容校验值）": "a77ec48d8ff31c3ec36abe13a1fb630f65eec50960916e0021ed33804e665666"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_hip_fe_fl.obj",
+    "字节数": 122586,
+    "SHA256（内容校验值）": "33f38f7953634b77c34889db19e4de14de8a0853ff7f72be9f71369b73d1e245"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_hip_fe_fr.obj",
+    "字节数": 122436,
+    "SHA256（内容校验值）": "a787d3cda09bcab82a425e124927cdc6258b0e3cbe6efa7c2affd0a8d068a0a8"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_hip_fe_hl.obj",
+    "字节数": 121069,
+    "SHA256（内容校验值）": "5a6cc7659eca9f0cdfa704496e301b30fc18bde749f6ecb63e7fb8fe05f7f763"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_hip_fe_hr.obj",
+    "字节数": 120951,
+    "SHA256（内容校验值）": "9f63bc1cba5c95c96b556c2bfccd5da715b196474ca687c751549f7a30be0b22"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_lower_leg_left_side.obj",
+    "字节数": 89303,
+    "SHA256（内容校验值）": "c5f02c99385e50064c6c099cfc915647425a00997698fac665972341fb9a974e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_lower_leg_right_side.obj",
+    "字节数": 89806,
+    "SHA256（内容校验值）": "df904a35bc5026ff68606b4034712a075147ef67e10839a8ab3444841818da94"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_upper_leg_left_side.obj",
+    "字节数": 125847,
+    "SHA256（内容校验值）": "cee18d34102342a0ffaae686e8293863ac0522674dee904562b124ff6e00f610"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_upper_leg_right_side.obj",
+    "字节数": 127284,
+    "SHA256（内容校验值）": "00a4be865c414fb21ae1d2c1417bac6a7878fac4d1805909d3ad41334a7e736b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo_12_base.obj",
+    "字节数": 222667,
+    "SHA256（内容校验值）": "994b27b0f88670253130f23cd8fb983f9cebdcb0571d798dbb16a14112fef39b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_body.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_body.obj",
+    "字节数": 1100844,
+    "SHA256（内容校验值）": "c309788e837ce3f93e086c2dbb91eefbf6cbfa849196f7a8125fd988b5bbeb49"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_foot.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_foot.obj",
+    "字节数": 190533,
+    "SHA256（内容校验值）": "ac0465df046ef5cdf7842adcba7b6f4383a8b56b3dd997f0a7d565604827f514"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_lower_leg_left_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_lower_leg_left_side.obj",
+    "字节数": 106199,
+    "SHA256（内容校验值）": "faf3a66fcde0b3109e098b627db16a24cd2423fca77539a6983e42af0b6e7e31"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_lower_leg_right_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_lower_leg_right_side.obj",
+    "字节数": 106581,
+    "SHA256（内容校验值）": "cf8be2d7c8696b29245af06fbc736edca1e81cc52460c2edd5d868cc99b07c75"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_upper_leg_left_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_upper_leg_left_side.obj",
+    "字节数": 209715,
+    "SHA256（内容校验值）": "52076825ccb5db3bf7647b872ca3b56f04f9eb14258c83b99453bbb026171f65"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_upper_leg_right_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_upper_leg_right_side.obj",
+    "字节数": 210980,
+    "SHA256（内容校验值）": "2c03ecb7ca2dc9becadf918fb613c200f63967fe023d2add106a0dc4256c26b5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_body.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_body.obj",
+    "字节数": 1100844,
+    "SHA256（内容校验值）": "c309788e837ce3f93e086c2dbb91eefbf6cbfa849196f7a8125fd988b5bbeb49"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_lower_leg_left_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_lower_leg_left_side.obj",
+    "字节数": 149168,
+    "SHA256（内容校验值）": "175c2e6d947d6a4f0f5aae690cf6f337cba1387a315f2650de8ed29aafb7a0bb"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_lower_leg_right_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_lower_leg_right_side.obj",
+    "字节数": 149656,
+    "SHA256（内容校验值）": "76710a6bccdcc5534b5c4189553a49b23ecd1721a4ee3bbbb9dd3e4f5e49ca5a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_lower_leg_v2_left_side.obj",
+    "字节数": 32236,
+    "SHA256（内容校验值）": "1b2fe4d19f92bf114ba94518a69addfd9a8ce18c0170a88afbf5532ce91163e4"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_lower_leg_v2_right_side.obj",
+    "字节数": 32604,
+    "SHA256（内容校验值）": "de01806ddb42a0583282c08fce6f374b9af2f3ae1760a97e407d2a74bf37e533"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_upper_leg_left_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_upper_leg_left_side.obj",
+    "字节数": 209715,
+    "SHA256（内容校验值）": "52076825ccb5db3bf7647b872ca3b56f04f9eb14258c83b99453bbb026171f65"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_upper_leg_right_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_upper_leg_right_side.obj",
+    "字节数": 210980,
+    "SHA256（内容校验值）": "2c03ecb7ca2dc9becadf918fb613c200f63967fe023d2add106a0dc4256c26b5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/plane.mtl",
+    "字节数": 255,
+    "SHA256（内容校验值）": "421de8c371462058b3eaa022fe19aad28c32524603d9c3b72c3bee1995a7a652"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/plane.obj",
+    "字节数": 349,
+    "SHA256（内容校验值）": "0cc3ec11a128956c6888a3ef8a79edaa279cd70e0df7ab96f7749e24f55067f5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/sphere.obj",
+    "字节数": 9083,
+    "SHA256（内容校验值）": "7cbe77b291e37ab6445d9aa9e15a294cbf188e90f3085da1bc5db518c9cc8236"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/_solo12_visualisation_model.PDF",
+    "字节数": 105060,
+    "SHA256（内容校验值）": "a77ec48d8ff31c3ec36abe13a1fb630f65eec50960916e0021ed33804e665666"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_coordinate_systems.png",
+    "字节数": 129903,
+    "SHA256（内容校验值）": "c04d823ab19fbdb559fc573262cd43521f66b8bf71a7d5e54a11f2cab206d8f0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_coordinate_systems_2.png",
+    "字节数": 33519,
+    "SHA256（内容校验值）": "2b094719fbc8e6773b6cad7e0b24372e8fe62b3ca9d050e19efed83b8806aa7b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_coordinate_systems_3.png",
+    "字节数": 30426,
+    "SHA256（内容校验值）": "55554480b8f2091f5f6ada0462080debcc048ed15188cac345c68e83aae8dfe1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_coordinate_systems_4.png",
+    "字节数": 37487,
+    "SHA256（内容校验值）": "2d9207d86e2ddfa93172c3f9ad95238b3b2fc860e2569c3522daf80d46f968fb"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_hip_fe_fl.stl",
+    "字节数": 153984,
+    "SHA256（内容校验值）": "f40df7578e28e10ccbf16818a73705050ddba7f7b18f6d7dd48749299653b70a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_hip_fe_fr.stl",
+    "字节数": 153984,
+    "SHA256（内容校验值）": "f5a398b1807ab6027cdbef1330b9657ad5d3c61e6e39addf5ea0f55704b71f9f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_hip_fe_hl.stl",
+    "字节数": 153984,
+    "SHA256（内容校验值）": "388108a66161aa80cb6f6a9c12b8c2f6095e6eac44922de13f75d2a516298423"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_hip_fe_hr.stl",
+    "字节数": 153984,
+    "SHA256（内容校验值）": "3564fcfa906a402550f25b9f13d127a3014ee5fe31f8f301eaa3c9f7fb8e4fc2"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_lower_leg_left_side.stl",
+    "字节数": 112084,
+    "SHA256（内容校验值）": "cb6b8c570d2614991f8e87c3ce3757741e6bec9538c05d0f802abfaaaef3b9eb"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_lower_leg_right_side.stl",
+    "字节数": 112084,
+    "SHA256（内容校验值）": "f53cc5620c8dd2573c311ce0660977158c9f17bb868abcc44e1d23bc5cf55ad2"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_upper_leg_left_side.stl",
+    "字节数": 155784,
+    "SHA256（内容校验值）": "2546e8c34cbba4b6a573e013344a68de33ded7735c8f66d3b44b8ffe91d15287"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_upper_leg_right_side.stl",
+    "字节数": 155784,
+    "SHA256（内容校验值）": "1b02de8e1b4ba97a8ca89ff72f4ac43e2c82bbd6bc98b2f36be1f769c40814a1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo_12_base.stl",
+    "字节数": 273684,
+    "SHA256（内容校验值）": "3c65eb4eeb6a4e52b9ff1e3c53e53c724c8f5d6f0414791864ced79baddd60d7"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/with_foot/solo_body.stl",
+    "字节数": 820584,
+    "SHA256（内容校验值）": "85bb5351eb66b5af677bb99878e494eca075aeee961072a6065ed2b3f1b2794b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/with_foot/solo_foot.stl",
+    "字节数": 169284,
+    "SHA256（内容校验值）": "98aa9dfa1b55a07567cea12fcbf1e6c5eed831a6b66cfe32d41325cb3edb7fc4"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/with_foot/solo_lower_leg_left_side.stl",
+    "字节数": 87084,
+    "SHA256（内容校验值）": "0273d80184c68d17e8aec154a7021ccf1ac1b1b0eb7a1df8c1b8d23b6f565627"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/with_foot/solo_lower_leg_right_side.stl",
+    "字节数": 87084,
+    "SHA256（内容校验值）": "488aa6c763c19ec464c5f802d323654ef341af4acaa4e3a56642289435f0d772"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/with_foot/solo_upper_leg_left_side.stl",
+    "字节数": 155784,
+    "SHA256（内容校验值）": "2546e8c34cbba4b6a573e013344a68de33ded7735c8f66d3b44b8ffe91d15287"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/with_foot/solo_upper_leg_right_side.stl",
+    "字节数": 155784,
+    "SHA256（内容校验值）": "1b02de8e1b4ba97a8ca89ff72f4ac43e2c82bbd6bc98b2f36be1f769c40814a1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_body.stl",
+    "字节数": 820584,
+    "SHA256（内容校验值）": "85bb5351eb66b5af677bb99878e494eca075aeee961072a6065ed2b3f1b2794b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_lower_leg_left_side.stl",
+    "字节数": 112084,
+    "SHA256（内容校验值）": "cb6b8c570d2614991f8e87c3ce3757741e6bec9538c05d0f802abfaaaef3b9eb"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_lower_leg_right_side.stl",
+    "字节数": 112084,
+    "SHA256（内容校验值）": "f53cc5620c8dd2573c311ce0660977158c9f17bb868abcc44e1d23bc5cf55ad2"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_lower_leg_v2_left_side.stl",
+    "字节数": 42184,
+    "SHA256（内容校验值）": "7bd858ec0bcde356216bad6420f8e560b0e7b9a0a13422b8728a66e4f078af79"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_lower_leg_v2_right_side.stl",
+    "字节数": 42184,
+    "SHA256（内容校验值）": "cb8a131b0c8070400d66a7f0dacc39374b4b5b4fd32eb4c5d5394e0e4f0b48f7"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_upper_leg_left_side.stl",
+    "字节数": 155784,
+    "SHA256（内容校验值）": "2546e8c34cbba4b6a573e013344a68de33ded7735c8f66d3b44b8ffe91d15287"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_upper_leg_right_side.stl",
+    "字节数": 155784,
+    "SHA256（内容校验值）": "1b02de8e1b4ba97a8ca89ff72f4ac43e2c82bbd6bc98b2f36be1f769c40814a1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/solo12_mpi.urdf",
+    "字节数": 25286,
+    "SHA256（内容校验值）": "ba99f83e97c75937622d910757b379595b5d23631ff70a653add683df076bd1e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/usd/.asset_hash",
+    "字节数": 32,
+    "SHA256（内容校验值）": "fa2048a5db90c457830ce38dd00ed41ed3264d10e3cc111c623acad3ddc437c3"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/usd/Props/instanceable_meshes.usd",
+    "字节数": 1775787,
+    "SHA256（内容校验值）": "ca813b6b14a376137fd35efea9ad63d8a608f565d7e42f8bc01379bf3770cd06"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/usd/config.yaml",
+    "字节数": 519,
+    "SHA256（内容校验值）": "2a4548706a3bda37ffeb460dc74f372d7a3b0a88492ac28642314a3185af906c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/usd/solo12_description.usd",
+    "字节数": 1783588,
+    "SHA256（内容校验值）": "eab6c0288e0349b7a705fcd6a843d7a077348d5bf091c1de36c18a4846951a71"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/go2_config.py",
+    "字节数": 3317,
+    "SHA256（内容校验值）": "8efd3eb8515a9862bfa086d18da33f6624169011bfb5136bb375be3f0381f1a9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/assets/odri.py",
+    "字节数": 2546,
+    "SHA256（内容校验值）": "928a2db460d546cb151eb0f081c3164fb0bd6c94688b2b36a1d2467b431f41c6"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/__init__.py",
+    "字节数": 370,
+    "SHA256（内容校验值）": "c09848de2b668e997271d114800068ce7d70d09ca80bed02ccfbc4ef30561488"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/__init__.py",
+    "字节数": 209,
+    "SHA256（内容校验值）": "70db7131866ae69b4ee4dcea5d01a1dd6d8017874f549db7056bfcd7d7bd8416"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/__init__.py",
+    "字节数": 340,
+    "SHA256（内容校验值）": "a08b8c6cf3c2b1d20ccde37aed2fffde2dd944c37492262d99d9df29c12880bc"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/__init__.py",
+    "字节数": 367,
+    "SHA256（内容校验值）": "a81f461511910195497cea40127094e0f22f7b9b08d389f738076ac5dec431cb"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/__init__.py",
+    "字节数": 8481,
+    "SHA256（内容校验值）": "2bceb9a6b8ffaacacb029c8a570c42628dd566ec4205ee2fc1b44b780a9e002e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/agents/__init__.py",
+    "字节数": 126,
+    "SHA256（内容校验值）": "5824d07bf4e31d7065f27d7865049cff927229036d8cb9d9ad6c89e215c1f08c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/agents/clean_rl_ppo_cfg.py",
+    "字节数": 878,
+    "SHA256（内容校验值）": "ae6805d51ea051ed7c7b485bf24eaaa35d273847189b5facd62b10c6dfdc0a2c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/agents/rsl_rl_ppo_cfg.py",
+    "字节数": 771,
+    "SHA256（内容校验值）": "9fc620a491426cc8a7323481e1dc707d2b8e9ca5fbe5a53edb5c951e6c606d68"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/baseline_anymal_c_rough_env_cfg.py",
+    "字节数": 11670,
+    "SHA256（内容校验值）": "ddb1517d77749c572e9c28ece88e2684ec8775b7b1df34375adb76b056b205e5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/baseline_cross_tuning_env_cfg.py",
+    "字节数": 3367,
+    "SHA256（内容校验值）": "e75f8a3e55c3bbded8d67ef22e37c65744e6b345cf1a27e39d559b5d9dbfe8c4"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/baseline_go2_rough_env_cfg.py",
+    "字节数": 13206,
+    "SHA256（内容校验值）": "8b3517e9e8cf25b83b36344ce27c343e5acd85dcfa3ab04ebda6b7cbe3f99e62"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/baseline_spot_rough_env_cfg.py",
+    "字节数": 12426,
+    "SHA256（内容校验值）": "4955b6d7e7b70e402f039290ef844d86cf31d80bca897dca102c0b510212cc8d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/cat_flat_env_cfg.py",
+    "字节数": 18447,
+    "SHA256（内容校验值）": "9e8bf57acf1a8b8d0106ef506940d3304debbde929c66463c2da249dae91a022"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/locomposition_anymal_c_rough_terrain_env_cfg.py",
+    "字节数": 6657,
+    "SHA256（内容校验值）": "e5f57cba184fa5e634c398d646ce7b6ab32dde43b31d305bc4b187f75cf6d0ac"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/locomposition_go2_rough_terrain_env_cfg.py",
+    "字节数": 43633,
+    "SHA256（内容校验值）": "5afa9a005c480bfa3d11ba7e2c23e1320eecc1d4cf49e0aa02a5ed838561242d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/locomposition_spot_rough_terrain_env_cfg.py",
+    "字节数": 9879,
+    "SHA256（内容校验值）": "b32635e36cda947b47272a5c03b0893eaa559337de45351cf3034718b84c4876"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/cat_env.py",
+    "字节数": 9666,
+    "SHA256（内容校验值）": "3a51c536664c52ce82cb186613eb75cb573844261d025be334677162f7665511"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/constraint_manager.py",
+    "字节数": 18657,
+    "SHA256（内容校验值）": "6eb9b0a0ae6c7cd0e121c1d3ac65d9ede3fed2fa05d419a02c127b86f6ccd098"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/constraints.py",
+    "字节数": 10467,
+    "SHA256（内容校验值）": "52e85da32a970f743f6d0e60b0c2a21e5886ad92ac177132b94bf90297446dbb"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/curriculums.py",
+    "字节数": 2679,
+    "SHA256（内容校验值）": "496e402e19226e61457e232e64f56b10f1f16459b4dc2ebba5d7fed054979576"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/manager_constraint_cfg.py",
+    "字节数": 568,
+    "SHA256（内容校验值）": "85de2bbd9042b1fa395c2552847701e4323bd783447efb561c7db16f6c49932c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/cleanrl/checkpoints.py",
+    "字节数": 6240,
+    "SHA256（内容校验值）": "05144c64c5fac5abaebdd6da5dc0b09d5dd840e8e0beb9d31b883b3e6ddde063"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/cleanrl/energy_finetune.py",
+    "字节数": 3073,
+    "SHA256（内容校验值）": "c2c5786f8165860d3c2bc86c09206760b2747d3caf849a9eb10291da28edf3a0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/cleanrl/ppo.py",
+    "字节数": 35390,
+    "SHA256（内容校验值）": "22aac5a9adda92ebd12093e3dafc3bb0b90aa586fadbd17d6b367924f63119eb"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/cleanrl/rl_cfg.py",
+    "字节数": 1169,
+    "SHA256（内容校验值）": "bd2d149a1018c489840c4f38d5416d5676573c098ea25cc89ce1a4e6ab093bc1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/commands.py",
+    "字节数": 3722,
+    "SHA256（内容校验值）": "8830435088c48dc4612aa4f0d634588535b82b24b735dffcfc61a27c9759dc69"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/events.py",
+    "字节数": 4364,
+    "SHA256（内容校验值）": "5c913c1e94a7b985d457dd4e887d29f7eca7e22e677cd3c75e82c940d59fe147"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/observations.py",
+    "字节数": 8636,
+    "SHA256（内容校验值）": "827c3daf53a300da63911d9d39b2aa7fd9c36bd7536e2c3391ce699d5d7f93ff"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/rewards.py",
+    "字节数": 3579,
+    "SHA256（内容校验值）": "03293c757059b2c4cc18da5a58b9a31b14549fa5427660e560fc909958fe6815"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/terminations.py",
+    "字节数": 561,
+    "SHA256（内容校验值）": "761deccce574a5dae20b674269ac5c2d67cda9a9393ebc925347598264afb08f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/locomposition/ui_extension_example.py",
+    "字节数": 1521,
+    "SHA256（内容校验值）": "1e35069d523f65599abac3e5cc048186afd6e133cd6ab70ab9a863151f729f58"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/pyproject.toml",
+    "字节数": 98,
+    "SHA256（内容校验值）": "5427dcc108de1d2537775540acdd539d65a2f31506ba992bc95e5bfeefb6f288"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/exts/locomposition/setup.py",
+    "字节数": 1246,
+    "SHA256（内容校验值）": "4a0545d6595a83d4dae34733519839daf93f22b15b9ad1b3db0e5ee797b446f3"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/analyze_run_range.py",
+    "字节数": 121447,
+    "SHA256（内容校验值）": "c3f8d8d039ee44fd2770b2e3f836484aada13355297946a0909c77e2d07f9700"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/archive-logs-dir.sh",
+    "字节数": 469,
+    "SHA256（内容校验值）": "422bad142c0e4a4c435934b3de0b78856c74c6a6ab152fabb593066b60727b2f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/check_and_install_tinytex_for_plots.sh",
+    "字节数": 1744,
+    "SHA256（内容校验值）": "5d5b305b964772f2a0d6f2ffba7e19272912ec1ae7f26302de4a190da3fcb4f3"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/clbin_src.sh",
+    "字节数": 186,
+    "SHA256（内容校验值）": "b6e76df450bb341d681b0411448e1ebc8953708d9e8f55a9875710cbcf7cf174"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/clean_rl/cli_args.py",
+    "字节数": 3567,
+    "SHA256（内容校验值）": "b9f04fc8ed59782659460592863feeb5b405a8944252768d3f3aa48f57808626"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/clean_rl/play.py",
+    "字节数": 4118,
+    "SHA256（内容校验值）": "fc0ba358d11d88b0bd8bdb46f90df246fdeae61297f65e55f41f3d8362657f44"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/clean_rl/train.py",
+    "字节数": 12499,
+    "SHA256（内容校验值）": "19e48b3a9ccbf334af894d8ddebadf2afdbac9338109660679aaa902b090d9b7"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/eval.py",
+    "字节数": 109603,
+    "SHA256（内容校验值）": "ee38ed513ef475885a7eb8195cb68f7aa23932fb9823ed781fccea750eacd71c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/evaluation_discovery.py",
+    "字节数": 2531,
+    "SHA256（内容校验值）": "29a8187528f8e076e2d3fd3441b44ea2340945ce0ca31a0e921ec051956e615f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/gait_dynamics_aggregate.py",
+    "字节数": 26562,
+    "SHA256（内容校验值）": "1063e9f02e2baeb2800583e552b4e8092b981c585502bfcc532e22ca7fd4c6ee"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/generate_plots.py",
+    "字节数": 201839,
+    "SHA256（内容校验值）": "7410673ac5da3b2ca510519b68052c91af2c6b01da4bc62cd7da777b4ff342a0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/list_envs.py",
+    "字节数": 1761,
+    "SHA256（内容校验值）": "17838af9c224f421ee391a8451756776f6a35773733c5893fbb4db294c7214b7"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/metrics_utils.py",
+    "字节数": 41815,
+    "SHA256（内容校验值）": "ac52d588bca3f2eaabee89006ddf3e49074a0bd227907741ade3a91296938884"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/plot_reward_landscape.py",
+    "字节数": 6210,
+    "SHA256（内容校验值）": "f3686d7c679e13f31873a2b4738489720af9a2fd0671bb8415ae81411e68e6b8"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/rebuttal_report.py",
+    "字节数": 17410,
+    "SHA256（内容校验值）": "3b74b946ece4c835ed1df5db4c1f371609c72267be2631983815ee009d4c8a0a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/runpod-setup.sh",
+    "字节数": 3805,
+    "SHA256（内容校验值）": "90e237b15749a47aa6a49f7ab2416ffc349b734c30c39caafc06c7dc2d97753b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/sim2real_eval.py",
+    "字节数": 38991,
+    "SHA256（内容校验值）": "503c2fabc2dd6251ae9e415fc5c7f6d65f0193f677312b36229132e48744c643"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/smoke_task.py",
+    "字节数": 5293,
+    "SHA256（内容校验值）": "ff4b1f18c27ef3d0bc1788b1de69bdf81e9800b440f79ae0e7be33d787cdb8a6"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/terrain_adaptation_analysis.py",
+    "字节数": 32093,
+    "SHA256（内容校验值）": "b3ae0047fcea5184a8329944be3536affbd4a929673fc87d2b0b5959d0754f72"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/torchscript_policy.py",
+    "字节数": 5744,
+    "SHA256（内容校验值）": "a48748908f6f4ecb177a242854c9ede1beeb75985ff3a838418752981087e627"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/trace_model_checkpoint.py",
+    "字节数": 2837,
+    "SHA256（内容校验值）": "61627b51f2cacec3c467f5faea756540a0e4b2b6a3b547f3132cdec4930fb14a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/冻结实现/scripts/train_rsl_rl.py",
+    "字节数": 1957,
+    "SHA256（内容校验值）": "7baf433aad9bddf5557eb65a33072e9a3ead1ee59b84c2f156e6935f22b96cca"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-启动核验.json",
+    "字节数": 1052,
+    "SHA256（内容校验值）": "78e61a35d75113f79c16537798de738864655f225cbd184406c8363bfe5622e9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-状态.json",
+    "字节数": 1939,
+    "SHA256（内容校验值）": "8f26fe1b242768ad3b6be7a3a7cdfadb97b80d3993e8425de172a8e29b3c83ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-训练.log",
+    "字节数": 76432,
+    "SHA256（内容校验值）": "8e5608c4fbb2a8b2563b84623c6f81f4fd34032beee128141ef48788810a2a2a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-训练导入来源.json",
+    "字节数": 8355,
+    "SHA256（内容校验值）": "d2d0ac4a83d505669ae4f0a53f2ce634cb4e3cefd8632c3c3685dbfbded68005"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-46-坡道0.8.log",
+    "字节数": 24126,
+    "SHA256（内容校验值）": "c7ce4bc8241ba78e6a00c33311458e2814ae7b03fcd14217d121d502f2a78ff7"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-46-崎岖1.0.log",
+    "字节数": 29218,
+    "SHA256（内容校验值）": "566e43b3a70bf3ceea687c0cc23e6508809f5d692e589dda84238c7e0d1d2089"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-46-平地0.4.log",
+    "字节数": 27954,
+    "SHA256（内容校验值）": "e4213cc7e5981cf6e16006035ccacb522eb65e92ca3f7ad4bf99452680536a99"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-46-平地0.8.log",
+    "字节数": 27083,
+    "SHA256（内容校验值）": "690af22b8f25b71c07103a7b0e84096a0abb02ff06cfa885bccf80de381fc65c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-46-平地1.0.log",
+    "字节数": 27375,
+    "SHA256（内容校验值）": "b063015ba8a160669ada7c4c2ad7c9b720bdd362a152e23ca61671b7b7abf9f9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-46-楼梯8.5厘米.log",
+    "字节数": 28923,
+    "SHA256（内容校验值）": "ccb8d94029fd07bfbdd916d1e2125d6972e28a2aa32ca8c69e7a4530ce20a6d1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-47-坡道0.8.log",
+    "字节数": 24126,
+    "SHA256（内容校验值）": "efe0fef8b0695fa641eeb7194364490db21df2370995f8e99453f173e8a33aaf"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-47-崎岖1.0.log",
+    "字节数": 29154,
+    "SHA256（内容校验值）": "3be31fe7f1a58a11e46a63767bb14f72e9d26d2abe9d9d8ecbc56ad32755fb50"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-47-平地0.4.log",
+    "字节数": 27591,
+    "SHA256（内容校验值）": "fe2f8887fe72953e28a204a928236861f43d388cbc9743bcfe532656d0d10e7b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-47-平地0.8.log",
+    "字节数": 27404,
+    "SHA256（内容校验值）": "98f6a9ad6e1d82cd3fcb3bb53a38f279b0eb6c87f49c9a57cb7349ead008a985"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-47-平地1.0.log",
+    "字节数": 26988,
+    "SHA256（内容校验值）": "8316b66ac91e9ce52dabc742ca6c631e68a53f53569f1f1c5d97d10e61a55f70"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-47-楼梯8.5厘米.log",
+    "字节数": 28909,
+    "SHA256（内容校验值）": "3bb2647f367bb422d3bbab8061137e7e8a25ba494b8e1f0f529659aa81236479"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-48-坡道0.8.log",
+    "字节数": 24062,
+    "SHA256（内容校验值）": "d9d9f5df4ea89128d815c57643e4d876872aa8d770590eab2c2b9922536b6cb6"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-48-崎岖1.0.log",
+    "字节数": 29218,
+    "SHA256（内容校验值）": "e89a7eb469039d0b46f7cce5384936b26154a0d9b0203f1c188bac22119a060a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-48-平地0.4.log",
+    "字节数": 28464,
+    "SHA256（内容校验值）": "5873c9732ad1be4fe80e0a7872d58111cd4d1882a7bf5759e6eb62805c82b49b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-48-平地0.8.log",
+    "字节数": 28790,
+    "SHA256（内容校验值）": "beee175d0cd3e5c20e59aed52b5b03bce96cb35a8f4349a6b964b0d87d4f11eb"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-48-平地1.0.log",
+    "字节数": 27513,
+    "SHA256（内容校验值）": "9d0eb5b169fa7103cd2f0fe8ff8a03b031673747c3ed8eccb5c9ad7cb63a2622"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估-48-楼梯8.5厘米.log",
+    "字节数": 29096,
+    "SHA256（内容校验值）": "84ec3e78a6ad4964076638a5b7d2d6a8b6c68e782ad25d24fdb0c4f7c9ab94a3"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-46-坡道0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-46-崎岖1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-46-平地0.4.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-46-平地0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-46-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-46-楼梯8.5厘米.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-47-坡道0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-47-崎岖1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-47-平地0.4.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-47-平地0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-47-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-47-楼梯8.5厘米.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-48-坡道0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-48-崎岖1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-48-平地0.4.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-48-平地0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-48-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-评估导入来源-48-楼梯8.5厘米.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子46/claude-运行锁",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-启动核验.json",
+    "字节数": 1283,
+    "SHA256（内容校验值）": "be8a0d30b96d4d0197a3570b2ea3995b04de975aa5cd46e8b03c3f4a2f6820ab"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-状态.json",
+    "字节数": 1951,
+    "SHA256（内容校验值）": "39700eb7a7b91fbbe2c8fbf5c1c7c629bc61539fb1a12ba7e12fe70cdb740cb5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-训练.log",
+    "字节数": 76911,
+    "SHA256（内容校验值）": "b2ac6f625357c23c8ed1a1fa25dec6d3ac2abf9357e33292726e0fda9199c9fd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-训练导入来源.json",
+    "字节数": 8355,
+    "SHA256（内容校验值）": "d2d0ac4a83d505669ae4f0a53f2ce634cb4e3cefd8632c3c3685dbfbded68005"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-46-坡道0.8.log",
+    "字节数": 24265,
+    "SHA256（内容校验值）": "1f2cee85d1114050e3bc6ec283cbced77754a0f1dabc48b35193e70ab356d1c3"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-46-崎岖1.0.log",
+    "字节数": 29349,
+    "SHA256（内容校验值）": "b85049bf1e37cbf9d29d506c2c898c0e6add05d40f07ead19053e3cfe64af20c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-46-平地0.4.log",
+    "字节数": 28559,
+    "SHA256（内容校验值）": "32f8c822fcfc6ea7e649f9a907beee81c9eb7d27c1b2cec554fb7cf71ccde16b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-46-平地0.8.log",
+    "字节数": 29039,
+    "SHA256（内容校验值）": "dd1d7953d9e22d272699949dedeb3c25e16a89f5d492e3bca48049ec9f9019d0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-46-平地1.0.log",
+    "字节数": 28175,
+    "SHA256（内容校验值）": "3c838267f3696dd8f324cb9bb615948a7ffd0909a55ee8afaf8eec09ac2b7d6f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-46-楼梯8.5厘米.log",
+    "字节数": 29128,
+    "SHA256（内容校验值）": "10c4641cec5281cb8b769f12665e40d9d942f0817f7793c1c04e45447a64560e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-47-坡道0.8.log",
+    "字节数": 24263,
+    "SHA256（内容校验值）": "8a3f602307f97ac63f43120a65750a221c62f138ed1d9acbd07b1f088f7327f4"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-47-崎岖1.0.log",
+    "字节数": 29289,
+    "SHA256（内容校验值）": "d58bf03e6f8607987a0979305ffc0f2d645a6e16dfe4580842299d8186c67c07"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-47-平地0.4.log",
+    "字节数": 29042,
+    "SHA256（内容校验值）": "e0cdd59e515149d90ad6828b841340356bfb7dd12114549d2b6b953367498171"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-47-平地0.8.log",
+    "字节数": 28196,
+    "SHA256（内容校验值）": "5001dd3382d1c37af4d21b2316018073e7059970b40d564a6e3e5852486f12e3"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-47-平地1.0.log",
+    "字节数": 27969,
+    "SHA256（内容校验值）": "ea370097e92d7afc07bf37459d65f2e21f1ff623326b0a005000709b2b19cb5c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-47-楼梯8.5厘米.log",
+    "字节数": 29023,
+    "SHA256（内容校验值）": "8c6e288841b89decf3bf8fec1c997b01fbeb6b2073fef601c340e74ee2f21f6a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-48-坡道0.8.log",
+    "字节数": 24263,
+    "SHA256（内容校验值）": "64b8c7f5d830636a1369a6a31825205b395d22f61f213116fb8181e8270ad208"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-48-崎岖1.0.log",
+    "字节数": 29232,
+    "SHA256（内容校验值）": "98883e6bb62af6b3a850e715e7296f0a526ede94deef08902610b340d7be7818"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-48-平地0.4.log",
+    "字节数": 28296,
+    "SHA256（内容校验值）": "314ec27275eaca787478fdbb048da81816a904bdac30c302b828197dbb71cf8b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-48-平地0.8.log",
+    "字节数": 27729,
+    "SHA256（内容校验值）": "eb71d5b32158ebce5ece00f7ce4e4672bb75287c996fa0fd41fe2238a338c562"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-48-平地1.0.log",
+    "字节数": 27801,
+    "SHA256（内容校验值）": "ef1dd6de0a6a083dbace80faf02cd943190c0936e2755fc18a3c249d337dcab9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估-48-楼梯8.5厘米.log",
+    "字节数": 28998,
+    "SHA256（内容校验值）": "66b2373aaf4970d550d56ced3f26e5146de328cc76d39ed1cb95a8e7efa2ed36"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-46-坡道0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-46-崎岖1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-46-平地0.4.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-46-平地0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-46-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-46-楼梯8.5厘米.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-47-坡道0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-47-崎岖1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-47-平地0.4.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-47-平地0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-47-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-47-楼梯8.5厘米.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-48-坡道0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-48-崎岖1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-48-平地0.4.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-48-平地0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-48-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-评估导入来源-48-楼梯8.5厘米.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子47/claude-运行锁",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-启动核验.json",
+    "字节数": 1283,
+    "SHA256（内容校验值）": "38b9200c3ceb7d41d3d1e6585d5dbd524d4ce35b667ba8d8bb8c45be03b19357"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-状态.json",
+    "字节数": 1939,
+    "SHA256（内容校验值）": "0f2062863c207418e837a015cbe26fa016a3c329c027d0507b56c1393d6a833e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-训练.log",
+    "字节数": 76911,
+    "SHA256（内容校验值）": "308e3a42ce150d7b3492d27f0b964c427408d8a7f97f84ff4caa2a2b857649b6"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-训练导入来源.json",
+    "字节数": 8355,
+    "SHA256（内容校验值）": "d2d0ac4a83d505669ae4f0a53f2ce634cb4e3cefd8632c3c3685dbfbded68005"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-46-坡道0.8.log",
+    "字节数": 25685,
+    "SHA256（内容校验值）": "7ec23bff427ed94ee10b6541645bdab1d43f7c8d53e470b57d4460029003124a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-46-崎岖1.0.log",
+    "字节数": 39193,
+    "SHA256（内容校验值）": "357851560d7e9ac0ba4ee7c920ece7ee3cd4f8cfbf8bd4800d9a4e1edc6aa069"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-46-平地0.4.log",
+    "字节数": 45989,
+    "SHA256（内容校验值）": "250da100883a4b179408602b5ba76916179a1f860ddb2f363257d5ed6a442f87"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-46-平地0.8.log",
+    "字节数": 32452,
+    "SHA256（内容校验值）": "c1fa5a2640d211147c11e96ccc787be296b914c66d0873c84210550d9ac0547e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-46-平地1.0.log",
+    "字节数": 36516,
+    "SHA256（内容校验值）": "ce5ce79bba30ed561cbf0bf315ebbea69b609e8c894bebee54135602ca242d62"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-46-楼梯8.5厘米.log",
+    "字节数": 39260,
+    "SHA256（内容校验值）": "d87eb280657205f98bd2f457955a89d505f1f2ccf02c11bfb225115a7bcfbb4a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-47-坡道0.8.log",
+    "字节数": 24359,
+    "SHA256（内容校验值）": "34bb4d6150eec19ba197da2288164133e62d69111df1c257973d512e98125d8f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-47-崎岖1.0.log",
+    "字节数": 33823,
+    "SHA256（内容校验值）": "97f367b1125a2151299b07a92b59232864b35da1ddd567bb195cdd0608716dd1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-47-平地0.4.log",
+    "字节数": 34256,
+    "SHA256（内容校验值）": "a0c8f81db166d2ca0346d7d953438a05f2bbaed2208e684ae4f1d650b00c19c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-47-平地0.8.log",
+    "字节数": 34284,
+    "SHA256（内容校验值）": "7b922f61842d1b7390b81452f521b9c76fb75c35c9f98669dd6164a35d99d460"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-47-平地1.0.log",
+    "字节数": 34244,
+    "SHA256（内容校验值）": "6a709cf6aa5ef9e037ba837a58f1629e5c05e36673b66ac3abda3b14f79e85ec"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-47-楼梯8.5厘米.log",
+    "字节数": 29534,
+    "SHA256（内容校验值）": "fd8d61ebaf8d9f1df62f5b827d5de91f8bec966cb87d6644a5bc3f4595ef2a4d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-48-坡道0.8.log",
+    "字节数": 26669,
+    "SHA256（内容校验值）": "5489eea47d2c0f3639849313ce764c0da6ec74bde6c6d0cf0b42856188c8c064"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-48-崎岖1.0.log",
+    "字节数": 29218,
+    "SHA256（内容校验值）": "c15bda2ae14edad7f1a00e04818ce2e15ebea4ed647a80f0b0904fc774707627"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-48-平地0.4.log",
+    "字节数": 28641,
+    "SHA256（内容校验值）": "8325f015a80762dc722362beeb7bb76cd615be29d93ff8c9c317408c18b9da51"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-48-平地0.8.log",
+    "字节数": 27493,
+    "SHA256（内容校验值）": "8b206de537c76499d1021bba1deb3db24565405b693c91ad16486c0fb95e18f2"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-48-平地1.0.log",
+    "字节数": 28479,
+    "SHA256（内容校验值）": "381918a2e8bfc1abc5014700e2b12f37cc3b50f343e463ec6dea8f766c1f7051"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估-48-楼梯8.5厘米.log",
+    "字节数": 34044,
+    "SHA256（内容校验值）": "275a5a66b421478ee9568211a4c8bfcb9923e9884c09275f3cd452e429b1f7ca"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-46-坡道0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-46-崎岖1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-46-平地0.4.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-46-平地0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-46-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-46-楼梯8.5厘米.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-47-坡道0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-47-崎岖1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-47-平地0.4.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-47-平地0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-47-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-47-楼梯8.5厘米.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-48-坡道0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-48-崎岖1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-48-平地0.4.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-48-平地0.8.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-48-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-评估导入来源-48-楼梯8.5厘米.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "6509f310f4afb11f2f5c538974a409497f1603a5ccc116d42be77fad273d1f7e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/正式任务/F-训练种子48/claude-运行锁",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/比较结果/claude-CEF配对逐次指标.csv",
+    "字节数": 227708,
+    "SHA256（内容校验值）": "813a6543132f3ab7e8f12140c5ef71c2c5a883b06591e8f29437ec8b40d85f3e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/比较结果/claude-F组多训练种子比较报告.md",
+    "字节数": 9638,
+    "SHA256（内容校验值）": "41a448dd0a64c9cdd53197aae084452ba82e8907e775b23f65752e653f4d5a06"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/比较结果/claude-F组比较汇总.json",
+    "字节数": 126118,
+    "SHA256（内容校验值）": "18400442af53c9395bc786248e5ed914a7ad6e0d71770d4278fb27add6bdd298"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/比较结果/claude-F组环境配对核验.json",
+    "字节数": 7077,
+    "SHA256（内容校验值）": "f33ca2aa856fd3e2c32e7c69647449d8a11b0ee302eee78714e08d3d92f107d8"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/比较结果/claude-F组逐训练种子对比.png",
+    "字节数": 218133,
+    "SHA256（内容校验值）": "6026041ee69f4847d198c351b14944e8a33b71c6443fdab4c5bfe55edb55708d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/比较结果/claude-楼梯步态汇总.csv",
+    "字节数": 2736,
+    "SHA256（内容校验值）": "f93532ed268793b48b5ee17fab56577845bfe18e94a533e96c22e15707e38b97"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/比较结果/claude-楼梯步态逐次.csv",
+    "字节数": 7400,
+    "SHA256（内容校验值）": "374b8a43a61d0716a7224774b48a452776762127453a686ab9f845f396f14bc4"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/比较结果/claude-比较完成.json",
+    "字节数": 162,
+    "SHA256（内容校验值）": "ad845c7631f9bed9f4e8d27c09cd8510a0c45c1a04cdcdedd9142bfe713fd0a1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/比较结果/claude-训练种子46五组总体.csv",
+    "字节数": 2354,
+    "SHA256（内容校验值）": "c26f344331c607b28bc67f0c34227e155f4669b4fd0acd309b79609112e4f775"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/比较结果/claude-逐训练种子CEF总体.csv",
+    "字节数": 3737,
+    "SHA256（内容校验值）": "80450ff7da23e056cb93ae44bc5f172966f874fb842f365f9a2f34671054b29c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/坡道0.8/eval_checkpoint_5000_seed_46_action_delay_0_scenario_walk_existing_slope_0.8mps/metrics_summary.json",
+    "字节数": 199752,
+    "SHA256（内容校验值）": "6bcc417d010d7c687483c2e5a72218bbdaf003d252e99292328252fa117ffcae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/坡道0.8/gpt-坡道几何核验.json",
+    "字节数": 308,
+    "SHA256（内容校验值）": "7302467917f3e6400c4fa8fd9b21bc126bbe329405bbc5bf01d2638788f83514"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/坡道0.8/gpt-构造环境配置.yaml",
+    "字节数": 45868,
+    "SHA256（内容校验值）": "e1ec6564059d2ff82ff70625c5f6ed77dffea98caa5a596c5ac7c896eaef200e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/坡道0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/坡道0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "528e7fdd8dff309171beb0f420fd1600d1ad2731c3e0499d55714c94b595c687"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/坡道0.8/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "a9ad6cab0c789a264fd31dc244d778e6c5b2fbad93a299cb89a4b0c6adcb28fe"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/坡道0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/坡道0.8/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/坡道0.8/gpt-重置前真实状态.json",
+    "字节数": 1180,
+    "SHA256（内容校验值）": "0772fbe5d8cb1819fa0f145a9d955db8b383406a69fe6274c542552816770127"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/崎岖1.0/eval_checkpoint_5000_seed_46_action_delay_0_scenario_fast_walk_x_uneven_terrain/metrics_summary.json",
+    "字节数": 219477,
+    "SHA256（内容校验值）": "5b35d3c6c1416c8ddc757540dd80b692f9c1235f6e3af262a2bb785d1b65f724"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/崎岖1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "1ef13d6ce4d285aefaf0ac23ca63e44d535fed0a1c836a67a3eea5507c82395f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/崎岖1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/崎岖1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/崎岖1.0/gpt-评估条件.json",
+    "字节数": 1117,
+    "SHA256（内容校验值）": "be0703789c5cef2d1757411355b9d0416b9a93048ab1b2ea23d154e4a70d46a8"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/崎岖1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/崎岖1.0/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/崎岖1.0/gpt-重置前真实状态.json",
+    "字节数": 1175,
+    "SHA256（内容校验值）": "4ff47ee987b13da7dac126b03c3214ed4ddff9591acb3e07302b9236eae19c3c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.4/eval_checkpoint_5000_seed_46_action_delay_0_scenario_walk_x_flat_terrain_0.4mps/metrics_summary.json",
+    "字节数": 199799,
+    "SHA256（内容校验值）": "8f2f97d9c3e998eb77c47eac02b2701212e971e976ca0d7868cdc2a0a5ca3336"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.4/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "e7d1425b93e53cb24d8baa9be7c9f4b3960282021215fba844a9483fc6bfb5b6"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.4/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.4/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.4/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "14b9f361f98d2c2ad77fd9d59de7c7ee1959d9c15fa629b7cfe07f865e1e6ea1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.4/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.4/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.4/gpt-重置前真实状态.json",
+    "字节数": 1178,
+    "SHA256（内容校验值）": "e4a31466c12fa391c907ede83f166d03aa488ed6747b7894b6276524160ab03d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.8/eval_checkpoint_5000_seed_46_action_delay_0_scenario_cot_sweep_walk_x_flat_terrain_0.8/metrics_summary.json",
+    "字节数": 199929,
+    "SHA256（内容校验值）": "299cbed12bf538345e710610cdddcdaacc83cb10c76a76f8107e3a139c424b9a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.8/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "34e3717d22c62bb13d06a330e08e7758430d15918887ac60f8d100b654952eb9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.8/gpt-评估条件.json",
+    "字节数": 1126,
+    "SHA256（内容校验值）": "8d175d6c5305ff5320a3d48f052fc70a2357cdeecce0beff498938f4b2da562b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.8/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地0.8/gpt-重置前真实状态.json",
+    "字节数": 1178,
+    "SHA256（内容校验值）": "f22355fdba701e48b6441dda54aafd34f82c79c1f7cb6c2227d5a349562d1201"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地1.0/eval_checkpoint_5000_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 219139,
+    "SHA256（内容校验值）": "8ac807a2daab912f9643dc5ecfed94213fd21b3cc5b968df626ea161b64ab75e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "1ef13d6ce4d285aefaf0ac23ca63e44d535fed0a1c836a67a3eea5507c82395f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地1.0/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "868a554a7e88a7051faadc65f520209d1e295c8e9ee75da49d0d4da47668228d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地1.0/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/平地1.0/gpt-重置前真实状态.json",
+    "字节数": 1179,
+    "SHA256（内容校验值）": "f2a5915e6ba8c22a9732cade8ff392ab174d607456d37cbd9b4169dd4e2c1497"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/楼梯8.5厘米/eval_checkpoint_5000_seed_46_action_delay_0_scenario_fast_walk_stairs_up/metrics_summary.json",
+    "字节数": 219160,
+    "SHA256（内容校验值）": "4930f167fadec8d1033097cdb886c03aa175fb468da3c7819850139d1e5b805f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-构造环境配置.yaml",
+    "字节数": 45871,
+    "SHA256（内容校验值）": "85dec3a8bfde10a3f38f6326eace0123e3d8c6d952eee5058e70aeefb2ca31d5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-评估条件.json",
+    "字节数": 1136,
+    "SHA256（内容校验值）": "db3422c31c31a8e82942a5303a7a2fa9f29ac0d5bd93875c00ff46c1552cc77f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-重置前真实状态.json",
+    "字节数": 1183,
+    "SHA256（内容校验值）": "9c2a77d548e8f7443579523290a56bc48183419618f0a4e5c36789a7fa930612"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/坡道0.8/eval_checkpoint_5000_seed_47_action_delay_0_scenario_walk_existing_slope_0.8mps/metrics_summary.json",
+    "字节数": 199536,
+    "SHA256（内容校验值）": "dc3f949aced5970907f2a9322ea63b56983e50776eb6219c9c2a58d116acfa8f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/坡道0.8/gpt-坡道几何核验.json",
+    "字节数": 308,
+    "SHA256（内容校验值）": "7302467917f3e6400c4fa8fd9b21bc126bbe329405bbc5bf01d2638788f83514"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/坡道0.8/gpt-构造环境配置.yaml",
+    "字节数": 45868,
+    "SHA256（内容校验值）": "57de559f4691bb19dbff675571cd5cf8c625a5aca2815a073b9e5c92542f7fa0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/坡道0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/坡道0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "528e7fdd8dff309171beb0f420fd1600d1ad2731c3e0499d55714c94b595c687"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/坡道0.8/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "4ac0244728ab67344ccd4931caca3657db2d5b848d884a1e895d584ab6a8b091"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/坡道0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/坡道0.8/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/坡道0.8/gpt-重置前真实状态.json",
+    "字节数": 1186,
+    "SHA256（内容校验值）": "fa627014aabc2ac1c9a03cd0e6811fb3a4cbff0c851ffb8e1bd822b92d9f4795"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/崎岖1.0/eval_checkpoint_5000_seed_47_action_delay_0_scenario_fast_walk_x_uneven_terrain/metrics_summary.json",
+    "字节数": 219479,
+    "SHA256（内容校验值）": "523ef62e1121a8a6183a8b049b7e91874ea8d40285348ccf36c070f03c7d1dd5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/崎岖1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "cc48c98ee3f3e0d1f598b51d39dde522acb41565762f4894bda7cd7bb1258260"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/崎岖1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/崎岖1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/崎岖1.0/gpt-评估条件.json",
+    "字节数": 1117,
+    "SHA256（内容校验值）": "49f3783ad49085464d46f9e7d58365f1bd1f58b998f035ff9d957f6a995b3f38"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/崎岖1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/崎岖1.0/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/崎岖1.0/gpt-重置前真实状态.json",
+    "字节数": 1181,
+    "SHA256（内容校验值）": "9b5a015ba7640cb5462f3224af600cfd9665cd19280dab4e4733e8aa0e05f481"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.4/eval_checkpoint_5000_seed_47_action_delay_0_scenario_walk_x_flat_terrain_0.4mps/metrics_summary.json",
+    "字节数": 199477,
+    "SHA256（内容校验值）": "ae574b1596723d8cbee601437289d2766bbb4a3987eb3f7754f850836a691584"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.4/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "3f7c4e792351fb069ca1f218146a05b98d3e9701a26e429fa6a098ab3e6d29dd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.4/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.4/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.4/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "8cf0a9a7324fc3ddffbd83108fc2bba88dd741afe46eb3aba5a1015b697dc72f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.4/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.4/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.4/gpt-重置前真实状态.json",
+    "字节数": 1181,
+    "SHA256（内容校验值）": "021f88f8ac66eeeeb6e65c6d1fde23cd059ecccd6e1b19225aa13ae0d6650ccd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.8/eval_checkpoint_5000_seed_47_action_delay_0_scenario_cot_sweep_walk_x_flat_terrain_0.8/metrics_summary.json",
+    "字节数": 199895,
+    "SHA256（内容校验值）": "ad3d0a60b0dfcf516c8ae3a5f42d52f9e243d2efe1354c099cd60b1ee3cd5cd4"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.8/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "4296cd15ab4e4ad6fd659b25b96fd5d40907ac3d34e17fcbe53d27c9ed0a01d3"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.8/gpt-评估条件.json",
+    "字节数": 1126,
+    "SHA256（内容校验值）": "7618bca032bdd4d683f28a6fed32de5678c3395078c5e6c209f058f8f012ce7f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.8/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地0.8/gpt-重置前真实状态.json",
+    "字节数": 1182,
+    "SHA256（内容校验值）": "ef0eec65d6ce7bd7b35853bc1007aa8ca0e17e232d613e812dd04153dd4e4b1b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地1.0/eval_checkpoint_5000_seed_47_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 219070,
+    "SHA256（内容校验值）": "47c211df16f9c0e2377b2310bfe3c17b00e4461493faf4d3790d52b3729b447c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "cc48c98ee3f3e0d1f598b51d39dde522acb41565762f4894bda7cd7bb1258260"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地1.0/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "6fa1858d6e7766ade4372a776df839a75a7e17b060c0982fd6b6809ddd8fc519"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地1.0/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/平地1.0/gpt-重置前真实状态.json",
+    "字节数": 1179,
+    "SHA256（内容校验值）": "201e6e4d21489d5e52d5aa442747ed659ba1a68ad593fb56b48c42282f69f8c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/楼梯8.5厘米/eval_checkpoint_5000_seed_47_action_delay_0_scenario_fast_walk_stairs_up/metrics_summary.json",
+    "字节数": 219128,
+    "SHA256（内容校验值）": "826b3c1fec90bc32c6cb33d94729c8552c53a8fec428c47fba6a1df663d6f326"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-构造环境配置.yaml",
+    "字节数": 45871,
+    "SHA256（内容校验值）": "e53cb7af269c39b38e309efb547622d98e645c4c4c0a370a6a77bd7f720a1310"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-评估条件.json",
+    "字节数": 1136,
+    "SHA256（内容校验值）": "338316dc13c619856e71f7de64c30915b7de74a6799464d96e5b521266d5492d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-重置前真实状态.json",
+    "字节数": 1180,
+    "SHA256（内容校验值）": "5f661ff6c263cc49c6458988662bfe7fe993783ea3913a089f6bc03040231760"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/坡道0.8/eval_checkpoint_5000_seed_48_action_delay_0_scenario_walk_existing_slope_0.8mps/metrics_summary.json",
+    "字节数": 199472,
+    "SHA256（内容校验值）": "4b310e15db8ff29119311a6d91c7921f1e2e51a3b3ba3908631db42b05c4e336"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/坡道0.8/gpt-坡道几何核验.json",
+    "字节数": 308,
+    "SHA256（内容校验值）": "7302467917f3e6400c4fa8fd9b21bc126bbe329405bbc5bf01d2638788f83514"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/坡道0.8/gpt-构造环境配置.yaml",
+    "字节数": 45868,
+    "SHA256（内容校验值）": "fa62dcc8ab280f47e70e35c4df767b4001ab0e6719acac144883fe29ec4e1500"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/坡道0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/坡道0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "528e7fdd8dff309171beb0f420fd1600d1ad2731c3e0499d55714c94b595c687"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/坡道0.8/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "8c3af355f0891ca44e1745e2281ca46020f893fcf54ea79efd69cb6e56deba74"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/坡道0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/坡道0.8/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/坡道0.8/gpt-重置前真实状态.json",
+    "字节数": 1177,
+    "SHA256（内容校验值）": "2298359fe0904c20c1dae3a2862ecd48313fd8b69227af1cc6f1ebd3bcda689d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/崎岖1.0/eval_checkpoint_5000_seed_48_action_delay_0_scenario_fast_walk_x_uneven_terrain/metrics_summary.json",
+    "字节数": 219139,
+    "SHA256（内容校验值）": "169df9551948b04a8aef893e12c565ed2c2e8bd145807fbc61872897ace65faa"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/崎岖1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "bab8522c96c38dd73ce1047baf9cd38fa2aac7f593cbca5e2346be80fd86c98a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/崎岖1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/崎岖1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/崎岖1.0/gpt-评估条件.json",
+    "字节数": 1117,
+    "SHA256（内容校验值）": "1e48037717e42f060ff4790075f4084e1d02e5675be27105d265a20063ae4771"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/崎岖1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/崎岖1.0/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/崎岖1.0/gpt-重置前真实状态.json",
+    "字节数": 1183,
+    "SHA256（内容校验值）": "def104fa4ec38841c9481e1a4293e53bba94d7aba33ec17745a9239943d5a9c9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.4/eval_checkpoint_5000_seed_48_action_delay_0_scenario_walk_x_flat_terrain_0.4mps/metrics_summary.json",
+    "字节数": 199751,
+    "SHA256（内容校验值）": "e1f3c28dd96a96f4c54b0ee9520f98a62ddae99f92f75541a85956cd5bdf02a0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.4/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "10186c7a124e94e6767c6b1bcfe43cf0dfc75c71d5de03a6ba3d470af8fcd92b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.4/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.4/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.4/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "7d2373f8b63e637f994717d37bcc8e8d57e010714cee0e0feb2a622a03a189a1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.4/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.4/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.4/gpt-重置前真实状态.json",
+    "字节数": 1182,
+    "SHA256（内容校验值）": "c70e31d7b9ab8392f9f55c4310186b8af9242fc3422fa6bc7efd43ad8e1e41d7"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.8/eval_checkpoint_5000_seed_48_action_delay_0_scenario_cot_sweep_walk_x_flat_terrain_0.8/metrics_summary.json",
+    "字节数": 200037,
+    "SHA256（内容校验值）": "cead935e027669e4dc3ab69cf39be640c99780c83049328ffde52a1bbc09e5b0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.8/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "1c0545c05c3b368ba2954faedc002b03ebbe133227a32c6330f7c164ba75210b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.8/gpt-评估条件.json",
+    "字节数": 1126,
+    "SHA256（内容校验值）": "379319ac528466ab5d62e51634c7015c2394415241c2f726fb7e199baa97c7e8"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.8/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地0.8/gpt-重置前真实状态.json",
+    "字节数": 1179,
+    "SHA256（内容校验值）": "85cedcaceb42dbcf3977bdb385c0ad5b5809bad1dd43f1a00cae43fb486539ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地1.0/eval_checkpoint_5000_seed_48_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 219403,
+    "SHA256（内容校验值）": "92f1a56b14881d25f1384c4514b28066078a8bdf8f0d9fbe6fbaa07e7cd3b0ab"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "bab8522c96c38dd73ce1047baf9cd38fa2aac7f593cbca5e2346be80fd86c98a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地1.0/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "227be46255743e8fe5d0a0c8a5e2605c123da7f117bd857f558505e7a69f91f6"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地1.0/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/平地1.0/gpt-重置前真实状态.json",
+    "字节数": 1177,
+    "SHA256（内容校验值）": "6f8c62776e9cedff6ecedcfa80b41a34cef87bd44f07252d16f20e6adcca0f3a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/楼梯8.5厘米/eval_checkpoint_5000_seed_48_action_delay_0_scenario_fast_walk_stairs_up/metrics_summary.json",
+    "字节数": 219163,
+    "SHA256（内容校验值）": "bfc0c6a7954f8c50c05aebb80ff2ad666910ffc0691742cdec60671148417fb3"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-构造环境配置.yaml",
+    "字节数": 45871,
+    "SHA256（内容校验值）": "a980b54736c63ad8f29c741fc17ee7bf15040f79f42c81ac9f0b55282df6a6ee"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-评估条件.json",
+    "字节数": 1136,
+    "SHA256（内容校验值）": "75164ad8f13e1ca705b047764570123b1024fc9831a388269d2b3eee3fcbb0e2"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子46/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-重置前真实状态.json",
+    "字节数": 1183,
+    "SHA256（内容校验值）": "d04c0bf8df729c488a49e303d540a28a3b7a66469375657279d51922e45accf2"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/坡道0.8/eval_checkpoint_5000_seed_46_action_delay_0_scenario_walk_existing_slope_0.8mps/metrics_summary.json",
+    "字节数": 199618,
+    "SHA256（内容校验值）": "09cf51c7c25f06435f24898aad7c37a4b87b47232a902909b46b9635de56eda9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/坡道0.8/gpt-坡道几何核验.json",
+    "字节数": 308,
+    "SHA256（内容校验值）": "7302467917f3e6400c4fa8fd9b21bc126bbe329405bbc5bf01d2638788f83514"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/坡道0.8/gpt-构造环境配置.yaml",
+    "字节数": 45868,
+    "SHA256（内容校验值）": "e1ec6564059d2ff82ff70625c5f6ed77dffea98caa5a596c5ac7c896eaef200e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/坡道0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/坡道0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "528e7fdd8dff309171beb0f420fd1600d1ad2731c3e0499d55714c94b595c687"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/坡道0.8/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "b3bcbca232d402bc26de7f8f40213217b687c41ad04eff6646f47fcc39cebdef"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/坡道0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/坡道0.8/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/坡道0.8/gpt-重置前真实状态.json",
+    "字节数": 1177,
+    "SHA256（内容校验值）": "3737de4ae8c39487d02f4a86e286164806c4bf018592a9130fc7f24bbe7f8150"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/崎岖1.0/eval_checkpoint_5000_seed_46_action_delay_0_scenario_fast_walk_x_uneven_terrain/metrics_summary.json",
+    "字节数": 219449,
+    "SHA256（内容校验值）": "1bcf240009b1cb756a1359611afaebc8c2517c752b68ad8baa97d6a42a3bb3c7"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/崎岖1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "1ef13d6ce4d285aefaf0ac23ca63e44d535fed0a1c836a67a3eea5507c82395f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/崎岖1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/崎岖1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/崎岖1.0/gpt-评估条件.json",
+    "字节数": 1117,
+    "SHA256（内容校验值）": "6bc7c5c1989df973d20c9db8c46a4428eb401fbc27f21eec5705dd6da3677d08"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/崎岖1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/崎岖1.0/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/崎岖1.0/gpt-重置前真实状态.json",
+    "字节数": 1187,
+    "SHA256（内容校验值）": "49d633bc34d1c330f82905fb32e52c3f776dc9562666eb308457669a3205561f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.4/eval_checkpoint_5000_seed_46_action_delay_0_scenario_walk_x_flat_terrain_0.4mps/metrics_summary.json",
+    "字节数": 199329,
+    "SHA256（内容校验值）": "14047013fc5a9f5348aa7ad439b6fc423cdd71b04acfc6df3c0a62d53118a04b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.4/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "e7d1425b93e53cb24d8baa9be7c9f4b3960282021215fba844a9483fc6bfb5b6"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.4/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.4/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.4/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "44191c21b2c996525acc317f9262b095f425647edcaf5909e3b2d9f891398437"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.4/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.4/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.4/gpt-重置前真实状态.json",
+    "字节数": 1182,
+    "SHA256（内容校验值）": "f10b998face20364d9de5f1e6250f374d03840a989068710089a8a841d6c74b0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.8/eval_checkpoint_5000_seed_46_action_delay_0_scenario_cot_sweep_walk_x_flat_terrain_0.8/metrics_summary.json",
+    "字节数": 199901,
+    "SHA256（内容校验值）": "6e0707ae5f3b34ddae67fb9b961c887311c942ac8562666a7a34df1f6e51de06"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.8/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "34e3717d22c62bb13d06a330e08e7758430d15918887ac60f8d100b654952eb9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.8/gpt-评估条件.json",
+    "字节数": 1126,
+    "SHA256（内容校验值）": "ba6e28932ec8d7a6c08ef356b6b683bbe53c3994244257ad91b8bde4debe0163"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.8/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地0.8/gpt-重置前真实状态.json",
+    "字节数": 1185,
+    "SHA256（内容校验值）": "7cc696bd96c9d3ebeb707ca1e303aa284a3eadec11172dd847716e9de2040373"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地1.0/eval_checkpoint_5000_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 219431,
+    "SHA256（内容校验值）": "bd0fc8464f7b6e35dbad117e6cd6db144521c51b3483574b49d0dd023a96afe9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "1ef13d6ce4d285aefaf0ac23ca63e44d535fed0a1c836a67a3eea5507c82395f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地1.0/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "09728c17af7da577537f04db99e901b5d5098bc16bfc6968f505a9f844065c9b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地1.0/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/平地1.0/gpt-重置前真实状态.json",
+    "字节数": 1177,
+    "SHA256（内容校验值）": "d73b10818a85843f071125248381d64109d26fce8664328bbd048ef14da502f4"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/楼梯8.5厘米/eval_checkpoint_5000_seed_46_action_delay_0_scenario_fast_walk_stairs_up/metrics_summary.json",
+    "字节数": 219493,
+    "SHA256（内容校验值）": "df05595795f348a1327bc047f1117f0a072525b580bc0d835ed9a3f24131e18f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-构造环境配置.yaml",
+    "字节数": 45871,
+    "SHA256（内容校验值）": "85dec3a8bfde10a3f38f6326eace0123e3d8c6d952eee5058e70aeefb2ca31d5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-评估条件.json",
+    "字节数": 1136,
+    "SHA256（内容校验值）": "03c44115d440e6a595c6af70db65c2e17cb322257094f2301869bbf6b4690015"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-重置前真实状态.json",
+    "字节数": 1181,
+    "SHA256（内容校验值）": "f781a0db6a7d2c30f9130700c7bd0a87f5080e851b79614fb4878adb14eac92a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/坡道0.8/eval_checkpoint_5000_seed_47_action_delay_0_scenario_walk_existing_slope_0.8mps/metrics_summary.json",
+    "字节数": 200094,
+    "SHA256（内容校验值）": "1141f120a52a8c9d6ca9fef64bf260770827f9c9bc3298a8af8909930bb82668"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/坡道0.8/gpt-坡道几何核验.json",
+    "字节数": 308,
+    "SHA256（内容校验值）": "7302467917f3e6400c4fa8fd9b21bc126bbe329405bbc5bf01d2638788f83514"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/坡道0.8/gpt-构造环境配置.yaml",
+    "字节数": 45868,
+    "SHA256（内容校验值）": "57de559f4691bb19dbff675571cd5cf8c625a5aca2815a073b9e5c92542f7fa0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/坡道0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/坡道0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "528e7fdd8dff309171beb0f420fd1600d1ad2731c3e0499d55714c94b595c687"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/坡道0.8/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "05b447e2cb6e546119abe1b7947553b341c5e0f92b87ab9fa242d0a265cea00f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/坡道0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/坡道0.8/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/坡道0.8/gpt-重置前真实状态.json",
+    "字节数": 1185,
+    "SHA256（内容校验值）": "1c6068b61fa3ebac16231fe61b83c2b1dd7a4e7de54fd8e1340ccc82904e578b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/崎岖1.0/eval_checkpoint_5000_seed_47_action_delay_0_scenario_fast_walk_x_uneven_terrain/metrics_summary.json",
+    "字节数": 219616,
+    "SHA256（内容校验值）": "7ce45b1a4af57c298285cf60fb61e042cc4e7f898a9ed05ca1bb5dc03db4b4b0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/崎岖1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "cc48c98ee3f3e0d1f598b51d39dde522acb41565762f4894bda7cd7bb1258260"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/崎岖1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/崎岖1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/崎岖1.0/gpt-评估条件.json",
+    "字节数": 1117,
+    "SHA256（内容校验值）": "7e0525337cc80e9e496ee9192d1d5a4386ed061c7ec93f726f88721e2451790d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/崎岖1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/崎岖1.0/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/崎岖1.0/gpt-重置前真实状态.json",
+    "字节数": 1185,
+    "SHA256（内容校验值）": "eedd090cb0a10c398aa463517eb697157748b662e965827350e9e8ff0baa74ab"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.4/eval_checkpoint_5000_seed_47_action_delay_0_scenario_walk_x_flat_terrain_0.4mps/metrics_summary.json",
+    "字节数": 199659,
+    "SHA256（内容校验值）": "bc8208549b00522a8db0b74c9c36cd10840a7ffe0d2c287a0150d9ce5fab636b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.4/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "3f7c4e792351fb069ca1f218146a05b98d3e9701a26e429fa6a098ab3e6d29dd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.4/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.4/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.4/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "6207a21677d31f8a3f383c66752227ec53c47776ad686a3991afda226215a5ca"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.4/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.4/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.4/gpt-重置前真实状态.json",
+    "字节数": 1185,
+    "SHA256（内容校验值）": "0079faddbad233bf173cfb83c8f16a232b3e30f4e27aafb42e7bc2a77dc48363"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.8/eval_checkpoint_5000_seed_47_action_delay_0_scenario_cot_sweep_walk_x_flat_terrain_0.8/metrics_summary.json",
+    "字节数": 200445,
+    "SHA256（内容校验值）": "48c3c2e5d325fefc4c3fc79aead6c05968de2543f9d650ac31b5f620a4df9a02"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.8/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "4296cd15ab4e4ad6fd659b25b96fd5d40907ac3d34e17fcbe53d27c9ed0a01d3"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.8/gpt-评估条件.json",
+    "字节数": 1126,
+    "SHA256（内容校验值）": "6efe96f4b853734d6ef6146f09908ede142b3cf419b2b7aca492222989ca602f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.8/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地0.8/gpt-重置前真实状态.json",
+    "字节数": 1179,
+    "SHA256（内容校验值）": "62816d4bfccd8ae68c39ab9d2fd4bb1ef59a2ed21d7d0541384a75548889a217"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地1.0/eval_checkpoint_5000_seed_47_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 219686,
+    "SHA256（内容校验值）": "86fa84532de2eec19926da23b974ddbd7df6e0dd327382c4beeb9aa388a172db"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "cc48c98ee3f3e0d1f598b51d39dde522acb41565762f4894bda7cd7bb1258260"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地1.0/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "38708d9aac4ea2be4e37ba7ba63623998eb09f86b6264680184e911f2fe22783"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地1.0/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/平地1.0/gpt-重置前真实状态.json",
+    "字节数": 1179,
+    "SHA256（内容校验值）": "08bd9dea9eb6cac2f7a4b1b7060e70acba22c0d22732a1b6c4eeb6af99c78648"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/楼梯8.5厘米/eval_checkpoint_5000_seed_47_action_delay_0_scenario_fast_walk_stairs_up/metrics_summary.json",
+    "字节数": 219510,
+    "SHA256（内容校验值）": "39416c9055819c86e8cda34e82f50d2281eb1ecbc7017d2d8110f875ed630f49"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-构造环境配置.yaml",
+    "字节数": 45871,
+    "SHA256（内容校验值）": "e53cb7af269c39b38e309efb547622d98e645c4c4c0a370a6a77bd7f720a1310"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-评估条件.json",
+    "字节数": 1136,
+    "SHA256（内容校验值）": "4d8478bd7cb08b9178aaafa71af2c207eab7d24a830297119383f7dec7350135"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-重置前真实状态.json",
+    "字节数": 1181,
+    "SHA256（内容校验值）": "cee8c8bc97d53d0a50d27c82eb9e1d7523504a2c5aeeecb490bcd19e0779f455"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/坡道0.8/eval_checkpoint_5000_seed_48_action_delay_0_scenario_walk_existing_slope_0.8mps/metrics_summary.json",
+    "字节数": 199912,
+    "SHA256（内容校验值）": "88bdfa35138b69ac73e4f26333763a2a47d02a2d1bc9ed3ac0138a1a17924eb0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/坡道0.8/gpt-坡道几何核验.json",
+    "字节数": 308,
+    "SHA256（内容校验值）": "7302467917f3e6400c4fa8fd9b21bc126bbe329405bbc5bf01d2638788f83514"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/坡道0.8/gpt-构造环境配置.yaml",
+    "字节数": 45868,
+    "SHA256（内容校验值）": "fa62dcc8ab280f47e70e35c4df767b4001ab0e6719acac144883fe29ec4e1500"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/坡道0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/坡道0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "528e7fdd8dff309171beb0f420fd1600d1ad2731c3e0499d55714c94b595c687"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/坡道0.8/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "9ad5dfcf42dcdb48621677903605be1ab253e81c7475bb08bcc958cc7a060d72"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/坡道0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/坡道0.8/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/坡道0.8/gpt-重置前真实状态.json",
+    "字节数": 1180,
+    "SHA256（内容校验值）": "e9e072fb0a8f13557c5c97654e16eded5856a404b28ff85f08c44841861197fb"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/崎岖1.0/eval_checkpoint_5000_seed_48_action_delay_0_scenario_fast_walk_x_uneven_terrain/metrics_summary.json",
+    "字节数": 219393,
+    "SHA256（内容校验值）": "06a09f3bff9797ff669b4b4625ee05dc033a9e6a612fdf51238dea7d253cafdc"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/崎岖1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "bab8522c96c38dd73ce1047baf9cd38fa2aac7f593cbca5e2346be80fd86c98a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/崎岖1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/崎岖1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/崎岖1.0/gpt-评估条件.json",
+    "字节数": 1117,
+    "SHA256（内容校验值）": "0149f15088c8337b04a4963a334a94f1ebc697a9962089e7a3d68968f39ed921"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/崎岖1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/崎岖1.0/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/崎岖1.0/gpt-重置前真实状态.json",
+    "字节数": 1186,
+    "SHA256（内容校验值）": "aa0093ca7304532af13a15b2df60aa66724fdcb5ba609208cc54eb5a4f76455c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.4/eval_checkpoint_5000_seed_48_action_delay_0_scenario_walk_x_flat_terrain_0.4mps/metrics_summary.json",
+    "字节数": 199727,
+    "SHA256（内容校验值）": "0e5e613a1962085cc5692a7d6497305edd77ab7d9185592e46fbdb02b20f045a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.4/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "10186c7a124e94e6767c6b1bcfe43cf0dfc75c71d5de03a6ba3d470af8fcd92b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.4/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.4/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.4/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "8f24f4951cd9e77a3989de386514d093bbf59e0b77e3cf01e2b25b226bcd5a98"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.4/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.4/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.4/gpt-重置前真实状态.json",
+    "字节数": 1180,
+    "SHA256（内容校验值）": "bb06d378547c96a150fe55ad3ba0e624cd56b6598bb6e023804efab86f967356"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.8/eval_checkpoint_5000_seed_48_action_delay_0_scenario_cot_sweep_walk_x_flat_terrain_0.8/metrics_summary.json",
+    "字节数": 199895,
+    "SHA256（内容校验值）": "e0a1ba8fda440533406a238144a241b07ebf32220f107cd01c647b50ba57386c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.8/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "1c0545c05c3b368ba2954faedc002b03ebbe133227a32c6330f7c164ba75210b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.8/gpt-评估条件.json",
+    "字节数": 1126,
+    "SHA256（内容校验值）": "8b723c81cc6ba902c175813273037845e62d76fe134baee0ada8402a50f6fa8d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.8/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地0.8/gpt-重置前真实状态.json",
+    "字节数": 1182,
+    "SHA256（内容校验值）": "dd007d2bdf835a464639e249f954ecbf879e8b27d907df36f83133a8a2e6c01b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地1.0/eval_checkpoint_5000_seed_48_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 219485,
+    "SHA256（内容校验值）": "2ecbf1cb5ba26f4bac9ae402edfb4936eb8df314a31fc64f9578e691a583cfc9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "bab8522c96c38dd73ce1047baf9cd38fa2aac7f593cbca5e2346be80fd86c98a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地1.0/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "684d13c40a9fd87db9244b824802c31646ea5904087725c6e3bf624ffbdaf9f0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地1.0/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/平地1.0/gpt-重置前真实状态.json",
+    "字节数": 1181,
+    "SHA256（内容校验值）": "241f0f24e4005e2f3cd48e29a93597f6cca94b3cc253d26cd555c55898866e7b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/楼梯8.5厘米/eval_checkpoint_5000_seed_48_action_delay_0_scenario_fast_walk_stairs_up/metrics_summary.json",
+    "字节数": 219791,
+    "SHA256（内容校验值）": "6358c4497f90279a5830780802367416d62b236efaedd73c62b632bf1e817270"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-构造环境配置.yaml",
+    "字节数": 45871,
+    "SHA256（内容校验值）": "a980b54736c63ad8f29c741fc17ee7bf15040f79f42c81ac9f0b55282df6a6ee"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-评估条件.json",
+    "字节数": 1136,
+    "SHA256（内容校验值）": "113ce52756d0231c2777be9ff960b80bebced0d970e4a53f9d5d71faec49a32d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子47/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-重置前真实状态.json",
+    "字节数": 1183,
+    "SHA256（内容校验值）": "bc5eb3e17b904457c4b57d5304b3eec4b61455dc5a5b37fe3bc42730702689f8"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/坡道0.8/eval_checkpoint_5000_seed_46_action_delay_0_scenario_walk_existing_slope_0.8mps/metrics_summary.json",
+    "字节数": 199554,
+    "SHA256（内容校验值）": "97b7fb09350e984450e455451d307940e9d993d19bc05e1ac74df40c9f12bfbb"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/坡道0.8/gpt-坡道几何核验.json",
+    "字节数": 308,
+    "SHA256（内容校验值）": "7302467917f3e6400c4fa8fd9b21bc126bbe329405bbc5bf01d2638788f83514"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/坡道0.8/gpt-构造环境配置.yaml",
+    "字节数": 45868,
+    "SHA256（内容校验值）": "e1ec6564059d2ff82ff70625c5f6ed77dffea98caa5a596c5ac7c896eaef200e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/坡道0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/坡道0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "528e7fdd8dff309171beb0f420fd1600d1ad2731c3e0499d55714c94b595c687"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/坡道0.8/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "70204f0b21e0d85b9270a3a9c7836967f699c2c49ce6f3becc25ceac89bf29b9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/坡道0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/坡道0.8/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/坡道0.8/gpt-重置前真实状态.json",
+    "字节数": 1184,
+    "SHA256（内容校验值）": "7f4c0940342cf3979e077cba1d6add20b7e36871a5e390fe0dfc0f33f845c0d1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/崎岖1.0/eval_checkpoint_5000_seed_46_action_delay_0_scenario_fast_walk_x_uneven_terrain/metrics_summary.json",
+    "字节数": 219785,
+    "SHA256（内容校验值）": "cf102dbc1017ec1a4b8cb7e09b44041523eb98970c38f5cd5c4b56ffdc153b4d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/崎岖1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "1ef13d6ce4d285aefaf0ac23ca63e44d535fed0a1c836a67a3eea5507c82395f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/崎岖1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/崎岖1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/崎岖1.0/gpt-评估条件.json",
+    "字节数": 1117,
+    "SHA256（内容校验值）": "e355f7db6ec3f7eb6d434d360b1cf7ab8aff3b0bae37988eb96fcac39eea573a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/崎岖1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/崎岖1.0/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/崎岖1.0/gpt-重置前真实状态.json",
+    "字节数": 1183,
+    "SHA256（内容校验值）": "803da69a8331c246949edb6c7894a8b39a36b1ee438c561e1d5d668a6179ba70"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.4/eval_checkpoint_5000_seed_46_action_delay_0_scenario_walk_x_flat_terrain_0.4mps/metrics_summary.json",
+    "字节数": 199469,
+    "SHA256（内容校验值）": "58bfc2017a1d1f25f2ca0dd7baf5259a39596f17652b3d7dabf2d7b2a7363c4b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.4/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "e7d1425b93e53cb24d8baa9be7c9f4b3960282021215fba844a9483fc6bfb5b6"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.4/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.4/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.4/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "c5b9b2d0e260a2fdd89a68d8ad9d2d7763032d92ba828d7156868b9de66b2f64"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.4/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.4/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.4/gpt-重置前真实状态.json",
+    "字节数": 1180,
+    "SHA256（内容校验值）": "f5255b48f71a49f2fa54b0a743e78485dc922219bbba12a9c73454248c00f1e2"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.8/eval_checkpoint_5000_seed_46_action_delay_0_scenario_cot_sweep_walk_x_flat_terrain_0.8/metrics_summary.json",
+    "字节数": 199683,
+    "SHA256（内容校验值）": "bcfddffa5cf3831b87a5f425392ecec5e76a1bc839ad929bb5c61cae346a205e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.8/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "34e3717d22c62bb13d06a330e08e7758430d15918887ac60f8d100b654952eb9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.8/gpt-评估条件.json",
+    "字节数": 1126,
+    "SHA256（内容校验值）": "de094f5a182bbcfd3521255ef9319a58764c221c785028f383dea9512b962bc3"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.8/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地0.8/gpt-重置前真实状态.json",
+    "字节数": 1180,
+    "SHA256（内容校验值）": "2d49cda030ec465ee28eeac2370df56bd05cc5bce58fec2d2296734ff6a0d9bb"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地1.0/eval_checkpoint_5000_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 219374,
+    "SHA256（内容校验值）": "ec8eb82d8636f38673d7fb80fc5caac3921e06626ba8c7bcb82d8737bc37ff7b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "1ef13d6ce4d285aefaf0ac23ca63e44d535fed0a1c836a67a3eea5507c82395f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地1.0/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "5e3a258061f2b998dc7a16a4ee92bd69e658e4d9ce9fac6a939efaa4d4982b80"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地1.0/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/平地1.0/gpt-重置前真实状态.json",
+    "字节数": 1179,
+    "SHA256（内容校验值）": "c27a14e7690ded09e7bcc193a3ad5fc07dbffbd2189798ecbebc98932d3145fc"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/楼梯8.5厘米/eval_checkpoint_5000_seed_46_action_delay_0_scenario_fast_walk_stairs_up/metrics_summary.json",
+    "字节数": 219100,
+    "SHA256（内容校验值）": "b299b358a712d9c3097a733bf5c245860591a6ab73207eead0c77f772fb7ebd9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-构造环境配置.yaml",
+    "字节数": 45871,
+    "SHA256（内容校验值）": "85dec3a8bfde10a3f38f6326eace0123e3d8c6d952eee5058e70aeefb2ca31d5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-评估条件.json",
+    "字节数": 1136,
+    "SHA256（内容校验值）": "8c2eaa1a4378122d9c4e9ca2968dc6174ef02e07d733cda79d3974ef5831962e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子46/楼梯8.5厘米/gpt-重置前真实状态.json",
+    "字节数": 1186,
+    "SHA256（内容校验值）": "6b669598e24979e556c0486fffe60a38ecd6a7ec9be3b76f2802f88bb27c2770"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/坡道0.8/eval_checkpoint_5000_seed_47_action_delay_0_scenario_walk_existing_slope_0.8mps/metrics_summary.json",
+    "字节数": 199612,
+    "SHA256（内容校验值）": "f05460bd1e0636fdae6f9a233726ea4c50ebab5528816029c66b8ab2631ea446"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/坡道0.8/gpt-坡道几何核验.json",
+    "字节数": 308,
+    "SHA256（内容校验值）": "7302467917f3e6400c4fa8fd9b21bc126bbe329405bbc5bf01d2638788f83514"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/坡道0.8/gpt-构造环境配置.yaml",
+    "字节数": 45868,
+    "SHA256（内容校验值）": "57de559f4691bb19dbff675571cd5cf8c625a5aca2815a073b9e5c92542f7fa0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/坡道0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/坡道0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "528e7fdd8dff309171beb0f420fd1600d1ad2731c3e0499d55714c94b595c687"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/坡道0.8/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "2195cb38c572704c60309ca61b426398336b3b1cbecff0847ac335e9cb11456b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/坡道0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/坡道0.8/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/坡道0.8/gpt-重置前真实状态.json",
+    "字节数": 1180,
+    "SHA256（内容校验值）": "ba3a029c56af38d7db1bf9cc46d4ffc86686914e7e9a2e9b957efae529e92c14"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/崎岖1.0/eval_checkpoint_5000_seed_47_action_delay_0_scenario_fast_walk_x_uneven_terrain/metrics_summary.json",
+    "字节数": 219486,
+    "SHA256（内容校验值）": "f0d9971d727737439793d3da16e467e774c650cf8ad986da325693a18f9d2e70"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/崎岖1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "cc48c98ee3f3e0d1f598b51d39dde522acb41565762f4894bda7cd7bb1258260"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/崎岖1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/崎岖1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/崎岖1.0/gpt-评估条件.json",
+    "字节数": 1117,
+    "SHA256（内容校验值）": "923ede916e75d52f9b2e3f90dbd9db43c60726b5e7708b85ea17fc0216b9e3e9"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/崎岖1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/崎岖1.0/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/崎岖1.0/gpt-重置前真实状态.json",
+    "字节数": 1186,
+    "SHA256（内容校验值）": "15cf128c57a7196675c398b91c4c2a387b04c6ff63a4a2018b572d8cb0f47157"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.4/eval_checkpoint_5000_seed_47_action_delay_0_scenario_walk_x_flat_terrain_0.4mps/metrics_summary.json",
+    "字节数": 199655,
+    "SHA256（内容校验值）": "db361ab26285876bba2bc06fa6b07fcd75ebcb0318793bb11fe30d262b92827e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.4/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "3f7c4e792351fb069ca1f218146a05b98d3e9701a26e429fa6a098ab3e6d29dd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.4/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.4/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.4/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "0f8b1c621573096dd3e23019389f71b489b8f2a3c068385a39f45a192095dc8e"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.4/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.4/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.4/gpt-重置前真实状态.json",
+    "字节数": 1185,
+    "SHA256（内容校验值）": "63dbeb1578c19d8c9e6e250886e5b75f6ff3248ea40c4414f325c22e3fd6700f"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.8/eval_checkpoint_5000_seed_47_action_delay_0_scenario_cot_sweep_walk_x_flat_terrain_0.8/metrics_summary.json",
+    "字节数": 200111,
+    "SHA256（内容校验值）": "d39c3ff17c496cb6c313ae525ec0f2d2e7fffb01152a7a95061bfadfd5e4a60a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.8/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "4296cd15ab4e4ad6fd659b25b96fd5d40907ac3d34e17fcbe53d27c9ed0a01d3"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.8/gpt-评估条件.json",
+    "字节数": 1126,
+    "SHA256（内容校验值）": "87d24fa00f6a160299f72e3112374149f3d1a461d014c02971b954f79f65f080"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.8/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地0.8/gpt-重置前真实状态.json",
+    "字节数": 1180,
+    "SHA256（内容校验值）": "dd4411de9a6e1e9c40a2c4e43c379219064d2c09ac17b815205ebe27a92270ea"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地1.0/eval_checkpoint_5000_seed_47_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 219259,
+    "SHA256（内容校验值）": "33504a49f69e9e67145a8d26d69f15eff01c0752f0664ac68249347a7e051b0c"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "cc48c98ee3f3e0d1f598b51d39dde522acb41565762f4894bda7cd7bb1258260"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地1.0/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "d594c39f5a9a694d841d8585158c2dddea44d627fffc55fed781203aed2a93b4"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地1.0/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/平地1.0/gpt-重置前真实状态.json",
+    "字节数": 1176,
+    "SHA256（内容校验值）": "4386dd5956531d45cb17ca4295a6c4b936f8318a2f52e34b148e3e5281dce521"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/楼梯8.5厘米/eval_checkpoint_5000_seed_47_action_delay_0_scenario_fast_walk_stairs_up/metrics_summary.json",
+    "字节数": 218994,
+    "SHA256（内容校验值）": "e292d18835e3b45cae40d2a4af1294873f2f1fd2ce07cf8c599f8e44b4cc61a5"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-构造环境配置.yaml",
+    "字节数": 45871,
+    "SHA256（内容校验值）": "e53cb7af269c39b38e309efb547622d98e645c4c4c0a370a6a77bd7f720a1310"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-评估条件.json",
+    "字节数": 1136,
+    "SHA256（内容校验值）": "69cf2df9f1d7f41701d0fe61939648206268b66d521fb05ceefcbc0fdc5487d4"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-运行时随机化.json",
+    "字节数": 5789,
+    "SHA256（内容校验值）": "d9253fe68f6efdb3715d3031f113431de779871bcf131f12bac862d2d45462ae"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子47/楼梯8.5厘米/gpt-重置前真实状态.json",
+    "字节数": 1182,
+    "SHA256（内容校验值）": "cc13ac71599a6b69a72c4b28d701c9f0b5faacfd0c6ffa8868256ba2e2d84413"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/坡道0.8/eval_checkpoint_5000_seed_48_action_delay_0_scenario_walk_existing_slope_0.8mps/metrics_summary.json",
+    "字节数": 199716,
+    "SHA256（内容校验值）": "8a71251e2ffcbe9f670a944452473bc1c83fba5a1c38fe811701bdd04212953d"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/坡道0.8/gpt-坡道几何核验.json",
+    "字节数": 308,
+    "SHA256（内容校验值）": "7302467917f3e6400c4fa8fd9b21bc126bbe329405bbc5bf01d2638788f83514"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/坡道0.8/gpt-构造环境配置.yaml",
+    "字节数": 45868,
+    "SHA256（内容校验值）": "fa62dcc8ab280f47e70e35c4df767b4001ab0e6719acac144883fe29ec4e1500"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/坡道0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/坡道0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "528e7fdd8dff309171beb0f420fd1600d1ad2731c3e0499d55714c94b595c687"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/坡道0.8/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "104b94774c9a298f4ef07c91a36db625ef8aee4e8aa49369f5b77f20b3831235"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/坡道0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/坡道0.8/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/坡道0.8/gpt-重置前真实状态.json",
+    "字节数": 1181,
+    "SHA256（内容校验值）": "feb8007c902f4decc6c4dc482a3e2370e59258957432215d18de4ca706c199eb"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/崎岖1.0/eval_checkpoint_5000_seed_48_action_delay_0_scenario_fast_walk_x_uneven_terrain/metrics_summary.json",
+    "字节数": 219205,
+    "SHA256（内容校验值）": "c55ccdfc7120b7c990cac50550f39c7739d5dc5619cb0e1315ca138a72cf11d8"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/崎岖1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "bab8522c96c38dd73ce1047baf9cd38fa2aac7f593cbca5e2346be80fd86c98a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/崎岖1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/崎岖1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/崎岖1.0/gpt-评估条件.json",
+    "字节数": 1117,
+    "SHA256（内容校验值）": "804dd5b8a4b84d48978adcd7a1136671a5a9ab224708192285b79638ada65350"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/崎岖1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/崎岖1.0/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/崎岖1.0/gpt-重置前真实状态.json",
+    "字节数": 1183,
+    "SHA256（内容校验值）": "5fb96d45296b251ca8f13d4da49476fbbf751cc073051c09bac9b9ea73e646c7"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.4/eval_checkpoint_5000_seed_48_action_delay_0_scenario_walk_x_flat_terrain_0.4mps/metrics_summary.json",
+    "字节数": 199695,
+    "SHA256（内容校验值）": "684c268db5a2538e38fa79bd7c144e3321f8c6341225895589bf249e171542f2"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.4/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "10186c7a124e94e6767c6b1bcfe43cf0dfc75c71d5de03a6ba3d470af8fcd92b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.4/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.4/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.4/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "9d62b30bfe2e915362b3e4dc2f29338f206bf7873487698581cb6ba4277f2474"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.4/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.4/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.4/gpt-重置前真实状态.json",
+    "字节数": 1184,
+    "SHA256（内容校验值）": "14f92b93de7a08b81a88572389ab985736d48a02cd7fa09f3004856e1268d3a0"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.8/eval_checkpoint_5000_seed_48_action_delay_0_scenario_cot_sweep_walk_x_flat_terrain_0.8/metrics_summary.json",
+    "字节数": 199679,
+    "SHA256（内容校验值）": "c03c2fa115eac5e22483369b2231c663539c0f9b0b7b23bb7c81332b75b1a891"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.8/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "1c0545c05c3b368ba2954faedc002b03ebbe133227a32c6330f7c164ba75210b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.8/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.8/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.8/gpt-评估条件.json",
+    "字节数": 1126,
+    "SHA256（内容校验值）": "33e2319266b6663c0d8c6e316d278e24a2a5f5e4616d3151bb40ad066a6ca5b4"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.8/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.8/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地0.8/gpt-重置前真实状态.json",
+    "字节数": 1176,
+    "SHA256（内容校验值）": "fa34ba0aac5d4111373b53fa70e10cd3609a971014120f8814c15c8c0b9c8304"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地1.0/eval_checkpoint_5000_seed_48_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 219044,
+    "SHA256（内容校验值）": "9e69e17ab661b312521df42835ae0e4da5ccae09547d5ad12f3e29d51b023f85"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地1.0/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "bab8522c96c38dd73ce1047baf9cd38fa2aac7f593cbca5e2346be80fd86c98a"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地1.0/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地1.0/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地1.0/gpt-评估条件.json",
+    "字节数": 1119,
+    "SHA256（内容校验值）": "26a6f0ff0a8b9d48b8f66e71ee9e6c2edde22d7c470de0c60ab16de36cebc094"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地1.0/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地1.0/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/平地1.0/gpt-重置前真实状态.json",
+    "字节数": 1178,
+    "SHA256（内容校验值）": "8e30667d8b6ae86b4b885655c536441075c8d2d801828868d076d28acdd2d41b"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/楼梯8.5厘米/eval_checkpoint_5000_seed_48_action_delay_0_scenario_fast_walk_stairs_up/metrics_summary.json",
+    "字节数": 219006,
+    "SHA256（内容校验值）": "7764a2c1c3c0ab84728242b15067d8b3b25571f6793a5acf93f7a94b4cf97924"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-构造环境配置.yaml",
+    "字节数": 45871,
+    "SHA256（内容校验值）": "a980b54736c63ad8f29c741fc17ee7bf15040f79f42c81ac9f0b55282df6a6ee"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "d51740cdce5e4cb18dcaa5f9c631625afff709aca049689c09f94abb773d1625"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-评估条件.json",
+    "字节数": 1136,
+    "SHA256（内容校验值）": "98aa28784124df0b9af7066682eec2caf398967bff25056e8222d801515e6c67"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-运行时随机化.json",
+    "字节数": 5780,
+    "SHA256（内容校验值）": "fdd78531e0b73b91bf4139f402cee7764e1b1c67dd18a6d32115139de3a864c1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子-20261105/训练种子48/评估/F/检查点5000/种子48/楼梯8.5厘米/gpt-重置前真实状态.json",
+    "字节数": 1181,
+    "SHA256（内容校验值）": "40e168148f678cb9f8c83278892903017872671e01fa3154930a068ed76501e7"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子比较.py",
+    "字节数": 24607,
+    "SHA256（内容校验值）": "25c34032f577169841bcc21469ec0d3745f331660555d60e968372b16d7d6ae1"
+  },
+  {
+    "路径": "claude-BC组合F多训练种子流水线.py",
+    "字节数": 12678,
+    "SHA256（内容校验值）": "429a47e4d3e833197ec0befa1d3ef2c64ef28f4c756b08bcff43905174cf0ef9"
+  },
+  {
     "路径": "claude-能耗拉格朗日约束实验收口与B组分析-20261105.md",
-    "字节数": 9132,
-    "SHA256（内容校验值）": "6b25a4cc2de40d58aefb089a15d0a2b63249a0e4f1aa66925280154a62c336e3"
+    "字节数": 13567,
+    "SHA256（内容校验值）": "ae7a35432747030ff6221663092d45164e58b15ea54930be93c290565688b231"
   },
   {
     "路径": "claude-能耗约束实验-20261029/claude-冒烟-训练.log",
@@ -17728,6 +21543,11 @@
     "路径": "gpt-GPU2迁移记录.md",
     "字节数": 4376,
     "SHA256（内容校验值）": "773b5bac4113c14093e0674857dcc780562d708a00e1e7e71a5cdf9881a4bf02"
+  },
+  {
+    "路径": "gpt-GitHub上传说明.md",
+    "字节数": 4011,
+    "SHA256（内容校验值）": "9215d0e2fb0715b4500ee2a976db05d2fe29a0c8ce700e568b6de3bbf9754a6e"
   },
   {
     "路径": "gpt-X20作者公开仓库与能耗实验适用性核查-20261023.md",

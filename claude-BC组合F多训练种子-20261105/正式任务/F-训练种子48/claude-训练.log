@@ -1,0 +1,870 @@
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/xy.chen/tw/LoComposition/dependencies/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/xy.chen/miniconda3/envs/env_isaaclab_v100/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261105_155300.log
+2026-11-05T07:53:00Z [109ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-05T07:53:00Z [471ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-05T07:53:00Z [581ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-05T07:53:00Z [589ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-11-05T07:53:03Z [3,450ms] [Warning] [carb.cudainterop.plugin] CUDA_VISIBLE_DEVICES environment variable is set.
+2026-11-05T07:53:03Z [3,450ms] [Warning] [carb.cudainterop.plugin] Note CUDA device enumeration and Omniverse device enumeration are different.
+2026-11-05T07:53:03Z [3,450ms] [Warning] [carb.cudainterop.plugin] Setting CUDA_VISIBLE_DEVICES can lead to undesired behavior or crashes.
+2026-11-05T07:53:04Z [4,149ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-05T07:53:04Z [4,149ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-05T07:53:04Z [4,149ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-05T07:53:04Z [4,149ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-05T07:53:04Z [4,149ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-05T07:53:04Z [4,149ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: NVIDIA A100 80GB PCIe
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+2026-11-05T07:53:04Z [4,150ms] [Warning] [gpu.foundation.plugin] Skipping NVIDIA GPU due CUDA being in bad state: Tesla V100-PCIE-32GB
+2026-11-05T07:53:04Z [4,151ms] [Warning] [gpu.foundation.plugin] Please restart your system if CUDA is known to work in your system.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 550.163.01    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 15478ce1.. |
+|     |                                  |        |     |            | 41        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA A100 80GB PCIe            |        |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20b5      | 2d0e24e4.. |
+|     |                                  |        |     |            | 61        |            |
+|---------------------------------------------------------------------------------------------|
+| 2   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 2f067e11.. |
+|     |                                  |        |     |            | 81        |            |
+|---------------------------------------------------------------------------------------------|
+| 3   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 5ed17834.. |
+|     |                                  |        |     |            | a1        |            |
+|---------------------------------------------------------------------------------------------|
+| 4   | Tesla V100-PCIE-32GB             | Yes: 0 |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | 385c2c9d.. |
+|     |                                  |        |     |            | c1        |            |
+|---------------------------------------------------------------------------------------------|
+| 5   | Tesla V100-PCIE-32GB             |        |     | 32768   MB | 10de      | 0          |
+|     |                                  |        |     |            | 1db6      | ae07b535.. |
+|     |                                  |        |     |            | e1        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-136-generic
+| Processor: AMD EPYC 9654 96-Core Processor
+| Cores: 192 | Logical Cores: 192
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 1031725 | Free Memory: 458589
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-05T07:53:04Z [4,709ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 4
+2026-11-05T07:53:04Z [4,752ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+[INFO]: Parsing configuration from: locomposition.tasks.locomotion.velocity.config.solo12.locomposition_go2_rough_terrain_env_cfg:Go2RoughTerrainEnvCfgJointStateHistory
+[INFO]: Parsing configuration from: locomposition.tasks.locomotion.velocity.config.solo12.agents.clean_rl_ppo_cfg:Solo12FlatPPORunnerCfg
+[INFO] Using seed=48
+[INFO] agent_cfg.seed=48
+[INFO] env_cfg.seed=48
+[INFO] env_cfg.sim.random_seed=48
+[INFO] terrain_generator.seed=48
+[INFO] Resolved training embodiment/configuration:
+[INFO] task=LoComposition-Go2-Rough-Terrain-Joint-State-History-v0
+[INFO] robot_usd=https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab/Robots/Unitree/Go2/go2.usd
+[INFO] action_joint_names=['FL_hip_joint', 'FR_hip_joint', 'RL_hip_joint', 'RR_hip_joint', 'FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint', 'FL_calf_joint', 'FR_calf_joint', 'RL_calf_joint', 'RR_calf_joint']
+[INFO] action_scale=0.8
+[INFO] control_step_dt=0.02
+[INFO] episode_length_s=10.0
+[INFO] energy_end_weight=0.012
+[INFO] constraint.joint_torque={'limit': 20.0, 'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']}
+[INFO] constraint.joint_velocity={'limit': 25.0, 'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']}
+[INFO] constraint.joint_acceleration={'limit': 800.0, 'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']}
+[INFO] constraint.action_rate={'limit': 80.0, 'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']}
+[INFO] constraint.foot_contact_force={'limit': 300.0, 'names': ['.*_foot']}
+[INFO] constraint.front_hfe_position={'limit': 1.5, 'names': ['FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint']}
+[INFO] constraint.hip_position={'limit': 0.3, 'names': ['.*_hip_joint'], 'velocity_deadzone': 0.1}
+[INFO] constraint.no_move={'names': ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint'], 'velocity_deadzone': 0.1, 'joint_vel_limit': 4.0}
+[INFO] event.randomize_mass={'asset_cfg': SceneEntityCfg(name='robot', joint_names=None, joint_ids=slice(None, None, None), fixed_tendon_names=None, fixed_tendon_ids=slice(None, None, None), body_names=['base'], body_ids=slice(None, None, None), object_collection_names=None, object_collection_ids=slice(None, None, None), preserve_order=False), 'mass_distribution_params': (-1.5, 1.5), 'operation': 'add', 'distribution': 'uniform', 'recompute_inertia': True}
+[INFO] event.push_robot={'velocity_range': {'x': (-0.5, 0.5), 'y': (-0.5, 0.5)}}
+[INFO] event.push_base_wrench={'asset_cfg': SceneEntityCfg(name='robot', joint_names=None, joint_ids=slice(None, None, None), fixed_tendon_names=None, fixed_tendon_ids=slice(None, None, None), body_names=['base'], body_ids=slice(None, None, None), object_collection_names=None, object_collection_ids=slice(None, None, None), preserve_order=False), 'force_range': (-10.0, 10.0), 'torque_range': (-0.5, 0.5)}
+[INFO] Logging experiment in directory: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105
+[INFO] Reserved run directory: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06
+[微调配置] {"实验组": "F", "来源检查点": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_30000.pt", "来源SHA256": "3cfa3b846a8bcb72ed20dbba9e06e94cbfa5800e88adccfae2534ff7e69cec94", "追加迭代": 5000, "随机种子": 48, "环境数量": 7500, "每轮控制步": 24, "学习率": 3e-05, "学习率退火": false, "原能耗权重": 0.008, "能耗权重": 0.012, "损耗占比": 0.1, "机械功率参考瓦": 40.05852980620652, "力矩平方参考": 229.68785967776046, "力矩尺度": 0.17440421040278947, "参考尺度文件": "/home/xy.chen/tw/LoComposition/gpt-四组微调实验-20261026/gpt-固定参考尺度.json", "参考尺度SHA256": "1eff524dfafd80aee3866de8b1b65a41d425a6b5842a0454d1dc1d6605ef55a8", "目标": "-w*((1-alpha)*sum(abs(tau*dq))+alpha*s*sum(tau**2))", "优化器": "重新建立Adam，不恢复原优化器状态", "约束课程": "从首次重置前固定为成熟阶段1.0", "环境初始化": "同种子重新初始化物理状态、地形课程与约束归一化，不恢复原轨迹", "解释边界": "力矩平方是损耗代理；统计尺度s不是真实电机参数。"}
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-05_15-53-06.log[0m
+[36m======================================================================================[0m
+
+[33m15:53:06 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 48
+	Physics step-size     : 0.005
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+[INFO] Generating terrains based on curriculum took : 31.390133 seconds
+[INFO]: Time taken for scene creation : 41.201241 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 7500
+	Environment spacing   : 3.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 23.100654 seconds
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++------------------------------------------------------------+
+|                    Active Command Terms                    |
++-------+---------------+------------------------------------+
+| Index | Name          |                Type                |
++-------+---------------+------------------------------------+
+|   0   | base_velocity | UniformVelocityCommandWithDeadzone |
++-------+---------------+------------------------------------+
+
+[INFO] Event Manager:  <EventManager> contains 3 active terms.
++--------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++----------+---------------------------+
+|  Index   | Name                      |
++----------+---------------------------+
+|    0     | physics_material          |
+|    1     | randomize_com             |
+|    2     | randomize_mass            |
++----------+---------------------------+
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++--------+----------------------------+
+| Index  | Name                       |
++--------+----------------------------+
+|   0    | reset_base                 |
+|   1    | reset_robot_joints         |
+|   2    | episodic_height_offset     |
++--------+----------------------------+
++----------------------------------------------------+
+|       Active Event Terms in Mode: 'interval'       |
++-------+------------------+-------------------------+
+| Index | Name             | Interval time range (s) |
++-------+------------------+-------------------------+
+|   0   | push_robot       |       (0.0, 0.005)      |
+|   1   | push_base_wrench |       (0.05, 0.1)       |
++-------+------------------+-------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 12)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          12 |
++--------+-------------+-------------+
+
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[WARNING] 'episodic_height_offset' not found in env! Episodic noise is NOT being applied.
+[INFO] Observation Manager: <ObservationManager> contains 1 groups.
++----------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (236,)) |
++-----------+--------------------------------+-------------+
+|   Index   | Name                           |    Shape    |
++-----------+--------------------------------+-------------+
+|     0     | base_ang_vel                   |     (3,)    |
+|     1     | velocity_commands              |     (3,)    |
+|     2     | projected_gravity              |     (3,)    |
+|     3     | joint_pos_history              |    (36,)    |
+|     4     | joint_vel_history              |    (36,)    |
+|     5     | actions                        |    (12,)    |
+|     6     | height_map                     |    (143,)   |
++-----------+--------------------------------+-------------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 3 active terms.
++---------------------------------+
+|     Active Termination Terms    |
++-------+--------------+----------+
+| Index | Name         | Time Out |
++-------+--------------+----------+
+|   0   | time_out     |   True   |
+|   1   | base_contact |  False   |
+|   2   | upside_down  |  False   |
++-------+--------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 3 active terms.
++---------------------------------------+
+|          Active Reward Terms          |
++-------+----------------------+--------+
+| Index | Name                 | Weight |
++-------+----------------------+--------+
+|   0   | track_lin_vel_xy_exp |    1.0 |
+|   1   | track_ang_vel_z_exp  |    0.5 |
+|   2   | minimize_power       |  0.012 |
++-------+----------------------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 8 active terms.
++----------------------------+
+|  Active Curriculum Terms   |
++-------+--------------------+
+| Index | Name               |
++-------+--------------------+
+|   0   | joint_torque       |
+|   1   | joint_velocity     |
+|   2   | joint_acceleration |
+|   3   | action_rate        |
+|   4   | hip_position       |
+|   5   | base_orientation   |
+|   6   | power              |
+|   7   | terrain_levels     |
++-------+--------------------+
+
+[INFO] Constraint Manager:  <ConstraintManager> contains 11 active terms.
++-----------------------------------------------------------------------------------------------------------------------+
+|                                                Active Constraint Terms                                                |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+| Index | Name               | Limit |                                  Names                                   | Max p |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+|   0   | joint_torque       |  20.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   1   | joint_velocity     |  25.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   2   | joint_acceleration | 800.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   3   | action_rate        |  80.0 |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |  0.25 |
+|   4   | base_orientation   |   0.1 |                                    -                                     |  0.25 |
+|   5   | contact            |     - |                           ['base', '.*_thigh']                           |   1.0 |
+|   6   | foot_contact_force | 300.0 |                               ['.*_foot']                                |   1.0 |
+|   7   | front_hfe_position |   1.5 | ['FL_thigh_joint', 'FR_thigh_joint', 'RL_thigh_joint', 'RR_thigh_joint'] |   1.0 |
+|   8   | upsidedown         |   0.0 |                                    -                                     |   1.0 |
+|   9   | hip_position       |   0.3 |                             ['.*_hip_joint']                             |  0.25 |
+|   10  | no_move            |     - |           ['.*_hip_joint', '.*_thigh_joint', '.*_calf_joint']            |   0.1 |
++-------+--------------------+-------+--------------------------------------------------------------------------+-------+
+
+[INFO]: Completed setting up the environment...
+Terrain hash: aa5cf142bbf33444edd356e239975ba47ecb0b13
+---------------------------------------------------
+---------------------------------------------------
+---------------------------------------------------
+!!!!!!Unexpected terrain hash!!!!!!
+---------------------------------------------------
+---------------------------------------------------
+---------------------------------------------------
+[INFO] 训练输出目录: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06
+seed in ppo.py= 48
+[微调] {"来源检查点": "/home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/gpt-go2-default-seed46/2026-10-10-09-56-51/model_30000.pt", "来源文件SHA256": "3cfa3b846a8bcb72ed20dbba9e06e94cbfa5800e88adccfae2534ff7e69cec94", "来源迭代": 30000, "来源格式": "完整智能体状态字典", "逐键完全一致": true, "已核验状态键": ["actor_logstd", "critic.0.weight", "critic.0.bias", "critic.2.weight", "critic.2.bias", "critic.4.weight", "critic.4.bias", "critic.6.weight", "critic.6.bias", "actor_mean.0.weight", "actor_mean.0.bias", "actor_mean.2.weight", "actor_mean.2.bias", "actor_mean.4.weight", "actor_mean.4.bias", "actor_mean.6.weight", "actor_mean.6.bias", "obs_rms.running_mean", "obs_rms.running_var", "obs_rms.count", "value_rms.running_mean", "value_rms.running_var", "value_rms.count"], "优化器已恢复": false, "地形与约束归一化已恢复": false, "微调已完成迭代": 0, "微调总迭代": 5000, "优化器": "新 Adam（自适应矩估计优化器）", "优化器状态条目数": 0, "初始学习率": 3e-05, "学习率衰减": false, "约束课程进度": 1.0, "环境随机种子": 48, "并行环境数": 7500, "初始化说明": "完整加载 actor、critic、actor_logstd、obs_rms、value_rms；所有组的新环境、地形和约束归一化采用相同随机种子重新初始化。"}
+[微调运行参数] {"energy_weight": 0.012, "mix_alpha": 0.1, "torque_scale": 0.17440421040278947, "scaling_factor": 1.0, "learning_rate": 3e-05, "constraint_progress": 1.0}
+Starting training for 5000 steps
+[训练] 迭代=1/5000 耗时=26.34s 平均奖励=0.012559 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1.pt
+[训练] 迭代=2/5000 耗时=27.04s 平均奖励=0.019804 学习率=3e-05
+[训练] 迭代=3/5000 耗时=28.26s 平均奖励=0.019927 学习率=3e-05
+[训练] 迭代=10/5000 耗时=29.42s 平均奖励=0.019400 学习率=3e-05
+[训练] 迭代=20/5000 耗时=29.06s 平均奖励=0.019460 学习率=3e-05
+[训练] 迭代=30/5000 耗时=29.55s 平均奖励=0.019237 学习率=3e-05
+[训练] 迭代=40/5000 耗时=26.74s 平均奖励=0.019372 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_49.pt
+[训练] 迭代=50/5000 耗时=20.45s 平均奖励=0.019369 学习率=3e-05
+[训练] 迭代=60/5000 耗时=24.73s 平均奖励=0.019468 学习率=3e-05
+[训练] 迭代=70/5000 耗时=23.44s 平均奖励=0.019341 学习率=3e-05
+[训练] 迭代=80/5000 耗时=23.22s 平均奖励=0.019394 学习率=3e-05
+[训练] 迭代=90/5000 耗时=23.44s 平均奖励=0.019421 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_99.pt
+[训练] 迭代=100/5000 耗时=21.25s 平均奖励=0.019310 学习率=3e-05
+[训练] 迭代=110/5000 耗时=23.81s 平均奖励=0.019548 学习率=3e-05
+[训练] 迭代=120/5000 耗时=24.57s 平均奖励=0.019387 学习率=3e-05
+[训练] 迭代=130/5000 耗时=24.35s 平均奖励=0.019677 学习率=3e-05
+[训练] 迭代=140/5000 耗时=21.59s 平均奖励=0.019313 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_149.pt
+[训练] 迭代=150/5000 耗时=21.10s 平均奖励=0.019912 学习率=3e-05
+[训练] 迭代=160/5000 耗时=20.99s 平均奖励=0.019316 学习率=3e-05
+[训练] 迭代=170/5000 耗时=22.57s 平均奖励=0.019999 学习率=3e-05
+[训练] 迭代=180/5000 耗时=24.16s 平均奖励=0.019113 学习率=3e-05
+[训练] 迭代=190/5000 耗时=22.53s 平均奖励=0.020222 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_199.pt
+[训练] 迭代=200/5000 耗时=23.76s 平均奖励=0.019102 学习率=3e-05
+[训练] 迭代=210/5000 耗时=20.98s 平均奖励=0.019129 学习率=3e-05
+[训练] 迭代=220/5000 耗时=21.80s 平均奖励=0.019201 学习率=3e-05
+[训练] 迭代=230/5000 耗时=20.39s 平均奖励=0.013577 学习率=3e-05
+[训练] 迭代=240/5000 耗时=22.48s 平均奖励=0.019136 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_249.pt
+[训练] 迭代=250/5000 耗时=21.45s 平均奖励=0.018962 学习率=3e-05
+[训练] 迭代=260/5000 耗时=21.94s 平均奖励=0.019119 学习率=3e-05
+[训练] 迭代=270/5000 耗时=23.89s 平均奖励=0.019388 学习率=3e-05
+[训练] 迭代=280/5000 耗时=24.14s 平均奖励=0.019092 学习率=3e-05
+[训练] 迭代=290/5000 耗时=23.77s 平均奖励=0.019338 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_299.pt
+[训练] 迭代=300/5000 耗时=22.88s 平均奖励=0.019147 学习率=3e-05
+[训练] 迭代=310/5000 耗时=23.56s 平均奖励=0.019304 学习率=3e-05
+[训练] 迭代=320/5000 耗时=23.46s 平均奖励=0.019151 学习率=3e-05
+[训练] 迭代=330/5000 耗时=23.51s 平均奖励=0.019284 学习率=3e-05
+[训练] 迭代=340/5000 耗时=21.19s 平均奖励=0.019191 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_349.pt
+[训练] 迭代=350/5000 耗时=19.74s 平均奖励=0.019188 学习率=3e-05
+[训练] 迭代=360/5000 耗时=23.40s 平均奖励=0.019304 学习率=3e-05
+[训练] 迭代=370/5000 耗时=23.04s 平均奖励=0.019160 学习率=3e-05
+[训练] 迭代=380/5000 耗时=23.56s 平均奖励=0.019521 学习率=3e-05
+[训练] 迭代=390/5000 耗时=21.27s 平均奖励=0.019167 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_399.pt
+[训练] 迭代=400/5000 耗时=19.61s 平均奖励=0.019609 学习率=3e-05
+[训练] 迭代=410/5000 耗时=21.03s 平均奖励=0.019050 学习率=3e-05
+[训练] 迭代=420/5000 耗时=20.68s 平均奖励=0.019774 学习率=3e-05
+[训练] 迭代=430/5000 耗时=23.77s 平均奖励=0.019254 学习率=3e-05
+[训练] 迭代=440/5000 耗时=23.49s 平均奖励=0.019971 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_449.pt
+[训练] 迭代=450/5000 耗时=23.31s 平均奖励=0.019084 学习率=3e-05
+[训练] 迭代=460/5000 耗时=24.38s 平均奖励=0.019204 学习率=3e-05
+[训练] 迭代=470/5000 耗时=20.30s 平均奖励=0.019118 学习率=3e-05
+[训练] 迭代=480/5000 耗时=22.52s 平均奖励=0.014798 学习率=3e-05
+[训练] 迭代=490/5000 耗时=24.53s 平均奖励=0.019122 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_499.pt
+[训练] 迭代=500/5000 耗时=24.72s 平均奖励=0.019072 学习率=3e-05
+[训练] 迭代=510/5000 耗时=22.20s 平均奖励=0.019114 学习率=3e-05
+[训练] 迭代=520/5000 耗时=21.28s 平均奖励=0.019260 学习率=3e-05
+[训练] 迭代=530/5000 耗时=20.95s 平均奖励=0.019003 学习率=3e-05
+[训练] 迭代=540/5000 耗时=20.70s 平均奖励=0.019141 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_549.pt
+[训练] 迭代=550/5000 耗时=22.71s 平均奖励=0.019173 学习率=3e-05
+[训练] 迭代=560/5000 耗时=23.08s 平均奖励=0.019243 学习率=3e-05
+[训练] 迭代=570/5000 耗时=23.72s 平均奖励=0.019206 学习率=3e-05
+[训练] 迭代=580/5000 耗时=22.74s 平均奖励=0.019207 学习率=3e-05
+[训练] 迭代=590/5000 耗时=20.75s 平均奖励=0.019258 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_599.pt
+[训练] 迭代=600/5000 耗时=20.96s 平均奖励=0.019261 学习率=3e-05
+[训练] 迭代=610/5000 耗时=21.60s 平均奖励=0.019333 学习率=3e-05
+[训练] 迭代=620/5000 耗时=21.11s 平均奖励=0.019254 学习率=3e-05
+[训练] 迭代=630/5000 耗时=22.84s 平均奖励=0.019415 学习率=3e-05
+[训练] 迭代=640/5000 耗时=22.73s 平均奖励=0.019220 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_649.pt
+[训练] 迭代=650/5000 耗时=22.73s 平均奖励=0.019671 学习率=3e-05
+[训练] 迭代=660/5000 耗时=22.63s 平均奖励=0.019177 学习率=3e-05
+[训练] 迭代=670/5000 耗时=20.97s 平均奖励=0.019800 学习率=3e-05
+[训练] 迭代=680/5000 耗时=21.23s 平均奖励=0.019152 学习率=3e-05
+[训练] 迭代=690/5000 耗时=22.53s 平均奖励=0.019860 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_699.pt
+[训练] 迭代=700/5000 耗时=23.81s 平均奖励=0.019299 学习率=3e-05
+[训练] 迭代=710/5000 耗时=22.33s 平均奖励=0.019125 学习率=3e-05
+[训练] 迭代=720/5000 耗时=20.45s 平均奖励=0.019127 学习率=3e-05
+[训练] 迭代=730/5000 耗时=20.42s 平均奖励=0.015486 学习率=3e-05
+[训练] 迭代=740/5000 耗时=22.76s 平均奖励=0.019183 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_749.pt
+[训练] 迭代=750/5000 耗时=23.38s 平均奖励=0.019077 学习率=3e-05
+[训练] 迭代=760/5000 耗时=23.03s 平均奖励=0.019082 学习率=3e-05
+[训练] 迭代=770/5000 耗时=21.14s 平均奖励=0.019294 学习率=3e-05
+[训练] 迭代=780/5000 耗时=21.06s 平均奖励=0.019139 学习率=3e-05
+[训练] 迭代=790/5000 耗时=20.03s 平均奖励=0.019299 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_799.pt
+[训练] 迭代=800/5000 耗时=20.04s 平均奖励=0.019193 学习率=3e-05
+[训练] 迭代=810/5000 耗时=23.98s 平均奖励=0.019331 学习率=3e-05
+[训练] 迭代=820/5000 耗时=22.86s 平均奖励=0.019172 学习率=3e-05
+[训练] 迭代=830/5000 耗时=23.21s 平均奖励=0.019182 学习率=3e-05
+[训练] 迭代=840/5000 耗时=20.94s 平均奖励=0.019207 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_849.pt
+[训练] 迭代=850/5000 耗时=20.89s 平均奖励=0.019353 学习率=3e-05
+[训练] 迭代=860/5000 耗时=21.06s 平均奖励=0.019280 学习率=3e-05
+[训练] 迭代=870/5000 耗时=23.97s 平均奖励=0.019171 学习率=3e-05
+[训练] 迭代=880/5000 耗时=23.23s 平均奖励=0.019311 学习率=3e-05
+[训练] 迭代=890/5000 耗时=22.78s 平均奖励=0.019155 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_899.pt
+[训练] 迭代=900/5000 耗时=20.62s 平均奖励=0.019532 学习率=3e-05
+[训练] 迭代=910/5000 耗时=21.33s 平均奖励=0.019160 学习率=3e-05
+[训练] 迭代=920/5000 耗时=23.26s 平均奖励=0.019623 学习率=3e-05
+[训练] 迭代=930/5000 耗时=22.93s 平均奖励=0.019206 学习率=3e-05
+[训练] 迭代=940/5000 耗时=24.05s 平均奖励=0.019620 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_949.pt
+[训练] 迭代=950/5000 耗时=20.32s 平均奖励=0.019137 学习率=3e-05
+[训练] 迭代=960/5000 耗时=20.88s 平均奖励=0.019076 学习率=3e-05
+[训练] 迭代=970/5000 耗时=20.05s 平均奖励=0.019206 学习率=3e-05
+[训练] 迭代=980/5000 耗时=22.85s 平均奖励=0.016100 学习率=3e-05
+[训练] 迭代=990/5000 耗时=22.86s 平均奖励=0.019255 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_999.pt
+[训练] 迭代=1000/5000 耗时=23.36s 平均奖励=0.019101 学习率=3e-05
+[训练] 迭代=1010/5000 耗时=21.06s 平均奖励=0.019144 学习率=3e-05
+[训练] 迭代=1020/5000 耗时=21.41s 平均奖励=0.019261 学习率=3e-05
+[训练] 迭代=1030/5000 耗时=21.09s 平均奖励=0.019152 学习率=3e-05
+[训练] 迭代=1040/5000 耗时=21.35s 平均奖励=0.019240 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1049.pt
+[训练] 迭代=1050/5000 耗时=21.34s 平均奖励=0.019181 学习率=3e-05
+[训练] 迭代=1060/5000 耗时=21.23s 平均奖励=0.019261 学习率=3e-05
+[训练] 迭代=1070/5000 耗时=24.52s 平均奖励=0.019130 学习率=3e-05
+[训练] 迭代=1080/5000 耗时=24.10s 平均奖励=0.019261 学习率=3e-05
+[训练] 迭代=1090/5000 耗时=23.13s 平均奖励=0.019297 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1099.pt
+[训练] 迭代=1100/5000 耗时=21.24s 平均奖励=0.019353 学习率=3e-05
+[训练] 迭代=1110/5000 耗时=20.55s 平均奖励=0.019324 学习率=3e-05
+[训练] 迭代=1120/5000 耗时=21.14s 平均奖励=0.019234 学习率=3e-05
+[训练] 迭代=1130/5000 耗时=21.06s 平均奖励=0.019324 学习率=3e-05
+[训练] 迭代=1140/5000 耗时=23.24s 平均奖励=0.019175 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1149.pt
+[训练] 迭代=1150/5000 耗时=23.21s 平均奖励=0.019399 学习率=3e-05
+[训练] 迭代=1160/5000 耗时=23.44s 平均奖励=0.019193 学习率=3e-05
+[训练] 迭代=1170/5000 耗时=19.87s 平均奖励=0.019591 学习率=3e-05
+[训练] 迭代=1180/5000 耗时=20.35s 平均奖励=0.019204 学习率=3e-05
+[训练] 迭代=1190/5000 耗时=22.82s 平均奖励=0.019565 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1199.pt
+[训练] 迭代=1200/5000 耗时=23.16s 平均奖励=0.019154 学习率=3e-05
+[训练] 迭代=1210/5000 耗时=24.24s 平均奖励=0.019066 学习率=3e-05
+[训练] 迭代=1220/5000 耗时=20.23s 平均奖励=0.019269 学习率=3e-05
+[训练] 迭代=1230/5000 耗时=22.65s 平均奖励=0.016540 学习率=3e-05
+[训练] 迭代=1240/5000 耗时=23.58s 平均奖励=0.019191 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1249.pt
+[训练] 迭代=1250/5000 耗时=23.80s 平均奖励=0.019000 学习率=3e-05
+[训练] 迭代=1260/5000 耗时=23.42s 平均奖励=0.018996 学习率=3e-05
+[训练] 迭代=1270/5000 耗时=21.03s 平均奖励=0.019124 学习率=3e-05
+[训练] 迭代=1280/5000 耗时=20.68s 平均奖励=0.018956 学习率=3e-05
+[训练] 迭代=1290/5000 耗时=21.10s 平均奖励=0.019219 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1299.pt
+[训练] 迭代=1300/5000 耗时=22.06s 平均奖励=0.019005 学习率=3e-05
+[训练] 迭代=1310/5000 耗时=23.10s 平均奖励=0.019011 学习率=3e-05
+[训练] 迭代=1320/5000 耗时=23.27s 平均奖励=0.019040 学习率=3e-05
+[训练] 迭代=1330/5000 耗时=22.78s 平均奖励=0.019054 学习率=3e-05
+[训练] 迭代=1340/5000 耗时=21.23s 平均奖励=0.019121 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1349.pt
+[训练] 迭代=1350/5000 耗时=21.74s 平均奖励=0.019170 学习率=3e-05
+[训练] 迭代=1360/5000 耗时=21.09s 平均奖励=0.019287 学习率=3e-05
+[训练] 迭代=1370/5000 耗时=19.59s 平均奖励=0.019226 学习率=3e-05
+[训练] 迭代=1380/5000 耗时=22.66s 平均奖励=0.019280 学习率=3e-05
+[训练] 迭代=1390/5000 耗时=23.64s 平均奖励=0.019064 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1399.pt
+[训练] 迭代=1400/5000 耗时=23.54s 平均奖励=0.019405 学习率=3e-05
+[训练] 迭代=1410/5000 耗时=23.81s 平均奖励=0.019108 学习率=3e-05
+[训练] 迭代=1420/5000 耗时=23.51s 平均奖励=0.019387 学习率=3e-05
+[训练] 迭代=1430/5000 耗时=24.08s 平均奖励=0.019081 学习率=3e-05
+[训练] 迭代=1440/5000 耗时=23.68s 平均奖励=0.019516 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1449.pt
+[训练] 迭代=1450/5000 耗时=21.99s 平均奖励=0.019202 学习率=3e-05
+[训练] 迭代=1460/5000 耗时=21.99s 平均奖励=0.019120 学习率=3e-05
+[训练] 迭代=1470/5000 耗时=23.22s 平均奖励=0.019119 学习率=3e-05
+[训练] 迭代=1480/5000 耗时=23.32s 平均奖励=0.016739 学习率=3e-05
+[训练] 迭代=1490/5000 耗时=24.93s 平均奖励=0.019130 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1499.pt
+[训练] 迭代=1500/5000 耗时=24.09s 平均奖励=0.019004 学习率=3e-05
+[训练] 迭代=1510/5000 耗时=19.99s 平均奖励=0.019125 学习率=3e-05
+[训练] 迭代=1520/5000 耗时=20.67s 平均奖励=0.019256 学习率=3e-05
+[训练] 迭代=1530/5000 耗时=22.83s 平均奖励=0.019000 学习率=3e-05
+[训练] 迭代=1540/5000 耗时=23.20s 平均奖励=0.019192 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1549.pt
+[训练] 迭代=1550/5000 耗时=23.86s 平均奖励=0.019088 学习率=3e-05
+[训练] 迭代=1560/5000 耗时=21.65s 平均奖励=0.019187 学习率=3e-05
+[训练] 迭代=1570/5000 耗时=23.45s 平均奖励=0.019126 学习率=3e-05
+[训练] 迭代=1580/5000 耗时=24.30s 平均奖励=0.019177 学习率=3e-05
+[训练] 迭代=1590/5000 耗时=24.22s 平均奖励=0.019190 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1599.pt
+[训练] 迭代=1600/5000 耗时=22.38s 平均奖励=0.019171 学习率=3e-05
+[训练] 迭代=1610/5000 耗时=20.15s 平均奖励=0.019187 学习率=3e-05
+[训练] 迭代=1620/5000 耗时=21.65s 平均奖励=0.019169 学习率=3e-05
+[训练] 迭代=1630/5000 耗时=21.94s 平均奖励=0.019317 学习率=3e-05
+[训练] 迭代=1640/5000 耗时=22.29s 平均奖励=0.019169 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1649.pt
+[训练] 迭代=1650/5000 耗时=22.76s 平均奖励=0.019313 学习率=3e-05
+[训练] 迭代=1660/5000 耗时=24.13s 平均奖励=0.019156 学习率=3e-05
+[训练] 迭代=1670/5000 耗时=23.34s 平均奖励=0.019477 学习率=3e-05
+[训练] 迭代=1680/5000 耗时=19.98s 平均奖励=0.019125 学习率=3e-05
+[训练] 迭代=1690/5000 耗时=20.71s 平均奖励=0.019390 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1699.pt
+[训练] 迭代=1700/5000 耗时=20.64s 平均奖励=0.019059 学习率=3e-05
+[训练] 迭代=1710/5000 耗时=23.56s 平均奖励=0.019056 学习率=3e-05
+[训练] 迭代=1720/5000 耗时=23.81s 平均奖励=0.019194 学习率=3e-05
+[训练] 迭代=1730/5000 耗时=23.38s 平均奖励=0.016920 学习率=3e-05
+[训练] 迭代=1740/5000 耗时=23.95s 平均奖励=0.019163 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1749.pt
+[训练] 迭代=1750/5000 耗时=24.13s 平均奖励=0.018984 学习率=3e-05
+[训练] 迭代=1760/5000 耗时=24.08s 平均奖励=0.019143 学习率=3e-05
+[训练] 迭代=1770/5000 耗时=24.04s 平均奖励=0.019228 学习率=3e-05
+[训练] 迭代=1780/5000 耗时=19.98s 平均奖励=0.019048 学习率=3e-05
+[训练] 迭代=1790/5000 耗时=21.59s 平均奖励=0.019057 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1799.pt
+[训练] 迭代=1800/5000 耗时=23.63s 平均奖励=0.019060 学习率=3e-05
+[训练] 迭代=1810/5000 耗时=24.84s 平均奖励=0.019176 学习率=3e-05
+[训练] 迭代=1820/5000 耗时=23.83s 平均奖励=0.019128 学习率=3e-05
+[训练] 迭代=1830/5000 耗时=23.03s 平均奖励=0.019079 学习率=3e-05
+[训练] 迭代=1840/5000 耗时=19.90s 平均奖励=0.019076 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1849.pt
+[训练] 迭代=1850/5000 耗时=23.28s 平均奖励=0.019095 学习率=3e-05
+[训练] 迭代=1860/5000 耗时=23.38s 平均奖励=0.019233 学习率=3e-05
+[训练] 迭代=1870/5000 耗时=23.96s 平均奖励=0.019150 学习率=3e-05
+[训练] 迭代=1880/5000 耗时=25.35s 平均奖励=0.019296 学习率=3e-05
+[训练] 迭代=1890/5000 耗时=22.22s 平均奖励=0.019189 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1899.pt
+[训练] 迭代=1900/5000 耗时=21.60s 平均奖励=0.019298 学习率=3e-05
+[训练] 迭代=1910/5000 耗时=22.17s 平均奖励=0.019014 学习率=3e-05
+[训练] 迭代=1920/5000 耗时=22.63s 平均奖励=0.019437 学习率=3e-05
+[训练] 迭代=1930/5000 耗时=24.28s 平均奖励=0.019168 学习率=3e-05
+[训练] 迭代=1940/5000 耗时=23.46s 平均奖励=0.019394 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1949.pt
+[训练] 迭代=1950/5000 耗时=20.14s 平均奖励=0.019228 学习率=3e-05
+[训练] 迭代=1960/5000 耗时=22.04s 平均奖励=0.019020 学习率=3e-05
+[训练] 迭代=1970/5000 耗时=24.06s 平均奖励=0.019047 学习率=3e-05
+[训练] 迭代=1980/5000 耗时=23.37s 平均奖励=0.016911 学习率=3e-05
+[训练] 迭代=1990/5000 耗时=24.96s 平均奖励=0.019160 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_1999.pt
+[训练] 迭代=2000/5000 耗时=19.85s 平均奖励=0.019098 学习率=3e-05
+[训练] 迭代=2010/5000 耗时=22.20s 平均奖励=0.018996 学习率=3e-05
+[训练] 迭代=2020/5000 耗时=20.21s 平均奖励=0.019095 学习率=3e-05
+[训练] 迭代=2030/5000 耗时=25.35s 平均奖励=0.019166 学习率=3e-05
+[训练] 迭代=2040/5000 耗时=25.17s 平均奖励=0.019184 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2049.pt
+[训练] 迭代=2050/5000 耗时=25.35s 平均奖励=0.019163 学习率=3e-05
+[训练] 迭代=2060/5000 耗时=25.18s 平均奖励=0.019227 学习率=3e-05
+[训练] 迭代=2070/5000 耗时=25.26s 平均奖励=0.019175 学习率=3e-05
+[训练] 迭代=2080/5000 耗时=25.13s 平均奖励=0.019093 学习率=3e-05
+[训练] 迭代=2090/5000 耗时=25.60s 平均奖励=0.019110 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2099.pt
+[训练] 迭代=2100/5000 耗时=25.24s 平均奖励=0.019107 学习率=3e-05
+[训练] 迭代=2110/5000 耗时=23.57s 平均奖励=0.019114 学习率=3e-05
+[训练] 迭代=2120/5000 耗时=26.51s 平均奖励=0.019040 学习率=3e-05
+[训练] 迭代=2130/5000 耗时=26.36s 平均奖励=0.019251 学习率=3e-05
+[训练] 迭代=2140/5000 耗时=26.28s 平均奖励=0.019097 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2149.pt
+[训练] 迭代=2150/5000 耗时=26.45s 平均奖励=0.019241 学习率=3e-05
+[训练] 迭代=2160/5000 耗时=26.39s 平均奖励=0.019147 学习率=3e-05
+[训练] 迭代=2170/5000 耗时=26.17s 平均奖励=0.019320 学习率=3e-05
+[训练] 迭代=2180/5000 耗时=26.46s 平均奖励=0.019159 学习率=3e-05
+[训练] 迭代=2190/5000 耗时=26.63s 平均奖励=0.019514 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2199.pt
+[训练] 迭代=2200/5000 耗时=27.04s 平均奖励=0.019140 学习率=3e-05
+[训练] 迭代=2210/5000 耗时=27.36s 平均奖励=0.019000 学习率=3e-05
+[训练] 迭代=2220/5000 耗时=26.25s 平均奖励=0.019172 学习率=3e-05
+[训练] 迭代=2230/5000 耗时=25.85s 平均奖励=0.017119 学习率=3e-05
+[训练] 迭代=2240/5000 耗时=26.51s 平均奖励=0.019156 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2249.pt
+[训练] 迭代=2250/5000 耗时=26.15s 平均奖励=0.019034 学习率=3e-05
+[训练] 迭代=2260/5000 耗时=19.93s 平均奖励=0.019019 学习率=3e-05
+[训练] 迭代=2270/5000 耗时=26.55s 平均奖励=0.019085 学习率=3e-05
+[训练] 迭代=2280/5000 耗时=25.13s 平均奖励=0.019092 学习率=3e-05
+[训练] 迭代=2290/5000 耗时=25.59s 平均奖励=0.019225 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2299.pt
+[训练] 迭代=2300/5000 耗时=25.27s 平均奖励=0.019154 学习率=3e-05
+[训练] 迭代=2310/5000 耗时=25.22s 平均奖励=0.019152 学习率=3e-05
+[训练] 迭代=2320/5000 耗时=26.74s 平均奖励=0.019138 学习率=3e-05
+[训练] 迭代=2330/5000 耗时=25.93s 平均奖励=0.019130 学习率=3e-05
+[训练] 迭代=2340/5000 耗时=25.86s 平均奖励=0.019073 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2349.pt
+[训练] 迭代=2350/5000 耗时=25.06s 平均奖励=0.019178 学习率=3e-05
+[训练] 迭代=2360/5000 耗时=25.33s 平均奖励=0.019151 学习率=3e-05
+[训练] 迭代=2370/5000 耗时=25.13s 平均奖励=0.019101 学习率=3e-05
+[训练] 迭代=2380/5000 耗时=25.42s 平均奖励=0.019225 学习率=3e-05
+[训练] 迭代=2390/5000 耗时=26.68s 平均奖励=0.019153 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2399.pt
+[训练] 迭代=2400/5000 耗时=19.90s 平均奖励=0.019313 学习率=3e-05
+[训练] 迭代=2410/5000 耗时=25.19s 平均奖励=0.019152 学习率=3e-05
+[训练] 迭代=2420/5000 耗时=20.30s 平均奖励=0.019360 学习率=3e-05
+[训练] 迭代=2430/5000 耗时=27.36s 平均奖励=0.019204 学习率=3e-05
+[训练] 迭代=2440/5000 耗时=26.56s 平均奖励=0.019512 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2449.pt
+[训练] 迭代=2450/5000 耗时=26.43s 平均奖励=0.019177 学习率=3e-05
+[训练] 迭代=2460/5000 耗时=27.71s 平均奖励=0.019056 学习率=3e-05
+[训练] 迭代=2470/5000 耗时=26.50s 平均奖励=0.019168 学习率=3e-05
+[训练] 迭代=2480/5000 耗时=27.21s 平均奖励=0.017153 学习率=3e-05
+[训练] 迭代=2490/5000 耗时=26.23s 平均奖励=0.019071 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2499.pt
+[训练] 迭代=2500/5000 耗时=27.83s 平均奖励=0.019135 学习率=3e-05
+[训练] 迭代=2510/5000 耗时=25.79s 平均奖励=0.019163 学习率=3e-05
+[训练] 迭代=2520/5000 耗时=26.72s 平均奖励=0.019173 学习率=3e-05
+[训练] 迭代=2530/5000 耗时=25.33s 平均奖励=0.019102 学习率=3e-05
+[训练] 迭代=2540/5000 耗时=27.75s 平均奖励=0.019144 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2549.pt
+[训练] 迭代=2550/5000 耗时=26.49s 平均奖励=0.019143 学习率=3e-05
+[训练] 迭代=2560/5000 耗时=28.11s 平均奖励=0.019326 学习率=3e-05
+[训练] 迭代=2570/5000 耗时=26.21s 平均奖励=0.019081 学习率=3e-05
+[训练] 迭代=2580/5000 耗时=25.77s 平均奖励=0.019182 学习率=3e-05
+[训练] 迭代=2590/5000 耗时=25.62s 平均奖励=0.019235 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2599.pt
+[训练] 迭代=2600/5000 耗时=27.07s 平均奖励=0.019245 学习率=3e-05
+[训练] 迭代=2610/5000 耗时=26.21s 平均奖励=0.019065 学习率=3e-05
+[训练] 迭代=2620/5000 耗时=26.75s 平均奖励=0.019177 学习率=3e-05
+[训练] 迭代=2630/5000 耗时=27.61s 平均奖励=0.019229 学习率=3e-05
+[训练] 迭代=2640/5000 耗时=27.26s 平均奖励=0.019188 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2649.pt
+[训练] 迭代=2650/5000 耗时=27.79s 平均奖励=0.019360 学习率=3e-05
+[训练] 迭代=2660/5000 耗时=26.63s 平均奖励=0.019228 学习率=3e-05
+[训练] 迭代=2670/5000 耗时=27.67s 平均奖励=0.019403 学习率=3e-05
+[训练] 迭代=2680/5000 耗时=27.02s 平均奖励=0.019094 学习率=3e-05
+[训练] 迭代=2690/5000 耗时=25.65s 平均奖励=0.019329 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2699.pt
+[训练] 迭代=2700/5000 耗时=27.67s 平均奖励=0.019215 学习率=3e-05
+[训练] 迭代=2710/5000 耗时=25.63s 平均奖励=0.019036 学习率=3e-05
+[训练] 迭代=2720/5000 耗时=26.89s 平均奖励=0.019186 学习率=3e-05
+[训练] 迭代=2730/5000 耗时=26.35s 平均奖励=0.017386 学习率=3e-05
+[训练] 迭代=2740/5000 耗时=25.90s 平均奖励=0.019190 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2749.pt
+[训练] 迭代=2750/5000 耗时=27.23s 平均奖励=0.019007 学习率=3e-05
+[训练] 迭代=2760/5000 耗时=25.60s 平均奖励=0.019163 学习率=3e-05
+[训练] 迭代=2770/5000 耗时=26.70s 平均奖励=0.019206 学习率=3e-05
+[训练] 迭代=2780/5000 耗时=27.84s 平均奖励=0.019001 学习率=3e-05
+[训练] 迭代=2790/5000 耗时=26.35s 平均奖励=0.019071 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2799.pt
+[训练] 迭代=2800/5000 耗时=28.01s 平均奖励=0.019061 学习率=3e-05
+[训练] 迭代=2810/5000 耗时=26.91s 平均奖励=0.019124 学习率=3e-05
+[训练] 迭代=2820/5000 耗时=27.75s 平均奖励=0.019078 学习率=3e-05
+[训练] 迭代=2830/5000 耗时=27.14s 平均奖励=0.019106 学习率=3e-05
+[训练] 迭代=2840/5000 耗时=25.61s 平均奖励=0.019078 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2849.pt
+[训练] 迭代=2850/5000 耗时=27.69s 平均奖励=0.019184 学习率=3e-05
+[训练] 迭代=2860/5000 耗时=26.07s 平均奖励=0.019242 学习率=3e-05
+[训练] 迭代=2870/5000 耗时=26.47s 平均奖励=0.019138 学习率=3e-05
+[训练] 迭代=2880/5000 耗时=26.60s 平均奖励=0.019073 学习率=3e-05
+[训练] 迭代=2890/5000 耗时=25.82s 平均奖励=0.019017 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2899.pt
+[训练] 迭代=2900/5000 耗时=26.22s 平均奖励=0.019172 学习率=3e-05
+[训练] 迭代=2910/5000 耗时=25.65s 平均奖励=0.019150 学习率=3e-05
+[训练] 迭代=2920/5000 耗时=27.38s 平均奖励=0.019326 学习率=3e-05
+[训练] 迭代=2930/5000 耗时=26.51s 平均奖励=0.019057 学习率=3e-05
+[训练] 迭代=2940/5000 耗时=26.74s 平均奖励=0.019292 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2949.pt
+[训练] 迭代=2950/5000 耗时=28.12s 平均奖励=0.019011 学习率=3e-05
+[训练] 迭代=2960/5000 耗时=26.61s 平均奖励=0.019040 学习率=3e-05
+[训练] 迭代=2970/5000 耗时=27.40s 平均奖励=0.019135 学习率=3e-05
+[训练] 迭代=2980/5000 耗时=26.22s 平均奖励=0.017419 学习率=3e-05
+[训练] 迭代=2990/5000 耗时=27.52s 平均奖励=0.019121 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_2999.pt
+[训练] 迭代=3000/5000 耗时=26.80s 平均奖励=0.019158 学习率=3e-05
+[训练] 迭代=3010/5000 耗时=26.06s 平均奖励=0.019180 学习率=3e-05
+[训练] 迭代=3020/5000 耗时=27.19s 平均奖励=0.019146 学习率=3e-05
+[训练] 迭代=3030/5000 耗时=25.75s 平均奖励=0.019131 学习率=3e-05
+[训练] 迭代=3040/5000 耗时=28.72s 平均奖励=0.019238 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3049.pt
+[训练] 迭代=3050/5000 耗时=26.91s 平均奖励=0.019164 学习率=3e-05
+[训练] 迭代=3060/5000 耗时=28.19s 平均奖励=0.019208 学习率=3e-05
+[训练] 迭代=3070/5000 耗时=27.90s 平均奖励=0.019132 学习率=3e-05
+[训练] 迭代=3080/5000 耗时=27.42s 平均奖励=0.019192 学习率=3e-05
+[训练] 迭代=3090/5000 耗时=28.39s 平均奖励=0.019227 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3099.pt
+[训练] 迭代=3100/5000 耗时=26.34s 平均奖励=0.019186 学习率=3e-05
+[训练] 迭代=3110/5000 耗时=26.95s 平均奖励=0.019173 学习率=3e-05
+[训练] 迭代=3120/5000 耗时=26.38s 平均奖励=0.019088 学习率=3e-05
+[训练] 迭代=3130/5000 耗时=27.09s 平均奖励=0.019186 学习率=3e-05
+[训练] 迭代=3140/5000 耗时=26.79s 平均奖励=0.019184 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3149.pt
+[训练] 迭代=3150/5000 耗时=29.72s 平均奖励=0.019265 学习率=3e-05
+[训练] 迭代=3160/5000 耗时=27.32s 平均奖励=0.019085 学习率=3e-05
+[训练] 迭代=3170/5000 耗时=28.57s 平均奖励=0.019352 学习率=3e-05
+[训练] 迭代=3180/5000 耗时=27.87s 平均奖励=0.019163 学习率=3e-05
+[训练] 迭代=3190/5000 耗时=27.71s 平均奖励=0.019237 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3199.pt
+[训练] 迭代=3200/5000 耗时=26.75s 平均奖励=0.018988 学习率=3e-05
+[训练] 迭代=3210/5000 耗时=25.83s 平均奖励=0.018946 学习率=3e-05
+[训练] 迭代=3220/5000 耗时=26.89s 平均奖励=0.019029 学习率=3e-05
+[训练] 迭代=3230/5000 耗时=25.18s 平均奖励=0.017406 学习率=3e-05
+[训练] 迭代=3240/5000 耗时=27.10s 平均奖励=0.019106 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3249.pt
+[训练] 迭代=3250/5000 耗时=25.69s 平均奖励=0.018958 学习率=3e-05
+[训练] 迭代=3260/5000 耗时=27.08s 平均奖励=0.018901 学习率=3e-05
+[训练] 迭代=3270/5000 耗时=27.28s 平均奖励=0.019062 学习率=3e-05
+[训练] 迭代=3280/5000 耗时=27.14s 平均奖励=0.019054 学习率=3e-05
+[训练] 迭代=3290/5000 耗时=27.45s 平均奖励=0.019149 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3299.pt
+[训练] 迭代=3300/5000 耗时=26.22s 平均奖励=0.019087 学习率=3e-05
+[训练] 迭代=3310/5000 耗时=28.07s 平均奖励=0.019117 学习率=3e-05
+[训练] 迭代=3320/5000 耗时=26.45s 平均奖励=0.019122 学习率=3e-05
+[训练] 迭代=3330/5000 耗时=29.06s 平均奖励=0.019092 学习率=3e-05
+[训练] 迭代=3340/5000 耗时=26.90s 平均奖励=0.018947 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3349.pt
+[训练] 迭代=3350/5000 耗时=20.36s 平均奖励=0.019108 学习率=3e-05
+[训练] 迭代=3360/5000 耗时=20.24s 平均奖励=0.019148 学习率=3e-05
+[训练] 迭代=3370/5000 耗时=20.07s 平均奖励=0.019082 学习率=3e-05
+[训练] 迭代=3380/5000 耗时=20.64s 平均奖励=0.019201 学习率=3e-05
+[训练] 迭代=3390/5000 耗时=20.43s 平均奖励=0.019090 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3399.pt
+[训练] 迭代=3400/5000 耗时=20.47s 平均奖励=0.019144 学习率=3e-05
+[训练] 迭代=3410/5000 耗时=20.91s 平均奖励=0.018973 学习率=3e-05
+[训练] 迭代=3420/5000 耗时=22.06s 平均奖励=0.019198 学习率=3e-05
+[训练] 迭代=3430/5000 耗时=20.64s 平均奖励=0.018943 学习率=3e-05
+[训练] 迭代=3440/5000 耗时=20.33s 平均奖励=0.019123 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3449.pt
+[训练] 迭代=3450/5000 耗时=20.37s 平均奖励=0.019119 学习率=3e-05
+[训练] 迭代=3460/5000 耗时=20.27s 平均奖励=0.019041 学习率=3e-05
+[训练] 迭代=3470/5000 耗时=19.61s 平均奖励=0.019073 学习率=3e-05
+[训练] 迭代=3480/5000 耗时=19.47s 平均奖励=0.017440 学习率=3e-05
+[训练] 迭代=3490/5000 耗时=20.40s 平均奖励=0.019105 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3499.pt
+[训练] 迭代=3500/5000 耗时=19.92s 平均奖励=0.019053 学习率=3e-05
+[训练] 迭代=3510/5000 耗时=19.91s 平均奖励=0.019113 学习率=3e-05
+[训练] 迭代=3520/5000 耗时=19.76s 平均奖励=0.019252 学习率=3e-05
+[训练] 迭代=3530/5000 耗时=19.64s 平均奖励=0.019154 学习率=3e-05
+[训练] 迭代=3540/5000 耗时=19.77s 平均奖励=0.019311 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3549.pt
+[训练] 迭代=3550/5000 耗时=19.68s 平均奖励=0.019173 学习率=3e-05
+[训练] 迭代=3560/5000 耗时=19.77s 平均奖励=0.019050 学习率=3e-05
+[训练] 迭代=3570/5000 耗时=19.85s 平均奖励=0.019080 学习率=3e-05
+[训练] 迭代=3580/5000 耗时=19.77s 平均奖励=0.019114 学习率=3e-05
+[训练] 迭代=3590/5000 耗时=22.38s 平均奖励=0.019149 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3599.pt
+[训练] 迭代=3600/5000 耗时=20.02s 平均奖励=0.019127 学习率=3e-05
+[训练] 迭代=3610/5000 耗时=20.59s 平均奖励=0.019032 学习率=3e-05
+[训练] 迭代=3620/5000 耗时=20.48s 平均奖励=0.019075 学习率=3e-05
+[训练] 迭代=3630/5000 耗时=20.66s 平均奖励=0.019133 学习率=3e-05
+[训练] 迭代=3640/5000 耗时=20.42s 平均奖励=0.019073 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3649.pt
+[训练] 迭代=3650/5000 耗时=20.51s 平均奖励=0.019140 学习率=3e-05
+[训练] 迭代=3660/5000 耗时=20.55s 平均奖励=0.019049 学习率=3e-05
+[训练] 迭代=3670/5000 耗时=20.28s 平均奖励=0.019106 学习率=3e-05
+[训练] 迭代=3680/5000 耗时=22.54s 平均奖励=0.019070 学习率=3e-05
+[训练] 迭代=3690/5000 耗时=20.35s 平均奖励=0.019229 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3699.pt
+[训练] 迭代=3700/5000 耗时=20.82s 平均奖励=0.019043 学习率=3e-05
+[训练] 迭代=3710/5000 耗时=20.33s 平均奖励=0.018919 学习率=3e-05
+[训练] 迭代=3720/5000 耗时=20.73s 平均奖励=0.019073 学习率=3e-05
+[训练] 迭代=3730/5000 耗时=20.26s 平均奖励=0.017641 学习率=3e-05
+[训练] 迭代=3740/5000 耗时=20.41s 平均奖励=0.019153 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3749.pt
+[训练] 迭代=3750/5000 耗时=20.44s 平均奖励=0.018947 学习率=3e-05
+[训练] 迭代=3760/5000 耗时=20.38s 平均奖励=0.019071 学习率=3e-05
+[训练] 迭代=3770/5000 耗时=22.47s 平均奖励=0.019077 学习率=3e-05
+[训练] 迭代=3780/5000 耗时=20.53s 平均奖励=0.018966 学习率=3e-05
+[训练] 迭代=3790/5000 耗时=20.80s 平均奖励=0.019029 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3799.pt
+[训练] 迭代=3800/5000 耗时=21.06s 平均奖励=0.019135 学习率=3e-05
+[训练] 迭代=3810/5000 耗时=20.50s 平均奖励=0.019076 学习率=3e-05
+[训练] 迭代=3820/5000 耗时=20.22s 平均奖励=0.019054 学习率=3e-05
+[训练] 迭代=3830/5000 耗时=20.35s 平均奖励=0.018990 学习率=3e-05
+[训练] 迭代=3840/5000 耗时=20.41s 平均奖励=0.018991 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3849.pt
+[训练] 迭代=3850/5000 耗时=20.45s 平均奖励=0.019177 学习率=3e-05
+[训练] 迭代=3860/5000 耗时=23.14s 平均奖励=0.019259 学习率=3e-05
+[训练] 迭代=3870/5000 耗时=20.45s 平均奖励=0.019081 学习率=3e-05
+[训练] 迭代=3880/5000 耗时=20.49s 平均奖励=0.019110 学习率=3e-05
+[训练] 迭代=3890/5000 耗时=20.76s 平均奖励=0.019073 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3899.pt
+[训练] 迭代=3900/5000 耗时=20.45s 平均奖励=0.019100 学习率=3e-05
+[训练] 迭代=3910/5000 耗时=20.40s 平均奖励=0.019047 学习率=3e-05
+[训练] 迭代=3920/5000 耗时=20.21s 平均奖励=0.019148 学习率=3e-05
+[训练] 迭代=3930/5000 耗时=20.60s 平均奖励=0.019089 学习率=3e-05
+[训练] 迭代=3940/5000 耗时=20.54s 平均奖励=0.019123 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3949.pt
+[训练] 迭代=3950/5000 耗时=20.30s 平均奖励=0.019000 学习率=3e-05
+[训练] 迭代=3960/5000 耗时=24.31s 平均奖励=0.018973 学习率=3e-05
+[训练] 迭代=3970/5000 耗时=25.78s 平均奖励=0.019208 学习率=3e-05
+[训练] 迭代=3980/5000 耗时=24.26s 平均奖励=0.017720 学习率=3e-05
+[训练] 迭代=3990/5000 耗时=24.93s 平均奖励=0.019060 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_3999.pt
+[训练] 迭代=4000/5000 耗时=25.75s 平均奖励=0.018991 学习率=3e-05
+[训练] 迭代=4010/5000 耗时=24.61s 平均奖励=0.019064 学习率=3e-05
+[训练] 迭代=4020/5000 耗时=25.28s 平均奖励=0.019084 学习率=3e-05
+[训练] 迭代=4030/5000 耗时=25.81s 平均奖励=0.019034 学习率=3e-05
+[训练] 迭代=4040/5000 耗时=24.30s 平均奖励=0.019136 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4049.pt
+[训练] 迭代=4050/5000 耗时=28.00s 平均奖励=0.019048 学习率=3e-05
+[训练] 迭代=4060/5000 耗时=25.91s 平均奖励=0.019076 学习率=3e-05
+[训练] 迭代=4070/5000 耗时=26.43s 平均奖励=0.019050 学习率=3e-05
+[训练] 迭代=4080/5000 耗时=25.38s 平均奖励=0.019072 学习率=3e-05
+[训练] 迭代=4090/5000 耗时=26.02s 平均奖励=0.018948 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4099.pt
+[训练] 迭代=4100/5000 耗时=26.42s 平均奖励=0.019033 学习率=3e-05
+[训练] 迭代=4110/5000 耗时=25.36s 平均奖励=0.019088 学习率=3e-05
+[训练] 迭代=4120/5000 耗时=26.96s 平均奖励=0.019013 学习率=3e-05
+[训练] 迭代=4130/5000 耗时=25.83s 平均奖励=0.019092 学习率=3e-05
+[训练] 迭代=4140/5000 耗时=26.51s 平均奖励=0.019001 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4149.pt
+[训练] 迭代=4150/5000 耗时=25.12s 平均奖励=0.019186 学习率=3e-05
+[训练] 迭代=4160/5000 耗时=25.29s 平均奖励=0.019035 学习率=3e-05
+[训练] 迭代=4170/5000 耗时=26.40s 平均奖励=0.019245 学习率=3e-05
+[训练] 迭代=4180/5000 耗时=25.22s 平均奖励=0.019056 学习率=3e-05
+[训练] 迭代=4190/5000 耗时=25.26s 平均奖励=0.019156 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4199.pt
+[训练] 迭代=4200/5000 耗时=25.32s 平均奖励=0.019132 学习率=3e-05
+[训练] 迭代=4210/5000 耗时=26.18s 平均奖励=0.019038 学习率=3e-05
+[训练] 迭代=4220/5000 耗时=25.08s 平均奖励=0.019043 学习率=3e-05
+[训练] 迭代=4230/5000 耗时=25.75s 平均奖励=0.017675 学习率=3e-05
+[训练] 迭代=4240/5000 耗时=26.37s 平均奖励=0.019179 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4249.pt
+[训练] 迭代=4250/5000 耗时=25.15s 平均奖励=0.019041 学习率=3e-05
+[训练] 迭代=4260/5000 耗时=26.47s 平均奖励=0.019048 学习率=3e-05
+[训练] 迭代=4270/5000 耗时=26.44s 平均奖励=0.019134 学习率=3e-05
+[训练] 迭代=4280/5000 耗时=26.12s 平均奖励=0.018968 学习率=3e-05
+[训练] 迭代=4290/5000 耗时=26.60s 平均奖励=0.019108 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4299.pt
+[训练] 迭代=4300/5000 耗时=26.12s 平均奖励=0.019062 学习率=3e-05
+[训练] 迭代=4310/5000 耗时=25.38s 平均奖励=0.019034 学习率=3e-05
+[训练] 迭代=4320/5000 耗时=24.70s 平均奖励=0.019106 学习率=3e-05
+[训练] 迭代=4330/5000 耗时=25.76s 平均奖励=0.019091 学习率=3e-05
+[训练] 迭代=4340/5000 耗时=24.53s 平均奖励=0.019097 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4349.pt
+[训练] 迭代=4350/5000 耗时=24.42s 平均奖励=0.019086 学习率=3e-05
+[训练] 迭代=4360/5000 耗时=25.39s 平均奖励=0.019088 学习率=3e-05
+[训练] 迭代=4370/5000 耗时=24.78s 平均奖励=0.019014 学习率=3e-05
+[训练] 迭代=4380/5000 耗时=24.98s 平均奖励=0.019124 学习率=3e-05
+[训练] 迭代=4390/5000 耗时=25.18s 平均奖励=0.018992 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4399.pt
+[训练] 迭代=4400/5000 耗时=24.24s 平均奖励=0.019121 学习率=3e-05
+[训练] 迭代=4410/5000 耗时=24.76s 平均奖励=0.019119 学习率=3e-05
+[训练] 迭代=4420/5000 耗时=25.83s 平均奖励=0.019132 学习率=3e-05
+[训练] 迭代=4430/5000 耗时=24.44s 平均奖励=0.019112 学习率=3e-05
+[训练] 迭代=4440/5000 耗时=24.94s 平均奖励=0.019175 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4449.pt
+[训练] 迭代=4450/5000 耗时=25.30s 平均奖励=0.018914 学习率=3e-05
+[训练] 迭代=4460/5000 耗时=26.28s 平均奖励=0.018853 学习率=3e-05
+[训练] 迭代=4470/5000 耗时=25.50s 平均奖励=0.019098 学习率=3e-05
+[训练] 迭代=4480/5000 耗时=26.26s 平均奖励=0.017654 学习率=3e-05
+[训练] 迭代=4490/5000 耗时=26.26s 平均奖励=0.019057 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4499.pt
+[训练] 迭代=4500/5000 耗时=25.09s 平均奖励=0.019017 学习率=3e-05
+[训练] 迭代=4510/5000 耗时=26.20s 平均奖励=0.019092 学习率=3e-05
+[训练] 迭代=4520/5000 耗时=28.86s 平均奖励=0.019141 学习率=3e-05
+[训练] 迭代=4530/5000 耗时=26.20s 平均奖励=0.019039 学习率=3e-05
+[训练] 迭代=4540/5000 耗时=25.82s 平均奖励=0.019067 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4549.pt
+[训练] 迭代=4550/5000 耗时=26.26s 平均奖励=0.018963 学习率=3e-05
+[训练] 迭代=4560/5000 耗时=26.54s 平均奖励=0.019060 学习率=3e-05
+[训练] 迭代=4570/5000 耗时=25.06s 平均奖励=0.019026 学习率=3e-05
+[训练] 迭代=4580/5000 耗时=25.44s 平均奖励=0.019078 学习率=3e-05
+[训练] 迭代=4590/5000 耗时=27.93s 平均奖励=0.019110 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4599.pt
+[训练] 迭代=4600/5000 耗时=26.36s 平均奖励=0.019111 学习率=3e-05
+[训练] 迭代=4610/5000 耗时=25.55s 平均奖励=0.019075 学习率=3e-05
+[训练] 迭代=4620/5000 耗时=26.33s 平均奖励=0.019018 学习率=3e-05
+[训练] 迭代=4630/5000 耗时=26.15s 平均奖励=0.019213 学习率=3e-05
+[训练] 迭代=4640/5000 耗时=25.48s 平均奖励=0.019021 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4649.pt
+[训练] 迭代=4650/5000 耗时=26.34s 平均奖励=0.019121 学习率=3e-05
+[训练] 迭代=4660/5000 耗时=25.68s 平均奖励=0.019128 学习率=3e-05
+[训练] 迭代=4670/5000 耗时=25.70s 平均奖励=0.019242 学习率=3e-05
+[训练] 迭代=4680/5000 耗时=26.39s 平均奖励=0.019068 学习率=3e-05
+[训练] 迭代=4690/5000 耗时=26.80s 平均奖励=0.019107 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4699.pt
+[训练] 迭代=4700/5000 耗时=25.91s 平均奖励=0.018972 学习率=3e-05
+[训练] 迭代=4710/5000 耗时=25.18s 平均奖励=0.018847 学习率=3e-05
+[训练] 迭代=4720/5000 耗时=26.21s 平均奖励=0.019048 学习率=3e-05
+[训练] 迭代=4730/5000 耗时=24.76s 平均奖励=0.017699 学习率=3e-05
+[训练] 迭代=4740/5000 耗时=24.82s 平均奖励=0.019020 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4749.pt
+[训练] 迭代=4750/5000 耗时=24.88s 平均奖励=0.018935 学习率=3e-05
+[训练] 迭代=4760/5000 耗时=24.51s 平均奖励=0.019037 学习率=3e-05
+[训练] 迭代=4770/5000 耗时=24.91s 平均奖励=0.019078 学习率=3e-05
+[训练] 迭代=4780/5000 耗时=25.48s 平均奖励=0.019024 学习率=3e-05
+[训练] 迭代=4790/5000 耗时=25.07s 平均奖励=0.019169 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4799.pt
+[训练] 迭代=4800/5000 耗时=19.65s 平均奖励=0.019096 学习率=3e-05
+[训练] 迭代=4810/5000 耗时=19.97s 平均奖励=0.019103 学习率=3e-05
+[训练] 迭代=4820/5000 耗时=19.93s 平均奖励=0.018972 学习率=3e-05
+[训练] 迭代=4830/5000 耗时=19.70s 平均奖励=0.018991 学习率=3e-05
+[训练] 迭代=4840/5000 耗时=20.48s 平均奖励=0.018978 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4849.pt
+[训练] 迭代=4850/5000 耗时=19.67s 平均奖励=0.019014 学习率=3e-05
+[训练] 迭代=4860/5000 耗时=22.20s 平均奖励=0.019181 学习率=3e-05
+[训练] 迭代=4870/5000 耗时=19.61s 平均奖励=0.019001 学习率=3e-05
+[训练] 迭代=4880/5000 耗时=20.72s 平均奖励=0.019096 学习率=3e-05
+[训练] 迭代=4890/5000 耗时=20.48s 平均奖励=0.018977 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4899.pt
+[训练] 迭代=4900/5000 耗时=20.51s 平均奖励=0.019264 学习率=3e-05
+[训练] 迭代=4910/5000 耗时=20.47s 平均奖励=0.019185 学习率=3e-05
+[训练] 迭代=4920/5000 耗时=20.17s 平均奖励=0.019193 学习率=3e-05
+[训练] 迭代=4930/5000 耗时=20.47s 平均奖励=0.019061 学习率=3e-05
+[训练] 迭代=4940/5000 耗时=20.20s 平均奖励=0.019152 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4949.pt
+[训练] 迭代=4950/5000 耗时=20.71s 平均奖励=0.019104 学习率=3e-05
+[训练] 迭代=4960/5000 耗时=20.25s 平均奖励=0.018903 学习率=3e-05
+[训练] 迭代=4970/5000 耗时=20.51s 平均奖励=0.019069 学习率=3e-05
+[训练] 迭代=4980/5000 耗时=20.23s 平均奖励=0.017792 学习率=3e-05
+[训练] 迭代=4990/5000 耗时=20.58s 平均奖励=0.019053 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_4999.pt
+[训练] 迭代=5000/5000 耗时=20.80s 平均奖励=0.018952 学习率=3e-05
+[INFO] 已保存模型: /home/xy.chen/tw/LoComposition/locomposition/logs/clean_rl/claude-energy-F-seed48-20261105/2026-11-05-15-53-06/model_5000.pt
