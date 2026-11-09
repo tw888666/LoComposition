@@ -3820,6 +3820,931 @@
     "SHA256（内容校验值）": "429a47e4d3e833197ec0befa1d3ef2c64ef28f4c756b08bcff43905174cf0ef9"
   },
   {
+    "路径": "claude-BC组合G冻结代码启动.py",
+    "字节数": 2580,
+    "SHA256（内容校验值）": "40ba79c816d04c101e59d23ba70797b0f4fe564bd04f98039e990c6329962850"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/claude-冒烟总状态.json",
+    "字节数": 316,
+    "SHA256（内容校验值）": "84ebcadcdacc371c06b8109a97f06114be7f4f08c280480d617b25a0e21f1a30"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/claude-冒烟流水线.log",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/claude-冻结评估入口.py",
+    "字节数": 16279,
+    "SHA256（内容校验值）": "7ac6b8be79cb4c5ee1cae7a2bbb3987341329e45c4526dd33f8d9e59e81c54e8"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/claude-实验代码清单.json",
+    "字节数": 35653,
+    "SHA256（内容校验值）": "581b08d2e4ce4bc7ff276729e5796a49c46234cbde21ea7527a83b09f925654d"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/claude-总运行锁",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/claude-相对CE冻结实现的差异.patch",
+    "字节数": 4939,
+    "SHA256（内容校验值）": "32b2991bd0ea1d1548c9f0531c2a530480b54cc89b4f2ab591df4d15f327bbeb"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子46/claude-启动核验.json",
+    "字节数": 1266,
+    "SHA256（内容校验值）": "a44a1ced039c44c474b6545bc8e3c1b4decc95c6a3ffc67b92db8b0a995a8c8a"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子46/claude-状态.json",
+    "字节数": 1928,
+    "SHA256（内容校验值）": "c071b378136da78a8944529093323025c4a9198b915f33735239530ca0a38ae5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子46/claude-训练.log",
+    "字节数": 123257,
+    "SHA256（内容校验值）": "b78b0a85aea17e03b32164f7f54c6f5e8a5e0a63bc9447015424c47b15d587f7"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子46/claude-训练导入来源.json",
+    "字节数": 8355,
+    "SHA256（内容校验值）": "d1f18a1531a9497c3a142b719d646905ffcb18f8823f8ec3614a53439f433ba3"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子46/claude-评估-46-平地1.0.log",
+    "字节数": 120015,
+    "SHA256（内容校验值）": "4e25b40f94b2d82590cffea6d854204cd43db2633447fbe4bf9a7c61185de904"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子46/claude-评估导入来源-46-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "ec36b60cadd229ffc54c0511b4739b05ab4755a5cc0b1fdbac4f67e5095e3d77"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子46/claude-运行锁",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子47/claude-启动核验.json",
+    "字节数": 1497,
+    "SHA256（内容校验值）": "e212934d6ad68aa04ecb4108bb3cb27d4eaae1573afe685997e23230a8244a73"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子47/claude-状态.json",
+    "字节数": 1928,
+    "SHA256（内容校验值）": "c1592ee0d6ccd79186c122b84645ab4efc42d7fceb4fbb7c8ba8237f3413012d"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子47/claude-训练.log",
+    "字节数": 123612,
+    "SHA256（内容校验值）": "cd97f2b6cd9edff3753ab69411f49741e2146b35def2e8e8297fa022ad5d8c9d"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子47/claude-训练导入来源.json",
+    "字节数": 8355,
+    "SHA256（内容校验值）": "d1f18a1531a9497c3a142b719d646905ffcb18f8823f8ec3614a53439f433ba3"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子47/claude-评估-46-平地1.0.log",
+    "字节数": 120447,
+    "SHA256（内容校验值）": "328da62dc9c3439d6353eea05fda0206a260183e36cf1ea93365ce355d1cb873"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子47/claude-评估导入来源-46-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "ec36b60cadd229ffc54c0511b4739b05ab4755a5cc0b1fdbac4f67e5095e3d77"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子47/claude-运行锁",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子48/claude-启动核验.json",
+    "字节数": 1497,
+    "SHA256（内容校验值）": "f7bef5ada71a855dcac8bf13007240cd74fe62062b949462fb7872b4c241a8fb"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子48/claude-状态.json",
+    "字节数": 1914,
+    "SHA256（内容校验值）": "594582a0312a1fe3e9f3701526aa9bf60fa5de56e1758cfc0d1c36c2934c8eba"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子48/claude-训练.log",
+    "字节数": 123742,
+    "SHA256（内容校验值）": "be487b2634cd0d02ec422cf24aa1ed0693c92d18a9aae80f494abf471410faf2"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子48/claude-训练导入来源.json",
+    "字节数": 8355,
+    "SHA256（内容校验值）": "d1f18a1531a9497c3a142b719d646905ffcb18f8823f8ec3614a53439f433ba3"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子48/claude-评估-46-平地1.0.log",
+    "字节数": 120568,
+    "SHA256（内容校验值）": "8b1c67fd905623d504357abbb6ae22e50cb0dcbfe7c81f978ff6856888bf4385"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子48/claude-评估导入来源-46-平地1.0.json",
+    "字节数": 7294,
+    "SHA256（内容校验值）": "ec36b60cadd229ffc54c0511b4739b05ab4755a5cc0b1fdbac4f67e5095e3d77"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟/G-训练种子48/claude-运行锁",
+    "字节数": 0,
+    "SHA256（内容校验值）": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子46/评估/G/检查点3/种子46/平地1.0/冒烟12步/eval_checkpoint_3_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 212004,
+    "SHA256（内容校验值）": "ea925a4244f4f4f48d46e07750a5675dcf061d30e91d3d0ac3e31ac9a150cf29"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子46/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "aa43fe57ade0487ba899709641ae0cfda10afb9b41a1acfc6478bdfc2b698096"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子46/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子46/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "838cbfacbbd100be6535a49d836b3793b462e1f59202774bb636f6cc6f49854e"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子46/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "725c4f7e1ce07d12000931f67cff26252a641e05a68cee528cb33623ba6d9018"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子46/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子46/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子46/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-重置前真实状态.json",
+    "字节数": 1178,
+    "SHA256（内容校验值）": "d0888962fbe95bb3e1ddfce34678d2a425110830428a8cca446ea4f659b9cc19"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子47/评估/G/检查点3/种子46/平地1.0/冒烟12步/eval_checkpoint_3_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 211955,
+    "SHA256（内容校验值）": "2639257cb97168837c50cc652d2a521943c863912941449f2bd1bbbee362ef99"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子47/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "aa43fe57ade0487ba899709641ae0cfda10afb9b41a1acfc6478bdfc2b698096"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子47/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子47/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "838cbfacbbd100be6535a49d836b3793b462e1f59202774bb636f6cc6f49854e"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子47/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "d371edea91c101a68ad31b09636574d92c378d98fcd924f9c774d7c90517ca4a"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子47/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子47/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子47/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-重置前真实状态.json",
+    "字节数": 1183,
+    "SHA256（内容校验值）": "9db09f9cc4501929f34d09596e90ffd8bb70140e73884ebadfc7edb90f99b1d4"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子48/评估/G/检查点3/种子46/平地1.0/冒烟12步/eval_checkpoint_3_seed_46_action_delay_0_scenario_walk_x_flat_terrain_1.0mps/metrics_summary.json",
+    "字节数": 212114,
+    "SHA256（内容校验值）": "ef490ef9f94d1ea9fb7b12eaef7394626954bd7643e6765a776c94a209d16086"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子48/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-构造环境配置.yaml",
+    "字节数": 45869,
+    "SHA256（内容校验值）": "aa43fe57ade0487ba899709641ae0cfda10afb9b41a1acfc6478bdfc2b698096"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子48/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-观测接口.json",
+    "字节数": 437,
+    "SHA256（内容校验值）": "4dd9587ca1947479a1f4c6e4f757255c964055a24406c3fccad55c1abc8b3dfd"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子48/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-评估完成.json",
+    "字节数": 190,
+    "SHA256（内容校验值）": "838cbfacbbd100be6535a49d836b3793b462e1f59202774bb636f6cc6f49854e"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子48/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-评估条件.json",
+    "字节数": 1120,
+    "SHA256（内容校验值）": "668bdb39ff54d734a9b3b28b8ff59dba9c0e6460d771cb56bf82d1228c49637a"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子48/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-运行时电机配置.json",
+    "字节数": 423,
+    "SHA256（内容校验值）": "4f61f3dcef85e1e4f75637d2efcb00ffcb6f65888c1846580eccb152c2c713ba"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子48/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-运行时随机化.json",
+    "字节数": 5792,
+    "SHA256（内容校验值）": "40c45e1ef6806cdec242e0838b1799c5fa28f5bebb9ac7f2a550398a6c81b194"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冒烟评估/训练种子48/评估/G/检查点3/种子46/平地1.0/冒烟12步/gpt-重置前真实状态.json",
+    "字节数": 1175,
+    "SHA256（内容校验值）": "2772a2be2651e6845d9a28b81e7a75462ad49c841951a6ac3fa9faaf69fdb570"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/config/extension.toml",
+    "字节数": 944,
+    "SHA256（内容校验值）": "8c62f405c1a87368e06d4d71401a1c0f499ac8d81b1b11d04f0b2c0abfde48c6"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/docs/CHANGELOG.rst",
+    "字节数": 159,
+    "SHA256（内容校验值）": "58f29c389e65324615b59465ca35c3418e3b1d7d8e655413e058d9bc774b10e7"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/__init__.py",
+    "字节数": 185,
+    "SHA256（内容校验值）": "7818fd2f301d1c88b4503894f4a0ed79aa0d90347fcf5473c402c054bcc10c81"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/checker_blue.png",
+    "字节数": 6379,
+    "SHA256（内容校验值）": "266d8e7010b8d615c873c27dccb4eca37e79035bd24efdca0b54eeb74a9fa419"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/cube.obj",
+    "字节数": 1083,
+    "SHA256（内容校验值）": "d038beae374d97b73e512ae67ef3437a2864fefba43f3483e08a691a3db3255a"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/cylinder.obj",
+    "字节数": 12737,
+    "SHA256（内容校验值）": "487d8479ef4ca423d23870d0a8441a48fb0696130e57d48d259894f07e3c4573"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/_solo12_visualisation_model.PDF",
+    "字节数": 105060,
+    "SHA256（内容校验值）": "a77ec48d8ff31c3ec36abe13a1fb630f65eec50960916e0021ed33804e665666"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_hip_fe_fl.obj",
+    "字节数": 122586,
+    "SHA256（内容校验值）": "33f38f7953634b77c34889db19e4de14de8a0853ff7f72be9f71369b73d1e245"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_hip_fe_fr.obj",
+    "字节数": 122436,
+    "SHA256（内容校验值）": "a787d3cda09bcab82a425e124927cdc6258b0e3cbe6efa7c2affd0a8d068a0a8"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_hip_fe_hl.obj",
+    "字节数": 121069,
+    "SHA256（内容校验值）": "5a6cc7659eca9f0cdfa704496e301b30fc18bde749f6ecb63e7fb8fe05f7f763"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_hip_fe_hr.obj",
+    "字节数": 120951,
+    "SHA256（内容校验值）": "9f63bc1cba5c95c96b556c2bfccd5da715b196474ca687c751549f7a30be0b22"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_lower_leg_left_side.obj",
+    "字节数": 89303,
+    "SHA256（内容校验值）": "c5f02c99385e50064c6c099cfc915647425a00997698fac665972341fb9a974e"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_lower_leg_right_side.obj",
+    "字节数": 89806,
+    "SHA256（内容校验值）": "df904a35bc5026ff68606b4034712a075147ef67e10839a8ab3444841818da94"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_upper_leg_left_side.obj",
+    "字节数": 125847,
+    "SHA256（内容校验值）": "cee18d34102342a0ffaae686e8293863ac0522674dee904562b124ff6e00f610"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo12_upper_leg_right_side.obj",
+    "字节数": 127284,
+    "SHA256（内容校验值）": "00a4be865c414fb21ae1d2c1417bac6a7878fac4d1805909d3ad41334a7e736b"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/solo12/solo_12_base.obj",
+    "字节数": 222667,
+    "SHA256（内容校验值）": "994b27b0f88670253130f23cd8fb983f9cebdcb0571d798dbb16a14112fef39b"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_body.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_body.obj",
+    "字节数": 1100844,
+    "SHA256（内容校验值）": "c309788e837ce3f93e086c2dbb91eefbf6cbfa849196f7a8125fd988b5bbeb49"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_foot.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_foot.obj",
+    "字节数": 190533,
+    "SHA256（内容校验值）": "ac0465df046ef5cdf7842adcba7b6f4383a8b56b3dd997f0a7d565604827f514"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_lower_leg_left_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_lower_leg_left_side.obj",
+    "字节数": 106199,
+    "SHA256（内容校验值）": "faf3a66fcde0b3109e098b627db16a24cd2423fca77539a6983e42af0b6e7e31"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_lower_leg_right_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_lower_leg_right_side.obj",
+    "字节数": 106581,
+    "SHA256（内容校验值）": "cf8be2d7c8696b29245af06fbc736edca1e81cc52460c2edd5d868cc99b07c75"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_upper_leg_left_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_upper_leg_left_side.obj",
+    "字节数": 209715,
+    "SHA256（内容校验值）": "52076825ccb5db3bf7647b872ca3b56f04f9eb14258c83b99453bbb026171f65"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_upper_leg_right_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/with_foot/solo_upper_leg_right_side.obj",
+    "字节数": 210980,
+    "SHA256（内容校验值）": "2c03ecb7ca2dc9becadf918fb613c200f63967fe023d2add106a0dc4256c26b5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_body.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_body.obj",
+    "字节数": 1100844,
+    "SHA256（内容校验值）": "c309788e837ce3f93e086c2dbb91eefbf6cbfa849196f7a8125fd988b5bbeb49"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_lower_leg_left_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_lower_leg_left_side.obj",
+    "字节数": 149168,
+    "SHA256（内容校验值）": "175c2e6d947d6a4f0f5aae690cf6f337cba1387a315f2650de8ed29aafb7a0bb"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_lower_leg_right_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_lower_leg_right_side.obj",
+    "字节数": 149656,
+    "SHA256（内容校验值）": "76710a6bccdcc5534b5c4189553a49b23ecd1721a4ee3bbbb9dd3e4f5e49ca5a"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_lower_leg_v2_left_side.obj",
+    "字节数": 32236,
+    "SHA256（内容校验值）": "1b2fe4d19f92bf114ba94518a69addfd9a8ce18c0170a88afbf5532ce91163e4"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_lower_leg_v2_right_side.obj",
+    "字节数": 32604,
+    "SHA256（内容校验值）": "de01806ddb42a0583282c08fce6f374b9af2f3ae1760a97e407d2a74bf37e533"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_upper_leg_left_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_upper_leg_left_side.obj",
+    "字节数": 209715,
+    "SHA256（内容校验值）": "52076825ccb5db3bf7647b872ca3b56f04f9eb14258c83b99453bbb026171f65"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_upper_leg_right_side.mtl",
+    "字节数": 318,
+    "SHA256（内容校验值）": "82aa41256a10c5245008488560de41fcb052933dbc6b8f09a5733dcf33915aa5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/obj/without_foot/solo_upper_leg_right_side.obj",
+    "字节数": 210980,
+    "SHA256（内容校验值）": "2c03ecb7ca2dc9becadf918fb613c200f63967fe023d2add106a0dc4256c26b5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/plane.mtl",
+    "字节数": 255,
+    "SHA256（内容校验值）": "421de8c371462058b3eaa022fe19aad28c32524603d9c3b72c3bee1995a7a652"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/plane.obj",
+    "字节数": 349,
+    "SHA256（内容校验值）": "0cc3ec11a128956c6888a3ef8a79edaa279cd70e0df7ab96f7749e24f55067f5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/sphere.obj",
+    "字节数": 9083,
+    "SHA256（内容校验值）": "7cbe77b291e37ab6445d9aa9e15a294cbf188e90f3085da1bc5db518c9cc8236"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/_solo12_visualisation_model.PDF",
+    "字节数": 105060,
+    "SHA256（内容校验值）": "a77ec48d8ff31c3ec36abe13a1fb630f65eec50960916e0021ed33804e665666"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_coordinate_systems.png",
+    "字节数": 129903,
+    "SHA256（内容校验值）": "c04d823ab19fbdb559fc573262cd43521f66b8bf71a7d5e54a11f2cab206d8f0"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_coordinate_systems_2.png",
+    "字节数": 33519,
+    "SHA256（内容校验值）": "2b094719fbc8e6773b6cad7e0b24372e8fe62b3ca9d050e19efed83b8806aa7b"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_coordinate_systems_3.png",
+    "字节数": 30426,
+    "SHA256（内容校验值）": "55554480b8f2091f5f6ada0462080debcc048ed15188cac345c68e83aae8dfe1"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_coordinate_systems_4.png",
+    "字节数": 37487,
+    "SHA256（内容校验值）": "2d9207d86e2ddfa93172c3f9ad95238b3b2fc860e2569c3522daf80d46f968fb"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_hip_fe_fl.stl",
+    "字节数": 153984,
+    "SHA256（内容校验值）": "f40df7578e28e10ccbf16818a73705050ddba7f7b18f6d7dd48749299653b70a"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_hip_fe_fr.stl",
+    "字节数": 153984,
+    "SHA256（内容校验值）": "f5a398b1807ab6027cdbef1330b9657ad5d3c61e6e39addf5ea0f55704b71f9f"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_hip_fe_hl.stl",
+    "字节数": 153984,
+    "SHA256（内容校验值）": "388108a66161aa80cb6f6a9c12b8c2f6095e6eac44922de13f75d2a516298423"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_hip_fe_hr.stl",
+    "字节数": 153984,
+    "SHA256（内容校验值）": "3564fcfa906a402550f25b9f13d127a3014ee5fe31f8f301eaa3c9f7fb8e4fc2"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_lower_leg_left_side.stl",
+    "字节数": 112084,
+    "SHA256（内容校验值）": "cb6b8c570d2614991f8e87c3ce3757741e6bec9538c05d0f802abfaaaef3b9eb"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_lower_leg_right_side.stl",
+    "字节数": 112084,
+    "SHA256（内容校验值）": "f53cc5620c8dd2573c311ce0660977158c9f17bb868abcc44e1d23bc5cf55ad2"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_upper_leg_left_side.stl",
+    "字节数": 155784,
+    "SHA256（内容校验值）": "2546e8c34cbba4b6a573e013344a68de33ded7735c8f66d3b44b8ffe91d15287"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo12_upper_leg_right_side.stl",
+    "字节数": 155784,
+    "SHA256（内容校验值）": "1b02de8e1b4ba97a8ca89ff72f4ac43e2c82bbd6bc98b2f36be1f769c40814a1"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/solo12/solo_12_base.stl",
+    "字节数": 273684,
+    "SHA256（内容校验值）": "3c65eb4eeb6a4e52b9ff1e3c53e53c724c8f5d6f0414791864ced79baddd60d7"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/with_foot/solo_body.stl",
+    "字节数": 820584,
+    "SHA256（内容校验值）": "85bb5351eb66b5af677bb99878e494eca075aeee961072a6065ed2b3f1b2794b"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/with_foot/solo_foot.stl",
+    "字节数": 169284,
+    "SHA256（内容校验值）": "98aa9dfa1b55a07567cea12fcbf1e6c5eed831a6b66cfe32d41325cb3edb7fc4"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/with_foot/solo_lower_leg_left_side.stl",
+    "字节数": 87084,
+    "SHA256（内容校验值）": "0273d80184c68d17e8aec154a7021ccf1ac1b1b0eb7a1df8c1b8d23b6f565627"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/with_foot/solo_lower_leg_right_side.stl",
+    "字节数": 87084,
+    "SHA256（内容校验值）": "488aa6c763c19ec464c5f802d323654ef341af4acaa4e3a56642289435f0d772"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/with_foot/solo_upper_leg_left_side.stl",
+    "字节数": 155784,
+    "SHA256（内容校验值）": "2546e8c34cbba4b6a573e013344a68de33ded7735c8f66d3b44b8ffe91d15287"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/with_foot/solo_upper_leg_right_side.stl",
+    "字节数": 155784,
+    "SHA256（内容校验值）": "1b02de8e1b4ba97a8ca89ff72f4ac43e2c82bbd6bc98b2f36be1f769c40814a1"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_body.stl",
+    "字节数": 820584,
+    "SHA256（内容校验值）": "85bb5351eb66b5af677bb99878e494eca075aeee961072a6065ed2b3f1b2794b"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_lower_leg_left_side.stl",
+    "字节数": 112084,
+    "SHA256（内容校验值）": "cb6b8c570d2614991f8e87c3ce3757741e6bec9538c05d0f802abfaaaef3b9eb"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_lower_leg_right_side.stl",
+    "字节数": 112084,
+    "SHA256（内容校验值）": "f53cc5620c8dd2573c311ce0660977158c9f17bb868abcc44e1d23bc5cf55ad2"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_lower_leg_v2_left_side.stl",
+    "字节数": 42184,
+    "SHA256（内容校验值）": "7bd858ec0bcde356216bad6420f8e560b0e7b9a0a13422b8728a66e4f078af79"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_lower_leg_v2_right_side.stl",
+    "字节数": 42184,
+    "SHA256（内容校验值）": "cb8a131b0c8070400d66a7f0dacc39374b4b5b4fd32eb4c5d5394e0e4f0b48f7"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_upper_leg_left_side.stl",
+    "字节数": 155784,
+    "SHA256（内容校验值）": "2546e8c34cbba4b6a573e013344a68de33ded7735c8f66d3b44b8ffe91d15287"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/meshes/stl/without_foot/solo_upper_leg_right_side.stl",
+    "字节数": 155784,
+    "SHA256（内容校验值）": "1b02de8e1b4ba97a8ca89ff72f4ac43e2c82bbd6bc98b2f36be1f769c40814a1"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/solo12_mpi.urdf",
+    "字节数": 25286,
+    "SHA256（内容校验值）": "ba99f83e97c75937622d910757b379595b5d23631ff70a653add683df076bd1e"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/usd/.asset_hash",
+    "字节数": 32,
+    "SHA256（内容校验值）": "fa2048a5db90c457830ce38dd00ed41ed3264d10e3cc111c623acad3ddc437c3"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/usd/Props/instanceable_meshes.usd",
+    "字节数": 1775787,
+    "SHA256（内容校验值）": "ca813b6b14a376137fd35efea9ad63d8a608f565d7e42f8bc01379bf3770cd06"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/usd/config.yaml",
+    "字节数": 519,
+    "SHA256（内容校验值）": "2a4548706a3bda37ffeb460dc74f372d7a3b0a88492ac28642314a3185af906c"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/Robots/odri/solo12_description/usd/solo12_description.usd",
+    "字节数": 1783588,
+    "SHA256（内容校验值）": "eab6c0288e0349b7a705fcd6a843d7a077348d5bf091c1de36c18a4846951a71"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/go2_config.py",
+    "字节数": 3317,
+    "SHA256（内容校验值）": "8efd3eb8515a9862bfa086d18da33f6624169011bfb5136bb375be3f0381f1a9"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/odri.py",
+    "字节数": 2546,
+    "SHA256（内容校验值）": "928a2db460d546cb151eb0f081c3164fb0bd6c94688b2b36a1d2467b431f41c6"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/__init__.py",
+    "字节数": 370,
+    "SHA256（内容校验值）": "c09848de2b668e997271d114800068ce7d70d09ca80bed02ccfbc4ef30561488"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/__init__.py",
+    "字节数": 209,
+    "SHA256（内容校验值）": "70db7131866ae69b4ee4dcea5d01a1dd6d8017874f549db7056bfcd7d7bd8416"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/__init__.py",
+    "字节数": 340,
+    "SHA256（内容校验值）": "a08b8c6cf3c2b1d20ccde37aed2fffde2dd944c37492262d99d9df29c12880bc"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/__init__.py",
+    "字节数": 367,
+    "SHA256（内容校验值）": "a81f461511910195497cea40127094e0f22f7b9b08d389f738076ac5dec431cb"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/__init__.py",
+    "字节数": 8481,
+    "SHA256（内容校验值）": "2bceb9a6b8ffaacacb029c8a570c42628dd566ec4205ee2fc1b44b780a9e002e"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/agents/__init__.py",
+    "字节数": 126,
+    "SHA256（内容校验值）": "5824d07bf4e31d7065f27d7865049cff927229036d8cb9d9ad6c89e215c1f08c"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/agents/clean_rl_ppo_cfg.py",
+    "字节数": 878,
+    "SHA256（内容校验值）": "ae6805d51ea051ed7c7b485bf24eaaa35d273847189b5facd62b10c6dfdc0a2c"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/agents/rsl_rl_ppo_cfg.py",
+    "字节数": 771,
+    "SHA256（内容校验值）": "9fc620a491426cc8a7323481e1dc707d2b8e9ca5fbe5a53edb5c951e6c606d68"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/baseline_anymal_c_rough_env_cfg.py",
+    "字节数": 11670,
+    "SHA256（内容校验值）": "ddb1517d77749c572e9c28ece88e2684ec8775b7b1df34375adb76b056b205e5"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/baseline_cross_tuning_env_cfg.py",
+    "字节数": 3367,
+    "SHA256（内容校验值）": "e75f8a3e55c3bbded8d67ef22e37c65744e6b345cf1a27e39d559b5d9dbfe8c4"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/baseline_go2_rough_env_cfg.py",
+    "字节数": 13206,
+    "SHA256（内容校验值）": "8b3517e9e8cf25b83b36344ce27c343e5acd85dcfa3ab04ebda6b7cbe3f99e62"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/baseline_spot_rough_env_cfg.py",
+    "字节数": 12426,
+    "SHA256（内容校验值）": "4955b6d7e7b70e402f039290ef844d86cf31d80bca897dca102c0b510212cc8d"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/cat_flat_env_cfg.py",
+    "字节数": 18447,
+    "SHA256（内容校验值）": "9e8bf57acf1a8b8d0106ef506940d3304debbde929c66463c2da249dae91a022"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/locomposition_anymal_c_rough_terrain_env_cfg.py",
+    "字节数": 6657,
+    "SHA256（内容校验值）": "e5f57cba184fa5e634c398d646ce7b6ab32dde43b31d305bc4b187f75cf6d0ac"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/locomposition_go2_rough_terrain_env_cfg.py",
+    "字节数": 43633,
+    "SHA256（内容校验值）": "5afa9a005c480bfa3d11ba7e2c23e1320eecc1d4cf49e0aa02a5ed838561242d"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/locomposition_spot_rough_terrain_env_cfg.py",
+    "字节数": 9879,
+    "SHA256（内容校验值）": "b32635e36cda947b47272a5c03b0893eaa559337de45351cf3034718b84c4876"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/cat_env.py",
+    "字节数": 9666,
+    "SHA256（内容校验值）": "3a51c536664c52ce82cb186613eb75cb573844261d025be334677162f7665511"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/constraint_manager.py",
+    "字节数": 18657,
+    "SHA256（内容校验值）": "6eb9b0a0ae6c7cd0e121c1d3ac65d9ede3fed2fa05d419a02c127b86f6ccd098"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/constraints.py",
+    "字节数": 10467,
+    "SHA256（内容校验值）": "52e85da32a970f743f6d0e60b0c2a21e5886ad92ac177132b94bf90297446dbb"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/curriculums.py",
+    "字节数": 2679,
+    "SHA256（内容校验值）": "496e402e19226e61457e232e64f56b10f1f16459b4dc2ebba5d7fed054979576"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/manager_constraint_cfg.py",
+    "字节数": 568,
+    "SHA256（内容校验值）": "85de2bbd9042b1fa395c2552847701e4323bd783447efb561c7db16f6c49932c"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cleanrl/checkpoints.py",
+    "字节数": 6240,
+    "SHA256（内容校验值）": "05144c64c5fac5abaebdd6da5dc0b09d5dd840e8e0beb9d31b883b3e6ddde063"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cleanrl/energy_finetune.py",
+    "字节数": 3086,
+    "SHA256（内容校验值）": "aa54957baf169681cfbd51daecf03a10efba08ba97c11bd6ccc152ccde7b0cd7"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cleanrl/ppo.py",
+    "字节数": 35390,
+    "SHA256（内容校验值）": "22aac5a9adda92ebd12093e3dafc3bb0b90aa586fadbd17d6b367924f63119eb"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cleanrl/rl_cfg.py",
+    "字节数": 1169,
+    "SHA256（内容校验值）": "bd2d149a1018c489840c4f38d5416d5676573c098ea25cc89ce1a4e6ab093bc1"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/commands.py",
+    "字节数": 3722,
+    "SHA256（内容校验值）": "8830435088c48dc4612aa4f0d634588535b82b24b735dffcfc61a27c9759dc69"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/events.py",
+    "字节数": 4364,
+    "SHA256（内容校验值）": "5c913c1e94a7b985d457dd4e887d29f7eca7e22e677cd3c75e82c940d59fe147"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/observations.py",
+    "字节数": 8636,
+    "SHA256（内容校验值）": "827c3daf53a300da63911d9d39b2aa7fd9c36bd7536e2c3391ce699d5d7f93ff"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/rewards.py",
+    "字节数": 3579,
+    "SHA256（内容校验值）": "03293c757059b2c4cc18da5a58b9a31b14549fa5427660e560fc909958fe6815"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/terminations.py",
+    "字节数": 561,
+    "SHA256（内容校验值）": "761deccce574a5dae20b674269ac5c2d67cda9a9393ebc925347598264afb08f"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/ui_extension_example.py",
+    "字节数": 1521,
+    "SHA256（内容校验值）": "1e35069d523f65599abac3e5cc048186afd6e133cd6ab70ab9a863151f729f58"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/pyproject.toml",
+    "字节数": 98,
+    "SHA256（内容校验值）": "5427dcc108de1d2537775540acdd539d65a2f31506ba992bc95e5bfeefb6f288"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/setup.py",
+    "字节数": 1246,
+    "SHA256（内容校验值）": "4a0545d6595a83d4dae34733519839daf93f22b15b9ad1b3db0e5ee797b446f3"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/analyze_run_range.py",
+    "字节数": 121447,
+    "SHA256（内容校验值）": "c3f8d8d039ee44fd2770b2e3f836484aada13355297946a0909c77e2d07f9700"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/archive-logs-dir.sh",
+    "字节数": 469,
+    "SHA256（内容校验值）": "422bad142c0e4a4c435934b3de0b78856c74c6a6ab152fabb593066b60727b2f"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/check_and_install_tinytex_for_plots.sh",
+    "字节数": 1744,
+    "SHA256（内容校验值）": "5d5b305b964772f2a0d6f2ffba7e19272912ec1ae7f26302de4a190da3fcb4f3"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/clbin_src.sh",
+    "字节数": 186,
+    "SHA256（内容校验值）": "b6e76df450bb341d681b0411448e1ebc8953708d9e8f55a9875710cbcf7cf174"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/clean_rl/cli_args.py",
+    "字节数": 3567,
+    "SHA256（内容校验值）": "b9f04fc8ed59782659460592863feeb5b405a8944252768d3f3aa48f57808626"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/clean_rl/play.py",
+    "字节数": 4118,
+    "SHA256（内容校验值）": "fc0ba358d11d88b0bd8bdb46f90df246fdeae61297f65e55f41f3d8362657f44"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/clean_rl/train.py",
+    "字节数": 12504,
+    "SHA256（内容校验值）": "fc389fc4a44a071dadb27568dcfaa4e5aec9c7ae642832e7e940ec522f19e912"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/eval.py",
+    "字节数": 109603,
+    "SHA256（内容校验值）": "ee38ed513ef475885a7eb8195cb68f7aa23932fb9823ed781fccea750eacd71c"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/evaluation_discovery.py",
+    "字节数": 2531,
+    "SHA256（内容校验值）": "29a8187528f8e076e2d3fd3441b44ea2340945ce0ca31a0e921ec051956e615f"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/gait_dynamics_aggregate.py",
+    "字节数": 26562,
+    "SHA256（内容校验值）": "1063e9f02e2baeb2800583e552b4e8092b981c585502bfcc532e22ca7fd4c6ee"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/generate_plots.py",
+    "字节数": 201839,
+    "SHA256（内容校验值）": "7410673ac5da3b2ca510519b68052c91af2c6b01da4bc62cd7da777b4ff342a0"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/list_envs.py",
+    "字节数": 1761,
+    "SHA256（内容校验值）": "17838af9c224f421ee391a8451756776f6a35773733c5893fbb4db294c7214b7"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/metrics_utils.py",
+    "字节数": 41815,
+    "SHA256（内容校验值）": "ac52d588bca3f2eaabee89006ddf3e49074a0bd227907741ade3a91296938884"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/plot_reward_landscape.py",
+    "字节数": 6210,
+    "SHA256（内容校验值）": "f3686d7c679e13f31873a2b4738489720af9a2fd0671bb8415ae81411e68e6b8"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/rebuttal_report.py",
+    "字节数": 17410,
+    "SHA256（内容校验值）": "3b74b946ece4c835ed1df5db4c1f371609c72267be2631983815ee009d4c8a0a"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/runpod-setup.sh",
+    "字节数": 3805,
+    "SHA256（内容校验值）": "90e237b15749a47aa6a49f7ab2416ffc349b734c30c39caafc06c7dc2d97753b"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/sim2real_eval.py",
+    "字节数": 38991,
+    "SHA256（内容校验值）": "503c2fabc2dd6251ae9e415fc5c7f6d65f0193f677312b36229132e48744c643"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/smoke_task.py",
+    "字节数": 5293,
+    "SHA256（内容校验值）": "ff4b1f18c27ef3d0bc1788b1de69bdf81e9800b440f79ae0e7be33d787cdb8a6"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/terrain_adaptation_analysis.py",
+    "字节数": 32093,
+    "SHA256（内容校验值）": "b3ae0047fcea5184a8329944be3536affbd4a929673fc87d2b0b5959d0754f72"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/torchscript_policy.py",
+    "字节数": 5744,
+    "SHA256（内容校验值）": "a48748908f6f4ecb177a242854c9ede1beeb75985ff3a838418752981087e627"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/trace_model_checkpoint.py",
+    "字节数": 2837,
+    "SHA256（内容校验值）": "61627b51f2cacec3c467f5faea756540a0e4b2b6a3b547f3132cdec4930fb14a"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子-20261109/冻结实现/scripts/train_rsl_rl.py",
+    "字节数": 1957,
+    "SHA256（内容校验值）": "7baf433aad9bddf5557eb65a33072e9a3ead1ee59b84c2f156e6935f22b96cca"
+  },
+  {
+    "路径": "claude-BC组合G多训练种子流水线.py",
+    "字节数": 12747,
+    "SHA256（内容校验值）": "9a79dc86157cf1bae935bad12e82b3200d411ff42a4661c8af0b4953c4192424"
+  },
+  {
     "路径": "claude-能耗拉格朗日约束实验收口与B组分析-20261105.md",
     "字节数": 13567,
     "SHA256（内容校验值）": "ae7a35432747030ff6221663092d45164e58b15ea54930be93c290565688b231"

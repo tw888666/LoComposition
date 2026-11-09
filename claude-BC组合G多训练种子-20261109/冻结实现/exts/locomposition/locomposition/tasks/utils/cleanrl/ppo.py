@@ -1,0 +1,678 @@
+import os
+import json
+import time
+from pathlib import Path
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.distributions.normal import Normal
+from functools import partial
+print = partial(print, flush=True) # For cluster runs
+
+class RunningMeanStd(nn.Module):
+    def __init__(self, shape=(), epsilon=1e-08):
+        super(RunningMeanStd, self).__init__()
+        self.register_buffer("running_mean", torch.zeros(shape))
+        self.register_buffer("running_var", torch.ones(shape))
+        self.register_buffer("count", torch.ones(()))
+
+        self.epsilon = epsilon
+
+    def forward(self, obs: torch.Tensor, update: bool = True):
+        if update:
+            self.update(obs)
+
+        return (obs - self.running_mean) / torch.sqrt(self.running_var + self.epsilon)
+    
+    def update(self, x):
+        """Updates the mean, var and count from a batch of samples."""
+        batch_mean = torch.mean(x, dim=0)
+        batch_var = torch.var(x, correction=0, dim=0)
+        batch_count = x.shape[0]
+        self.update_from_moments(batch_mean, batch_var, batch_count)
+    
+    def update_from_moments(self, batch_mean, batch_var, batch_count):
+        """Updates from batch mean, variance and count moments."""
+        self.running_mean, self.running_var, self.count = (
+            update_mean_var_count_from_moments(
+                self.running_mean,
+                self.running_var,
+                self.count,
+                batch_mean,
+                batch_var,
+                batch_count,
+            )
+        )
+
+def update_mean_var_count_from_moments(mean, var, count, batch_mean, batch_var, batch_count):
+    """Updates the mean, var and count using the previous mean, var, count and batch values."""
+    delta = batch_mean - mean
+    tot_count = count + batch_count
+
+    new_mean = mean + delta * batch_count / tot_count
+    m_a = var * count
+    m_b = batch_var * batch_count
+    M2 = m_a + m_b + torch.square(delta) * count * batch_count / tot_count
+    new_var = M2 / tot_count
+    new_count = tot_count
+
+    return new_mean, new_var, new_count
+
+def layer_init(layer, std=np.sqrt(2), bias_const=0.0):
+    torch.nn.init.orthogonal_(layer.weight, std)
+    torch.nn.init.constant_(layer.bias, bias_const)
+    return layer
+
+class Agent(nn.Module):
+    def __init__(self, envs):
+        super().__init__()
+        SINGLE_OBSERVATION_SPACE = envs.unwrapped.single_observation_space["policy"].shape
+        SINGLE_ACTION_SPACE = envs.unwrapped.single_action_space.shape
+        self.critic = nn.Sequential(
+            layer_init(nn.Linear(int(np.array(SINGLE_OBSERVATION_SPACE).prod()), 512)),
+            nn.ELU(),
+            layer_init(nn.Linear(512, 256)),
+            nn.ELU(),
+            layer_init(nn.Linear(256, 128)),
+            nn.ELU(),
+            layer_init(nn.Linear(128, 1), std=1.0),
+        )
+        self.actor_mean = nn.Sequential(
+            layer_init(nn.Linear(int(np.array(SINGLE_OBSERVATION_SPACE).prod()), 512)),
+            nn.ELU(),
+            layer_init(nn.Linear(512, 256)),
+            nn.ELU(),
+            layer_init(nn.Linear(256, 128)),
+            nn.ELU(),
+            layer_init(nn.Linear(128, int(np.prod(SINGLE_ACTION_SPACE))), std=0.01),
+        )
+        self.actor_logstd = nn.Parameter(torch.zeros(1, int(np.prod(SINGLE_ACTION_SPACE))))
+
+        self.obs_rms = RunningMeanStd(shape=SINGLE_OBSERVATION_SPACE)
+        self.value_rms = RunningMeanStd(shape=())
+
+    def get_value(self, x):
+        return self.critic(x)
+    
+    def forward(self, x):
+        # Note: This is deterministic!
+        return self.actor_mean(x)
+
+    def get_action_and_value(self, x, action=None, use_deterministic_policy=False):
+        action_mean = self.actor_mean(x)
+        action_logstd = self.actor_logstd.expand_as(action_mean)
+        action_std = torch.exp(action_logstd)
+        probs = Normal(action_mean, action_std)
+        if action is None:
+            if use_deterministic_policy:
+                action = action_mean
+            else:
+                action = probs.sample()
+        return (action, probs.log_prob(action).sum(1), probs.entropy().sum(1), self.critic(x), action_std)
+
+class ActorWithRMS(nn.Module):
+    def __init__(self, trained_agent: Agent):
+        super().__init__()
+        # extract running_mean / running_var buffers
+        self.register_buffer("running_mean", trained_agent.obs_rms.running_mean.clone())
+        self.register_buffer("running_var", trained_agent.obs_rms.running_var.clone())
+        self.epsilon = float(trained_agent.obs_rms.epsilon)
+        self.actor = trained_agent.actor_mean
+
+    def forward(self, obs: torch.Tensor):
+        # normalized_observation = self.obs_rms(obs, update=False)
+        normalized_observation = (obs - self.running_mean) / torch.sqrt(self.running_var + self.epsilon)
+        return self.actor(normalized_observation)
+
+def finetune_runtime_snapshot(env, optimizer):
+    """读取真实管理器与优化器参数，避免只记录命令行配置。"""
+    energy = env.reward_manager.get_term_cfg("minimize_power")
+    values = {
+        "energy_weight": float(energy.weight),
+        "mix_alpha": float(energy.params.get("mix_alpha", 0.0)),
+        "torque_scale": float(energy.params.get("torque_scale", 1.0)),
+        "scaling_factor": float(energy.params.get("scaling_factor", 1.0)),
+        "learning_rate": float(optimizer.param_groups[0]["lr"]),
+        "constraint_progress": float(env.curriculum_manager.constraints_curriculum),
+    }
+    if not all(np.isfinite(value) for value in values.values()):
+        raise ValueError("微调运行参数存在非有限数值。")
+    if values["energy_weight"] <= 0 or values["learning_rate"] <= 0 or values["torque_scale"] <= 0:
+        raise ValueError("微调能耗权重、学习率和扭矩尺度必须为正数。")
+    if not 0 <= values["mix_alpha"] <= 1 or values["scaling_factor"] != 1.0:
+        raise ValueError("微调混合系数须在 [0, 1]，scaling_factor 须为 1。")
+    if values["constraint_progress"] != 1.0:
+        raise RuntimeError("微调 CaT（约束终止）课程必须保持成熟阶段 1.0。")
+    return values
+
+
+def assert_finetune_runtime_fixed(current, expected):
+    for name, value in current.items():
+        if not np.isclose(value, expected[name], rtol=0.0, atol=1e-12):
+            raise RuntimeError(f"微调固定参数发生变化：{name}={value}，期望 {expected[name]}")
+
+
+def PPO(envs, ppo_cfg, run_path):
+    print(f"[INFO] 训练输出目录: {run_path}")
+
+    seed = ppo_cfg.seed
+    env_seed = envs.unwrapped.cfg.seed
+    if env_seed != seed:
+        raise RuntimeError(f"Seed mismatch: ppo_cfg.seed={seed}, env_cfg.seed={env_seed}")
+
+    print("seed in ppo.py=", seed)
+
+    import random
+    random.seed(seed)
+    np.random.seed(seed)
+
+    torch.backends.cuda.matmul.allow_tf32 = False
+    torch.backends.cudnn.allow_tf32 = False
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    torch.use_deterministic_algorithms(True)
+
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+
+    if ppo_cfg.logger == "wandb":
+        writer = None
+        try:
+            from rsl_rl.utils.wandb_utils import WandbSummaryWriter
+
+            ppo_cfg.wandb_project = ppo_cfg.experiment_name
+            writer = WandbSummaryWriter(log_dir=run_path, flush_secs=10, cfg=ppo_cfg.to_dict())
+
+        except ModuleNotFoundError as exception:
+            if exception.name != "rsl_rl.utils.wandb_utils":
+                raise
+            print("from rsl_rl.utils.wandb_utils import WandbSummaryWriter failed, trying from rsl_rl.utils.wandb_log_writer import WandbLogWriter next")
+            try:
+                from rsl_rl.utils.wandb_log_writer import WandbLogWriter
+
+                ppo_cfg.wandb_project = ppo_cfg.experiment_name
+                writer = WandbLogWriter(log_dir=run_path, project_name=ppo_cfg.wandb_project)
+
+                if hasattr(writer, "store_config"):
+                    writer.store_config(
+                        env_cfg=envs.unwrapped.cfg,
+                        train_cfg=ppo_cfg.to_dict(),
+                    )
+            except ModuleNotFoundError as exception:
+                if exception.name != "rsl_rl.utils.wandb_log_writer":
+                    raise
+                raise ModuleNotFoundError(
+                    "Could not import either old RSL-RL WandbSummaryWriter "
+                    "or new RSL-RL WandbLogWriter. Install wandb/RSL-RL correctly "
+                    "or run with '--logger tensorboard'."
+                ) from exception
+        if writer is None:
+            raise Exception("Failed to create wandb writer")
+
+        # Replace project name with timestamp + experiment name for easier cross referencing. This also corrects the timestamp so that project name and run_path use the same one
+        ppo_cfg.wandb_project = ppo_cfg.experiment_name
+        
+    elif ppo_cfg.logger == "tensorboard":
+        from torch.utils.tensorboard import SummaryWriter as TensorboardSummaryWriter
+
+        writer = TensorboardSummaryWriter(log_dir=run_path)
+    else:
+        raise AssertionError("logger type not found")
+
+    if not os.path.exists(run_path):
+        os.makedirs(run_path)
+
+    LEARNING_RATE = ppo_cfg.learning_rate
+    NUM_STEPS = ppo_cfg.num_steps
+    NUM_ITERATIONS = ppo_cfg.num_iterations
+    GAMMA = ppo_cfg.gamma
+    GAE_LAMBDA = ppo_cfg.gae_lambda
+    UPDATES_EPOCHS = ppo_cfg.updates_epochs
+    MINIBATCH_SIZE = ppo_cfg.minibatch_size
+    CLIP_COEF = ppo_cfg.clip_coef
+    ENT_COEF = ppo_cfg.ent_coef
+    VF_COEF = ppo_cfg.vf_coef
+    MAX_GRAD_NORM = ppo_cfg.max_grad_norm
+    NORM_ADV = ppo_cfg.norm_adv
+    CLIP_VLOSS = ppo_cfg.clip_vloss
+    ANNEAL_LR = ppo_cfg.anneal_lr
+    FINETUNE = getattr(ppo_cfg, "finetune", False)
+    if FINETUNE and ppo_cfg.resume:
+        raise ValueError("微调与恢复训练不能同时启用。")
+    if FINETUNE and (ANNEAL_LR or NUM_ITERATIONS <= 0):
+        raise ValueError("微调要求固定学习率（anneal_lr=False）和正数迭代预算。")
+
+    NUM_ENVS = envs.unwrapped.num_envs
+
+    SINGLE_OBSERVATION_SPACE = envs.unwrapped.single_observation_space["policy"].shape
+    SINGLE_ACTION_SPACE = envs.unwrapped.single_action_space.shape
+
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    BATCH_SIZE = int(NUM_ENVS * NUM_STEPS)
+
+    STORE_AND_HASH_TENSORS = False
+    if STORE_AND_HASH_TENSORS:
+        import zarr
+        from numcodecs import Blosc
+        import hashlib
+        snapshot_dir = os.path.join(run_path, "tensor_snapshots")
+        os.makedirs(snapshot_dir, exist_ok=True)
+        compress = Blosc(cname="zstd", clevel=3, shuffle=Blosc.BITSHUFFLE)
+        zroot = zarr.open_group(os.path.join(snapshot_dir, f"training_data_{os.path.basename(run_path)}.zarr"), mode="w")
+        signals = {
+            "actions"     : ((0, NUM_ENVS) + SINGLE_ACTION_SPACE        , 'f4'),
+            "rewards"     : ((0, NUM_ENVS)                              , 'f4'),
+            "obs"         : ((0, NUM_ENVS) + SINGLE_OBSERVATION_SPACE   , 'f4'),
+            "obs_rms"     : ((0, NUM_ENVS) + SINGLE_OBSERVATION_SPACE   , 'f4'),
+            "next_dones"  : ((0, NUM_ENVS)                              , 'f4'),
+            "returns"     : ((0,)                                       , 'f4'),
+        }
+        datasets = {}
+        for name, (shape, dtype) in signals.items():
+            datasets[name] = zroot.create_dataset(name, shape=shape, chunks=(128,) + shape[1:], dtype=dtype, compressor=compress, overwrite=True)
+
+        hashers = {name: hashlib.sha512() for name in datasets}
+        tensor_zarr_append_interval = 4 # Global training steps!
+        zroot.attrs["append_interval"] = tensor_zarr_append_interval
+
+    agent = Agent(envs).to(device)
+    optimizer = optim.Adam(agent.parameters(), lr=LEARNING_RATE, eps=1e-5)
+    from .checkpoints import (atomic_save, initialize_finetune_environment, load_finetune_checkpoint,
+                              load_training_checkpoint, restore_environment_progress, save_training_checkpoint)
+    start_iteration = 0
+    if FINETUNE:
+        provenance = load_finetune_checkpoint(ppo_cfg.load_checkpoint, agent, device=device)
+        if optimizer.state:
+            raise RuntimeError("微调必须使用尚无动量状态的新优化器。")
+        initialize_finetune_environment(envs.unwrapped)
+        provenance.update({
+            "微调已完成迭代": 0,
+            "微调总迭代": NUM_ITERATIONS,
+            "优化器": "新 Adam（自适应矩估计优化器）",
+            "优化器状态条目数": len(optimizer.state),
+            "初始学习率": LEARNING_RATE,
+            "学习率衰减": ANNEAL_LR,
+            "约束课程进度": envs.unwrapped.curriculum_manager.constraints_curriculum,
+            "环境随机种子": seed,
+            "并行环境数": NUM_ENVS,
+            "初始化说明": "完整加载 actor、critic、actor_logstd、obs_rms、value_rms；所有组的新环境、地形和约束归一化采用相同随机种子重新初始化。",
+        })
+        Path(run_path, "gpt-微调来源.json").write_text(json.dumps(provenance, ensure_ascii=False, indent=2), encoding="utf-8")
+        print("[微调] " + json.dumps(provenance, ensure_ascii=False))
+    elif ppo_cfg.resume:
+        resume_state = load_training_checkpoint(
+            ppo_cfg.load_checkpoint, agent, optimizer, device=device,
+            total_iterations=NUM_ITERATIONS,
+            allow_partial=ppo_cfg.allow_partial_resume,
+            constraint_progress=ppo_cfg.resume_constraint_progress,
+        )
+        start_iteration = resume_state["iteration"]
+        restore_environment_progress(envs.unwrapped, resume_state, NUM_STEPS)
+        provenance = {
+            "来源检查点": resume_state["source_path"],
+            "已完成迭代": start_iteration,
+            "下一迭代": start_iteration + 1,
+            "优化器已恢复": not resume_state["partial_resume"],
+            "已恢复控制步数": envs.unwrapped.common_step_counter,
+            "约束课程进度": envs.unwrapped.curriculum_manager.constraints_curriculum,
+            "限制": "物理仿真及随机数状态重新初始化；旧模型还缺少优化器、约束归一化和地形分配。",
+        }
+        Path(run_path, "gpt-续训来源.json").write_text(json.dumps(provenance, ensure_ascii=False, indent=2))
+        print("[续训] " + json.dumps(provenance, ensure_ascii=False))
+    if ppo_cfg.stop_after_iterations < 0:
+        raise ValueError("stop_after_iterations 不得为负数。")
+    final_iteration = min(NUM_ITERATIONS, start_iteration + ppo_cfg.stop_after_iterations) if ppo_cfg.stop_after_iterations else NUM_ITERATIONS
+
+    obs = torch.zeros((NUM_STEPS, NUM_ENVS) + SINGLE_OBSERVATION_SPACE, dtype=torch.float).to(device)
+    actions = torch.zeros((NUM_STEPS, NUM_ENVS) + SINGLE_ACTION_SPACE, dtype=torch.float).to(device)
+    logprobs = torch.zeros((NUM_STEPS, NUM_ENVS), dtype=torch.float).to(device)
+    rewards = torch.zeros((NUM_STEPS, NUM_ENVS), dtype=torch.float).to(device)
+    dones = torch.zeros((NUM_STEPS, NUM_ENVS), dtype=torch.float).to(device)
+    true_dones = torch.zeros((NUM_STEPS, NUM_ENVS), dtype=torch.float).to(device)
+    values = torch.zeros((NUM_STEPS, NUM_ENVS), dtype=torch.float).to(device)
+    advantages = torch.zeros_like(rewards, dtype=torch.float).to(device)
+
+    joint_names = envs.unwrapped.scene["robot"].data.joint_names
+    num_joints = len(joint_names)
+
+    # TRY NOT TO MODIFY: start the game
+    global_step = start_iteration * NUM_STEPS * NUM_ENVS
+    start_time = time.time()
+    next_obs = envs.reset(seed=seed)[0]["policy"]
+    next_obs = agent.obs_rms(next_obs)
+    next_done = torch.zeros(NUM_ENVS, dtype=torch.float).to(device)
+    next_true_done = torch.zeros(NUM_ENVS, dtype=torch.float).to(device)
+
+    # Algo 1: https://arxiv.org/abs/2309.02976
+    # Implementation: https://github.com/martius-lab/depRL/blob/790df8652f7ce7bae432435e44e509a5b427433e/deprl/custom_replay_buffers/action_cost_replay.py#L62
+    mean_threshold_metric_polyak = 0.0
+    curr_beta = 0.8 # polyak averaging
+    curr_lambda = 0.97 # decay term
+    curr_reward_performance_threshold = 2.9
+    c_target = 0.0
+    c_polyak = 0.0
+    curr_beta_c_polyak = 0.9
+    delta_adaptation_rate = 3e-6
+    delta_alpha_simple_algo = 9e-5
+    curr_energy_weight = 0.0 
+
+    energy_reward_term_name = "minimize_power"
+    # Just to make sure there are no other scaling factors at play
+    term = envs.unwrapped.reward_manager.get_term_cfg(energy_reward_term_name)
+    term.params["scaling_factor"] = 1.0
+    envs.unwrapped.reward_manager.set_term_cfg(energy_reward_term_name, term)
+    if FINETUNE:
+        finetune_expected = finetune_runtime_snapshot(envs.unwrapped, optimizer)
+        power_curriculum = getattr(envs.unwrapped.cfg.curriculum, "power", None)
+        if power_curriculum is not None:
+            for name in ("start_weight", "end_weight"):
+                if power_curriculum.params.get(name) != finetune_expected["energy_weight"]:
+                    raise ValueError("微调能耗课程的起止权重必须均等于固定能耗权重。")
+        constraint_targets = {}
+        for curriculum in vars(envs.unwrapped.cfg.curriculum).values():
+            params = getattr(curriculum, "params", {})
+            if "init_max_p" in params and "term_name" in params:
+                actual = envs.unwrapped.constraint_manager.get_term_cfg(params["term_name"]).max_p
+                if not np.isclose(actual, params["init_max_p"], rtol=0.0, atol=1e-12):
+                    raise RuntimeError(f"微调约束尚未成熟：{params['term_name']}={actual}")
+                constraint_targets[params["term_name"]] = actual
+        provenance["实际运行参数"] = finetune_expected
+        provenance["成熟约束最大终止概率"] = constraint_targets
+        provenance["重置后控制步数"] = envs.unwrapped.common_step_counter
+        Path(run_path, "gpt-微调来源.json").write_text(json.dumps(provenance, ensure_ascii=False, indent=2), encoding="utf-8")
+        print("[微调运行参数] " + json.dumps(finetune_expected, ensure_ascii=False))
+        for name, value in finetune_expected.items():
+            writer.add_scalar(f"Finetune/{name}", value, 0)
+
+    print(f"Starting training for {NUM_ITERATIONS} steps")
+    for iteration in range(start_iteration + 1, final_iteration + 1):
+        iteration_start = time.monotonic()
+        ep_infos = []
+
+        if ANNEAL_LR:
+            frac = 1.0 - (iteration - 1.0) / NUM_ITERATIONS
+            lrnow = frac * LEARNING_RATE
+            optimizer.param_groups[0]["lr"] = lrnow
+
+        action_std_buffer = [] # Buffer over sim steps, then take mean across env and time steps
+        # Collecting trajectories for NUM_STEPS before updating the networks
+        for step in range(0, NUM_STEPS):
+            global_step += NUM_ENVS
+            obs[step] = next_obs
+            dones[step] = next_done
+            true_dones[step] = next_true_done
+
+            # ALGO LOGIC: action logic
+            with torch.no_grad():
+                action, logprob, _, value, action_std = agent.get_action_and_value(next_obs)
+                action_std_buffer.append(action_std.detach())
+                values[step] = value.flatten()
+            actions[step] = action
+            logprobs[step] = logprob
+
+            # TRY NOT TO MODIFY: execute the game and log data.
+            next_obs, rewards[step], next_done, timeouts, info = envs.step(action)
+            # next_obs, rewards[step], next_done, timeouts, info = envs.step(torch.rand_like(action) * 0.6 - torch.ones_like(action) * 0.3)
+            next_done = next_done.to(torch.float)
+            next_obs = next_obs["policy"]
+
+            if STORE_AND_HASH_TENSORS:
+                # Store only first time step of each global iteration because otherwise it takes way too long.
+                # To be absolutely certain two runs are identical, remove the steps == 0 and decrease tensor_zarr_append_interval, at the cost of slower training.
+                if step == 0 and iteration % tensor_zarr_append_interval == 0:
+                    zarr_append_start = time.time()
+                    np_actions = action.detach().cpu().numpy()
+                    np_rewards = rewards[step].detach().cpu().numpy()
+                    np_obs = next_obs.detach().cpu().numpy()
+                    np_next_dones = next_done.detach().cpu().numpy()
+                    # print(f"actions zarr shape={datasets['actions'].shape}\tnp shape (pre_expand)={np_actions.shape}")
+                    # print(f"rewards zarr shape={datasets['rewards'].shape}\tnp shape (pre_expand)={np_rewards.shape}")
+                    # print(f"obs zarr shape={datasets['obs'].shape}\tnp shape (pre_expand)={np_obs.shape}")
+                    # print(f"next_dones zarr shape={datasets['next_dones'].shape}\tnp shape (pre_expand)={np_next_dones.shape}")
+
+                    datasets["actions"].append(np.expand_dims(np_actions, axis=0), axis=0)
+                    datasets["rewards"].append(np.expand_dims(np_rewards, axis=0), axis=0)
+                    datasets["obs"].append(np.expand_dims(np_obs, axis=0), axis=0)
+                    datasets["next_dones"].append(np.expand_dims(np_next_dones, axis=0), axis=0)
+                    print(f"iteration={iteration}\tAppending tensors to zarr file took {(time.time() - zarr_append_start):.4f} seconds")
+
+            if torch.any(torch.isnan(next_obs)):
+                print("NAN IN OBSERVATION")
+            if "episode" in info:
+                ep_infos.append(info["episode"])
+            elif "log" in info:
+                ep_infos.append(info["log"])
+
+            info["true_dones"] = timeouts
+            next_obs = agent.obs_rms(next_obs)
+            if STORE_AND_HASH_TENSORS:
+                if step == 0 and iteration % tensor_zarr_append_interval == 0:
+                    np_obs_rms = next_obs.detach().cpu().numpy()
+                    datasets["obs_rms"].append(np.expand_dims(np_obs_rms, axis=0), axis=0)
+
+            next_true_done = info["true_dones"].float()
+            if "time_outs" in info:
+                if info["time_outs"].any():
+                    print("time outs", info["time_outs"].sum())
+                    exit(0)
+
+        # Keep in mind that the raw reward functions are multiplied by dt as well as max episode lenght, then scaled by reward weight!
+        # Even though the Episode_Reward key is returned every time step, it only contains the envs that reset at this specific time step.
+        threshold_metric_name = "Curriculum/terrain_levels"
+        threshold_metric_per_timestep = [info[threshold_metric_name] if type(info[threshold_metric_name]) == float else info[threshold_metric_name].cpu().item() for info in ep_infos]
+        mean_threshold_metric = np.mean(threshold_metric_per_timestep).item()
+        mean_threshold_metric_polyak = mean_threshold_metric_polyak * curr_beta + mean_threshold_metric * (1-curr_beta)
+        # To determine how many samples the threshold metric has on average, check the Episode_Termination category in wandb.
+        total_resets_over_rollout = sum(sum(done_count for (key, done_count) in info.items() if key.startswith("Episode_Termination/")) for info in ep_infos)
+
+        ADAPTIVE_CURR_ALGORITHM = "none" # deprl,simple,none
+        if ADAPTIVE_CURR_ALGORITHM.lower() == "simple":
+            simple_curr_lambda = 0.97
+            delta_alpha_init_simple_algo = 9e-5
+            delta_decrease_rate = delta_alpha_init_simple_algo
+
+            # Performance above threshold: increase effort penalty and slow future increases
+            if mean_threshold_metric_polyak > curr_reward_performance_threshold:
+                curr_energy_weight += delta_alpha_simple_algo
+                delta_alpha_simple_algo *= simple_curr_lambda
+            # Performance below threshold: decrease effort penalty by *fixed* decrement and reset adaptation rate
+            else:
+                curr_energy_weight = max(0, curr_energy_weight - delta_decrease_rate)
+                delta_alpha_simple_algo = delta_alpha_init_simple_algo
+
+        elif ADAPTIVE_CURR_ALGORITHM.lower() == "deprl":
+            # Algo 1: https://arxiv.org/abs/2309.02976
+            # See also: https://github.com/martius-lab/depRL/blob/790df8652f7ce7bae432435e44e509a5b427433e/deprl/custom_replay_buffers/action_cost_replay.py#L62
+            if mean_threshold_metric_polyak > curr_reward_performance_threshold and c_polyak < 0.5: # Oscillations around optimum
+                delta_adaptation_rate *= curr_lambda
+                curr_energy_weight += delta_adaptation_rate
+            elif mean_threshold_metric_polyak > curr_reward_performance_threshold and c_polyak > 0.5:
+                curr_energy_weight += delta_adaptation_rate
+            else:
+                curr_energy_weight -= delta_adaptation_rate
+
+        if ADAPTIVE_CURR_ALGORITHM != None and ADAPTIVE_CURR_ALGORITHM.lower() != "none":
+            curr_energy_weight = max(0, curr_energy_weight) # Prevent rewarding instead of penalizing power / energy consumption (raw reward term is already negative)
+            term = envs.unwrapped.reward_manager.get_term_cfg(energy_reward_term_name)
+            term.weight = curr_energy_weight
+            envs.unwrapped.reward_manager.set_term_cfg(energy_reward_term_name, term)
+
+            writer.add_scalar("Energy_Curriculum/c_target", c_target, iteration)
+            writer.add_scalar("Energy_Curriculum/c_polyak", c_polyak, iteration)
+            writer.add_scalar("Energy_Curriculum/delta_adapation_rate", delta_adaptation_rate, iteration)
+            writer.add_scalar("Energy_Curriculum/mean_threshold_metric", mean_threshold_metric, iteration) # Duplicated for easier comparison in UI
+            writer.add_scalar("Energy_Curriculum/mean_threshold_metric_polyak", mean_threshold_metric_polyak, iteration)
+            writer.add_scalar("Energy_Curriculum/curr_energy_weight", curr_energy_weight, iteration)
+            writer.add_scalar("Episode_Termination/total_resets_over_rollout", total_resets_over_rollout, iteration)
+            writer.add_scalar("Episode_Reward/mean_threshold_metric", mean_threshold_metric, iteration)
+
+            # Update after logging since it's for next iteration
+            c_target = float(mean_threshold_metric_polyak > curr_reward_performance_threshold)
+            c_polyak = curr_beta_c_polyak * c_polyak + (1-curr_beta_c_polyak) * c_target
+        
+        # Logging/Analytics, adapted from rslrl
+        for key in ep_infos[0]: # Get keys to iterate over
+            infotensor = torch.tensor([], device=device)
+            for ep_info in ep_infos: # Iterate over each time step
+                # handle scalar and zero dimensional tensor infos
+                if key not in ep_info:
+                    continue
+                if not isinstance(ep_info[key], torch.Tensor):
+                    ep_info[key] = torch.Tensor([ep_info[key]])
+                if len(ep_info[key].shape) == 0:
+                    ep_info[key] = ep_info[key].unsqueeze(0)
+                infotensor = torch.cat((infotensor, ep_info[key].to(device)))
+            value = torch.mean(infotensor)
+            if "/" in key:
+                writer.add_scalar(key, value, iteration)
+            else:
+                writer.add_scalar("Episode/" + key, value, iteration)
+
+        # bootstrap value if not done
+        with torch.no_grad():
+            next_value = agent.get_value(next_obs).reshape(1, -1)
+            advantages = torch.zeros_like(rewards).to(device)
+            lastgaelam = 0
+            for t in reversed(range(NUM_STEPS)):
+                if t == NUM_STEPS - 1:
+                    nextnonterminal = 1.0 - next_done
+                    true_nextnonterminal = 1 - next_true_done
+                    nextvalues = next_value
+                else:
+                    nextnonterminal = 1.0 - dones[t + 1]
+                    true_nextnonterminal = 1 - true_dones[t + 1]
+                    nextvalues = values[t + 1]
+                delta = (rewards[t] + GAMMA * nextvalues * nextnonterminal * true_nextnonterminal - values[t])
+                advantages[t] = lastgaelam = (delta + GAMMA * GAE_LAMBDA * nextnonterminal * true_nextnonterminal * lastgaelam)
+            returns = advantages + values
+
+            if STORE_AND_HASH_TENSORS:
+                # Uses training iteration steps because it does not run in nested sim step loop
+                if iteration % tensor_zarr_append_interval == 0:
+                    np_returns = returns.detach().cpu().reshape(-1).numpy()
+                    print(f"returns zarr shape={datasets['returns'].shape}\tnp shape={np_returns.shape}")
+                    datasets["returns"].append(np_returns, axis=0)
+
+                    hash_update_start = time.time()
+                    for name, arr in [("actions", np_actions),
+                    ("rewards", np_rewards),
+                    ("obs", np_obs),
+                    ("obs_rms", np_obs_rms),
+                    ("next_dones", np_next_dones),
+                    ("returns", np_returns)]:
+                        hashers[name].update(arr.tobytes())
+                    print(f"iteration={iteration}\tUpdating hashes took {time.time() - hash_update_start} seconds.")
+                    
+                    flush_consolidate_start = time.time()
+                    zarr.consolidate_metadata(zroot.store)
+                    # Once again a dirty hack to force flushing...
+                    # Zarr v3 offers zroot.flush() but requires python>=3.11 but isaac lab python=3.10...
+                    for dirpath, _, filenames in os.walk(zroot.path):
+                        for fname in filenames:
+                            fpath = os.path.join(dirpath, fname)
+                            with open(fpath, 'rb') as f:
+                                os.fsync(f.fileno())
+                    print(f"zroot flush and metadata consolidation took {(time.time() - flush_consolidate_start):.4f} seconds.")
+
+                    # Use compare_tensor_snapshots.py for torch.allclose between two runs because rounding may influence the hash
+                    for name, h in hashers.items():
+                        print(f"[snapshot @{global_step}] hash({name}) = {h.hexdigest()}")
+
+        # flatten the batch
+        b_obs = obs.reshape((-1,) + SINGLE_OBSERVATION_SPACE)
+        b_logprobs = logprobs.reshape(-1)
+        b_actions = actions.reshape((-1,) + SINGLE_ACTION_SPACE)
+        b_advantages = advantages.reshape(-1)
+        b_returns = returns.reshape(-1)
+        b_values = values.reshape(-1)
+
+        b_values = agent.value_rms(b_values)
+        b_returns = agent.value_rms(b_returns)
+
+        sum_pg_loss = sum_entropy_loss = sum_v_loss = sum_surrogate_loss = 0.0
+
+        # Optimizing the policy and value network
+        clipfracs = []
+        for epoch in range(UPDATES_EPOCHS):
+            b_inds = torch.randperm(BATCH_SIZE, device=device)
+            for start in range(0, BATCH_SIZE, MINIBATCH_SIZE):
+                end = start + MINIBATCH_SIZE
+                mb_inds = b_inds[start:end]
+
+                _, newlogprob, entropy, newvalue, _ = agent.get_action_and_value(b_obs[mb_inds], b_actions[mb_inds])
+                logratio = newlogprob - b_logprobs[mb_inds]
+                ratio = logratio.exp()
+
+                mb_advantages = b_advantages[mb_inds]
+                if NORM_ADV:
+                    mb_advantages = (mb_advantages - mb_advantages.mean()) / (mb_advantages.std() + 1e-8)
+
+                # Policy loss
+                pg_loss1 = -mb_advantages * ratio
+                pg_loss2 = -mb_advantages * torch.clamp(ratio, 1 - CLIP_COEF, 1 + CLIP_COEF)
+                pg_loss = torch.max(pg_loss1, pg_loss2).mean()
+
+                # Value loss
+                newvalue = newvalue.view(-1)
+                newvalue = agent.value_rms(newvalue, update=False)
+                if CLIP_VLOSS:
+                    v_loss_unclipped = (newvalue - b_returns[mb_inds]) ** 2
+                    v_clipped = b_values[mb_inds] + torch.clamp(newvalue - b_values[mb_inds], -CLIP_COEF, CLIP_COEF,)
+                    v_loss_clipped = (v_clipped - b_returns[mb_inds]) ** 2
+                    v_loss_max = torch.max(v_loss_unclipped, v_loss_clipped)
+                    v_loss = 0.5 * v_loss_max.mean()
+                else:
+                    v_loss = 0.5 * ((newvalue - b_returns[mb_inds]) ** 2).mean()
+
+                entropy_loss = entropy.mean()
+                loss = pg_loss - ENT_COEF * entropy_loss + v_loss * VF_COEF
+
+                sum_pg_loss += pg_loss
+                sum_entropy_loss += entropy_loss
+                sum_v_loss += v_loss
+                sum_surrogate_loss += loss
+
+                optimizer.zero_grad()
+                loss.backward()
+                nn.utils.clip_grad_norm_(agent.parameters(), MAX_GRAD_NORM)
+                optimizer.step()
+
+        num_updates = UPDATES_EPOCHS * BATCH_SIZE / MINIBATCH_SIZE
+        writer.add_scalar("Loss/mean_pg_loss", sum_pg_loss / num_updates, iteration)
+        writer.add_scalar("Loss/mean_entropy_loss", sum_entropy_loss / num_updates, iteration)
+        writer.add_scalar("Loss/mean_v_loss", sum_v_loss / num_updates, iteration)
+        writer.add_scalar("Loss/mean_surrogate_loss", sum_surrogate_loss / num_updates, iteration)
+        writer.add_scalar("Loss/learning_rate", optimizer.param_groups[0]["lr"], iteration)
+        if FINETUNE:
+            actual_parameters = finetune_runtime_snapshot(envs.unwrapped, optimizer)
+            assert_finetune_runtime_fixed(actual_parameters, finetune_expected)
+            for name, value in actual_parameters.items():
+                writer.add_scalar(f"Finetune/{name}", value, iteration)
+
+        stacked_action_std_np = torch.stack(action_std_buffer, dim=0).cpu().numpy().reshape(-1, num_joints)
+        mean_per_joint = stacked_action_std_np.mean(axis=0)
+        std_per_joint  = stacked_action_std_np.std(axis=0)
+        for j, name in enumerate(joint_names):
+            # Sanitize joint name to avoid W&B hierarchy issues (slashes, spaces, etc.)
+            sanitized = name.replace("/", "_").replace(" ", "_")
+            writer.add_scalar(f"action_std/{sanitized}/mean", mean_per_joint[j], iteration)
+            writer.add_scalar(f"action_std/{sanitized}/std", std_per_joint[j], iteration)
+
+        if iteration <= start_iteration + 3 or iteration % 10 == 0 or iteration == final_iteration:
+            print(
+                f"[训练] 迭代={iteration}/{NUM_ITERATIONS} "
+                f"耗时={time.monotonic() - iteration_start:.2f}s "
+                f"平均奖励={rewards.mean().item():.6f} "
+                f"学习率={optimizer.param_groups[0]['lr']:.3g}"
+            )
+
+        if (iteration + 1) % ppo_cfg.save_interval == 0 or iteration == final_iteration or ((ppo_cfg.resume or FINETUNE) and iteration == start_iteration + 1):
+            model_path = f"{run_path}/model_{iteration}.pt"
+            atomic_save(agent.state_dict(), model_path)
+            save_training_checkpoint(f"{run_path}/training_state_{iteration}.pt", agent, optimizer,
+                                     envs.unwrapped, iteration, NUM_ITERATIONS)
+            print(f"[INFO] 已保存模型: {model_path}")
+
+    writer.close()
