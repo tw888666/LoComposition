@@ -1,0 +1,131 @@
+{
+  "状态": "通过",
+  "实际项目模块全部来自冻结目录": true,
+  "模块": [
+    {
+      "模块": "locomposition.ui_extension_example",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/ui_extension_example.py",
+      "SHA256": "1e35069d523f65599abac3e5cc048186afd6e133cd6ab70ab9a863151f729f58"
+    },
+    {
+      "模块": "locomposition",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/__init__.py",
+      "SHA256": "7818fd2f301d1c88b4503894f4a0ed79aa0d90347fcf5473c402c054bcc10c81"
+    },
+    {
+      "模块": "locomposition.tasks.locomotion.velocity",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/__init__.py",
+      "SHA256": "a08b8c6cf3c2b1d20ccde37aed2fffde2dd944c37492262d99d9df29c12880bc"
+    },
+    {
+      "模块": "locomposition.tasks.locomotion",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/__init__.py",
+      "SHA256": "70db7131866ae69b4ee4dcea5d01a1dd6d8017874f549db7056bfcd7d7bd8416"
+    },
+    {
+      "模块": "locomposition.tasks.locomotion.velocity.config",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/__init__.py",
+      "SHA256": "a81f461511910195497cea40127094e0f22f7b9b08d389f738076ac5dec431cb"
+    },
+    {
+      "模块": "locomposition.tasks.locomotion.velocity.config.solo12.agents",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/agents/__init__.py",
+      "SHA256": "5824d07bf4e31d7065f27d7865049cff927229036d8cb9d9ad6c89e215c1f08c"
+    },
+    {
+      "模块": "locomposition.tasks.utils.cat.manager_constraint_cfg",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/manager_constraint_cfg.py",
+      "SHA256": "85de2bbd9042b1fa395c2552847701e4323bd783447efb561c7db16f6c49932c"
+    },
+    {
+      "模块": "locomposition.tasks.utils.cat.constraint_manager",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/constraint_manager.py",
+      "SHA256": "6eb9b0a0ae6c7cd0e121c1d3ac65d9ede3fed2fa05d419a02c127b86f6ccd098"
+    },
+    {
+      "模块": "locomposition.tasks.utils.cat.cat_env",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/cat_env.py",
+      "SHA256": "3a51c536664c52ce82cb186613eb75cb573844261d025be334677162f7665511"
+    },
+    {
+      "模块": "locomposition.tasks.locomotion.velocity.config.solo12",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/__init__.py",
+      "SHA256": "2bceb9a6b8ffaacacb029c8a570c42628dd566ec4205ee2fc1b44b780a9e002e"
+    },
+    {
+      "模块": "locomposition.tasks",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/__init__.py",
+      "SHA256": "c09848de2b668e997271d114800068ce7d70d09ca80bed02ccfbc4ef30561488"
+    },
+    {
+      "模块": "locomposition.tasks.utils.cleanrl.ppo",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cleanrl/ppo.py",
+      "SHA256": "22aac5a9adda92ebd12093e3dafc3bb0b90aa586fadbd17d6b367924f63119eb"
+    },
+    {
+      "模块": "locomposition.tasks.utils.cat.constraints",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/constraints.py",
+      "SHA256": "52e85da32a970f743f6d0e60b0c2a21e5886ad92ac177132b94bf90297446dbb"
+    },
+    {
+      "模块": "locomposition.tasks.utils.cat.curriculums",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cat/curriculums.py",
+      "SHA256": "496e402e19226e61457e232e64f56b10f1f16459b4dc2ebba5d7fed054979576"
+    },
+    {
+      "模块": "locomposition.tasks.utils.mdp.observations",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/observations.py",
+      "SHA256": "827c3daf53a300da63911d9d39b2aa7fd9c36bd7536e2c3391ce699d5d7f93ff"
+    },
+    {
+      "模块": "locomposition.tasks.utils.mdp.terminations",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/terminations.py",
+      "SHA256": "761deccce574a5dae20b674269ac5c2d67cda9a9393ebc925347598264afb08f"
+    },
+    {
+      "模块": "locomposition.tasks.utils.mdp.events",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/events.py",
+      "SHA256": "5c913c1e94a7b985d457dd4e887d29f7eca7e22e677cd3c75e82c940d59fe147"
+    },
+    {
+      "模块": "locomposition.tasks.utils.mdp.commands",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/commands.py",
+      "SHA256": "8830435088c48dc4612aa4f0d634588535b82b24b735dffcfc61a27c9759dc69"
+    },
+    {
+      "模块": "locomposition.tasks.utils.mdp.rewards",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/mdp/rewards.py",
+      "SHA256": "03293c757059b2c4cc18da5a58b9a31b14549fa5427660e560fc909958fe6815"
+    },
+    {
+      "模块": "locomposition.assets.odri",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/odri.py",
+      "SHA256": "928a2db460d546cb151eb0f081c3164fb0bd6c94688b2b36a1d2467b431f41c6"
+    },
+    {
+      "模块": "locomposition.assets.go2_config",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/assets/go2_config.py",
+      "SHA256": "8efd3eb8515a9862bfa086d18da33f6624169011bfb5136bb375be3f0381f1a9"
+    },
+    {
+      "模块": "locomposition.tasks.locomotion.velocity.config.solo12.locomposition_go2_rough_terrain_env_cfg",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/locomposition_go2_rough_terrain_env_cfg.py",
+      "SHA256": "5afa9a005c480bfa3d11ba7e2c23e1320eecc1d4cf49e0aa02a5ed838561242d"
+    },
+    {
+      "模块": "locomposition.tasks.utils.cleanrl.rl_cfg",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cleanrl/rl_cfg.py",
+      "SHA256": "bd2d149a1018c489840c4f38d5416d5676573c098ea25cc89ce1a4e6ab093bc1"
+    },
+    {
+      "模块": "locomposition.tasks.locomotion.velocity.config.solo12.agents.clean_rl_ppo_cfg",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/locomotion/velocity/config/solo12/agents/clean_rl_ppo_cfg.py",
+      "SHA256": "ae6805d51ea051ed7c7b485bf24eaaa35d273847189b5facd62b10c6dfdc0a2c"
+    },
+    {
+      "模块": "locomposition.tasks.utils.cleanrl.energy_finetune",
+      "来源": "/home/xy.chen/tw/LoComposition/claude-BC组合G多训练种子-20261109/冻结实现/exts/locomposition/locomposition/tasks/utils/cleanrl/energy_finetune.py",
+      "SHA256": "aa54957baf169681cfbd51daecf03a10efba08ba97c11bd6ccc152ccde7b0cd7"
+    }
+  ]
+}
